@@ -1,0 +1,32 @@
+Configuration Parameter,Configuration Value ( use '|' for lists)
+broken-links,warning
+canonicalBase,http://hl7.org/fhir/validated-healthcare-directory
+codesystems,
+dependencyList.location,
+dependencyList.name,
+dependencyList.source,
+do-transforms,FALSE
+extensions,
+fixed-business-version,1.0.0
+gen-examples,FALSE
+jurisdiction,International
+no-inactive-codes,FALSE
+paths.output,output
+paths.pages,pages
+paths.qa,qa
+paths.resources,resources|examples
+paths.specification,http://hl7.org/fhir/STU3
+paths.temp,temp
+paths.txCache,txCache
+publisher,HL7 Patient Administration Committee
+sct-edition,http://snomed.info/sct/731000124108
+searches,
+source,ig.xml
+special-urls,urn:oid:2.16.840.1.113883.6.238
+status,draft
+structuremaps,
+title,Validated Healthcare Directory
+tool,jekyll
+valuesets,
+version,3.0.1
+working-dir,/git/onc-pd-ig/

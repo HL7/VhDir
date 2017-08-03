@@ -1,0 +1,27 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+  <!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+  <h2>
+   Profiles defined as part of the Validated Healthcare Directory Implementation Guide
+  </h2>
+
+  <p>The following profiles set the minimum expectations to record, search and retrieve validated directory data associated with Healthcare Organizations, Locations and Practitioners:</p>
+
+  {%  include list-simple-profiles.xhtml %}
+
+<!-- <ul><li><a href="us-core-vitalsigns.html">Vital Signs Profile</a> (From FHIR Core Profiles for Observation)</li></ul> -->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+    {% include footer.html %}
