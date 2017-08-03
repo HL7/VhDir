@@ -1,0 +1,23 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+{% include container-start.html %}
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<h2>{{[title]}}</h2>
+
+Raw <a href="{{[type]}}-{{[id]}}.{{[fmt]}}" download>{{[fmt]}}</a>
+<p></p>
+
+{% include {{[type]}}-{{[name]}}.xhtml %}
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+
+
+{% include footer.html %}
