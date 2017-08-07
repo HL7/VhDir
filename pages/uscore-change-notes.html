@@ -1,0 +1,20 @@
+---
+# jekyll header
+title: US Core Change Notes
+---
+{% include header.html %}
+
+  <!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+
+{% capture my-include %}{% include change-notes.md %}{% endcapture %}{{ my-include | markdownify }}
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+    {% include footer.html %}

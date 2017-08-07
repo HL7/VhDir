@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <url value="http://hl7.org/fhir/validated-healthcare-directory/ImplementationGuide/ig"/>
+  <name value="Validated Healthcare Directory"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <package>
+    <name value="base"/>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Location/hl7east"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="CareTeam/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Organization/acme-lab"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-provider-specialty"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-provider-role"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-narrative-status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-careteam-provider-roles"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/simple-language"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-profile-link"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-direct"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/client"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Validated Healthcare Directory Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>
