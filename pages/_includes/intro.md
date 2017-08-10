@@ -5,21 +5,22 @@
 
 ## Introduction
 
-The US Core Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing patient data as defined by the [Argonaut] pilot implementations and the [ONC 2015 Edition Common Clinical Data Set (CCDS)]. These profiles are intended to be the foundation for future US Realm FHIR implementation guides. In addition to Argonaut, they are used by [DAF-Research], [QI-Core], and [CIMI].  Under the guidance of HL7 and the HL7 US Realm Steering Committee, the content will expand in future versions to meet the needs specific to the US Realm.
+The Validated Healthcare Directory Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing healthcare directory data.
+Under the guidance of HL7 International, the Patient Administration workgroup, and the HL7 US Realm Steering Committee, the content intends to cover both international needs, along with a tightly bound set, tailored to meet the needs specific to the US Realm.
 
-These requirements were originally developed, balloted, and published in FHIR DSTU2 as part of the [Office of the National Coordinator for Health Information Technology (ONC)] sponsored [Data Access Framework] (DAF) project. For more information on how DAF became US Core see the [US Core change notes](uscore-change-notes.html).  
+These requirements are being developed, ... [Office of the National Coordinator for Health Information Technology (ONC)] sponsored [Data Access Framework] (DAF) project. For more information on how DAF became Validated Healthcare Directory see the [Validated Healthcare Directory change notes](uscore-change-notes.html).  
 
-## US Core Actors
+## Validated Healthcare Directory Actors
 
-The following actors are part of the US Core IG:
+The following actors are part of the Validated Healthcare Directory IG:
 
-* US Core Requestor: An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction.
-* US Core Responder: A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction.
+* Validated Healthcare Directory Requestor: An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction.
+* Validated Healthcare Directory Responder: A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction.
 
 
-## US Core Profiles
+## Validated Healthcare Directory Profiles
 
-The list of US Core Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.  In addition each profile has a "Quick Start" section which is intended as an implementer friendly overview of the required search and read operations.
+The list of Validated Healthcare Directory Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.  In addition each profile has a "Quick Start" section which is intended as an implementer friendly overview of the required search and read operations.
 
 {% include list-simple-profiles.xhtml %}
 US Core adopts the [Vitals Signs Profile](us-core-vitalsigns.html) from FHIR Core.
@@ -31,9 +32,9 @@ US Core adopts the [Vitals Signs Profile](us-core-vitalsigns.html) from FHIR Cor
 
 See [2015 Edition Common Clinical Data Set] for a mapping to the CCDS.
 
-## US Core Conformance Requirements
+## Validated Healthcare Directory Conformance Requirements
 
-The [Capability Statements Section](capstmnts.html) outlines conformance requirements for the US Core Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual US Core profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US Core actors.
+The [Capability Statements Section](capstmnts.html) outlines conformance requirements for the Validated Healthcare Directory Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual Validated Healthcare Directory profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Validated Healthcare Directory actors.
 
 ----
 
@@ -41,15 +42,10 @@ Primary Authors: Brian Postlethwaite, Bob Dieterle, ONC Contributors
 
 Secondary Authors: Grahame Grieve, Lloyd McKenzie
 
-[QI-Core]:https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/CQF+Home
-[CIMI]:http://www.opencimi.org
 [Argonaut]: http://argonautwiki.hl7.org/index.php?title=Main_Page
-[DAF-Research]: http://hl7.org/fhir/us/daf-research/index.html
-[US Core Security]: US Core-security.html
+[Validated Healthcare Directory Security]: US Core-security.html
 [Office of the National Coordinator for Health Information Technology (ONC)]: http://www.healthit.gov/newsroom/about-onc
 [Data Access Framework]: http://wiki.siframework.org/Data+Access+Framework+Homepage
-[Argonaut]: http://argonautwiki.hl7.org/index.php?title=Main_Page
-[ONC 2015 Edition Common Clinical Data Set (CCDS)]: https://www.healthit.gov/sites/default/files/2015Ed_CCG_CCDS.pdf
 [profiles]: http://hl7.org/fhir/STU3/profiling.html
 [logical view]: http://hl7.org/fhir/STU3/formats.html#table
 [StructureDefinitions]: http://hl7.org/fhir/STU3/structuredefinition.html
