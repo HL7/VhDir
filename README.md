@@ -1,4 +1,4 @@
-# Hl7 Validated Healthcare Directory Implementation Guide Repository
+# Hl7 Validated Healthcare Directory (HcDir) Implementation Guide Repository
 
 Authors:  Brian Postlethwaite, Bob Dieterle, ONC Contributors
 
