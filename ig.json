@@ -97,17 +97,9 @@
          "base":"StructureDefinition-us-core-location.html",
          "defns":"StructureDefinition-us-core-location-definitions.html"
       },
-      "ValueSet/us-core-provider-role":{
-         "base":"ValueSet-us-core-provider-role.html",
-         "source":"valueset-us-core-provider-role.xml"
-      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
-      },
-      "ValueSet/simple-language":{
-         "base":"ValueSet-simple-language.html",
-         "source":"valueset-simple-language.xml"
       },
       "Practitioner/practitioner-2":{
          "base":"Practitioner-practitioner-2.html",
@@ -116,19 +108,6 @@
       "Practitioner/practitioner-1":{
          "base":"Practitioner-practitioner-1.html",
          "source":"practitioner-1.xml"
-      },
-      "ValueSet/us-core-provider-specialty":{
-         "base":"ValueSet-us-core-provider-specialty.html",
-         "source":"valueset-us-core-provider-specialty.xml"
-      },
-      "StructureDefinition/us-core-profile-link":{
-         "base":"StructureDefinition-us-core-profile-link.html",
-         "defns":"StructureDefinition-us-core-profile-link-definitions.html",
-         "source":"structuredefinition-us-core-profile-link.xml"
-      },
-      "ValueSet/us-core-narrative-status":{
-         "base":"ValueSet-us-core-narrative-status.html",
-         "source":"valueset-us-core-narrative-status.xml"
       },
       "StructureDefinition/us-core-organization":{
          "base":"StructureDefinition-us-core-organization.html",
@@ -142,10 +121,6 @@
          "base":"StructureDefinition-us-core-direct.html",
          "defns":"StructureDefinition-us-core-direct-definitions.html",
          "source":"structuredefinition-us-core-direct.xml"
-      },
-      "ValueSet/us-core-careteam-provider-roles":{
-         "base":"ValueSet-us-core-careteam-provider-roles.html",
-         "source":"valueset-us-core-careteam-provider-roles.xml"
       },
       "SearchParameter/us-core-race":{
          "base":"SearchParameter-us-core-race.html",

@@ -7,7 +7,7 @@ This page lists all the ValueSets, CodeSystems, and ConceptMaps defined as part 
 
 These value sets have been defined for this implementation guide.
 
-{% include list-simple-valuesets.xhtml %}
+{!% include list-simple-valuesets.xhtml %!}
 
 #### Code Systems
 
