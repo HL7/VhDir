@@ -66,12 +66,9 @@
    },
    "tool":"jekyll",
    "spreadsheets":[
-      "location-us-core-profile-spreadsheet.xml",
-      "organization-us-core-profile-spreadsheet.xml",
-      "practitioner-us-core-profile-spreadsheet.xml"
    ],
    "do-transforms":"false",
-   "canonicalBase":"http://hl7.org/fhir/validated-healthcare-directory",
+   "canonicalBase":"http://hl7.org/fhir/ig/vhdir",
    "valuesets":[
 
    ],
@@ -81,21 +78,14 @@
    ],
    "version":"3.0.1",
    "resources":{
-      "Bundle/uscore-mo3":{
-         "base":"Bundle-uscore-mo3.html",
-         "source":"uscore-mo3.xml"
-      },
       "Location/hl7east":{
          "base":"Location-hl7east.html",
          "source":"hl7east.xml"
       },
-      "StructureDefinition/us-core-careteam":{
-         "base":"StructureDefinition-us-core-careteam.html",
-         "defns":"StructureDefinition-us-core-careteam-definitions.html"
-      },
-      "StructureDefinition/us-core-location":{
-         "base":"StructureDefinition-us-core-location.html",
-         "defns":"StructureDefinition-us-core-location-definitions.html"
+      "StructureDefinition/vhdir-org":{
+         "base":"StructureDefinition-vhdir-org.html",
+         "defns":"StructureDefinition-vhdir-org-definitions.html",
+         "source":"vhdir-org.structuredefinition.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
@@ -109,23 +99,6 @@
          "base":"Practitioner-practitioner-1.html",
          "source":"practitioner-1.xml"
       },
-      "StructureDefinition/us-core-organization":{
-         "base":"StructureDefinition-us-core-organization.html",
-         "defns":"StructureDefinition-us-core-organization-definitions.html"
-      },
-      "StructureDefinition/us-core-practitioner":{
-         "base":"StructureDefinition-us-core-practitioner.html",
-         "defns":"StructureDefinition-us-core-practitioner-definitions.html"
-      },
-      "StructureDefinition/us-core-direct":{
-         "base":"StructureDefinition-us-core-direct.html",
-         "defns":"StructureDefinition-us-core-direct-definitions.html",
-         "source":"structuredefinition-us-core-direct.xml"
-      },
-      "SearchParameter/us-core-race":{
-         "base":"SearchParameter-us-core-race.html",
-         "source":"searchparameter-us-core-race.xml"
-      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"
@@ -133,10 +106,6 @@
       "Bundle/uscore-ms3":{
          "base":"Bundle-uscore-ms3.html",
          "source":"uscore-ms3.xml"
-      },
-      "CareTeam/example":{
-         "base":"CareTeam-example.html",
-         "source":"careteam-example.xml"
       },
       "Organization/acme-lab":{
          "base":"Organization-acme-lab.html",

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="vhdir-org" />
+  <meta>
+    <lastUpdated value="2017-09-04T13:59:25.383+10:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-org" />
+  <name value="vhdir-org" />
+  <status value="draft" />
+  <date value="2017-09-01T06:26:52.043+10:00" />
+  <publisher value="HL7 International" />
+  <description value="Defines the basic constraints and extensions on the Organization resource for use in a Validated Healthcare Directory" />
+  <copyright value="HL7 International" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="hpd" />
+    <name value="IHE HPD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <mapping>
+        <identity value="hpd" />
+        <map value="HPDProvider" />
+      </mapping>
+    </element>
+    <element id="Organization.id">
+      <path value="Organization.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Organization.implicitRules">
+      <path value="Organization.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Organization.language">
+      <path value="Organization.language" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contained">
+      <path value="Organization.contained" />
+      <max value="0" />
+    </element>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <label value="status" />
+      <min value="1" />
+      <mapping>
+        <identity value="hpd" />
+        <map value="hpdProviderStatus" />
+      </mapping>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.alias.extension">
+      <path value="Organization.alias.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.alias.extension:alias-type">
+      <path value="Organization.alias.extension" />
+      <sliceName value="alias-type" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type" />
+      </type>
+    </element>
+    <element id="Organization.alias.extension:alias-period">
+      <path value="Organization.alias.extension" />
+      <sliceName value="alias-period" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />
+      </type>
+    </element>
+    <element id="Organization.address.extension">
+      <path value="Organization.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.address.extension:geolocation">
+      <path value="Organization.address.extension" />
+      <sliceName value="geolocation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

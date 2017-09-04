@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="org-alias-period" />
+  <meta>
+    <lastUpdated value="2017-09-04T12:16:46.254+10:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />
+  <name value="org-alias-period" />
+  <status value="draft" />
+  <date value="2017-09-01T06:36:02.345+10:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Organization.alias" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />
+    </element>
+    <element id="Extension.value[x]:valuePeriod">
+      <path value="Extension.valuePeriod" />
+      <sliceName value="valuePeriod" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
