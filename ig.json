@@ -103,10 +103,6 @@
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"
       },
-      "Bundle/uscore-ms3":{
-         "base":"Bundle-uscore-ms3.html",
-         "source":"uscore-ms3.xml"
-      },
       "Organization/acme-lab":{
          "base":"Organization-acme-lab.html",
          "source":"acme-lab.xml"
