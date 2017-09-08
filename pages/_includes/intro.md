@@ -8,7 +8,7 @@
 The Validated Healthcare Directory Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing healthcare directory data.
 Under the guidance of HL7 International, the Patient Administration workgroup, and the HL7 US Realm Steering Committee, the content intends to cover both international needs, along with a tightly bound set, tailored to meet the needs specific to the US Realm.
 
-These requirements are being developed, ... [Office of the National Coordinator for Health Information Technology (ONC)] sponsored [Data Access Framework] (DAF) project. For more information on how DAF became Validated Healthcare Directory see the [Validated Healthcare Directory change notes](uscore-change-notes.html).  
+These requirements are being developed, in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) sponsored [Healthcare Directory Project] (HcDir) project. For more information on how DAF became Validated Healthcare Directory see the [Validated Healthcare Directory change notes](uscore-change-notes.html).  
 
 ## Validated Healthcare Directory Actors
 
