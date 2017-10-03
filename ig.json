@@ -82,12 +82,17 @@
          "base":"Location-hl7east.html",
          "source":"hl7east.xml"
       },
-      "StructureDefinition/vhdir-organization":{
-         "base":"StructureDefinition-vhdir-organization.html",
-         "defns":"StructureDefinition-vhdir-organiztion-definitions.html",
-         "source":"vhdir-organization.structuredefinition.xml"
+      "StructureDefinition/vhdir-network":{
+         "base":"StructureDefinition-vhdir-network.html",
+         "defns":"StructureDefinition-vhdir-network-definitions.html",
+         "source":"vhdir-network.structuredefinition.xml"
       },
-      "StructureDefinition/vhdir-practitioner":{
+      "StructureDefinition/vhdir-organization":{
+        "base":"StructureDefinition-vhdir-organization.html",
+        "defns":"StructureDefinition-vhdir-organiztion-definitions.html",
+        "source":"vhdir-organization.structuredefinition.xml"
+     },
+     "StructureDefinition/vhdir-practitioner":{
         "base":"StructureDefinition-vhdir-practitioner.html",
         "defns":"StructureDefinition-vhdir-practitioner-definitions.html",
         "source":"vhdir-practitioner.structuredefinition.xml"
