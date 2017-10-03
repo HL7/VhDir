@@ -15,29 +15,10 @@ These files should be the first choice whenever generating any implementation ar
 
 **Schematrons** are also available and listed below:
 
-- [us-core-allergyintolerance](us-core-allergyintolerance.sch)
-- [us-core-birthsex](us-core-birthsex.sch)
-- [us-core-careplan](us-core-careplan.sch)
-- [us-core-careteam](us-core-careteam.sch)
-- [us-core-condition](us-core-condition.sch)
-- [us-core-device](us-core-device.sch)
-- [us-core-diagnosticreport](us-core-diagnosticreport.sch)
-- [us-core-direct](us-core-direct.sch)
-- [us-core-ethnicity](us-core-ethnicity.sch)
-- [us-core-goal](us-core-goal.sch)
-- [us-core-immunization](us-core-immunization.sch)
-- [us-core-location](us-core-location.sch)
-- [us-core-medication](us-core-medication.sch)
-- [us-core-medicationrequest](us-core-medicationrequest.sch)
-- [us-core-medicationstatement](us-core-medicationstatement.sch)
-- [us-core-observationresults](us-core-observationresults.sch)
-- [us-core-organization](us-core-organization.sch)
-- [us-core-patient](us-core-patient.sch)
-- [us-core-practitioner](us-core-practitioner.sch)
-- [us-core-procedure](us-core-procedure.sch)
-- [us-core-race](us-core-race.sch)
-- [us-core-smokingstatus](us-core-smokingstatus.sch)
-- [vitalsigns](http://hl7.org/fhir/STU3/vitalsigns.sch)
+- [vhdir-location](vhdir-location.sch)
+- [vhdir-organization](vhdir-organization.sch)
+- [vhdir-practitioner](vhdir-practitioner.sch)
+- [vhdir-practitionerrole](vhdir-practitionerrole.sch)
 
 
 **Examples:** all the examples that are used in this Implementation Guide available for download:

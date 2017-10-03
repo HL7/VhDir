@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-org" />
+  <id value="vhdir-organization" />
   <meta>
     <lastUpdated value="2017-09-04T13:59:25.383+10:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-org" />
-  <name value="vhdir-org" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+  <name value="vhdir-organization" />
   <status value="draft" />
   <date value="2017-09-01T06:26:52.043+10:00" />
   <publisher value="HL7 International" />

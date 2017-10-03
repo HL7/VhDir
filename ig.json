@@ -82,12 +82,47 @@
          "base":"Location-hl7east.html",
          "source":"hl7east.xml"
       },
-      "StructureDefinition/vhdir-org":{
-         "base":"StructureDefinition-vhdir-org.html",
-         "defns":"StructureDefinition-vhdir-org-definitions.html",
-         "source":"vhdir-org.structuredefinition.xml"
+      "StructureDefinition/vhdir-organization":{
+         "base":"StructureDefinition-vhdir-organization.html",
+         "defns":"StructureDefinition-vhdir-organiztion-definitions.html",
+         "source":"vhdir-organization.structuredefinition.xml"
       },
-      "CapabilityStatement/client":{
+      "StructureDefinition/vhdir-practitioner":{
+        "base":"StructureDefinition-vhdir-practitioner.html",
+        "defns":"StructureDefinition-vhdir-practitioner-definitions.html",
+        "source":"vhdir-practitioner.structuredefinition.xml"
+     },
+     "StructureDefinition/vhdir-practitionerrole":{
+        "base":"StructureDefinition-vhdir-practitionerrole.html",
+        "defns":"StructureDefinition-vhdir-practitionerrole-definitions.html",
+        "source":"vhdir-practitionerrole.structuredefinition.xml"
+     },
+     "StructureDefinition/vhdir-location":{
+        "base":"StructureDefinition-vhdir-location.html",
+        "defns":"StructureDefinition-vhdir-location-definitions.html",
+        "source":"vhdir-location.structuredefinition.xml"
+     },
+     "StructureDefinition/vhdir-endpoint":{
+        "base":"StructureDefinition-vhdir-endpoint.html",
+        "defns":"StructureDefinition-vhdir-endpoint-definitions.html",
+        "source":"vhdir-endpoint.structuredefinition.xml"
+     },
+     "StructureDefinition/org-alias-period":{
+        "base":"StructureDefinition-org-alias-period.html",
+        "defns":"StructureDefinition-org-alias-period-definitions.html",
+        "source":"org-alias-period.structuredefinition.xml"
+     },
+     "StructureDefinition/org-alias-type":{
+        "base":"StructureDefinition-org-alias-type.html",
+        "defns":"StructureDefinition-org-alias-type-definitions.html",
+        "source":"org-alias-type.structuredefinition.xml"
+     },
+     "StructureDefinition/org-description":{
+        "base":"StructureDefinition-org-description.html",
+        "defns":"StructureDefinition-org-description-definitions.html",
+        "source":"org-description.structuredefinition.xml"
+     },
+     "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
       },

@@ -1,78 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Hidden IG for de facto IG publishing-->
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig"/>
-  <url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig"/>
-  <name value="Validated Healthcare Directory"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <publisher value="HL7 Patient Administration Committee"/>
+  <id value="ig" />
+  <meta>
+    <lastUpdated value="2017-09-06T09:37:27.622+10:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig" />
+  <name value="Validated Healthcare Directory" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-09-06T09:31:48.7824431+10:00" />
+  <publisher value="HL7 Patient Administration Committee" />
   <package>
-    <name value="base"/>
+    <name value="base" />
     <resource>
-      <example value="false"/>
+      <example value="false" />
+      <name value="Organization" />
       <sourceReference>
-        <reference value="StructureDefinition/vhdir-org.structuredefinition"/>
+        <reference value="StructureDefinition/vhdir-organization" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="false"/>
+      <example value="false" />
+      <name value="Organization alias period" />
       <sourceReference>
-        <reference value="StructureDefinition/org-alias-period.structuredefinition"/>
+        <reference value="StructureDefinition/org-alias-period" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="false"/>
+      <example value="false" />
+      <name value="organization alias type" />
       <sourceReference>
-        <reference value="StructureDefinition/org-alias-type.structuredefinition"/>
+        <reference value="StructureDefinition/org-alias-type" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="false"/>
+      <example value="false" />
+      <name value="organization description" />
       <sourceReference>
-        <reference value="StructureDefinition/org-description.structuredefinition"/>
+        <reference value="StructureDefinition/org-description" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="true"/>
+      <example value="false" />
+      <name value="Practitioner" />
       <sourceReference>
-        <reference value="Practitioner/practitioner-2"/>
+        <reference value="StructureDefinition/vhdir-practitioner" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="true"/>
+      <example value="false" />
+      <name value="PractitionerRole" />
       <sourceReference>
-        <reference value="Practitioner/practitioner-1"/>
+        <reference value="StructureDefinition/vhdir-practitionerrole" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="true"/>
+      <example value="false" />
+      <name value="Location" />
       <sourceReference>
-        <reference value="Location/hl7east"/>
+        <reference value="StructureDefinition/vhdir-location" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="true"/>
+      <example value="false" />
+      <name value="Endpoint" />
       <sourceReference>
-        <reference value="Organization/acme-lab"/>
+        <reference value="StructureDefinition/vhdir-endpoint" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="false"/>
+      <example value="true" />
       <sourceReference>
-        <reference value="CapabilityStatement/server"/>
+        <reference value="Practitioner/practitioner-2" />
       </sourceReference>
     </resource>
     <resource>
-      <example value="false"/>
+      <example value="true" />
       <sourceReference>
-        <reference value="CapabilityStatement/client"/>
+        <reference value="Practitioner/practitioner-1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Location/hl7east" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Organization/acme-lab" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="CapabilityStatement/server" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="CapabilityStatement/client" />
       </sourceReference>
     </resource>
   </package>
   <page>
-    <source value="index.html"/>
-    <title value="Validated Healthcare Directory Homepage"/>
-    <kind value="page"/>
+    <source value="index.html" />
+    <title value="Validated Healthcare Directory Homepage" />
+    <kind value="page" />
   </page>
 </ImplementationGuide>

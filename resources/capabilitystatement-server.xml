@@ -32,7 +32,7 @@
 	<format value="xml"/>
 	<format value="json"/>
 	<profile>
-		<reference value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-org"/>
+		<reference value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 		<display value="VhDir Organization"/>
 	</profile>
 	<rest>
