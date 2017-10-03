@@ -49,6 +49,13 @@
     </resource>
     <resource>
       <example value="false" />
+      <name value="network reference" />
+      <sourceReference>
+        <reference value="StructureDefinition/network-reference" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
       <name value="Practitioner" />
       <sourceReference>
         <reference value="StructureDefinition/vhdir-practitioner" />

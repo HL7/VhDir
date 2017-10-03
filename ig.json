@@ -127,7 +127,12 @@
         "defns":"StructureDefinition-org-description-definitions.html",
         "source":"org-description.structuredefinition.xml"
      },
-     "CapabilityStatement/client":{
+     "StructureDefinition/network-reference":{
+      "base":"StructureDefinition-network-reference.html",
+      "defns":"StructureDefinition-network-reference-definitions.html",
+      "source":"network-reference.structuredefinition.xml"
+   },
+   "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
       },
