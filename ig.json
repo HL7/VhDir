@@ -112,6 +112,11 @@
         "defns":"StructureDefinition-vhdir-endpoint-definitions.html",
         "source":"vhdir-endpoint.structuredefinition.xml"
      },
+     "StructureDefinition/vhdir-healthcareservice":{
+      "base":"StructureDefinition-vhdir-healthcareservice.html",
+      "defns":"StructureDefinition-vhdir-healthcareservice-definitions.html",
+      "source":"vhdir-healthcareservice.structuredefinition.xml"
+   },
      "StructureDefinition/org-alias-period":{
         "base":"StructureDefinition-org-alias-period.html",
         "defns":"StructureDefinition-org-alias-period-definitions.html",
@@ -132,7 +137,7 @@
       "defns":"StructureDefinition-network-reference-definitions.html",
       "source":"network-reference.structuredefinition.xml"
    },
-   "CapabilityStatement/client":{
+      "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
       },
