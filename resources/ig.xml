@@ -83,6 +83,14 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="Endpoint" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-healthcareservice" />
+      </sourceReference>
+    </resource>
+    
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />
