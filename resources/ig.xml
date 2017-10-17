@@ -84,12 +84,11 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="Endpoint" />
+      <name value="HealthcareService" />
       <sourceReference>
         <reference value="StructureDefinition/vhdir-healthcareservice" />
       </sourceReference>
     </resource>
-    
     <resource>
       <example value="true" />
       <sourceReference>
