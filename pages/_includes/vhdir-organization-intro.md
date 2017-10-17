@@ -17,8 +17,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  An identifier
 1.  A status of the organization
 1.  A name
-1.  A list of contact information
-1.  Endpoint information
+1.  A type
+1.  A list of contact information (TBD)
 
 
 **Profile specific implementation guidance:**
@@ -27,7 +27,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-[Organization-acme-lab](Organization-acme-lab.html)
+[Organization Example - Hospital](org-example-hospital.html)
 
 [Organization]: http://hl7.org/fhir/STU3/organization.html
 [Conformance requirements for the US Core Server]: CapabilityStatement-server.html

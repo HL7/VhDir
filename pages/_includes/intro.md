@@ -8,14 +8,14 @@
 The Validated Healthcare Directory Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing healthcare directory data.
 Under the guidance of HL7 International, the Patient Administration workgroup, and the HL7 US Realm Steering Committee, the content intends to cover both international needs, along with a tightly bound set, tailored to meet the needs specific to the US Realm.
 
-These requirements are being developed, in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) sponsored [Healthcare Directory Project] (HcDir) project. For more information on how DAF became Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).  
+These requirements are being developed, in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) sponsored [Healthcare Directory Project] (HcDir) project. For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).  
 
 ## Validated Healthcare Directory Actors
 
 The following actors are part of the Validated Healthcare Directory IG:
 
-* Validated Healthcare Directory Requestor: An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction.
-* Validated Healthcare Directory Responder: A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction.
+* Validated Healthcare Directory Requestor: An application that initiates a data access request to retrieve directory data. This can be thought of as the client in a client-server interaction.
+* Validated Healthcare Directory Responder: A product that responds to the data access request providing directory data. This can be thought of as the server in a client-server interaction.
 
 
 ## Validated Healthcare Directory Profiles
@@ -26,8 +26,7 @@ The list of Validated Healthcare Directory Profiles is shown below.  Each profil
 
 *Note on Searches based on a date or date range:*
 
-- Allergies, Immunizations, Medications, Problems and Health Concerns, UDI, Smoking Status do not require a date range search since a system should return all relevant resources.
-- Vital Signs, Laboratory Results, Goals, Procedures, and Assessment and Plan of Treatment include date range search requirements in the Quick Start section on the profile page.
+- TBD
 
 ## Validated Healthcare Directory Conformance Requirements
 
