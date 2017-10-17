@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-17T10:24:36.141-04:00" />
+    <lastUpdated value="2017-10-17T10:56:18.332-04:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-HealthcareService" />
   <name value="vhdir-HealthcareService" />
@@ -13,4 +13,10 @@
   <type value="HealthcareService" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
+  <differential>
+    <element id="HealthcareService.photo">
+      <path value="HealthcareService.photo" />
+      <max value="0" />
+    </element>
+  </differential>
 </StructureDefinition>
