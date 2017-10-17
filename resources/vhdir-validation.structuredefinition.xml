@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-validation" />
   <meta>
-    <lastUpdated value="2017-10-17T15:25:58.144-04:00" />
+    <lastUpdated value="2017-10-17T15:50:09.221-04:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation" />
   <name value="vhdir-validation" />
@@ -14,4 +14,10 @@
   <type value="Basic" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Basic.author">
+      <path value="Basic.author" />
+      <max value="0" />
+    </element>
+  </differential>
 </StructureDefinition>
