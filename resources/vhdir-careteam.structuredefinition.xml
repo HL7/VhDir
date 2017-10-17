@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="vhdir-careteam" />
+  <meta>
+    <lastUpdated value="2017-10-17T14:23:15.838-04:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam" />
+  <name value="vhdir-careteam" />
+  <status value="draft" />
+  <date value="2017-10-17T14:22:04.374-04:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CareTeam" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CareTeam.subject">
+      <path value="CareTeam.subject" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

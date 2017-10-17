@@ -14,6 +14,27 @@
     <name value="base" />
     <resource>
       <example value="false" />
+      <name value="Care Team" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-careteam" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="Validation" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-validation" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="Plan" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-plan" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
       <name value="Network" />
       <sourceReference>
         <reference value="StructureDefinition/vhdir-network" />
