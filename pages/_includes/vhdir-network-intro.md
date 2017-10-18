@@ -1,10 +1,12 @@
-This profile sets minimum expectations for the [Network] resource to searching for and fetching a Newtork associated with a provider or organization. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with a healthcare provider network. A network is an aggregation of healthcare organizations and providers that have contracted with a payer to deliver a set of services across a geography.
+
+This profile identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the network resource when using this profile.
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US Core-Organization profile:
+The following are example usage scenarios for the vhdir-network profile:
 
--   Query by organization name or NPI
+-   TBD
 
 
 ##### Mandatory Data Elements and Terminology
@@ -14,11 +16,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each Network must have:**
 
-1.  An identifier
-1.  A status of the organization
-1.  A name
-1.  A list of contact information
-1.  Endpoint information
+1.  TBD
+1.  TBD
+
 
 
 **Profile specific implementation guidance:**

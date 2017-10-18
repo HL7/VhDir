@@ -1,10 +1,12 @@
-This profile sets minimum expectations for the [Organization] resource to searching for and fetching a Organization associated with a patient or provider. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with the role of a provider for an organization at a location. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the [PractitionerRole] resource when using this profile.
+
+In the context of healthcare directories, a practitioner role may include references to endpoints that describe channels of communication to the provider in a role.
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US Core-Organization profile:
+The following are example usage scenarios for the vhdir-PractitionerRole profile:
 
--   Query by organization name or NPI
+-   TBD
 
 
 ##### Mandatory Data Elements and Terminology
@@ -12,13 +14,11 @@ The following are example usage scenarios for the US Core-Organization profile:
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
-**Each Organization must have:**
+**Each PractitionerRole must have:**
 
-1.  An identifier
-1.  A status of the organization
-1.  A name
-1.  A list of contact information
-1.  Endpoint information
+1.  TBD
+1.  TBD
+
 
 
 **Profile specific implementation guidance:**

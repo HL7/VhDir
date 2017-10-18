@@ -1,10 +1,10 @@
-This profile sets minimum expectations for the [Organization] resource to searching for and fetching a Organization associated with a patient or provider. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with a location. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the location resource when using this profile.
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US Core-Organization profile:
+The following are example usage scenarios for the vhdir-location profile:
 
--   Query by organization name or NPI
+-   TBD
 
 
 ##### Mandatory Data Elements and Terminology
@@ -12,13 +12,11 @@ The following are example usage scenarios for the US Core-Organization profile:
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
-**Each Organization must have:**
+**Each Location must have:**
 
-1.  An identifier
-1.  A status of the organization
-1.  A name
-1.  A list of contact information
-1.  Endpoint information
+1.  TBD
+1.  TBD
+
 
 
 **Profile specific implementation guidance:**

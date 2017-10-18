@@ -1,10 +1,10 @@
-This profile sets minimum expectations for the [HealthcareService] resource to searching for and fetching a Healthcare Service associated with a provider or an organization. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with a healthcare service. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the HealthcareService resource when using this profile.
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US Core-Organization profile:
+The following are example usage scenarios for the vhdir-healthcareservice profile:
 
--   Query by TBD
+-   TBD
 
 
 ##### Mandatory Data Elements and Terminology
@@ -14,11 +14,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each HealthcareService must have:**
 
-1.  An identifier
-1.  A status of the organization
-1.  A name
-1.  A list of contact information
-1.  Endpoint information
+1.  TBD
+1.  TBD
+
 
 
 **Profile specific implementation guidance:**
