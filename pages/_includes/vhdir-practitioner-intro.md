@@ -12,7 +12,7 @@ The following are example usage scenarios for the vhdir-practitioner profile:
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
-**Each Organization must have:**
+**Each Practitioner must have:**
 
 1.  TBD
 1.  TBD
