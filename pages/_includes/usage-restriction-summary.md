@@ -1,11 +1,6 @@
-#### Complete Summary of the Mandatory Requirements
+####  Summary of the Mandatory Requirements and Key properties
 
-1.  At least one identifier in `Organization.identifier`
-    -   NPI preferred
-    -   Tax id is allowed
-    -   Local id is allowed in addition to 'authoritative' identifier
-1.  One boolean value in `Organization.active`
-1.  At least one name in `Organization.name`
-1.  At least one  contact in `Organization.telecom`
-1.  At least one address in `Organization.address`
-1.  At least one endpoint in `Organization.endpoint`
+1.  Restriction Status `restriction.status` (status)
+1.  Restriction type `restriction.type` (what) - is this a restrictive, or permissive restriction
+1.  Applies to `restriction.appliesTo` (who) - this is similar in type to a security label (its not a userID/group/prac reference)
+1.  Restriction reason `restriction.reason` (why)
