@@ -111,6 +111,13 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="UsageRestriction" />
+      <sourceReference>
+        <reference value="StructureDefinition/usage-restriction" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />
@@ -130,9 +137,14 @@
     </resource>
     <resource>
       <example value="true" />
+      <name value="acme lab" />
+      <description value="A simple Lab Organization" />
       <sourceReference>
         <reference value="Organization/acme-lab" />
       </sourceReference>
+      <exampleFor>
+        <reference value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+      </exampleFor>
     </resource>
     <resource>
       <example value="false" />

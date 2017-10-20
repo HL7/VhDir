@@ -31,6 +31,7 @@
       "StructureDefinition":{
          "template-defns":"sd-definitions.html",
          "template-mappings":"sd-mappings.html",
+         "template-examples":"sd-examples.html",
          "template-base":"sd.html"
       },
       "CodeSystem":{
@@ -132,6 +133,11 @@
       "defns":"StructureDefinition-vhdir-healthcareservice-definitions.html",
       "source":"vhdir-healthcareservice.structuredefinition.xml"
    },
+     "StructureDefinition/usage-restriction":{
+      "base":"StructureDefinition-usage-restriction.html",
+      "defns":"StructureDefinition-usage-restriction-definitions.html",
+      "source":"usage-restriction.structuredefinition.xml"
+   },
      "StructureDefinition/org-alias-period":{
         "base":"StructureDefinition-org-alias-period.html",
         "defns":"StructureDefinition-org-alias-period-definitions.html",
@@ -178,7 +184,7 @@
    ],
    "title":"Validated Healthcare Directory",
    "extraTemplates":[
-      "mappings"
+      "mappings", "examples"
    ],
    "special-urls":[
       "urn:oid:2.16.840.1.113883.6.238"
