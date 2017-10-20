@@ -25,9 +25,3 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 - This profile may be referenced by different capability statements, such as the [Conformance requirements for the US Core Server], or a provider directory capability statement.
 
-#### Examples
-
-[Organization-acme-lab](Organization-acme-lab.html)
-
-[Organization]: http://hl7.org/fhir/STU3/organization.html
-[Conformance requirements for the US Core Server]: CapabilityStatement-server.html
