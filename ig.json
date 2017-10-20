@@ -177,6 +177,10 @@
       "Organization/acme-lab":{
          "base":"Organization-acme-lab.html",
          "source":"acme-lab.xml"
+      },
+      "Organization/acme-network":{
+         "base":"Organization-acme-network.html",
+         "source":"acme-network.xml"
       }
    },
    "extensions":[
