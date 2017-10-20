@@ -38,11 +38,8 @@ In the context of US Core, *Must Support* on any data element SHALL be interpret
 * NOTE: The above definition of Supported is derived from HL7v2 concept "Required but may be empty - RE" described in HL7v2 V28_CH02B_Conformance.doc.
 * NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing US Core requirements.
 
-### Referencing US Core profiles
 
-Many of the profiles in this guide [reference](http://hl7.org/fhir/STU3/references.html) other FHIR resources that are also US Core profiles.  This is defined in the formal profile definitions.  For example, [US Core Careteam](StructureDefinition-us-core-careteam.html#profile) references US Core Patient.  For any other references not formally defined in a US Core profiles, the referenced resource SHOULD be a US Core profile if a US Core profile exists for the resource type.  For example, although `Condition.asserter` is not constrained by this guide, the reference to Patient or Practitioner should be a valid US Core Patient or US Core Practitioner.
-
-### Using Codes in US Core profiles
+### Using Codes in VhDir profiles
 
 #### Extensible binding for CodeableConcept Datatype
 {:.no_toc}
@@ -150,41 +147,6 @@ Example of translation of CVX vaccine code to NDC code.
         ]
       },
 
-####  Using UCUM codes in the [Quantity] datatype
-{:.no_toc}
-
-Both the [Vital Signs Profile] and [US Core Result Observation Profile] bind the `valueQuantity` datatypes to the [UCUM] code system.  A FHIR [UCUM Codes value set] that defines all UCUM codes is in the FHIR specification. This guidance specifies how to represent the Quantity datatype when the correct UCUM units are missing or the units are missing altogether which will likely occur in the real world.  
-
-**UCUM code provided**
-
-```
- "valueQuantity": {
-    "value": 26.0,
-    "unit": "g/mL",
-   "system": "http://unitsofmeasure.org",
-   "code": "g/mL"
-  }
-```
-
-**free text units only**:
-- If UCUM units are not available then represent units in the `unit` element.
-
-```
- "valueQuantity": {
-    "value": 26.0,
-    "unit": "RR",
-     }
-```
-
-**no units**
-
-```
- "valueQuantity": {
-    "value": 26.0
- }
-```
-
-
 ### Read(Fetch) resource notation:
 
 Interactions on profile pages are defined with the syntax:
@@ -258,7 +220,7 @@ In order to manage the number of search results returned, the server may choose 
 [FHIR Conformance Rules]: http://hl7.org/fhir/STU3/conformance-rules.html
 [Quantity]: http://hl7.org/fhir/STU3/datatypes.html#quantity
 [UCUM]: http://unitsofmeasure.org
-[US Core Server Capability Statement]: CapabilityStatement-server.html
+[VhDir Server Capability Statement]: CapabilityStatement-server.html
 [HL7 U.S. Data Access Framework (DAF)]: http://wiki.siframework.org/Data+Access+Framework+Homepage
 [UCUM Codes value set]: http://hl7.org/fhir/STU3/valueset-ucum-units.html
 [2015 Edition Common Clinical Data Set (CCDS)]: https://www.healthit.gov/sites/default/files/2015Ed_CCG_CCDS.pdf

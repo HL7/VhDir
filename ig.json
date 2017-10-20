@@ -105,7 +105,7 @@
       },
     "StructureDefinition/vhdir-organization":{
         "base":"StructureDefinition-vhdir-organization.html",
-        "defns":"StructureDefinition-vhdir-organiztion-definitions.html",
+        "defns":"StructureDefinition-vhdir-organization-definitions.html",
         "source":"vhdir-organization.structuredefinition.xml"
      },
      "StructureDefinition/vhdir-practitioner":{
