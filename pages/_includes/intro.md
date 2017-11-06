@@ -3,6 +3,14 @@
 
 {% include publish-box.html %}
 
+## Task list/status - Remove before publishing
+
+| Date    | Comment/task                                                                              | Status      |
+|---------|-------------------------------------------------------------------------------------------|-------------|  
+| 11/3/17 | We need to discuss the level of detail we will have here. Dan will be adding              |             |
+|         | general information                                                                       | In progress |
+| mm/dd/yy| Next comment                                                                              | TBD         |
+
 ## Introduction
 
 The Validated Healthcare Directory Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing healthcare directory data.

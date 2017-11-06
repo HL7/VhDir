@@ -1,8 +1,8 @@
 
-## Definitions, Interpretations and Requirements common to all US Core actors
+## Definitions, Interpretations and Requirements common to all Validated Healthcare Directory  actors
 {:.no_toc}
 
-This section outlines important definitions and interpretations used in the US Core IG.
+This section outlines important definitions and interpretations used in the Validated Healthcare Directory IG.
 The conformance verbs used are defined in [FHIR Conformance Rules].
 
 ---
@@ -17,26 +17,34 @@ The conformance verbs used are defined in [FHIR Conformance Rules].
 
 <!-- end TOC -->
 
-### 2015 Edition Common Clinical Data Set
+| Date    | Comment/task                                                                              | Status      |
+|---------|-------------------------------------------------------------------------------------------|-------------|  
+| 11/6/17 | We need to discuss the level of detail we will have here. Dan will be adding              |             |
+|         | general information                                                                       | In progress |
+| mm/dd/yy| Next comment                                                                              | TBD         |
 
-The US Core Profiles are intended to meet the 2015 Edition certification criterion for Patient Selection 170.315(g)(7), and Application Access – Data Category Request 170.315(g)(8). They were created for each of the [2015 Edition Common Clinical Data Set (CCDS)].  The Location, Organization, and Practitioner Profiles are not called out specifically in the certification criteria but are included because they are directly referenced by other profiles.  Where applicable the US Core Profiles are based on the HL7 U.S. [Data Access Framework (DAF)] FHIR DSTU2 Implementation Guide. However, the requirements per resource are a subset of those of the DAF implementation guide.
+###  Validated Healthcare Directory 
+
+The Validated Healthcare Directory is intended to provde an specification for the sharing of data from a validated dataset of data that supports a healthcare system and is maintained at a national level. The data is shared with organizations that in turn implement directories to satisfy their own, local requirements. 
+
+
 
 ### Must Support
-In the context of US Core, *Must Support* on any data element SHALL be interpreted as follows:
+In the context of Validated Healthcare Directory , *Must Support* on any data element SHALL be interpreted as follows:
 
 
-* US Core Responders SHALL be capable of including the data element as part of the query results as specified by the [US Core Server Capability Statement].
-* US Core Requestors SHALL be capable of processing resource instances containing the data elements without generating an error an causing the application to fail. In other words US Core Requestors SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
-* In situations where information on a particular data element is not present and the reason for absence is unknown, US Core Responders SHALL NOT include the data elements in the resource instance returned as part of the query results.
-* When querying US Core Responders, US Core Requestors SHALL interpret missing data elements within resource instances as data not present in the US Core Responder's systems.
-* In situations where information on a particular data element is missing and the US Core Responder knows the precise reason for the absence of data, US Core Responders SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
-* US Core Requestors SHALL be able to process resource instances containing data elements asserting missing information.
+* Validated Healthcare Directory Responders SHALL be capable of including the data element as part of the query results as specified by the [Validated Healthcare Directory Capability Statement].
+* Validated Healthcare Directory Requestors SHALL be capable of processing resource instances containing the data elements without generating an error an causing the application to fail. In other words Validated Healthcare Directory Requestors SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
+* In situations where information on a particular data element is not present and the reason for absence is unknown, Validated Healthcare Directory Responders SHALL NOT include the data elements in the resource instance returned as part of the query results.
+* When querying Validated Healthcare Directory Responders, Validated Healthcare Directory Requestors SHALL interpret missing data elements within resource instances as data not present in the Validated Healthcare Directory Responder's systems.
+* In situations where information on a particular data element is missing and the Validated Healthcare Directory Responder knows the precise reason for the absence of data, Validated Healthcare Directory  Responders SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
+* Validated Healthcare Directory Requestors SHALL be able to process resource instances containing data elements asserting missing information.
 
 
-* NOTE: Typically *US Core Responder* Actor = Server and *US Core Requestor Actor* = Client
-* NOTE: US Core Responders who do not have the capability to store or return a data element tagged as Supported in US Core profiles can still claim conformance to the US Core profiles per the US Core conformance resources.
+* NOTE: Typically *Validated Healthcare Directory Responder* Actor = Server and *Validated Healthcare Directory Requestor Actor* = Client
+* NOTE: Validated Healthcare Directory Responders who do not have the capability to store or return a data element tagged as Supported in Validated Healthcare Directory profiles can still claim conformance to the Validated Healthcare Directory profiles per the Validated Healthcare Directory conformance resources.
 * NOTE: The above definition of Supported is derived from HL7v2 concept "Required but may be empty - RE" described in HL7v2 V28_CH02B_Conformance.doc.
-* NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing US Core requirements.
+* NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing Validated Healthcare Directory  requirements.
 
 
 ### Using Codes in VhDir profiles
@@ -50,6 +58,8 @@ Extensible binding to a value set definition for this IG means that if the data 
 {:.no_toc}
 
 For this IG, we have defined the Extensible + Max-ValueSet binding to allow for either a code from the defined value set or text if the code is not available.  (for example, legacy data). This means, unlike a FHIR extensible binding, alternate code(s) are not permitted and a text value SHALL be supplied if the code is not available.  However, multiple codings (translations) are allowed as is discussed below.
+
+* * Review this example - should we retain, replace, or delete? 
 
 Example: Immunization resource vaccineCode's CVX coding - the source only has the text "4-way Influenza" and no CVX code.
 
@@ -74,6 +84,8 @@ Required binding to a value set definition for this IG means that one of the cod
 
 Note that when a query uses a status parameter, a status will be ambiguous.
 
+* * Review this example - should we retain, replace, or delete? 
+
 Example: AllergyIntolerance resource with a status that is text only or cannot be mapped to the status value set.
 
      \{
@@ -96,6 +108,8 @@ Required binding to a value set definition means that one of the codes from the 
 {:.no_toc}
 
 Alternate codes may be provided in addition to the standard codes defined in required or extensible value sets. The alternate codes are called “translations”. These translations may be equivalent to or narrower in meaning to the standard concept code.
+
+* * Review this example - should we retain, replace, or delete? 
 
 Example of multiple translation for Body Weight concept code.
 
@@ -171,7 +185,7 @@ In the simplest case, a search is executed by performing a GET operation in the 
 
 For this RESTful search ([FHIR Search]), the parameters are a series of name=\[value\] pairs encoded in the URL. The search parameter names are defined for each resource. For example, the Observation resource the name “code” for search on the LOINC code. See [FHIR Search] for more information about searching in REST, messaging, and services.
 
-### Syntax for searches limited by patient
+### Syntax for searches limited by patient (To be revised)
 
 There are several potential ways to search for resources associated with a specific patient depending on the context and implementation. These searches result in the same outcome.:
 
@@ -195,11 +209,11 @@ There are several potential ways to search for resources associated with a speci
 
 ### Across Platform Searches
 
-US Core servers are not required to resolve full URLs that are external to their environment.
+Validated Healthcare Directory servers are not required to resolve full URLs that are external to their environment.
 
-### Guidance on limiting the number of search results
+### Guidance on limiting the number of search results (to be revised)
 
-In order to manage the number of search results returned, the server may choose to return the results in a series of pages. The search result set contains the URLs that the client uses to request additional pages from the search set. For a simple RESTful search, the page links are contained in the returned bundle as links. See the [FHIR Paging] for more information.
+In order to manage the number of search results returned, the server may choose to return the results in a manner consistent with FHIR Bulk Data Access Standards. For a simple RESTful search, the page links are contained in the returned bundle as links. See the [FHIR Paging] for more information.
 
 ------------------------------------------------------------------------
 
@@ -224,19 +238,19 @@ In order to manage the number of search results returned, the server may choose 
 [HL7 U.S. Data Access Framework (DAF)]: http://wiki.siframework.org/Data+Access+Framework+Homepage
 [UCUM Codes value set]: http://hl7.org/fhir/STU3/valueset-ucum-units.html
 [2015 Edition Common Clinical Data Set (CCDS)]: https://www.healthit.gov/sites/default/files/2015Ed_CCG_CCDS.pdf
-[US Core Patient Profile]: StructureDefinition-us-core-patient.html
-[US Core Smoking Status Observation Profile]: StructureDefinition-us-core-smokingstatus.html
-[US Core Condition Profile]: StructureDefinition-us-core-condition.html
-[US Core Medication Profile]: StructureDefinition-us-core-medication.html
-[US Core Medication Statement Profile]: StructureDefinition-us-core-medicationstatement.html
-[US Core Medication Request Profile]: StructureDefinition-us-core-medicationrequest.html
-[US Core Allergies Profile]: StructureDefinition-us-core-allergyintolerance.html
-[US Core Diagnostic Report Profile]: StructureDefinition-us-core-diagnosticreport.html
-[US Core Procedure Profile]: StructureDefinition-us-core-procedure.html
-[US Core CareTeam Profile]: StructureDefinition-us-core-careteam.html
-[US Core Immunization Profile]: StructureDefinition-us-core-immunization.html
-[US Core Implanted Device Profile]: StructureDefinition-us-core-device.html
-[US Core CarePlan Profile]: StructureDefinition-us-core-careplan.html
-[US Core Goal Profile]: StructureDefinition-us-core-goal.html
-[US Core Result Observation Profile]: StructureDefinition-us-core-observationresults.html
+[Validated Healthcare Directory  Patient Profile]: StructureDefinition-us-core-patient.html
+[Validated Healthcare Directory  Smoking Status Observation Profile]: StructureDefinition-us-core-smokingstatus.html
+[Validated Healthcare Directory  Condition Profile]: StructureDefinition-us-core-condition.html
+[Validated Healthcare Directory  Medication Profile]: StructureDefinition-us-core-medication.html
+[Validated Healthcare Directory  Medication Statement Profile]: StructureDefinition-us-core-medicationstatement.html
+[Validated Healthcare Directory  Medication Request Profile]: StructureDefinition-us-core-medicationrequest.html
+[Validated Healthcare Directory  Allergies Profile]: StructureDefinition-us-core-allergyintolerance.html
+[Validated Healthcare Directory  Diagnostic Report Profile]: StructureDefinition-us-core-diagnosticreport.html
+[Validated Healthcare Directory  Procedure Profile]: StructureDefinition-us-core-procedure.html
+[Validated Healthcare Directory  CareTeam Profile]: StructureDefinition-us-core-careteam.html
+[Validated Healthcare Directory  Immunization Profile]: StructureDefinition-us-core-immunization.html
+[Validated Healthcare Directory  Implanted Device Profile]: StructureDefinition-us-core-device.html
+[Validated Healthcare Directory  CarePlan Profile]: StructureDefinition-us-core-careplan.html
+[Validated Healthcare Directory  Goal Profile]: StructureDefinition-us-core-goal.html
+[Validated Healthcare Directory  Result Observation Profile]: StructureDefinition-us-core-observationresults.html
 [Vital Signs Profile]: http://hl7.org/fhir/STU3/vitalsigns.html
