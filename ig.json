@@ -152,6 +152,11 @@
         "base":"StructureDefinition-org-description.html",
         "defns":"StructureDefinition-org-description-definitions.html",
         "source":"org-description.structuredefinition.xml"
+     },     
+     "StructureDefinition/endpoint-reference":{
+        "base":"StructureDefinition-endpoint-reference.html",
+        "defns":"StructureDefinition-endpoint-reference-definitions.html",
+        "source":"endpoint-reference.structuredefinition.xml"
      },
      "StructureDefinition/network-reference":{
       "base":"StructureDefinition-network-reference.html",

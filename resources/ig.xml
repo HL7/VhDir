@@ -63,6 +63,13 @@
     </resource>
     <resource>
       <example value="false" />
+      <name value="endpoint reference" />
+      <sourceReference>
+        <reference value="StructureDefinition/endpoint-reference" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
       <name value="organization description" />
       <sourceReference>
         <reference value="StructureDefinition/org-description" />
