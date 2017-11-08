@@ -24,7 +24,40 @@ The following actors are part of the Validated Healthcare Directory IG:
 
 * Validated Healthcare Directory Requestor: An application that initiates a data access request to retrieve directory data. This can be thought of as the client in a client-server interaction.
 * Validated Healthcare Directory Responder: A product that responds to the data access request providing directory data. This can be thought of as the server in a client-server interaction.
+ 
+## Validated Healthcare Directory Local Use Cases 
 
+For the purpose of elicitng the data needs for the Lalidated Data set a number of "local" use cases, with local actors, were documented. These local use cases includeg:
+
+#### A - Basic Information Exchange
+
+    A1 - Enable electronic exchange (e.g. discovery of electronic end points such as IHE/EHR endpoints, FHIR server URLs, Direct addresses)
+
+    A2 - Find an individual and/or organization (even if no electronic end point is available)
+
+#### B -Patient/Payer focused
+
+    B1 - Find provider accessibility information (specialty, office hours, languages spoken, taking patients)
+
+    B2 - Relationship between provider and insurance plan (insurance accepted) or plan and provider (network)
+
+#### C - Plan selection and enrollment
+
+    C1 - Claims management (adjudication, prior authorization, payment)
+
+    C2 - Care Delivery / Value Based Care 
+
+    C3 - Provider relationship with a patient (e.g. for alerts)
+
+    C4 - Provider relationship with other providers in context of a patient (e.g. care team communications)
+
+#### D - Other
+
+    D1 - Provider credentialing
+
+    D2 - Quality or regulatory reporting (e.g. aggregate data, plan networks)
+
+    D3 - Detection of fraud; inappropriate approval of services and/or payment for services
 
 ## Validated Healthcare Directory Profiles
 

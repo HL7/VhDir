@@ -47,6 +47,17 @@ In the context of Validated Healthcare Directory , *Must Support* on any data el
 * NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing Validated Healthcare Directory  requirements.
 
 
+### Images for illustrating relationships (from powerpoint v1.7)
+
+1. Is this format OK 
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Example 1 - Place Holder</strong></figcaption>
+  <img src="assets/images/Slide15.jpg" class="figure-img img-responsive img-rounded center-block" alt="Slide15.jpg" />
+</figure>
+
+
+
 ### Using Codes in VhDir profiles
 
 #### Extensible binding for CodeableConcept Datatype

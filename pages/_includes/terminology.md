@@ -20,7 +20,22 @@ See the [FHIR terminology section](http://hl7.org/fhir/STU3/terminologies-system
 <p>
 </p>
 
-**Externally Published code systems**
+**Externally Published code systems **
+
+|URI|Source|Comment|OID (for OID based Terminolgy Systems)|Used in
+|---|---|---|---|
+|`http://hl7.org/fhir/administrative-gender)`|[FHIR](https://www.hl7.org/fhir/valueset-administrative-gender.html)|*Administrative Gender*|2.16.840.1.113883.4.642.3.1|Pracitioner
+|`http://hl7.org/fhir/administrative-gender)`|[FHIR](https://www.hl7.org/fhir/valueset-administrative-gender.html)|*Qualification*|2.16.840.1.113883.4.642.3.1|Pracitioner
+
+
+**Externally Published code systems **
+
+|URI|Source|Comment|OID (for non-FHIR systems)
+|---|---|---|---|
+|`http://nucc.org/provider-taxonomy`|[NUCC](http://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57)|*NUCC Provider Taxonomy*|2.16.840.1.113883.6.101
+
+
+**Externally Published code systems - Old/Scrap - Remove or merge above if needed**
 
 |URI|Source|Comment|OID (for non-FHIR systems)
 |---|---|---|---|
