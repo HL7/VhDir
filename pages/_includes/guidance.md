@@ -49,21 +49,21 @@ In the context of Validated Healthcare Directory , *Must Support* on any data el
 
 ### Overview of Validated Healthcare Directory - Resource Relationships 
 
-#### Practioner Role 
+### Practioner Role 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Example 1 - In progressr</strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 1: Example 1 - In progress</strong></figcaption>
   <img src="assets/images/Diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
 </figure>
 
-#### Organization Role
+### Organization Role
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Example 2 - In progressr</strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 2: Example 2 - In progress</strong></figcaption>
   <img src="assets/images/Diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
 </figure>
 
-#### Network / Product Plan
+### Network / Product Plan
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Example 3 - In Progress</strong></figcaption>
