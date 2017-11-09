@@ -1,7 +1,12 @@
-## US Core Conformance Requirements
+## Validated Healthcare Directory Conformance Requirements
 {:.no_toc}
 
-This section outlines conformance requirements for the US Core Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual US Core profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US Core actors.
+|Date|Comment/Task|Status
+|---|---|---|---|
+|11/9/17|We need to discuss the level of detail we will have here. Some minor edits have been completed. 
+|mm/dd/yy|Next comment|TBD
+
+This section outlines conformance requirements for the Validated Healthcare Directory and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. 
 
 ---
 
@@ -16,7 +21,7 @@ This section outlines conformance requirements for the US Core Servers and Clien
 <!-- end TOC -->
 
 
-### Conformance requirements for the US Core Server
+### Conformance requirements for the Validated Healthcare Directory
 
 Source Resource: [XML](CapabilityStatement-server.xml.html)/[JSON](CapabilityStatement-server.json.html)
 
@@ -25,16 +30,16 @@ Source Resource: [XML](CapabilityStatement-server.xml.html)/[JSON](CapabilitySta
 1. Published: Draft
 1. Published by: Health Level Seven International US Realm Steering Committee
 
-The Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8).  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
+The Section describes the expected capabilities of the Validated Healthcare Directory actor which is responsible for providing responses to the queries submitted by the Validated Healthcare Directory Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Validated Healthcare Directory are defined. 
 
 #### Behavior
 
 Description:
 
-The US Core Server **SHALL**:
+The Validated Healthcare Directory **SHALL**: **NEED TO REVIEW/REVISE**
 
-1. Support the US Core Patient resource profile.
-1. Support at least one additional resource profile from the list of US Core Profiles.
+1. Support the Validated Healthcare Directory Patient resource profile.
+1. Support at least one additional resource profile from the list of Validated Healthcare Directory Profiles.
 1. Implement the RESTful behavior according to the FHIR specification.
 1. Return the following response classes:
    - (Status 200): successful operation
@@ -43,17 +48,17 @@ The US Core Server **SHALL**:
    - (Status 403): insufficient scope
    - (Status 404): unknown resource
    - (Status 410): deleted resource.
-1. Support *json* resource formats for all US Core interactions.
+1. Support *json* resource formats for all Validated Healthcare Directory interactions.
 1. Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.
 
-The US Core Server **SHOULD**:
+The Validated Healthcare Directory **SHOULD**:
 
-1. Support *xml* resource formats for all US Core interactions.
-1. Identify the US Core profiles supported as part of the FHIR `meta.profile` attribute for each instance.
+1. Support *xml* resource formats for all Validated Healthcare Directory interactions.
+1. Identify the Validated Healthcare Directory profiles supported as part of the FHIR `meta.profile` attribute for each instance.
 
 #### Security:
 
-US Core Servers **SHALL**:
+Validated Healthcare Directorys **SHALL**:
 
 1. Implement the [security requirements](security.html) documented in the this IG.
 1. A server has ensured that every API request includes a valid Authorization token, supplied via: `Authorization: Bearer {server-specific-token-here}`
@@ -64,7 +69,7 @@ US Core Servers **SHALL**:
 1. All servers **SHALL** make available the [read](http://hl7.org/fhir/STU3/http.html#read) and [search](http://hl7.org/fhir/STU3/http.html#search) interactions for the Profiles the server chooses to support.
 1. All servers **SHOULD** make available the [vread](http://hl7.org/fhir/STU3/http.html#vread) and [history-instance](http://hl7.org/fhir/STU3/http.html#history) interactions for the Profiles the server chooses to support.
 
-**Summary of US Core search criteria**
+**Summary of Validated Healthcare Directory search criteria - needs revision**
 
 Specific server search capabilities are described in detail in each of the resource sections below.
 
@@ -540,7 +545,7 @@ Source Resource: [XML](CapabilityStatement-client.xml.html)/[JSON](CapabilitySta
 1. Published: 2017-03-08
 1. Published by: Health Level Seven International US Realm Steering Committee
 
-The Section describes the expected capabilities of the  US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance requirements for the US Core Server section](#conformance-requirements-for-the-us-core-server). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
+The Section describes the expected capabilities of the  US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Validated Healthcare Directorys are defined in the [Conformance requirements for the Validated Healthcare Directory section](#conformance-requirements-for-the-us-core-server). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
 
 #### Behavior
 
@@ -548,7 +553,7 @@ Description:
 
 The US Core Client **SHOULD**:
 
-- Support fetching and querying of one or more US Core profile(s), using the supported RESTful interactions and search parameters declared in the US Core Server CapabilityStatement.
+- Support fetching and querying of one or more US Core profile(s), using the supported RESTful interactions and search parameters declared in the Validated Healthcare Directory CapabilityStatement.
 
 security:
 

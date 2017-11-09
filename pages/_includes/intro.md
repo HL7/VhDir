@@ -5,11 +5,10 @@
 
 ## Task list/status - Remove before publishing
 
-| Date    | Comment/task                                                                              | Status      |
-|---------|-------------------------------------------------------------------------------------------|-------------|  
-| 11/3/17 | We need to discuss the level of detail we will have here. Dan will be adding              |             |
-|         | general information                                                                       | In progress |
-| mm/dd/yy| Next comment                                                                              | TBD         |
+|Date|Comment/Task|Status
+|---|---|---|---|
+|11/3/17|We need to discuss the level of detail we will have here. Dan will be adding general information|In progress|
+|mm/dd/yy|Next comment|TBD
 
 ## Introduction
 
@@ -27,7 +26,7 @@ The following actors are part of the Validated Healthcare Directory IG:
  
 ## Validated Healthcare Directory Local Use Cases 
 
-For the purpose of elicitng the data needs for the Lalidated Data set a number of "local" use cases, with local actors, were documented. These local use cases includeg:
+For the purpose of eliciting the data requirements for the Validated Healthcare Directory a number of "local" use cases, with local actors, were documented. These local use cases included: 
 
 #### A - Basic Information Exchange
 

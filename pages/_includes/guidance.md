@@ -47,16 +47,28 @@ In the context of Validated Healthcare Directory , *Must Support* on any data el
 * NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing Validated Healthcare Directory  requirements.
 
 
-### Images for illustrating relationships (from powerpoint v1.7)
+### Overview of Validated Healthcare Directory - Resource Relationships 
 
-1. Is this format OK 
+#### Practioner Role 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Example 1 - Place Holder</strong></figcaption>
-  <img src="assets/images/Slide15.jpg" class="figure-img img-responsive img-rounded center-block" alt="Slide15.jpg" />
+<figcaption class="figure-caption"><strong>Figure 1: Example 1 - In progressr</strong></figcaption>
+  <img src="assets/images/Diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
 </figure>
 
+#### Organization Role
 
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 2: Example 2 - In progressr</strong></figcaption>
+  <img src="assets/images/Diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
+</figure>
+
+#### Network / Product Plan
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Example 3 - In Progress</strong></figcaption>
+  <img src="assets/images/Diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
+</figure>
 
 ### Using Codes in VhDir profiles
 
