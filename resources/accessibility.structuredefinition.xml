@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="accessibility" />
+  <meta>
+    <lastUpdated value="2017-11-13T12:28:20.042-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
+  <name value="accessibility" />
+  <status value="draft" />
+  <date value="2017-11-13T12:20:23.668-05:00" />
+  <description value="Accessibility options offered to the patient/consumer" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Practitioner" />
+  <context value="Location" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Accessibility" />
+      <definition value="Accessibility options offered to the patient/consumer" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <label value="type" />
+      <short value="Type" />
+      <definition value="Type of accessibility options offered to the patient/consumer" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <label value="type" />
+      <short value="Type" />
+      <definition value="Type of accessibility options offered to the patient/consumer" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:description">
+      <path value="Extension.extension" />
+      <sliceName value="description" />
+      <label value="description" />
+      <short value="Description" />
+      <definition value="Description of the types of accessibility options offered to the patient/consumer" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="description" />
+    </element>
+    <element id="Extension.extension:description.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <label value="desription" />
+      <short value="Description" />
+      <definition value="Description of the types of accessibility options offered to the patient/consumer" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

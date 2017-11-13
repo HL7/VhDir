@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="digitalCertificate" />
+  <meta>
+    <lastUpdated value="2017-11-13T12:28:07.711-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+  <name value="digitalCertificate" />
+  <status value="draft" />
+  <date value="2017-11-13T11:51:52.262-05:00" />
+  <description value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Practitioner" />
+  <context value="PractitionerRole" />
+  <context value="Endpoint" />
+  <context value="Organization" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="digitalCertificate" />
+      <definition value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <label value="type" />
+      <short value="Type" />
+      <definition value="Type of digital certificate" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:type">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <label value="type" />
+      <short value="type" />
+      <definition value="The type of digital certificate" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:use">
+      <path value="Extension.extension" />
+      <sliceName value="use" />
+      <label value="use" />
+      <short value="use" />
+      <definition value="Purpose of the digital certificate" />
+    </element>
+    <element id="Extension.extension:use.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="use" />
+    </element>
+    <element id="Extension.extension:use.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <label value="use" />
+      <short value="use" />
+      <definition value="Purpose of the digital certificate" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:certificateStandard">
+      <path value="Extension.extension" />
+      <sliceName value="certificateStandard" />
+      <label value="certificateStandard" />
+      <short value="Certificate standard" />
+      <definition value="The standard associated with the digital certificate" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:certificateStandard.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="certificateStandard" />
+    </element>
+    <element id="Extension.extension:certificateStandard.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <label value="certificateStandard" />
+      <short value="Certificate standard" />
+      <definition value="The standard associated with the digital certificate" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:certificate">
+      <path value="Extension.extension" />
+      <sliceName value="certificate" />
+      <label value="certificate" />
+      <short value="Certificate" />
+      <definition value="Base 64 encoding of the certificate" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:certificate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="certificate" />
+    </element>
+    <element id="Extension.extension:certificate.value[x]:valueBase64Binary">
+      <path value="Extension.extension.valueBase64Binary" />
+      <sliceName value="valueBase64Binary" />
+      <label value="certificate" />
+      <short value="Certificate" />
+      <definition value="Base 64 encoding of the certificate" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+    </element>
+    <element id="Extension.extension:expirationDate">
+      <path value="Extension.extension" />
+      <sliceName value="expirationDate" />
+      <label value="expirationDate" />
+      <short value="Expiration date" />
+      <definition value="Expiration date of the certificate" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:expirationDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="expirationDate" />
+    </element>
+    <element id="Extension.extension:expirationDate.value[x]:valueDate">
+      <path value="Extension.extension.valueDate" />
+      <sliceName value="valueDate" />
+      <label value="expirationDate" />
+      <short value="Expiration date" />
+      <definition value="Expiration date of the certificate" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:trustFramework">
+      <path value="Extension.extension" />
+      <sliceName value="trustFramework" />
+      <label value="trustFramework" />
+      <short value="Trust framework" />
+      <definition value="The trust framework(s) supported by the certificate" />
+    </element>
+    <element id="Extension.extension:trustFramework.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="trustFramework" />
+    </element>
+    <element id="Extension.extension:trustFramework.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <label value="trustFramework" />
+      <short value="Trust framework" />
+      <definition value="The trust framework(s) supported by the certificate" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
