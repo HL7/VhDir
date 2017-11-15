@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="network-reference" />
   <meta>
-    <lastUpdated value="2017-10-13T00:20:05.93+11:00" />
+    <lastUpdated value="2017-11-15T14:17:50.788-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference" />
   <name value="network-reference" />
@@ -23,8 +23,8 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <short value="Network reference" />
+      <definition value="A reference to the network resource" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -171,7 +171,8 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="Value" />
+      <label value="network" />
+      <short value="Network" />
       <definition value="Reference to the Network" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
@@ -204,6 +205,11 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Network reference" />
+      <definition value="A reference to the network resource" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference" />
@@ -211,7 +217,8 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="Value" />
+      <label value="network" />
+      <short value="Network" />
       <definition value="Reference to the Network" />
       <type>
         <code value="Reference" />

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="endpoint-reference" />
   <meta>
-    <lastUpdated value="2017-11-07T16:35:36.055-05:00" />
+    <lastUpdated value="2017-11-15T14:17:52.632-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
   <name value="endpoint-reference" />
@@ -21,8 +21,8 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <short value="Endpoint reference" />
+      <definition value="A reference to the endpoint resource" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -202,6 +202,11 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Endpoint reference" />
+      <definition value="A reference to the endpoint resource" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />

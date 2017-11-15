@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehr" />
   <meta>
-    <lastUpdated value="2017-11-13T15:17:18.793-05:00" />
+    <lastUpdated value="2017-11-15T14:10:40.276-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-ehr" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
   <name value="ehr" />
   <status value="draft" />
   <date value="2017-11-13T14:19:15.411-05:00" />
@@ -1092,7 +1092,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-ehr" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1381,7 +1381,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-ehr" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

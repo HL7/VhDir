@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="practitioner-specialty-subspecialty" />
+  <id value="practitioner-subspecialty" />
   <meta>
-    <lastUpdated value="2017-11-13T15:29:35.239-05:00" />
+    <lastUpdated value="2017-11-15T13:16:28.641-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-specialty-subspecialty" />
-  <name value="practitioner-specialty-subspecialty" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-subspecialty" />
+  <name value="practitioner-subspecialty" />
   <status value="draft" />
   <date value="2017-11-13T15:26:51.083-05:00" />
   <description value="Subspecialty" />
@@ -147,7 +147,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-specialty-subspecialty" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-subspecialty" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -208,7 +208,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-specialty-subspecialty" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-subspecialty" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />

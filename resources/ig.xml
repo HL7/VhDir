@@ -123,6 +123,76 @@
       <sourceReference>
         <reference value="StructureDefinition/usage-restriction" />
       </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Accessibility" />
+      <sourceReference>
+        <reference value="StructureDefinition/accessibility" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Boundary" />
+      <sourceReference>
+        <reference value="StructureDefinition/boundary" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Communication-proficiency" />
+      <sourceReference>
+        <reference value="StructureDefinition/communication-proficiency" />
+      </sourceReference>
+    </resource>      
+    <resource>
+      <example value="false" />
+      <name value="DigitalCertificate" />
+      <sourceReference>
+        <reference value="StructureDefinition/digitalCertificate" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="EHR" />
+      <sourceReference>
+        <reference value="StructureDefinition/ehr" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="healthcareService-reference" />
+      <sourceReference>
+        <reference value="StructureDefinition/healthcareService-reference" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Location-reference" />
+      <sourceReference>
+        <reference value="StructureDefinition/location-reference" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="newPatientProfile" />
+      <sourceReference>
+        <reference value="StructureDefinition/newPatientProfile" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="practitioner-subspecialty" />
+      <sourceReference>
+        <reference value="StructureDefinition/practitioner-subspecialty" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="newPatients" />
+      <sourceReference>
+        <reference value="StructureDefinition/newPatients" />
+      </sourceReference>
     </resource>
     <resource>
       <example value="true" />
