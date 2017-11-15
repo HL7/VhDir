@@ -51,6 +51,8 @@ In the context of Validated Healthcare Directory , *Must Support* on any data el
 
 ### Practioner Role 
 
+In the context of HcDir an Organization, at the highest level, is a “business entity”. This includes for profit and not-for profit organizations, educational institutions, governmental departments or programs, etc. Organization may be further defined though a hierarchical relationship of any number of levels. This can account for departments, divisions, or any other sub-unit of the higher level organization. Here, within the context of practitioner role, one can see relationships such as a provider that provides a particular service at a particular location and accepts insurance (as part of a particular network) all on behalf of an organization. 
+
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Example 1 - In progress</strong></figcaption>
   <img src="assets/images/Diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
@@ -58,12 +60,16 @@ In the context of Validated Healthcare Directory , *Must Support* on any data el
 
 ### Organization Role
 
+Similar to the Practitioner Role above, Organization Role provides a means of describing the same data, but the reference point being the organization alone. Example include 1) the organizational members of an association (hospitals in a hospital association), 2) organizational members of an insurance network and the service they provide at specific location as part of the network, and 3) two distinct organizations in partnership creating a service (e.g. cancer center) at a location.
+
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Example 2 - In progress</strong></figcaption>
   <img src="assets/images/Diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
 </figure>
 
 ### Network / Product Plan
+
+Network is a group of practitioners and organizations optionally qualified by healthcare service and location that deliver healthcare services on behalf of a payer for individuals enrolled in a product/plan that have specific characteristics (e.g HMO, PPO, Specialty)
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Example 3 - In Progress</strong></figcaption>
