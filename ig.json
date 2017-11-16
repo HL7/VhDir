@@ -213,6 +213,21 @@
         "defns":"StructureDefinition-practitioner-subspecialty-definitions.html",
         "source":"practitioner-subspecialty.structuredefinition.xml"
       },
+      "StructureDefinition/location-availability":{
+        "base":"StructureDefinition-location-availability.html",
+        "defns":"StructureDefinition-location-availability-definitions.html",
+        "source":"location-availability.structuredefinition.xml"
+      },
+      "StructureDefinition/careTeam-participatingRoles":{
+        "base":"StructureDefinition-careTeam-participatingRoles.html",
+        "defns":"StructureDefinition-careTeam-participatingRoles-definitions.html",
+        "source":"careTeam-participatingRoles.structuredefinition.xml"
+      },
+      "StructureDefinition/careTeam-alias":{
+        "base":"StructureDefinition-careTeam-alias.html",
+        "defns":"StructureDefinition-careTeam-alias-definitions.html",
+        "source":"careTeam-alias.structuredefinition.xml"
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"

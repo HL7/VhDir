@@ -1,1 +1,1 @@
-Reference to endpoint resource
+No mandatory elements; reference to endpoint resource

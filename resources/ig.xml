@@ -195,6 +195,27 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="location-availability" />
+      <sourceReference>
+        <reference value="StructureDefinition/location-availability" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="careTeam-participatingRoles" />
+      <sourceReference>
+        <reference value="StructureDefinition/careTeam-participatingRoles" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="careTeam-alias" />
+      <sourceReference>
+        <reference value="StructureDefinition/careTeam-alias" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />

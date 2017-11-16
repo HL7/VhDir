@@ -1,1 +1,1 @@
-**No Search criteria for us-core-birthsex extension.**
+**No Search criteria for org-alias-type extension.**
