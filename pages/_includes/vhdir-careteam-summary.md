@@ -1,11 +1,4 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  At least one identifier in `Organization.identifier`
-    -   NPI preferred
-    -   Tax id is allowed
-    -   Local id is allowed in addition to 'authoritative' identifier
-1.  One boolean value in `Organization.active`
-1.  At least one name in `Organization.name`
-1.  At least one  contact in `Organization.telecom`
-1.  At least one address in `Organization.address`
-1.  At least one endpoint in `Organization.endpoint`
+1.  At least one type of care team in `careTeam.category`
+1.  A period for which the care team is active in `careTeam.period`
