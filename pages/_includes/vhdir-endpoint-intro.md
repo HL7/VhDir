@@ -38,8 +38,8 @@ Each endpoint must have:
 1.  Protocol (1..1) - indicates the specification of the technical protocol used to transmit data
 1.  Profile (0..*) - a more detailed desctiption of the standards, implementation guide, etc. that the endpoint supports
 1.  UseCase (0..*) - an enumeration of the specific use cases (service descriptions) supported by the endpoint, consisting of:
-  1.  Type (1.1) - the types of services supported by the endpoint
-  1.  Standard (0..1) - URI of a published standard (e.g. an HL7 implementation guide)
+    1.  Type (1.1) - the types of services supported by the endpoint
+    1.  Standard (0..1) - URI of a published standard (e.g. an HL7 implementation guide)
 1.  Rank (0..1) - an indication of the preferred order for connecting to an endpoint when multiple endpoints capable of transferring the same content are listed
 1.  DigitalCertificate (0..*) - a digital certificate associated with the endpoint
 
