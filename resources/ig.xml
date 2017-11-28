@@ -214,6 +214,34 @@
       <sourceReference>
         <reference value="StructureDefinition/careTeam-alias" />
       </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="address-position" />
+      <sourceReference>
+        <reference value="StructureDefinition/address-position" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="identifier-status" />
+      <sourceReference>
+        <reference value="StructureDefinition/identifier-status" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="contactPoint-viaIntermediary" />
+      <sourceReference>
+        <reference value="StructureDefinition/contactPoint-viaIntermediary" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="contactPoint-availableTime" />
+      <sourceReference>
+        <reference value="StructureDefinition/contactPoint-availableTime" />
+      </sourceReference>
     </resource>
     <resource>
       <example value="true" />

@@ -1,0 +1,1 @@
+An extension representing the times a contact point is available

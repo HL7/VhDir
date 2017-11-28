@@ -226,7 +226,27 @@
       "StructureDefinition/careTeam-alias":{
         "base":"StructureDefinition-careTeam-alias.html",
         "defns":"StructureDefinition-careTeam-alias-definitions.html",
-        "source":"careTeam-alias.structuredefinition.xml"
+        "source":"careTeam-alias.structuredefinition.xml"      
+      },
+        "StructureDefinition/address-position":{
+          "base":"StructureDefinition-address-position.html",
+          "defns":"StructureDefinition-address-position-definitions.html",
+          "source":"address-position.structuredefinition.xml"
+      },
+      "StructureDefinition/identifier-status":{
+        "base":"StructureDefinition-identifier-status.html",
+        "defns":"StructureDefinition-identifier-status-definitions.html",
+        "source":"identifier-status.structuredefinition.xml"      
+      },
+      "StructureDefinition/contactPoint-viaIntermediary":{
+        "base":"StructureDefinition-contactPoint-viaIntermediary.html",
+        "defns":"StructureDefinition-contactPoint-viaIntermediary-definitions.html",
+        "source":"contactPoint-viaIntermediary.structuredefinition.xml"      
+      },
+      "StructureDefinition/contactPoint-availableTime":{
+        "base":"StructureDefinition-contactPoint-availableTime.html",
+        "defns":"StructureDefinition-contactPoint-availableTime-definitions.html",
+        "source":"contactPoint-availableTime.structuredefinition.xml"      
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

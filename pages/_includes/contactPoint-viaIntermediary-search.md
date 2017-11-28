@@ -1,0 +1,1 @@
+**No Search criteria for contactPoint-viaIntermediary extension.**

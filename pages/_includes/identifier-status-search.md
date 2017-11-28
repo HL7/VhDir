@@ -1,0 +1,1 @@
+**No Search criteria for identifier-status extension.**
