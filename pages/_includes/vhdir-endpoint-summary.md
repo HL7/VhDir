@@ -1,11 +1,9 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  At least one identifier in `Organization.identifier`
-    -   NPI preferred
-    -   Tax id is allowed
-    -   Local id is allowed in addition to 'authoritative' identifier
-1.  One boolean value in `Organization.active`
-1.  At least one name in `Organization.name`
-1.  At least one  contact in `Organization.telecom`
-1.  At least one address in `Organization.address`
-1.  At least one endpoint in `Organization.endpoint`
+1.  A status in `endpoint.status`
+1.  An organization responsible for managing the endpoint in `endpoint.managingOrganization`
+1.  A period for which the endpoint is available in `endpoint.period`
+1.  At least one indication of the type of content the endpoint supports in `endpoint.payloadType`
+1.  One technical address for connecting to the endpoint in `endpoint.address`
+1.  One indicaton of the technical protocol for transmitting data used by the endpoint in `endpoint.protocol`
+1.  For each use case defined for the endpoint, one indication of the type of services provided in `endpoint.useCase.type`

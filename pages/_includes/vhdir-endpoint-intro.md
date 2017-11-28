@@ -4,6 +4,7 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.
 
+This profile removes `endpoint.connectionType` and replaces it with two new attributes to provide additional specificity about an endpoint: `endpoint.protocol` and `endpoint.profile`. This profile also constrains `endpoint.managingOrganization` and `endpoint.period` (both are now required), as well as `endpoint.contact` (only one contact point for an endpoint is permitted).
 
 **Examples:**
 
@@ -24,7 +25,7 @@ Each endpoint must have:
 1.  At least one indication of the type of content the endpoint supports in `endpoint.payloadType`
 1.  One technical address for connecting to the endpoint in `endpoint.address`
 1.  One indicaton of the technical protocol for transmitting data used by the endpoint in `endpoint.protocol`
-1.  For each use case supported by the endpoint, one indication of the type of services provided in `endpoint.useCase.type`
+1.  For each use case defined for the endpoint, one indication of the type of services provided in `endpoint.useCase.type`
 
 
 **Profile specific implementation guidance:**
