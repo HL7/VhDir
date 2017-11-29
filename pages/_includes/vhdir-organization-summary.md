@@ -1,11 +1,6 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  At least one identifier in `Organization.identifier`
-    -   NPI preferred
-    -   Tax id is allowed
-    -   Local id is allowed in addition to 'authoritative' identifier
-1.  One boolean value in `Organization.active`
-1.  At least one name in `Organization.name`
-1.  At least one  contact in `Organization.telecom`
-1.  At least one address in `Organization.address`
-1.  At least one endpoint in `Organization.endpoint`
+1.  A boolean value in `organization.active`
+1.  A name in `organization.name`
+1.  A type in `organization.type`
+1.  For each alias, a name in `organization.alias.name`

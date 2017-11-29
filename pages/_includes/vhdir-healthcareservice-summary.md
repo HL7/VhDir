@@ -1,11 +1,7 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  At least one identifier in `Organization.identifier`
-    -   NPI preferred
-    -   Tax id is allowed
-    -   Local id is allowed in addition to 'authoritative' identifier
-1.  One boolean value in `Organization.active`
-1.  At least one name in `Organization.name`
-1.  At least one  contact in `Organization.telecom`
-1.  At least one address in `Organization.address`
-1.  At least one endpoint in `Organization.endpoint`
+There are no mandatory attributes for the healthcareService resource. However, some attributes have mandatory components if they are included in the resource (including extensions):
+
+1.  For each indication of when a service is not available, a description of why the service is unavailable in `healthcareService.notAvailable.description`
+1.  For each geographic area described for the service, one URI to a KML or GeoJSON object defining the region/area in `healthcareService.boundary.region` (extension)
+1.  For each indication of whether the service is accepting new patients, one boolean value in `healthcareService.newPatients.acceptingPatients` (extension)

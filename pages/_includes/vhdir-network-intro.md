@@ -1,26 +1,37 @@
-This profile sets minimum expectations for searching for and fetching information associated with a healthcare provider network. A network is an aggregation of healthcare organizations and providers that have contracted with a payer to deliver a set of services across a geography.
+This profile sets minimum expectations for searching for and fetching information associated with a healthcare provider insurance network. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the network resource when using this profile.
 
-This profile identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the network resource when using this profile.
+**Background & Scope**
 
-**Example Usage Scenarios:**
+As used in this implementation guide, "network" primarily refers to a healthcare provider insurance network (although the resource could potentially be used to describe other types of healthcare networks as well, such as a health information exchange network). A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
-The following are example usage scenarios for the vhdir-network profile:
+The network resource consists of descriptive information about a network, such as its name & aliases, identifiers, address, contact information, the period during which it exists, who it is owned by, coverage area, endpoints (e.g. for accessing information about the network), and a type (e.g. PPO, HMO, dental, vision)
 
--   TBD
+**Examples:**
+
+The following are example uses for the vhdir-network profile:
+
+-  TBD
 
 
-##### Mandatory Data Elements and Terminology
+**Mandatory Data Elements**
 
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+Each network must have:
 
-**Each Network must have:**
-
-1.  TBD
-1.  TBD
-
+1.  One owner in `network.ownedBy`
 
 
 **Profile specific implementation guidance:**
 
-- This profile may be referenced by different capability statements, such as the [Conformance requirements for the US Core Server], or a provider directory capability statement.
+- TBD
+
+
+**Extensions:**
+
+1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the network
+
+
+**Terminology**
+
+TBD
