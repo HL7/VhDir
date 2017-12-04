@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="usage-restriction" />
   <meta>
-    <lastUpdated value="2017-11-16T14:53:37.239-05:00" />
+    <lastUpdated value="2017-12-04T10:07:34.91-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
   <name value="usage-restriction" />
   <status value="draft" />
   <date value="2017-10-20T10:59:36.931+11:00" />
-  <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, which can be used by access control mechanisms to ensure content isn't exposed that shouldn't be.&#xD;&#xA;This mechanism only goes to the resource level, this usage-restriction extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood.&#xD;&#xA;This will be expected to be used as a modifier extension." />
+  <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.&#xD;&#xA;This mechanism only goes to the resource level, this usage-restriction extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood.&#xD;&#xA;This will be expected to be used as a modifier extension." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -21,7 +21,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on access to data, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -136,12 +136,12 @@
       <sliceName value="type" />
       <label value="Restriction Type" />
       <short value="Restriction type" />
-      <definition value="What is the restriction" />
-      <comment value="Based on standard items from a data use agreement" />
+      <definition value="Type of restriction" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
-      <max value="*" />
+      <min value="0" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -291,7 +291,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="A description of the restriction" />
+      <definition value="Type of restriction" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -329,11 +329,11 @@
       <sliceName value="status" />
       <label value="Status" />
       <short value="status" />
-      <definition value="status of the restriction" />
-      <comment value="Code list needed (better short description needed)" />
+      <definition value="Status of the restriction (true = active)" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -479,12 +479,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:status.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:status.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
       <label value="status" />
       <short value="status" />
-      <definition value="status of the restriction" />
+      <definition value="Status of the restriction (true = active)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -494,7 +494,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="code" />
+        <code value="boolean" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -504,10 +504,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Restriction status" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -526,7 +522,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -1210,7 +1206,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type" />
+      <definition value="Describes how the reference is related to the restriction" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1360,12 +1356,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:reason.extension:type.value[x]:valueCode">
-      <path value="Extension.extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:reason.extension:type.value[x]:valueCoding">
+      <path value="Extension.extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="Type" />
       <short value="Type" />
-      <definition value="type" />
+      <definition value="Describes how the reference is related to the restriction " />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1375,7 +1371,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1385,10 +1381,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="restriction reason type" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1774,7 +1766,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1958,11 +1950,11 @@
       <sliceName value="retrospective" />
       <label value="retrospective" />
       <short value="Retrospective" />
-      <definition value="Whether the restriction is retrospective" />
+      <definition value="Whether the restriction is retrospective (true = apply retrospectively)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -2113,7 +2105,7 @@
       <sliceName value="valueBoolean" />
       <label value="retrospective" />
       <short value="Retrospective" />
-      <definition value="Whether the restriction is retrospective" />
+      <definition value="Whether the restriction is retrospective (true = apply retrospectively)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -2147,7 +2139,7 @@
       <sliceName value="accessRights" />
       <label value="accessRights" />
       <short value="Access rights" />
-      <definition value="Defines a group/class of individuals/orgs to which the target can be released" />
+      <definition value="Reference to specific resource, occurrence, element and value that defines the targets for automatic release (multiple references are &quot;anded&quot;)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2297,12 +2289,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:accessRights.value[x]">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:accessRights.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
       <label value="accessRights" />
       <short value="Access rights" />
-      <definition value="Defines a group/class of individuals/orgs to which the target can be released" />
+      <definition value="Reference to specific resource, occurrence, element and value that defines the targets for automatic release (multiple references are &quot;anded&quot;)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -2312,7 +2304,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="Coding" />
+        <code value="Reference" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2510,7 +2502,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on access to data, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -2527,9 +2519,8 @@
       <sliceName value="type" />
       <label value="Restriction Type" />
       <short value="Restriction type" />
-      <definition value="What is the restriction" />
-      <comment value="Based on standard items from a data use agreement" />
-      <min value="1" />
+      <definition value="Type of restriction" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
@@ -2540,7 +2531,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="A description of the restriction" />
+      <definition value="Type of restriction" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -2554,27 +2545,23 @@
       <sliceName value="status" />
       <label value="Status" />
       <short value="status" />
-      <definition value="status of the restriction" />
-      <comment value="Code list needed (better short description needed)" />
+      <definition value="Status of the restriction (true = active)" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:status.url">
       <path value="Extension.extension.url" />
       <fixedUri value="status" />
     </element>
-    <element id="Extension.extension:status.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:status.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
       <label value="status" />
       <short value="status" />
-      <definition value="status of the restriction" />
+      <definition value="Status of the restriction (true = active)" />
       <type>
-        <code value="code" />
+        <code value="boolean" />
       </type>
-      <binding>
-        <strength value="example" />
-        <description value="Restriction status" />
-      </binding>
     </element>
     <element id="Extension.extension:lastUpdated">
       <path value="Extension.extension" />
@@ -2582,6 +2569,7 @@
       <label value="Last update" />
       <short value="Last Update" />
       <definition value="The date/time the restriction was last updated" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:lastUpdated.url">
@@ -2666,26 +2654,22 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type" />
+      <definition value="Describes how the reference is related to the restriction" />
       <min value="1" />
     </element>
     <element id="Extension.extension:reason.extension:type.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="type" />
     </element>
-    <element id="Extension.extension:reason.extension:type.value[x]:valueCode">
-      <path value="Extension.extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:reason.extension:type.value[x]:valueCoding">
+      <path value="Extension.extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="Type" />
       <short value="Type" />
-      <definition value="type" />
+      <definition value="Describes how the reference is related to the restriction " />
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
-      <binding>
-        <strength value="example" />
-        <description value="restriction reason type" />
-      </binding>
     </element>
     <element id="Extension.extension:reason.url">
       <path value="Extension.extension.url" />
@@ -2723,6 +2707,7 @@
       <label value="policy" />
       <short value="Policy" />
       <definition value="The policy defining the restriction" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:policy.url">
       <path value="Extension.extension.url" />
@@ -2743,7 +2728,8 @@
       <sliceName value="retrospective" />
       <label value="retrospective" />
       <short value="Retrospective" />
-      <definition value="Whether the restriction is retrospective" />
+      <definition value="Whether the restriction is retrospective (true = apply retrospectively)" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:retrospective.url">
@@ -2755,7 +2741,7 @@
       <sliceName value="valueBoolean" />
       <label value="retrospective" />
       <short value="Retrospective" />
-      <definition value="Whether the restriction is retrospective" />
+      <definition value="Whether the restriction is retrospective (true = apply retrospectively)" />
       <type>
         <code value="boolean" />
       </type>
@@ -2765,20 +2751,20 @@
       <sliceName value="accessRights" />
       <label value="accessRights" />
       <short value="Access rights" />
-      <definition value="Defines a group/class of individuals/orgs to which the target can be released" />
+      <definition value="Reference to specific resource, occurrence, element and value that defines the targets for automatic release (multiple references are &quot;anded&quot;)" />
     </element>
     <element id="Extension.extension:accessRights.url">
       <path value="Extension.extension.url" />
       <fixedUri value="accessRights" />
     </element>
-    <element id="Extension.extension:accessRights.value[x]">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:accessRights.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
       <label value="accessRights" />
       <short value="Access rights" />
-      <definition value="Defines a group/class of individuals/orgs to which the target can be released" />
+      <definition value="Reference to specific resource, occurrence, element and value that defines the targets for automatic release (multiple references are &quot;anded&quot;)" />
       <type>
-        <code value="Coding" />
+        <code value="Reference" />
       </type>
     </element>
     <element id="Extension.url">

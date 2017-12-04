@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="newPatientProfile" />
   <meta>
-    <lastUpdated value="2017-11-13T14:18:08.318-05:00" />
+    <lastUpdated value="2017-12-04T12:05:18.461-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatientProfile" />
   <name value="newPatientProfile" />
@@ -24,7 +24,7 @@
       <path value="Extension" />
       <short value="New patient profile" />
       <definition value="Additional information about new patients a practitioner/service/location accepts" />
-      <comment value="often may be only text" />
+      <comment value="value may often only be text" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -208,7 +208,7 @@
       <path value="Extension" />
       <short value="New patient profile" />
       <definition value="Additional information about new patients a practitioner/service/location accepts" />
-      <comment value="often may be only text" />
+      <comment value="value may often only be text" />
       <max value="1" />
     </element>
     <element id="Extension.url">

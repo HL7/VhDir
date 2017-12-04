@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="org-description" />
   <meta>
-    <lastUpdated value="2017-10-12T23:43:32.882+11:00" />
+    <lastUpdated value="2017-12-04T12:32:28.067-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description" />
   <name value="org-description" />
@@ -20,10 +20,10 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <short value="Description" />
+      <definition value="Additional descriptive content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element" />
         <min value="0" />
@@ -168,8 +168,9 @@
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <label value="description" />
+      <short value="Description" />
+      <definition value="Additional descriptive content" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -200,6 +201,12 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Description" />
+      <definition value="Additional descriptive content" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description" />
@@ -207,6 +214,9 @@
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
+      <label value="description" />
+      <short value="Description" />
+      <definition value="Additional descriptive content" />
       <type>
         <code value="string" />
       </type>
