@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-network" />
   <meta>
-    <lastUpdated value="2017-10-13T00:07:28.35+11:00" />
+    <lastUpdated value="2017-12-05T12:03:38.934-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
   <name value="vhdir-network" />
@@ -20,8 +20,8 @@
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="A network of organizations, providers, services and products/plans that are available to members of the network" />
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." />
+      <short value="Network" />
+      <definition value="The details of a healthcare provider insurance network" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -344,50 +344,6 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Organization.extension:description">
-      <path value="Organization.extension" />
-      <sliceName value="description" />
-      <short value="Friendly description of the Network/Product" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Organization.extension:timePeriod">
       <path value="Organization.extension" />
       <sliceName value="timePeriod" />
@@ -396,7 +352,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -423,6 +379,49 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.extension:coverageArea">
+      <path value="Organization.extension" />
+      <sliceName value="coverageArea" />
+      <short value="Location" />
+      <definition value="A reference to the location resource" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -484,11 +483,11 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
-      <short value="Identifies this organization  across multiple systems" />
-      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
-      <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
+      <short value="Identifies this network  across multiple systems" />
+      <definition value="Identifier for the network that is used to identify the network across multiple disparate systems." />
+      <requirements value="." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -593,6 +592,49 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.identifier.extension:status">
+      <path value="Organization.identifier.extension" />
+      <sliceName value="status" />
+      <short value="Status" />
+      <definition value="Describes the status of an identifier" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1752,7 +1794,7 @@
       <definition value="Whether the organization's record is still in active use." />
       <comment value="Default is true.&#xA;&#xA;This active flag is not intended to be used to mark an organizations as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.&#xA;&#xA;This element is labeled as a modifier because it may be used to mark that the resource was created in error." />
       <requirements value="Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.active" />
@@ -1800,8 +1842,8 @@
     </element>
     <element id="Organization.type">
       <path value="Organization.type" />
-      <short value="Kind of organization" />
-      <definition value="The kind(s) of organization that this is." />
+      <short value="Type" />
+      <definition value="Type of network" />
       <comment value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes&#xA;&#xA;When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.&#xA;&#xA;We expect that some jurisdictions will profile this optionality to be a single cardinality." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
       <min value="0" />
@@ -2336,11 +2378,11 @@
     <element id="Organization.name">
       <path value="Organization.name" />
       <label value="Network Name" />
-      <short value="Official name for the Network designated by the payor" />
-      <definition value="A name associated with the organization." />
-      <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
-      <requirements value="Need to use the name as the label of the organization." />
-      <min value="1" />
+      <short value="Name" />
+      <definition value="A name associated with the network (official name designated by the owner of the network)." />
+      <comment value="If the name of an network changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <requirements value="Need to use the name as the label of the network." />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.name" />
@@ -2381,7 +2423,7 @@
     <element id="Organization.alias">
       <path value="Organization.alias" />
       <label value="alias" />
-      <short value="Alternate names by which the Network/Product is also known" />
+      <short value="Alternate names by which the Network is known" />
       <definition value="A list of alternate names that the network is known as, or was known as in the past." />
       <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the network." />
       <requirements value="Over time networks may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the network was known by can be very useful." />
@@ -3797,8 +3839,8 @@
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
-      <short value="Reference to Organization resource for the payor" />
-      <definition value="The Payor organization that covers this network" />
+      <short value="Reference to organization that owns the network" />
+      <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to specify the payor organization of this network" />
       <min value="1" />
@@ -3810,7 +3852,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4050,7 +4092,7 @@
       <comment value="Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use." />
       <requirements value="Need to keep track of assigned contact points within bigger organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.contact" />
         <min value="0" />
@@ -4944,7 +4986,7 @@
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)." />
       <alias value="surname" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -4987,8 +5029,8 @@
       <comment value="If only initials are recorded, they may be used in place of the full name.  Not called &quot;first name&quot; since given names do not always come first." />
       <alias value="first name" />
       <alias value="middle name" />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="HumanName.given" />
         <min value="0" />
@@ -5424,6 +5466,92 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.contact.telecom.extension:availableTime">
+      <path value="Organization.contact.telecom.extension" />
+      <sliceName value="availableTime" />
+      <short value="Available time" />
+      <definition value="Time period when the contact point is to be used" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.contact.telecom.extension:viaIntermediary">
+      <path value="Organization.contact.telecom.extension" />
+      <sliceName value="viaIntermediary" />
+      <short value="viaIntermediary" />
+      <definition value="Represents an external point of contact responsible for handling communications with this entity" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5942,6 +6070,49 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.contact.address.extension:geolocation">
+      <path value="Organization.contact.address.extension" />
+      <sliceName value="geolocation" />
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6636,7 +6807,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.endpoint" />
         <min value="0" />
@@ -6644,7 +6815,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6867,7 +7038,8 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="A network of organizations, providers, services and products/plans that are available to members of the network" />
+      <short value="Network" />
+      <definition value="The details of a healthcare provider insurance network" />
       <mapping>
         <identity value="hpd" />
         <map value="HPDProvider" />
@@ -6899,24 +7071,10 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Organization.extension:description">
-      <path value="Organization.extension" />
-      <sliceName value="description" />
-      <short value="Friendly description of the Network/Product" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Organization.extension:timePeriod">
       <path value="Organization.extension" />
       <sliceName value="timePeriod" />
       <short value="Valid time period for this Network" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -6924,30 +7082,64 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Organization.extension:coverageArea">
+      <path value="Organization.extension" />
+      <sliceName value="coverageArea" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference" />
+      </type>
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
-      <max value="0" />
+      <short value="Identifies this network  across multiple systems" />
+      <definition value="Identifier for the network that is used to identify the network across multiple disparate systems." />
+      <requirements value="." />
+    </element>
+    <element id="Organization.identifier.extension">
+      <path value="Organization.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.identifier.extension:status">
+      <path value="Organization.identifier.extension" />
+      <sliceName value="status" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
+      </type>
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
       <label value="status" />
-      <min value="1" />
       <mapping>
         <identity value="hpd" />
         <map value="hpdProviderStatus" />
       </mapping>
     </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <short value="Type" />
+      <definition value="Type of network" />
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <label value="Network Name" />
-      <short value="Official name for the Network designated by the payor" />
-      <min value="1" />
+      <short value="Name" />
+      <definition value="A name associated with the network (official name designated by the owner of the network)." />
+      <comment value="If the name of an network changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <requirements value="Need to use the name as the label of the network." />
       <mustSupport value="true" />
     </element>
     <element id="Organization.alias">
       <path value="Organization.alias" />
       <label value="alias" />
-      <short value="Alternate names by which the Network/Product is also known" />
+      <short value="Alternate names by which the Network is known" />
       <definition value="A list of alternate names that the network is known as, or was known as in the past." />
       <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the network." />
       <requirements value="Over time networks may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the network was known by can be very useful." />
@@ -6981,19 +7173,75 @@
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
-      <short value="Reference to Organization resource for the payor" />
-      <definition value="The Payor organization that covers this network" />
+      <short value="Reference to organization that owns the network" />
+      <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
       <requirements value="Need to specify the payor organization of this network" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+      </type>
       <mustSupport value="true" />
     </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-      <max value="0" />
+    <element id="Organization.contact.name.family">
+      <path value="Organization.contact.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.name.given">
+      <path value="Organization.contact.name.given" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.contact.telecom.extension">
+      <path value="Organization.contact.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.contact.telecom.extension:availableTime">
+      <path value="Organization.contact.telecom.extension" />
+      <sliceName value="availableTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      </type>
+    </element>
+    <element id="Organization.contact.telecom.extension:viaIntermediary">
+      <path value="Organization.contact.telecom.extension" />
+      <sliceName value="viaIntermediary" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+      </type>
+    </element>
+    <element id="Organization.contact.address.extension">
+      <path value="Organization.contact.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.contact.address.extension:geolocation">
+      <path value="Organization.contact.address.extension" />
+      <sliceName value="geolocation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+      </type>
     </element>
     <element id="Organization.endpoint">
       <path value="Organization.endpoint" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

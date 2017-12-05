@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-endpoint" />
   <meta>
-    <lastUpdated value="2017-10-04T00:35:59.719+11:00" />
+    <lastUpdated value="2017-12-05T12:08:43.682-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
   <name value="vhdir-endpoint" />
@@ -322,6 +322,221 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Endpoint.extension:protocol">
+      <path value="Endpoint.extension" />
+      <sliceName value="protocol" />
+      <short value="Protocol" />
+      <definition value="Required specification of the technical protocol used to transmit data" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-protocol" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.extension:profile">
+      <path value="Endpoint.extension" />
+      <sliceName value="profile" />
+      <short value="Profile" />
+      <definition value="More detailed description of the standards, implementation guide, etc., that the endpoint supports" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-profile" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.extension:useCase">
+      <path value="Endpoint.extension" />
+      <sliceName value="useCase" />
+      <short value="Use case" />
+      <definition value="An enumeration of specific use cases (service descriptions) supported by the endpoint" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-useCase" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.extension:rank">
+      <path value="Endpoint.extension" />
+      <sliceName value="rank" />
+      <short value="Rank" />
+      <definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.extension:digitalCertificate">
+      <path value="Endpoint.extension" />
+      <sliceName value="digitalCertificate" />
+      <short value="digitalCertificate" />
+      <definition value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Endpoint.modifierExtension">
       <path value="Endpoint.modifierExtension" />
       <slicing>
@@ -469,6 +684,49 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.identifier.extension:status">
+      <path value="Endpoint.identifier.extension" />
+      <sliceName value="status" />
+      <short value="Status" />
+      <definition value="Describes the status of an identifier" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2047,7 +2305,7 @@
       <short value="Organization that manages this endpoint (may not be the organization that exposes the endpoint)" />
       <definition value="The organization that manages this endpoint (even if technically another organisation is hosting this in the cloud, it is the organisation associated with the data)." />
       <comment value="This property is not typically used when searching for Endpoint resources for usage. The typical usage is via the reference from an aplicable Organization/Location/Practitioner resource, which is where the context is provided. Multiple Locations may reference a single endpoint, and don't have to be within the same organization resource, but most likely within the same organizational hierarchy." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Endpoint.managingOrganization" />
@@ -2281,7 +2539,7 @@
       <short value="Contact details for source (e.g. troubleshooting)" />
       <definition value="Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Endpoint.contact" />
         <min value="0" />
@@ -2375,6 +2633,92 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.contact.extension:availableTime">
+      <path value="Endpoint.contact.extension" />
+      <sliceName value="availableTime" />
+      <short value="Available time" />
+      <definition value="Time period when the contact point is to be used" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Endpoint.contact.extension:viaIntermediary">
+      <path value="Endpoint.contact.extension" />
+      <sliceName value="viaIntermediary" />
+      <short value="viaIntermediary" />
+      <definition value="Represents an external point of contact responsible for handling communications with this entity" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2796,7 +3140,7 @@
       <short value="Interval the endpoint is expected to be operational" />
       <definition value="The interval during which the endpoint is expected to be operational." />
       <comment value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Endpoint.period" />
@@ -3614,6 +3958,144 @@
     <element id="Endpoint.language">
       <path value="Endpoint.language" />
       <max value="0" />
+    </element>
+    <element id="Endpoint.extension">
+      <path value="Endpoint.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Endpoint.extension:protocol">
+      <path value="Endpoint.extension" />
+      <sliceName value="protocol" />
+      <short value="Protocol" />
+      <definition value="Required specification of the technical protocol used to transmit data" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-protocol" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:profile">
+      <path value="Endpoint.extension" />
+      <sliceName value="profile" />
+      <short value="Profile" />
+      <definition value="More detailed description of the standards, implementation guide, etc., that the endpoint supports" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-profile" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:useCase">
+      <path value="Endpoint.extension" />
+      <sliceName value="useCase" />
+      <short value="Use case" />
+      <definition value="An enumeration of specific use cases (service descriptions) supported by the endpoint" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-useCase" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:rank">
+      <path value="Endpoint.extension" />
+      <sliceName value="rank" />
+      <short value="Rank" />
+      <definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:digitalCertificate">
+      <path value="Endpoint.extension" />
+      <sliceName value="digitalCertificate" />
+      <short value="digitalCertificate" />
+      <definition value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+      </type>
+    </element>
+    <element id="Endpoint.identifier.extension">
+      <path value="Endpoint.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Endpoint.identifier.extension:status">
+      <path value="Endpoint.identifier.extension" />
+      <sliceName value="status" />
+      <short value="Status" />
+      <definition value="Describes the status of an identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
+      </type>
+    </element>
+    <element id="Endpoint.managingOrganization">
+      <path value="Endpoint.managingOrganization" />
+      <min value="1" />
+    </element>
+    <element id="Endpoint.contact">
+      <path value="Endpoint.contact" />
+      <max value="1" />
+    </element>
+    <element id="Endpoint.contact.extension">
+      <path value="Endpoint.contact.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Endpoint.contact.extension:availableTime">
+      <path value="Endpoint.contact.extension" />
+      <sliceName value="availableTime" />
+      <short value="Available time" />
+      <definition value="Time period when the contact point is to be used" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      </type>
+    </element>
+    <element id="Endpoint.contact.extension:viaIntermediary">
+      <path value="Endpoint.contact.extension" />
+      <sliceName value="viaIntermediary" />
+      <short value="viaIntermediary" />
+      <definition value="Represents an external point of contact responsible for handling communications with this entity" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+      </type>
+    </element>
+    <element id="Endpoint.period">
+      <path value="Endpoint.period" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
