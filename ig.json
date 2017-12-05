@@ -257,6 +257,26 @@
         "base":"StructureDefinition-orgRole-participatingOrg.html",
         "defns":"StructureDefinition-orgRole-participatingOrg-definitions.html",
         "source":"orgRole-participatingOrg.structuredefinition.xml"      
+      },      
+      "StructureDefinition/endpoint-profile":{
+        "base":"StructureDefinition-endpoint-profile.html",
+        "defns":"StructureDefinition-endpoint-profile-definitions.html",
+        "source":"endpoint-profile.structuredefinition.xml"      
+      },      
+      "StructureDefinition/endpoint-protocol":{
+        "base":"StructureDefinition-endpoint-protocol.html",
+        "defns":"StructureDefinition-endpoint-protocol-definitions.html",
+        "source":"endpoint-protocol.structuredefinition.xml"      
+      },      
+      "StructureDefinition/endpoint-useCase":{
+        "base":"StructureDefinition-endpoint-useCase.html",
+        "defns":"StructureDefinition-endpoint-useCase-definitions.html",
+        "source":"endpoint-useCase.structuredefinition.xml"      
+      },
+      "StructureDefinition/endpoint-rank":{
+        "base":"StructureDefinition-endpoint-rank.html",
+        "defns":"StructureDefinition-endpoint-rank-definitions.html",
+        "source":"endpoint-rank.structuredefinition.xml"      
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

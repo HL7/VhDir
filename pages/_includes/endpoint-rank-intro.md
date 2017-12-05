@@ -1,0 +1,2 @@
+An extension to indicate the order in which endpoints should be used, for endpoints associated with the same entity and capable of transferring the same content.
+Rank will be determined by the owner of the endpoint.

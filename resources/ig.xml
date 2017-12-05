@@ -256,6 +256,34 @@
       <sourceReference>
         <reference value="StructureDefinition/orgRole-participatingOrg" />
       </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="endpoint-protocol" />
+      <sourceReference>
+        <reference value="StructureDefinition/endpoint-protocol" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="endpoint-profile" />
+      <sourceReference>
+        <reference value="StructureDefinition/endpoint-profile" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="endpoint-useCase" />
+      <sourceReference>
+        <reference value="StructureDefinition/endpoint-useCase" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="endpoint-rank" />
+      <sourceReference>
+        <reference value="StructureDefinition/endpoint-rank" />
+      </sourceReference>
     </resource>
     <resource>
       <example value="true" />

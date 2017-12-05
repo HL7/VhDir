@@ -1,0 +1,1 @@
+An extension to indicate the technical protocol used by an endpoint to transmit data. 

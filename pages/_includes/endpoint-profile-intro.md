@@ -1,0 +1,1 @@
+An extension to provide additional information about the standards, implementation guide, etc. that an endpoint supports. 
