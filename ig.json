@@ -248,6 +248,16 @@
         "defns":"StructureDefinition-contactPoint-availableTime-definitions.html",
         "source":"contactPoint-availableTime.structuredefinition.xml"      
       },
+      "StructureDefinition/orgRole-primaryOrg":{
+        "base":"StructureDefinition-orgRole-primaryOrg.html",
+        "defns":"StructureDefinition-orgRole-primaryOrg-definitions.html",
+        "source":"orgRole-primaryOrg.structuredefinition.xml"      
+      },
+      "StructureDefinition/orgRole-participatingOrg":{
+        "base":"StructureDefinition-orgRole-participatingOrg.html",
+        "defns":"StructureDefinition-orgRole-participatingOrg-definitions.html",
+        "source":"orgRole-participatingOrg.structuredefinition.xml"      
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"

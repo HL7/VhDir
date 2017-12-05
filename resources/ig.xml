@@ -244,6 +244,20 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="Primary organization" />
+      <sourceReference>
+        <reference value="StructureDefinition/orgRole-primaryOrg" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Participating organization" />
+      <sourceReference>
+        <reference value="StructureDefinition/orgRole-participatingOrg" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />
