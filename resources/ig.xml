@@ -286,6 +286,27 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="productPlan-administeredBy" />
+      <sourceReference>
+        <reference value="StructureDefinition/productPlan-administeredBy" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="productPlan-productCoverage" />
+      <sourceReference>
+        <reference value="StructureDefinition/productPlan-productCoverage" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="productPlan-plan" />
+      <sourceReference>
+        <reference value="StructureDefinition/productPlan-plan" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />

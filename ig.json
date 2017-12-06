@@ -278,6 +278,21 @@
         "defns":"StructureDefinition-endpoint-rank-definitions.html",
         "source":"endpoint-rank.structuredefinition.xml"      
       },
+      "StructureDefinition/productPlan-administeredBy":{
+        "base":"StructureDefinition-productPlan-administeredBy.html",
+        "defns":"StructureDefinition-productPlan-administeredBy-definitions.html",
+        "source":"productPlan-administeredBy.structuredefinition.xml"      
+      },
+      "StructureDefinition/productPlan-productCoverage":{
+        "base":"StructureDefinition-productPlan-productCoverage.html",
+        "defns":"StructureDefinition-productPlan-productCoverage-definitions.html",
+        "source":"productPlan-productCoverage.structuredefinition.xml"      
+      },
+      "StructureDefinition/productPlan-plan":{
+        "base":"StructureDefinition-productPlan-plan.html",
+        "defns":"StructureDefinition-productPlan-plan-definitions.html",
+        "source":"productPlan-plan.structuredefinition.xml"      
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
