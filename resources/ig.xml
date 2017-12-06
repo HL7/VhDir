@@ -307,6 +307,13 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="validation" />
+      <sourceReference>
+        <reference value="StructureDefinition/validation" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />

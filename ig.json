@@ -293,6 +293,11 @@
         "defns":"StructureDefinition-productPlan-plan-definitions.html",
         "source":"productPlan-plan.structuredefinition.xml"      
       },
+      "StructureDefinition/validation":{
+        "base":"StructureDefinition-validation.html",
+        "defns":"StructureDefinition-validation-definitions.html",
+        "source":"validation.structuredefinition.xml"      
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
