@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="vhdir-productPlan" />
+  <meta>
+    <lastUpdated value="2017-12-05T12:47:35.575-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productPlan" />
+  <name value="vhdir-productPlan" />
+  <status value="draft" />
+  <date value="2017-12-05T12:38:42.186-05:00" />
+  <description value="The details of a health insurance product/plan" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
+  <derivation value="constraint" />
+  <snapshot />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <short value="Product/plan" />
+      <definition value="The details of a health insurance product/plan" />
+    </element>
+    <element id="Organization.extension:timePeriod">
+      <path value="Organization.extension" />
+      <sliceName value="timePeriod" />
+      <short value="Valid time period for this product/plan" />
+    </element>
+    <element id="Organization.extension:timePeriod.url">
+      <path value="Organization.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/11179-de-effective-period" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <short value="Identifies this product/plan  across multiple systems" />
+      <definition value="Identifier for the product/plan that is used to identify the product/plan across multiple disparate systems." />
+    </element>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <short value="Whether the product/plan's record is still in active use" />
+      <definition value="Whether the product/plan's record is still in active use." />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <definition value="Type of product/plan" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <label value="name" />
+      <definition value="A name associated with the product/plan (official name designated by the owner of the product/plan)." />
+      <comment value="If the name of a product/plan changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <requirements value="Need to use the name as the label of the product/plan" />
+    </element>
+    <element id="Organization.alias">
+      <path value="Organization.alias" />
+      <short value="Alternate names by which the product/plan is known" />
+      <definition value="A list of alternate names that the product/plan is known as, or was known as in the past." />
+      <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the product/plan." />
+      <requirements value="Over time products/plans may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the product/plan was known by can be very useful." />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <short value="An address for the product/plan" />
+      <definition value="An address for the product/plan." />
+      <comment value="Products/plans may have multiple addresses with different uses or applicable periods. The use code home is not to be used." />
+      <requirements value="May need to keep track of the product/plan's addresses for contacting, billing or reporting requirements." />
+    </element>
+    <element id="Organization.address.extension:geolocation">
+      <path value="Organization.address.extension" />
+      <sliceName value="geolocation" />
+    </element>
+    <element id="Organization.address.extension:geolocation.url">
+      <path value="Organization.address.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <short value="Reference to organization that owns the product/plan" />
+      <definition value="The organization that &quot;owns&quot; this product/plan (typically a payer)" />
+      <requirements value="Need to specify the payor organization of this product/plan" />
+    </element>
+    <element id="Organization.contact">
+      <path value="Organization.contact" />
+      <short value="Contact for the product/plan for a certain purpose" />
+      <definition value="Contact for the product/plan for a certain purpose." />
+      <requirements value="." />
+    </element>
+    <element id="Organization.contact.address.extension:geolocation">
+      <path value="Organization.contact.address.extension" />
+      <sliceName value="geolocation" />
+    </element>
+    <element id="Organization.contact.address.extension:geolocation.url">
+      <path value="Organization.contact.address.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <short value="Technical endpoints providing access to services operated for the product/plan" />
+      <definition value="Technical endpoints providing access to services operated for the product/plan." />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -25,14 +25,7 @@
       <sourceReference>
         <reference value="StructureDefinition/vhdir-validation" />
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Plan" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-plan" />
-      </sourceReference>
-    </resource>    
+    </resource> 
     <resource>
       <example value="false" />
       <name value="Network" />
@@ -40,6 +33,13 @@
         <reference value="StructureDefinition/vhdir-network" />
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false" />
+      <name value="Product/plan" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-productPlan" />
+      </sourceReference>
+    </resource>   
     <resource>
       <example value="false" />
       <name value="Organization" />
