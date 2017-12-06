@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="productPlan-administeredBy" />
   <meta>
-    <lastUpdated value="2017-12-05T14:36:31.288-05:00" />
+    <lastUpdated value="2017-12-06T11:14:54.736-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-administeredBy" />
   <name value="productPlan-administeredBy" />
@@ -181,7 +181,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -221,7 +221,7 @@
       <definition value="Reference to the &quot;administrator&quot; of a plan (e.g. self-insured employer plan administered by a TPA)" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
     </element>
   </differential>
