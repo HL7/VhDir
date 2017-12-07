@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="endpoint-reference" />
   <meta>
-    <lastUpdated value="2017-11-15T14:17:52.632-05:00" />
+    <lastUpdated value="2017-12-07T15:08:16.087-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
   <name value="endpoint-reference" />
@@ -169,7 +169,7 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="Value" />
+      <short value="Endpoint reference" />
       <definition value="A reference to the endpoint" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
@@ -214,7 +214,7 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="Value" />
+      <short value="Endpoint reference" />
       <definition value="A reference to the endpoint" />
       <type>
         <code value="Reference" />

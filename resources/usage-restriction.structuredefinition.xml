@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="usage-restriction" />
   <meta>
-    <lastUpdated value="2017-12-04T10:07:34.91-05:00" />
+    <lastUpdated value="2017-12-07T14:59:53.027-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
   <name value="usage-restriction" />
@@ -333,7 +333,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -522,7 +522,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -1954,7 +1954,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -2546,7 +2546,6 @@
       <label value="Status" />
       <short value="status" />
       <definition value="Status of the restriction (true = active)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:status.url">
@@ -2569,7 +2568,6 @@
       <label value="Last update" />
       <short value="Last Update" />
       <definition value="The date/time the restriction was last updated" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:lastUpdated.url">
@@ -2729,7 +2727,6 @@
       <label value="retrospective" />
       <short value="Retrospective" />
       <definition value="Whether the restriction is retrospective (true = apply retrospectively)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:retrospective.url">

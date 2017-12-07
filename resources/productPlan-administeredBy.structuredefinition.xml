@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="productPlan-administeredBy" />
   <meta>
-    <lastUpdated value="2017-12-06T11:14:54.736-05:00" />
+    <lastUpdated value="2017-12-07T14:56:09.505-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-administeredBy" />
   <name value="productPlan-administeredBy" />
@@ -22,7 +22,7 @@
       <path value="Extension" />
       <short value="Administered by" />
       <definition value="Reference to the &quot;administrator&quot; of a plan (e.g. self-insured employer plan administered by a TPA)" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element" />
@@ -206,7 +206,6 @@
       <path value="Extension" />
       <short value="Administered by" />
       <definition value="Reference to the &quot;administrator&quot; of a plan (e.g. self-insured employer plan administered by a TPA)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.url">

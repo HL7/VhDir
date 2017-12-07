@@ -18,8 +18,9 @@ The resource also provides information about entities involved in the validation
 
 `validation.primarySource` provides information about the primary source(s) the target is validated against
 *  `source` and `sourceOrg` identify the primary source, and `sourceType` indicates what the primary source is
-*  `sourceValidationProcess`, `sourceValidationStatus`, and `sourceValidationDate` describe validation of the target performed by the primary source.
-*  `sourcePush` and `sourcePushType` indicate whether a primary source can push updates or alerts about the target (e.g. if a license board suspends a practitioner's license)
+*  `sourceValidationProcess` indicates how an entity may communicate with the primary source
+*  `sourceValidationStatus`, and `sourceValidationDate` describe the status of the validation of the target against the primary source
+*  `sourcePush` and `sourcePushType` indicate whether a primary source can push updates or alerts (e.g. if a license board suspends a practitioner's license)
 
 `validation.attestation` provides information about who submitted the information being validated
 *  `attestationSource` identifies the individual attesting to information, `attestationOrg` identifies the organization attesting to information
@@ -46,24 +47,15 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 Each validation resource must have:
 
 1.  At least one target in `validation.target`
-1.  One indication of the frequency with which the target must be validated in `validation.validationNeed`
-1.  One indication of the last validation status of the target in `validation.validationStatus`
-1.  One date/time on which the validation status was last updated in `validation.validationStatusDate`
-1.  One indication of what the target is validated against in `validation.validationType`
 1.  One indication of what happens if validation of the target fails in `validation.failureAction`
 1.  For each primary source described:
-    1.  One URI for the primary source in `validation.primarySource.source`
-    1.  One reference to the organization resource for the primary source in `validation.primarySource.sourceOrg`
     1.  At least one type of primary source in `validation.primarySource.sourceType`
     1.  At least one indication of the primary source validation process in `validation.primarySource.sourceValidationProcess`
-    1.  One indication of whether the primary source can push updates/alerts about the target in `validation.primarySource.sourcePush`
+    1.  One indication of whether the primary source can push updates/alerts in `validation.primarySource.sourcePush`
 1.  For each attestation source described:
     1.  One individual that attested to the target information in `validation.attestation.attestationSource`
-    1.  One method indicating who is providing the attested data in `validation.attestation.attestationMethod`
-    1.  One date at which the target information was attested to in `validation.attestation.attestationDate`
 1.  For each validator described:
     1.  One reference to the organization resource for the validator in `validation.validator.validatorOrg`
-    1.  One date on which the validator validated the target information in `validation.validator.dateValidated`
 
 
 **Profile specific implementation guidance:**

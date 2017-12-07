@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-productPlan" />
   <meta>
-    <lastUpdated value="2017-12-06T11:17:10.293-05:00" />
+    <lastUpdated value="2017-12-07T14:57:12.124-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productPlan" />
   <name value="vhdir-productPlan" />
@@ -692,7 +692,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -4483,7 +4483,7 @@
       <definition value="The organization that &quot;owns&quot; this product/plan (typically a payer)" />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to specify the payor organization of this product/plan" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.partOf" />
@@ -7948,38 +7948,29 @@
     <element id="Organization.extension:administeredBy">
       <path value="Organization.extension" />
       <sliceName value="administeredBy" />
-      <short value="Administered by" />
-      <definition value="Reference to the &quot;administrator&quot; of a plan (e.g. self-insured employer plan administered by a TPA)" />
-      <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-administeredBy" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Organization.extension:plan">
       <path value="Organization.extension" />
       <sliceName value="plan" />
-      <short value="Plan" />
-      <definition value="Details about an insurance plan" />
-      <min value="1" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-plan" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Organization.extension:productCoverage">
       <path value="Organization.extension" />
       <sliceName value="productCoverage" />
-      <short value="Product coverage" />
-      <definition value="Details about the coverage offered by the insurance product" />
-      <min value="1" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-productCoverage" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />

@@ -208,11 +208,6 @@
         "defns":"StructureDefinition-newPatients-definitions.html",
         "source":"newPatients.structuredefinition.xml"
       },
-      "StructureDefinition/practitioner-subspecialty":{
-        "base":"StructureDefinition-practitioner-subspecialty.html",
-        "defns":"StructureDefinition-practitioner-subspecialty-definitions.html",
-        "source":"practitioner-subspecialty.structuredefinition.xml"
-      },
       "StructureDefinition/location-availability":{
         "base":"StructureDefinition-location-availability.html",
         "defns":"StructureDefinition-location-availability-definitions.html",
@@ -258,16 +253,6 @@
         "defns":"StructureDefinition-orgRole-participatingOrg-definitions.html",
         "source":"orgRole-participatingOrg.structuredefinition.xml"      
       },      
-      "StructureDefinition/endpoint-profile":{
-        "base":"StructureDefinition-endpoint-profile.html",
-        "defns":"StructureDefinition-endpoint-profile-definitions.html",
-        "source":"endpoint-profile.structuredefinition.xml"      
-      },      
-      "StructureDefinition/endpoint-protocol":{
-        "base":"StructureDefinition-endpoint-protocol.html",
-        "defns":"StructureDefinition-endpoint-protocol-definitions.html",
-        "source":"endpoint-protocol.structuredefinition.xml"      
-      },      
       "StructureDefinition/endpoint-useCase":{
         "base":"StructureDefinition-endpoint-useCase.html",
         "defns":"StructureDefinition-endpoint-useCase-definitions.html",
@@ -292,11 +277,6 @@
         "base":"StructureDefinition-productPlan-plan.html",
         "defns":"StructureDefinition-productPlan-plan-definitions.html",
         "source":"productPlan-plan.structuredefinition.xml"      
-      },
-      "StructureDefinition/validation":{
-        "base":"StructureDefinition-validation.html",
-        "defns":"StructureDefinition-validation-definitions.html",
-        "source":"validation.structuredefinition.xml"      
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

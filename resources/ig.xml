@@ -179,14 +179,7 @@
       <sourceReference>
         <reference value="StructureDefinition/newPatientProfile" />
       </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="practitioner-subspecialty" />
-      <sourceReference>
-        <reference value="StructureDefinition/practitioner-subspecialty" />
-      </sourceReference>
-    </resource>    
+    </resource>        
     <resource>
       <example value="false" />
       <name value="newPatients" />
@@ -256,21 +249,7 @@
       <sourceReference>
         <reference value="StructureDefinition/orgRole-participatingOrg" />
       </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="endpoint-protocol" />
-      <sourceReference>
-        <reference value="StructureDefinition/endpoint-protocol" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="endpoint-profile" />
-      <sourceReference>
-        <reference value="StructureDefinition/endpoint-profile" />
-      </sourceReference>
-    </resource>    
+    </resource>     
     <resource>
       <example value="false" />
       <name value="endpoint-useCase" />
@@ -304,13 +283,6 @@
       <name value="productPlan-plan" />
       <sourceReference>
         <reference value="StructureDefinition/productPlan-plan" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="validation" />
-      <sourceReference>
-        <reference value="StructureDefinition/validation" />
       </sourceReference>
     </resource>
     <resource>

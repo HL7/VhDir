@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-network" />
   <meta>
-    <lastUpdated value="2017-12-05T12:03:38.934-05:00" />
+    <lastUpdated value="2017-12-07T14:50:31.512-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
   <name value="vhdir-network" />
@@ -3843,7 +3843,7 @@
       <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to specify the payor organization of this network" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.partOf" />
@@ -7176,7 +7176,6 @@
       <short value="Reference to organization that owns the network" />
       <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
       <requirements value="Need to specify the payor organization of this network" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />

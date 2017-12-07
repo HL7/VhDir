@@ -1,7 +1,5 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  One owner in `productPlan.ownedBy`
-1.  One administrator in `productPlan.administeredBy`
 1.  At least one covered benefit described in `productPlan.productCoverage`. This attribute consists of a number of other mandatory attributes:
     1.  One type in `productPlan.productCoverage.coverageType`
     1.  At least one benefit described in `productPlan.productCoverage.benefits`

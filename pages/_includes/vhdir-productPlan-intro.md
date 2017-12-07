@@ -1,4 +1,4 @@
-This profile sets minimum expectations for searching for and fetching information associated with a health insurance product/plan. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the practitionerRole resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with a health insurance product/plan. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the productPlan resource when using this profile.
 
 **Background & Scope**
 
@@ -6,7 +6,7 @@ A product is a discrete package of health insurance coverage benefits that are o
 
 ProductPlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.
 
-While productPlan is presented here as a profile on network (which is itself a profile on organization), we propose to create a new productPlan resource as part of the base FHIR spec.
+We propose to create a new productPlan resource as part of the base FHIR specification.
 
 
 **Examples:**
@@ -22,8 +22,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 Each productPlan resource must have:
 
-1.  One owner in `productPlan.ownedBy`
-1.  One administrator in `productPlan.administeredBy`
 1.  At least one covered benefit described in `productPlan.productCoverage`. This attribute consists of a number of other mandatory attributes:
     1.  One type in `productPlan.productCoverage.coverageType`
     1.  At least one benefit described in `productPlan.productCoverage.benefits`
