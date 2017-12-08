@@ -276,7 +276,12 @@
       "StructureDefinition/productPlan-plan":{
         "base":"StructureDefinition-productPlan-plan.html",
         "defns":"StructureDefinition-productPlan-plan-definitions.html",
-        "source":"productPlan-plan.structuredefinition.xml"      
+        "source":"productPlan-plan.structuredefinition.xml"     
+      },
+      "StructureDefinition/validation":{
+        "base":"StructureDefinition-validation.html",
+        "defns":"StructureDefinition-validation-definitions.html",
+        "source":"validation.structuredefinition.xml"   
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
