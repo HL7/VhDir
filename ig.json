@@ -133,6 +133,11 @@
         "defns":"StructureDefinition-vhdir-healthcareservice-definitions.html",
         "source":"vhdir-healthcareservice.structuredefinition.xml"
       },
+      "StructureDefinition/vhdir-organizationRole":{
+        "base":"StructureDefinition-vhdir-organizationRole.html",
+        "defns":"StructureDefinition-vhdir-organizationRole-definitions.html",
+        "source":"vhdir-organizationRole.structuredefinition.xml"
+      },
       "StructureDefinition/usage-restriction":{
         "base":"StructureDefinition-usage-restriction.html",
         "defns":"StructureDefinition-usage-restriction-definitions.html",

@@ -119,6 +119,13 @@
     </resource>
     <resource>
       <example value="false" />
+      <name value="Organization Role" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-organizationRole" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
       <name value="UsageRestriction" />
       <sourceReference>
         <reference value="StructureDefinition/usage-restriction" />
