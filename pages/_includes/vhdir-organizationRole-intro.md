@@ -1,4 +1,4 @@
-This profile sets minimum expectations for searching for and fetching information associated with an organization role. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the practitionerRole resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with an organization role. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the organizationRole resource when using this profile.
 
 **Background & Scope**
 
@@ -9,7 +9,12 @@ OrganizationRole addresses the need to define a non-hierarchical relationship be
 *  Two or more organizations may form a partnership or joint venture
 *  An organization may be a member of another organization, but not owned by it (e.g. a hospital is a member the American Hospital Association, a hospital is a member of a health information exchange network)
 
-OrganizationRole is similar in form and function to practitionerRole. 
+OrganizationRole is similar in form and function to practitionerRole. Instead of references to practitioner and organization (as in practitionerRole), organizationRole includes references to a participatingOrg and a primaryOrg. The participating organization provides "services" to the primary organization (much like a practitioner provides services to an organization). Using the three examples above:
+*  The participating organization provides services to the primary organization
+*  The joint venture is considered the primary organization, and partners within the joint venture are considered participating organizations
+*  An association is the primary organization, and its members are participating organizations.
+
+As with practitionerRole, organizationRole provides the link between an organization and a health insurance provider network.
 
 **Examples:**
 
@@ -20,13 +25,8 @@ The following are example uses for the vhdir-organizationRole profile:
 
 **Mandatory Data Elements**
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+No mandatory elements in the proposed organizationRole Resource. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements. 
 
-Each organizationRole must have:
-
-1.  A boolean value in `practitionerRole.active`
-1.  At least one value describing the role the practitioner performs in `practitionerRole.code`
-1.  For each indication of whether the practitioner is accepting new patients in thier role, one boolean value in `practitionerRole.newPatients.acceptingPatients` (extension)
 
 
 **Profile specific implementation guidance:**
