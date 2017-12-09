@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="usage-restriction" />
   <meta>
-    <lastUpdated value="2017-12-08T18:55:17.524-05:00" />
+    <lastUpdated value="2017-12-08T19:46:25.945-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
   <name value="usage-restriction" />
@@ -12,8 +12,15 @@
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="datatype" />
-  <context value="Any" />
+  <contextType value="resource" />
+  <context value="Practitioner" />
+  <context value="PractitionerRole" />
+  <context value="Basic" />
+  <context value="Organization" />
+  <context value="CareTeam" />
+  <context value="Location" />
+  <context value="Endpoint" />
+  <context value="HealthcareService" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-endpoint" />
   <meta>
-    <lastUpdated value="2017-12-05T12:08:43.682-05:00" />
+    <lastUpdated value="2017-12-08T19:43:34.619-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
   <name value="vhdir-endpoint" />
@@ -297,92 +297,6 @@
       </base>
       <type>
         <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Endpoint.extension:protocol">
-      <path value="Endpoint.extension" />
-      <sliceName value="protocol" />
-      <short value="Protocol" />
-      <definition value="Required specification of the technical protocol used to transmit data" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-protocol" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Endpoint.extension:profile">
-      <path value="Endpoint.extension" />
-      <sliceName value="profile" />
-      <short value="Profile" />
-      <definition value="More detailed description of the standards, implementation guide, etc., that the endpoint supports" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-profile" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3969,37 +3883,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Endpoint.extension:protocol">
-      <path value="Endpoint.extension" />
-      <sliceName value="protocol" />
-      <short value="Protocol" />
-      <definition value="Required specification of the technical protocol used to transmit data" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-protocol" />
-      </type>
-    </element>
-    <element id="Endpoint.extension:profile">
-      <path value="Endpoint.extension" />
-      <sliceName value="profile" />
-      <short value="Profile" />
-      <definition value="More detailed description of the standards, implementation guide, etc., that the endpoint supports" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-profile" />
-      </type>
-    </element>
     <element id="Endpoint.extension:useCase">
       <path value="Endpoint.extension" />
       <sliceName value="useCase" />
-      <short value="Use case" />
-      <definition value="An enumeration of specific use cases (service descriptions) supported by the endpoint" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-useCase" />
@@ -4008,10 +3894,6 @@
     <element id="Endpoint.extension:rank">
       <path value="Endpoint.extension" />
       <sliceName value="rank" />
-      <short value="Rank" />
-      <definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank" />
@@ -4020,10 +3902,6 @@
     <element id="Endpoint.extension:digitalCertificate">
       <path value="Endpoint.extension" />
       <sliceName value="digitalCertificate" />
-      <short value="digitalCertificate" />
-      <definition value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
@@ -4042,10 +3920,6 @@
     <element id="Endpoint.identifier.extension:status">
       <path value="Endpoint.identifier.extension" />
       <sliceName value="status" />
-      <short value="Status" />
-      <definition value="Describes the status of an identifier" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
@@ -4072,10 +3946,6 @@
     <element id="Endpoint.contact.extension:availableTime">
       <path value="Endpoint.contact.extension" />
       <sliceName value="availableTime" />
-      <short value="Available time" />
-      <definition value="Time period when the contact point is to be used" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
@@ -4084,10 +3954,6 @@
     <element id="Endpoint.contact.extension:viaIntermediary">
       <path value="Endpoint.contact.extension" />
       <sliceName value="viaIntermediary" />
-      <short value="viaIntermediary" />
-      <definition value="Represents an external point of contact responsible for handling communications with this entity" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
