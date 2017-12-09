@@ -287,6 +287,20 @@
     </resource>
     <resource>
       <example value="false" />
+      <name value="practitioner-qualification" />
+      <sourceReference>
+        <reference value="StructureDefinition/practitioner-qualification" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="qualification" />
+      <sourceReference>
+        <reference value="StructureDefinition/qualification" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
       <name value="validation" />
       <sourceReference>
         <reference value="StructureDefinition/validation" />

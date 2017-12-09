@@ -283,6 +283,16 @@
         "defns":"StructureDefinition-validation-definitions.html",
         "source":"validation.structuredefinition.xml"   
       },
+      "StructureDefinition/qualification":{
+        "base":"StructureDefinition-qualification.html",
+        "defns":"StructureDefinition-qualification-definitions.html",
+        "source":"qualification.structuredefinition.xml"   
+      },
+      "StructureDefinition/practitioner-qualification":{
+        "base":"StructureDefinition-practitioner-qualification.html",
+        "defns":"StructureDefinition-practitioner-qualification-definitions.html",
+        "source":"practitioner-qualification.structuredefinition.xml"   
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
