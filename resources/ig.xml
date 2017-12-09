@@ -200,14 +200,7 @@
       <sourceReference>
         <reference value="StructureDefinition/location-availability" />
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="careTeam-participatingRoles" />
-      <sourceReference>
-        <reference value="StructureDefinition/careTeam-participatingRoles" />
-      </sourceReference>
-    </resource>    
+    </resource> 
     <resource>
       <example value="false" />
       <name value="careTeam-alias" />

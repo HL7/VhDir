@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehr" />
   <meta>
-    <lastUpdated value="2017-12-04T14:55:48.939-05:00" />
+    <lastUpdated value="2017-12-08T18:43:43.471-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
   <name value="ehr" />
@@ -703,7 +703,7 @@
       <sliceName value="certificationEdition" />
       <label value="certificationEdition" />
       <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against" />
+      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -858,7 +858,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="certificationCriteria" />
       <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against" />
+      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -892,7 +892,7 @@
       <sliceName value="patientAccess" />
       <label value="patientAccess" />
       <short value="Patient acccess" />
-      <definition value="Patient/consumer access options associated with the EHR product" />
+      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1047,7 +1047,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="patientAccess" />
       <short value="Patient access" />
-      <definition value="Patient/consumer access options associated with the EHR product" />
+      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1530,7 +1530,7 @@
       <sliceName value="certificationEdition" />
       <label value="certificationEdition" />
       <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against" />
+      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
       <max value="1" />
     </element>
     <element id="Extension.extension:certificationEdition.url">
@@ -1542,7 +1542,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="certificationCriteria" />
       <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against" />
+      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -1552,7 +1552,7 @@
       <sliceName value="patientAccess" />
       <label value="patientAccess" />
       <short value="Patient acccess" />
-      <definition value="Patient/consumer access options associated with the EHR product" />
+      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
     </element>
     <element id="Extension.extension:patientAccess.url">
       <path value="Extension.extension.url" />
@@ -1563,7 +1563,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="patientAccess" />
       <short value="Patient access" />
-      <definition value="Patient/consumer access options associated with the EHR product" />
+      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
       <type>
         <code value="CodeableConcept" />
       </type>

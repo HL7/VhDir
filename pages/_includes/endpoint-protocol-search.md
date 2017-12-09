@@ -1,1 +1,0 @@
-**No Search criteria for the endpoint-protocol extension.**

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="usage-restriction" />
   <meta>
-    <lastUpdated value="2017-12-07T14:59:53.027-05:00" />
+    <lastUpdated value="2017-12-08T18:55:17.524-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
   <name value="usage-restriction" />
@@ -136,7 +136,7 @@
       <sliceName value="type" />
       <label value="Restriction Type" />
       <short value="Restriction type" />
-      <definition value="Type of restriction" />
+      <definition value="Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -291,7 +291,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of restriction" />
+      <definition value="Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1206,7 +1206,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Describes how the reference is related to the restriction" />
+      <definition value="Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1361,7 +1361,7 @@
       <sliceName value="valueCoding" />
       <label value="Type" />
       <short value="Type" />
-      <definition value="Describes how the reference is related to the restriction " />
+      <definition value="Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -2519,7 +2519,7 @@
       <sliceName value="type" />
       <label value="Restriction Type" />
       <short value="Restriction type" />
-      <definition value="Type of restriction" />
+      <definition value="Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))" />
       <max value="1" />
     </element>
     <element id="Extension.extension:type.url">
@@ -2531,7 +2531,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of restriction" />
+      <definition value="Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -2652,7 +2652,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Describes how the reference is related to the restriction" />
+      <definition value="Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)" />
       <min value="1" />
     </element>
     <element id="Extension.extension:reason.extension:type.url">
@@ -2664,7 +2664,7 @@
       <sliceName value="valueCoding" />
       <label value="Type" />
       <short value="Type" />
-      <definition value="Describes how the reference is related to the restriction " />
+      <definition value="Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)" />
       <type>
         <code value="Coding" />
       </type>

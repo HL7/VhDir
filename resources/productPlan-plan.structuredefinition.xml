@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="productPlan-plan" />
   <meta>
-    <lastUpdated value="2017-12-05T14:34:58.522-05:00" />
+    <lastUpdated value="2017-12-08T18:59:49.505-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-plan" />
   <name value="productPlan-plan" />
@@ -136,7 +136,7 @@
       <sliceName value="planType" />
       <label value="planType" />
       <short value="Plan type" />
-      <definition value="Type of plan" />
+      <definition value="Type of plan (Platinum; Gold; Silver; Bronze; High Deductable; Low Deductable)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -291,7 +291,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="planType" />
       <short value="Plan type" />
-      <definition value="Type of plan" />
+      <definition value="Type of plan (Platinum; Gold; Silver; Bronze; High Deductable; Low Deductable)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -824,7 +824,7 @@
       <sliceName value="category" />
       <label value="category" />
       <short value="Category" />
-      <definition value="General category of benefit." />
+      <definition value="General category of benefit (Medical; Dental; Vision; Drug; Mental Health; Substance Abuse; Hospice, Home Health)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -979,7 +979,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="category" />
       <short value="Category" />
-      <definition value="General category of benefit." />
+      <definition value="General category of benefit (Medical; Dental; Vision; Drug; Mental Health; Substance Abuse; Hospice, Home Health)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1134,7 +1134,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of specific benefit (preventative; primary care office visit; speciality office visit; hospitalization; emergency room; urgent care)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1289,7 +1289,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of specific benefit (preventative; primary care office visit; speciality office visit; hospitalization; emergency room; urgent care)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1444,7 +1444,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type of benefit" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of cost (copay; individual cap; family cap; coinsurance; deductible)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1599,7 +1599,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of cost (copay; individual cap; family cap; coinsurance; deductible)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1633,7 +1633,7 @@
       <sliceName value="applicability" />
       <label value="applicability" />
       <short value="Applicability" />
-      <definition value="Whether the cost applies to in-network or out-of-network providers" />
+      <definition value="Whether the cost applies to in-network or out-of-network providers (in-network; out-of-network; other)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1788,7 +1788,7 @@
       <sliceName value="valueCoding" />
       <label value="applicability" />
       <short value="Applicability" />
-      <definition value="Whether the cost applies to in-network or out-of-network providers" />
+      <definition value="Whether the cost applies to in-network or out-of-network providers (in-network; out-of-network; other)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -2926,7 +2926,7 @@
       <sliceName value="planType" />
       <label value="planType" />
       <short value="Plan type" />
-      <definition value="Type of plan" />
+      <definition value="Type of plan (Platinum; Gold; Silver; Bronze; High Deductable; Low Deductable)" />
       <max value="1" />
     </element>
     <element id="Extension.extension:planType.url">
@@ -2938,7 +2938,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="planType" />
       <short value="Plan type" />
-      <definition value="Type of plan" />
+      <definition value="Type of plan (Platinum; Gold; Silver; Bronze; High Deductable; Low Deductable)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -3009,7 +3009,7 @@
       <sliceName value="category" />
       <label value="category" />
       <short value="Category" />
-      <definition value="General category of benefit." />
+      <definition value="General category of benefit (Medical; Dental; Vision; Drug; Mental Health; Substance Abuse; Hospice, Home Health)" />
       <max value="1" />
     </element>
     <element id="Extension.extension:benefitCategory.extension:category.url">
@@ -3021,7 +3021,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="category" />
       <short value="Category" />
-      <definition value="General category of benefit." />
+      <definition value="General category of benefit (Medical; Dental; Vision; Drug; Mental Health; Substance Abuse; Hospice, Home Health)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -3048,7 +3048,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of specific benefit (preventative; primary care office visit; speciality office visit; hospitalization; emergency room; urgent care)" />
       <max value="1" />
     </element>
     <element id="Extension.extension:benefitCategory.extension:benefit.extension:type.url">
@@ -3060,7 +3060,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of specific benefit (preventative; primary care office visit; speciality office visit; hospitalization; emergency room; urgent care)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -3087,7 +3087,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type of benefit" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of cost (copay; individual cap; family cap; coinsurance; deductible)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -3100,7 +3100,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of specific benefit" />
+      <definition value="Type of cost (copay; individual cap; family cap; coinsurance; deductible)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -3110,7 +3110,7 @@
       <sliceName value="applicability" />
       <label value="applicability" />
       <short value="Applicability" />
-      <definition value="Whether the cost applies to in-network or out-of-network providers" />
+      <definition value="Whether the cost applies to in-network or out-of-network providers (in-network; out-of-network; other)" />
     </element>
     <element id="Extension.extension:benefitCategory.extension:benefit.extension:costs.extension:applicability.url">
       <path value="Extension.extension.extension.extension.extension.url" />
@@ -3121,7 +3121,7 @@
       <sliceName value="valueCoding" />
       <label value="applicability" />
       <short value="Applicability" />
-      <definition value="Whether the cost applies to in-network or out-of-network providers" />
+      <definition value="Whether the cost applies to in-network or out-of-network providers (in-network; out-of-network; other)" />
       <type>
         <code value="Coding" />
       </type>

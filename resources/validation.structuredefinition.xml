@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="validation" />
   <meta>
-    <lastUpdated value="2017-12-06T14:25:14.216-05:00" />
+    <lastUpdated value="2017-12-08T18:53:02.778-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/validation" />
   <name value="validation" />
@@ -329,8 +329,8 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -518,8 +518,8 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -707,7 +707,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -896,8 +896,8 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1085,8 +1085,8 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1275,7 +1275,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -2151,7 +2151,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -2340,7 +2340,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -2715,7 +2715,7 @@
       <sliceName value="sourceValidationProcess" />
       <label value="sourceValidationProcess" />
       <short value="Source validation process" />
-      <definition value="Process(es) (manual; API; Push)" />
+      <definition value="Method for communicating with the primary source (manual; API; Push)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2870,7 +2870,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="sourceValidationProcess" />
       <short value="Source validation process" />
-      <definition value="Process(es) (manual; API; Push)" />
+      <definition value="Method for communicating with the primary source (manual; API; Push)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -2904,7 +2904,7 @@
       <sliceName value="sourceValidationStatus" />
       <label value="sourceValidationStatus" />
       <short value="Source validation status" />
-      <definition value="Status of the last validation by the primary source (successful; failed; undetermined)" />
+      <definition value="Status of the validation of the target against the primary source (successful; failed; undetermined)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3059,7 +3059,7 @@
       <sliceName value="valueCode" />
       <label value="sourceValidationStatus" />
       <short value="Source validation status" />
-      <definition value="Status of the last validation by the primary source (successful; failed; undetermined)" />
+      <definition value="Status of the validation of the target against the primary source (successful; failed; undetermined)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -3093,7 +3093,7 @@
       <sliceName value="sourceValidationDate" />
       <label value="sourceValidationDate" />
       <short value="Primary source validation date" />
-      <definition value="Date/time the primary source last validated the target" />
+      <definition value="When the target was validated against the primary source" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3248,7 +3248,7 @@
       <sliceName value="valueDateTime" />
       <label value="sourceValidationDate" />
       <short value="Primary source validation date" />
-      <definition value="Date/time the primary source last validated the target" />
+      <definition value="When the target was validated against the primary source" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -3282,7 +3282,7 @@
       <sliceName value="sourcePush" />
       <label value="sourcePush" />
       <short value="Primary source alerting ability" />
-      <definition value="Ability of the primary source to push updates/alerts about the validation of the target (yes; no; undetermined)" />
+      <definition value="Ability of the primary source to push updates/alerts (yes; no; undetermined)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3437,7 +3437,7 @@
       <sliceName value="valueCode" />
       <label value="sourcePush" />
       <short value="Primary source alerting ability" />
-      <definition value="Ability of the primary source to push updates/alerts about the validation of the target (yes; no; undetermined)" />
+      <definition value="Ability of the primary source to push updates/alerts (yes; no; undetermined)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -3471,7 +3471,7 @@
       <sliceName value="sourcePushType" />
       <label value="sourcePushType" />
       <short value="Type of alerts pushed by primary source" />
-      <definition value="Type of alerts/updates the primary source can send about the validation of the target (specific requested changes; any changes; as defined by source)" />
+      <definition value="Type of alerts/updates the primary source can send (specific requested changes; any changes; as defined by source)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3626,7 +3626,7 @@
       <sliceName value="valueCode" />
       <label value="sourcePushType" />
       <short value="Type of alerts pushed by primary source" />
-      <definition value="Type of alerts/updates the primary source can send about the validation of the target (specific requested changes; any changes; as defined by source)" />
+      <definition value="Type of alerts/updates the primary source can send (specific requested changes; any changes; as defined by source)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -3842,7 +3842,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -4342,7 +4342,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -4531,7 +4531,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -6342,7 +6342,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -6504,6 +6504,195 @@
       </base>
       <type>
         <code value="date" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI">
+      <path value="Extension.extension.extension" />
+      <sliceName value="validatorURI" />
+      <label value="validatorURI" />
+      <short value="URI of the validator" />
+      <definition value="URI of the validator" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.id">
+      <path value="Extension.extension.extension.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.extension">
+      <path value="Extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.url">
+      <path value="Extension.extension.extension.url" />
+      <representation value="xmlAttr" />
+      <short value="identifies the meaning of the extension" />
+      <definition value="Source of the definition for the extension code - a logical name or a URL." />
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Extension.url" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="validatorURI" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.value[x]:valueUri">
+      <path value="Extension.extension.extension.valueUri" />
+      <sliceName value="valueUri" />
+      <label value="validatorURI" />
+      <short value="URI of the validator" />
+      <definition value="URI of the validator" />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6921,8 +7110,6 @@
       <label value="validationNeed" />
       <short value="Validation need" />
       <definition value="The frequency with which the target must be validated (none; initial; periodic)" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:validationNeed.url">
       <path value="Extension.extension.url" />
@@ -6944,8 +7131,6 @@
       <label value="validationStatus" />
       <short value="Validation status" />
       <definition value="The validation status of the target (attested; validated; in process; requires revalidation; validation failed; revalidation failed)" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:validationStatus.url">
       <path value="Extension.extension.url" />
@@ -6967,7 +7152,6 @@
       <label value="validationStatusDate" />
       <short value="Validation status date" />
       <definition value="When the validation status was updated" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:validationStatusDate.url">
@@ -6990,8 +7174,6 @@
       <label value="validationType" />
       <short value="Validation type" />
       <definition value="What the target is validated against (nothing; primary source; multiple sources)" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:validationType.url">
       <path value="Extension.extension.url" />
@@ -7013,8 +7195,6 @@
       <label value="validationProcess" />
       <short value="Validation process" />
       <definition value="The primary process by which the target is validated (edit check; value set; primary source; multiple sources; standalone; in context)" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:validationProcess.url">
       <path value="Extension.extension.url" />
@@ -7036,7 +7216,6 @@
       <label value="frequency" />
       <short value="Frequency" />
       <definition value="Frequency of revalidation" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:frequency.url">
       <path value="Extension.extension.url" />
@@ -7142,7 +7321,6 @@
       <label value="source" />
       <short value="Primary source URI" />
       <definition value="URI of the primary source for validation" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:primarySource.extension:source.url">
@@ -7165,7 +7343,6 @@
       <label value="sourceOrg" />
       <short value="Primary source organization" />
       <definition value="Reference to the primary source" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:primarySource.extension:sourceOrg.url">
@@ -7209,7 +7386,7 @@
       <sliceName value="sourceValidationProcess" />
       <label value="sourceValidationProcess" />
       <short value="Source validation process" />
-      <definition value="Process(es) (manual; API; Push)" />
+      <definition value="Method for communicating with the primary source (manual; API; Push)" />
       <min value="1" />
     </element>
     <element id="Extension.extension:primarySource.extension:sourceValidationProcess.url">
@@ -7221,7 +7398,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="sourceValidationProcess" />
       <short value="Source validation process" />
-      <definition value="Process(es) (manual; API; Push)" />
+      <definition value="Method for communicating with the primary source (manual; API; Push)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -7231,7 +7408,7 @@
       <sliceName value="sourceValidationStatus" />
       <label value="sourceValidationStatus" />
       <short value="Source validation status" />
-      <definition value="Status of the last validation by the primary source (successful; failed; undetermined)" />
+      <definition value="Status of the validation of the target against the primary source (successful; failed; undetermined)" />
       <max value="1" />
     </element>
     <element id="Extension.extension:primarySource.extension:sourceValidationStatus.url">
@@ -7243,7 +7420,7 @@
       <sliceName value="valueCode" />
       <label value="sourceValidationStatus" />
       <short value="Source validation status" />
-      <definition value="Status of the last validation by the primary source (successful; failed; undetermined)" />
+      <definition value="Status of the validation of the target against the primary source (successful; failed; undetermined)" />
       <type>
         <code value="code" />
       </type>
@@ -7253,7 +7430,7 @@
       <sliceName value="sourceValidationDate" />
       <label value="sourceValidationDate" />
       <short value="Primary source validation date" />
-      <definition value="Date/time the primary source last validated the target" />
+      <definition value="When the target was validated against the primary source" />
       <max value="1" />
     </element>
     <element id="Extension.extension:primarySource.extension:sourceValidationDate.url">
@@ -7265,7 +7442,7 @@
       <sliceName value="valueDateTime" />
       <label value="sourceValidationDate" />
       <short value="Primary source validation date" />
-      <definition value="Date/time the primary source last validated the target" />
+      <definition value="When the target was validated against the primary source" />
       <type>
         <code value="dateTime" />
       </type>
@@ -7275,7 +7452,7 @@
       <sliceName value="sourcePush" />
       <label value="sourcePush" />
       <short value="Primary source alerting ability" />
-      <definition value="Ability of the primary source to push updates/alerts about the validation of the target (yes; no; undetermined)" />
+      <definition value="Ability of the primary source to push updates/alerts (yes; no; undetermined)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -7288,7 +7465,7 @@
       <sliceName value="valueCode" />
       <label value="sourcePush" />
       <short value="Primary source alerting ability" />
-      <definition value="Ability of the primary source to push updates/alerts about the validation of the target (yes; no; undetermined)" />
+      <definition value="Ability of the primary source to push updates/alerts (yes; no; undetermined)" />
       <type>
         <code value="code" />
       </type>
@@ -7298,7 +7475,7 @@
       <sliceName value="sourcePushType" />
       <label value="sourcePushType" />
       <short value="Type of alerts pushed by primary source" />
-      <definition value="Type of alerts/updates the primary source can send about the validation of the target (specific requested changes; any changes; as defined by source)" />
+      <definition value="Type of alerts/updates the primary source can send (specific requested changes; any changes; as defined by source)" />
     </element>
     <element id="Extension.extension:primarySource.extension:sourcePushType.url">
       <path value="Extension.extension.extension.url" />
@@ -7309,7 +7486,7 @@
       <sliceName value="valueCode" />
       <label value="sourcePushType" />
       <short value="Type of alerts pushed by primary source" />
-      <definition value="Type of alerts/updates the primary source can send about the validation of the target (specific requested changes; any changes; as defined by source)" />
+      <definition value="Type of alerts/updates the primary source can send (specific requested changes; any changes; as defined by source)" />
       <type>
         <code value="code" />
       </type>
@@ -7328,6 +7505,7 @@
       <label value="attestation" />
       <short value="Attestation entity" />
       <definition value="Information about the entity attesting to information" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:attestation.extension">
       <path value="Extension.extension.extension" />
@@ -7392,7 +7570,6 @@
       <label value="attestationMethod" />
       <short value="Attestation method" />
       <definition value="Who is providing the attested information (owner; authorized representative; authorized intermediary; non-authorized source)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:attestation.extension:attestationMethod.url">
@@ -7415,7 +7592,6 @@
       <label value="attestationDate" />
       <short value="Attestation date" />
       <definition value="The date the information was attested to" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:attestation.extension:attestationDate.url">
@@ -7619,7 +7795,6 @@
       <label value="dateValidated" />
       <short value="Date validated" />
       <definition value="Date on which the validator last validated the information" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:validator.extension:dateValidated.url">
@@ -7634,6 +7809,28 @@
       <definition value="Date on which the validator last validated the information" />
       <type>
         <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI">
+      <path value="Extension.extension.extension" />
+      <sliceName value="validatorURI" />
+      <label value="validatorURI" />
+      <short value="URI of the validator" />
+      <definition value="URI of the validator" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="validatorURI" />
+    </element>
+    <element id="Extension.extension:validator.extension:validatorURI.value[x]:valueUri">
+      <path value="Extension.extension.extension.valueUri" />
+      <sliceName value="valueUri" />
+      <label value="validatorURI" />
+      <short value="URI of the validator" />
+      <definition value="URI of the validator" />
+      <type>
+        <code value="uri" />
       </type>
     </element>
     <element id="Extension.extension:validator.url">

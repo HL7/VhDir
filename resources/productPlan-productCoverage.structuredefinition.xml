@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="productPlan-productCoverage" />
   <meta>
-    <lastUpdated value="2017-12-05T17:44:13.791-05:00" />
+    <lastUpdated value="2017-12-08T19:01:11.987-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productPlan-productCoverage" />
   <name value="productPlan-productCoverage" />
@@ -136,7 +136,7 @@
       <sliceName value="coverageType" />
       <label value="coverageType" />
       <short value="Type" />
-      <definition value="Type of coverage" />
+      <definition value="Type of coverage  (Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term; Long Term Care; Hospice; Home Health)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -291,7 +291,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="coverageType" />
       <short value="Coverage type" />
-      <definition value="Type of coverage" />
+      <definition value="Type of coverage  (Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term; Long Term Care; Hospice; Home Health)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -446,7 +446,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of benefit" />
+      <definition value="Type of benefit (primary care; speciality care; inpatient; outpatient)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -601,7 +601,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of benefit" />
+      <definition value="Type of benefit (primary care; speciality care; inpatient; outpatient)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -756,7 +756,7 @@
       <sliceName value="description" />
       <label value="description" />
       <short value="Description" />
-      <definition value="Description of the specific benefit" />
+      <definition value="Description of the specific benefit (days; visits)" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -911,7 +911,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="description" />
       <short value="Description" />
-      <definition value="Description of the specific benefit" />
+      <definition value="Description of the specific benefit (days; visits)" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -1683,7 +1683,7 @@
       <sliceName value="coverageType" />
       <label value="coverageType" />
       <short value="Type" />
-      <definition value="Type of coverage" />
+      <definition value="Type of coverage  (Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term; Long Term Care; Hospice; Home Health)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1696,7 +1696,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="coverageType" />
       <short value="Coverage type" />
-      <definition value="Type of coverage" />
+      <definition value="Type of coverage  (Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term; Long Term Care; Hospice; Home Health)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -1724,7 +1724,7 @@
       <sliceName value="type" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of benefit" />
+      <definition value="Type of benefit (primary care; speciality care; inpatient; outpatient)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1737,7 +1737,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of benefit" />
+      <definition value="Type of benefit (primary care; speciality care; inpatient; outpatient)" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -1765,7 +1765,7 @@
       <sliceName value="description" />
       <label value="description" />
       <short value="Description" />
-      <definition value="Description of the specific benefit" />
+      <definition value="Description of the specific benefit (days; visits)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1778,7 +1778,7 @@
       <sliceName value="valueCodeableConcept" />
       <label value="description" />
       <short value="Description" />
-      <definition value="Description of the specific benefit" />
+      <definition value="Description of the specific benefit (days; visits)" />
       <type>
         <code value="CodeableConcept" />
       </type>
