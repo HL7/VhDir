@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-organization" />
   <meta>
-    <lastUpdated value="2017-12-08T19:36:25.571-05:00" />
+    <lastUpdated value="2017-12-08T19:51:24.608-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
   <name value="vhdir-organization" />
@@ -449,6 +449,49 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Organization.extension:restriction">
+      <path value="Organization.extension" />
+      <sliceName value="restriction" />
+      <short value="Restriction" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7410,6 +7453,18 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification" />
+      </type>
+    </element>
+    <element id="Organization.extension:restriction">
+      <path value="Organization.extension" />
+      <sliceName value="restriction" />
+      <short value="Restriction" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
     </element>
     <element id="Organization.identifier.extension">
