@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="orgRole-primaryOrg" />
   <meta>
-    <lastUpdated value="2017-12-04T15:50:05.19-05:00" />
+    <lastUpdated value="2017-12-08T19:32:59.641-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/orgRole-primaryOrg" />
   <name value="orgRole-primaryOrg" />
@@ -181,7 +181,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -220,7 +220,7 @@
       <definition value="Organization where the role is available" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
     </element>
   </differential>

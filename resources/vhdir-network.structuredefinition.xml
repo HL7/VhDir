@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-network" />
   <meta>
-    <lastUpdated value="2017-12-07T14:50:31.512-05:00" />
+    <lastUpdated value="2017-12-08T19:38:22.356-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
   <name value="vhdir-network" />
@@ -3854,6 +3854,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationRole" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7179,6 +7183,10 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationRole" />
       </type>
       <mustSupport value="true" />
     </element>
