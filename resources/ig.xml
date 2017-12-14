@@ -126,9 +126,16 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="UsageRestriction" />
+      <name value="Usage Restriction" />
       <sourceReference>
         <reference value="StructureDefinition/usage-restriction" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="Restriction" />
+      <sourceReference>
+        <reference value="StructureDefinition/vhdir-restriction" />
       </sourceReference>
     </resource>    
     <resource>
@@ -238,20 +245,6 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="Primary organization" />
-      <sourceReference>
-        <reference value="StructureDefinition/orgRole-primaryOrg" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Participating organization" />
-      <sourceReference>
-        <reference value="StructureDefinition/orgRole-participatingOrg" />
-      </sourceReference>
-    </resource>     
-    <resource>
-      <example value="false" />
       <name value="endpoint-useCase" />
       <sourceReference>
         <reference value="StructureDefinition/endpoint-useCase" />
@@ -262,27 +255,6 @@
       <name value="endpoint-rank" />
       <sourceReference>
         <reference value="StructureDefinition/endpoint-rank" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="productPlan-administeredBy" />
-      <sourceReference>
-        <reference value="StructureDefinition/productPlan-administeredBy" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="productPlan-productCoverage" />
-      <sourceReference>
-        <reference value="StructureDefinition/productPlan-productCoverage" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="productPlan-plan" />
-      <sourceReference>
-        <reference value="StructureDefinition/productPlan-plan" />
       </sourceReference>
     </resource>
     <resource>
@@ -346,6 +318,17 @@
         <reference value="StructureDefinition/vhdir-network" />
       </exampleFor>
     </resource>
+    <!-- <resource>
+      <example value="true" />
+      <name value="Product Plan" />
+      <description value="A simple Insurance Product Plan" />
+      <sourceReference>
+        <reference value="ProductPlan/example-onc" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/vhdir-productPlan" />
+      </exampleFor>
+    </resource> -->
     <resource>
       <example value="false" />
       <sourceReference>

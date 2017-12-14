@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="vhdir-restriction" />
+  <meta>
+    <lastUpdated value="2017-12-15T01:46:45.466+11:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
+  <name value="vhdir-restriction" />
+  <status value="draft" />
+  <date value="2017-12-15T01:01:31.325+11:00" />
+  <description value="Restriction on use/release of exchanged information&#xD;&#xA;" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Consent" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Consent">
+      <path value="Consent" />
+      <short value="A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time" />
+      <definition value=" " />
+      <comment value=" " />
+      <alias value="Restriction" />
+    </element>
+    <element id="Consent.identifier">
+      <path value="Consent.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Consent.status">
+      <path value="Consent.status" />
+      <short value="Indicates the current state of this restriction" />
+      <comment value="This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid." />
+      <requirements value=" " />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.scope">
+      <path value="Consent.scope" />
+      <fixedCode value="privacy"/>
+    </element>
+    <element id="Consent.category">
+      <path value="Consent.category" />
+      <label value="Type" />
+      <short value="Type of restriction" />
+      <definition value="Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.patient">
+      <path value="Consent.patient" />
+      <short value="As the consent is not applicable in the Restriction, this should have a null flavour applied to it" />
+    </element>
+    <element id="Consent.patient.reference">
+      <path value="Consent.patient.reference" />
+      <max value="0" />
+    </element>
+    <element id="Consent.patient.identifier">
+      <path value="Consent.patient.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Consent.patient.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Consent.patient.display" />
+      <max value="0" />
+    </element>
+    <element id="Consent.dateTime">
+      <path value="Consent.dateTime" />
+      <label value="last updated" />
+      <short value="date/time of last update for this restriction" />
+      <definition value="When this Restriction was issued / created / indexed." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.consentingParty">
+      <path value="Consent.consentingParty" />
+      <max value="0" />
+    </element>
+    <element id="Consent.organization">
+      <path value="Consent.organization" />
+      <max value="0" />
+    </element>
+    <element id="Consent.source[x]">
+      <path value="Consent.source[x]" />
+      <max value="0" />
+    </element>
+    <element id="Consent.policy">
+      <path value="Consent.policy" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.policy.uri">
+      <path value="Consent.policy.uri" />
+      <short value="Specific policy covered by this restriction" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.policyRule">
+      <path value="Consent.policyRule" />
+      <max value="0" />
+    </element>
+    <element id="Consent.verification">
+      <path value="Consent.verification" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision">
+      <path value="Consent.provision" />
+    </element>
+    <element id="Consent.provision.type">
+      <path value="Consent.provision.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.period">
+      <path value="Consent.provision.period" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.actor">
+      <path value="Consent.provision.actor" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.action">
+      <path value="Consent.provision.action" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.securityLabel">
+      <path value="Consent.provision.securityLabel" />
+      <short value="" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.dataPeriod">
+      <path value="Consent.provision.dataPeriod" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.data">
+      <path value="Consent.provision.data" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.provision">
+      <path value="Consent.provision.provision" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

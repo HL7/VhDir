@@ -77,7 +77,7 @@
    "searches":[
 
    ],
-   "version":"3.0.1",
+   "version":"3.1.0",
    "resources":{
       "Location/hl7east":{
          "base":"Location-hl7east.html",
@@ -137,6 +137,11 @@
         "base":"StructureDefinition-vhdir-organizationRole.html",
         "defns":"StructureDefinition-vhdir-organizationRole-definitions.html",
         "source":"vhdir-organizationRole.structuredefinition.xml"
+      },
+      "StructureDefinition/vhdir-restriction":{
+        "base":"StructureDefinition-vhdir-restriction.html",
+        "defns":"StructureDefinition-vhdir-restriction-definitions.html",
+        "source":"vhdir-restriction.structuredefinition.xml"
       },
       "StructureDefinition/usage-restriction":{
         "base":"StructureDefinition-usage-restriction.html",
@@ -243,16 +248,6 @@
         "defns":"StructureDefinition-contactPoint-availableTime-definitions.html",
         "source":"contactPoint-availableTime.structuredefinition.xml"      
       },
-      "StructureDefinition/orgRole-primaryOrg":{
-        "base":"StructureDefinition-orgRole-primaryOrg.html",
-        "defns":"StructureDefinition-orgRole-primaryOrg-definitions.html",
-        "source":"orgRole-primaryOrg.structuredefinition.xml"      
-      },
-      "StructureDefinition/orgRole-participatingOrg":{
-        "base":"StructureDefinition-orgRole-participatingOrg.html",
-        "defns":"StructureDefinition-orgRole-participatingOrg-definitions.html",
-        "source":"orgRole-participatingOrg.structuredefinition.xml"      
-      },      
       "StructureDefinition/endpoint-useCase":{
         "base":"StructureDefinition-endpoint-useCase.html",
         "defns":"StructureDefinition-endpoint-useCase-definitions.html",
@@ -262,21 +257,6 @@
         "base":"StructureDefinition-endpoint-rank.html",
         "defns":"StructureDefinition-endpoint-rank-definitions.html",
         "source":"endpoint-rank.structuredefinition.xml"      
-      },
-      "StructureDefinition/productPlan-administeredBy":{
-        "base":"StructureDefinition-productPlan-administeredBy.html",
-        "defns":"StructureDefinition-productPlan-administeredBy-definitions.html",
-        "source":"productPlan-administeredBy.structuredefinition.xml"      
-      },
-      "StructureDefinition/productPlan-productCoverage":{
-        "base":"StructureDefinition-productPlan-productCoverage.html",
-        "defns":"StructureDefinition-productPlan-productCoverage-definitions.html",
-        "source":"productPlan-productCoverage.structuredefinition.xml"      
-      },
-      "StructureDefinition/productPlan-plan":{
-        "base":"StructureDefinition-productPlan-plan.html",
-        "defns":"StructureDefinition-productPlan-plan-definitions.html",
-        "source":"productPlan-plan.structuredefinition.xml"     
       },
       "StructureDefinition/validation":{
         "base":"StructureDefinition-validation.html",
