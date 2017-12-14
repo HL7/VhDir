@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-organizationRole" />
   <meta>
-    <lastUpdated value="2017-12-08T19:51:27.649-05:00" />
+    <lastUpdated value="2017-12-10T12:29:00.342-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationRole" />
   <name value="vhdir-organizationRole" />
