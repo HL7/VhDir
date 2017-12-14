@@ -5,7 +5,6 @@
     <lastUpdated value="2017-12-10T23:37:50.386+11:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
-  <version value="0.1" />
   <name value="vhdir-network" />
   <status value="draft" />
   <date value="2017-09-01T06:26:52.043+10:00" />
