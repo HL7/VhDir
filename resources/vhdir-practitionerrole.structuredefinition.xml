@@ -15,6 +15,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
   <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+    </element>
     <element id="PractitionerRole.language">
       <path value="PractitionerRole.language" />
       <max value="0" />
@@ -87,6 +90,9 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
     </element>
+    <element id="PractitionerRole.identifier">
+      <path value="PractitionerRole.identifier" />
+    </element>
     <element id="PractitionerRole.identifier.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
@@ -112,6 +118,9 @@
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
       <min value="1" />
+    </element>
+    <element id="PractitionerRole.telecom">
+      <path value="PractitionerRole.telecom" />
     </element>
     <element id="PractitionerRole.telecom.extension">
       <path value="PractitionerRole.telecom.extension" />

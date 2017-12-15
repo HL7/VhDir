@@ -18,6 +18,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
   <derivation value="constraint" />
   <differential>
+    <element id="Location">
+      <path value="Location" />
+    </element>
     <element id="Location.language">
       <path value="Location.language" />
       <max value="0" />
@@ -92,6 +95,9 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
     </element>
+    <element id="Location.identifier">
+      <path value="Location.identifier" />
+    </element>
     <element id="Location.identifier.extension">
       <path value="Location.identifier.extension" />
       <slicing>
@@ -117,6 +123,9 @@
     <element id="Location.mode">
       <path value="Location.mode" />
       <max value="0" />
+    </element>
+    <element id="Location.telecom">
+      <path value="Location.telecom" />
     </element>
     <element id="Location.telecom.extension">
       <path value="Location.telecom.extension" />
@@ -144,6 +153,9 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
       </type>
     </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+    </element>
     <element id="Location.address.extension">
       <path value="Location.address.extension" />
       <slicing>
@@ -170,7 +182,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <profileProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
     </element>
   </differential>

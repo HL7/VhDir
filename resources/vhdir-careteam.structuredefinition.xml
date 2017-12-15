@@ -15,6 +15,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
   <derivation value="constraint" />
   <differential>
+    <element id="CareTeam">
+      <path value="CareTeam" />
+    </element>
     <element id="CareTeam.subject">
       <path value="CareTeam.subject" />
       <max value="0" />

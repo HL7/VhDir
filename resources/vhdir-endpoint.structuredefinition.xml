@@ -16,6 +16,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
   <derivation value="constraint" />
   <differential>
+    <element id="Endpoint">
+      <path value="Endpoint" />
+    </element>
     <element id="Endpoint.language">
       <path value="Endpoint.language" />
       <max value="0" />
@@ -54,17 +57,8 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
       </type>
     </element>
-    <element id="Endpoint.extension:restriction">
-      <path value="Endpoint.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
+    <element id="Endpoint.identifier">
+      <path value="Endpoint.identifier" />
     </element>
     <element id="Endpoint.identifier.extension">
       <path value="Endpoint.identifier.extension" />

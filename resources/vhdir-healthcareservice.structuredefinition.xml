@@ -15,6 +15,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
   <differential>
+    <element id="HealthcareService">
+      <path value="HealthcareService" />
+    </element>
     <element id="HealthcareService.photo">
       <path value="HealthcareService.photo" />
       <max value="0" />
