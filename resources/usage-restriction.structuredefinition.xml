@@ -36,7 +36,7 @@
       <comment value="This is anticipated to usually be a reference to a contained resource (this eases distribution, and permits the same consent applying to multiple properties in the same resource)" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
       </type>
     </element>
     <element id="valueReference:valueReference.identifier">
