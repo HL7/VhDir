@@ -442,7 +442,6 @@ queried by category using:</p>
 		</div>
 	</text>
 	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/client"/>
-	<version value="1.0.0"/>
 	<name value="Validated Healthcare Directory Client"/>
 	<status value="draft"/>
 	<date value="2017-08-04"/>

@@ -14,7 +14,6 @@
 	</text>
 
 	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server"/>
-	<version value="1.0.0"/>
 	<name value="VhDir Server"/>
 	<status value="draft"/>
 	<date value="2017-03-20"/>
