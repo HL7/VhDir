@@ -14,6 +14,34 @@
     <name value="base" />
     <resource>
       <example value="false" />
+      <name value="identifier-status" />
+      <sourceReference>
+        <reference value="StructureDefinition/identifier-status" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="address-position" />
+      <sourceReference>
+        <reference value="StructureDefinition/address-position" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="contactPoint-viaIntermediary" />
+      <sourceReference>
+        <reference value="StructureDefinition/contactPoint-viaIntermediary" />
+      </sourceReference>
+    </resource>    
+    <resource>
+      <example value="false" />
+      <name value="contactPoint-availableTime" />
+      <sourceReference>
+        <reference value="StructureDefinition/contactPoint-availableTime" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
       <name value="Care Team" />
       <sourceReference>
         <reference value="StructureDefinition/vhdir-careteam" />
@@ -217,34 +245,6 @@
     </resource>    
     <resource>
       <example value="false" />
-      <name value="address-position" />
-      <sourceReference>
-        <reference value="StructureDefinition/address-position" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="identifier-status" />
-      <sourceReference>
-        <reference value="StructureDefinition/identifier-status" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="contactPoint-viaIntermediary" />
-      <sourceReference>
-        <reference value="StructureDefinition/contactPoint-viaIntermediary" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="contactPoint-availableTime" />
-      <sourceReference>
-        <reference value="StructureDefinition/contactPoint-availableTime" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
       <name value="endpoint-useCase" />
       <sourceReference>
         <reference value="StructureDefinition/endpoint-useCase" />
@@ -346,5 +346,20 @@
     <source value="index.html" />
     <title value="Validated Healthcare Directory Homepage" />
     <kind value="page" />
+  </page>
+  <page>
+    <source value="assets/images/diagram1.jpg" />
+    <title value="diagram 1" />
+    <kind value="include" />
+  </page>
+  <page>
+    <source value="assets/images/diagram2.jpg" />
+    <title value="diagram 2" />
+    <kind value="include" />
+  </page>
+  <page>
+    <source value="assets/images/diagram3.jpg" />
+    <title value="diagram 3" />
+    <kind value="include" />
   </page>
 </ImplementationGuide>

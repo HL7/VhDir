@@ -19,8 +19,6 @@
     <element id="Consent">
       <path value="Consent" />
       <short value="A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time" />
-      <definition value=" " />
-      <comment value=" " />
       <alias value="Restriction" />
     </element>
     <element id="Consent.identifier">
@@ -31,7 +29,6 @@
       <path value="Consent.status" />
       <short value="Indicates the current state of this restriction" />
       <comment value="This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid." />
-      <requirements value=" " />
       <mustSupport value="true" />
     </element>
     <element id="Consent.scope">

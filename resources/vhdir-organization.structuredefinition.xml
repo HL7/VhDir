@@ -55,6 +55,8 @@
       <path value="Organization.extension" />
       <sliceName value="description" />
       <label value="description" />
+      <min value="0"/>
+      <max value="1"/>
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description" />
@@ -147,6 +149,8 @@
     <element id="Organization.alias.extension:type">
       <path value="Organization.alias.extension" />
       <sliceName value="type" />
+      <min value="0"/>
+      <max value="1"/>
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type" />
@@ -155,6 +159,8 @@
     <element id="Organization.alias.extension:period">
       <path value="Organization.alias.extension" />
       <sliceName value="period" />
+      <min value="0"/>
+      <max value="1"/>
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />

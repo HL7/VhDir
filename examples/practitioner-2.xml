@@ -11,6 +11,7 @@
 		<system value="http://www.acme.org/practitioners"/>
 		<value value="456789"/>
 	</identifier>
+	<active value="true"/>
 	<name>
 		<family value="Kathy"/>
 		<given value="Fielding"/>
