@@ -3,30 +3,27 @@
 
 {% include publish-box.html %}
 
-## Task list/status - Remove before publishing
-
-|Date|Comment/Task|Status
-|---|---|---|---|
-|11/3/17|We need to discuss the level of detail we will have here. Dan will be adding general information|In progress|
-|mm/dd/yy|Next comment|TBD
-
 ## Introduction
 
-The Validated Healthcare Directory Implementation Guide is based on [FHIR Version 3.0.1](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing healthcare directory data.
-Under the guidance of HL7 International, the Patient Administration workgroup, and the HL7 US Realm Steering Committee, the content intends to cover both international needs, along with a tightly bound set, tailored to meet the needs specific to the US Realm.
+The Validated Healthcare Directory (VHDir) Implementation Guide is based on [FHIR Version 4.0](http://build.fhir.org/) and defines the minimum conformance requirements for accessing or exposing validated healthcare directory data. It provides a specification for the exchange of directory data between a source of validated provider data and local workflow environments (e.g. local directories). The specification is intended to support international stakeholders and meet the specific needs of the US Realm.  
 
-These requirements are being developed, in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) sponsored [Healthcare Directory Project] (HcDir) project. For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).  
+This implementation guide was developed in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) with  guidance from HL7 International, the Patient Administration workgroup, and the HL7 US Realm Steering Committee. 
+
+For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).  
+
+For more information on the ONC and FHA effort see the [ONC Techlab Healthcare Directory Project] (https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/Healthcare+Directory).
+
 
 ## Validated Healthcare Directory Actors
 
-The following actors are part of the Validated Healthcare Directory IG:
+The following actors are part of the VHDir IG:
 
 * Validated Healthcare Directory Requestor: An application that initiates a data access request to retrieve directory data. This can be thought of as the client in a client-server interaction.
 * Validated Healthcare Directory Responder: A product that responds to the data access request providing directory data. This can be thought of as the server in a client-server interaction.
  
 ## Validated Healthcare Directory Local Use Cases 
 
-For the purpose of eliciting the data requirements for the Validated Healthcare Directory a number of "local" use cases, with local actors, were documented. These local use cases included: 
+To determine the data elements necessary for the exchange of directory information, the authors developed a number of use cases currently supported by healthcare directories. The use cases describe the general information requirements (e.g. demographic information, endpoints, relationships between orgs/providers) needed to support the use case. From these, we devised a set of discrete data elements. This implementation guide covers all of the data elements that make sense to collect at a national level, validate, and exchange with local workflow environments. The use cases included:  
 
 #### A - Basic Information Exchange
 
@@ -64,17 +61,16 @@ The list of Validated Healthcare Directory Profiles is shown below.  Each profil
 
 {% include list-simple-profiles.xhtml %}
 
-*Note on Searches based on a date or date range:*
-
-- TBD
 
 ## Validated Healthcare Directory Conformance Requirements
 
-The [Capability Statements Section](capstmnts.html) outlines conformance requirements for the Validated Healthcare Directory Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual Validated Healthcare Directory profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Validated Healthcare Directory actors.
+The [Capability Statements Section](capstmnts.html) outlines conformance requirements for Validated Healthcare Directory Servers and Client applications, identifying the specific profiles, RESTful operations and search parameters that need to be supported. 
+
+Note: The individual Validated Healthcare Directory profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Validated Healthcare Directory actors.
 
 ----
 
-Primary Authors: Brian Postlethwaite, Bob Dieterle, ONC Contributors
+Primary Authors: Brian Postlethwaite, Bob Dieterle, Daniel Chaput, Alex Kontur
 
 Secondary Authors: Grahame Grieve, Lloyd McKenzie
 
