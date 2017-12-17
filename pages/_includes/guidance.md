@@ -52,7 +52,7 @@ PractionerRole describes the relationship between a practitioner and an organiza
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: PractionerRole </strong></figcaption>
-  <img src="assets/images/Diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
+  <img src="assets/images/diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
 </figure>
 
 ### Organization Role
@@ -61,7 +61,7 @@ Similar to practitionerRole, OrganizationRole describes relationships between or
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Organization Role </strong></figcaption>
-  <img src="assets/images/Diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
+  <img src="assets/images/diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
 </figure>
 
 ### Network / Product Plan
@@ -70,7 +70,7 @@ A network is a group of practitioners and organizations that provide healthcare 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Network / Product Plan </strong></figcaption>
-  <img src="assets/images/Diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
+  <img src="assets/images/diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
 </figure>
 
 ### Using Codes in VhDir profiles
