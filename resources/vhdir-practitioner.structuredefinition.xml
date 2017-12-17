@@ -43,7 +43,7 @@
       <max value="*"/>
       <type>
         <code value="Extension" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
       </type>
     </element>
     <element id="Practitioner.extension:accessibility">
