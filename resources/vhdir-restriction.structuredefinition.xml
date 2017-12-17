@@ -118,7 +118,6 @@
     </element>
     <element id="Consent.provision.securityLabel">
       <path value="Consent.provision.securityLabel" />
-      <short value="" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision.dataPeriod">
