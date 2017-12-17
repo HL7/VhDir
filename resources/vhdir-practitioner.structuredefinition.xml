@@ -79,6 +79,8 @@
       <path value="Practitioner.identifier.extension" />
       <sliceName value="status" />
       <label value="status" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
@@ -119,6 +121,8 @@
     <element id="Practitioner.telecom.extension:viaIntermediary">
       <path value="Practitioner.telecom.extension" />
       <sliceName value="viaIntermediary" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
@@ -149,6 +153,8 @@
     <element id="Practitioner.address.extension:position">
       <path value="Practitioner.address.extension" />
       <sliceName value="position" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/address-position" />

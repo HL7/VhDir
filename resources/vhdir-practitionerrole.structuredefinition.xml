@@ -108,6 +108,8 @@
     <element id="PractitionerRole.identifier.extension:status">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="status" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
@@ -145,6 +147,8 @@
     <element id="PractitionerRole.telecom.extension:viaIntermediary">
       <path value="PractitionerRole.telecom.extension" />
       <sliceName value="viaIntermediary" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />

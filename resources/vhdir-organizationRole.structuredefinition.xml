@@ -31,5 +31,58 @@
       <path value="OrganizationRole.text" />
       <mustSupport value="true" />
     </element>
-  </differential>
+    <element id="OrganizationRole.identifier">
+      <path value="OrganizationRole.identifier" />
+    </element>
+    <element id="OrganizationRole.identifier.extension">
+      <path value="OrganizationRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="OrganizationRole.identifier.extension:status">
+      <path value="OrganizationRole.identifier.extension" />
+      <sliceName value="status" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
+      </type>
+    </element>
+    <element id="OrganizationRole.telecom">
+      <path value="OrganizationRole.telecom" />
+    </element>
+    <element id="OrganizationRole.telecom.extension">
+      <path value="OrganizationRole.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="OrganizationRole.telecom.extension:availableTime">
+      <path value="OrganizationRole.telecom.extension" />
+      <sliceName value="availableTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      </type>
+    </element>
+    <element id="OrganizationRole.telecom.extension:viaIntermediary">
+      <path value="OrganizationRole.telecom.extension" />
+      <sliceName value="viaIntermediary" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+      </type>
+    </element>  </differential>
 </StructureDefinition>
