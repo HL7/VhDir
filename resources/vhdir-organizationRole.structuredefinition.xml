@@ -12,12 +12,24 @@
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="PractitionerRole" />
+  <type value="OrganizationRole" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OrganizationRole" />
   <derivation value="constraint" />
   <differential>
     <element id="OrganizationRole">
       <path value="OrganizationRole" />
+    </element>
+    <element id="OrganizationRole.id">
+      <path value="OrganizationRole.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OrganizationRole.meta">
+      <path value="OrganizationRole.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OrganizationRole.text">
+      <path value="OrganizationRole.text" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

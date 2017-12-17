@@ -27,6 +27,18 @@
         <map value="HPDProvider" />
       </mapping>
     </element>
+    <element id="Organization.id">
+      <path value="Organization.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.text">
+      <path value="Organization.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="Organization.extension">
       <path value="Organization.extension" />
       <slicing>

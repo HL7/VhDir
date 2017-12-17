@@ -12,12 +12,24 @@
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Organization" />
+  <type value="ProductPlan" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProductPlan" />
   <derivation value="constraint" />
   <differential>
     <element id="ProductPlan">
       <path value="ProductPlan" />
+    </element>
+    <element id="ProductPlan.id">
+      <path value="ProductPlan.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ProductPlan.meta">
+      <path value="ProductPlan.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ProductPlan.text">
+      <path value="ProductPlan.text" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
