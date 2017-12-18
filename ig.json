@@ -289,7 +289,11 @@
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"
       },
-      "Organization/acme-lab":{
+      "Bundle/womens-shelter":{
+        "base":"womens-shelter.html",
+        "source":"womens-shelter.xml"
+     },
+     "Organization/acme-lab":{
          "base":"Organization-acme-lab.html",
          "source":"acme-lab.xml"
       },

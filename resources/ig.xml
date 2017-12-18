@@ -318,6 +318,17 @@
         <reference value="StructureDefinition/vhdir-network" />
       </exampleFor>
     </resource>
+    <resource>
+      <example value="true" />
+      <name value="Women's shelter restiction" />
+      <description value="A bundle with a location and healthcare service, and the restrictions applied within" />
+      <sourceReference>
+        <reference value="Bundle/womens-shelter" />
+      </sourceReference>
+      <!-- <exampleFor>
+        <reference value="StructureDefinition/vhdir-restriction" />
+      </exampleFor> -->
+    </resource>
     <!-- <resource>
       <example value="true" />
       <name value="Product Plan" />

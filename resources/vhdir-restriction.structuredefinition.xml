@@ -34,6 +34,7 @@
     <element id="Consent.scope">
       <path value="Consent.scope" />
       <fixedCode value="privacy"/>
+      <mustSupport value="true" />
     </element>
     <element id="Consent.category">
       <path value="Consent.category" />
@@ -52,13 +53,6 @@
     </element>
     <element id="Consent.patient.identifier">
       <path value="Consent.patient.identifier" />
-      <max value="0" />
-    </element>
-    <element id="Consent.patient.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Consent.patient.display" />
       <max value="0" />
     </element>
     <element id="Consent.dateTime">
@@ -109,6 +103,7 @@
     <element id="Consent.provision.type">
       <path value="Consent.provision.type" />
       <fixedCode value="permit"/>
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.period">
       <path value="Consent.provision.period" />
@@ -124,6 +119,7 @@
         <system value="http://hl7.org/fhir/v3/ParticipationType"/>
         <code value="IRCP"/>
       </fixedCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.actor.reference">
       <path value="Consent.provision.actor.reference" />

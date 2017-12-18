@@ -22,7 +22,6 @@
       <path value="Extension" />
       <short value="Restriction" />
       <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <isModifier value="true" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
