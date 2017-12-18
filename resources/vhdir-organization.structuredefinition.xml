@@ -110,6 +110,8 @@
     <element id="Organization.identifier.extension:status">
       <path value="Organization.identifier.extension" />
       <sliceName value="status" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
@@ -182,6 +184,8 @@
     <element id="Organization.telecom.extension:viaIntermediary">
       <path value="Organization.telecom.extension" />
       <sliceName value="viaIntermediary" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
@@ -211,6 +215,8 @@
     <element id="Organization.address.extension:geolocation">
       <path value="Organization.address.extension" />
       <sliceName value="geolocation" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
