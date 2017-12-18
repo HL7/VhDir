@@ -12,36 +12,26 @@
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Basic" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
+  <type value="VerificationResult" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/VerificationResult" />
   <derivation value="constraint" />
   <differential>
-    <element id="Basic">
-      <path value="Basic" />
+    <element id="VerificationResult">
+      <path value="VerificationResult" />
       <short value="Validation" />
       <definition value="Describes validation requirements, source(s), status and dates for one or more elements" />
     </element>
-    <element id="Basic.extension">
-      <path value="Basic.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+    <element id="VerificationResult.id">
+      <path value="VerificationResult.id" />
+      <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:validation">
-      <path value="Basic.extension" />
-      <sliceName value="validation" />
-      <short value="Validation" />
-      <definition value="Describes validation requirements, source(s), status and dates for one or more elements" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/validation" />
-      </type>
+    <element id="VerificationResult.meta">
+      <path value="VerificationResult.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="VerificationResult.text">
+      <path value="VerificationResult.text" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
