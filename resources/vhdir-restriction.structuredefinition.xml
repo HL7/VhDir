@@ -112,6 +112,7 @@
     <element id="Consent.provision.actor">
       <path value="Consent.provision.actor" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.actor.role">
       <path value="Consent.provision.actor.role" />
@@ -124,7 +125,6 @@
     <element id="Consent.provision.actor.reference">
       <path value="Consent.provision.actor.reference" />
       <short value="definedUserOrGroup" />
-      <mustSupport value="true" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
@@ -141,6 +141,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.action">
       <path value="Consent.provision.action" />

@@ -325,9 +325,9 @@
       <sourceReference>
         <reference value="Bundle/womens-shelter" />
       </sourceReference>
-      <!-- <exampleFor>
+      <exampleFor>
         <reference value="StructureDefinition/vhdir-restriction" />
-      </exampleFor> -->
+      </exampleFor>
     </resource>
     <!-- <resource>
       <example value="true" />
