@@ -84,6 +84,10 @@
       <path value="Consent.policy" />
       <mustSupport value="true" />
     </element>
+    <element id="Consent.policy.authority">
+      <path value="Consent.policy.authority" />
+      <max value="0" />
+    </element>
     <element id="Consent.policy.uri">
       <path value="Consent.policy.uri" />
       <short value="Specific policy covered by this restriction" />
@@ -99,10 +103,12 @@
     </element>
     <element id="Consent.provision">
       <path value="Consent.provision" />
+      <short value="Access rights" />
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.type">
       <path value="Consent.provision.type" />
-      <mustSupport value="true" />
+      <fixedCode value="permit"/>
     </element>
     <element id="Consent.provision.period">
       <path value="Consent.provision.period" />
@@ -110,15 +116,61 @@
     </element>
     <element id="Consent.provision.actor">
       <path value="Consent.provision.actor" />
-      <max value="0" />
+      <min value="1" />
+    </element>
+    <element id="Consent.provision.actor.role">
+      <path value="Consent.provision.actor.role" />
+      <fixedCoding>
+        <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+        <code value="IRCP"/>
+      </fixedCoding>
+    </element>
+    <element id="Consent.provision.actor.reference">
+      <path value="Consent.provision.actor.reference" />
+      <short value="definedUserOrGroup" />
+      <mustSupport value="true" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
     </element>
     <element id="Consent.provision.action">
       <path value="Consent.provision.action" />
-      <max value="0" />
+      <short value="reasonType"/>
+      <definition value="Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)"/>
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.securityLabel">
       <path value="Consent.provision.securityLabel" />
+      <short value="userType"/>
       <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.purpose">
+      <path value="Consent.provision.purpose" />
+      <short value="reasonName"/>
+      <definition value="Name assigned to the restriction condition"/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.class">
+      <path value="Consent.provision.class" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.code">
+      <path value="Consent.provision.code" />
+      <max value="0" />
     </element>
     <element id="Consent.provision.dataPeriod">
       <path value="Consent.provision.dataPeriod" />
