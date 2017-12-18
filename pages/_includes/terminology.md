@@ -22,17 +22,17 @@ ehr.certificationEdition|CodeableConcept|2011; 2014; 2015
 ehr.patientAccess|CodeableConcept|patient portal; secure messaging; view/download/transmit (VDT)
 careteam.mode|code|instance; kind
 endpoint.useCase.type|CodeableConcept|An enumeration of specific use cases (service descriptions) supported by the endpoint
-validation.validationNeed|code|none; initial; periodic
-validation.validationStatus|code|attested; validated; in process; requires revalidation; validation failed; revalidation failed
-validation.validationType|code|nothing; primary source; multiple sources
-validation.validationProcess|code|edit check; value set; primary source; multiple sources; standalone; in context
-validation.failureAction|code|fatal; warning; record only; none
-validation.primarySource.sourceType|CodeableConcept|License Board; Primary Education; Continuing Education; Postal Service; Relationship owner; Registration Authority; legal source; issuing source; aughorative source
-validation.primarySource.validationProcess|code|manual; API; push
-validation.primarySource.validationStatus|code|successful; failed; undetermined
-validation.primarySource.sourcePush|code|yes; no; undetermined
-validation.validation.primarySource.sourcePushType|code|specific requested changes; any changes; as defined by source
-validation.attestation.attestationMethod|code|(owner; authorized representative; authorized intermediary; non-authorized source)
+VerificationResult.validationNeed|code|none; initial; periodic
+VerificationResult.validationStatus|code|attested; validated; in process; requires revalidation; validation failed; revalidation failed
+VerificationResult.validationType|code|nothing; primary source; multiple sources
+VerificationResult.validationProcess|code|edit check; value set; primary source; multiple sources; standalone; in context
+VerificationResult.failureAction|code|fatal; warning; record only; none
+VerificationResult.primarySource.sourceType|CodeableConcept|License Board; Primary Education; Continuing Education; Postal Service; Relationship owner; Registration Authority; legal source; issuing source; aughorative source
+VerificationResult.primarySource.validationProcess|code|manual; API; push
+VerificationResult.primarySource.validationStatus|code|successful; failed; undetermined
+VerificationResult.primarySource.CanPushUpdates|code|yes; no; undetermined
+VerificationResult.primarySource.PushTypeAvailable|code|specific requested changes; any changes; as defined by source
+VerificationResult.attestation.attestationMethod|code|(owner; authorized representative; authorized intermediary; non-authorized source)
 network.type|Coding|PPO; HMO; ACO; Speciality; Dental; Vision; Pharmacy; National; Regional; State
 productPlan.type|Coding|Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term. Long Term Care, Hospice, Home Health
 productCoverage.benefits.benefitsList.description|CodeableConcept|Days; visits
