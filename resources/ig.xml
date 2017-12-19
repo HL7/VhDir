@@ -320,13 +320,35 @@
     </resource>
     <resource>
       <example value="true" />
-      <name value="Women's shelter restiction" />
+      <name value="Women's shelter restiction bundle" />
       <description value="A bundle with a location and healthcare service, and the restrictions applied within" />
       <sourceReference>
         <reference value="Bundle/womens-shelter" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/vhdir-restriction" />
+      </exampleFor>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="Women's shelter location with restriction" />
+      <description value="A location with restrictions applied within" />
+      <sourceReference>
+        <reference value="Location/loc-ws" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/vhdir-location" />
+      </exampleFor>
+    </resource>
+    <resource>
+      <example value="true" />
+      <name value="Women's shelter HealthcareService with restiction" />
+      <description value="A healthcare service with restrictions applied within" />
+      <sourceReference>
+        <reference value="HealthcareService/hcs-ws" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/vhdir-healthcareservice" />
       </exampleFor>
     </resource>
     <!-- <resource>

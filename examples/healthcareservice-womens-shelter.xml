@@ -1,0 +1,81 @@
+﻿<HealthcareService xmlns="http://hl7.org/fhir">
+	<id value="hcs-ws" />
+	<meta>
+		<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice" />
+	</meta>
+	<contained>
+		<Consent>
+			<id value="restrict" />
+			<meta>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
+			</meta>
+			<status value="active" />
+			<scope value="privacy" />
+			<category>
+				<text value="conditional release (per DUA)" />
+			</category>
+			<patient>
+				<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+					<valueCode value="unsupported" />
+				</extension>
+				<display value="not a patient consent" />
+			</patient>
+			<dateTime value="2017-12-18" />
+			<policy>
+				<uri value="http://example.org/federal/policy#womans-shelter" />
+			</policy>
+			<provision>
+				<type value="permit" />
+				<actor>
+					<role>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ParticipationType" />
+							<code value="IRCP" />
+							<display value="information recipient" />
+						</coding>
+					</role>
+					<reference>
+						<display value="Blue Team @ The W shelter (CareTeam)" />
+					</reference>
+				</actor>
+				<action>
+					<text value="specific value" />
+				</action>
+				<securityLabel>
+					<display value="womens-abuse-councellors" />
+				</securityLabel>
+				<purpose>
+					<display value="Women's Shelter" />
+				</purpose>
+			</provision>
+		</Consent>
+	</contained>
+	<active value="true" />
+	<type>
+		<text value="Women's shelter" />
+	</type>
+	<location>
+		<extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+			<valueReference>
+				<reference value="#restrict" />
+			</valueReference>
+		</extension>
+		<reference value="Location/loc-ws" />
+		<display value="The W Womens Shelter" />
+	</location>
+	<name value="Womens shelter" />
+	<comment value="This is an example of a Women's shelter to demonstrate how to restrict multiple contents" />
+	<telecom>
+		<system value="url" />
+		<value value="https://exmaple.org/The-W-shelter" />
+	</telecom>
+	<telecom>
+		<extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+			<valueReference>
+				<reference value="#restrict" />
+			</valueReference>
+		</extension>
+		<system value="phone" />
+		<value value="555 wshelter" />
+	</telecom>
+</HealthcareService>

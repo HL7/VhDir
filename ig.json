@@ -292,8 +292,16 @@
       "Bundle/womens-shelter":{
         "base":"womens-shelter.html",
         "source":"womens-shelter.xml"
-     },
-     "Organization/acme-lab":{
+      },
+      "Location/loc-ws":{
+        "base":"location-womens-shelter.html",
+        "source":"location-womens-shelter.xml"
+      },
+      "HealthcareService/hcs-ws":{
+        "base":"healthcareservice-womens-shelter.html",
+        "source":"healthcareservice-womens-shelter.xml"
+      },
+      "Organization/acme-lab":{
          "base":"Organization-acme-lab.html",
          "source":"acme-lab.xml"
       },
