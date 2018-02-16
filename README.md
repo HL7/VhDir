@@ -13,11 +13,13 @@ Note: a build takes 2-3 minutes to complete
 
 ### Find your rendered IG automatically available at
 
-http://build.fhir.org/ig/HL7/ValidatedHealthcareDirectory
+http://build.fhir.org/ig/HL7/VhDir/index.html
 
 ### For a build log see
 
-http://build.fhir.org/ig/HL7/ValidatedHealthcareDirectory/build.log
+http://build.fhir.org/ig/HL7/VhDir/build.log
+
+http://build.fhir.org/ig/HL7/VhDir/qa.html
 
 ### Local continuous builds
 
