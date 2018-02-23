@@ -279,6 +279,13 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false" />
+      <name value="VHDir-digitalcertificatetype" />
+      <sourceReference>
+        <reference value="ValueSet/VHDir-digitalcertificatetype" />
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Practitioner/practitioner-2" />

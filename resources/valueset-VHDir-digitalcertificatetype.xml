@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="vhdir-digitalCertificateType"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalCertificateType"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Digital Certificate Type Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for documenting VHDir Digital Certificate Type"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+			<concept>
+				<code value="TLS/SSL"/>
+				<display value="TLS/SSL"/>
+			</concept>
+			<concept>
+				<code value="device"/>
+				<display value="device"/>
+			</concept>
+			<concept>
+				<code value="group"/>
+				<display value="group"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

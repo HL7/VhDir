@@ -273,6 +273,10 @@
         "defns":"StructureDefinition-practitioner-qualification-definitions.html",
         "source":"practitioner-qualification.structuredefinition.xml"   
       },
+      "ValueSet/VHDir-digitalcertificatetype": {
+        "base": "ValueSet-VHDir-digitalcertificatetype.html",
+        "source": "ValueSet-VHDir-digitalcertificatetype.xml"
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"

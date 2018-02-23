@@ -1,9 +1,12 @@
 
-## Search Parameters
+## Operations and Search Parameters
 
-Specific search parameters are under analysis. 
+The following search parameters have been defined for the Validated Healthcare Directory Implementation Guide.  For more information on the [FHIR RESTful search api](http://hl7.org/fhir/2018Jan/search.html) and the standard [Search Param Registry](http://hl7.org/fhir/2018Jan/searchparameter-registry.html) see the FHIR specification.
 
-<!-- The following search parameters have been defined for the Validated Healthcare Directory Implementation Guide.  For more information on the [FHIR RESTful search api](http://hl7.org/fhir/STU3/search.html) and the standard [Search Param Registry](http://hl7.org/fhir/STU3/searchparameter-registry.html) see the FHIR specification.
--->
+Operations
 
-<!-- { 89% include list-simple-searchparameters.xhtml %} -->
+{% include list-simple-operationdefinitions.xhtml %}
+
+Search Parameters
+
+{% include list-simple-searchparameters.xhtml %}
