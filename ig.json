@@ -285,6 +285,10 @@
          "base":"Practitioner-practitioner-1.html",
          "source":"practitioner-1.xml"
       },
+      "Practitioner/practitioner-full":{
+        "base":"Practitioner-practitioner-full.html",
+        "source":"practitioner-full.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"

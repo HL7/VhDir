@@ -293,6 +293,12 @@
     <resource>
       <example value="true" />
       <sourceReference>
+        <reference value="Practitioner/practitioner-full" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true" />
+      <sourceReference>
         <reference value="Location/hl7east" />
       </sourceReference>
     </resource>
