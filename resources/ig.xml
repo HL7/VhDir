@@ -280,9 +280,86 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="VHDir-digitalcertificatetype" />
+      <name value="VhDir-digitalcertificatetype" />
       <sourceReference>
-        <reference value="ValueSet/VHDir-digitalcertificatetype" />
+        <reference value="ValueSet/VhDir-digitalcertificatetype" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-digitalcertificateuse" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-digitalcertificateuse" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-digitalcertificatestandard" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-digitalcertificatestandard" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-digitalcertificatetrustframework" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-digitalcertificatetrustframework" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-digitalcertificate" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-digitalCertificate" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-useCase" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-useCase" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-accessability" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-accessability" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-ehrcharacteristics" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-ehrcharacteristics" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-languageproficiency" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-languageproficiency" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-organizationdemographics" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-organizationdemographics" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-primarysource" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-primarysource" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-validation" />
+      <sourceReference>
+        <reference value="CodeSystem/VhDir-validation" />
       </sourceReference>
     </resource>
     <resource>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-accessability"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessability"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Accessability Code System"/>
+	<status value="draft"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the attributes of Accessability"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-accessabilityType"/>
+	<content value="complete"/>
+	<concept>
+		<code value="tbd"/>
+		<display value="tbd"/>
+         <definition value="tbd"/>
+	</concept>
+</CodeSystem>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-validation"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Validation Code System"/>
+	<status value="draft"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory."/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-validationType"/>
+	<content value="complete"/>
+	<concept>
+	<code value="none"/>
+	<display value="none"/>
+	<definition value="No validation needed/planned for this resource or element (Frequency)"/>
+	</concept>
+	<concept>
+	<code value="initial"/>
+	<display value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="periodic"/>
+	<display value="Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="attested"/>
+	<display value="Indicates the element or resource has only been attested."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="validated"/>
+	<display value="Indicates the element or resource has been successfully validated."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="in process"/>
+	<display value="Indicates the element or resource is currently being validated."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="requires revalidation"/>
+	<display value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="validation failed"/>
+	<display value="Indacates validation was attepted on an element or resource and that validation failed."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="nothing"/>
+	<display value="nothing"/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="primary source"/>
+	<display value="Indicates the element or resource is validated against a single source."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="multiple sources"/>
+	<display value="Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="edit check"/>
+	<display value="Indicates the element or resource is validated for format, range, presence, or other similar properties."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="value set"/>
+	<display value="Indicates the element or resource is validated against a value set."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="external source"/>
+	<display value="Indicates the element or resource is validated against an external source."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="standalone"/>
+	<display value="Indicates the element or resource is validated by itself and is unrelated to other elements or resources."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="in context"/>
+	<display value="Indicates the element or resource is validated by the existence or value of another related element or resource."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="fatal"/>
+	<display value="A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="warning"/>
+	<display value="A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="record only"/>
+	<display value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="none"/>
+	<display value="A failure that is unlikely to be relevant to any local workflow environment."/>
+	<definition value="to review"/>
+	</concept>
+	<concept>
+	<code value="manual"/>
+	<display value="manual"/>
+	<definition value="manual"/>
+	</concept>
+	<concept>
+	<code value="API"/>
+	<display value="API"/>
+	<definition value="API"/>
+	</concept>
+	<concept>
+	<code value="push"/>
+	<display value="push - you come to us"/>
+	<definition value="push - you come to us"/>
+	</concept>
+	<concept>
+	<code value="successful"/>
+	<display value="successful"/>
+	<definition value="successful"/>
+	</concept>
+	<concept>
+	<code value="failed"/>
+	<display value="failed"/>
+	<definition value="failed"/>
+	</concept>
+	<concept>
+	<code value="undetermined"/>
+	<display value="undetermined"/>
+	<definition value="undetermined"/>
+	</concept>
+	<concept>
+	<code value="yes"/>
+	<display value="yes"/>
+	<definition value="yes"/>
+	</concept>
+	<concept>
+	<code value="no"/>
+	<display value="no"/>
+	<definition value="no"/>
+	</concept>
+	<concept>
+	<code value="undetermined"/>
+	<display value="undetermined"/>
+	<definition value="undetermined"/>
+	</concept>
+	<concept>
+	<code value="specific requested changes"/>
+	<display value="specific requested changes"/>
+	<definition value="specific requested changes"/>
+	</concept>
+	<concept>
+	<code value="any changes"/>
+	<display value="any changes"/>
+	<definition value="any changes"/>
+	</concept>
+	<concept>
+	<code value="as defined by source"/>
+	<display value="as defined by source"/>
+	<definition value="as defined by source"/>
+	</concept>
+	<concept>
+	<code value="owner"/>
+	<display value="Indicate the element or resource was owner"/>
+	<definition value="Indicate the element or resource was owner"/>
+	</concept>
+	<concept>
+	<code value="authorized representative"/>
+	<display value="authorized representative"/>
+	<definition value="authorized representative"/>
+	</concept>
+	<concept>
+	<code value="authorized intermediary"/>
+	<display value="authorized intermediary, eg CA Directory"/>
+	<definition value="authorized intermediary, eg CA Directory"/>
+	</concept>
+	<concept>
+	<code value="non-authorized source"/>
+	<display value="non-authorized source"/>
+	<definition value="non-authorized source"/>
+	</concept>
+</CodeSystem>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalCertificateType"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalCertificateType"/>
+	<id value="valueset-digitalCertificateStandard"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalCertificateStandard"/>
 	<version value="1.0.0"/>
-	<name value="VhDir Digital Certificate Type Value Set"/>
+	<name value="VhDir Digital Certificate Standard Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -13,7 +13,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="Codes for documenting VHDir Digital Certificate Type"/>
+	<description value="Codes for documenting VHDir Digital Certificate Standard"/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>

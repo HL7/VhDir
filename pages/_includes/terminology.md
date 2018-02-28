@@ -3,9 +3,15 @@
 
 This page lists all the ValueSets, CodeSystems, and ConceptMaps defined as part of the Validated Healthcare Directory implementation Guide. For more information on using codes in resources, see the [guidance section](guidance.html#using-codes-in-vhdir-profiles) as well as in the [FHIR specification](http://hl7.org/fhir/STU3/terminologies.html).
 
+All code systems and value sets in the guide are proposed and undergoing review and harmonization. 
+
 #### Value Sets
 
-These codes and codable concepts are proposed for this implementation guide and are currently under review and harmonization.
+{% include list-simple-valuesets.xhtml %} 
+
+<p/><p/>
+
+These list cross references codes and codable concepts proposed for this implementation guide mappign them to the resources and data elements where they are used.
 
 |Element|Type|Proposed values/Comments|
 |---|---|---|
@@ -43,18 +49,15 @@ restriction.reason.reasonType|code|contributes to; reason for; existance of; spe
 restriction.accessRights|Reference|This value set is proposed, additional review required - http://hl7.org/fhir/valueset-security-labels.html
 restriction.identifer.status|code|active; inactive; issued in error; revoked; pending 
 
-<!-- {!% include list-simple-valuesets.xhtml %!} -->
-
 #### Code Systems
 
-See the [FHIR terminology section](http://hl7.org/fhir/STU3/terminologies-systems.html) for a complete discussion on code systems and a list of codes system names used in FHIR. The following additional names (URIs) have been identified for this implementation guide,   If a URI is listed here, it **SHALL** be used in the US Core profiles in preference to any other code system name.
+See the [FHIR terminology section](http://hl7.org/fhir/STU3/terminologies-systems.html) for a complete discussion on code systems and a list of codes system names used in FHIR. The following additional names (URIs) have been identified for this implementation guide,   If a URI is listed here, it **SHALL** be used in the Validated Healthcare Directory profiles in preference to any other code system name.
 
-**Code systems published in this IG** - Includes US Core defined code systems and externally defined code systems
+**Code systems published in this IG** - Includes Validated Healthcare Directory defined code systems and externally defined code systems
 
-<!-- {sdf% include list-simple-codesystems.xhtml %} -->
+{% include list-simple-codesystems.xhtml %} 
 
-<p>
-</p>
+<p/><p/>
 
 **Internally Published code systems - FHIR**
 
@@ -96,9 +99,5 @@ http://hl7.org/fhir/identifier-type|[FHIR](http://hl7.org/fhir/identifier-type)|
 |---|---|---|---|
 |http://nucc.org/provider-taxonomy|[NUCC](http://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57)|*NUCC Provider Taxonomy*|2.16.840.1.113883.6.101|Proposed for organizationRole above
 |http://www.rfc-editor.org/bcp/bcp13.txt|http://www.rfc-editor.org/bcp/bcp13.txt|*Defininitions for mimeType|TBD|Endpoint.payloadMimeType
-
-<!--
-|[urn:oid:2.16.840.1.113883.6.238](CodeSystem-cdcrec.html)|[CDC](https://www.cdc.gov/phin/resources/vocabulary/index.html)|*Race & Ethnicity - CDC* - See [CDC Race and Ethnicity Code Set Version 1.0](https://www.cdc.gov/phin/resources/vocabulary/documents/cdc-race--ethnicity-background-and-purpose.pdf).|2.16.840.1.113883.6.238
--->
 
 <!-- {sdf% include list-simple-conceptmaps.xhtml %} -->

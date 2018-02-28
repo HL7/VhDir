@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-digitalCertificate"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Digital Certificate Code System"/>
+	<status value="draft"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the various attributes of a Digital Certificate"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-digitalCertificateType"/>
+	<content value="complete"/>
+	<concept>
+		<code value="TLS/SSL"/>
+		<display value="TLS/SSL"/>
+         <definition value="The server infrastructure will be using a TLS(Transport Layer Security) required to present a certificate as part of the initial secure connection TLS supports many different methods for exchanging keys, encrypting data, and authenticating message integrity."/>
+	</concept>
+	<concept>
+		<code value="device"/>
+		<display value="device"/>
+        <definition value="This type of certificate is used to verify the identity of a group."/>               
+	</concept>
+	<concept>
+		<code value="group"/>
+		<display value="group"/>
+        <definition value="This type of certificate is used to verify the identity of a device."/>
+	</concept>
+	<concept>
+		<code value="identity"/>
+		<display value="identity"/>
+        <definition value="A group certificate is used to verify the identity of an individual."/>
+	</concept>
+	<concept>
+		<code value="digsig"/>
+		<display value="digitalSignature"/>
+        <definition value="A digital certificate use of a digital signature demonstrates the intent of the signer  to validate the content of the message."/>
+	</concept>
+	<concept>
+		<code value="keyEncipherment"/>
+		<display value="keyEncipherment"/>
+        <definition value="A digital certificate use of a keyEncipherment demonstrates the intent to utilize the subject public key  to establish an encrypted connection between a browser or user's computer and a server."/>
+	</concept>
+	<concept>
+		<code value="authentication"/>
+		<display value="authentication"/>
+        <definition value="Certificate-based authentication refers to the use of a Digital Certificate to identify a user, machine, or device before granting access to a resource."/>
+	</concept>
+	<concept>
+		<code value="x.509 v3"/>
+		<display value="x.509 v3"/>
+        <definition value="The digital certificate standard defines the framework of the public key certificates and the atribute certitcates. It also defines a framework for the provision of authentication services."/>
+	</concept>
+</CodeSystem>
