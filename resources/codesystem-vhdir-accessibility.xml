@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-accessibility"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Accessibility Code System"/>
+	<status value="draft"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the attributes of accessibility"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-ehrcharacteristics"/>
+	<content value="complete"/>
+	<concept>
+		<code value="Cultural competence"/>
+		<display value="Cultural competence"/>
+		<definition value="Cultural competence"/>
+	</concept>
+	<concept>
+		<code value="handicap accessible"/>
+		<display value="handicap accessible"/>
+		<definition value="handicap accessible"/>
+	</concept>
+	<concept>
+		<code value="ADA compliant"/>
+		<display value="ADA compliant"/>
+		<definition value="ADA compliant"/>
+	</concept>
+	<concept>
+		<code value="public transit options"/>
+		<display value="public transit options"/>
+		<definition value="public transit options"/>
+	</concept>
+	<concept>
+		<code value="answering service"/>
+		<display value="answering service"/>
+		<definition value="answering service"/>
+	</concept>
+	<concept>
+		<code value="vision"/>
+		<display value="vision"/>
+		<definition value="vision"/>
+	</concept>
+	<concept>
+		<code value="cognative"/>
+		<display value="cognative"/>
+		<definition value="cognative"/>
+	</concept>
+	<concept>
+		<code value="mobility"/>
+		<display value="mobility"/>
+		<definition value="mobility"/>
+	</concept>
+</CodeSystem>	

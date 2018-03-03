@@ -280,9 +280,9 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="VhDir-digitalcertificatetype" />
+      <name value="VhDir-digitalCertificatetype" />
       <sourceReference>
-        <reference value="ValueSet/VhDir-digitalcertificatetype" />
+        <reference value="ValueSet/VhDir-digitalCertificateType" />
       </sourceReference>
     </resource>
     <resource>
@@ -296,7 +296,7 @@
       <example value="false" />
       <name value="VhDir-digitalcertificatestandard" />
       <sourceReference>
-        <reference value="ValueSet/VhDir-digitalcertificatestandard" />
+        <reference value="ValueSet/valueset-digitalcertificatestandard" />
       </sourceReference>
     </resource>
     <resource>
@@ -306,6 +306,41 @@
         <reference value="ValueSet/VhDir-digitalcertificatetrustframework" />
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-usecasetype" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-usecasetype" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-accessibilitytype" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-accessibilitytype" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-aliastype" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-aliastype" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-certificationedition" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-certificationedition" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="VhDir-patientaccess" />
+      <sourceReference>
+        <reference value="ValueSet/VhDir-patientaccess" />
+      </sourceReference>
+    </resource>    
     <resource>
       <example value="false" />
       <name value="VhDir-digitalcertificate" />
@@ -322,9 +357,9 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="VhDir-accessability" />
+      <name value="VhDir-accessibility" />
       <sourceReference>
-        <reference value="CodeSystem/VhDir-accessability" />
+        <reference value="CodeSystem/VhDir-accessibility" />
       </sourceReference>
     </resource>
     <resource>

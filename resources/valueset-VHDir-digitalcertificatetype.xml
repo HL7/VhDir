@@ -17,6 +17,18 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+            <concept>
+                <code value="TLS/SSL"/>
+            </concept>
+            <concept>
+                <code value="device"/>
+            </concept>
+            <concept>
+                <code value="group"/>
+            </concept>
+            <concept>
+                <code value="identity"/>
+            </concept>
 		</include>
 	</compose>
 </ValueSet>

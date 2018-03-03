@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-alias"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-alias"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Alias Type Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for documenting the reason behind the existence of an alias."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+	    	<concept>
+	        	<code value="legalalternative"/>
+	    	</concept>
+	    	<concept>
+	        	<code value="historical"/>
+	    	</concept>
+		</include>
+	</compose>
+</ValueSet>

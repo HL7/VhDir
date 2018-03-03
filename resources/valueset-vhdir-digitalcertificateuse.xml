@@ -17,6 +17,15 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+   			<concept>
+        		<code value="digsig"/>
+   			</concept>
+   			<concept>
+        		<code value="keyEncipherment"/>
+			</concept>
+    		<concept>
+       			 <code value="authentication"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

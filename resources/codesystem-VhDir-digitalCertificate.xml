@@ -58,6 +58,36 @@
 	<concept>
 		<code value="x.509 v3"/>
 		<display value="x.509 v3"/>
-        <definition value="The digital certificate standard defines the framework of the public key certificates and the atribute certitcates. It also defines a framework for the provision of authentication services."/>
+        <definition value="The digital certificate standard defines the framework of the public key certificates and the atribute certitficates. It also defines a framework for the provision of authentication services."/>
+	</concept>
+	<concept>
+		<code value="directtrust"/>
+		<display value="Direct Trust"/>
+        <definition value="The digital certificate is used within the Direct Trust trust framework."/>
+	</concept>
+	<concept>
+		<code value="FBCA"/>
+		<display value="FBCA"/>
+        <definition value="The digital certificate is used within the FCBA trust framework."/>
+	</concept>
+	<concept>
+		<code value="SAFE-BioPharma"/>
+		<display value="SAFE-BioPharma"/>
+        <definition value="The digital certificate is used within the SAFE-BioPharma trust framework."/>
+	</concept>
+	<concept>
+		<code value="TEFCA"/>
+		<display value="TEFCA"/>
+        <definition value="The digital certificate is used within the TEFCA trust framework."/>
+	</concept>
+	<concept>
+		<code value="FICAM"/>
+		<display value="FICAM"/>
+        <definition value="The digital certificate is used within the FICAM trust framework."/>
+	</concept>
+	<concept>
+		<code value="other"/>
+		<display value="other"/>
+        <definition value="The digital certificate is used within a trust framework not specified."/>
 	</concept>
 </CodeSystem>

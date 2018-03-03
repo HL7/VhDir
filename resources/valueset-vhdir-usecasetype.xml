@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-useCaseType"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-useCaseType"/>
+	<version value="1.0.0"/>
+	<name value="VhDir Use Case Type Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for documenting business use case by a general grouping by business area."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-useCase"/>
+		</include>
+	</compose>
+</ValueSet>
