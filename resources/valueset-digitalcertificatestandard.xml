@@ -18,7 +18,7 @@
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
 	    	<concept>
-	        	<code value="x.509 v3"/>
+	        	<code value="x.509v3"/>
 	    	</concept>
 		</include>
 	</compose>

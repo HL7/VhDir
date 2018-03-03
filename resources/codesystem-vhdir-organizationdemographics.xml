@@ -21,6 +21,8 @@
 		<code value="legalalternative"/>
 		<display value="legal alternative"/>
     	<definition value="A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."/>	
+	</concept>
+	<concept>
 		<code value="historical"/>
 		<display value="Historical"/>
     	<definition value="Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization."/>	
