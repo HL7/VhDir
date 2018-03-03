@@ -2,6 +2,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-digitalCertificate"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+	<identifier>
+		<value value="TBD"/>
+	</identifier>
 	<version value="1.0.0"/>
 	<name value="VhDir Digital Certificate Code System"/>
 	<status value="draft"/>
