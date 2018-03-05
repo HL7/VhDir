@@ -11,7 +11,7 @@ This implementation guide was developed in cooperation with the [Office of the N
 
 For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).  
 
-For more information on the ONC and FHA effort see the [ONC Techlab Healthcare Directory Project] (https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/Healthcare+Directory).
+For more information on the ONC and FHA effort see the [ONC Techlab Healthcare Directory Project](https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/Healthcare+Directory).
 
 
 ## Validated Healthcare Directory Actors
