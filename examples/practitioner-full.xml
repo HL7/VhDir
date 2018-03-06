@@ -1,7 +1,7 @@
 <Practitioner  xmlns="http://hl7.org/fhir">
 	<id value="practitioner1"/>
 	<meta>
-		<version value="1"/>
+		<versionId value="1"/>
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
 	</meta>
     <identifier> <!-- Practitioner's NPI number -->
@@ -115,7 +115,11 @@
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active and valid in Washington, DC -->
             <extension url="status">
-                <valueCode value="active"/> 
+                <valueCoding>
+                    <system value="http://hl7.org/fhir/resource-status"/>
+                    <code value="active"/>
+                    <display value="active"/>
+                </valueCoding> 
             </extension>
             <extension url="whereValid">
                 <valueCodeableConcept>
@@ -162,7 +166,11 @@
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active, and the history indicates that it has been renewed once. -->
             <extension url="status">
-                <valueCode value="active"/> 
+                <valueCoding>
+                    <system value="http://hl7.org/fhir/resource-status"/>
+                    <code value="active"/>
+                    <display value="active"/>
+                </valueCoding> 
             </extension>
             <extension url="history">
                 <extension url="status"> 
@@ -215,7 +223,11 @@
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification">
             <extension url="status">
-                <valueCode value="active"/> 
+                <valueCoding>
+                    <system value="http://hl7.org/fhir/resource-status"/>
+                    <code value="active"/>
+                    <display value="active"/>
+                </valueCoding> 
             </extension>
         </extension>
     </qualification>
@@ -270,17 +282,14 @@
         </extension>
     </extension>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People -->
-        <extension url="type">
-            <valueCodeableConcept> 
-                <coding> 
-                    <code value="cc"/> 
-                    <display value="Cultural competence"/> 
-                    <userSelected value="true"/> 
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-        <extension url="description">
-            <valueString value="Coordinates care with tribal healers of the Piscataway People"/> 
-        </extension>
+        <valueCodeableConcept> 
+            <coding> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
+                <code value="Cultural competence"/> 
+                <display value="Cultural competence"/> 
+                <userSelected value="true"/> 
+            </coding>
+            <text value="Coordinates care with tribal healers of the Piscataway People"/>
+        </valueCodeableConcept>
     </extension>
 </Practitioner>

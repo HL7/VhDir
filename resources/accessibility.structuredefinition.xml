@@ -21,7 +21,6 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <label value="Accessibility"/>
       <short value="Accessibility" />
       <definition value="Accessibility options offered to the patient/consumer" />
     </element>
