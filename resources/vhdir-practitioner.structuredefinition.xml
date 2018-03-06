@@ -37,7 +37,8 @@
     </element>
     <element id="Practitioner.extension:endpoint">
       <path value="Practitioner.extension" />
-      <sliceName value="endpoint" />
+      <sliceName value="endpoint"/>
+      <label value="endpoint"/>
       <short value="Reference to endpoint(s) unique to the practitioner"/>
       <min value="0"/>
       <max value="*"/>
@@ -106,7 +107,6 @@
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />
-      <min value="1" />
     </element>
     <element id="Practitioner.telecom.extension">
       <path value="Practitioner.telecom.extension" />
@@ -138,7 +138,6 @@
     </element>
     <element id="Practitioner.address">
       <path value="Practitioner.address" />
-      <min value="1" />
     </element>
     <element id="Practitioner.address.extension">
       <path value="Practitioner.address.extension" />
@@ -157,7 +156,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/address-position" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
       </type>
     </element>
     <element id="Practitioner.gender">
@@ -193,6 +192,14 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification" />
       </type>
+    </element>
+    <element id="Practitioner.qualification.period">
+      <path value="Practitioner.qualification.period"/>
+      <min value="1"/>
+    </element>
+    <element id="Practitioner.qualification.issuer">
+      <path value="Practitioner.qualification.issuer"/>
+      <min value="1"/>
     </element>
     <element id="Practitioner.communication">
       <path value="Practitioner.communication" />

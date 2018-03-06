@@ -400,19 +400,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Practitioner/practitioner-2" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="Practitioner/practitioner-1" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="Practitioner/practitioner-full" />
+        <reference value="Practitioner/practitioner1" />
       </sourceReference>
     </resource>
     <resource>

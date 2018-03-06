@@ -281,16 +281,8 @@
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
       },
-      "Practitioner/practitioner-2":{
-         "base":"Practitioner-practitioner-2.html",
-         "source":"practitioner-2.xml"
-      },
-      "Practitioner/practitioner-1":{
-         "base":"Practitioner-practitioner-1.html",
-         "source":"practitioner-1.xml"
-      },
-      "Practitioner/practitioner-full":{
-        "base":"Practitioner-practitioner-full.html",
+      "Practitioner/practitioner1":{
+        "base":"Practitioner-practitioner1.html",
         "source":"practitioner-full.xml"
       },
       "CapabilityStatement/server":{
