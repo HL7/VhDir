@@ -179,7 +179,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/address-position" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
       </type>
     </element>
     <element id="Location.managingOrganization">

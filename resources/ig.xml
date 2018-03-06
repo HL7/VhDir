@@ -18,14 +18,7 @@
       <sourceReference>
         <reference value="StructureDefinition/identifier-status" />
       </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="address-position" />
-      <sourceReference>
-        <reference value="StructureDefinition/address-position" />
-      </sourceReference>
-    </resource>    
+    </resource>     
     <resource>
       <example value="false" />
       <name value="contactPoint-viaIntermediary" />

@@ -284,7 +284,7 @@
       <sliceName value="position" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/address-position" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
       </type>
     </element>
   </differential>

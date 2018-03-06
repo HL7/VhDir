@@ -228,11 +228,6 @@
         "defns":"StructureDefinition-careTeam-alias-definitions.html",
         "source":"careTeam-alias.structuredefinition.xml"      
       },
-        "StructureDefinition/address-position":{
-        "base":"StructureDefinition-address-position.html",
-        "defns":"StructureDefinition-address-position-definitions.html",
-        "source":"address-position.structuredefinition.xml"
-      },
       "StructureDefinition/identifier-status":{
         "base":"StructureDefinition-identifier-status.html",
         "defns":"StructureDefinition-identifier-status-definitions.html",
