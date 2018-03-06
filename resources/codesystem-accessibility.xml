@@ -2,7 +2,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-accessibility"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
-	<version value="1.0.0"/>
 	<name value="VhDir Accessibility Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>
@@ -15,7 +14,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes of accessibility"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-ehrcharacteristics"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
 	<content value="complete"/>
 	<concept>
 		<code value="Cultural competence"/>
@@ -48,9 +47,9 @@
 		<definition value="vision"/>
 	</concept>
 	<concept>
-		<code value="cognative"/>
-		<display value="cognative"/>
-		<definition value="cognative"/>
+		<code value="cognitive"/>
+		<display value="cognitive"/>
+		<definition value="cognitive"/>
 	</concept>
 	<concept>
 		<code value="mobility"/>

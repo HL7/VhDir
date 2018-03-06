@@ -21,71 +21,28 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <label value="Accessibility"/>
       <short value="Accessibility" />
       <definition value="Accessibility options offered to the patient/consumer" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:type">
-      <path value="Extension.extension" />
-      <sliceName value="type" />
-      <label value="type" />
-      <short value="Type" />
-      <definition value="Type of accessibility options offered to the patient/consumer (Cultural competence; handicap accessible; ADA compliant; public transit options; answering service)" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:type.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="type" />
-    </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <label value="type" />
-      <short value="Type" />
-      <definition value="Type of accessibility options offered to the patient/consumer (Cultural competence; handicap accessible; ADA compliant; public transit options; answering service)" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:description">
-      <path value="Extension.extension" />
-      <sliceName value="description" />
-      <label value="description" />
-      <short value="Description" />
-      <definition value="Description of the types of accessibility options offered to the patient/consumer" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:description.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="description" />
-    </element>
-    <element id="Extension.extension:description.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="desription" />
-      <short value="Description" />
-      <definition value="Description of the types of accessibility options offered to the patient/consumer" />
-      <type>
-        <code value="string" />
-      </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <label value="Accessibility" />
+      <short value="Accessibility" />
+      <definition value="Accessibility options offered to the patient/consumer" />
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

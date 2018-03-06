@@ -315,9 +315,9 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="VhDir-accessibilitytype" />
+      <name value="vhdir-accessibility" />
       <sourceReference>
-        <reference value="ValueSet/VhDir-accessibilitytype" />
+        <reference value="ValueSet/valueset-accessibility" />
       </sourceReference>
     </resource>
     <resource>
@@ -357,9 +357,9 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="VhDir-accessibility" />
+      <name value="vhdir-accessibility" />
       <sourceReference>
-        <reference value="CodeSystem/VhDir-accessibility" />
+        <reference value="CodeSystem/codesystem-accessibility" />
       </sourceReference>
     </resource>
     <resource>

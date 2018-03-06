@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-accessibilityType"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibilityType"/>
-	<version value="1.0.0"/>
-	<name value="VhDir Accessibility Type Value Set"/>
+	<id value="valueset-accessibility"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
+	<name value="VhDir Accessibility Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

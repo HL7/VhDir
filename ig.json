@@ -94,9 +94,9 @@
         "source":"vhdir-careteam.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-network":{
-          "base":"StructureDefinition-vhdir-network.html",
-          "defns":"StructureDefinition-vhdir-network-definitions.html",
-          "source":"vhdir-network.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-network.html",
+        "defns":"StructureDefinition-vhdir-network-definitions.html",
+        "source":"vhdir-network.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-productPlan":{
         "base":"StructureDefinition-vhdir-productPlan.html",
@@ -104,29 +104,29 @@
         "source":"vhdir-productPlan.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-organization":{
-          "base":"StructureDefinition-vhdir-organization.html",
-          "defns":"StructureDefinition-vhdir-organization-definitions.html",
-          "source":"vhdir-organization.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-organization.html",
+        "defns":"StructureDefinition-vhdir-organization-definitions.html",
+        "source":"vhdir-organization.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-practitioner":{
-          "base":"StructureDefinition-vhdir-practitioner.html",
-          "defns":"StructureDefinition-vhdir-practitioner-definitions.html",
-          "source":"vhdir-practitioner.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-practitioner.html",
+        "defns":"StructureDefinition-vhdir-practitioner-definitions.html",
+        "source":"vhdir-practitioner.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-practitionerrole":{
-          "base":"StructureDefinition-vhdir-practitionerrole.html",
-          "defns":"StructureDefinition-vhdir-practitionerrole-definitions.html",
-          "source":"vhdir-practitionerrole.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-practitionerrole.html",
+        "defns":"StructureDefinition-vhdir-practitionerrole-definitions.html",
+        "source":"vhdir-practitionerrole.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-location":{
-          "base":"StructureDefinition-vhdir-location.html",
-          "defns":"StructureDefinition-vhdir-location-definitions.html",
-          "source":"vhdir-location.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-location.html",
+        "defns":"StructureDefinition-vhdir-location-definitions.html",
+        "source":"vhdir-location.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-endpoint":{
-          "base":"StructureDefinition-vhdir-endpoint.html",
-          "defns":"StructureDefinition-vhdir-endpoint-definitions.html",
-          "source":"vhdir-endpoint.structuredefinition.xml"
+        "base":"StructureDefinition-vhdir-endpoint.html",
+        "defns":"StructureDefinition-vhdir-endpoint-definitions.html",
+        "source":"vhdir-endpoint.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-healthcareservice":{
         "base":"StructureDefinition-vhdir-healthcareservice.html",
@@ -149,24 +149,24 @@
         "source":"usage-restriction.structuredefinition.xml"
       },
       "StructureDefinition/org-alias-period":{
-          "base":"StructureDefinition-org-alias-period.html",
-          "defns":"StructureDefinition-org-alias-period-definitions.html",
-          "source":"org-alias-period.structuredefinition.xml"
+        "base":"StructureDefinition-org-alias-period.html",
+        "defns":"StructureDefinition-org-alias-period-definitions.html",
+        "source":"org-alias-period.structuredefinition.xml"
       },
       "StructureDefinition/org-alias-type":{
-          "base":"StructureDefinition-org-alias-type.html",
-          "defns":"StructureDefinition-org-alias-type-definitions.html",
-          "source":"org-alias-type.structuredefinition.xml"
+        "base":"StructureDefinition-org-alias-type.html",
+        "defns":"StructureDefinition-org-alias-type-definitions.html",
+        "source":"org-alias-type.structuredefinition.xml"
       },
       "StructureDefinition/org-description":{
-          "base":"StructureDefinition-org-description.html",
-          "defns":"StructureDefinition-org-description-definitions.html",
-          "source":"org-description.structuredefinition.xml"
+        "base":"StructureDefinition-org-description.html",
+        "defns":"StructureDefinition-org-description-definitions.html",
+        "source":"org-description.structuredefinition.xml"
       },     
       "StructureDefinition/endpoint-reference":{
-          "base":"StructureDefinition-endpoint-reference.html",
-          "defns":"StructureDefinition-endpoint-reference-definitions.html",
-          "source":"endpoint-reference.structuredefinition.xml"
+        "base":"StructureDefinition-endpoint-reference.html",
+        "defns":"StructureDefinition-endpoint-reference-definitions.html",
+        "source":"endpoint-reference.structuredefinition.xml"
       },
       "StructureDefinition/network-reference":{
         "base":"StructureDefinition-network-reference.html",
@@ -229,9 +229,9 @@
         "source":"careTeam-alias.structuredefinition.xml"      
       },
         "StructureDefinition/address-position":{
-          "base":"StructureDefinition-address-position.html",
-          "defns":"StructureDefinition-address-position-definitions.html",
-          "source":"address-position.structuredefinition.xml"
+        "base":"StructureDefinition-address-position.html",
+        "defns":"StructureDefinition-address-position-definitions.html",
+        "source":"address-position.structuredefinition.xml"
       },
       "StructureDefinition/identifier-status":{
         "base":"StructureDefinition-identifier-status.html",
@@ -276,6 +276,14 @@
       "ValueSet/VHDir-digitalcertificatetype": {
         "base": "ValueSet-VHDir-digitalcertificatetype.html",
         "source": "ValueSet-VHDir-digitalcertificatetype.xml"
+      },
+      "CodeSystem/codesystem-accessibility": {
+        "base": "CodeSystem-codesystem-accessibility.html",
+        "source": "codesystem-accessibility.xml"
+      },
+      "ValueSet/valueset-accessibility": {
+        "base": "ValueSet-valueset-accessibility.html",
+        "source": "valueset-accessibility.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
