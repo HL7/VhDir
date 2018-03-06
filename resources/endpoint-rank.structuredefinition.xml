@@ -34,6 +34,7 @@
       <label value="rank" />
       <short value="Rank" />
       <definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content" />
+      <min value="1"/>
       <type>
         <code value="positiveInt" />
       </type>

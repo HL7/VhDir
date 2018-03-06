@@ -52,6 +52,7 @@
       <label value="type" />
       <short value="Type" />
       <definition value="Type of services supported by this endpoint" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -74,6 +75,7 @@
       <label value="standard" />
       <short value="Standard" />
       <definition value="URI to the published standard (e.g. HL7 implementation guide)" />
+      <min value="1"/>
       <type>
         <code value="uri" />
       </type>

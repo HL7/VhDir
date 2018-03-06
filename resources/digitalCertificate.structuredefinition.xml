@@ -55,6 +55,7 @@
       <label value="type" />
       <short value="type" />
       <definition value="Type of digital certificate (TLS/SSL; device; identity; group)" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>
@@ -76,6 +77,7 @@
       <label value="use" />
       <short value="use" />
       <definition value="Purpose of the digital certificate (digsig; keyEncipherment)" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>
@@ -98,6 +100,7 @@
       <label value="certificateStandard" />
       <short value="Certificate standard" />
       <definition value="The standard associated with the digital certificate (x.509v3)" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>
@@ -121,6 +124,7 @@
       <label value="certificate" />
       <short value="Certificate" />
       <definition value="Base 64 encoding of the certificate" />
+      <min value="1"/>
       <type>
         <code value="base64Binary" />
       </type>
@@ -144,6 +148,7 @@
       <label value="expirationDate" />
       <short value="Expiration date" />
       <definition value="Expiration date of the certificate" />
+      <min value="1"/>
       <type>
         <code value="date" />
       </type>
@@ -165,6 +170,7 @@
       <label value="trustFramework" />
       <short value="Trust framework" />
       <definition value="The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>

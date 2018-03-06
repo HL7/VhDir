@@ -38,6 +38,7 @@
       <short value="New patient profile" />
       <definition value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)" />
       <comment value="often may be only text" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>

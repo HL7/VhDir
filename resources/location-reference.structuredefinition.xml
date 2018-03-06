@@ -34,6 +34,7 @@
       <label value="location" />
       <short value="Location" />
       <definition value="The location at which the care team operates or delivers services; a reference to the location resource" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location" />

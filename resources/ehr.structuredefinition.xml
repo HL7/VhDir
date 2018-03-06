@@ -51,6 +51,7 @@
       <label value="developer" />
       <short value="Developer" />
       <definition value="The developer of the EHR product" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>
@@ -73,6 +74,7 @@
       <label value="product" />
       <short value="Product" />
       <definition value="The name of the EHR product" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>
@@ -95,6 +97,7 @@
       <label value="version" />
       <short value="Version" />
       <definition value="Version of the EHR product" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>
@@ -117,6 +120,7 @@
       <label value="certificationCriteria" />
       <short value="Certification edition" />
       <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -138,6 +142,7 @@
       <label value="patientAccess" />
       <short value="Patient access" />
       <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -160,6 +165,7 @@
       <label value="certificationID" />
       <short value="Certification ID" />
       <definition value="Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>

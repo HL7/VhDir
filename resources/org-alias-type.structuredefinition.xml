@@ -34,6 +34,7 @@
       <label value="type" />
       <short value="Type" />
       <definition value="Type of alias (doing business as | historical | other)" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>

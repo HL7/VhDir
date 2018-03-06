@@ -50,6 +50,7 @@
       <label value="daysOfWeek" />
       <short value="Days of week" />
       <definition value="Days of the week - mon|tue|wed|thu|fri|sat|sun" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>
@@ -72,6 +73,7 @@
       <label value="allDay" />
       <short value="All day" />
       <definition value="Always available? e.g. 24 hour service" />
+      <min value="1"/>
       <type>
         <code value="boolean" />
       </type>
@@ -94,6 +96,7 @@
       <label value="availableStartTime" />
       <short value="Available start time" />
       <definition value="Opening time of day (ignored if allDay = true)" />
+      <min value="1"/>
       <type>
         <code value="time" />
       </type>
@@ -116,6 +119,7 @@
       <label value="availableEndTime" />
       <short value="Available end time" />
       <definition value="Closing time of day (ignored if allDay = true)" />
+      <min value="1"/>
       <type>
         <code value="time" />
       </type>

@@ -33,6 +33,7 @@
       <label value="alias" />
       <short value="Alias" />
       <definition value="Alternate names by which the team is also known" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>

@@ -52,6 +52,7 @@
       <label value="identifier" />
       <short value="Identifier" />
       <definition value="An identifier for this qualification" />
+      <min value="1"/>
       <type>
         <code value="Identifier" />
       </type>
@@ -75,6 +76,7 @@
       <label value="code" />
       <short value="Code" />
       <definition value="Coded representation of the qualification" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -96,6 +98,7 @@
       <label value="issuer" />
       <short value="Issuer" />
       <definition value="Organization that regulates and issues the qualification" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
@@ -119,6 +122,7 @@
       <label value="status" />
       <short value="Status" />
       <definition value="Current status of the qualification" />
+      <min value="1"/>
       <type>
         <code value="Coding" />
       </type>
@@ -141,6 +145,7 @@
       <label value="period" />
       <short value="Period" />
       <definition value="Period during which the qualification is valid" />
+      <min value="1"/>
       <type>
         <code value="Period" />
       </type>
@@ -162,6 +167,7 @@
       <label value="whereValid" />
       <short value="Where the qualification is valid" />
       <definition value="Indicates where this qualification is valid" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -201,6 +207,7 @@
       <label value="status" />
       <short value="Previous status" />
       <definition value="Previous status of the qualification" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -223,6 +230,7 @@
       <label value="period" />
       <short value="Period" />
       <definition value="Period during which the status applied" />
+      <min value="1"/>
       <type>
         <code value="Period" />
       </type>

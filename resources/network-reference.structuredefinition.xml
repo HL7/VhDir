@@ -36,6 +36,7 @@
       <label value="network" />
       <short value="Network" />
       <definition value="Reference to the Network" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />

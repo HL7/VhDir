@@ -34,6 +34,7 @@
       <label value="period" />
       <short value="Value" />
       <definition value="The period during which the alias was used" />
+      <min value="1"/>
       <type>
         <code value="Period" />
       </type>

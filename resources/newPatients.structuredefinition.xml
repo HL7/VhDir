@@ -54,6 +54,7 @@
       <label value="acceptingPatients" />
       <short value="Accepting patients" />
       <definition value="Whether the practitioner/service/location is accepting new patients" />
+      <min value="1"/>
       <type>
         <code value="boolean" />
       </type>
@@ -76,6 +77,7 @@
       <label value="network" />
       <short value="network" />
       <definition value="The healthcare provider insurance network for which the practitioner/service/location is accepting new patients." />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />

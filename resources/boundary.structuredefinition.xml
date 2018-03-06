@@ -53,6 +53,7 @@
       <label value="region" />
       <short value="Custom area or region" />
       <definition value="URI to a KML or GeoJSON representing a custom area or region" />
+      <min value="1"/>
       <type>
         <code value="uri" />
       </type>
@@ -74,6 +75,7 @@
       <label value="localName" />
       <short value="Description" />
       <definition value="Friendly description of a well-known region/area" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>

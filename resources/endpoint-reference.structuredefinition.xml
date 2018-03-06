@@ -33,6 +33,7 @@
       <sliceName value="valueReference" />
       <short value="Endpoint reference" />
       <definition value="A reference to the endpoint" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />

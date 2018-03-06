@@ -53,6 +53,7 @@
       <label value="status" />
       <short value="Status" />
       <definition value="Current status of the qualification" />
+      <min value="1"/>
       <type>
         <code value="Coding" />
       </type>
@@ -75,6 +76,7 @@
       <label value="whereValid" />
       <short value="Where the qualification is valid" />
       <definition value="Indicates where this qualification is valid" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -114,6 +116,7 @@
       <label value="status" />
       <short value="Previous status" />
       <definition value="Previous status of the qualification" />
+      <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -136,6 +139,7 @@
       <label value="period" />
       <short value="Period" />
       <definition value="Period during which the status applied" />
+      <min value="1"/>
       <type>
         <code value="Period" />
       </type>

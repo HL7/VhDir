@@ -67,6 +67,7 @@
       <label value="daysOfWeek" />
       <short value="Days of Week" />
       <definition value="Days of the week" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>
@@ -89,6 +90,7 @@
       <label value="allDay" />
       <short value="All day" />
       <definition value="Always available? e.g. 24 hour service" />
+      <min value="1"/>
       <type>
         <code value="boolean" />
       </type>
@@ -111,6 +113,7 @@
       <label value="availableStartTime" />
       <short value="Available start time" />
       <definition value="Opening time of day (ignored if allDay = true)" />
+      <min value="1"/>
       <type>
         <code value="time" />
       </type>
@@ -133,6 +136,7 @@
       <label value="availableEndTime" />
       <short value="Available end time" />
       <definition value="Closing time of day (ignored if allDay = true)" />
+      <min value="1"/>
       <type>
         <code value="time" />
       </type>
@@ -181,6 +185,7 @@
       <label value="description" />
       <short value="Description" />
       <definition value="Reason presented to the user explaining why time not available" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>
@@ -203,6 +208,7 @@
       <label value="description" />
       <short value="Description" />
       <definition value="Location not available from this date" />
+      <min value="1"/>
       <type>
         <code value="Period" />
       </type>
@@ -233,6 +239,7 @@
       <label value="availabilityExceptions" />
       <short value="Availability exceptions" />
       <definition value="Description of availability exceptions" />
+      <min value="1"/>
       <type>
         <code value="string" />
       </type>

@@ -34,6 +34,7 @@
       <label value="status" />
       <short value="Status" />
       <definition value="Describes the status of an identifier" />
+      <min value="1"/>
       <type>
         <code value="code" />
       </type>

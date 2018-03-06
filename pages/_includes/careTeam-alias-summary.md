@@ -1,4 +1,4 @@
 #### Complete Summary of the Mandatory Requirements
 
-There are no mandatory requirements.
+Requires a text value indicating the name of the alias.
 
