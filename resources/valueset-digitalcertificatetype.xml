@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalCertificateType"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalCertificateType"/>
-	<version value="1.0.0"/>
-	<name value="VhDir Digital Certificate Type Value Set"/>
+	<id value="valueset-digitalcertificatetype"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+	<name value="VhDir Digital Certificate Type Value Set - Test"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,7 +15,7 @@
 	<description value="Codes for documenting VHDir Digital Certificate Type"/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
             <concept>
                 <code value="TLS/SSL"/>
             </concept>

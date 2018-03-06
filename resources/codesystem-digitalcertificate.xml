@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-digitalCertificate"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+	<id value="codesystem-digitalcertificate"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
 	<identifier>
 		<value value="TBD"/>
 	</identifier>
-	<version value="1.0.0"/>
 	<name value="VhDir Digital Certificate Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>
@@ -18,7 +17,6 @@
 	</contact>
 	<description value="This code system contains codes for documenting the various attributes of a Digital Certificate"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-digitalCertificateType"/>
 	<content value="complete"/>
 	<concept>
 		<code value="TLS/SSL"/>

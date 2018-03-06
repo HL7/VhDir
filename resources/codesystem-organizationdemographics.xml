@@ -2,7 +2,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-organizationdemographics"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-	<version value="1.0.0"/>
 	<name value="VhDir Organization Demographics Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>

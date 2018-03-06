@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-languageProficiency"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageProficiency"/>
-	<version value="1.0.0"/>
+	<id value="codesystem-languageproficiency"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency"/>
 	<name value="VhDir Language Proficiency Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>
@@ -15,7 +14,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes of Language Proficiency"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-languageProficiencyType"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-languageproficiencypype"/>
 	<content value="complete"/>
 	<concept>
 		<code value="00"/>

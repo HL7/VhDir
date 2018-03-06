@@ -268,9 +268,25 @@
         "defns":"StructureDefinition-practitioner-qualification-definitions.html",
         "source":"practitioner-qualification.structuredefinition.xml"   
       },
-      "ValueSet/VHDir-digitalcertificatetype": {
-        "base": "ValueSet-VHDir-digitalcertificatetype.html",
-        "source": "ValueSet-VHDir-digitalcertificatetype.xml"
+      "CodeSystem/codesystem-digitalcertificate": {
+        "base": "CodeSystem-codesystem-digitalcertificate.html",
+        "source": "codeSystem-codesystem-digitalcertificate.xml"
+      },
+      "ValueSet/valueset-digitalcertificatetype": {
+        "base": "ValueSet-valueset-digitalcertificatetype.html",
+        "source": "valueset-valueset-digitalcertificatetype.xml"
+      },
+      "ValueSet/valueset-digitalcertificateuse": {
+        "base": "ValueSet-valueset-digitalcertificateuse.html",
+        "source": "valueSet-valueset-digitalcertificateuse.xml"
+      },
+      "ValueSet/valueset-digitalcertificatetrustframework": {
+        "base": "ValueSet-valueset-digitalcertificatetrustframework.html",
+        "source": "valueSet-valueset-digitalcertificatetrustframework.xml"
+      },
+      "ValueSet/VHDir-digitalcertificatestandard": {
+        "base": "ValueSet-valueset-digitalcertificatestandard.html",
+        "source": "valueSet-valueset-digitalcertificatestandard.xml"
       },
       "CodeSystem/codesystem-accessibility": {
         "base": "CodeSystem-codesystem-accessibility.html",

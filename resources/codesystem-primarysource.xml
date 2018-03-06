@@ -2,7 +2,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-primarysource"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-primarysource"/>
-	<version value="1.0.0"/>
 	<name value="VhDir Primary Source Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>
@@ -15,7 +14,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes related to the business process of primary source validation durign the maintenance of a Healthcare Directory."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-primarysource"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysource"/>
 	<content value="complete"/>
 	<concept>
 	<code value="licenseboard"/>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalCertificateUse"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalCertificateUse"/>
-	<version value="1.0.0"/>
+	<id value="valueset-digitalcertificateuse"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
 	<name value="VhDir Digital Certificate Use Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
@@ -16,7 +15,7 @@
 	<description value="Codes for documenting VHDir Digital Certificate Use"/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalCertificate"/>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
    			<concept>
         		<code value="digsig"/>
    			</concept>

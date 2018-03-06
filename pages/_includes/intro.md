@@ -37,6 +37,8 @@ To determine the data elements necessary for the exchange of directory informati
 
     B2 - Relationship between provider and insurance plan (insurance accepted) or plan and provider (network)
 
+    B3 - Plan Enrollment from an individual consumer perspective 
+
 #### C - Plan selection and enrollment
 
     C1 - Claims management (adjudication, prior authorization, payment)

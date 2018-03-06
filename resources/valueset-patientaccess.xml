@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-patientAccess"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientAccess"/>
-	<version value="1.0.0"/>
+	<id value="valueset-patientaccess"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess"/>
 	<name value="VhDir EHR Patient Access Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

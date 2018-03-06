@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-useCaseType"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-useCaseType"/>
-	<version value="1.0.0"/>
+	<id value="valueset-usecasetype"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype"/>
 	<name value="VhDir Use Case Type Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
