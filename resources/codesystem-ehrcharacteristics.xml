@@ -14,7 +14,6 @@
 	</contact>
 	<description value="This code system contains codes for documenting attributes of an Electronic Health Record (EHR) System."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-ehrcharacteristics"/>
 	<content value="complete"/>
 	<concept>
 		<code value="2011"/>
