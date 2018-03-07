@@ -25,6 +25,7 @@ The following actors are part of the VHDir IG:
 
 To determine the data elements necessary for the exchange of directory information, the authors developed a number of use cases currently supported by healthcare directories. The use cases describe the general information requirements (e.g. demographic information, endpoints, relationships between orgs/providers) needed to support the use case. From these, we devised a set of discrete data elements. This implementation guide covers all of the data elements that make sense to collect at a national level, validate, and exchange with local workflow environments. The use cases included:  
 
+
 #### A - Basic Information Exchange
 
     A1 - Enable electronic exchange (e.g. discovery of electronic end points such as IHE/EHR endpoints, FHIR server URLs, Direct addresses)
@@ -37,17 +38,15 @@ To determine the data elements necessary for the exchange of directory informati
 
     B2 - Relationship between provider and insurance plan (insurance accepted) or plan and provider (network)
 
-    B3 - Plan Enrollment from an individual consumer perspective 
+    B3 - Plan selection and enrollment
+
+    B4 - Claims management (adjudication, prior authorization, payment)
 
 #### C - Plan selection and enrollment
 
-    C1 - Claims management (adjudication, prior authorization, payment)
+    C1 - Provider relationship with a patient (e.g. for alerts)
 
-    C2 - Care Delivery / Value Based Care 
-
-    C3 - Provider relationship with a patient (e.g. for alerts)
-
-    C4 - Provider relationship with other providers in context of a patient (e.g. care team communications)
+    C2 - Provider relationship with other providers in context of a patient (e.g. care team communications)
 
 #### D - Other
 
