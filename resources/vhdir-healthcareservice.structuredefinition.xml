@@ -2,12 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vhdir-healthcareservice" />
   <meta>
-    <lastUpdated value="2017-10-20T09:44:09.074+11:00" />
+    <lastUpdated value="2017-12-08T17:03:41.225-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice" />
   <name value="vhdir-healthcareservice" />
   <status value="draft" />
   <date value="2017-10-17T10:21:21.817-04:00" />
+  <publisher value="HL7 International" />
+  <description value="Defines the basic constraints and extensions on the HealthcareService resource for use in a Validated Healthcare Directory" />
+  <copyright value="HL7 International" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -16,11 +19,139 @@
   <derivation value="constraint" />
   <differential>
     <element id="HealthcareService">
-      <path value="HealthcareService" />
+      <path value="HealthcareService"/>
     </element>
-    <element id="HealthcareService.photo">
-      <path value="HealthcareService.photo" />
+    <element id="HealthcareService.extension">
+      <path value="HealthcareService.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.extension:newpatients">
+      <path value="HealthcareService.extension" />
+      <sliceName value="newpatients" />
+      <short value="New patients" />
+      <definition value="An indication of whether a location, service, or practitioner is accepting new patients" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" />
+      </type>
+    </element>
+    <element id="HealthcareService.extension:newpatientprofile">
+      <path value="HealthcareService.extension" />
+      <sliceName value="newpatientprofile" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
+      </type>
+    </element>
+    <element id="HealthcareService.extension:boundary">
+      <path value="HealthcareService.extension" />
+      <sliceName value="boundary" />
+      <short value="Boundary" />
+      <definition value="Representation of a custom area or region" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary" />
+      </type>
+    </element>
+    <element id="HealthcareService.identifier">
+      <path value="HealthcareService.identifier"/>
+    </element>
+    <element id="HealthcareService.identifier.assigner">
+      <path value="HealthcareService.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
+    <element id="HealthcareService.identifier.extension">
+      <path value="HealthcareService.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.identifier.extension:status">
+      <path value="HealthcareService.identifier.extension" />
+      <sliceName value="status" />
+      <short value="Status" />
+      <definition value="Describes the status of an identifier" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
+      </type>
+    </element>
+    <element id="HealthcareService.active">
+      <path value="HealthcareService.active"/>
+      <min value="1"/>
+    </element>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.location">
+      <path value="HealthcareService.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location" />
+      </type>
+    </element>
+    <element id="HealthcareService.telecom">
+      <path value="HealthcareService.telecom"/>
+    </element>
+    <element id="HealthcareService.telecom.extension">
+      <path value="HealthcareService.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.telecom.extension:availabletime">
+      <path value="HealthcareService.telecom.extension" />
+      <sliceName value="availabletime" />
+      <short value="Available time" />
+      <definition value="Time period when the contact point is to be used" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
+      </type>
+    </element>
+    <element id="HealthcareService.telecom.extension:viaintermediary">
+      <path value="HealthcareService.telecom.extension" />
+      <sliceName value="viaintermediary" />
+      <short value="viaintermediary" />
+      <definition value="Represents an external point of contact responsible for handling communications with this entity" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
+      </type>
+    </element>
+    <element id="HealthcareService.coverageArea">
+      <path value="HealthcareService.coverageArea" />
       <max value="0" />
+    </element>
+    <element id="HealthcareService.endpoint">
+      <path value="HealthcareService.endpoint" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
