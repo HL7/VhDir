@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="contactPoint-viaIntermediary" />
+  <id value="contactpoint-viaintermediary" />
   <meta>
     <lastUpdated value="2017-11-20T11:57:54.347-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
-  <name value="contactPoint-viaIntermediary" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
+  <name value="contactpoint-viaintermediary" />
   <status value="draft" />
   <date value="2017-11-20T11:48:25.475-05:00" />
   <description value="Represents an external point of contact responsible for handling communications with this entity" />
@@ -20,18 +20,18 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="viaIntermediary" />
+      <short value="viaintermediary" />
       <definition value="Represents an external point of contact responsible for handling communications with this entity" />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
     </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <label value="viaIntermediary" />
+      <label value="viaintermediary" />
       <short value="Via intermediary" />
       <definition value="Represents an external point of contact responsible for handling communications with this entity" />
       <min value="1"/>

@@ -33,14 +33,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:availableTime">
+    <element id="Extension.extension:availabletime">
       <path value="Extension.extension" />
-      <sliceName value="availableTime" />
-      <label value="availableTime" />
+      <sliceName value="availabletime" />
+      <label value="availabletime" />
       <short value="Available time" />
       <definition value="Times the location is available" />
     </element>
-    <element id="Extension.extension:availableTime.extension">
+    <element id="Extension.extension:availabletime.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -50,18 +50,18 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:availableTime.extension:daysOfWeek">
+    <element id="Extension.extension:availabletime.extension:daysOfWeek">
       <path value="Extension.extension.extension" />
       <sliceName value="daysOfWeek" />
       <label value="daysOfWeek" />
       <short value="Days of week" />
       <definition value="Days of the week" />
     </element>
-    <element id="Extension.extension:availableTime.extension:daysOfWeek.url">
+    <element id="Extension.extension:availabletime.extension:daysOfWeek.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="daysOfWeek" />
     </element>
-    <element id="Extension.extension:availableTime.extension:daysOfWeek.value[x]:valueCode">
+    <element id="Extension.extension:availabletime.extension:daysOfWeek.value[x]:valueCode">
       <path value="Extension.extension.extension.valueCode" />
       <sliceName value="valueCode" />
       <label value="daysOfWeek" />
@@ -72,7 +72,7 @@
         <code value="code" />
       </type>
     </element>
-    <element id="Extension.extension:availableTime.extension:allDay">
+    <element id="Extension.extension:availabletime.extension:allDay">
       <path value="Extension.extension.extension" />
       <sliceName value="allDay" />
       <label value="allDay" />
@@ -80,11 +80,11 @@
       <definition value="Always available? e.g. 24 hour service" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:availableTime.extension:allDay.url">
+    <element id="Extension.extension:availabletime.extension:allDay.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="allDay" />
     </element>
-    <element id="Extension.extension:availableTime.extension:allDay.value[x]:valueBoolean">
+    <element id="Extension.extension:availabletime.extension:allDay.value[x]:valueBoolean">
       <path value="Extension.extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <label value="allDay" />
@@ -95,7 +95,7 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:availableTime.extension:availableStartTime">
+    <element id="Extension.extension:availabletime.extension:availableStartTime">
       <path value="Extension.extension.extension" />
       <sliceName value="availableStartTime" />
       <label value="availableStartTime" />
@@ -103,11 +103,11 @@
       <definition value="Opening time of day (ignored if allDay = true)" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:availableTime.extension:availableStartTime.url">
+    <element id="Extension.extension:availabletime.extension:availableStartTime.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="availableStartTime" />
     </element>
-    <element id="Extension.extension:availableTime.extension:availableStartTime.value[x]:valueTime">
+    <element id="Extension.extension:availabletime.extension:availableStartTime.value[x]:valueTime">
       <path value="Extension.extension.extension.valueTime" />
       <sliceName value="valueTime" />
       <label value="availableStartTime" />
@@ -118,7 +118,7 @@
         <code value="time" />
       </type>
     </element>
-    <element id="Extension.extension:availableTime.extension:availableEndTime">
+    <element id="Extension.extension:availabletime.extension:availableEndTime">
       <path value="Extension.extension.extension" />
       <sliceName value="availableEndTime" />
       <label value="availableEndTime" />
@@ -126,11 +126,11 @@
       <definition value="Closing time of day (ignored if allDay = true)" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:availableTime.extension:availableEndTime.url">
+    <element id="Extension.extension:availabletime.extension:availableEndTime.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="availableEndTime" />
     </element>
-    <element id="Extension.extension:availableTime.extension:availableEndTime.value[x]:valueTime">
+    <element id="Extension.extension:availabletime.extension:availableEndTime.value[x]:valueTime">
       <path value="Extension.extension.extension.valueTime" />
       <sliceName value="valueTime" />
       <label value="availableEndTime" />
@@ -141,11 +141,11 @@
         <code value="time" />
       </type>
     </element>
-    <element id="Extension.extension:availableTime.url">
+    <element id="Extension.extension:availabletime.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="availableTime" />
+      <fixedUri value="availabletime" />
     </element>
-    <element id="Extension.extension:availableTime.value[x]">
+    <element id="Extension.extension:availabletime.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>

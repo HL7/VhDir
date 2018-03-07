@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="healthcareService-reference" />
+  <id value="healthcareservice-reference" />
   <meta>
     <lastUpdated value="2017-11-13T15:19:32.164-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareService-reference" />
-  <name value="healthcareService-reference" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference" />
+  <name value="healthcareservice-reference" />
   <status value="draft" />
   <date value="2017-11-08T11:53:40.139-05:00" />
-  <description value="Reference to healthcareService resource" />
+  <description value="Reference to healthcareservice resource" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -20,20 +20,20 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="healthcareService" />
-      <definition value="Reference to healthcareService resources" />
+      <short value="healthcareservice" />
+      <definition value="Reference to healthcareservice resources" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareService-reference" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference" />
     </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />
       <sliceName value="valueReference" />
-      <label value="healthcareService" />
+      <label value="healthcareservice" />
       <short value="Healthcare service" />
-      <definition value="Reference to healthcareService resource" />
-      <comment value="Extension to careTeam" />
+      <definition value="Reference to healthcareservice resource" />
+      <comment value="Extension to careteam" />
       <min value="1"/>
       <type>
         <code value="Reference" />

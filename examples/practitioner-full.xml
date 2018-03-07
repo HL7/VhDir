@@ -254,7 +254,7 @@
             <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345"/> 
         </valueReference>
     </extension>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate"> 
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> 
 <!--Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework -->
         <extension url="type">
             <valueCode value="identity"/> 

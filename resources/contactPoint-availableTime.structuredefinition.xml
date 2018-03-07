@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="contactPoint-availableTime" />
+  <id value="contactpoint-availabletime" />
   <meta>
     <lastUpdated value="2017-11-20T12:07:03.156-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
-  <name value="contactPoint-availableTime" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
+  <name value="contactpoint-availabletime" />
   <status value="draft" />
   <date value="2017-11-20T11:58:13.675-05:00" />
   <description value="Time period when the contact point is to be used" />
@@ -126,7 +126,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

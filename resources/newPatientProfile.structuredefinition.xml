@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="newPatientProfile" />
+  <id value="newpatientprofile" />
   <meta>
     <lastUpdated value="2017-12-04T12:05:18.461-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatientProfile" />
-  <name value="newPatientProfile" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
+  <name value="newpatientprofile" />
   <status value="draft" />
   <date value="2017-11-13T14:13:29.07-05:00" />
   <description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)" />
@@ -29,12 +29,12 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatientProfile" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <label value="newPatientProfile" />
+      <label value="newpatientprofile" />
       <short value="New patient profile" />
       <definition value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)" />
       <comment value="often may be only text" />

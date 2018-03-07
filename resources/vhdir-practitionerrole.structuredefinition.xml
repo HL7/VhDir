@@ -42,30 +42,30 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference" />
       </type>
     </element>
-    <element id="PractitionerRole.extension:newPatients">
+    <element id="PractitionerRole.extension:newpatients">
       <path value="PractitionerRole.extension" />
-      <sliceName value="newPatients" />
+      <sliceName value="newpatients" />
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatients" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" />
       </type>
     </element>
-    <element id="PractitionerRole.extension:newPatientProfile">
+    <element id="PractitionerRole.extension:newpatientprofile">
       <path value="PractitionerRole.extension" />
-      <sliceName value="newPatientProfile" />
+      <sliceName value="newpatientprofile" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatientProfile" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
       </type>
     </element>
-    <element id="PractitionerRole.extension:digitalCertificate">
+    <element id="PractitionerRole.extension:digitalcertificate">
       <path value="PractitionerRole.extension" />
-      <sliceName value="digitalCertificate" />
+      <sliceName value="digitalcertificate" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
       </type>
     </element>
     <element id="PractitionerRole.extension:qualification">
@@ -136,22 +136,22 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="PractitionerRole.telecom.extension:availableTime">
+    <element id="PractitionerRole.telecom.extension:availabletime">
       <path value="PractitionerRole.telecom.extension" />
-      <sliceName value="availableTime" />
+      <sliceName value="availabletime" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
-    <element id="PractitionerRole.telecom.extension:viaIntermediary">
+    <element id="PractitionerRole.telecom.extension:viaintermediary">
       <path value="PractitionerRole.telecom.extension" />
-      <sliceName value="viaIntermediary" />
+      <sliceName value="viaintermediary" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
   </differential>

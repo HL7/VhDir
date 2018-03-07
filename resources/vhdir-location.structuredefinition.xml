@@ -59,22 +59,22 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
       </type>
     </element>
-    <element id="Location.extension:newPatients">
+    <element id="Location.extension:newpatients">
       <path value="Location.extension" />
-      <sliceName value="newPatients" />
+      <sliceName value="newpatients" />
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatients" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" />
       </type>
     </element>
-    <element id="Location.extension:newPatientProfile">
+    <element id="Location.extension:newpatientprofile">
       <path value="Location.extension" />
-      <sliceName value="newPatientProfile" />
+      <sliceName value="newpatientprofile" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newPatientProfile" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
       </type>
     </element>
     <element id="Location.extension:availability">
@@ -141,22 +141,22 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Location.telecom.extension:availableTime">
+    <element id="Location.telecom.extension:availabletime">
       <path value="Location.telecom.extension" />
-      <sliceName value="availableTime" />
+      <sliceName value="availabletime" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
-    <element id="Location.telecom.extension:viaIntermediary">
+    <element id="Location.telecom.extension:viaintermediary">
       <path value="Location.telecom.extension" />
-      <sliceName value="viaIntermediary" />
+      <sliceName value="viaintermediary" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
     <element id="Location.address">

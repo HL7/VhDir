@@ -55,12 +55,12 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
       </type>
     </element>
-    <element id="Practitioner.extension:digitalCertificate">
+    <element id="Practitioner.extension:digitalcertificate">
       <path value="Practitioner.extension" />
-      <sliceName value="digitalCertificate" />
+      <sliceName value="digitalcertificate" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
       </type>
     </element>
     <element id="Practitioner.identifier">
@@ -118,22 +118,22 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Practitioner.telecom.extension:viaIntermediary">
+    <element id="Practitioner.telecom.extension:viaintermediary">
       <path value="Practitioner.telecom.extension" />
-      <sliceName value="viaIntermediary" />
+      <sliceName value="viaintermediary" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
-    <element id="Practitioner.telecom.extension:availableTime">
+    <element id="Practitioner.telecom.extension:availabletime">
       <path value="Practitioner.telecom.extension" />
-      <sliceName value="availableTime" />
+      <sliceName value="availabletime" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
     <element id="Practitioner.address">

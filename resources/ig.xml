@@ -21,16 +21,16 @@
     </resource>     
     <resource>
       <example value="false" />
-      <name value="contactPoint-viaIntermediary" />
+      <name value="contactpoint-viaintermediary" />
       <sourceReference>
-        <reference value="StructureDefinition/contactPoint-viaIntermediary" />
+        <reference value="StructureDefinition/contactpoint-viaintermediary" />
       </sourceReference>
     </resource>    
     <resource>
       <example value="false" />
-      <name value="contactPoint-availableTime" />
+      <name value="contactpoint-availabletime" />
       <sourceReference>
-        <reference value="StructureDefinition/contactPoint-availableTime" />
+        <reference value="StructureDefinition/contactpoint-availabletime" />
       </sourceReference>
     </resource>
     <resource>
@@ -58,7 +58,7 @@
       <example value="false" />
       <name value="Product/plan" />
       <sourceReference>
-        <reference value="StructureDefinition/vhdir-productPlan" />
+        <reference value="StructureDefinition/vhdir-productplan" />
       </sourceReference>
     </resource>   
     <resource>
@@ -142,7 +142,7 @@
       <example value="false" />
       <name value="Organization Role" />
       <sourceReference>
-        <reference value="StructureDefinition/vhdir-organizationRole" />
+        <reference value="StructureDefinition/vhdir-organizationrole" />
       </sourceReference>
     </resource>
     <resource>
@@ -184,7 +184,7 @@
       <example value="false" />
       <name value="DigitalCertificate" />
       <sourceReference>
-        <reference value="StructureDefinition/digitalCertificate" />
+        <reference value="StructureDefinition/digitalcertificate" />
       </sourceReference>
     </resource>    
     <resource>
@@ -196,9 +196,9 @@
     </resource>    
     <resource>
       <example value="false" />
-      <name value="healthcareService-reference" />
+      <name value="healthcareservice-reference" />
       <sourceReference>
-        <reference value="StructureDefinition/healthcareService-reference" />
+        <reference value="StructureDefinition/healthcareservice-reference" />
       </sourceReference>
     </resource>    
     <resource>
@@ -210,16 +210,16 @@
     </resource>    
     <resource>
       <example value="false" />
-      <name value="newPatientProfile" />
+      <name value="newpatientprofile" />
       <sourceReference>
-        <reference value="StructureDefinition/newPatientProfile" />
+        <reference value="StructureDefinition/newpatientprofile" />
       </sourceReference>
     </resource>        
     <resource>
       <example value="false" />
-      <name value="newPatients" />
+      <name value="newpatients" />
       <sourceReference>
-        <reference value="StructureDefinition/newPatients" />
+        <reference value="StructureDefinition/newpatients" />
       </sourceReference>
     </resource>
     <resource>
@@ -231,16 +231,16 @@
     </resource> 
     <resource>
       <example value="false" />
-      <name value="careTeam-alias" />
+      <name value="careteam-alias" />
       <sourceReference>
-        <reference value="StructureDefinition/careTeam-alias" />
+        <reference value="StructureDefinition/careteam-alias" />
       </sourceReference>
     </resource>    
     <resource>
       <example value="false" />
-      <name value="endpoint-useCase" />
+      <name value="endpoint-usecase" />
       <sourceReference>
-        <reference value="StructureDefinition/endpoint-useCase" />
+        <reference value="StructureDefinition/endpoint-usecase" />
       </sourceReference>
     </resource>    
     <resource>
@@ -273,121 +273,121 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="digitalCertificatetype" />
+      <name value="digitalcertificatetype" />
       <sourceReference>
-        <reference value="ValueSet/digitalCertificateType" />
+        <reference value="ValueSet/valueset-digitalcertificatetype" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificateuse" />
       <sourceReference>
-        <reference value="ValueSet/digitalcertificateuse" />
+        <reference value="ValueSet/valueset-digitalcertificateuse" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificatestandard" />
       <sourceReference>
-        <reference value="ValueSet/digitalcertificatestandard" />
+        <reference value="ValueSet/valueset-digitalcertificatestandard" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificatetrustframework" />
       <sourceReference>
-        <reference value="ValueSet/digitalcertificatetrustframework" />
+        <reference value="ValueSet/valueset-digitalcertificatetrustframework" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="usecasetype" />
       <sourceReference>
-        <reference value="ValueSet/usecasetype" />
+        <reference value="ValueSet/valueset-usecasetype" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="accessibility" />
       <sourceReference>
-        <reference value="ValueSet/accessibility" />
+        <reference value="ValueSet/valueset-accessibility" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="aliastype" />
       <sourceReference>
-        <reference value="ValueSet/aliastype" />
+        <reference value="ValueSet/valueset-aliastype" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="certificationedition" />
       <sourceReference>
-        <reference value="ValueSet/certificationedition" />
+        <reference value="ValueSet/valueset-certificationedition" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="patientaccess" />
       <sourceReference>
-        <reference value="ValueSet/patientaccess" />
+        <reference value="ValueSet/valueset-patientaccess" />
       </sourceReference>
     </resource>    
     <resource>
       <example value="false" />
       <name value="digitalcertificate" />
       <sourceReference>
-        <reference value="CodeSystem/digitalCertificate" />
+        <reference value="CodeSystem/codesystem-digitalcertificate" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
-      <name value="useCase" />
+      <name value="usecase" />
       <sourceReference>
-        <reference value="CodeSystem/useCase" />
+        <reference value="CodeSystem/codesystem-usecase" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="accessibility" />
       <sourceReference>
-        <reference value="CodeSystem/accessibility" />
+        <reference value="CodeSystem/codesystem-accessibility" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="ehrcharacteristics" />
       <sourceReference>
-        <reference value="CodeSystem/ehrcharacteristics" />
+        <reference value="CodeSystem/codesystem-ehrcharacteristics" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="languageproficiency" />
       <sourceReference>
-        <reference value="CodeSystem/languageproficiency" />
+        <reference value="CodeSystem/codesystem-languageproficiency" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="organizationdemographics" />
       <sourceReference>
-        <reference value="CodeSystem/organizationdemographics" />
+        <reference value="CodeSystem/codesystem-organizationdemographics" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="primarysource" />
       <sourceReference>
-        <reference value="CodeSystem/primarysource" />
+        <reference value="CodeSystem/codesystem-primarysource" />
       </sourceReference>
     </resource>
     <resource>
       <example value="false" />
       <name value="validation" />
       <sourceReference>
-        <reference value="CodeSystem/validation" />
+        <reference value="CodeSystem/codesystem-validation" />
       </sourceReference>
     </resource>
     <resource>
@@ -465,7 +465,7 @@
         <reference value="ProductPlan/example-onc" />
       </sourceReference>
       <exampleFor>
-        <reference value="StructureDefinition/vhdir-productPlan" />
+        <reference value="StructureDefinition/vhdir-productplan" />
       </exampleFor>
     </resource> -->
     <resource>

@@ -33,12 +33,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Endpoint.extension:useCase">
+    <element id="Endpoint.extension:usecase">
       <path value="Endpoint.extension" />
-      <sliceName value="useCase" />
+      <sliceName value="usecase" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-useCase" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase" />
       </type>
     </element>
     <element id="Endpoint.extension:rank">
@@ -52,12 +52,12 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank" />
       </type>
     </element>
-    <element id="Endpoint.extension:digitalCertificate">
+    <element id="Endpoint.extension:digitalcertificate">
       <path value="Endpoint.extension" />
-      <sliceName value="digitalCertificate" />
+      <sliceName value="digitalcertificate" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
       </type>
     </element>
     <element id="Endpoint.identifier">
@@ -101,22 +101,22 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Endpoint.contact.extension:availableTime">
+    <element id="Endpoint.contact.extension:availabletime">
       <path value="Endpoint.contact.extension" />
-      <sliceName value="availableTime" />
+      <sliceName value="availabletime" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-availableTime" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
-    <element id="Endpoint.contact.extension:viaIntermediary">
+    <element id="Endpoint.contact.extension:viaintermediary">
       <path value="Endpoint.contact.extension" />
-      <sliceName value="viaIntermediary" />
+      <sliceName value="viaintermediary" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactPoint-viaIntermediary" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
     <element id="Endpoint.period">

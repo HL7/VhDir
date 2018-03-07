@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="digitalCertificate" />
+  <id value="digitalcertificate" />
   <meta>
     <lastUpdated value="2017-12-08T18:37:47.658-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
-  <name value="digitalCertificate" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
+  <name value="digitalcertificate" />
   <status value="draft" />
   <date value="2017-11-13T11:51:52.262-05:00" />
   <description value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
@@ -23,7 +23,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="digitalCertificate" />
+      <short value="digitalcertificate" />
       <definition value="A digital certificate, used to identify a user or group of users, or for encrypted communications" />
     </element>
     <element id="Extension.extension">
@@ -177,7 +177,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalCertificate" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

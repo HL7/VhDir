@@ -98,10 +98,10 @@
         "defns":"StructureDefinition-vhdir-network-definitions.html",
         "source":"vhdir-network.structuredefinition.xml"
       },
-      "StructureDefinition/vhdir-productPlan":{
-        "base":"StructureDefinition-vhdir-productPlan.html",
-        "defns":"StructureDefinition-vhdir-productPlan-definitions.html",
-        "source":"vhdir-productPlan.structuredefinition.xml"
+      "StructureDefinition/vhdir-productplan":{
+        "base":"StructureDefinition-vhdir-productplan.html",
+        "defns":"StructureDefinition-vhdir-productplan-definitions.html",
+        "source":"vhdir-productplan.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-organization":{
         "base":"StructureDefinition-vhdir-organization.html",
@@ -133,10 +133,10 @@
         "defns":"StructureDefinition-vhdir-healthcareservice-definitions.html",
         "source":"vhdir-healthcareservice.structuredefinition.xml"
       },
-      "StructureDefinition/vhdir-organizationRole":{
-        "base":"StructureDefinition-vhdir-organizationRole.html",
-        "defns":"StructureDefinition-vhdir-organizationRole-definitions.html",
-        "source":"vhdir-organizationRole.structuredefinition.xml"
+      "StructureDefinition/vhdir-organizationrole":{
+        "base":"StructureDefinition-vhdir-organizationrole.html",
+        "defns":"StructureDefinition-vhdir-organizationrole-definitions.html",
+        "source":"vhdir-organizationrole.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-restriction":{
         "base":"StructureDefinition-vhdir-restriction.html",
@@ -188,65 +188,65 @@
         "defns":"StructureDefinition-communication-proficiency-definitions.html",
         "source":"communication-proficiency.structuredefinition.xml"
       },
-      "StructureDefinition/digitalCertificate":{
-        "base":"StructureDefinition-digitalCertificate.html",
-        "defns":"StructureDefinition-digitalCertificate-definitions.html",
-        "source":"digitalCertificate.structuredefinition.xml"
+      "StructureDefinition/digitalcertificate":{
+        "base":"StructureDefinition-digitalcertificate.html",
+        "defns":"StructureDefinition-digitalcertificate-definitions.html",
+        "source":"digitalcertificate.structuredefinition.xml"
       },
       "StructureDefinition/ehr":{
         "base":"StructureDefinition-ehr.html",
         "defns":"StructureDefinition-ehr-definitions.html",
         "source":"ehr.structuredefinition.xml"
       },
-      "StructureDefinition/healthcareService-reference":{
-        "base":"StructureDefinition-healthcareService-reference.html",
-        "defns":"StructureDefinition-healthcareService-reference-definitions.html",
-        "source":"healthcareService-reference.structuredefinition.xml"
+      "StructureDefinition/healthcareservice-reference":{
+        "base":"StructureDefinition-healthcareservice-reference.html",
+        "defns":"StructureDefinition-healthcareservice-reference-definitions.html",
+        "source":"healthcareservice-reference.structuredefinition.xml"
       },
       "StructureDefinition/location-reference":{
         "base":"StructureDefinition-location-reference.html",
         "defns":"StructureDefinition-location-reference-definitions.html",
         "source":"location-reference.structuredefinition.xml"
       },
-      "StructureDefinition/newPatientProfile":{
-        "base":"StructureDefinition-newPatientProfile.html",
-        "defns":"StructureDefinition-newPatientProfile-definitions.html",
-        "source":"newPatientProfile.structuredefinition.xml"
+      "StructureDefinition/newpatientprofile":{
+        "base":"StructureDefinition-newpatientprofile.html",
+        "defns":"StructureDefinition-newpatientprofile-definitions.html",
+        "source":"newpatientprofile.structuredefinition.xml"
       },
-      "StructureDefinition/newPatients":{
-        "base":"StructureDefinition-newPatients.html",
-        "defns":"StructureDefinition-newPatients-definitions.html",
-        "source":"newPatients.structuredefinition.xml"
+      "StructureDefinition/newpatients":{
+        "base":"StructureDefinition-newpatients.html",
+        "defns":"StructureDefinition-newpatients-definitions.html",
+        "source":"newpatients.structuredefinition.xml"
       },
       "StructureDefinition/location-availability":{
         "base":"StructureDefinition-location-availability.html",
         "defns":"StructureDefinition-location-availability-definitions.html",
         "source":"location-availability.structuredefinition.xml"
       },
-      "StructureDefinition/careTeam-alias":{
-        "base":"StructureDefinition-careTeam-alias.html",
-        "defns":"StructureDefinition-careTeam-alias-definitions.html",
-        "source":"careTeam-alias.structuredefinition.xml"      
+      "StructureDefinition/careteam-alias":{
+        "base":"StructureDefinition-careteam-alias.html",
+        "defns":"StructureDefinition-careteam-alias-definitions.html",
+        "source":"careteam-alias.structuredefinition.xml"      
       },
       "StructureDefinition/identifier-status":{
         "base":"StructureDefinition-identifier-status.html",
         "defns":"StructureDefinition-identifier-status-definitions.html",
         "source":"identifier-status.structuredefinition.xml"      
       },
-      "StructureDefinition/contactPoint-viaIntermediary":{
-        "base":"StructureDefinition-contactPoint-viaIntermediary.html",
-        "defns":"StructureDefinition-contactPoint-viaIntermediary-definitions.html",
-        "source":"contactPoint-viaIntermediary.structuredefinition.xml"      
+      "StructureDefinition/contactpoint-viaintermediary":{
+        "base":"StructureDefinition-contactpoint-viaintermediary.html",
+        "defns":"StructureDefinition-contactpoint-viaintermediary-definitions.html",
+        "source":"contactpoint-viaintermediary.structuredefinition.xml"      
       },
-      "StructureDefinition/contactPoint-availableTime":{
-        "base":"StructureDefinition-contactPoint-availableTime.html",
-        "defns":"StructureDefinition-contactPoint-availableTime-definitions.html",
-        "source":"contactPoint-availableTime.structuredefinition.xml"      
+      "StructureDefinition/contactpoint-availabletime":{
+        "base":"StructureDefinition-contactpoint-availabletime.html",
+        "defns":"StructureDefinition-contactpoint-availabletime-definitions.html",
+        "source":"contactpoint-availabletime.structuredefinition.xml"      
       },
-      "StructureDefinition/endpoint-useCase":{
-        "base":"StructureDefinition-endpoint-useCase.html",
-        "defns":"StructureDefinition-endpoint-useCase-definitions.html",
-        "source":"endpoint-useCase.structuredefinition.xml"      
+      "StructureDefinition/endpoint-usecase":{
+        "base":"StructureDefinition-endpoint-usecase.html",
+        "defns":"StructureDefinition-endpoint-usecase-definitions.html",
+        "source":"endpoint-usecase.structuredefinition.xml"      
       },
       "StructureDefinition/endpoint-rank":{
         "base":"StructureDefinition-endpoint-rank.html",
@@ -270,27 +270,51 @@
       },
       "CodeSystem/codesystem-digitalcertificate": {
         "base": "CodeSystem-codesystem-digitalcertificate.html",
-        "source": "codeSystem-codesystem-digitalcertificate.xml"
-      },
-      "ValueSet/valueset-digitalcertificatetype": {
-        "base": "ValueSet-valueset-digitalcertificatetype.html",
-        "source": "valueset-valueset-digitalcertificatetype.xml"
-      },
-      "ValueSet/valueset-digitalcertificateuse": {
-        "base": "ValueSet-valueset-digitalcertificateuse.html",
-        "source": "valueSet-valueset-digitalcertificateuse.xml"
-      },
-      "ValueSet/valueset-digitalcertificatetrustframework": {
-        "base": "ValueSet-valueset-digitalcertificatetrustframework.html",
-        "source": "valueSet-valueset-digitalcertificatetrustframework.xml"
-      },
-      "ValueSet/VHDir-digitalcertificatestandard": {
-        "base": "ValueSet-valueset-digitalcertificatestandard.html",
-        "source": "valueSet-valueset-digitalcertificatestandard.xml"
+        "source": "codesystem-digitalcertificate.xml"
       },
       "CodeSystem/codesystem-accessibility": {
         "base": "CodeSystem-codesystem-accessibility.html",
         "source": "codesystem-accessibility.xml"
+      },
+      "CodeSystem/codesystem-usecase": {
+        "base": "CodeSystem-codesystem-usecase.html",
+        "source": "codesystem-usecase.xml"
+      },
+      "CodeSystem/codesystem-ehrcharacteristics": {
+        "base": "CodeSystem-codesystem-ehrcharacteristics.html",
+        "source": "codesystem-ehrcharacteristics.xml"
+      },
+      "CodeSystem/codesystem-languageproficiency": {
+        "base": "CodeSystem-codesystem-languageproficiency.html",
+        "source": "codesystem-languageproficiency.xml"
+      },
+      "CodeSystem/codesystem-organizationdemographics": {
+        "base": "CodeSystem-codesystem-organizationdemographics.html",
+        "source": "codesystem-organizationdemographics.xml"
+      },
+      "CodeSystem/codesystem-primarysource": {
+        "base": "CodeSystem-codesystem-primarysource.html",
+        "source": "codesystem-primarysource.xml"
+      },
+      "CodeSystem/codesystem-validation": {
+        "base": "CodeSystem-codesystem-validation.html",
+        "source": "codesystem-validation.xml"
+      },
+      "ValueSet/valueset-digitalcertificatetype": {
+        "base": "ValueSet-valueset-digitalcertificatetype.html",
+        "source": "valueset-digitalcertificatetype.xml"
+      },
+      "ValueSet/valueset-digitalcertificateuse": {
+        "base": "ValueSet-valueset-digitalcertificateuse.html",
+        "source": "valueset-digitalcertificateuse.xml"
+      },
+      "ValueSet/valueset-digitalcertificatetrustframework": {
+        "base": "ValueSet-valueset-digitalcertificatetrustframework.html",
+        "source": "valueset-digitalcertificatetrustframework.xml"
+      },
+      "ValueSet/VHDir-digitalcertificatestandard": {
+        "base": "ValueSet-valueset-digitalcertificatestandard.html",
+        "source": "valueset-digitalcertificatestandard.xml"
       },
       "ValueSet/valueset-accessibility": {
         "base": "ValueSet-valueset-accessibility.html",

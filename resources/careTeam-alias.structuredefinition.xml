@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="careTeam-alias" />
+  <id value="careteam-alias" />
   <meta>
     <lastUpdated value="2017-11-16T15:49:05.354-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careTeam-alias" />
-  <name value="careTeam-alias" />
+  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias" />
+  <name value="careteam-alias" />
   <status value="draft" />
   <date value="2017-11-16T15:42:31.192-05:00" />
   <description value="Alternate names by which the team is known" />
@@ -25,7 +25,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careTeam-alias" />
+      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
