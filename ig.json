@@ -253,11 +253,6 @@
         "defns":"StructureDefinition-endpoint-rank-definitions.html",
         "source":"endpoint-rank.structuredefinition.xml"      
       },
-      "StructureDefinition/validation":{
-        "base":"StructureDefinition-validation.html",
-        "defns":"StructureDefinition-validation-definitions.html",
-        "source":"validation.structuredefinition.xml"   
-      },
       "StructureDefinition/qualification":{
         "base":"StructureDefinition-qualification.html",
         "defns":"StructureDefinition-qualification-definitions.html",
@@ -312,13 +307,29 @@
         "base": "ValueSet-valueset-digitalcertificatetrustframework.html",
         "source": "valueset-digitalcertificatetrustframework.xml"
       },
-      "ValueSet/VHDir-digitalcertificatestandard": {
+      "ValueSet/valueset-digitalcertificatestandard": {
         "base": "ValueSet-valueset-digitalcertificatestandard.html",
         "source": "valueset-digitalcertificatestandard.xml"
       },
       "ValueSet/valueset-accessibility": {
         "base": "ValueSet-valueset-accessibility.html",
         "source": "valueset-accessibility.xml"
+      },
+      "ValueSet/valueset-aliastype": {
+        "base": "ValueSet-valueset-aliastype.html",
+        "source": "valueset-aliastype.xml"
+      },
+      "ValueSet/valueset-certificationedition": {
+        "base": "ValueSet-valueset-certificationedition.html",
+        "source": "valueset-certificationedition.xml"
+      },
+      "ValueSet/valueset-patientaccess": {
+        "base": "ValueSet-valueset-patientaccess.html",
+        "source": "valueset-patientaccess.xml"
+      },
+      "ValueSet/valueset-usecasetype": {
+        "base": "ValueSet-valueset-usecasetype.html",
+        "source": "valueset-usecasetype.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

@@ -25,7 +25,6 @@ No mandatory elements in the proposed network Resource. The [**Formal Profile De
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the network
 
 
 **Terminology**

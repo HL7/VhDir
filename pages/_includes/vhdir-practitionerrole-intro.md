@@ -31,7 +31,6 @@ Each practitionerRole must have:
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the endpoint
 1.  Network (0..*) - a reference to the healthcare provider insurance networks the practitioner participates in through their role
 1.  NewPatients (0..*) - indicates whether the practitioner is accepting new patients in their role, consisting of:
     1.  AcceptingPatients (1.1) - a value of 'true' means the practitioner is accepting new patients, 'false' means they are not

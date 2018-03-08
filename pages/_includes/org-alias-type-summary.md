@@ -1,3 +1,3 @@
 #### Complete Summary of the Mandatory Requirements
 
-There are no mandatory requirements.
+This extension is optional. If used, it SHALL include a code from [Alias Type](http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype)

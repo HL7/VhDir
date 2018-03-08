@@ -1,1 +1,1 @@
-An extension to provide a friendly description of an organization.
+An extension to provide a human-readable description of an organization.

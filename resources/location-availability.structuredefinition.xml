@@ -65,12 +65,16 @@
       <path value="Extension.extension.extension.valueCode" />
       <sliceName value="valueCode" />
       <label value="daysOfWeek" />
-      <short value="Days of Week" />
-      <definition value="Days of the week" />
+      <short value="Days of the week - mon|tue|wed|thu|fri|sat|sun" />
+      <definition value="Days of the week - mon|tue|wed|thu|fri|sat|sun" />
       <min value="1"/>
       <type>
         <code value="code" />
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/days-of-week"/>
+      </binding>
     </element>
     <element id="Extension.extension:availabletime.extension:allDay">
       <path value="Extension.extension.extension" />

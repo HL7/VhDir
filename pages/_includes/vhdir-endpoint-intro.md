@@ -35,7 +35,6 @@ Each endpoint must have:
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the endpoint
 1.  UseCase (0..*) - an enumeration of the specific use cases (service descriptions) supported by the endpoint, consisting of:
     1.  Type (1.1) - the types of services supported by the endpoint
     1.  Standard (0..1) - URI of a published standard (e.g. an HL7 implementation guide)

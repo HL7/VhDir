@@ -30,7 +30,6 @@ There are no mandatory attributes for the healthcareService resource. However, s
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with a healthareService
 1.  Boundary (0..*) - indicates a region/area in which the service is available, consisting of:
     1. Region (1..1) - a URI to a KML or GeoJSON object defining the region/area
     1. LocalName (0..*) - a friendly description of the region/area (such as the colloquial name of the region)

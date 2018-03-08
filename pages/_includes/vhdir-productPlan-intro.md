@@ -37,11 +37,6 @@ Each productPlan resource must have:
 - TBD
 
 
-**Extensions:**
-
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with a product/plan
-
-
 **Terminology**
 
 TBD

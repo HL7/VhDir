@@ -1,3 +1,3 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  One type of service in `useCase.type`
+This extension is optional. If used, it SHALL include one type of use case/service in `useCase.type`

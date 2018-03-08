@@ -34,11 +34,6 @@ No mandatory elements in the proposed organizationRole Resource. The [**Formal P
 - TBD
 
 
-**Extensions:**
-
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with an organization role
-
-
 **Terminology**
 
 TBD

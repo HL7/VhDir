@@ -17,7 +17,7 @@ The following are example uses for the vhdir-location profile:
 
 **Mandatory Data Elements**
 
-There are no mandatory attributes for the healthcareService resource. However, some attributes have mandatory components if they are included in the resource (including extensions). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.   
+There are no mandatory attributes for the Location resource. However, some attributes have mandatory components if they are included in the resource (including extensions). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.   
 
 
 1.  If the location has a defined position, one value representing longitude in `location.position.longitude` and one value representing latitude in `location.position.latitude`
@@ -34,7 +34,6 @@ There are no mandatory attributes for the healthcareService resource. However, s
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the location
 1.  Boundary (0..*) - indicates a region/area for the location, consisting of:
     1. Region (1..1) - a URI to a KML or GeoJSON object defining the region/area
     1. LocalName (0..*) - a friendly description of the region/area (such as the colloquial name of the region)

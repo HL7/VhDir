@@ -49,38 +49,46 @@
       <path value="Extension.extension.url" />
       <fixedUri value="type" />
     </element>
-    <element id="Extension.extension:type.value[x]:type">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:type.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="type" />
       <short value="type" />
       <definition value="Type of digital certificate (TLS/SSL; device; identity; group)" />
       <min value="1"/>
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+      </binding>
     </element>
     <element id="Extension.extension:use">
       <path value="Extension.extension" />
       <sliceName value="use" />
       <label value="use" />
-      <short value="use" />
+      <short value="Use" />
       <definition value="Purpose of the digital certificate (digsig; keyEncipherment)" />
     </element>
     <element id="Extension.extension:use.url">
       <path value="Extension.extension.url" />
       <fixedUri value="use" />
     </element>
-    <element id="Extension.extension:use.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:use.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="use" />
       <short value="use" />
       <definition value="Purpose of the digital certificate (digsig; keyEncipherment)" />
       <min value="1"/>
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
+      </binding>
     </element>
     <element id="Extension.extension:certificateStandard">
       <path value="Extension.extension" />
@@ -94,23 +102,27 @@
       <path value="Extension.extension.url" />
       <fixedUri value="certificateStandard" />
     </element>
-    <element id="Extension.extension:certificateStandard.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:certificateStandard.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="certificateStandard" />
       <short value="Certificate standard" />
       <definition value="The standard associated with the digital certificate (x.509v3)" />
       <min value="1"/>
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
+      </binding>
     </element>
     <element id="Extension.extension:certificate">
       <path value="Extension.extension" />
       <sliceName value="certificate" />
       <label value="certificate" />
       <short value="Certificate" />
-      <definition value="Base 64 encoding of the certificate" />
+      <definition value="PEM format certificate (as a string)" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -118,15 +130,15 @@
       <path value="Extension.extension.url" />
       <fixedUri value="certificate" />
     </element>
-    <element id="Extension.extension:certificate.value[x]:valueBase64Binary">
-      <path value="Extension.extension.valueBase64Binary" />
-      <sliceName value="valueBase64Binary" />
+    <element id="Extension.extension:certificate.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
       <label value="certificate" />
       <short value="Certificate" />
-      <definition value="Base 64 encoding of the certificate" />
+      <definition value="PEM format certificate" />
       <min value="1"/>
       <type>
-        <code value="base64Binary" />
+        <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:expirationDate">
@@ -174,6 +186,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

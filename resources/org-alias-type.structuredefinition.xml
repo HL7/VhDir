@@ -8,7 +8,7 @@
   <name value="org-alias-type" />
   <status value="draft" />
   <date value="2017-09-01T06:32:54.172+10:00" />
-  <description value="Type of alias (doing business as | historical | other)" />
+  <description value="Type of alias (legal alternative | historical)" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -21,7 +21,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Type" />
-      <definition value="Type of alias (doing business as | historical | other)" />
+      <definition value="Type of alias (legal alternative | historical)" />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -33,11 +33,15 @@
       <sliceName value="valueCode" />
       <label value="type" />
       <short value="Type" />
-      <definition value="Type of alias (doing business as | historical | other)" />
+      <definition value="Type of alias (legal alternative | historical)" />
       <min value="1"/>
       <type>
         <code value="code" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

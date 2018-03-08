@@ -1,1 +1,1 @@
-An extension to express a practitioner's proficiency with the language indicated in `practitioner.communication`.
+An extension to express a practitioner's spoken proficiency with the language indicated in `practitioner.communication`.

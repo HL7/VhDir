@@ -32,7 +32,6 @@ Each organization must have:
 
 **Extensions:**
 
-1.  Restriction (0..*) - indicates restrictions on the use/release of information associated with the organization
 1.  Alias (0..*) - a list of other names the organization is known by, consisting of:
     1.  Name (1..1) - the alias
     1.  Type (0..1) - indicates the type of alias

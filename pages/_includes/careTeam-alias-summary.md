@@ -1,4 +1,4 @@
 #### Complete Summary of the Mandatory Requirements
 
-Requires a text value indicating the name of the alias.
+This extension is optional. If used, it SHALL include a text value indicating the name of the alias.
 

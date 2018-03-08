@@ -1,3 +1,3 @@
 #### Complete Summary of the Mandatory Requirements
 
-1. One coded representation of the qualification in `qualification.code`
+This extension is optional. If used, it SHALL include a coded representation of the qualification in `qualification.code`

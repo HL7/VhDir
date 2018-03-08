@@ -42,7 +42,7 @@ To determine the data elements necessary for the exchange of directory informati
 
     B4 - Claims management (adjudication, prior authorization, payment)
 
-#### C - Plan selection and enrollment
+#### C - Care Delivery/Value-Based Care
 
     C1 - Provider relationship with a patient (e.g. for alerts)
 
@@ -58,7 +58,7 @@ To determine the data elements necessary for the exchange of directory informati
 
 ## Validated Healthcare Directory Profiles
 
-The list of Validated Healthcare Directory Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.  In addition each profile has a "Quick Start" section which is intended as an implementer friendly overview of the required search and read operations.
+The list of Validated Healthcare Directory Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile, requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.  In addition each profile has a "Quick Start" section which is intended as an implementer friendly overview of the required search and read operations.
 
 {% include list-simple-profiles.xhtml %}
 

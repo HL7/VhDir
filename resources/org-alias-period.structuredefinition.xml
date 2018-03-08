@@ -32,7 +32,7 @@
       <path value="Extension.valuePeriod" />
       <sliceName value="valuePeriod" />
       <label value="period" />
-      <short value="Value" />
+      <short value="Period" />
       <definition value="The period during which the alias was used" />
       <min value="1"/>
       <type>

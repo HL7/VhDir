@@ -266,13 +266,6 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="validation" />
-      <sourceReference>
-        <reference value="StructureDefinition/validation" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
       <name value="digitalcertificatetype" />
       <sourceReference>
         <reference value="ValueSet/valueset-digitalcertificatetype" />

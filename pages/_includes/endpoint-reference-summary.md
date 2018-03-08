@@ -1,1 +1,3 @@
-No mandatory elements; reference to endpoint resource
+#### Complete Summary of the Mandatory Requirements
+
+This extension is optional. If used, it SHALL include a reference to an endpoint resource.

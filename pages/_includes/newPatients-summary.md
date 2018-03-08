@@ -1,3 +1,3 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  One boolean value in `newPatients.acceptingPatients`
+This extension is optional. If used it SHALL include a boolean value in `newPatients.acceptingPatients`

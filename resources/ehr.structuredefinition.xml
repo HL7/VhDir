@@ -114,23 +114,27 @@
       <path value="Extension.extension.url" />
       <fixedUri value="certificationEdition" />
     </element>
-    <element id="Extension.extension:certificationEdition.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <label value="certificationCriteria" />
+    <element id="Extension.extension:certificationEdition.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <label value="certificationEdition" />
       <short value="Certification edition" />
       <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
       <min value="1"/>
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition"/>
+      </binding>
     </element>
     <element id="Extension.extension:patientAccess">
       <path value="Extension.extension" />
       <sliceName value="patientAccess" />
       <label value="patientAccess" />
       <short value="Patient acccess" />
-      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
+      <definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it" />
     </element>
     <element id="Extension.extension:patientAccess.url">
       <path value="Extension.extension.url" />
@@ -141,11 +145,15 @@
       <sliceName value="valueCodeableConcept" />
       <label value="patientAccess" />
       <short value="Patient access" />
-      <definition value="Patient/consumer access options associated with the EHR product (patient portal; secure messaging; VDT)" />
+      <definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it" />
       <min value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess"/>
+      </binding>
     </element>
     <element id="Extension.extension:certificationID">
       <path value="Extension.extension" />
