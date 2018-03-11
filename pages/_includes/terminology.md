@@ -11,6 +11,8 @@ All code systems and value sets in the guide are proposed and undergoing review 
 
 <p/><p/>
 
+<!--
+
 These list cross references codes and codable concepts proposed for this implementation guide mappign them to the resources and data elements where they are used.
 
 |Element|Type|Proposed values/Comments|
@@ -48,6 +50,8 @@ restriction.type|CodeableConcept|conditional release (per DUA); requires flowdow
 restriction.reason.reasonType|code|contributes to; reason for; existance of; specific value
 restriction.accessRights|Reference|This value set is proposed, additional review required - http://hl7.org/fhir/valueset-security-labels.html
 restriction.identifer.status|code|active; inactive; issued in error; revoked; pending 
+
+-->
 
 #### Code Systems
 
