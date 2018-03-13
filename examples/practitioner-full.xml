@@ -18,10 +18,10 @@
         <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="1234567893"/>
         <period>
-            <start value="1959-07-16T09:00:00-05:00"/> 
+            <start value="2005-07-16T09:00:00-05:00"/> 
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/> 
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/> 
             <display value="CMS"/> 
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -251,30 +251,43 @@
     </communication>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's electronic endpoint -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345"/> 
+            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct123"/> 
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> 
 <!--Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework -->
         <extension url="type">
-            <valueCode value="identity"/> 
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <code value="identity"/>
+                <display value="identity"/>
+            </valueCoding> 
         </extension>
         <extension url="use">
-            <valueCode value="digsig"/> 
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <code value="digsig"/>
+                <display value="digitalSignature"/>
+            </valueCoding> 
         </extension>
         <extension url="certificateStandard">
-            <valueCode value="x.509v3"/> 
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <code value="x.509v3"/>
+                <display value="x.509v3"/>
+            </valueCoding> 
         </extension>
         <extension url="certificate">
-            <valueBase64Binary value="dGhpcyBpcyBhbiBleGFtcGxl"/> 
+            <valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/> 
         </extension>    
         <extension url="expirationDate">
             <valueDate value="1970-09-03"/> 
         </extension>
         <extension url="trustFramework">
             <valueCodeableConcept> 
-                <coding> 
-                    <code value="DT"/> 
+                <coding>
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                    <code value="directtrust"/> 
                     <display value="DirectTrust"/> 
                     <userSelected value="true"/> 
                 </coding>

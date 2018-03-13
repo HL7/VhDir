@@ -326,7 +326,7 @@
       <sourceReference>
         <reference value="ValueSet/valueset-patientaccess" />
       </sourceReference>
-    </resource>    
+    </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificate" />
@@ -397,17 +397,6 @@
     </resource>
     <resource>
       <example value="true" />
-      <name value="acme lab" />
-      <description value="A simple Lab Organization" />
-      <sourceReference>
-        <reference value="Organization/acme-lab" />
-      </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/vhdir-organization" />
-      </exampleFor>
-    </resource>
-    <resource>
-      <example value="true" />
       <name value="acme network" />
       <description value="A Payor Network" />
       <sourceReference>
@@ -448,6 +437,17 @@
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/vhdir-healthcareservice" />
+      </exampleFor>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Founding Fathers Memorial Hospital" />
+      <description value="An example organization" />
+      <sourceReference>
+        <reference value="Organization/foundingfathers" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/vhdir-organization" />
       </exampleFor>
     </resource>
     <!-- <resource>

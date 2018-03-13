@@ -23,12 +23,12 @@
 	<concept>
 		<code value="device"/>
 		<display value="device"/>
-        <definition value="This type of certificate is used to verify the identity of a group."/>               
+        <definition value="This type of certificate is used to verify the identity of a device."/>               
 	</concept>
 	<concept>
 		<code value="group"/>
 		<display value="group"/>
-        <definition value="This type of certificate is used to verify the identity of a device."/>
+        <definition value="This type of certificate is used to verify the identity of a group."/>
 	</concept>
 	<concept>
 		<code value="identity"/>
@@ -38,7 +38,7 @@
 	<concept>
 		<code value="digsig"/>
 		<display value="digitalSignature"/>
-        <definition value="A digital certificate use of a digital signature demonstrates the intent of the signer  to validate the content of the message."/>
+        <definition value="A digital certificate use of a digital signature demonstrates the intent of the signer to validate the content of the message."/>
 	</concept>
 	<concept>
 		<code value="keyEncipherment"/>
@@ -57,8 +57,8 @@
 	</concept>
 	<concept>
 		<code value="directtrust"/>
-		<display value="Direct Trust"/>
-        <definition value="The digital certificate is used within the Direct Trust trust framework."/>
+		<display value="DirectTrust"/>
+        <definition value="The digital certificate is used within the DirectTrust trust framework."/>
 	</concept>
 	<concept>
 		<code value="FBCA"/>

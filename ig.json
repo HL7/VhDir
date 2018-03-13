@@ -339,6 +339,10 @@
         "base":"Practitioner-practitioner1.html",
         "source":"practitioner-full.xml"
       },
+      "Organization/foundingfathers":{
+        "base":"Organization-foundingfathers.html",
+        "source":"org-example-foundingfathers.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"
@@ -354,10 +358,6 @@
       "HealthcareService/hcs-ws":{
         "base":"healthcareservice-womens-shelter.html",
         "source":"healthcareservice-womens-shelter.xml"
-      },
-      "Organization/acme-lab":{
-         "base":"Organization-acme-lab.html",
-         "source":"acme-lab.xml"
       },
       "Organization/acme-network":{
          "base":"Organization-acme-network.html",
