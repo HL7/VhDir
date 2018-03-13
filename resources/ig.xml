@@ -326,6 +326,13 @@
       <sourceReference>
         <reference value="ValueSet/valueset-patientaccess" />
       </sourceReference>
+    </resource> 
+    <resource>
+      <example value="false" />
+      <name value="languageproficiency" />
+      <sourceReference>
+        <reference value="ValueSet/valueset-languageproficiency" />
+      </sourceReference>
     </resource>
     <resource>
       <example value="false" />

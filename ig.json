@@ -331,6 +331,10 @@
         "base": "ValueSet-valueset-usecasetype.html",
         "source": "valueset-usecasetype.xml"
       },
+      "ValueSet/valueset-languageproficiency": {
+        "base": "ValueSet-valueset-languageproficiency.html",
+        "source": "valueset-languageproficiency.xml"
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
