@@ -347,6 +347,10 @@
         "base":"Organization-foundingfathers.html",
         "source":"org-example-foundingfathers.xml"
       },
+      "PractitionerRole/practitionerrole1":{
+        "base":"PractitionerRole-practitionerrole1.html",
+        "source":"pracrole-example-cardiologist.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"

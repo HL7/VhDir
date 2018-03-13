@@ -457,6 +457,17 @@
         <reference value="StructureDefinition/vhdir-organization" />
       </exampleFor>
     </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Practitioner Role - Cardiologist" />
+      <description value="An example practitioner role" />
+      <sourceReference>
+        <reference value="PractitionerRole/practitionerrole1" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/vhdir-practitionerrole" />
+      </exampleFor>
+    </resource>
     <!-- <resource>
       <example value="true" />
       <name value="Product Plan" />
