@@ -333,6 +333,13 @@
       <sourceReference>
         <reference value="ValueSet/valueset-languageproficiency" />
       </sourceReference>
+   </resource>   
+   <resource>
+      <example value="false" />
+      <name value="identifierstatus" />
+      <sourceReference>
+        <reference value="ValueSet/valueset-identifierstatus" />
+      </sourceReference>
     </resource>
     <resource>
       <example value="false" />
@@ -388,6 +395,13 @@
       <name value="validation" />
       <sourceReference>
         <reference value="CodeSystem/codesystem-validation" />
+      </sourceReference>
+    </resource>   
+    <resource>
+      <example value="false" />
+      <name value="identifierstatus" />
+      <sourceReference>
+        <reference value="CodeSystem/codesystem-identifierstatus" />
       </sourceReference>
     </resource>
     <resource>
