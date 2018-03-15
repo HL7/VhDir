@@ -87,6 +87,13 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
     </element>
+    <element id="Practitioner.identifier.assigner">
+      <path value="Practitioner.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active" />
       <min value="1" />
@@ -200,6 +207,10 @@
     <element id="Practitioner.qualification.issuer">
       <path value="Practitioner.qualification.issuer"/>
       <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
     </element>
     <element id="Practitioner.communication">
       <path value="Practitioner.communication" />

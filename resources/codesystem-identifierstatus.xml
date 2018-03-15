@@ -22,10 +22,15 @@
 			<definition value="active"/>
 		</concept>
 		<concept>
+			<code value="inactive"/>
+			<display value="inactive"/>
+			<definition value="inactive"/>
+		</concept>
+		<concept>
 			<code value="issuedinerror"/>
 			<display value="issued in error"/>
 			<definition value="issued in error"/>
-			</concept>
+		</concept>
 		<concept>
 			<code value="revoked"/>
 			<display value="revoked"/>

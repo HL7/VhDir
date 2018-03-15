@@ -38,6 +38,10 @@
       <type>
         <code value="code" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
