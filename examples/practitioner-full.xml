@@ -234,8 +234,8 @@
     <communication> <!-- The practitioner is a native English speaker -->
         <coding> 
             <system value="urn:ietf:bcp:47"/> 
-            <code value="en"/> 
-            <display value="English"/> 
+            <code value="en-US"/> 
+            <display value="English (United States)"/> 
             <userSelected value="true"/> 
         </coding>
         <text value="English"/> 
@@ -249,7 +249,7 @@
             </valueCodeableConcept>
         </extension>
     </communication>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's electronic endpoint -->
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
         <valueReference>
             <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct123"/> 
         </valueReference>

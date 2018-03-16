@@ -295,10 +295,13 @@
         "base": "CodeSystem-codesystem-validation.html",
         "source": "codesystem-validation.xml"
       },
+<<<<<<< .merge_file_a14516
       "CodeSystem/codesystem-credentialstatus": {
         "base": "CodeSystem-codesystem-credentialstatus.html",
         "source": "codesystem-credentialstatus.xml"
       },
+=======
+>>>>>>> .merge_file_a17424
       "ValueSet/valueset-digitalcertificatetype": {
         "base": "ValueSet-valueset-digitalcertificatetype.html",
         "source": "valueset-digitalcertificatetype.xml"
@@ -339,6 +342,7 @@
         "base": "ValueSet-valueset-languageproficiency.html",
         "source": "valueset-languageproficiency.xml"
       },
+<<<<<<< .merge_file_a14516
       "ValueSet/valueset-identificationstatus": {
         "base": "ValueSet-valueset-identificationstatus.html",
         "source": "valueset-identificationstatus.xml"
@@ -347,6 +351,8 @@
         "base": "ValueSet-valueset-qualificationstatus.html",
         "source": "valueset-qualificationstatus.xml"
       },
+=======
+>>>>>>> .merge_file_a17424
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"

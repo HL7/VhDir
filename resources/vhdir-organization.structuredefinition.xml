@@ -117,6 +117,13 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
     </element>
+    <element id="Organization.identifier.assigner">
+      <path value="Organization.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="Organization.active">
       <path value="Organization.active" />
       <label value="status" />
@@ -222,6 +229,13 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
       </type>
     </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="Organization.contact">
       <path value="Organization.contact" />
     </element>
@@ -285,6 +299,13 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+      </type>
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
       </type>
     </element>
   </differential>
