@@ -341,6 +341,13 @@
         <reference value="ValueSet/valueset-identifierstatus" />
       </sourceReference>
     </resource>
+   <resource>
+      <example value="false" />
+      <name value="qualificationstatus" />
+      <sourceReference>
+        <reference value="ValueSet/valueset-qualificationstatus" />
+      </sourceReference>
+    </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificate" />
@@ -399,9 +406,9 @@
     </resource>   
     <resource>
       <example value="false" />
-      <name value="identifierstatus" />
+      <name value="credentialstatus" />
       <sourceReference>
-        <reference value="CodeSystem/codesystem-identifierstatus" />
+        <reference value="CodeSystem/codesystem-credentialstatus" />
       </sourceReference>
     </resource>
     <resource>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-identifierstatus"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus"/>
-	<name value="VhDir Identifier Status Value Set"/>
+	<id value="valueset-qualificationstatus"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+	<name value="VhDir Qualification Status Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -12,7 +12,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="Codes for documenting the status of an identifier."/>
+	<description value="Codes for documenting the status of a qualification."/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus"/>

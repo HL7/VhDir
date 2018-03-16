@@ -295,6 +295,10 @@
         "base": "CodeSystem-codesystem-validation.html",
         "source": "codesystem-validation.xml"
       },
+      "CodeSystem/codesystem-credentialstatus": {
+        "base": "CodeSystem-codesystem-credentialstatus.html",
+        "source": "codesystem-credentialstatus.xml"
+      },
       "ValueSet/valueset-digitalcertificatetype": {
         "base": "ValueSet-valueset-digitalcertificatetype.html",
         "source": "valueset-digitalcertificatetype.xml"
@@ -334,6 +338,14 @@
       "ValueSet/valueset-languageproficiency": {
         "base": "ValueSet-valueset-languageproficiency.html",
         "source": "valueset-languageproficiency.xml"
+      },
+      "ValueSet/valueset-identificationstatus": {
+        "base": "ValueSet-valueset-identificationstatus.html",
+        "source": "valueset-identificationstatus.xml"
+      },
+      "ValueSet/valueset-qualificationstatus": {
+        "base": "ValueSet-valueset-qualificationstatus.html",
+        "source": "valueset-qualificationstatus.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
