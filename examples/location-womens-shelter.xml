@@ -9,7 +9,7 @@
 			<meta>
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
 			</meta>
-			<status value="active" />
+			<status value="in-progress" />
 			<scope value="privacy" />
 			<category>
 				<text value="conditional release (per DUA)" />
