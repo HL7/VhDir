@@ -79,7 +79,16 @@
    ],
    "version":"3.2.0",
    "resources":{
-      "Location/hl7east":{
+    "ValueSet/valueset-identifierstatus": {
+      "base": "ValueSet-valueset-identifierstatus.html",
+      "source": "valueset-identifierstatus.xml"
+    },
+  "StructureDefinition/identifier-status":{
+      "base":"StructureDefinition-identifier-status.html",
+      "defns":"StructureDefinition-identifier-status-definitions.html",
+      "source":"identifier-status.structuredefinition.xml"      
+    },
+    "Location/hl7east":{
          "base":"Location-hl7east.html",
          "source":"hl7east.xml"
       },
@@ -227,11 +236,6 @@
         "base":"StructureDefinition-careteam-alias.html",
         "defns":"StructureDefinition-careteam-alias-definitions.html",
         "source":"careteam-alias.structuredefinition.xml"      
-      },
-      "StructureDefinition/identifier-status":{
-        "base":"StructureDefinition-identifier-status.html",
-        "defns":"StructureDefinition-identifier-status-definitions.html",
-        "source":"identifier-status.structuredefinition.xml"      
       },
       "StructureDefinition/contactpoint-viaintermediary":{
         "base":"StructureDefinition-contactpoint-viaintermediary.html",

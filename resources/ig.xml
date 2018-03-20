@@ -12,26 +12,33 @@
   <publisher value="HL7 Patient Administration Committee" />
   <package>
     <name value="base" />
-    <resource>
+   <resource>
       <example value="false" />
-      <name value="identifier-status" />
+      <name value="identifierstatus" />
+      <sourceReference>
+        <reference value="ValueSet/valueset-identifierstatus" />
+      </sourceReference>
+    </resource>
+    <resource>
       <sourceReference>
         <reference value="StructureDefinition/identifier-status" />
       </sourceReference>
+      <name value="identifier-status" />
+      <example value="false" />
     </resource>     
     <resource>
-      <example value="false" />
-      <name value="contactpoint-viaintermediary" />
       <sourceReference>
         <reference value="StructureDefinition/contactpoint-viaintermediary" />
       </sourceReference>
+      <name value="contactpoint-viaintermediary" />
+      <example value="false" />
     </resource>    
     <resource>
-      <example value="false" />
-      <name value="contactpoint-availabletime" />
       <sourceReference>
         <reference value="StructureDefinition/contactpoint-availabletime" />
       </sourceReference>
+      <name value="contactpoint-availabletime" />
+      <example value="false" />
     </resource>
     <resource>
       <example value="false" />
@@ -336,13 +343,6 @@
    </resource>   
    <resource>
       <example value="false" />
-      <name value="identifierstatus" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-identifierstatus" />
-      </sourceReference>
-    </resource>
-   <resource>
-      <example value="false" />
       <name value="qualificationstatus" />
       <sourceReference>
         <reference value="ValueSet/valueset-qualificationstatus" />
@@ -430,9 +430,6 @@
       <sourceReference>
         <reference value="Organization/acme-network" />
       </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/vhdir-network" />
-      </exampleFor>
     </resource>
     <resource>
       <example value="true" />
@@ -441,9 +438,6 @@
       <sourceReference>
         <reference value="Bundle/womens-shelter" />
       </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/vhdir-restriction" />
-      </exampleFor>
     </resource>
     <resource>
       <example value="true" />
@@ -452,9 +446,6 @@
       <sourceReference>
         <reference value="Location/loc-ws" />
       </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/vhdir-location" />
-      </exampleFor>
     </resource>
     <resource>
       <example value="true" />
@@ -463,9 +454,9 @@
       <sourceReference>
         <reference value="HealthcareService/hcs-ws" />
       </sourceReference>
-      <exampleFor>
+      <!-- <exampleFor>
         <reference value="StructureDefinition/vhdir-healthcareservice" />
-      </exampleFor>
+      </exampleFor> -->
     </resource>
     <resource>
       <example value="true"/>
@@ -474,9 +465,9 @@
       <sourceReference>
         <reference value="Organization/foundingfathers" />
       </sourceReference>
-      <exampleFor>
+      <!-- <exampleFor>
         <reference value="StructureDefinition/vhdir-organization" />
-      </exampleFor>
+      </exampleFor> -->
     </resource>
     <resource>
       <example value="true"/>
@@ -485,9 +476,9 @@
       <sourceReference>
         <reference value="PractitionerRole/practitionerrole1" />
       </sourceReference>
-      <exampleFor>
+      <!-- <exampleFor>
         <reference value="StructureDefinition/vhdir-practitionerrole" />
-      </exampleFor>
+      </exampleFor> -->
     </resource>
     <!-- <resource>
       <example value="true" />
