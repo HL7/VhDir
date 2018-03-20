@@ -24,12 +24,6 @@
 						<category>
 							<text value="conditional release (per DUA)" />
 						</category>
-						<patient>
-							<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-								<valueCode value="unsupported" />
-							</extension>
-							<display value="not a patient consent"/>
-						</patient>
 						<dateTime value="2017-12-18" />
 						<policy>
 							<uri value="http://example.org/federal/policy#womans-shelter" />
@@ -110,12 +104,6 @@
 						<category>
 							<text value="conditional release (per DUA)" />
 						</category>
-						<patient>
-							<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-								<valueCode value="unsupported" />
-							</extension>
-							<display value="not a patient consent"/>
-						</patient>
 						<dateTime value="2017-12-18" />
 						<policy>
 							<uri value="http://example.org/federal/policy#womans-shelter" />

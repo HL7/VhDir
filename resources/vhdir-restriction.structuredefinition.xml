@@ -45,14 +45,6 @@
     </element>
     <element id="Consent.patient">
       <path value="Consent.patient" />
-      <short value="As the consent is not applicable in the Restriction, this should have a null flavour applied to it" />
-    </element>
-    <element id="Consent.patient.reference">
-      <path value="Consent.patient.reference" />
-      <max value="0" />
-    </element>
-    <element id="Consent.patient.identifier">
-      <path value="Consent.patient.identifier" />
       <max value="0" />
     </element>
     <element id="Consent.dateTime">
@@ -62,8 +54,8 @@
       <definition value="When this Restriction was issued / created / indexed." />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.consentingParty">
-      <path value="Consent.consentingParty" />
+    <element id="Consent.performer">
+      <path value="Consent.performer" />
       <max value="0" />
     </element>
     <element id="Consent.organization">
