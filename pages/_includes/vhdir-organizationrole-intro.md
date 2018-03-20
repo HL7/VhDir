@@ -1,8 +1,8 @@
-This profile sets minimum expectations for searching for and fetching information associated with an organization role. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the organizationRole resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with an organization role. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the OrganizationRole resource when using this profile.
 
 **Background & Scope**
 
-We propose the creation of a new organizationRole resource to describe relationships between two or more organizations. OrganizationRole describes the role an organization plays at an organization, including the services they provide, the location(s) where they provide services, and their availability, electronic endpoints, and other relevant information.
+The OrganizationRole resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.
 
 OrganizationRole addresses the need to define a non-hierarchical relationship between two or more organizations. For example:
 *  One organization may provide services to another organization
@@ -14,7 +14,7 @@ OrganizationRole is similar in form and function to practitionerRole. Instead of
 *  The joint venture is considered the primary organization, and partners within the joint venture are considered participating organizations
 *  An association is the primary organization, and its members are participating organizations.
 
-As with practitionerRole, organizationRole provides the link between an organization and a health insurance provider network.
+OrganizationRole is also used to indicate when an organization provides services for a health insurance provider network.
 
 **Examples:**
 
@@ -25,8 +25,11 @@ The following are example uses for the vhdir-organizationRole profile:
 
 **Mandatory Data Elements**
 
-No mandatory elements in the proposed organizationRole Resource. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements. 
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
+Each OrganizationRole must have:
+
+1.  A boolean value in `organizationRole.active`
 
 
 **Profile specific implementation guidance:**

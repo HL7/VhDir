@@ -119,7 +119,7 @@
         <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
     </endpoint>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- This service is accepting new patients with health plans associated with the Patriot PPO -->
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- When offered by providers participating in Patriot PPO, this service is accepting new patients -->
         <extension url="acceptingPatients">
             <valueBoolean value="true"/>
         </extension>

@@ -357,7 +357,7 @@
       },
       "Practitioner/practitioner1":{
         "base":"Practitioner-practitioner1.html",
-        "source":"practitioner-full.xml"
+        "source":"practitioner-example-washington.xml"
       },
       "Organization/foundingfathers":{
         "base":"Organization-foundingfathers.html",
@@ -366,6 +366,18 @@
       "PractitionerRole/practitionerrole1":{
         "base":"PractitionerRole-practitionerrole1.html",
         "source":"pracrole-example-cardiologist.xml"
+      },
+      "OrganizationRole/orgrole1":{
+        "base":"OrganizationRole-orgrole1.html",
+        "source":"orgrole-example-services.xml"
+      },
+      "OrganizationRole/orgrole2":{
+        "base":"OrganizationRole-orgrole2.html",
+        "source":"orgrole-example-hie.xml"
+      },
+      "HealthcareService/ffcardiology":{
+        "base":"HealthcareService-ffcardiology.html",
+        "source":"healthcareservice-example-cardiology.xml"
       },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",

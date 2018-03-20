@@ -480,6 +480,30 @@
         <reference value="StructureDefinition/vhdir-practitionerrole" />
       </exampleFor> -->
     </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Organization Role - Rehab Services" />
+      <description value="An example organization role" />
+      <sourceReference>
+        <reference value="OrganizationRole/orgrole1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Organization Role - HIE" />
+      <description value="An example organization role" />
+      <sourceReference>
+        <reference value="OrganizationRole/orgrole2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Healthcare Service - Cardiology" />
+      <description value="An example healthcare service" />
+      <sourceReference>
+        <reference value="HealthcareService/ffcardiology" />
+      </sourceReference>
+    </resource>
     <!-- <resource>
       <example value="true" />
       <name value="Product Plan" />

@@ -10,7 +10,7 @@ This profile constrains the cardinality of the `practitionerRole.active` and `pr
 
 The following are example uses for the vhdir-practitionerRole profile:
 
--  TBD
+-  [George Washington practices at Founding Fathers Memorial Hospital](PractitionerRole-practitionerrole1.html)
 
 
 **Mandatory Data Elements**
@@ -21,7 +21,6 @@ Each practitionerRole must have:
 
 1.  A boolean value in `practitionerRole.active`
 1.  At least one value describing the role the practitioner performs in `practitionerRole.code`
-1.  For each indication of whether the practitioner is accepting new patients in their role, one boolean value in `practitionerRole.newPatients.acceptingPatients` (extension)
 
 
 **Profile specific implementation guidance:**
@@ -32,12 +31,10 @@ Each practitionerRole must have:
 **Extensions:**
 
 1.  Network (0..*) - a reference to the healthcare provider insurance networks the practitioner participates in through their role
-1.  NewPatients (0..*) - indicates whether the practitioner is accepting new patients in their role, consisting of:
-    1.  AcceptingPatients (1.1) - a value of 'true' means the practitioner is accepting new patients, 'false' means they are not
-    1.  Network (0..1) - indicates whether the practitioner is accepting new patients for a particular health provider insurance network
-1.  NewPatientProfile (0..1) - a description of the type of patients the practitioner accepts (e.g. pediatric only)
+1.  NewPatients (0..*) - indicates whether the practitioner is accepting new patients in their role
+1.  NewPatientProfile (0..1) - a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)
 1.  Qualification (0..*) - indicates qualifications the practitioner has through their role (e.g. registered to prescribe controlled substances)
-1.  DigitalCertificate (0..*) - a digital certificate associated with the endpoint
+1.  DigitalCertificate (0..*) - a digital certificate associated with the practitioner in their role
 
 
 **Terminology**

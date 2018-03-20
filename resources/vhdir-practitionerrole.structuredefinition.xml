@@ -80,7 +80,7 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification" />
       </type>
     </element>
-    <element id="PractitionerRole.extension:restriction">
+    <!--<element id="PractitionerRole.extension:restriction">
       <path value="PractitionerRole.extension" />
       <sliceName value="restriction" />
       <short value="Restriction" />
@@ -91,7 +91,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
-    </element>
+    </element> -->
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier" />
     </element>
@@ -115,13 +115,48 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
     </element>
+    <element id="PractitionerRole.identifier.assigner">
+      <path value="PractitionerRole.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active" />
       <min value="1" />
     </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+      </type>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
       <min value="1" />
+    </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+      </type>
+    </element>
+    <element id="PractitionerRole.healthcareService">
+      <path value="PractitionerRole.healthcareService"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+      </type>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />
@@ -152,6 +187,13 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
+      </type>
+    </element>
+    <element id="PractitionerRole.endpoint">
+      <path value="PractitionerRole.endpoint"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
       </type>
     </element>
   </differential>

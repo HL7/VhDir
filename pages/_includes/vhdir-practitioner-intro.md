@@ -4,7 +4,7 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 A practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.
 
-This profile constrains the cardinality of a number of attributes of the practitioner resource such that they are required, including `practitioner.active`, `practitioner.name`, `practitioner.gender`, and `practitioner.birthDate`. It also adds optional extensions to describe endpoints and digital certificates associated with a practitioner, accessibility options offered by a practitioner (e.g. cultural competence), a practitioner's spoken language proficiency, and additional information about their qualifications (i.e. where the qualification is valid and current/historical information about the qualification's status).
+This profile constrains the cardinality of a few attributes of the practitioner resource such that they are required, including `practitioner.active` and `practitioner.name`. It also adds optional extensions to describe endpoints and digital certificates associated with a practitioner, accessibility options offered by a practitioner (e.g. cultural competence), a practitioner's spoken language proficiency, and additional information about their qualifications (i.e. where the qualification is valid and current/historical information about the qualification's status).
 
 **Examples:**
 
@@ -21,8 +21,6 @@ Each practitioner must have:
 
 1.  A boolean value in `practitioner.active`
 1.  One name in `practitioner.name`
-1.  A gender in `practitioner.gender`
-1.  A birth date in `practitioner.birthDate`
 
 
 **Profile specific implementation guidance:**

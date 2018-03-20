@@ -19,25 +19,25 @@
 
     <period> <!-- The relationship between the organizations began on February 9, 2018, ends on February 01, 2022 -->
         <start value="2018-02-09"/>
-        <end value="2022-02-01">
+        <end value="2022-02-01"/>
     </period>
 
-    <participatingOrg> <!-- The organization providing services, Independence Rehabilitation Services, Inc. -->
+    <participatingOrganization> <!-- The organization providing services, Independence Rehabilitation Services, Inc. -->
         <reference value="http://hl7.org/fhir/ig/vhdir/Organization/independencerehab"/>
         <display value="Independence Rehabilitation Services, Inc."/> 
-    </participatingOrg>
+    </participatingOrganization>
 
-    <primaryOrg> <!-- The organization receiving services, Founding Fathers Memorial Hospital -->
+    <organization> <!-- The organization receiving services, Founding Fathers Memorial Hospital -->
         <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/> 
-    </primaryOrg>
+    </organization>
 
     <network> <!-- Independence and Founding Father providers participate in the Patriot Preferred Provider Network -->
         <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
         <display value="Patriot Preferred Provider Network"/> 
     </network>
 
-    <role> <!-- Indicates the role of the participating organization (Independence) in the relationship -->
+    <code> <!-- Indicates the role of the participating organization (Independence) in the relationship -->
         <coding>
             <system value="http://hl7.org/fhir/organization-role"/>
             <code value="provider"/>
@@ -45,7 +45,7 @@
             <userSelected value="true"/> 
         </coding>
         <text value="Provider of rehabilitation services"/> 
-    </role>
+    </code>
 
     <specialty> <!-- Provider specialty associated with this role, rehabilitation -->
         <coding> 
