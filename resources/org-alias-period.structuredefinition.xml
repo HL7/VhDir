@@ -9,11 +9,11 @@
   <status value="draft" />
   <date value="2017-09-01T06:36:02.345+10:00" />
   <description value="the period of time the alias was actively used" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Organization.alias" />
+  <!-- <contextType value="resource" />
+  <context value="Organization.alias" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

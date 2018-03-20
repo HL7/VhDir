@@ -9,11 +9,11 @@
   <status value="draft" />
   <date value="2017-11-13T14:08:36.93-05:00" />
   <description value="Level of proficiency" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Practitioner.communication" />
+  <!-- <contextType value="resource" />
+  <context value="Practitioner.communication" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

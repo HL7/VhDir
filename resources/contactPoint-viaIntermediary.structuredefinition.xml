@@ -9,11 +9,11 @@
   <status value="draft" />
   <date value="2017-11-20T11:48:25.475-05:00" />
   <description value="Represents an external point of contact responsible for handling communications with this entity" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="datatype" />
-  <context value="ContactPoint" />
+  <!-- <contextType value="datatype" />
+  <context value="ContactPoint" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

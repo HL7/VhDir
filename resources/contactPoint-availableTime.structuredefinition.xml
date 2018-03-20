@@ -9,11 +9,11 @@
   <status value="draft" />
   <date value="2017-11-20T11:58:13.675-05:00" />
   <description value="Time period when the contact point is to be used" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="datatype" />
-  <context value="ContactPoint" />
+  <!-- <contextType value="datatype" />
+  <context value="ContactPoint" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

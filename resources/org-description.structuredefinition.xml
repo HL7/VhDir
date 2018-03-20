@@ -9,11 +9,11 @@
   <status value="draft" />
   <date value="2017-09-01T06:37:50.645+10:00" />
   <description value="Additional descriptive content" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Organization" />
+  <!-- <contextType value="resource" />
+  <context value="Organization" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

@@ -9,12 +9,12 @@
   <status value="draft" />
   <date value="2017-11-07T12:23:01.804-05:00" />
   <description value="The technical details of an endpoint that can be used for electronic services" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.2.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
+  <!-- <contextType value="resource" />
   <context value="CareTeam" />
-  <context value="Practitioner" />
+  <context value="Practitioner" /> -->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
