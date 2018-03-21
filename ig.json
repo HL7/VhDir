@@ -78,6 +78,7 @@
 
    ],
    "version":"3.2.0",
+   "license":"CC0-1.0",
    "resources":{
     "ValueSet/valueset-identifierstatus": {
       "base": "ValueSet-valueset-identifierstatus.html",
