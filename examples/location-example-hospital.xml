@@ -1,0 +1,230 @@
+<Location  xmlns="http://hl7.org/fhir">
+
+	<id value="hospital1"/>
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+    </meta>
+
+    <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
+        <use value="secondary"/> 
+        <system value="www.foundingfathersmemorial.com"/> 
+        <value value="main campus"/> 
+        <assigner> 
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <display value="Founding Fathers Memorial Hospital"/> 
+        </assigner>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/> 
+        </extension>
+    </identifier>
+
+    <status value="active"/> <!-- this record is active -->
+
+    <name value="Founding Fathers Memorial Hospital"/> 
+
+    <description value="Main campus of Founding Fathers Memorial Hospital"/> 
+
+    <type> <!-- This location is a hospital -->
+        <coding> 
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="HOSP"/>
+            <display value="Hospital"/> 
+            <userSelected value="true"/>
+        </coding>
+    </type>
+
+    <telecom> <!-- Contact this location at any time of day by phone at 202-101-0123 -->
+        <system value="phone"/>
+        <value value="2021010123"/>
+        <use value="work"/>
+        <rank value="1"/>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
+            <extension url="allDay">
+                <valueBoolean value="true"/>
+            </extension>
+        </extension>
+    </telecom>
+
+	<address> <!-- This location's address is 330 C Street SW, Washington, DC 20201, USA -->
+        <use value="work"/>
+        <type value="both"/>
+        <text value="330 C Street SW, Washington, DC 20201, USA"/>
+        <line value="330 C Street SW"/> 
+        <city value="Washington"/> 
+        <state value="DC"/> 
+        <postalCode value="20201"/> 
+        <country value="USA"/> 
+	</address>
+
+    <physicalType> <!-- This location is a collection of buildings or other locations such as a site or a campus -->
+        <coding> 
+            <system value="http://hl7.org/fhir/location-physical-type"/>
+            <code value="si"/>
+            <display value="Site"/>
+            <userSelected value="true"/>
+        </coding>
+    </physicalType>
+
+    <position> <!-- Coordinates of this location -->
+        <longitude value="38.8859395"/> 
+        <latitude value="-77.016469"/> 
+    </position>
+
+    <managingOrganization> <!-- This location is managed by Founding Fathers Memorial Hospital -->
+        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/> 
+        <display value="Founding Fathers Memorial Hospital"/> 
+    </managingOrganization>
+
+    <hoursOfOperation> <!-- This location is always open -->
+        <daysOfWeek value="mon"/>
+        <daysOfWeek value="tue"/>
+        <daysOfWeek value="wed"/>
+        <daysOfWeek value="thu"/>
+        <daysOfWeek value="fri"/>
+        <daysOfWeek value="sat"/>
+        <daysOfWeek value="sun"/>
+        <allDay value="true"/>
+    </hoursOfOperation>
+
+    <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
+
+    <endpoint> <!-- Reference to an endpoint for Founding Fathers FHIR server -->
+        <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345"/>
+        <display value="Founding Fathers Memorial Hospital FHIR Server"/>
+    </endpoint>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- Indicates that this location is handicap accessible and can provide assistance to persons with disabilities -->
+        <valueCodeableConcept> 
+            <coding> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/> 
+                <code value="handicap accessible"/> 
+                <display value="handicap accessible"/> 
+            </coding>
+            <text value="Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"/>
+        </valueCodeableConcept>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"> <!-- 0..* -->
+        <extension url="developer">
+            <valueString value="Revolutionary Health"/>
+        </extension>
+        <extension url="product">
+            <valueString value="Revolutionary Professional EHR"/>
+        </extension>
+        <extension url="version">
+            <valueString value="10.4.3"/>
+        </extension>
+        <extension url="certificationEdition">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+                <code value="2014"/>
+                <display value="ONC 2014 Certification"/>
+            </valueCoding>
+        </extension>
+        <extension url="patientAccess">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+                    <code value="portal"/>
+                    <display value="patient portal"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="certificationID"> <!-- 0..1 -->
+            <valueString value="CHP-"/> <!-- string 1..1 -->
+        </extension>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- 0..* -->
+        <extension url="acceptingPatients"> <!-- 1..1 -->
+            <valueBoolean value=""/> <!-- boolean 1..1 -->
+        </extension>
+        <extension url="network"> <!-- 0..1 -->
+            <valueReference> <!-- Reference(Network) 1..1 -->
+                <reference value=""/> <!-- string 0..1 -->
+                <identifier> <!-- 0..1 -->
+                    <use value=""/> <!-- code 0..1 -->
+                    <type> <!--0..1 -->
+                        <coding> <!-- 0..* -->
+                            <system value=""/> <!-- uri 0..1 -->
+                            <version value=""/> <!-- string 0..1 -->
+                            <code value=""/> <!-- code 0..1 -->
+                            <display value=""/> <!-- string 0..1 -->
+                            <userSelected value=""/> <!-- boolean 0..1 -->
+                        </coding>
+                        <text value=""/> <!-- string 0..1 -->
+                    </type>
+                    <system value=""/> <!-- uri 0..1 -->
+                    <value value=""/> <!-- string 0..1 -->
+                    <period>
+                        <start value=""/> <!-- dateTime 0..1 -->
+                        <end value=""/> <!-- dateTime 0..1 -->
+                    </period>
+                    <assigner> <!-- Reference(org) 0..1 -->
+                        <reference value=""/> <!-- string 0..1 -->
+                        <identifier> <!-- 0..1 -->
+                            <use value=""/> <!-- code 0..1 -->
+                            <type> <!--0..1 -->
+                                <coding> <!-- 0..* -->
+                                    <system value=""/> <!-- uri 0..1 -->
+                                    <version value=""/> <!-- string 0..1 -->
+                                    <code value=""/> <!-- code 0..1 -->
+                                    <display value=""/> <!-- string 0..1 -->
+                                    <userSelected value=""/> <!-- boolean 0..1 -->
+                                </coding>
+                                <text value=""/> <!-- string 0..1 -->
+                            </type>
+                            <system value=""/> <!-- uri 0..1 -->
+                            <value value=""/> <!-- string 0..1 -->
+                            <period>
+                                <start value=""/> <!-- dateTime 0..1 -->
+                                <end value=""/> <!-- dateTime 0..1 -->
+                            </period>
+            <!-- There is an optional assigner element here, but that would create a recursive structure. It can be included if necessary. -->
+                        </identifier>
+                        <display value=""/> <!-- string 0..1 -->
+                    </assigner>
+                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"> <!-- 1..1 -->
+                        <valueCode value=""/> <!-- code 1..1 -->
+                    </extension>
+                </identifier>
+                <display value=""/> <!-- string 0..1 -->
+            </valueReference>
+        </extension>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"> <!-- 0..1 -->
+        <valueString value=""/> <!-- string 1..1 -->
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-availability"> <!-- 0..* -->
+        <extension url="availableTime"> <!-- 0..* -->
+            <extension url="daysOfWeek"> <!-- 0..* -->
+                <valuecode value=""/> <!-- code 1..1 -->
+            </extension>
+            <extension url="allDay"> <!-- 0..1 -->
+                <valueBoolean value=""/> <!-- boolean 1..1 -->
+            </extension>
+            <extension url="availableStartTime"> <!-- 0..1 -->
+                <valueTime value=""/> <!-- time 1..1 -->
+            </extension>
+            <extension url="availableEndTime"> <!-- 0..1 -->
+                <valueTime value=""/> <!-- time 1..1 -->
+            </extension>
+        </extension>
+        <extension url="notAvailable"> <!-- 0..* -->
+            <extension url="description"> <!-- 1..1 -->
+                <valueString value=""/> <!-- string 1..1 -->
+            </extension>
+            <extension url="during"> <!-- 0..1 -->
+                <valuePeriod> <!-- 1..1 -->
+                    <start value=""/> <!-- dateTime 0..1 -->
+                    <end value=""/> <!-- dateTime 0..1 -->
+                </valuePeriod>
+            </extension>    
+        </extension>
+        <extension url="availabilityExceptions"> <!-- 0..1 -->
+            <valueString value=""/> <!-- string 1..1 -->
+        </extension>
+    </extension>
+</Location>

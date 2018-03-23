@@ -6,7 +6,7 @@ A location is the physical place where healthcare services are provided, practit
 
 This profile removes `location.operationalStatus` because maintaining bed-level information is out of scope for this implementation guide. It also removes `location.mode` because maintaining information about kinds of locations (as opposed to actual location instances) is out of scope for this implementation guide. 
 
-This profile also adds a number of optional extensions, including extensions for representing a geographic region/area, accessibility options at the location, the EHR product(s) in use at the location, whether the location is accepting new patients, and when the location is available.
+This profile also adds a number of optional extensions, including extensions for representing a geographic region/area, accessibility options at the location, the EHR product(s) in use at the location, and whether the location is accepting new patients.
 
 **Examples:**
 
@@ -17,14 +17,11 @@ The following are example uses for the vhdir-location profile:
 
 **Mandatory Data Elements**
 
-There are no mandatory attributes for the Location resource. However, some attributes have mandatory components if they are included in the resource (including extensions). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.   
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.
 
+Each Location must have: 
 
-1.  If the location has a defined position, one value representing longitude in `location.position.longitude` and one value representing latitude in `location.position.latitude`
-1.  If the location has a geographic region/area, one URI to a KML or GeoJSON object defining the region/area in `location.boundary.region` (extension)
-1.  For each accessibility option offered by the location, one type in `location.accessibility.type` (extension)
-1.  For each indication of whether the location is accepting new patients, one boolean value in `location.newPatients.acceptingPatients` (extension)
-1.  For each indication that the location is not available, a description of why the location is unavailable in `location.notAvailable.description` (extension)
+1.  One coded value in `location.status`
 
 
 **Profile specific implementation guidance:**
@@ -51,15 +48,6 @@ There are no mandatory attributes for the Location resource. However, some attri
     1.  AcceptingPatients (1.1) - a value of 'true' means the location is accepting new patients, 'false' means it is not
     1.  Network (0..1) - indicates whether the location is accepting new patients for a particular health provider insurance network
 1.  NewPatientProfile (0..1) - a description of the type of patients the location accepts (e.g. pediatric only)
-1.  AvailableTime (0..*) - indicates when the location is available, consisting of:
-    1.  DaysOfWeek (0..*) - indicates the days the location is available
-    1.  AllDay (0..1) - indicates whether the location is always available
-    1.  AvailableStartTime (0..1) - indicates when the location opens
-    1.  AvailableEndTime (0..1) - indicates when the location closes
-1.  NotAvailable (0..*) - indicates when the location is not available
-    1.  Description (1..1) - describes why the location is not available
-    1.  During (0..1) - indicates a period of time for when the location is not available
-1.  AvailabilityExceptions (0..1) - indicates any exceptions to the availablity of the location    
 
 
 **Terminology**

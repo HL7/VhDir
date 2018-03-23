@@ -192,10 +192,6 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification" />
       </type>
     </element>
-    <element id="Practitioner.qualification.period">
-      <path value="Practitioner.qualification.period"/>
-      <min value="1"/>
-    </element>
     <element id="Practitioner.qualification.issuer">
       <path value="Practitioner.qualification.issuer"/>
       <min value="1"/>

@@ -231,13 +231,6 @@
     </resource>
     <resource>
       <example value="false" />
-      <name value="location-availability" />
-      <sourceReference>
-        <reference value="StructureDefinition/location-availability" />
-      </sourceReference>
-    </resource> 
-    <resource>
-      <example value="false" />
       <name value="careteam-alias" />
       <sourceReference>
         <reference value="StructureDefinition/careteam-alias" />

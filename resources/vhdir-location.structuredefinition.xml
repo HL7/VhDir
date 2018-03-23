@@ -77,14 +77,6 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
       </type>
     </element>
-    <element id="Location.extension:availability">
-      <path value="Location.extension" />
-      <sliceName value="availability" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-availability" />
-      </type>
-    </element>
     <element id="Location.extension:restriction">
       <path value="Location.extension" />
       <sliceName value="restriction" />
@@ -118,6 +110,13 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
+      </type>
+    </element>
+    <element id="Location.identifier.assigner">
+      <path value="Location.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
       </type>
     </element>
     <element id="Location.operationalStatus">
@@ -159,38 +158,25 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
-    <element id="Location.address">
-      <path value="Location.address" />
-    </element>
-    <element id="Location.address.extension">
-      <path value="Location.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Location.address.extension:position">
-      <path value="Location.address.extension" />
-      <sliceName value="position" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
-      </type>
-    </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
       </type>
+    </element>
+    <element id="Location.partOf">
+      <path value="Location.partOf"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+      </type>
+    </element>
+    <element id="Location.endpoint">
+      <path value="Location.endpoint"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
       </type>
     </element>
   </differential>

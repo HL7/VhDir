@@ -49,16 +49,6 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
       </type>
     </element>
-    <element id="HealthcareService.extension:boundary">
-      <path value="HealthcareService.extension" />
-      <sliceName value="boundary" />
-      <short value="Boundary" />
-      <definition value="Representation of a custom area or region" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary" />
-      </type>
-    </element>
     <element id="HealthcareService.identifier">
       <path value="HealthcareService.identifier"/>
     </element>
@@ -144,7 +134,10 @@
     </element>
     <element id="HealthcareService.coverageArea">
       <path value="HealthcareService.coverageArea" />
-      <max value="0" />
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+      </type>
     </element>
     <element id="HealthcareService.endpoint">
       <path value="HealthcareService.endpoint" />

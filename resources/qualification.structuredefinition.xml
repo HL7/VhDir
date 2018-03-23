@@ -87,6 +87,8 @@
       <label value="issuer" />
       <short value="Issuer" />
       <definition value="Organization that regulates and issues the qualification" />
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension:issuer.url">
       <path value="Extension.extension.url" />
@@ -161,15 +163,18 @@
       <path value="Extension.extension.url" />
       <fixedUri value="whereValid" />
     </element>
-    <element id="Extension.extension:whereValid.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Extension.extension:whereValid.value[x]">
+      <path value="Extension.extension.value[x]" />
       <label value="whereValid" />
       <short value="Where the qualification is valid" />
       <definition value="Indicates where this qualification is valid" />
       <min value="1"/>
       <type>
         <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
       </type>
     </element>
     <element id="Extension.extension:history">
@@ -195,6 +200,7 @@
       <label value="status" />
       <short value="Previous status" />
       <definition value="Previous status of the qualification" />
+      <min value="1"/>
       <max value="1" />
     </element>
     <element id="Extension.extension:history.extension:status.url">
@@ -218,6 +224,7 @@
       <label value="period" />
       <short value="Period" />
       <definition value="Period during which the status applied" />
+      <min value="1"/>
       <max value="1" />
     </element>
     <element id="Extension.extension:history.extension:period.url">

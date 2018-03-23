@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-languageproficiency"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency"/>
-	<name value="VhDir Language Proficiency Code System"/>
+	<name value="VhDir Spoken Language Proficiency Code System"/>
 	<status value="draft"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -12,16 +12,16 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="This code system contains codes for documenting the attributes of Language Proficiency"/>
+	<description value="This code system contains codes for documenting the attributes of spoken language proficiency"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="0"/>
+		<code value="00"/>
 		<display value="No proficiency"/>
 		<definition value="Unable to function in the spoken language."/>
 	</concept>
 	<concept>
-		<code value="6"/>
+		<code value="06"/>
 		<display value="Memorized proficiency"/>
 		<definition value="Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."/>
 	</concept>

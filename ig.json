@@ -228,11 +228,6 @@
         "defns":"StructureDefinition-newpatients-definitions.html",
         "source":"newpatients.structuredefinition.xml"
       },
-      "StructureDefinition/location-availability":{
-        "base":"StructureDefinition-location-availability.html",
-        "defns":"StructureDefinition-location-availability-definitions.html",
-        "source":"location-availability.structuredefinition.xml"
-      },
       "StructureDefinition/careteam-alias":{
         "base":"StructureDefinition-careteam-alias.html",
         "defns":"StructureDefinition-careteam-alias-definitions.html",

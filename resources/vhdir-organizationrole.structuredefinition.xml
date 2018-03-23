@@ -61,6 +61,10 @@
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
     </element>
+    <element id="OrganizationRole.active">
+      <path value="OrganizationRole.active"/>
+      <min value="1"/>
+    </element>
     <element id="OrganizationRole.organization">
       <path value="OrganizationRole.organization"/>
       <type>
