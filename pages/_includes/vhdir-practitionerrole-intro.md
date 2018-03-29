@@ -30,11 +30,11 @@ Each practitionerRole must have:
 
 **Extensions:**
 
-1.  Network (0..*) - a reference to the healthcare provider insurance networks the practitioner participates in through their role
-1.  NewPatients (0..*) - indicates whether the practitioner is accepting new patients in their role
-1.  NewPatientProfile (0..1) - a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)
-1.  Qualification (0..*) - indicates qualifications the practitioner has through their role (e.g. registered to prescribe controlled substances)
-1.  DigitalCertificate (0..*) - a digital certificate associated with the practitioner in their role
+1.  [Network](StructureDefinition-network-reference.html) (0..*) - a reference to the healthcare provider insurance networks the practitioner participates in through their role
+1.  [NewPatients](StructureDefinition-newpatients.html) (0..*) - indicates whether the practitioner is accepting new patients in their role
+1.  [NewPatientProfile](StructureDefinition-newpatientprofile.html) (0..*) - a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)
+1.  [Qualification](StructureDefinition-qualification.html) (0..*) - indicates qualifications the practitioner has through their role (e.g. registered to prescribe controlled substances)
+1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the practitioner in their role
 
 
 **Terminology**

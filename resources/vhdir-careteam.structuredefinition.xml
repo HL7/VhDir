@@ -89,6 +89,7 @@
       <sliceName value="status" />
       <short value="Status" />
       <definition value="Describes the status of an identifier" />
+      <min value="1"/>
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -157,6 +158,19 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
+      </type>
+    </element>
+    <element id="CareTeam.note">
+      <path value="CareTeam.note"/>
+    </element>
+    <element id="CareTeam.note.author[x]">
+      <path value="CareTeam.note.author[x]"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+      </type>
+      <type>
+        <code value="string"/>
       </type>
     </element>
   </differential>

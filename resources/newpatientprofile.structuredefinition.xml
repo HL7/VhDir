@@ -24,7 +24,7 @@
       <path value="Extension" />
       <short value="New patient profile" />
       <definition value="Additional information about new patients a practitioner/service/location accepts" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

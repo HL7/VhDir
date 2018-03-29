@@ -4,7 +4,7 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 The HealthcareService resource typically describes services offered by an organization at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.
 
-This profile adds optional extensions to describe whether a service is accepting new patients.
+This profile adds an optional extension to describe whether a service is accepting new patients.
 
 **Examples:**
 
@@ -28,10 +28,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Extensions:**
 
-1.  NewPatients (0..*) - indicates whether the service is accepting new patients, consisting of:
-    1.  AcceptingPatients (1.1) - a value of 'true' means the service is accepting new patients, 'false' means it is not
-    1.  Network (0..1) - indicates whether the service is accepting new patients for a particular health provider insurance network
-1.  NewPatientProfile (0..1) - a description of the type of patients the service accepts (e.g. pediatric only)
+1.  [NewPatients](StructureDefinition-newpatients.html) (0..*) - indicates whether the service is accepting new patients
 
 
 **Terminology**

@@ -104,7 +104,7 @@
         </valueCodeableConcept>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"> <!-- 0..* -->
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"> <!-- This location uses the Revolutionary Professional EHR v10.4.3. The EHR product is certified to the 2014 Edition requirements. The product includes a patient portal. -->
         <extension url="developer">
             <valueString value="Revolutionary Health"/>
         </extension>
@@ -130,101 +130,9 @@
                 </coding>
             </valueCodeableConcept>
         </extension>
-        <extension url="certificationID"> <!-- 0..1 -->
-            <valueString value="CHP-"/> <!-- string 1..1 -->
+        <extension url="certificationID"> 
+            <valueString value="04282014-1111-2"/> 
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- 0..* -->
-        <extension url="acceptingPatients"> <!-- 1..1 -->
-            <valueBoolean value=""/> <!-- boolean 1..1 -->
-        </extension>
-        <extension url="network"> <!-- 0..1 -->
-            <valueReference> <!-- Reference(Network) 1..1 -->
-                <reference value=""/> <!-- string 0..1 -->
-                <identifier> <!-- 0..1 -->
-                    <use value=""/> <!-- code 0..1 -->
-                    <type> <!--0..1 -->
-                        <coding> <!-- 0..* -->
-                            <system value=""/> <!-- uri 0..1 -->
-                            <version value=""/> <!-- string 0..1 -->
-                            <code value=""/> <!-- code 0..1 -->
-                            <display value=""/> <!-- string 0..1 -->
-                            <userSelected value=""/> <!-- boolean 0..1 -->
-                        </coding>
-                        <text value=""/> <!-- string 0..1 -->
-                    </type>
-                    <system value=""/> <!-- uri 0..1 -->
-                    <value value=""/> <!-- string 0..1 -->
-                    <period>
-                        <start value=""/> <!-- dateTime 0..1 -->
-                        <end value=""/> <!-- dateTime 0..1 -->
-                    </period>
-                    <assigner> <!-- Reference(org) 0..1 -->
-                        <reference value=""/> <!-- string 0..1 -->
-                        <identifier> <!-- 0..1 -->
-                            <use value=""/> <!-- code 0..1 -->
-                            <type> <!--0..1 -->
-                                <coding> <!-- 0..* -->
-                                    <system value=""/> <!-- uri 0..1 -->
-                                    <version value=""/> <!-- string 0..1 -->
-                                    <code value=""/> <!-- code 0..1 -->
-                                    <display value=""/> <!-- string 0..1 -->
-                                    <userSelected value=""/> <!-- boolean 0..1 -->
-                                </coding>
-                                <text value=""/> <!-- string 0..1 -->
-                            </type>
-                            <system value=""/> <!-- uri 0..1 -->
-                            <value value=""/> <!-- string 0..1 -->
-                            <period>
-                                <start value=""/> <!-- dateTime 0..1 -->
-                                <end value=""/> <!-- dateTime 0..1 -->
-                            </period>
-            <!-- There is an optional assigner element here, but that would create a recursive structure. It can be included if necessary. -->
-                        </identifier>
-                        <display value=""/> <!-- string 0..1 -->
-                    </assigner>
-                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"> <!-- 1..1 -->
-                        <valueCode value=""/> <!-- code 1..1 -->
-                    </extension>
-                </identifier>
-                <display value=""/> <!-- string 0..1 -->
-            </valueReference>
-        </extension>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"> <!-- 0..1 -->
-        <valueString value=""/> <!-- string 1..1 -->
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-availability"> <!-- 0..* -->
-        <extension url="availableTime"> <!-- 0..* -->
-            <extension url="daysOfWeek"> <!-- 0..* -->
-                <valuecode value=""/> <!-- code 1..1 -->
-            </extension>
-            <extension url="allDay"> <!-- 0..1 -->
-                <valueBoolean value=""/> <!-- boolean 1..1 -->
-            </extension>
-            <extension url="availableStartTime"> <!-- 0..1 -->
-                <valueTime value=""/> <!-- time 1..1 -->
-            </extension>
-            <extension url="availableEndTime"> <!-- 0..1 -->
-                <valueTime value=""/> <!-- time 1..1 -->
-            </extension>
-        </extension>
-        <extension url="notAvailable"> <!-- 0..* -->
-            <extension url="description"> <!-- 1..1 -->
-                <valueString value=""/> <!-- string 1..1 -->
-            </extension>
-            <extension url="during"> <!-- 0..1 -->
-                <valuePeriod> <!-- 1..1 -->
-                    <start value=""/> <!-- dateTime 0..1 -->
-                    <end value=""/> <!-- dateTime 0..1 -->
-                </valuePeriod>
-            </extension>    
-        </extension>
-        <extension url="availabilityExceptions"> <!-- 0..1 -->
-            <valueString value=""/> <!-- string 1..1 -->
-        </extension>
-    </extension>
 </Location>

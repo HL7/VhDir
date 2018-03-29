@@ -412,12 +412,6 @@
     </resource>
     <resource>
       <example value="true" />
-      <sourceReference>
-        <reference value="Location/hl7east" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
       <name value="acme network" />
       <description value="A Payor Network" />
       <sourceReference>
@@ -495,6 +489,14 @@
       <description value="An example healthcare service" />
       <sourceReference>
         <reference value="HealthcareService/ffcardiology" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Location - Founding Fathers Memorial Hospital Main Campus" />
+      <description value="An example location" />
+      <sourceReference>
+        <reference value="Location/hospital1" />
       </sourceReference>
     </resource>
     <!-- <resource>

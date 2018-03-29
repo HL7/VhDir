@@ -31,11 +31,11 @@ Each organization must have:
 
 **Extensions:**
 
-1.  Alias type (0..1) - indicates whether an organization's alias is a historical name or legal alternative name
-1.  Alias period (0..1) - indicates a period of time for which an organization used an alias
-1.  Description (0..1) - a friendly description of the organization
-1.  Qualification (0..*) - indicates whether the organization has any formal qualifications 
-1.  DigitalCertificate (0..*) - a digital certificate associated with the organization
+1.  [Alias type](StructureDefinition-org-alias-type.html) (0..1) - indicates whether an organization's alias is a historical name or legal alternative name
+1.  [Alias period](StructureDefinition-org-alias-period.html) (0..1) - indicates a period of time for which an organization used an alias
+1.  [Description](StructureDefinition-org-description.html) (0..1) - a friendly description of the organization
+1.  [Qualification](StructureDefinition-qualification.html) (0..*) - indicates whether the organization has any formal qualifications 
+1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the organization
 
 
 **Terminology**

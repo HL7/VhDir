@@ -207,15 +207,15 @@
       <path value="Extension.extension.extension.url" />
       <fixedUri value="status" />
     </element>
-    <element id="Extension.extension:history.extension:status.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Extension.extension:history.extension:status.value[x]:valueCoding">
+      <path value="Extension.extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
       <label value="status" />
       <short value="Previous status" />
       <definition value="Previous status of the qualification" />
       <min value="1"/>
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
     </element>
     <element id="Extension.extension:history.extension:period">

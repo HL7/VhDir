@@ -122,7 +122,7 @@
       <sliceName value="certificate" />
       <label value="certificate" />
       <short value="Certificate" />
-      <definition value="PEM format certificate (as a string)" />
+      <definition value="PEM format certificate (as a string) or URI for locating the certificate" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -130,15 +130,17 @@
       <path value="Extension.extension.url" />
       <fixedUri value="certificate" />
     </element>
-    <element id="Extension.extension:certificate.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
+    <element id="Extension.extension:certificate.value[x]">
+      <path value="Extension.extension.value[x]" />
       <label value="certificate" />
       <short value="Certificate" />
-      <definition value="PEM format certificate" />
+      <definition value="PEM format certificate (as a string) or URI for locating the certificate" />
       <min value="1"/>
       <type>
         <code value="string" />
+      </type>
+      <type>
+        <code value="uri"/>
       </type>
     </element>
     <element id="Extension.extension:expirationDate">

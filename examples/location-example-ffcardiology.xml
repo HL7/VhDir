@@ -5,7 +5,7 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
     </meta>
 
-    <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
+    <identifier> <!-- This location is the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
         <use value="secondary"/> 
         <system value="www.foundingfathersmemorial.com/heart"/> 
         <value value="Heart and Vascular Institute"/> 

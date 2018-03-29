@@ -84,14 +84,10 @@
       "base": "ValueSet-valueset-identifierstatus.html",
       "source": "valueset-identifierstatus.xml"
     },
-  "StructureDefinition/identifier-status":{
+    "StructureDefinition/identifier-status":{
       "base":"StructureDefinition-identifier-status.html",
       "defns":"StructureDefinition-identifier-status-definitions.html",
       "source":"identifier-status.structuredefinition.xml"      
-    },
-    "Location/hl7east":{
-         "base":"Location-hl7east.html",
-         "source":"hl7east.xml"
       },
       "StructureDefinition/vhdir-validation":{
         "base":"StructureDefinition-vhdir-validation.html",
@@ -374,6 +370,10 @@
       "HealthcareService/ffcardiology":{
         "base":"HealthcareService-ffcardiology.html",
         "source":"healthcareservice-example-cardiology.xml"
+      },
+      "Location/hospital1":{
+        "base":"Location-hospital1.html",
+        "source":"location-example-hospital.xml"
       },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",

@@ -12,7 +12,7 @@ This profile also adds a number of optional extensions, including extensions for
 
 The following are example uses for the vhdir-location profile:
 
--  TBD
+-  [Founding Fathers Memorial Hospital, Main Campus](Location-hospital1.html)
 
 
 **Mandatory Data Elements**
@@ -31,23 +31,11 @@ Each Location must have:
 
 **Extensions:**
 
-1.  Boundary (0..*) - indicates a region/area for the location, consisting of:
-    1. Region (1..1) - a URI to a KML or GeoJSON object defining the region/area
-    1. LocalName (0..*) - a friendly description of the region/area (such as the colloquial name of the region)
-1.  Accessibility (0..*) - indicates accessibility options available at the location (e.g. handicap accessibility), consisting of:
-    1.  Type (1..1) - indicates the type of accessibility option offered at the location
-    1.  Description (0..1) - additional descriptive information about the accessibility option
-1.  EHR (0..*) - provides information about the EHR product(s) used at the location, consisting of:
-    1.  Developer (0..1) - the developer of the EHR product
-    1.  Product (0..1) - the name of the EHR product
-    1.  Version (0..1) - the version of the EHR product
-    1.  CertificationID (0..1) - a unique ID assigned by the ONC-Authorized Certification Body
-    1.  CertificationEdition (0..1) - indicates which certification edition the EHR product has been certified to
-    1.  PatientAccess (0..*) - indicates whether the EHR product provides patient access functions (e.g. a patient portal)
-1.  NewPatients (0..*) - indicates whether the location is accepting new patients, consisting of:
-    1.  AcceptingPatients (1.1) - a value of 'true' means the location is accepting new patients, 'false' means it is not
-    1.  Network (0..1) - indicates whether the location is accepting new patients for a particular health provider insurance network
-1.  NewPatientProfile (0..1) - a description of the type of patients the location accepts (e.g. pediatric only)
+1.  [Boundary](StructureDefinition-boundary.html) (0..*) - indicates a region/area for the location
+1.  [Accessibility](StructureDefinition-accessibility.html) (0..*) - indicates accessibility options available at the location (e.g. handicap accessibility)
+1.  [EHR](StructureDefinition-ehr.html) (0..*) - provides information about the EHR product(s) used at the location
+1.  [NewPatients](StructureDefinition-newpatients.html) (0..*) - indicates whether the location is accepting new patients
+1.  [NewPatientProfile](StructureDefinition-newpatientprofile.html) (0..*) - a description of the type of patients the location accepts (e.g. pediatric only)
 
 
 **Terminology**

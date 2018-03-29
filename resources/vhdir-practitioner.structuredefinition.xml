@@ -80,7 +80,7 @@
       <path value="Practitioner.identifier.extension" />
       <sliceName value="status" />
       <label value="status" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />

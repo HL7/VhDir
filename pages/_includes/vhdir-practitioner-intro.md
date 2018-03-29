@@ -30,11 +30,11 @@ Each practitioner must have:
 
 **Extensions:**
 
-1.  Endpoint (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the practitioner independent of their role at an organization
-1.  Accessibility (0..*) - indicates accessibility options offered by the practitioner (e.g. cultural competence)
-1.  Proficiency (0..1) - indicates a practitioner's level of spoken proficiency with the language(s) specified in `practitioner.communication`
-1.  DigitalCertificate (0..*) - a digital certificate associated with the practitioner
-1.  Qualification (0..1) - provides additional information about a practitioner's qualifications, including where they are valid and the current/historical status
+1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the practitioner independent of their role at an organization
+1.  [Accessibility](StructureDefinition-accessibility.html) (0..*) - indicates accessibility options offered by the practitioner (e.g. cultural competence)
+1.  [Proficiency](StructureDefinition-communication-proficiency.html) (0..1) - indicates a practitioner's level of spoken proficiency with the language(s) specified in `practitioner.communication`
+1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the practitioner
+1.  [Qualification](StructureDefinition-practitioner-qualification.html) (0..1) - provides additional information about a practitioner's qualifications, including where they are valid and the current/historical status
 
 
 **Terminology**

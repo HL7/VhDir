@@ -41,14 +41,6 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" />
       </type>
     </element>
-    <element id="HealthcareService.extension:newpatientprofile">
-      <path value="HealthcareService.extension" />
-      <sliceName value="newpatientprofile" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
-      </type>
-    </element>
     <element id="HealthcareService.identifier">
       <path value="HealthcareService.identifier"/>
     </element>
@@ -74,6 +66,7 @@
       <sliceName value="status" />
       <short value="Status" />
       <definition value="Describes the status of an identifier" />
+      <min value="1"/>
       <max value="1" />
       <type>
         <code value="Extension" />

@@ -76,17 +76,27 @@
     <element id="Endpoint.identifier.extension:status">
       <path value="Endpoint.identifier.extension" />
       <sliceName value="status" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
     </element>
+    <element id="Endpoint.identifier.assigner">
+      <path value="Endpoint.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="Endpoint.managingOrganization">
       <path value="Endpoint.managingOrganization" />
-      <min value="1" />
-    </element>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>        
     <element id="Endpoint.contact">
       <path value="Endpoint.contact" />
       <max value="1" />
@@ -118,10 +128,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
-    </element>
-    <element id="Endpoint.period">
-      <path value="Endpoint.period" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

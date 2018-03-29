@@ -95,7 +95,7 @@
     <element id="Organization.identifier.extension:status">
       <path value="Organization.identifier.extension" />
       <sliceName value="status" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />

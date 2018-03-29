@@ -105,7 +105,7 @@
     <element id="Location.identifier.extension:status">
       <path value="Location.identifier.extension" />
       <sliceName value="status" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -118,6 +118,10 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
       </type>
+    </element>
+    <element id="Location.status">
+      <path value="Location.status"/>
+      <min value="1"/>
     </element>
     <element id="Location.operationalStatus">
       <path value="Location.operationalStatus" />
