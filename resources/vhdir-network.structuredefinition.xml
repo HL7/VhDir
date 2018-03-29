@@ -220,6 +220,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="Organization.contact.telecom.system">
+      <path value="Organization.contact.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Organization.contact.telecom.value">
+      <path value="Organization.contact.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="Organization.contact.address">
       <path value="Organization.contact.address" />
     </element>

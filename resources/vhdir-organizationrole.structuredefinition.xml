@@ -131,6 +131,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="OrganizationRole.telecom.system">
+      <path value="OrganizationRole.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="OrganizationRole.telecom.value">
+      <path value="OrganizationRole.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="OrganizationRole.endpoint">
       <path value="OrganizationRole.endpoint"/>
       <type>

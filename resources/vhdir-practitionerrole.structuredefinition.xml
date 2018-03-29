@@ -189,6 +189,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="PractitionerRole.telecom.system">
+      <path value="PractitionerRole.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="PractitionerRole.telecom.value">
+      <path value="PractitionerRole.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="PractitionerRole.endpoint">
       <path value="PractitionerRole.endpoint"/>
       <type>

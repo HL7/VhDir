@@ -160,6 +160,45 @@
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
       </type>
     </element>
+    <element id="CareTeam.telecom">
+      <path value="CareTeam.telecom" />
+    </element>
+    <element id="CareTeam.telecom.extension">
+      <path value="CareTeam.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CareTeam.telecom.extension:availabletime">
+      <path value="CareTeam.telecom.extension" />
+      <sliceName value="availabletime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
+      </type>
+    </element>
+    <element id="CareTeam.telecom.extension:viaintermediary">
+      <path value="CareTeam.telecom.extension" />
+      <sliceName value="viaintermediary" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
+      </type>
+    </element>
+    <element id="CareTeam.telecom.system">
+      <path value="CareTeam.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="CareTeam.telecom.value">
+      <path value="CareTeam.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="CareTeam.note">
       <path value="CareTeam.note"/>
     </element>

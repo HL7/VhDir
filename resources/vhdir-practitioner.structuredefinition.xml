@@ -143,6 +143,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
+    <element id="Practitioner.telecom.system">
+      <path value="Practitioner.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Practitioner.telecom.value">
+      <path value="Practitioner.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="Practitioner.address">
       <path value="Practitioner.address" />
     </element>

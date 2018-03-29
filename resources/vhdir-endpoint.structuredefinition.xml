@@ -129,5 +129,13 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="Endpoint.contact.system">
+      <path value="Endpoint.contact.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Endpoint.contact.value">
+      <path value="Endpoint.contact.value"/>
+      <min value="1"/>
+    </element>
   </differential>
 </StructureDefinition>

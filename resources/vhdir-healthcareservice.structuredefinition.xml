@@ -125,6 +125,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="HealthcareService.telecom.system">
+      <path value="HealthcareService.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="HealthcareService.telecom.value">
+      <path value="HealthcareService.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="HealthcareService.coverageArea">
       <path value="HealthcareService.coverageArea" />
       <type>

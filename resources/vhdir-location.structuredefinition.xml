@@ -162,6 +162,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
       </type>
     </element>
+    <element id="Location.telecom.system">
+      <path value="Location.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Location.telecom.value">
+      <path value="Location.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
       <type>

@@ -205,6 +205,14 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
     </element>
+    <element id="Organization.telecom.system">
+      <path value="Organization.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Organization.telecom.value">
+      <path value="Organization.telecom.value"/>
+      <min value="1"/>
+    </element>
     <element id="Organization.address">
       <path value="Organization.address" />
     </element>
@@ -278,6 +286,14 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
       </type>
+    </element>
+    <element id="Organization.contact.telecom.system">
+      <path value="Organization.contact.telecom.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Organization.contact.telecom.value">
+      <path value="Organization.contact.telecom.value"/>
+      <min value="1"/>
     </element>
     <element id="Organization.contact.address">
       <path value="Organization.contact.address" />
