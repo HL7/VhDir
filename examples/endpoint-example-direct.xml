@@ -1,0 +1,123 @@
+<Endpoint  xmlns="http://hl7.org/fhir">
+
+	<id value="direct321"/>
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+    </meta>
+
+    <identifier> <!-- An identifier for this endpoint, a direct address -->
+        <use value="usual"/>
+        <type>
+            <text value="Direct Address"/>
+        </type>
+        <value value="heart@direct.ffhospital.com"/>
+        <assigner>
+            <display value="Revolutionary Health Information Service Provider"/>
+        </assigner>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
+    </identifier>
+
+    <status value="active"/> <!-- This endpoint is active -->
+
+    <connectionType> <!-- This endpoint is a Direct address -->
+        <system value="http://hl7.org/fhir/endpoint-connection-type"/>
+        <code value="direct-project"/>
+        <display value="Direct Project"/>
+    </connectionType>
+
+    <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/> <!-- The name of this endpoint -->
+
+    <managingOrganization> <!-- This endpoint is managed by Founding Fathers Memorial Hospital -->
+        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
+    </managingOrganization>
+
+    <contact> <!-- For more information about this endpoint, call 202-101-0123 -->
+        <system value="phone"/>
+        <value value="202-101-0123"/>
+        <use value="work"/>
+    </contact>
+
+    <period> <!-- This endpoint has been active since November 19, 2014 -->
+        <start value="2014-11-19"/> 
+    </period>
+
+    <payloadType> <!-- This endpoint can receive HL7 CCD documents -->
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
+            <code value="urn:ihe:pcc:xphr:2007"/>
+            <display value="HL7 CCD Document"/>
+        </coding>
+    </payloadType>
+
+    <payloadMimeType value="application/hl7-v3+xml"/> <!-- Payload mimetype is application/hl7-v3+xml -->
+
+    <address value="heart@direct.ffhospital.com"/> <!-- Direct address -->
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase"> <!-- This endpoint is used to support treatment and conforms to the Direct messaging specification at the indicated URL -->
+        <extension url="type">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase"/>
+                    <code value="treatment"/>
+                    <display value="treatment"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="standard"> 
+            <valueUri value="http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf"/>
+        </extension>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank"> <!-- If multiple endpoints are listed, this endpoint should be used first -->
+        <valuePositiveInt value="1"/>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> <!-- Describes a digital certificate associated with this endpoint -->
+        <extension url="type">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <code value="group"/>
+                <display value="group"/>
+            </valueCoding>
+        </extension>
+        <extension url="use">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <code value="signing"/>
+                <display value="signing"/>
+            </valueCoding>
+        </extension>
+        <extension url="use">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <code value="encryption"/>
+                <display value="encryption"/>
+            </valueCoding>
+        </extension>
+        <extension url="certificateStandard">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <code value="x.509v3"/>
+                <display value="x.509v3"/>
+            </valueCoding>
+        </extension>
+        <extension url="certificate">
+            <valueString value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBhc3NvY2lhdGVkIHdpdGggdGhlIEZvdW5kaW5nIEZhdGhlcnMgSGVhcnQgYW5kIFZhc2N1bGFyIEluc3RpdHV0ZeKAmXMgRGlyZWN0IGFkZHJlc3MNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQysrM3RvczN4cTVhSWFKLzZSREd6REZKK2YNCjJNWkxHdHEyZXM5T1NRdEpzYU9YNjd6VlI5QnpMZWgwa2pMZ3ZOMC85Q0NxNDdQS3dvQWV4b2R2MXVhanF3YWcNCnBHYlV0NkF5ZHEzeE9LMllhRnkzTDVMMXBHc2NySzJPMXJSd0ExYUpndXdRVjArM0xYNmVwOExBVitkZFVaS3cNCjB4MlRyUkRZUUJFZE52YkFVd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tDQo="/> 
+        </extension>    
+        <extension url="expirationDate">
+            <valueDate value="2019-04-07"/>
+        </extension>
+        <extension url="trustFramework">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <code value="directtrust"/>
+                    <display value="DirectTrust"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
+</Endpoint>

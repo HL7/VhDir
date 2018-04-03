@@ -375,6 +375,14 @@
         "base":"Location-hospital1.html",
         "source":"location-example-hospital.xml"
       },
+      "CareTeam/cardiologycareteam1":{
+        "base":"CareTeam-cardiologycareteam1.html",
+        "source":"careteam-example-cardiology.xml"
+      },
+      "Endpoint/direct321":{
+        "base":"Endpoint-direct321.html",
+        "source":"endpoint-example-direct.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"

@@ -13,7 +13,7 @@ This profile removes `careTeam.subject`, `careTeam.context`, `careTeam.reasonRef
 
 The following are example uses for the vhdir-careteam profile:
 
--  TBD
+-  [A cardiology care team at Founding Fathers Memorial Hospital](CareTeam-cardiologycareteam1.html)
 
 
 **Mandatory Data Elements**
@@ -22,7 +22,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 Each CareTeam must have:
 
-1.  At least one type of care team in `careTeam.category`
+1.  One status code in `careTeam.status`
+1.  One type of care team in `careTeam.category`
 
 
 **Profile specific implementation guidance:**
@@ -32,10 +33,10 @@ Each CareTeam must have:
 
 **Extensions:**
 
-1.  Alias (0..*) - indicates alternate names by which the care team is known
-1.  Location (0..*) - reference(s) to the location resource, indicating the location(s) at which the care team operates or delivers services
-1.  Service (0..*) - reference(s) to the healthcareService resource, indicating the services offered by the care team
-1.  Endpoint (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the care team independent of its members, affiliated organizations, etc.
+1.  [Alias](StructureDefinition-careteam-alias.html) (0..*) - indicates alternate names by which the care team is known
+1.  [Location](StructureDefinition-location-reference.html) (0..*) - reference(s) to the location resource, indicating the location(s) at which the care team operates or delivers services
+1.  [Service](StructureDefinition-healthcareservice-reference.html) (0..*) - reference(s) to the healthcareService resource, indicating the services offered by the care team
+1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the care team independent of its members, affiliated organizations, etc.
 
 
 **Terminology**

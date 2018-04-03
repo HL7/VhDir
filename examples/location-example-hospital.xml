@@ -35,7 +35,7 @@
 
     <telecom> <!-- Contact this location at any time of day by phone at 202-101-0123 -->
         <system value="phone"/>
-        <value value="2021010123"/>
+        <value value="202-101-0123"/>
         <use value="work"/>
         <rank value="1"/>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">

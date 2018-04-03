@@ -123,7 +123,6 @@
     <element id="CareTeam.participant.member">
       <path value="CareTeam.participant.member" />
       <definition value="The role associated with the specific person or organization who is participating/expected to participate in the care team." />
-      <comment value="." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam" />

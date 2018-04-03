@@ -499,6 +499,22 @@
         <reference value="Location/hospital1" />
       </sourceReference>
     </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Care Team - Cardiology" />
+      <description value="An example care team" />
+      <sourceReference>
+        <reference value="CareTeam/cardiologycareteam1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Endpoint - Direct" />
+      <description value="An example endpoint" />
+      <sourceReference>
+        <reference value="Endpoint/direct321"/>
+      </sourceReference>
+    </resource>
     <!-- <resource>
       <example value="true" />
       <name value="Product Plan" />
