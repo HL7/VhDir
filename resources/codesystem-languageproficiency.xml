@@ -33,7 +33,7 @@
 	<concept>
 		<code value="16"/>
 		<display value="Elementary proficiency, plus"/>
-		<definition value="Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands. "/>
+		<definition value="Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."/>
 	</concept>
 	<concept>
 		<code value="20"/>
@@ -58,7 +58,7 @@
 	<concept>
 		<code value="40"/>
 		<display value="Advanced professional proficiency"/>
-		<definition value="Able to use the language fluently and accurately on all levels normally pertinent to professional needs. "/>
+		<definition value="Able to use the language fluently and accurately on all levels normally pertinent to professional needs."/>
 	</concept>
 	<concept>
 		<code value="46"/>
@@ -68,6 +68,6 @@
 	<concept>
 		<code value="50"/>
 		<display value="Functional native proficiency"/>
-		<definition value="Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken. "/>
+		<definition value="Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."/>
 	</concept>
 </CodeSystem>

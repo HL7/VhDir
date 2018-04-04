@@ -12,15 +12,15 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="Codes for documenting VHDir Digital Certificate Use"/>
+	<description value="This value set defines the purpose of the key contained in a public key certificate."/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
    			<concept>
-        		<code value="digsig"/>
+        		<code value="signing"/>
    			</concept>
    			<concept>
-        		<code value="keyEncipherment"/>
+        		<code value="encryption"/>
 			</concept>
     		<concept>
        			 <code value="authentication"/>

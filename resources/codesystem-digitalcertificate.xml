@@ -18,47 +18,52 @@
 	<concept>
 		<code value="TLS/SSL"/>
 		<display value="TLS/SSL"/>
-         <definition value="The server infrastructure will be using a TLS(Transport Layer Security) required to present a certificate as part of the initial secure connection TLS supports many different methods for exchanging keys, encrypting data, and authenticating message integrity."/>
+         <definition value="a certificate for a device such as a server or router, used to authenticate the device and establish secure communications between the device and a client."/>
 	</concept>
 	<concept>
 		<code value="device"/>
-		<display value="device"/>
+		<display value="Device"/>
         <definition value="This type of certificate is used to verify the identity of a device."/>               
 	</concept>
 	<concept>
-		<code value="group"/>
-		<display value="group"/>
-        <definition value="This type of certificate is used to verify the identity of a group."/>
+		<code value="grp"/>
+		<display value="Group"/>
+        <definition value="a certificate for a collection of individual subscribers acting in a shared capacity, such as an organization."/>
 	</concept>
 	<concept>
-		<code value="identity"/>
-		<display value="identity"/>
-        <definition value="A group certificate is used to verify the identity of an individual."/>
+		<code value="ind"/>
+		<display value="Individual"/>
+        <definition value="A certificate for a single person."/>
 	</concept>
 	<concept>
-		<code value="digsig"/>
-		<display value="digitalSignature"/>
-        <definition value="A digital certificate use of a digital signature demonstrates the intent of the signer to validate the content of the message."/>
+		<code value="role"/>
+		<display value="Role based"/>
+        <definition value="a certificate for a specific role on behalf of which a subscriber is authorized to act, such as a Chief Information Officer."/>
 	</concept>
 	<concept>
-		<code value="keyEncipherment"/>
-		<display value="keyEncipherment"/>
-        <definition value="A digital certificate use of a keyEncipherment demonstrates the intent to utilize the subject public key  to establish an encrypted connection between a browser or user's computer and a server."/>
+		<code value="signing"/>
+		<display value="Signing"/>
+        <definition value="A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash."/>
 	</concept>
 	<concept>
-		<code value="authentication"/>
-		<display value="authentication"/>
-        <definition value="Certificate-based authentication refers to the use of a Digital Certificate to identify a user, machine, or device before granting access to a resource."/>
+		<code value="encrypt"/>
+		<display value="Encryption"/>
+        <definition value="A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes."/>
+	</concept>
+	<concept>
+		<code value="auth"/>
+		<display value="Authentication"/>
+        <definition value="A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity."/>
 	</concept>
 	<concept>
 		<code value="x.509v3"/>
 		<display value="x.509v3"/>
-        <definition value="The digital certificate standard defines the framework of the public key certificates and the atribute certitficates. It also defines a framework for the provision of authentication services."/>
+        <definition value="A standard published by the International Telecommunication Union’s Telecommunication Standardization Sector (ITU-T) that defines a framework for public-key certificates, including specification of data objects used to represent the certificates themselves."/>
 	</concept>
 	<concept>
-		<code value="directtrust"/>
+		<code value="direct"/>
 		<display value="DirectTrust"/>
-        <definition value="The digital certificate is used within the DirectTrust trust framework."/>
+        <definition value="DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange."/>
 	</concept>
 	<concept>
 		<code value="FBCA"/>
@@ -66,14 +71,14 @@
         <definition value="The digital certificate is used within the FCBA trust framework."/>
 	</concept>
 	<concept>
-		<code value="SAFE-BioPharma"/>
+		<code value="SAFEBioP"/>
 		<display value="SAFE-BioPharma"/>
-        <definition value="The digital certificate is used within the SAFE-BioPharma trust framework."/>
+        <definition value="The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements."/>
 	</concept>
 	<concept>
-		<code value="TEFCA"/>
-		<display value="TEFCA"/>
-        <definition value="The digital certificate is used within the TEFCA trust framework."/>
+		<code value="ONCTEF"/>
+		<display value="ONC Trusted Exchange Framework (TEF)"/>
+        <definition value="The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs)."/>
 	</concept>
 	<concept>
 		<code value="FICAM"/>
@@ -81,8 +86,13 @@
         <definition value="The digital certificate is used within the FICAM trust framework."/>
 	</concept>
 	<concept>
+		<code value="NATE"/>
+		<display value="National Association for Trusted Exchange (NATE)"/>
+        <definition value="Blue Button for Consumers (NBB4C) Trust Bundle – The NBB4C Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols."/>
+	</concept>
+	<concept>
 		<code value="other"/>
 		<display value="other"/>
-        <definition value="The digital certificate is used within a trust framework not specified."/>
+        <definition value="A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework."/>
 	</concept>
 </CodeSystem>
