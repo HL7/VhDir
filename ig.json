@@ -295,6 +295,10 @@
         "base": "CodeSystem-codesystem-credentialstatus.html",
         "source": "codesystem-credentialstatus.xml"
       },
+      "CodeSystem/codesystem-network-type": {
+        "base": "CodeSystem-codesystem-network-type.html",
+        "source": "codesystem-network-type.xml"
+      },
       "ValueSet/valueset-digitalcertificatetype": {
         "base": "ValueSet-valueset-digitalcertificatetype.html",
         "source": "valueset-digitalcertificatetype.xml"
@@ -342,6 +346,10 @@
       "ValueSet/valueset-qualificationstatus": {
         "base": "ValueSet-valueset-qualificationstatus.html",
         "source": "valueset-qualificationstatus.xml"
+      },
+      "ValueSet/valueset-network-type": {
+        "base": "ValueSet-valueset-network-type.html",
+        "source": "valueset-network-type.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

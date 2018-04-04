@@ -341,6 +341,13 @@
         <reference value="ValueSet/valueset-qualificationstatus" />
       </sourceReference>
     </resource>
+   <resource>
+      <example value="false" />
+      <name value="network-type" />
+      <sourceReference>
+        <reference value="ValueSet/valueset-network-type" />
+      </sourceReference>
+    </resource>
     <resource>
       <example value="false" />
       <name value="digitalcertificate" />
@@ -402,6 +409,13 @@
       <name value="credentialstatus" />
       <sourceReference>
         <reference value="CodeSystem/codesystem-credentialstatus" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <name value="network-type" />
+      <sourceReference>
+        <reference value="CodeSystem/codesystem-network-type" />
       </sourceReference>
     </resource>
     <resource>

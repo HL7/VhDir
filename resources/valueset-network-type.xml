@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-network-type"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type"/>
+	<name value="VhDir Network Type Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for documenting network type."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type"/>
+		</include>
+	</compose>
+</ValueSet>
