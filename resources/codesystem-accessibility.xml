@@ -17,43 +17,43 @@
 	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
 	<content value="complete"/>
 	<concept>
-		<code value="Cultural competence"/>
+		<code value="cultcomp"/>
 		<display value="Cultural competence"/>
-		<definition value="Cultural competence"/>
+		<definition value="Provides services that meet the social, cultural, and linguistic needs of persons."/>
 	</concept>
 	<concept>
-		<code value="handicap accessible"/>
+		<code value="handiaccess"/>
 		<display value="handicap accessible"/>
-		<definition value="handicap accessible"/>
+		<definition value="Provides access to persons with disabilities."/>
 	</concept>
 	<concept>
-		<code value="ADA compliant"/>
+		<code value="adacomp"/>
 		<display value="ADA compliant"/>
-		<definition value="ADA compliant"/>
+		<definition value="Provides access which complies with the Americans with Disabilities Act and/or amendments."/>
 	</concept>
 	<concept>
-		<code value="public transit options"/>
+		<code value="pubtrans"/>
 		<display value="public transit options"/>
-		<definition value="public transit options"/>
+		<definition value="Provides access using public transportation modes."/>
 	</concept>
 	<concept>
-		<code value="answering service"/>
+		<code value="anssrvc"/>
 		<display value="answering service"/>
-		<definition value="answering service"/>
+		<definition value="Provides capability to communicate when intended recipient is not immediately available."/>
 	</concept>
 	<concept>
 		<code value="vision"/>
 		<display value="vision"/>
-		<definition value="vision"/>
+		<definition value="Provides services for visually impaired persons."/>
 	</concept>
 	<concept>
 		<code value="cognitive"/>
 		<display value="cognitive"/>
-		<definition value="cognitive"/>
+		<definition value="Provides services for cognitively impaired persons."/>
 	</concept>
 	<concept>
 		<code value="mobility"/>
 		<display value="mobility"/>
-		<definition value="mobility"/>
+		<definition value="Provides services for mobility impaired persons."/>
 	</concept>
 </CodeSystem>	
