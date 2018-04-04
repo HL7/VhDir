@@ -391,6 +391,10 @@
         "base":"Endpoint-direct321.html",
         "source":"endpoint-example-direct.xml"
       },
+      "Organization/patriotppo":{
+        "base":"Organization-patriotppo.html",
+        "source":"network-example-patriotppo.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"
@@ -406,10 +410,6 @@
       "HealthcareService/hcs-ws":{
         "base":"healthcareservice-womens-shelter.html",
         "source":"healthcareservice-womens-shelter.xml"
-      },
-      "Organization/acme-network":{
-         "base":"Organization-acme-network.html",
-         "source":"acme-network.xml"
       }
    },
    "extensions":[

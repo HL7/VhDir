@@ -56,7 +56,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/11179-de-effective-period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -102,9 +102,17 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
       </type>
     </element>
+    <element id="Organization.identifier.assigner">
+      <path value="Organization.identifier.assigner"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+      </type>
+    </element>
     <element id="Organization.active">
       <path value="Organization.active" />
       <label value="status" />
+      <min value="1"/>
       <mapping>
         <identity value="hpd" />
         <map value="hpdProviderStatus" />
@@ -164,6 +172,7 @@
       <short value="Reference to organization that owns the network" />
       <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
       <requirements value="Need to specify the payor organization of this network" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />

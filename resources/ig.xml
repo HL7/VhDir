@@ -426,14 +426,6 @@
     </resource>
     <resource>
       <example value="true" />
-      <name value="acme network" />
-      <description value="A Payor Network" />
-      <sourceReference>
-        <reference value="Organization/acme-network" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
       <name value="Women's shelter restiction bundle" />
       <description value="A bundle with a location and healthcare service, and the restrictions applied within" />
       <sourceReference>
@@ -527,6 +519,14 @@
       <description value="An example endpoint" />
       <sourceReference>
         <reference value="Endpoint/direct321"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Network - Patriot PPO" />
+      <description value="An example network" />
+      <sourceReference>
+        <reference value="Organization/patriotppo"/>
       </sourceReference>
     </resource>
     <!-- <resource>
