@@ -1,576 +1,586 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig" />
-  <meta>
-    <lastUpdated value="2017-09-06T09:37:27.622+10:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig" />
-  <name value="Validated Healthcare Directory" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2017-09-06T09:31:48.7824431+10:00" />
-  <publisher value="HL7 Patient Administration Committee" />
-  <package>
-    <name value="base" />
-   <resource>
-      <example value="false" />
-      <name value="identifierstatus" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-identifierstatus" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/identifier-status" />
-      </sourceReference>
-      <name value="identifier-status" />
-      <example value="false" />
-    </resource>     
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/contactpoint-viaintermediary" />
-      </sourceReference>
-      <name value="contactpoint-viaintermediary" />
-      <example value="false" />
-    </resource>    
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/contactpoint-availabletime" />
-      </sourceReference>
-      <name value="contactpoint-availabletime" />
-      <example value="false" />
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Care Team" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-careteam" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Validation" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-validation" />
-      </sourceReference>
-    </resource> 
-    <resource>
-      <example value="false" />
-      <name value="Network" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-network" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Product/plan" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-productplan" />
-      </sourceReference>
-    </resource>   
-    <resource>
-      <example value="false" />
-      <name value="Organization" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-organization" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Organization alias period" />
-      <sourceReference>
-        <reference value="StructureDefinition/org-alias-period" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="organization alias type" />
-      <sourceReference>
-        <reference value="StructureDefinition/org-alias-type" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="endpoint reference" />
-      <sourceReference>
-        <reference value="StructureDefinition/endpoint-reference" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="organization description" />
-      <sourceReference>
-        <reference value="StructureDefinition/org-description" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="network reference" />
-      <sourceReference>
-        <reference value="StructureDefinition/network-reference" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Practitioner" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-practitioner" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="PractitionerRole" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-practitionerrole" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Location" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-location" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Endpoint" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-endpoint" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="HealthcareService" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-healthcareservice" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Organization Role" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-organizationrole" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="Usage Restriction" />
-      <sourceReference>
-        <reference value="StructureDefinition/usage-restriction" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Restriction" />
-      <sourceReference>
-        <reference value="StructureDefinition/vhdir-restriction" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Accessibility" />
-      <sourceReference>
-        <reference value="StructureDefinition/accessibility" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Boundary" />
-      <sourceReference>
-        <reference value="StructureDefinition/boundary" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Communication-proficiency" />
-      <sourceReference>
-        <reference value="StructureDefinition/communication-proficiency" />
-      </sourceReference>
-    </resource>      
-    <resource>
-      <example value="false" />
-      <name value="DigitalCertificate" />
-      <sourceReference>
-        <reference value="StructureDefinition/digitalcertificate" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="EHR" />
-      <sourceReference>
-        <reference value="StructureDefinition/ehr" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="healthcareservice-reference" />
-      <sourceReference>
-        <reference value="StructureDefinition/healthcareservice-reference" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="Location-reference" />
-      <sourceReference>
-        <reference value="StructureDefinition/location-reference" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="newpatientprofile" />
-      <sourceReference>
-        <reference value="StructureDefinition/newpatientprofile" />
-      </sourceReference>
-    </resource>        
-    <resource>
-      <example value="false" />
-      <name value="newpatients" />
-      <sourceReference>
-        <reference value="StructureDefinition/newpatients" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="careteam-alias" />
-      <sourceReference>
-        <reference value="StructureDefinition/careteam-alias" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="endpoint-usecase" />
-      <sourceReference>
-        <reference value="StructureDefinition/endpoint-usecase" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="endpoint-rank" />
-      <sourceReference>
-        <reference value="StructureDefinition/endpoint-rank" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="practitioner-qualification" />
-      <sourceReference>
-        <reference value="StructureDefinition/practitioner-qualification" />
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false" />
-      <name value="qualification" />
-      <sourceReference>
-        <reference value="StructureDefinition/qualification" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="digitalcertificatetype" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-digitalcertificatetype" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="digitalcertificateuse" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-digitalcertificateuse" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="digitalcertificatestandard" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-digitalcertificatestandard" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="digitalcertificatetrustframework" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-digitalcertificatetrustframework" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="usecasetype" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-usecasetype" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="accessibility" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-accessibility" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="aliastype" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-aliastype" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="certificationedition" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-certificationedition" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="patientaccess" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-patientaccess" />
-      </sourceReference>
-    </resource> 
-    <resource>
-      <example value="false" />
-      <name value="languageproficiency" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-languageproficiency" />
-      </sourceReference>
-   </resource>   
-   <resource>
-      <example value="false" />
-      <name value="qualificationstatus" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-qualificationstatus" />
-      </sourceReference>
-    </resource>
-   <resource>
-      <example value="false" />
-      <name value="network-type" />
-      <sourceReference>
-        <reference value="ValueSet/valueset-network-type" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="digitalcertificate" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-digitalcertificate" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="usecase" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-usecase" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="accessibility" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-accessibility" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="ehrcharacteristics" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-ehrcharacteristics" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="languageproficiency" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-languageproficiency" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="organizationdemographics" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-organizationdemographics" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="primarysource" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-primarysource" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="validation" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-validation" />
-      </sourceReference>
-    </resource>   
-    <resource>
-      <example value="false" />
-      <name value="credentialstatus" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-credentialstatus" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <name value="network-type" />
-      <sourceReference>
-        <reference value="CodeSystem/codesystem-network-type" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="Practitioner/practitioner1" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <name value="Women's shelter restiction bundle" />
-      <description value="A bundle with a location and healthcare service, and the restrictions applied within" />
-      <sourceReference>
-        <reference value="Bundle/womens-shelter" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <name value="Women's shelter location with restriction" />
-      <description value="A location with restrictions applied within" />
-      <sourceReference>
-        <reference value="Location/loc-ws" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true" />
-      <name value="Women's shelter HealthcareService with restiction" />
-      <description value="A healthcare service with restrictions applied within" />
-      <sourceReference>
-        <reference value="HealthcareService/hcs-ws" />
-      </sourceReference>
-      <!-- <exampleFor>
-        <reference value="StructureDefinition/vhdir-healthcareservice" />
-      </exampleFor> -->
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Founding Fathers Memorial Hospital" />
-      <description value="An example organization" />
-      <sourceReference>
-        <reference value="Organization/foundingfathers" />
-      </sourceReference>
-      <!-- <exampleFor>
-        <reference value="StructureDefinition/vhdir-organization" />
-      </exampleFor> -->
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Practitioner Role - Cardiologist" />
-      <description value="An example practitioner role" />
-      <sourceReference>
-        <reference value="PractitionerRole/practitionerrole1" />
-      </sourceReference>
-      <!-- <exampleFor>
-        <reference value="StructureDefinition/vhdir-practitionerrole" />
-      </exampleFor> -->
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Organization Role - Rehab Services" />
-      <description value="An example organization role" />
-      <sourceReference>
-        <reference value="OrganizationRole/orgrole1" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Organization Role - HIE" />
-      <description value="An example organization role" />
-      <sourceReference>
-        <reference value="OrganizationRole/orgrole2" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Healthcare Service - Cardiology" />
-      <description value="An example healthcare service" />
-      <sourceReference>
-        <reference value="HealthcareService/ffcardiology" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Location - Founding Fathers Memorial Hospital Main Campus" />
-      <description value="An example location" />
-      <sourceReference>
-        <reference value="Location/hospital1" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Care Team - Cardiology" />
-      <description value="An example care team" />
-      <sourceReference>
-        <reference value="CareTeam/cardiologycareteam1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Endpoint - Direct" />
-      <description value="An example endpoint" />
-      <sourceReference>
-        <reference value="Endpoint/direct321"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Network - Patriot PPO" />
-      <description value="An example network" />
-      <sourceReference>
-        <reference value="Organization/patriotppo"/>
-      </sourceReference>
-    </resource>
-    <!-- <resource>
-      <example value="true" />
-      <name value="Product Plan" />
-      <description value="A simple Insurance Product Plan" />
-      <sourceReference>
-        <reference value="ProductPlan/example-onc" />
-      </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/vhdir-productplan" />
-      </exampleFor>
-    </resource> -->
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="CapabilityStatement/server" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="CapabilityStatement/client" />
-      </sourceReference>
-    </resource>
-  </package>
-  <page>
-    <source value="index.html" />
-    <title value="Validated Healthcare Directory Homepage" />
-    <kind value="page" />
-  </page>
-  <page>
-    <source value="assets/images/diagram1.jpg" />
-    <title value="diagram 1" />
-    <kind value="include" />
-  </page>
-  <page>
-    <source value="assets/images/diagram2.jpg" />
-    <title value="diagram 2" />
-    <kind value="include" />
-  </page>
-  <page>
-    <source value="assets/images/diagram3.jpg" />
-    <title value="diagram 3" />
-    <kind value="include" />
-  </page>
+	<id value="ig" />
+	<meta>
+		<lastUpdated value="2017-09-06T09:37:27.622+10:00" />
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig" />
+	<name value="Validated Healthcare Directory" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2017-09-06T09:31:48.7824431+10:00" />
+	<publisher value="HL7 Patient Administration Committee" />
+	<definition>
+		<package>
+			<name value="base" />
+		</package>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-identifierstatus" />
+			</reference>
+			<name value="identifierstatus" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/identifier-status" />
+			</reference>
+			<name value="identifier-status" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/contactpoint-viaintermediary" />
+			</reference>
+			<name value="contactpoint-viaintermediary" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/contactpoint-availabletime" />
+			</reference>
+			<name value="contactpoint-availabletime" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Care Team" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-careteam" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Validation" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-validation" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Network" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-network" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Product/plan" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-productplan" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Organization" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-organization" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Organization alias period" />
+			<reference>
+				<reference value="StructureDefinition/org-alias-period" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="organization alias type" />
+			<reference>
+				<reference value="StructureDefinition/org-alias-type" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="endpoint reference" />
+			<reference>
+				<reference value="StructureDefinition/endpoint-reference" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="organization description" />
+			<reference>
+				<reference value="StructureDefinition/org-description" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="network reference" />
+			<reference>
+				<reference value="StructureDefinition/network-reference" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Practitioner" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-practitioner" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="PractitionerRole" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-practitionerrole" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Location" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-location" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Endpoint" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-endpoint" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="HealthcareService" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-healthcareservice" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Organization Role" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-organizationrole" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Usage Restriction" />
+			<reference>
+				<reference value="StructureDefinition/usage-restriction" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Restriction" />
+			<reference>
+				<reference value="StructureDefinition/vhdir-restriction" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Accessibility" />
+			<reference>
+				<reference value="StructureDefinition/accessibility" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Boundary" />
+			<reference>
+				<reference value="StructureDefinition/boundary" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Communication-proficiency" />
+			<reference>
+				<reference value="StructureDefinition/communication-proficiency" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="DigitalCertificate" />
+			<reference>
+				<reference value="StructureDefinition/digitalcertificate" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="EHR" />
+			<reference>
+				<reference value="StructureDefinition/ehr" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="healthcareservice-reference" />
+			<reference>
+				<reference value="StructureDefinition/healthcareservice-reference" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="Location-reference" />
+			<reference>
+				<reference value="StructureDefinition/location-reference" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="newpatientprofile" />
+			<reference>
+				<reference value="StructureDefinition/newpatientprofile" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="newpatients" />
+			<reference>
+				<reference value="StructureDefinition/newpatients" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="careteam-alias" />
+			<reference>
+				<reference value="StructureDefinition/careteam-alias" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="endpoint-usecase" />
+			<reference>
+				<reference value="StructureDefinition/endpoint-usecase" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="endpoint-rank" />
+			<reference>
+				<reference value="StructureDefinition/endpoint-rank" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="practitioner-qualification" />
+			<reference>
+				<reference value="StructureDefinition/practitioner-qualification" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="qualification" />
+			<reference>
+				<reference value="StructureDefinition/qualification" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="digitalcertificatetype" />
+			<reference>
+				<reference value="ValueSet/valueset-digitalcertificatetype" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="digitalcertificateuse" />
+			<reference>
+				<reference value="ValueSet/valueset-digitalcertificateuse" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="digitalcertificatestandard" />
+			<reference>
+				<reference value="ValueSet/valueset-digitalcertificatestandard" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="digitalcertificatetrustframework" />
+			<reference>
+				<reference value="ValueSet/valueset-digitalcertificatetrustframework" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="usecasetype" />
+			<reference>
+				<reference value="ValueSet/valueset-usecasetype" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="accessibility" />
+			<reference>
+				<reference value="ValueSet/valueset-accessibility" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="aliastype" />
+			<reference>
+				<reference value="ValueSet/valueset-aliastype" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="certificationedition" />
+			<reference>
+				<reference value="ValueSet/valueset-certificationedition" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="patientaccess" />
+			<reference>
+				<reference value="ValueSet/valueset-patientaccess" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="languageproficiency" />
+			<reference>
+				<reference value="ValueSet/valueset-languageproficiency" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="qualificationstatus" />
+			<reference>
+				<reference value="ValueSet/valueset-qualificationstatus" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="network-type" />
+			<reference>
+				<reference value="ValueSet/valueset-network-type" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="digitalcertificate" />
+			<reference>
+				<reference value="CodeSystem/codesystem-digitalcertificate" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="usecase" />
+			<reference>
+				<reference value="CodeSystem/codesystem-usecase" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="accessibility" />
+			<reference>
+				<reference value="CodeSystem/codesystem-accessibility" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="ehrcharacteristics" />
+			<reference>
+				<reference value="CodeSystem/codesystem-ehrcharacteristics" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="languageproficiency" />
+			<reference>
+				<reference value="CodeSystem/codesystem-languageproficiency" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="organizationdemographics" />
+			<reference>
+				<reference value="CodeSystem/codesystem-organizationdemographics" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="primarysource" />
+			<reference>
+				<reference value="CodeSystem/codesystem-primarysource" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="validation" />
+			<reference>
+				<reference value="CodeSystem/codesystem-validation" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="credentialstatus" />
+			<reference>
+				<reference value="CodeSystem/codesystem-credentialstatus" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="network-type" />
+			<reference>
+				<reference value="CodeSystem/codesystem-network-type" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<reference>
+				<reference value="Practitioner/practitioner1" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Women's shelter restiction bundle" />
+			<description value="A bundle with a location and healthcare service, and the restrictions applied within" />
+			<reference>
+				<reference value="Bundle/womens-shelter" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Women's shelter location with restriction" />
+			<description value="A location with restrictions applied within" />
+			<reference>
+				<reference value="Location/loc-ws" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Women's shelter HealthcareService with restiction" />
+			<description value="A healthcare service with restrictions applied within" />
+			<reference>
+				<reference value="HealthcareService/hcs-ws" />
+			</reference>
+			<!--
+			<exampleFor>
+			<reference value="StructureDefinition/vhdir-healthcareservice" />
+			</exampleFor>
+			-->
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Founding Fathers Memorial Hospital" />
+			<description value="An example organization" />
+			<reference>
+				<reference value="Organization/foundingfathers" />
+			</reference>
+			<!--
+			<exampleFor>
+			<reference value="StructureDefinition/vhdir-organization" />
+			</exampleFor>
+			-->
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Practitioner Role - Cardiologist" />
+			<description value="An example practitioner role" />
+			<reference>
+				<reference value="PractitionerRole/practitionerrole1" />
+			</reference>
+			<!--
+			<exampleFor>
+			<reference value="StructureDefinition/vhdir-practitionerrole" />
+			</exampleFor>
+			-->
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Organization Role - Rehab Services" />
+			<description value="An example organization role" />
+			<reference>
+				<reference value="OrganizationRole/orgrole1" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Organization Role - HIE" />
+			<description value="An example organization role" />
+			<reference>
+				<reference value="OrganizationRole/orgrole2" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Healthcare Service - Cardiology" />
+			<description value="An example healthcare service" />
+			<reference>
+				<reference value="HealthcareService/ffcardiology" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Location - Founding Fathers Memorial Hospital Main Campus" />
+			<description value="An example location" />
+			<reference>
+				<reference value="Location/hospital1" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Care Team - Cardiology" />
+			<description value="An example care team" />
+			<reference>
+				<reference value="CareTeam/cardiologycareteam1" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Endpoint - Direct" />
+			<description value="An example endpoint" />
+			<reference>
+				<reference value="Endpoint/direct321" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true" />
+			<name value="Network - Patriot PPO" />
+			<description value="An example network" />
+			<reference>
+				<reference value="Organization/patriotppo" />
+			</reference>
+		</resource>
+		<!--
+		<resource>
+		<exampleBoolean value="true" />
+		<name value="Product Plan" />
+		<description value="A simple Insurance Product Plan" />
+		<reference>
+		<reference value="ProductPlan/example-onc" />
+		</reference>
+		<exampleFor>
+		<reference value="StructureDefinition/vhdir-productplan" />
+		</exampleFor>
+		</resource>
+		-->
+		<resource>
+			<exampleBoolean value="false" />
+			<reference>
+				<reference value="CapabilityStatement/server" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<reference>
+				<reference value="CapabilityStatement/client" />
+			</reference>
+		</resource>
+		<page>
+			<nameUrl value="index.html" />
+			<title value="Validated Healthcare Directory Homepage" />
+			<generation value="html" />
+		</page>
+		<page>
+			<nameUrl value="assets/images/diagram1.jpg" />
+			<title value="diagram 1" />
+			<generation value="html" />
+		</page>
+		<page>
+			<nameUrl value="assets/images/diagram2.jpg" />
+			<title value="diagram 2" />
+			<generation value="html" />
+		</page>
+		<page>
+			<nameUrl value="assets/images/diagram3.jpg" />
+			<title value="diagram 3" />
+			<generation value="html" />
+		</page>
+	</definition>
 </ImplementationGuide>
