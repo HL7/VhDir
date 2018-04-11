@@ -35,6 +35,18 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="Practitioner.extension:restriction">
+      <path value="Practitioner.extension" />
+      <sliceName value="restriction" />
+      <short value="Restriction" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
+      </type>
+    </element>
     <element id="Practitioner.extension:endpoint">
       <path value="Practitioner.extension" />
       <sliceName value="endpoint"/>
@@ -110,7 +122,7 @@
     <element id="Practitioner.name.given">
       <path value="Practitioner.name.given" />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />

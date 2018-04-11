@@ -82,7 +82,7 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification" />
       </type>
     </element>
-    <!--<element id="Organization.extension:restriction">
+    <element id="Organization.extension:restriction">
       <path value="Organization.extension" />
       <sliceName value="restriction" />
       <short value="Restriction" />
@@ -93,7 +93,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
       </type>
-    </element> -->
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
     </element>

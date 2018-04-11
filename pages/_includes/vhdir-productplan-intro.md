@@ -6,12 +6,10 @@ A product is a discrete package of health insurance coverage benefits that are o
 
 ProductPlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.
 
-We propose to create a new productPlan resource as part of the base FHIR specification.
-
 
 **Examples:**
 
-The following are example uses for the vhdir-productPlan profile:
+The following are example uses for the vhdir-productplan profile:
 
 -  TBD
 

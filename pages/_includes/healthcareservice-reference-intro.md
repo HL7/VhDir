@@ -1,1 +1,1 @@
-An extension to support the addition of a reference to a HealthcareService for the CareTeam resource.
+An extension to support the addition of a reference to a HealthcareService resource. Used by the the CareTeam resource.

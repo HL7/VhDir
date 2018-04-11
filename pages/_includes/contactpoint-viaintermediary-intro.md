@@ -1,3 +1,3 @@
 An extension representing an external point of contact responsible for handling communications with an entity. 
 For example, a practice group may share a single point of contact responsible for handling communications for each of the individual practices.
-Consists of a reference to the practitionerRole, organization, organizationRole, or location resource with a contact point responsible for handling communications.
+Consists of a reference to a practitionerRole, organization, organizationRole, or location resource with a contact point responsible for handling communications.
