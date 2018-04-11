@@ -126,6 +126,10 @@
       <path value="Organization.type" />
       <short value="Type" />
       <definition value="Type of network" />
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type"/>
+      </binding>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />

@@ -97,7 +97,7 @@
         <valueCodeableConcept> 
             <coding> 
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/> 
-                <code value="handicap accessible"/> 
+                <code value="handiaccess"/> 
                 <display value="handicap accessible"/> 
             </coding>
             <text value="Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"/>

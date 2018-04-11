@@ -77,19 +77,19 @@
         <use value="work"/> 
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
             <extension url="daysOfWeek"> 
-                <valuecode value="mon"/> 
+                <valueCode value="mon"/> 
             </extension>
             <extension url="daysOfWeek"> 
-                <valuecode value="tue"/> 
+                <valueCode value="tue"/> 
             </extension>
             <extension url="daysOfWeek"> 
-                <valuecode value="wed"/> 
+                <valueCode value="wed"/> 
             </extension>
             <extension url="daysOfWeek"> 
-                <valuecode value="thu"/> 
+                <valueCode value="thu"/> 
             </extension>
             <extension url="daysOfWeek"> 
-                <valuecode value="fri"/> 
+                <valueCode value="fri"/> 
             </extension>
             <extension url="availableStartTime"> 
                 <valueTime value="08:00:00"/> 

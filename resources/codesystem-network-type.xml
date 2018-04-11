@@ -21,4 +21,49 @@
 		<display value="PPO"/>
 		<definition value="PPO"/>
 	</concept>
+	<concept>
+		<code value="hmo"/>
+		<display value="HMO"/>
+		<definition value="HMO"/>
+	</concept>
+	<concept>
+		<code value="aco"/>
+		<display value="ACO"/>
+		<definition value="ACO"/>
+	</concept>
+	<concept>
+		<code value="specialty"/>
+		<display value="Specialty"/>
+		<definition value="Specialty"/>
+	</concept>
+	<concept>
+		<code value="dental"/>
+		<display value="Dental"/>
+		<definition value="dental"/>
+	</concept>
+	<concept>
+		<code value="vision"/>
+		<display value="Vision"/>
+		<definition value="Vision"/>
+	</concept>
+	<concept>
+		<code value="pharmacy"/>
+		<display value="Pharmacy"/>
+		<definition value="Pharmacy"/>
+	</concept>
+	<concept>
+		<code value="national"/>
+		<display value="National"/>
+		<definition value="National"/>
+	</concept>
+	<concept>
+		<code value="regional"/>
+		<display value="Regional"/>
+		<definition value="Regional"/>
+	</concept>
+	<concept>
+		<code value="state"/>
+		<display value="State"/>
+		<definition value="State"/>
+	</concept>
 </CodeSystem>	

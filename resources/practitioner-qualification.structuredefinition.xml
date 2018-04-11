@@ -12,9 +12,10 @@
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <!-- <contextType value="resource" />
-  <context value="Practitioner" />
-  <context value="Practitioner.qualification" /> -->
+  <context>
+    <type value="element"/>
+    <expression value="Practitioner.qualification"/>
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
