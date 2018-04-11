@@ -347,9 +347,9 @@
         "base": "ValueSet-valueset-qualificationstatus.html",
         "source": "valueset-qualificationstatus.xml"
       },
-      "ValueSet/valueset-network-type": {
-        "base": "ValueSet-valueset-network-type.html",
-        "source": "valueset-network-type.xml"
+      "ValueSet/valueset-vhdir-identifier-type": {
+        "base": "ValueSet-valueset-vhdir-identifier-type.html",
+        "source": "valueset-vhdir-identifier-type.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

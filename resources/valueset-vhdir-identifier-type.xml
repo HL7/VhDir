@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-vhdir-identifier-type"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-vhdir-identifier-type"/>
+	<name value="VhDir Identifier Type Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for documenting practitioner identifier type."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/STU3/codesystem-identifier-type.html"/>
+			<code value="SNO"/>
+		</include>
+	</compose>
+</ValueSet>

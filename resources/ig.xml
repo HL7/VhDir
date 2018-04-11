@@ -352,6 +352,13 @@
 		</resource>
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-identifier-type" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-identifier-type" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
 			<reference>
 				<reference value="CodeSystem/codesystem-digitalcertificate" />
