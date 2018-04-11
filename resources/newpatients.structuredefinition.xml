@@ -12,10 +12,18 @@
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <!-- <contextType value="resource" />
-  <context value="HealthcareService" />
-  <context value="PractitionerRole" />
-  <context value="Location" /> -->
+  <context>
+    <type value="element"/>
+    <expression value="PractitionerRole"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Location"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="HealthcareService"/>
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

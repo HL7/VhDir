@@ -31,7 +31,8 @@
 
 	<type> <!-- This network is a preferred provider network -->
         <coding>
-            <code value="PPO"/>
+            <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
             <display value="PPO"/>
         </coding>
 	</type>
@@ -84,25 +85,25 @@
             <use value="work"/>
             <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
                 <extension url="daysOfWeek">
-                    <valuecode value="mon"/>
+                    <valueCode value="mon"/>
                 </extension>
                 <extension url="daysOfWeek">
-                    <valuecode value="tue"/>
+                    <valueCode value="tue"/>
                 </extension>
                 <extension url="daysOfWeek">
-                    <valuecode value="wed"/>
+                    <valueCode value="wed"/>
                 </extension>
                 <extension url="daysOfWeek">
-                    <valuecode value="thu"/>
+                    <valueCode value="thu"/>
                 </extension>
                 <extension url="daysOfWeek">
-                    <valuecode value="fri"/>
+                    <valueCode value="fri"/>
                 </extension>
                 <extension url="availableStartTime">
-                    <valueTime value="09:00"/>
+                    <valueTime value="09:00:00"/>
                 </extension>
                 <extension url="availableEndTime">
-                    <valueTime value="17:00"/>
+                    <valueTime value="17:00:00"/>
                 </extension>
             </extension>
         </telecom>
