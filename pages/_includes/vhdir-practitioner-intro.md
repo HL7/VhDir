@@ -2,9 +2,10 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 **Background & Scope**
 
-A practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.
+A practitioner is a person who is directly or indirectly involved in providing healthcare.
 
-This profile constrains the cardinality of a few attributes of the practitioner resource such that they are required, including `practitioner.active` and `practitioner.name`. It also adds optional extensions to describe endpoints and digital certificates associated with a practitioner, accessibility options offered by a practitioner (e.g. cultural competence), a practitioner's spoken language proficiency, and additional information about their qualifications (i.e. where the qualification is valid and current/historical information about the qualification's status).
+This profile constrains the cardinality of `practitioner.active` and `practitioner.name` to 1..1 (required). It also adds optional extensions to describe endpoints and digital certificates associated with a practitioner, accessibility options offered by a practitioner (e.g. cultural competence), a practitioner's spoken language proficiency, and additional information about their qualifications (i.e. where the qualification is valid and current/historical information about the qualification's status).
+
 
 **Examples:**
 
@@ -30,7 +31,7 @@ Each practitioner must have:
 
 **Extensions:**
 
-1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the practitioner independent of their role at an organization
+1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the practitioner independent of their role at an organization (such as a personal Direct address)
 1.  [Accessibility](StructureDefinition-accessibility.html) (0..*) - indicates accessibility options offered by the practitioner (e.g. cultural competence)
 1.  [Proficiency](StructureDefinition-communication-proficiency.html) (0..1) - indicates a practitioner's level of spoken proficiency with the language(s) specified in `practitioner.communication`
 1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the practitioner

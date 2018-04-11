@@ -71,6 +71,10 @@
     <element id="Organization.extension:restriction">
       <path value="Organization.extension" />
       <sliceName value="restriction" />
+      <short value="Restriction" />
+      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />

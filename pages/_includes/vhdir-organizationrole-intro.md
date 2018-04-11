@@ -9,9 +9,9 @@ OrganizationRole addresses the need to define a non-hierarchical relationship be
 *  Two or more organizations may form a partnership or joint venture
 *  An organization may be a member of another organization, but not owned by it (e.g. a hospital is a member the American Hospital Association, a hospital is a member of a health information exchange network)
 
-OrganizationRole is similar in form and function to practitionerRole. Instead of references to practitioner and organization (as in practitionerRole), organizationRole includes references to a participatingOrg and a primaryOrg. The participating organization provides "services" to the primary organization (much like a practitioner provides services to an organization). Using the three examples above:
+OrganizationRole is similar in form and function to practitionerRole. Instead of references to practitioner and organization (as in practitionerRole), organizationRole includes references to a participatingOrg and an organization. The participating organization provides "services" to the primary organization (much like a practitioner provides services to an organization). Using the three examples above:
 *  The participating organization provides services to the primary organization
-*  The joint venture is considered the primary organization, and partners within the joint venture are considered participating organizations
+*  The joint venture is considered the primary organization, and partners within the joint venture are considered participating organizations (requires two organizationRole resource instances)
 *  An association is the primary organization, and its members are participating organizations.
 
 OrganizationRole is also used to indicate when an organization provides services for a health insurance provider network.
@@ -20,7 +20,8 @@ OrganizationRole is also used to indicate when an organization provides services
 
 The following are example uses for the vhdir-organizationRole profile:
 
--  TBD
+-  [Independence Rehabilitation provides rehab services to Founding Fathers Memorial Hospital](OrganizationRole-orgrole1.html)
+-  [Founding Fathers Memorial Hospital is a member of Monument HIE](OrganizationRole-orgrole2.html)
 
 
 **Mandatory Data Elements**
