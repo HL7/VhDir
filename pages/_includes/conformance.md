@@ -60,8 +60,8 @@ The Validated Healthcare Directorys responder **SHALL**:
 
 #### Profile Interaction Summary:
 
-1. All servers **SHALL** make available the [read](http://hl7.org/fhir/STU3/http.html#read) and [search](http://hl7.org/fhir/STU3/http.html#search) interactions for the Profiles the server chooses to support.
-1. All servers **SHOULD** make available the [vread](http://hl7.org/fhir/STU3/http.html#vread) and [history-instance](http://hl7.org/fhir/STU3/http.html#history) interactions for the Profiles the server chooses to support.
+1. All servers **SHALL** make available the [read](http://hl7.org/fhir/STU3/http.html#read) and [search](http://hl7.org/fhir/STU3/http.html#search) interactions for all the Profiles.
+1. All servers **SHOULD** make available the [vread](http://hl7.org/fhir/STU3/http.html#vread) and [history-instance](http://hl7.org/fhir/STU3/http.html#history) interactions for all the Profiles.
 
 #### Summary of Validated Healthcare Directory search criteria:
 
