@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-primarysourcevalidationstatus"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
+	<name value="VhDir Primary Source Validation Status"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate various states in the validation process that a given that a resource or element may be in at a point in time."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+            <concept>
+                <code value="successful"/>
+            </concept>
+            <concept>
+                <code value="failed"/>
+            </concept>
+            <concept>
+                <code value="undetermined"/>
+            </concept>
+		</include>
+	</compose>
+</ValueSet>

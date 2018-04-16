@@ -380,6 +380,20 @@
 		</resource>		
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-primarysourcevalidationstatus" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-primarysourcevalidationstatus" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-primarysourcepush" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-primarysourcepush" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
 			<reference>
 				<reference value="CodeSystem/codesystem-digitalcertificate" />

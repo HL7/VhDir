@@ -129,37 +129,37 @@
 	<concept>
 	<code value="push"/>
 	<display value="Push"/>
-	<definition value="push - you come to us"/>
+	<definition value="Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory "/>
 	</concept>
 	<concept>
 	<code value="successful"/>
-	<display value="successful"/>
-	<definition value="successful"/>
+	<display value="Successful"/>
+	<definition value="The validation process is complete and a determination made that the the attested data is true and accurate."/>
 	</concept>
 	<concept>
 	<code value="failed"/>
-	<display value="failed"/>
-	<definition value="failed"/>
+	<display value="Failed"/>
+	<definition value="The validation process is complete and a determination made that the the attested data is not true or accurate."/>
 	</concept>
 	<concept>
 	<code value="undetermined"/>
-	<display value="undetermined"/>
-	<definition value="undetermined"/>
+	<display value="Undetermined"/>
+	<definition value="The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate."/>
 	</concept>
 	<concept>
-	<code value="yes"/>
-	<display value="yes"/>
-	<definition value="yes"/>
+	<code value="pushyes"/>
+	<display value="Yes"/>
+	<definition value="The primary source validation can be achieved via a push of data from the source of that information."/>
 	</concept>
 	<concept>
-	<code value="no"/>
-	<display value="no"/>
-	<definition value="no"/>
+	<code value="pushno"/>
+	<display value="No"/>
+	<definition value="The primary source validation cannot be achieved via a push of data from the source of that information."/>
 	</concept>
 	<concept>
-	<code value="undetermined"/>
-	<display value="undetermined"/>
-	<definition value="undetermined"/>
+	<code value="pushundetermined"/>
+	<display value="Undetermined"/>
+	<definition value="It is if undetermined if primary source validation can be achieved via a push of data from the source of that information."/>
 	</concept>
 	<concept>
 	<code value="specific requested changes"/>

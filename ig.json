@@ -367,6 +367,14 @@
         "base": "ValueSet-valueset-primarysourcevalidationprocess.html",
         "source": "valueset-primarysourcevalidationprocess.xml"
       },
+      "ValueSet/valueset-vhdir-primarysourcevalidationstatus": {
+        "base": "ValueSet-valueset-primarysourcevalidationstatus.html",
+        "source": "valueset-primarysourcevalidationstatus.xml"
+      },
+      "ValueSet/valueset-vhdir-primarysourcepush": {
+        "base": "ValueSet-valueset-primarysourcepush.html",
+        "source": "valueset-primarysourcepush.xml"
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
