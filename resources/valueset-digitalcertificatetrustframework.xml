@@ -17,22 +17,17 @@
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
 			<concept>
-				<code value="directtrust"/>
+				<code value="direct"/>
 			</concept>
 		    <concept>
 		        <code value="FBCA"/>
 		    </concept>
 		    <concept>
-		        <code value="SAFE-BioPharma"/>
+		        <code value="SAFEBioP"/>
 		    </concept>
 		    <concept>
 		        <code value="ONCTEF"/>
 		    </concept>
-<!--
-		    <concept>
-		        <code value="FICAM"/>
-		    </concept>
--->
 		    <concept>
 		        <code value="NATE"/>
 		    </concept>

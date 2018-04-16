@@ -19,70 +19,70 @@
 	<concept>
 	<code value="none"/>
 	<display value="none"/>
-	<definition value="No validation needed/planned for this resource or element (Frequency)"/>
+	<definition value="No validation needed/planned for this resource or element."/>
 	</concept>
 	<concept>
 	<code value="initial"/>
-	<display value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'."/>
-	<definition value="to review"/>
+	<display value="Validation only needed once after initial attestation"/>
+	<definition value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'"/>
 	</concept>
 	<concept>
 	<code value="periodic"/>
-	<display value="Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."/>
-	<definition value="to review"/>
+	<display value="Validation is needed after initial attestation and on a periodic basis"/>
+	<definition value="Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."/>
 	</concept>
 	<concept>
 	<code value="attested"/>
 	<display value="Indicates the element or resource has only been attested."/>
-	<definition value="to review"/>
+	<definition value="Indicates the element or resource has only been attested."/>
 	</concept>
 	<concept>
 	<code value="validated"/>
 	<display value="Indicates the element or resource has been successfully validated."/>
-	<definition value="to review"/>
+	<definition value="Indicates the element or resource has been successfully validated."/>
 	</concept>
 	<concept>
-	<code value="in process"/>
+	<code value="inprocess"/>
 	<display value="Indicates the element or resource is currently being validated."/>
-	<definition value="to review"/>
+	<definition value="Indicates the element or resource is currently being validated."/>
 	</concept>
 	<concept>
-	<code value="requires revalidation"/>
+	<code value="reqreval"/>
 	<display value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
-	<definition value="to review"/>
+	<definition value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
 	</concept>
 	<concept>
-	<code value="validation failed"/>
-	<display value="Indacates validation was attepted on an element or resource and that validation failed."/>
-	<definition value="to review"/>
+	<code value="valfailed"/>
+	<display value="Indicates validation was attepted on an element or resource and that validation failed."/>
+	<definition value="Indicates validation was attepted on an element or resource and that validation failed."/>
 	</concept>
 	<concept>
-	<code value="nothing"/>
-	<display value="nothing"/>
-	<definition value="to review"/>
+	<code value="none"/>
+	<display value="None"/>
+	<definition value="No external validation is required."/>
 	</concept>
 	<concept>
-	<code value="primary source"/>
-	<display value="Indicates the element or resource is validated against a single source."/>
-	<definition value="to review"/>
+	<code value="primarysource"/>
+	<display value="Primary source"/>
+	<definition value="Indicates the element or resource is validated against a single source."/>
 	</concept>
 	<concept>
-	<code value="multiple sources"/>
-	<display value="Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."/>
-	<definition value="to review"/>
+	<code value="multisource"/>
+	<display value="Multi-source"/>
+	<definition value="Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."/>
 	</concept>
 	<concept>
-	<code value="edit check"/>
+	<code value="editcheck"/>
 	<display value="Indicates the element or resource is validated for format, range, presence, or other similar properties."/>
 	<definition value="to review"/>
 	</concept>
 	<concept>
-	<code value="value set"/>
+	<code value="valueset"/>
 	<display value="Indicates the element or resource is validated against a value set."/>
 	<definition value="to review"/>
 	</concept>
 	<concept>
-	<code value="external source"/>
+	<code value="extsource"/>
 	<display value="Indicates the element or resource is validated against an external source."/>
 	<definition value="to review"/>
 	</concept>
@@ -92,7 +92,7 @@
 	<definition value="to review"/>
 	</concept>
 	<concept>
-	<code value="in context"/>
+	<code value="incontext"/>
 	<display value="Indicates the element or resource is validated by the existence or value of another related element or resource."/>
 	<definition value="to review"/>
 	</concept>
@@ -107,7 +107,7 @@
 	<definition value="to review"/>
 	</concept>
 	<concept>
-	<code value="record only"/>
+	<code value="recordonly"/>
 	<display value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
 	<definition value="to review"/>
 	</concept>
@@ -118,17 +118,17 @@
 	</concept>
 	<concept>
 	<code value="manual"/>
-	<display value="manual"/>
-	<definition value="manual"/>
+	<display value="Manual"/>
+	<definition value="The resource or element is validated manually."/>
 	</concept>
 	<concept>
-	<code value="API"/>
+	<code value="api"/>
 	<display value="API"/>
-	<definition value="API"/>
+	<definition value="The resource or element is validated via an application programming interface (API)."/>
 	</concept>
 	<concept>
 	<code value="push"/>
-	<display value="push - you come to us"/>
+	<display value="Push"/>
 	<definition value="push - you come to us"/>
 	</concept>
 	<concept>

@@ -355,6 +355,18 @@
         "base": "ValueSet-valueset-vhdir-identifier-type.html",
         "source": "valueset-vhdir-identifier-type.xml"
       },
+      "ValueSet/valueset-vhdir-validationneed": {
+        "base": "ValueSet-valueset-validationneed.html",
+        "source": "valueset-validationneed.xml"
+      },
+      "ValueSet/valueset-vhdir-externalvalidationtype": {
+        "base": "ValueSet-valueset-externalvalidationtype.html",
+        "source": "valueset-externalvalidationtype.xml"
+      },
+      "ValueSet/valueset-vhdir-primarysourcevalidationprocess": {
+        "base": "ValueSet-valueset-primarysourcevalidationprocess.html",
+        "source": "valueset-primarysourcevalidationprocess.xml"
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"

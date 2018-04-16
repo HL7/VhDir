@@ -23,10 +23,10 @@
                 <code value="device"/>
             </concept>
             <concept>
-                <code value="group"/>
+                <code value="grp"/>
             </concept>
             <concept>
-                <code value="individual"/>
+                <code value="ind"/>
             </concept>
             <concept>
                 <code value="role"/>

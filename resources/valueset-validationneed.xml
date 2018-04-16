@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-validationneed"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
+	<name value="VhDir Primary Source Validation Need"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all.  be validated by process that are manual or automated. This value set defines a set of codes to describing now often validation is needed, if at all."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+            <concept>
+                <code value="none"/>
+            </concept>
+            <concept>
+                <code value="initial"/>
+            </concept>
+            <concept>
+                <code value="periodic"/>
+            </concept>
+		</include>
+	</compose>
+</ValueSet>

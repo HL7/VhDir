@@ -15,8 +15,7 @@
 	<description value="Codes for documenting practitioner identifier type."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/STU3/codesystem-identifier-type.html"/>
-			<code value="SNO"/>
+			<system value="http://hl7.org/fhir/v2/0203"/>
 		</include>
 	</compose>
 </ValueSet>

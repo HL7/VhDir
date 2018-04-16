@@ -359,6 +359,27 @@
 		</resource>		
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-validationneed" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-validationneed" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-externalvalidationtype" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-externalvalidationtype" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-primarysourcevalidationprocess" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-primarysourcevalidationprocess" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
 			<reference>
 				<reference value="CodeSystem/codesystem-digitalcertificate" />

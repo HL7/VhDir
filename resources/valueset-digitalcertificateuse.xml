@@ -20,10 +20,10 @@
         		<code value="signing"/>
    			</concept>
    			<concept>
-        		<code value="encryption"/>
+        		<code value="encrypt"/>
 			</concept>
     		<concept>
-       			 <code value="authentication"/>
+       			 <code value="auth"/>
 			</concept>
 		</include>
 	</compose>
