@@ -4,7 +4,24 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.
 
-This profile constrains `endpoint.contact` (only one contact point for an endpoint is permitted), and adds extensions for describing the types of services supported by the endpoint, ranking endpoints when there are multiple endpoints to connect to, and identifying a digital certificate associated with the endpoint.
+This profile modifies the base Endpoint resource in the following manner:
+
+*  Constrains the cardinality of `endpoint.contact` (0..1), `endpoint.contact.system` (1..1), and `endpoint.contact.value` (1..1)
+
+*  Adds extensions:
+
+1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of an endpoint's identifier
+1.  [Via intermediary](StructureDefinition-contactpoint-viaintermediary.html) (0..1) - a reference to an alternative point of contact for this endpoint
+1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when the point of contact for an endpoint is available
+1.  [UseCase](StructureDefinition-endpoint-usecase.html) (0..*) - an enumeration of the specific use cases (service descriptions) supported by the endpoint
+1.  [Rank](StructureDefinition-endpoint-rank.html) (0..1) - an indication of the preferred order for connecting to an endpoint when multiple endpoints capable of transferring the same content are listed
+1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the endpoint
+1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with an endpoint is restricted
+
+*  Adds new value sets/updates value set bindings:
+
+TBD
+
 
 **Examples:**
 
@@ -29,15 +46,4 @@ Each endpoint must have:
 
 - TBD
 
-
-**Extensions:**
-
-1.  [UseCase](StructureDefinition-endpoint-usecase.html) (0..*) - an enumeration of the specific use cases (service descriptions) supported by the endpoint
-1.  [Rank](StructureDefinition-endpoint-rank.html) (0..1) - an indication of the preferred order for connecting to an endpoint when multiple endpoints capable of transferring the same content are listed
-1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the endpoint
-
-
-**Terminology**
-
-TBD
 

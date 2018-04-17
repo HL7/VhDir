@@ -55,14 +55,10 @@
                 <display value="Cardiologist"/>
             </coding>
         </role>
-        <!--<member>
+        <member>
             <reference value="http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1"/>
             <display value="George Washington, a cardiologist at the Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
-        </member>-->
-        <onBehalfOf>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/>
-        </onBehalfOf>
+        </member>
         <period>
             <start value="2016-07-16"/>
         </period>

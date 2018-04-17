@@ -21,10 +21,6 @@
     <element id="Location">
       <path value="Location" />
     </element>
-    <element id="Location.language">
-      <path value="Location.language" />
-      <max value="0" />
-    </element>
     <element id="Location.extension">
       <path value="Location.extension" />
       <slicing>

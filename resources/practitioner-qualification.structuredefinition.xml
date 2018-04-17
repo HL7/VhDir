@@ -58,6 +58,10 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+      </binding>
     </element>
     <element id="Extension.extension:whereValid">
       <path value="Extension.extension" />
@@ -125,6 +129,10 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+      </binding>
     </element>
     <element id="Extension.extension:history.extension:period">
       <path value="Extension.extension.extension" />

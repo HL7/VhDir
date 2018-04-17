@@ -1,0 +1,18 @@
+<SearchParameter  xmlns="http://hl7.org/fhir">
+
+	<id value="search-qualification-code"/>
+
+    <url value="http://hl7.org/fhir/ig/vhdir/SearchParameter/search-qualification-code"/>
+    <name value="qualification-code"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="ONC"/>
+    <description value="Find practitioners with a type of qualification matching the specified code"/>
+    <code value="qualification-code"/>
+    <base value="Practitioner"/>
+    <type value="token"/>
+    <expression value="Practitioner.qualification.code"/>
+    <multipleOr value="true"/>
+    <multipleAnd value="true"/>
+
+</SearchParameter>

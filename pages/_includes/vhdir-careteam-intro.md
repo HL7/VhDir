@@ -6,7 +6,27 @@ A care team consists of the providers and/or organizations responsible for the c
 
 A care team may be functionally "empty," i.e. the roles on the care team are not filled by individuals or organizations. For example, a care team may be comprised of a primary care provider, care coordinator, and specialist without indicating the individuals filling those roles. This enables entities to describe existing care teams while masking the identity of the individuals/organizations that are involved, or to represent standing care teams that are filled on an ad hoc basis in response to a condition/event.
 
-This profile removes `careTeam.subject`, `careTeam.context`, `careTeam.reasonReference`, and references to patient and relatedPerson resources in `careTeam.member` because maintaining patient information is out of scope for this implementation guide. It also constrains the number of organizations responsible for managing a care team to one.
+This profile modifies the base CareTeam resource in the following manner:
+
+*  Constrains the cardinality of `careTeam.status` (1..1), `careTeam.category` (1..1), `careTeam.context` (0..0), `careTeam.subject` (0..0), `careTeam.onBehalfOf` (0..0), `careTeam.managingOrganization` (0..1), `careTeam.reasonReference` (0..0), `careTeam.telecom.system` (1..1), and `careTeam.telecom.value` (1..1)
+
+*   Modifies the data type of careTeam.note.author (removes references to Patient and RelatedPerson resources)
+
+*  Adds extensions:
+
+1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a care team's identifier
+1.  [Via intermediary](StructureDefinition-contactpoint-viaintermediary.html) (0..1) - a reference to an alternative point of contact for this care team
+1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when a care team is available for contact
+1.  [Alias](StructureDefinition-careteam-alias.html) (0..*) - indicates alternate names by which the care team is known
+1.  [Location](StructureDefinition-location-reference.html) (0..*) - reference(s) to the location resource, indicating the location(s) at which the care team operates or delivers services
+1.  [Service](StructureDefinition-healthcareservice-reference.html) (0..*) - reference(s) to the healthcareService resource, indicating the services offered by the care team
+1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the care team independent of its members, affiliated organizations, etc.
+1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a care team is restricted
+
+*  Adds new value sets/updates value set bindings:
+
+TBD
+
 
 
 **Examples:**
@@ -29,16 +49,3 @@ Each CareTeam must have:
 **Profile specific implementation guidance:**
 
 - TBD
-
-
-**Extensions:**
-
-1.  [Alias](StructureDefinition-careteam-alias.html) (0..*) - indicates alternate names by which the care team is known
-1.  [Location](StructureDefinition-location-reference.html) (0..*) - reference(s) to the location resource, indicating the location(s) at which the care team operates or delivers services
-1.  [Service](StructureDefinition-healthcareservice-reference.html) (0..*) - reference(s) to the healthcareService resource, indicating the services offered by the care team
-1.  [Endpoint](StructureDefinition-endpoint-reference.html) (0..*) - reference(s) to the endpoint resource, indicating technical endpoints for the care team independent of its members, affiliated organizations, etc.
-
-
-**Terminology**
-
-TBD

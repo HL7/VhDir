@@ -19,10 +19,6 @@
     <element id="Endpoint">
       <path value="Endpoint" />
     </element>
-    <element id="Endpoint.language">
-      <path value="Endpoint.language" />
-      <max value="0" />
-    </element>
     <element id="Endpoint.extension">
       <path value="Endpoint.extension" />
       <slicing>

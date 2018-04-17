@@ -168,15 +168,15 @@
         <extension url="type">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="group"/> 
-                <display value="group"/> 
+                <code value="grp"/> 
+                <display value="Group"/> 
             </valueCoding>
         </extension>
         <extension url="use"> 
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="authentication"/>
-                <display value="authentication"/>
+                <code value="auth"/>
+                <display value="Authentication"/>
             </valueCoding>
         </extension>
         <extension url="certificateStandard">

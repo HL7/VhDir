@@ -79,22 +79,22 @@
         <extension url="type">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="group"/>
-                <display value="group"/>
+                <code value="grp"/>
+                <display value="Group"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="signing"/>
-                <display value="signing"/>
+                <display value="Signing"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="encryption"/>
-                <display value="encryption"/>
+                <code value="encrypt"/>
+                <display value="Encryption"/>
             </valueCoding>
         </extension>
         <extension url="certificateStandard">
@@ -114,7 +114,7 @@
             <valueCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                    <code value="directtrust"/>
+                    <code value="direct"/>
                     <display value="DirectTrust"/>
                 </coding>
             </valueCodeableConcept>

@@ -106,15 +106,15 @@
         <extension url="type">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
-                <code value="identity"/>
-                <display value="identity"/>
+                <code value="ind"/>
+                <display value="Individual"/>
             </valueCoding> 
         </extension>
         <extension url="use">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
-                <code value="digsig"/>
-                <display value="digitalSignature"/>
+                <code value="signing"/>
+                <display value="Signing"/>
             </valueCoding> 
         </extension>
         <extension url="certificateStandard">
@@ -134,7 +134,7 @@
             <valueCodeableConcept> 
                 <coding>
                     <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
-                    <code value="directtrust"/> 
+                    <code value="direct"/> 
                     <display value="DirectTrust"/> 
                     <userSelected value="true"/> 
                 </coding>

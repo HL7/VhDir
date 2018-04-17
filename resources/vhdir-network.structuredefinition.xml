@@ -22,10 +22,6 @@
       <path value="Organization" />
       <short value="Network" />
       <definition value="The details of a healthcare provider insurance network" />
-      <mapping>
-        <identity value="hpd" />
-        <map value="HPDProvider" />
-      </mapping>
     </element>
     <element id="Organization.id">
       <path value="Organization.id" />
@@ -184,9 +180,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole" />
       </type>
       <mustSupport value="true" />

@@ -129,7 +129,7 @@
 	<concept>
 	<code value="push"/>
 	<display value="Push"/>
-	<definition value="Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory "/>
+	<definition value="Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory"/>
 	</concept>
 	<concept>
 	<code value="successful"/>

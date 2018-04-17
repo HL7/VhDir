@@ -21,10 +21,6 @@
     <element id="Practitioner">
       <path value="Practitioner" />
     </element>
-    <element id="Practitioner.language">
-      <path value="Practitioner.language" />
-      <max value="0" />
-    </element>
     <element id="Practitioner.extension">
       <path value="Practitioner.extension" />
       <slicing>
@@ -189,6 +185,9 @@
     <element id="Practitioner.photo">
       <path value="Practitioner.photo" />
       <max value="1" />
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification"/>
     </element>
     <element id="Practitioner.qualification.extension">
       <path value="Practitioner.qualification.extension" />
