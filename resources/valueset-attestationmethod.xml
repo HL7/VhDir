@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-attestationmethod"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
+	<name value="VhDir EHR Attestation Method"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set includes a codes that describe the relationship between the list of standards defining digital certificates."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+            <concept>
+                <code value="owner"/>
+            </concept>
+            <concept>
+                <code value="authrep"/>
+            </concept>
+            <concept>
+                <code value="authint"/>
+            </concept>
+            <concept>
+                <code value="non-auth-src"/>
+            </concept>
+        </include>
+	</compose>
+</ValueSet>

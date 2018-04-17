@@ -1,1 +1,0 @@
-{"resourceType":"OperationOutcome","issue":[{"details":{"text":"Error expanding ValueSet \"http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-vhdir-identifier-type: Error unmarshalling resource: Unable to provide support for code system hhttp://hl7.org/fhir/STU3/codesystem-identifier-type.html"}}]}

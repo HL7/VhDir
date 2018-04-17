@@ -162,38 +162,38 @@
 	<definition value="It is if undetermined if primary source validation can be achieved via a push of data from the source of that information."/>
 	</concept>
 	<concept>
-	<code value="specific requested changes"/>
-	<display value="specific requested changes"/>
-	<definition value="specific requested changes"/>
+	<code value="specific"/>
+	<display value="Specific requested changes"/>
+	<definition value="The sender will send specific changes to the healthcare directory as determined by agreement."/>
 	</concept>
 	<concept>
-	<code value="any changes"/>
-	<display value="any changes"/>
-	<definition value="any changes"/>
+	<code value="any"/>
+	<display value="Any changes"/>
+	<definition value="The sender will send all changes to the healthcare directory."/>
 	</concept>
 	<concept>
-	<code value="as defined by source"/>
-	<display value="as defined by source"/>
-	<definition value="as defined by source"/>
+	<code value="sourcedef"/>
+	<display value="As defined by the source/sender"/>
+	<definition value="The sender will only send changes they have determined to be significant."/>
 	</concept>
 	<concept>
 	<code value="owner"/>
 	<display value="Indicate the element or resource was owner"/>
-	<definition value="Indicate the element or resource was owner"/>
+	<definition value="Indicates the element or resource was attested to by the individual who owned the data."/>
 	</concept>
 	<concept>
-	<code value="authorized representative"/>
-	<display value="authorized representative"/>
-	<definition value="authorized representative"/>
+	<code value="authrep"/>
+	<display value="Authorized representative"/>
+	<definition value="Indicates the element or resource was attested to by an individual who was designated to attest by the owner the data."/>
 	</concept>
 	<concept>
-	<code value="authorized intermediary"/>
-	<display value="authorized intermediary, eg CA Directory"/>
-	<definition value="authorized intermediary, eg CA Directory"/>
+	<code value="authint"/>
+	<display value="Authorized intermediary, eg CA Directory"/>
+	<definition value="Indicates the element or resource was attested to by a system that was designated to attest by the owners the data it collects."/>
 	</concept>
 	<concept>
-	<code value="non-authorized source"/>
-	<display value="non-authorized source"/>
-	<definition value="non-authorized source"/>
+	<code value="non-auth-src"/>
+	<display value="Non-authorized source"/>
+	<definition value="Indicates the element or resource was attested to by an individual or system that was not deignated to attest by the owner of the data."/>
 	</concept>
 </CodeSystem>

@@ -12,7 +12,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all.  be validated by process that are manual or automated. This value set defines a set of codes to describing now often validation is needed, if at all."/>
+	<description value="Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all. This value set defines a set of codes that describe how often validation is needed, if at all."/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-primarysourcepushtype"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
+	<name value="VhDir Primary Source Push Type"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate the scope of data sent from a primary source of validated data to a validated healthcare directory when there is a push model (from the sender) for sending data."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+            <concept>
+                <code value="specific"/>
+            </concept>
+            <concept>
+                <code value="any"/>
+            </concept>
+            <concept>
+                <code value="sourcedef"/>
+            </concept>
+		</include>
+	</compose>
+</ValueSet>

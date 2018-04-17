@@ -394,6 +394,20 @@
 		</resource>		
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-primarysourcepushtype" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-primarysourcepushtype" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-attestationmethod" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-attestationmethod" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
 			<reference>
 				<reference value="CodeSystem/codesystem-digitalcertificate" />
