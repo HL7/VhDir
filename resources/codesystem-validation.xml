@@ -184,12 +184,12 @@
 	<concept>
 	<code value="authrep"/>
 	<display value="Authorized representative"/>
-	<definition value="Indicates the element or resource was attested to by an individual who was designated to attest by the owner the data."/>
+	<definition value="Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data."/>
 	</concept>
 	<concept>
 	<code value="authint"/>
 	<display value="Authorized intermediary, eg CA Directory"/>
-	<definition value="Indicates the element or resource was attested to by a system that was designated to attest by the owners the data it collects."/>
+	<definition value="Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data."/>
 	</concept>
 	<concept>
 	<code value="non-auth-src"/>

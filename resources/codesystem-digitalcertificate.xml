@@ -66,9 +66,9 @@
         <definition value="DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange."/>
 	</concept>
 	<concept>
-		<code value="FBCA"/>
-		<display value="FBCA"/>
-        <definition value="The digital certificate is used within the FCBA trust framework."/>
+		<code value="FPKI"/>
+		<display value="Federal Public Key Infrastructure (FPKI)/Federal Trust Framework"/>
+        <definition value="Federal Public Key Infrastructure (FPKI)/Federal Trust Framework - The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue PIV credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates."/>
 	</concept>
 	<concept>
 		<code value="SAFEBioP"/>
