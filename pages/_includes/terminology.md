@@ -104,4 +104,8 @@ http://hl7.org/fhir/identifier-type|[FHIR](http://hl7.org/fhir/identifier-type)|
 |http://nucc.org/provider-taxonomy|[NUCC](http://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57)|*NUCC Provider Taxonomy*|2.16.840.1.113883.6.101|Proposed for organizationRole above
 |http://www.rfc-editor.org/bcp/bcp13.txt|http://www.rfc-editor.org/bcp/bcp13.txt|*Defininitions for mimeType|TBD|Endpoint.payloadMimeType
 
-<!-- {sdf% include list-simple-conceptmaps.xhtml %} -->
+<p/><p/>
+
+#### ConceptMaps defined as part of the Validated Healthcare Directory Implementation Guide
+
+{% include list-simple-conceptmaps.xhtml %}

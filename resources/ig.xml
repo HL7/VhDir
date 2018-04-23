@@ -593,6 +593,14 @@
 				<reference value="Organization/patriotppo" />
 			</reference>
 		</resource>
+		<!-- Avinash Added ConceptMap-->
+		<resource>
+			<exampleBoolean value="false" />
+			<reference>
+				<reference value="ConceptMap/valueset-qualification-status"/>
+			</reference>
+		</resource>
+		<!-- upto here -->
 		<!--
 		<resource>
 		<exampleBoolean value="true" />

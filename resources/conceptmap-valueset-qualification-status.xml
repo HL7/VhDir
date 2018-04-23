@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
+	<id value="conceptmap-valueset-qualification-status"/>
+	<!--	<text>
+		<status value="generated"/>
+		<xhtml:div>
+			<xhtml:p>Unit of Use NDC codes (https://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp) mapping  to the CVX Vaccine codes (https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx).  Note: source = NDC and target = CVX</xhtml:p>
+			<xhtml:p>Based upon the 2015 Edition Certification Requirements, the NDC vaccine codes SHOULD be supported as translations to the CVX vaccine codes.</xhtml:p>
+		</xhtml:div>
+	</text>
+-->
+	<url value="http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-valueset-qualification-status"/>
+	<name value="Qualification Status Value Set – Status Code Mapping"/>
+	<status value="active"/>
+	<publisher value="VhDir"/>
+	<date value="2018-04-20"/>
+	<description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/>
+	
+	<requirements value=""/>
+
+	<sourceUri value="http://hl7.org/fhir/ig/vhdir/Valueset-valueset-qualificationstatus"/>
+  	<targetUri value="http://hl7.org/fhir/ValueSet/resource-status"/>
+
+	<group>
+		<source value="hhttp://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus"/>
+    	<target value="http://hl7.org/fhir/ValueSet/resource-status"/>
+		<element>
+			<code value="active"/>	
+			<display value="active"/>
+			<target>
+				<code value="active"/>
+				<display value="active"/>
+				<equivalence value ="equivalent"/>
+			</target>
+		</element>
+
+		<element>
+			<code value="inactive"/>	
+			<display value="inactive"/>
+			<target>
+				<code value="inactive"/>
+				<display value="inactive"/>
+				<equivalence value ="equivalent"/>
+			</target>
+		</element>
+
+		<element>
+			<code value="issuedinerror"/>	
+			<display value="issuedinerror"/>
+			<target>
+				<code value="error"/>
+				<display value="error"/>
+				<equivalence value ="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="revoked"/>	
+			<display value="revoked"/>
+			<target>
+				<code value="suspended"/>
+				<display value="suspended"/>
+				<equivalence value ="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="pending"/>	
+			<display value="pending"/>
+			<target>
+				<code value="draft"/>
+				<display value="draft"/>
+				<equivalence value ="equivalent"/>
+			</target>
+		</element>
+
+
+	</group> 
+
+	<!-->
+
+	<element>
+		<codeSystem value="http://hl7.org/fhir/sid/ndc"/>
+		<code value="49281-0589-58"/>
+		<target>
+			<codeSystem value="http://hl7.org/fhir/sid/cvx"/>
+			<code value="114"/>
+			<equivalence value="wider"/>
+		</target>
+	</element>
+
+
+	<element>
+		<codeSystem value="http://hl7.org/fhir/sid/ndc"/>
+		<code value="49281-0514-00"/>
+		<target>
+			<codeSystem value="http://hl7.org/fhir/sid/cvx"/>
+			<code value="161"/>
+			<equivalence value="wider"/>
+		</target>
+	</element>
+	<element>
+		<codeSystem value="http://hl7.org/fhir/sid/ndc"/>
+		<code value="49281-0394-78"/>
+		<target>
+			<codeSystem value="http://hl7.org/fhir/sid/cvx"/>
+			<code value="141"/>
+			<equivalence value="wider"/>
+		</target>
+	</element>
+	<element>
+		<codeSystem value="http://hl7.org/fhir/sid/ndc"/>
+		<code value="49281-0014-88"/>
+		<target>
+			<codeSystem value="http://hl7.org/fhir/sid/cvx"/>
+			<code value="140"/>
+			<equivalence value="wider"/>
+		</target>
+	</element>
+	<element>
+		<codeSystem value="http://hl7.org/fhir/sid/ndc"/>
+		<code value="49281-0414-58"/>
+		<target>
+			<codeSystem value="http://hl7.org/fhir/sid/cvx"/>
+			<code value="150"/>
+			<equivalence value="wider"/>
+		</target>
+	</element>
+
+	-->
+	
+</ConceptMap>

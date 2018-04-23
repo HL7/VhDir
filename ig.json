@@ -383,6 +383,10 @@
         "base": "ValueSet-valueset-attestationmethod.html",
         "source": "valueset-attestationmethod.xml"
       },
+      "ConceptMap/valueset-qualification-status": {
+        "base": "ConceptMap-valueset-qualification-status.html",
+        "source": "conceptmap-valueset-qualification-status.xml" 
+      },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",
          "source":"capabilitystatement-client.xml"
