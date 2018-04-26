@@ -196,8 +196,8 @@
             <valueCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                    <code value="FBCA"/>
-                    <display value="FBCA"/>
+                    <code value="FPKI"/>
+                    <display value="Federal Public Key Infrastructure (FPKI)/Federal Trust Framework"/>
                     <userSelected value="true"/>
                 </coding>
             </valueCodeableConcept>

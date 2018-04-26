@@ -109,7 +109,7 @@
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="Practitioner.name.family">
       <path value="Practitioner.name.family" />

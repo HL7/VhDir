@@ -12,7 +12,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="This code system contains codes for documenting attributes of an Electronic Health Record (EHR) System."/>
+	<description value="This code system contains codes for describing attributes of an electronic health record (EHR) product."/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
@@ -33,16 +33,16 @@
 	<concept>
 		<code value="portal"/>
 		<display value="patient portal"/>
-		<definition value="A patient portal allows patient electronic access to an EHR portal."/>
+		<definition value="A patient portal is a secure online website that gives patients convenient, 24-hour access to personal health information from anywhere with an Internet connection"/>
 	</concept>
 	<concept>
 		<code value="messaging"/>
 		<display value="secure messaging"/>
-		<definition value="Funcionality that allows a patient secure messaging with the healthcare provider"/>
+		<definition value="EHR functionality that enables a user to send messages to, and receive messages from, a patient in a secure manner"/>
 	</concept>
 	<concept>
 		<code value="VDT"/>
 		<display value="view/download/transmit (VDT)"/>
-		<definition value="The EHR or EHR module includes funcionality to allow the patient to view, download, or transmit patient records to which they have access rights."/>
+		<definition value="EHR functionality that enables patients (and their authorized representatives) to use internet-based technology to view, download, and transmit their health information to a 3rd party."/>
 	</concept>
 </CodeSystem>

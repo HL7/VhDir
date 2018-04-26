@@ -174,13 +174,11 @@
             </extension>
             <extension url="history">
                 <extension url="status"> 
-                    <valueCodeableConcept>
-                        <coding> 
-                            <code value="active"/> 
-                            <display value="active"/> 
-                            <userSelected value="true"/> 
-                        </coding>
-                    </valueCodeableConcept>
+                    <valueCoding>
+                        <code value="active"/> 
+                        <display value="active"/> 
+                        <userSelected value="true"/> 
+                    </valueCoding>
                 </extension>
                 <extension url="period"> 
                     <valuePeriod> 

@@ -197,7 +197,7 @@
     <element id="Organization.contact.name.given">
       <path value="Organization.contact.name.given" />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="Organization.contact.telecom">
       <path value="Organization.contact.telecom" />
