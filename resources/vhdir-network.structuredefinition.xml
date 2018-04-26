@@ -140,7 +140,7 @@
       <path value="Organization.alias" />
       <label value="alias" />
       <short value="Alternate names by which the Network is known" />
-      <definition value="A list of alternate names that the network is known as, or was known as in the past." />
+      <definition value="A list of alternate names that the network is known as, or was known as in the past." />
       <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the network." />
       <requirements value="Over time networks may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the network was known by can be very useful." />
       <mustSupport value="true" />
