@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-limit-unit"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit"/>
+	<name value="VhDir Limit Unit"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicates the unit of any limit on a benefit in a product/plan."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+			<concept>
+				<code value="days"/>
+			</concept>
+			<concept>
+				<code value="visit"/>
+			</concept>
+			<concept>
+				<code value="procedure"/>
+			</concept>
+			<concept>
+				<code value="admission"/>
+			</concept>
+			<concept>
+				<code value="visithrs"/>
+			</concept>
+			<concept>
+				<code value="weekhrs"/>
+			</concept>
+			<concept>
+				<code value="mthhrs"/>
+			</concept>
+			<concept>
+				<code value="yrhrs"/>
+			</concept>
+			<concept>
+				<code value="daysperwk"/>
+			</concept>
+			<concept>
+				<code value="dayspermth"/>
+			</concept>
+			<concept>
+				<code value="daysperyr"/>
+			</concept>
+			<concept>
+				<code value="mthsperyr"/>
+			</concept>
+			<concept>
+				<code value="visitsperday"/>
+			</concept>
+			<concept>
+				<code value="visitsperweek"/>
+			</concept>
+			<concept>
+				<code value="visitspermth"/>
+			</concept>
+			<concept>
+				<code value="visitsperyr"/>
+			</concept>
+			<concept>
+				<code value="lifetimevisits"/>
+			</concept>
+			<concept>
+				<code value="txperweek"/>
+			</concept>
+			<concept>
+				<code value="txpermnth"/>
+			</concept>
+			<concept>
+				<code value="txlifetime"/>
+			</concept>
+			<concept>
+				<code value="admitslifetime"/>
+			</concept>
+			<concept>
+				<code value="procperwk"/>
+			</concept>
+			<concept>
+				<code value="procpermnth"/>
+			</concept>
+			<concept>
+				<code value="procperyr"/>
+			</concept>
+			<concept>
+				<code value="proclifetime"/>
+			</concept>
+			<concept>
+				<code value="daysperadmission"/>
+			</concept>
+			<concept>
+				<code value="procperepi"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

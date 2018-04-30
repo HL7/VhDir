@@ -299,6 +299,10 @@
         "base": "CodeSystem-codesystem-network-type.html",
         "source": "codesystem-network-type.xml"
       },
+      "CodeSystem/codesystem-payorcharacteristics": {
+        "base": "CodeSystem-codesystem-payorcharacteristics.html",
+        "source": "codesystem-payorcharacteristics.xml"
+      },
       "ValueSet/valueset-digitalcertificatetype": {
         "base": "ValueSet-valueset-digitalcertificatetype.html",
         "source": "valueset-digitalcertificatetype.xml"
@@ -382,6 +386,26 @@
       "ValueSet/valueset-vhdir-attestationmethod": {
         "base": "ValueSet-valueset-attestationmethod.html",
         "source": "valueset-attestationmethod.xml"
+      },
+      "ValueSet/valueset-vhdir-productplan-type": {
+        "base": "ValueSet-valueset-productplan-type.html",
+        "source": "valueset-productplan-type.xml" 
+      },
+      "ValueSet/valueset-vhdir-coverage-type": {
+        "base": "ValueSet-valueset-coverage-type.html",
+        "source": "valueset-coverage-type.xml" 
+      },
+      "ValueSet/valueset-vhdir-benefit-type": {
+        "base": "ValueSet-valueset-benefit-type.html",
+        "source": "valueset-benefit-type.xml" 
+      },
+      "ValueSet/valueset-vhdir-limit-unit": {
+        "base": "ValueSet-valueset-limit-unit.html",
+        "source": "valueset-limit-unit.xml" 
+      },
+      "ValueSet/valueset-vhdir-plan-type": {
+        "base": "ValueSet-valueset-plan-type.html",
+        "source": "valueset-plan-type.xml" 
       },
       "ConceptMap/valueset-qualification-status": {
         "base": "ConceptMap-valueset-qualification-status.html",

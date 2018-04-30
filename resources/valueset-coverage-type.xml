@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-coverage-type"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type"/>
+	<name value="VhDir Coverage Type"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate the type of coverage of a plan."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+			<concept>
+				<code value="medical"/>
+			</concept>
+			<concept>
+				<code value="dental"/>
+			</concept>
+			<concept>
+				<code value="mentHlth"/>
+			</concept>
+			<concept>
+				<code value="substanceabuse"/>
+			</concept>
+			<concept>
+				<code value="vision"/>
+			</concept>
+			<concept>
+				<code value="drug"/>
+			</concept>
+			<concept>
+				<code value="stc"/>
+			</concept>
+			<concept>
+				<code value="ltc"/>
+			</concept>
+			<concept>
+				<code value="hospice"/>
+			</concept>
+			<concept>
+				<code value="homehealth"/>
+			</concept>
+			<concept>
+				<code value="dmepos"/>
+			</concept>
+			<concept>
+				<code value="imagingadv"/>
+			</concept>
+			<concept>
+				<code value="prev"/>
+			</concept>
+			<concept>
+				<code value="rehab"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

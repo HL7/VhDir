@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-benefit-type"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type"/>
+	<name value="VhDir Benefit Type"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 - TBD"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate the type of benefit in a product/plan."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+		<concept>
+			<code value="pcpov"/>
+		</concept>
+		<concept>
+			<code value="specialistov"/>
+		</concept>
+		<concept>
+			<code value="mlpov"/>
+		</concept>
+		<concept>
+			<code value="outpatient"/>
+		</concept>
+		<concept>
+			<code value="outpatstx"/>
+		</concept>
+		<concept>
+			<code value="hospserv"/>
+		</concept>
+		<concept>
+			<code value="routinedental"/>
+		</concept>
+		<concept>
+			<code value="infertilitytx"/>
+		</concept>
+		<concept>
+			<code value="ltnhc"/>
+		</concept>
+		<concept>
+			<code value="privatenurse"/>
+		</concept>
+		<concept>
+			<code value="routineeye"/>
+		</concept>
+		<concept>
+			<code value="ucservice"/>
+		</concept>
+		<concept>
+			<code value="homehealth"/>
+		</concept>
+		<concept>
+			<code value="erservice"/>
+		</concept>
+		<concept>
+			<code value="ambulance"/>
+		</concept>
+		<concept>
+			<code value="inpatienthospital"/>
+		</concept>
+		<concept>
+			<code value="inpatientprovider"/>
+		</concept>
+		<concept>
+			<code value="bariatricsurg"/>
+		</concept>
+		<concept>
+			<code value="cosmeticsurg"/>
+		</concept>
+		<concept>
+			<code value="skillednursing"/>
+		</concept>
+		<concept>
+			<code value="ppnatalcare"/>
+		</concept>
+		<concept>
+			<code value="maternitycare"/>
+		</concept>
+		<concept>
+			<code value="menthlthoutp"/>
+		</concept>
+		<concept>
+			<code value="menthlthinp"/>
+		</concept>
+		<concept>
+			<code value="sadoutp"/>
+		</concept>
+		<concept>
+			<code value="sadinp"/>
+		</concept>
+		<concept>
+			<code value="drggenric"/>
+		</concept>
+		<concept>
+			<code value="drgbrand"/>
+		</concept>
+		<concept>
+			<code value="drgnonpreferred"/>
+		</concept>
+		<concept>
+			<code value="drgspecialty"/>
+		</concept>
+		<concept>
+			<code value="rehaboutp"/>
+		</concept>
+		<concept>
+			<code value="servicehablitation"/>
+		</concept>
+		<concept>
+			<code value="chiro"/>
+		</concept>
+		<concept>
+			<code value="dme"/>
+		</concept>
+		<concept>
+			<code value="hearingaids"/>
+		</concept>
+		<concept>
+			<code value="imgctpetmri"/>
+		</concept>
+		<concept>
+			<code value="prev"/>
+		</concept>
+		<concept>
+			<code value="rtnpod"/>
+		</concept>
+		<concept>
+			<code value="acupuncture"/>
+		</concept>
+		<concept>
+			<code value="weightloss"/>
+		</concept>
+		<concept>
+			<code value="rtneyechld"/>
+		</concept>
+		<concept>
+			<code value="glasseschld"/>
+		</concept>
+		<concept>
+			<code value="rtndntlchld"/>
+		</concept>
+		<concept>
+			<code value="speachthpy"/>
+		</concept>
+		<concept>
+			<code value="rehaboccandpt"/>
+		</concept>
+		<concept>
+			<code value="wellbaby"/>
+		</concept>
+		<concept>
+			<code value="laboutp"/>
+		</concept>
+		<concept>
+			<code value="imagingdx"/>
+		</concept>
+		<concept>
+			<code value="dntlbaschld"/>
+		</concept>
+		<concept>
+			<code value="orthochld"/>
+		</concept>
+		<concept>
+			<code value="dntlmajchld"/>
+		</concept>
+		<concept>
+			<code value="dntlbasadlt"/>
+		</concept>
+		<concept>
+			<code value="orthodadlt"/>
+		</concept>
+		<concept>
+			<code value="dntlmajadlt"/>
+		</concept>
+		<concept>
+			<code value="abortion"/>
+		</concept>
+		<concept>
+			<code value="transplant"/>
+		</concept>
+		<concept>
+			<code value="accdntl"/>
+		</concept>
+		<concept>
+			<code value="dialysis"/>
+		</concept>
+		<concept>
+			<code value="testallrgy"/>
+		</concept>
+		<concept>
+			<code value="chemotherapy"/>
+		</concept>
+		<concept>
+			<code value="radiation"/>
+		</concept>
+		<concept>
+			<code value="edudiab"/>
+		</concept>
+		<concept>
+			<code value="prosthetic"/>
+		</concept>
+		<concept>
+			<code value="infusiontx"/>
+		</concept>
+		<concept>
+			<code value="tmjtx"/>
+		</concept>
+		<concept>
+			<code value="nutrition"/>
+		</concept>
+		<concept>
+			<code value="reconsurg"/>
+		</concept>
+		</include>
+	</compose>
+</ValueSet>

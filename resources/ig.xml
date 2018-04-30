@@ -408,6 +408,41 @@
 		</resource>		
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-productplan-type" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-productplan-type" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-coverage-type" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-coverage-type" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-benefit-type" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-benefit-type" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-limit-unit" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-limit-unit" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="vhdir-plan-type" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-plan-type" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
 			<reference>
 				<reference value="CodeSystem/codesystem-digitalcertificate" />
@@ -474,6 +509,13 @@
 			<name value="network-type" />
 			<reference>
 				<reference value="CodeSystem/codesystem-network-type" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
+			<name value="payorcharacteristics" />
+			<reference>
+				<reference value="CodeSystem/codesystem-payorcharacteristics" />
 			</reference>
 		</resource>
 		<resource>
