@@ -608,7 +608,7 @@
     <concept>
         <code value="cat"/>
         <display value="Catastrophic"/>
-        <definition value="'Catastrophic' health insurance plans have low monthly premiums and very high deductibles. They may cover worst-case scenarios, like getting seriously sick or injured. Patient pays most routine medical expenses. "/>
+        <definition value="'Catastrophic' health insurance plans have low monthly premiums and very high deductibles. They may cover worst-case scenarios, like getting seriously sick or injured. Patient pays most routine medical expenses."/>
     </concept>
     <concept>
         <code value="bronze"/>

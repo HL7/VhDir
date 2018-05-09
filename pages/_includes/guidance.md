@@ -233,7 +233,7 @@ There are several potential ways to search for resources associated with a speci
 Validated Healthcare Directory servers are not required to resolve full URLs that are external to their environment.
 
 ### Guidance on limiting the number of search results 
-In order to manage the number of search results returned, the server may choose to return the results in a manner consistent with FHIR Bulk Data Access Standards. For a simple RESTful search, the page links are contained in the returned bundle as links. See the [FHIR Paging] (https://www.hl7.org/fhir/http.html#paging) and [Bulk Data Aceess] (http://www.healthintersections.com.au/?p=2689) for more information.
+In order to manage the number of search results returned, the server may choose to return the results in a manner consistent with FHIR Bulk Data Access Standards. For a simple RESTful search, the page links are contained in the returned bundle as links. See the [FHIR Paging](https://www.hl7.org/fhir/http.html#paging) and [Bulk Data Access](http://www.healthintersections.com.au/?p=2689) for more information.
 
 ------------------------------------------------------------------------
 
