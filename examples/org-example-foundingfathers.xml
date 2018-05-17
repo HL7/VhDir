@@ -233,9 +233,6 @@
                     </identifier>
                     <display value="The Joint Commission"/> 
                 </assigner>
-                <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-                    <valueCode value="active"/>
-                </extension>
             </valueIdentifier>
         </extension>
         <extension url="code">
@@ -285,4 +282,12 @@
             </valueCodeableConcept>
         </extension>
     </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"> <!-- Founding Fathers offers the Patriot PPO Standard plan to its employees -->
+        <valueReference>
+            <reference value="http://hl7.org/fhir/ig/vhdir/ProductPlan/productplan1"/>
+            <display value="Patriot PPO Standard plan"/>
+        </valueReference>
+    </extension>
+
 </Organization>

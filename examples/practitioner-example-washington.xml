@@ -91,9 +91,6 @@
                 <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/> 
                 <display value="DC Board of Medicine"/> 
             </assigner>
-            <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-                <valueCode value="active"/> 
-            </extension>
         </identifier>
         <code> 
             <coding> 
@@ -142,9 +139,6 @@
                 <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/> 
                 <display value="American Board of Internal Medicine"/> 
             </assigner>
-            <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-                <valueCode value="active"/> 
-            </extension>
         </identifier>
         <code> 
             <coding> 
@@ -197,9 +191,6 @@
                 <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
-            <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-                <valueCode value="active"/>
-            </extension>
         </identifier>
         <code> 
             <coding> 

@@ -19,6 +19,7 @@ This profile modifies the base Organization resource in the following manner:
 1.  [Description](StructureDefinition-org-description.html) (0..1) - a friendly description of the organization
 1.  [Qualification](StructureDefinition-qualification.html) (0..*) - indicates whether the organization has any formal qualifications 
 1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the organization
+1.  [ProductPlan](StructureDefinition-productplan-reference.html) (0..*) - indicates the health insurance products the organization offers to its employees
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with an organization is restricted
 
 *  Adds new value sets/updates value set bindings:

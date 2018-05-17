@@ -122,7 +122,7 @@
     <element id="CareTeam.category">
       <path value="CareTeam.category" />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="CareTeam.subject">
       <path value="CareTeam.subject" />
@@ -144,6 +144,10 @@
     </element>
     <element id="CareTeam.participant.onBehalfOf">
       <path value="CareTeam.participant.onBehalfOf"/>
+      <max value="0"/>
+    </element>
+    <element id="CareTeam.reasonCode">
+      <path value="CareTeam.reasonCode"/>
       <max value="0"/>
     </element>
     <element id="CareTeam.reasonReference">

@@ -214,6 +214,11 @@
         "defns":"StructureDefinition-location-reference-definitions.html",
         "source":"location-reference.structuredefinition.xml"
       },
+      "StructureDefinition/productplan-reference":{
+        "base":"StructureDefinition-productplan-reference.html",
+        "defns":"StructureDefinition-productplan-reference-definitions.html",
+        "source":"productplan-reference.structuredefinition.xml"
+      },
       "StructureDefinition/newpatientprofile":{
         "base":"StructureDefinition-newpatientprofile.html",
         "defns":"StructureDefinition-newpatientprofile-definitions.html",

@@ -182,9 +182,6 @@
                     </identifier>
                     <display value="US Drug Enforcement Administration (DEA)"/>
                 </assigner>
-                <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-                    <valueCode value="active"/> 
-                </extension>
             </valueIdentifier>
         </extension>
         <extension url="code"> 

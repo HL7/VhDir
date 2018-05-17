@@ -8,7 +8,7 @@ A care team may be functionally "empty," i.e. the roles on the care team are not
 
 This profile modifies the base CareTeam resource in the following manner:
 
-*  Constrains the cardinality of `careTeam.status` (1..1), `careTeam.category` (1..1), `careTeam.context` (0..0), `careTeam.subject` (0..0), `careTeam.onBehalfOf` (0..0), `careTeam.managingOrganization` (0..1), `careTeam.reasonReference` (0..0), `careTeam.telecom.system` (1..1), and `careTeam.telecom.value` (1..1)
+*  Constrains the cardinality of `careTeam.status` (1..1), `careTeam.category` (1..*), `careTeam.context` (0..0), `careTeam.subject` (0..0), `careTeam.onBehalfOf` (0..0), `careTeam.managingOrganization` (0..1), `careTeam.reasonCode` (0..0), `careTeam.reasonReference` (0..0), `careTeam.telecom.system` (1..1), and `careTeam.telecom.value` (1..1)
 
 *   Modifies the data type of careTeam.note.author (removes references to Patient and RelatedPerson resources)
 
@@ -43,7 +43,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 Each CareTeam must have:
 
 1.  One status code in `careTeam.status`
-1.  One type of care team in `careTeam.category`
+1.  At least one type of care team in `careTeam.category`
 
 
 **Profile specific implementation guidance:**

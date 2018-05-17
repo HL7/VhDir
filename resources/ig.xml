@@ -219,6 +219,13 @@
 		</resource>
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="ProductPlan-reference" />
+			<reference>
+				<reference value="StructureDefinition/productplan-reference" />
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="newpatientprofile" />
 			<reference>
 				<reference value="StructureDefinition/newpatientprofile" />
