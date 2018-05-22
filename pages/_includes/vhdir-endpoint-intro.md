@@ -8,6 +8,8 @@ This profile modifies the base Endpoint resource in the following manner:
 
 *  Constrains the cardinality of `endpoint.contact` (0..1), `endpoint.contact.system` (1..1), and `endpoint.contact.value` (1..1)
 
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
 *  Adds extensions:
 
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of an endpoint's identifier

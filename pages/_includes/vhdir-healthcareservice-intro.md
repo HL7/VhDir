@@ -8,6 +8,8 @@ This profile modifies the base HealthcareService resource in the following manne
 
 *  Constrains the cardinality of `healthcareService.active` (1..1), `healthcareService.telecom.system` (1..1), and `healthcareService.telecom.value` (1..1)
 
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
 *  Adds extensions:
 
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a service's identifier

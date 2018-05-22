@@ -8,6 +8,8 @@ This profile modifies the base PractitionerRole resource in the following manner
 
 *  Constrains the cardinality of `practitionerRole.active` (1..1) and `practitionerRole.code` (1..*)
 
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
 *  Adds extensions:
 
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a practitionerRole's identifier

@@ -12,6 +12,8 @@ This profile modifies the base CareTeam resource in the following manner:
 
 *   Modifies the data type of careTeam.note.author (removes references to Patient and RelatedPerson resources)
 
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
 *  Adds extensions:
 
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a care team's identifier

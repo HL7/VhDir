@@ -16,6 +16,25 @@ OrganizationRole is similar in structure to practitionerRole. Instead of referen
 
 OrganizationRole is also used to indicate when an organization provides services for a health insurance provider network.
 
+--
+
+This profile modifies the base OrganizationRole resource in the following manner:
+
+*  Constrains the cardinality of `organizationRole.active` (1..1), `organizationRole.telecom.system` (1..1), and `organizationRole.telecom.value` (1..1)
+
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
+*  Adds extensions:
+
+1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of an identifier for the role
+1.  [Via intermediary](StructureDefinition-contactpoint-viaintermediary.html) (0..1) - a reference to an alternative point of contact for this role
+1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when the point of contact for this role is available
+1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with this role is restricted
+
+*  Adds new value sets/updates value set bindings:
+
+TBD
+
 **Examples:**
 
 The following are example uses for the vhdir-organizationRole profile:
@@ -36,8 +55,3 @@ Each OrganizationRole must have:
 **Profile specific implementation guidance:**
 
 - TBD
-
-
-**Terminology**
-
-TBD

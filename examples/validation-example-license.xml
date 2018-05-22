@@ -1,0 +1,93 @@
+<VerificationResult  xmlns="http://hl7.org/fhir">
+
+	<id value="ver1"/>
+
+    <target> <!-- The target is a practitioner named George Washington -->
+        <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1"/>
+        <display value="George Washington"/>
+    </target>
+
+    <targetLocation value="Practitioner.qualification[0]"/> <!-- Specifically, George Washington's medical license -->
+
+    <need value="periodic"/> <!-- The license will be periodically validated -->
+
+    <status value="validated"/> <!-- current validation status is validated -->
+
+    <statusDate value="2018-01-23T10:45:00-05:00"/> <!-- the license was validated on January 23, 2018 at 10:45 am ET -->
+
+    <validationType value="primary"/> <!-- the license was validated against a primary source -->
+
+    <validationProcess> <!-- the license was validated against a primary source -->
+        <coding>
+            <system value="http://hl7.org/fhir/validation-process"/>
+            <code value="primary"/>
+            <display value="primary source"/>
+        </coding>
+    </validationProcess>
+
+    <frequency> <!-- the license is validated annually -->
+        <repeat>
+            <frequency value="1"/>
+            <period value="1"/>
+            <periodUnit value="a"/>
+        </repeat>
+    </frequency>
+
+    <lastPerformed value="2018-01-23T10:45:00-05:00"/> <!-- validation was last completed on January 23, 2018 at 10:45 am ET -->
+
+    <nextScheduled value="2019-01-23"/> <!-- validation is next scheduled in one year, on January 23, 2019 -->
+
+    <failureAction value="fatal"/> <!-- failure of the validation process is sufficient to suspend the resource/element  -->
+
+    <primarySource> <!-- Describes the primary source the license was validated against, the DC Board of Medicine -->
+        <organization>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <display value="DC Board of Medicine"/>
+        </organization>
+        <type> <!-- The type of primary source is a medical license board -->
+            <coding>
+                <system value="http://hl7.org/fhir/primary-source-type"/>
+                <code value="lic-board"/>
+                <display value="License Board"/>
+                <userSelected value="true"/>
+            </coding>
+        </type>
+        <validationProcess> <!-- The method of validation with the primary source is manual, via email -->
+            <coding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/validation-process"/> <!-- code system hasn't been created yet, this is a placeholder -->
+                <code value="manual"/>
+                <display value="Manual"/>
+            </coding>
+            <text value="via email"/>
+        </validationProcess>
+        <validationStatus value="successful"/> <!-- validation against the primary source was successful -->
+        <validationDate value="2018-01-23"/> <!-- the license was validated against the primary source on January 23, 2018  -->
+        <canPushUpdates value="yes"/> <!-- The primary source (DC Board of Medicine) is able to push updates if the status of the license changes -->
+        <pushTypeAvailable value="source"/> <!-- The primary source (DC Board of Medicine) defines the types of updates it can push -->
+    </primarySource>
+
+    <attestation> <!-- Describes the entity that attested to the information being validated, George Washington  -->
+        <source>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/prac1"/>
+            <display value="George Washington"/>
+        </source>
+        <method> <!-- George Washington attested to the information himself -->
+            <coding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/attestation-method"/> <!-- code system hasn't been created yet, this is a placeholder -->
+                <code value="owner"/>
+                <display value="Owner"/>
+                <userSelected value="true"/>
+            </coding>
+        </method>
+        <date value="2018-01-09"/> <!-- George Washington attested to the information on January 9, 2018 -->
+        <sourceIdentityCertificate value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+    </attestation>
+
+    <validator> <!-- Describes the entity that validated the information. In this case, the validator is the same as the primary source, the DC Board of Medicine -->
+        <organization>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <display value="DC Board of Medicine"/>
+        </organization>
+        <identityCertificate value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"/>
+    </validator>
+</VerificationResult>

@@ -642,6 +642,14 @@
 				<reference value="Organization/patriotppo" />
 			</reference>
 		</resource>
+		<resource>
+			<name value="Validation - Practitioner License"/>
+			<description value="An example element validation"/>
+			<reference>
+				<reference value="VerificationResult/ver1"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
 		<!-- Avinash Added ConceptMap-->
 		<resource>
 			<exampleBoolean value="false" />

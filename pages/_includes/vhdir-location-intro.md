@@ -8,6 +8,8 @@ This profile modifies the base Lractitioner resource in the following manner:
 
 *  Constrains the cardinality of `location.status` (1..1), `location.operationalStatus` (0..0), `location.mode` (0..0), `location.telecom.system` (1..1), and `location.telecom.value` (1..1), 
 
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
 *  Adds extensions:
 
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a location's identifier

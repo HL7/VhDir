@@ -460,6 +460,10 @@
         "base":"Organization-patriotppo.html",
         "source":"network-example-patriotppo.xml"
       },
+      "VerificationResult/ver1":{
+        "base":"VerificationResult-license.html",
+        "source":"validation-example-license.xml"
+      },
       "CapabilityStatement/server":{
          "base":"CapabilityStatement-server.html",
          "source":"capabilitystatement-server.xml"

@@ -1,8 +1,50 @@
-This profile sets minimum expectations for searching for and fetching information associated with validation. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the verificationResult resource when using this profile.
+This profile sets minimum expectations for searching for and fetching information associated with validation. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the VerificationResult resource when using this profile.
 
 **Background & Scope**
 
-This implementation guide was developed to support the need for validated provider data in many different healthcare workflows. It profiles the verificationResult resource to convey information about the validation of any data in a validated healthcare directory, including how it was validated, who validated it, and where the data came from.
+This implementation guide was developed to support the need for validated provider data in many different healthcare workflows. It profiles the verificationResult resource to convey information about the validation status of any data in a validated healthcare directory, including how it was validated, who validated it, and where the data came from.
+
+This profile modifies the base VerificationResult resource in the following manner:
+
+*  Constrains the cardinality of `verificationResult.need` (1..1), `verificationResult.statusDate` (1..1), `verificationResult.validationType` (1..1), `verificationResult.validationProcess` (1..*), `verificationResult.failureAction` (1..1), `verificationResult.primarySource.type` (1..*), `verificationResult.primarySource.validationProcess` (1..*), `verificationResult.primarySource.canPushUpdates` (1..1), `verificationResult.attestation.method` (1..1), `verificationResult.attestation.date` (1..1),
+
+*  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
+
+*  Adds new value sets/updates value set bindings:
+
+TBD
+
+**Examples:**
+
+The following are example uses for the vhdir-validation profile:
+
+-  [Validation of a practitioner's medical license](VerificationResult-license.html)
+
+
+**Mandatory Data Elements**
+
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+
+Each VerificationResult resource must have:
+1.  At least one target in `verificationResult.target`
+1.  A coded representation of how often the target is validated in `verificationResult.need`
+1.  At least one coded representation of the target's current validation status in `verificationResult.status`
+1.  A date/time when the target's validation status was last updated in `verificationResult.statusDate`
+1.  A coded representation of whether the target is validated against a primary source(s) in `verificationResult.validationType`
+1.  At least one coded/text representation of the process by which the target was validated in `verificationResult.validationProcess`
+1.  A coded representation of what happens if validation of the target fails in `verificationResult.failureAction`
+1.  For each primary source described:
+    1.  At least one coded/text representation of the type of primary source in `verificationResult.primarySource.type`
+    1.  At least one coded/text representation of the method for communicating with the primary source in `verificationResult.primarySource.validationProcess`
+    1.  A coded indication of whether the primary source can push updates/alerts in `verificationResult.primarySource.canPushUpdates`
+1.  For each attestation source described:
+    1.  One coded/text representation of who is providing attested information in `verificationResult.attestation.method`
+    1.  One date on which the target was attested to in `verificationResult.attestation.date`
+1.  For each validator described:
+    1.  One reference to the Organization resource for the validator in `verificationResult.validator.organization`
+
+
+**Profile specific implementation guidance:**
 
 The core of the verificationResult resource includes basic information about how data was validated:
 
@@ -17,7 +59,7 @@ The core of the verificationResult resource includes basic information about how
 The resource also provides information about entities involved in the validation process:
 
 `verificationResult.primarySource` provides information about the primary source(s) the target was validated against
-*  `identifier` and `organization` identify the primary source, and `type` indicates what the primary source is
+*  `organization` identifies the primary source, and `type` indicates what the primary source is
 *  `validationProcess` indicates how an entity can communicate with the primary source
 *  `validationStatus`, and `validationDate` describe the status of the validation of the target against the primary source
 *  `canPushUpdates` and `pushTypeAvailable` indicate whether a primary source can push updates or alerts (e.g. alerting the validated healthcare directory if a license board suspends a practitioner's license)
@@ -29,45 +71,6 @@ The resource also provides information about entities involved in the validation
 *  `sourceIdentityCertificate` and `proxyIdentityCertificate` assert the identity of the individual attesting to information and any proxy providing attested information on their behalf. <!-- `signedSourceAttestation` and `signedProxyRight` assert that information was attested to/provided by the entity with the right to do so.-->
 
 `verificationResult.validator` provides information about the entity performing the validation of the target
-*  `identifier` and `organization` identify the validating organization, and `identityCertificate` asserts their identity
+*  `organization` identifies the validating organization, and `identityCertificate` asserts their identity
 <!--*  `signedValidatorAttestation` asserts that the validator has validated the target -->
-*  `dateValidated` indicates when the validating organization validated the target
 
-**Examples:**
-
-The following are example uses for the vhdir-validation profile:
-
--  TBD
-
-
-**Mandatory Data Elements**
-
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
-
-<!--Each validation resource must have:
-
-1.  At least one target in `validation.target`
-1.  One indication of what happens if validation of the target fails in `validation.failureAction`
-1.  For each primary source described:
-    1.  At least one type of primary source in `validation.primarySource.sourceType`
-    1.  At least one indication of the primary source validation process in `validation.primarySource.sourceValidationProcess`
-    1.  One indication of whether the primary source can push updates/alerts in `validation.primarySource.sourcePush`
-1.  For each attestation source described:
-    1.  One individual that attested to the target information in `validation.attestation.attestationSource`
-1.  For each validator described:
-    1.  One reference to the organization resource for the validator in `validation.validator.validatorOrg`-->
-
-
-**Profile specific implementation guidance:**
-
-- TBD
-
-
-**Extensions:**
-
-There are no extensions to the validation resource.
-
-
-**Terminology**
-
-TBD
