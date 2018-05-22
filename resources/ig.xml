@@ -394,6 +394,13 @@
 		</resource>		
 		<resource>
 			<exampleBoolean value="false" />
+			<name value="vhdir-primarysourcefailureaction" />
+			<reference>
+				<reference value="ValueSet/valueset-vhdir-primarysourcefailureaction" />
+			</reference>
+		</resource>		
+		<resource>
+			<exampleBoolean value="false" />
 			<name value="vhdir-primarysourcepush" />
 			<reference>
 				<reference value="ValueSet/valueset-vhdir-primarysourcepush" />
