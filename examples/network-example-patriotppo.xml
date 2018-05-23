@@ -18,9 +18,9 @@
         </type>
         <system value="https://www.qhpcertification.cms.gov/s/QHP"/>
         <value value="DCN001"/>
-        <assigner> 
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/> 
-            <display value="Centers for Medicare and Medicaid Services"/> 
+        <assigner>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+            <display value="Centers for Medicare and Medicaid Services"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
@@ -140,7 +140,7 @@
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This network is active in the DC metro area -->
         <valueReference>
             <reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
-            <display value="Washington, DC metro area"/> 
+            <display value="Washington, DC metro area"/>
         </valueReference>
     </extension>
 

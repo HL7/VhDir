@@ -10,23 +10,23 @@
         <use value="secondary"/>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/> 
-                <code value="PRN"/> 
-                <display value="Provider number"/> 
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="PRN"/>
+                <display value="Provider number"/>
             </coding>
-            <text value="Hospital ID"/> 
+            <text value="Hospital ID"/>
         </type>
-        <system value="www.foundingfathersmemorial.com"/> 
-        <value value="provider276"/> 
+        <system value="www.foundingfathersmemorial.com"/>
+        <value value="provider276"/>
         <period>
             <start value="2016-02-22"/>
         </period>
         <assigner>
             <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/> 
+            <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/> 
+            <valueCode value="active"/>
         </extension>
     </identifier>
 
@@ -37,7 +37,7 @@
     </period>
 
     <practitioner> <!-- George Washington -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1"/> 
+        <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1"/>
         <display value="Geroge Washington"/>
     </practitioner>
 
@@ -47,29 +47,29 @@
     </organization>
 
     <code> <!-- George Washington is a doctor at Founding Fathers -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/practitioner-role"/>
-            <code value="doctor"/> 
-            <display value="Doctor"/> 
+            <code value="doctor"/>
+            <display value="Doctor"/>
         </coding>
     </code>
 
     <specialty > <!-- George Washington is a Cardiologist -->
-        <coding> 
-            <system value="http://snomed.info/sct"/> 
-            <code value="394579002"/> 
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394579002"/>
             <display value="Cardiology"/>
         </coding>
     </specialty>
 
     <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/> 
-        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/> 
+        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
     </location>
 
     <healthcareService> <!-- Reference to a cardiac diagnostics service -->
         <reference value="http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology"/>
-        <display value="Founding Fathers Memorial Hospital cardiac services"/> 
+        <display value="Founding Fathers Memorial Hospital cardiac services"/>
     </healthcareService>
 
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
@@ -96,7 +96,7 @@
     </endpoint>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"> <!-- Dr. Washington is a member of the Patriot PPO insurance network in this role -->
-        <valueReference> 
+        <valueReference>
             <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
             <display value="Patriot Preferred Provider Network"/>
         </valueReference>
@@ -105,38 +105,38 @@
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> <!-- An x.509v3 digital identity certificate associated with Dr. Washington -->
         <extension url="type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="ind"/>
                 <display value="Individual"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="signing"/>
                 <display value="Signing"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="certificateStandard">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="x.509v3"/>
                 <display value="x.509v3"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="certificate">
             <valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/> 
-        </extension>    
+        </extension>
         <extension url="expirationDate">
-            <valueDate value="1970-09-03"/> 
+            <valueDate value="1970-09-03"/>
         </extension>
         <extension url="trustFramework">
-            <valueCodeableConcept> 
+            <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
-                    <code value="direct"/> 
-                    <display value="DirectTrust"/> 
-                    <userSelected value="true"/> 
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <code value="direct"/>
+                    <display value="DirectTrust"/>
+                    <userSelected value="true"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
@@ -146,7 +146,7 @@
         <extension url="acceptingPatients">
             <valueBoolean value="true"/>
         </extension>
-        <extension url="network"> 
+        <extension url="network">
             <valueReference>
                 <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
                 <display value="Patriot Preferred Provider Network"/>
@@ -155,12 +155,12 @@
     </extension>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"> <!-- Describes conditions under which Dr. Washington is accepting new patients in this role -->
-        <valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/> 
+        <valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
     </extension>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification"> <!-- Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location -->
         <extension url="identifier">
-            <valueIdentifier> 
+            <valueIdentifier>
                 <use value="official"/>
                 <type>
                     <coding>
@@ -184,9 +184,9 @@
                 </assigner>
             </valueIdentifier>
         </extension>
-        <extension url="code"> 
-            <valueCodeableConcept> 
-                <text value="DEA Registration Number"/> 
+        <extension url="code">
+            <valueCodeableConcept>
+                <text value="DEA Registration Number"/>
             </valueCodeableConcept>
         </extension>
         <extension url="issuer">
@@ -202,13 +202,13 @@
                 <system value="http://hl7.org/fhir/resource-status"/>
                 <code value="active"/>
                 <display value="active"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="period">
-            <valuePeriod> 
+            <valuePeriod>
                 <start value="2016-02-26"/>
                 <end value="2019-02-26"/>
             </valuePeriod>
         </extension>
     </extension>
-</PractitionerRole>    
+</PractitionerRole>

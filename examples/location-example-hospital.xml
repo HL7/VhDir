@@ -6,26 +6,26 @@
     </meta>
 
     <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
-        <use value="secondary"/> 
-        <system value="www.foundingfathersmemorial.com"/> 
-        <value value="main campus"/> 
-        <assigner> 
+        <use value="secondary"/>
+        <system value="www.foundingfathersmemorial.com"/>
+        <value value="main campus"/>
+        <assigner>
             <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/> 
+            <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/> 
+            <valueCode value="active"/>
         </extension>
     </identifier>
 
     <status value="active"/> <!-- this record is active -->
 
-    <name value="Founding Fathers Memorial Hospital"/> 
+    <name value="Founding Fathers Memorial Hospital"/>
 
-    <description value="Main campus of Founding Fathers Memorial Hospital"/> 
+    <description value="Main campus of Founding Fathers Memorial Hospital"/>
 
     <type> <!-- This location is a hospital -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/v3/RoleCode"/>
             <code value="HOSP"/>
             <display value="Hospital"/> 
@@ -49,15 +49,15 @@
         <use value="work"/>
         <type value="both"/>
         <text value="330 C Street SW, Washington, DC 20201, USA"/>
-        <line value="330 C Street SW"/> 
-        <city value="Washington"/> 
-        <state value="DC"/> 
-        <postalCode value="20201"/> 
-        <country value="USA"/> 
+        <line value="330 C Street SW"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20201"/>
+        <country value="USA"/>
 	</address>
 
     <physicalType> <!-- This location is a collection of buildings or other locations such as a site or a campus -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/location-physical-type"/>
             <code value="si"/>
             <display value="Site"/>
@@ -66,13 +66,13 @@
     </physicalType>
 
     <position> <!-- Coordinates of this location -->
-        <longitude value="38.8859395"/> 
-        <latitude value="-77.016469"/> 
+        <longitude value="38.8859395"/>
+        <latitude value="-77.016469"/>
     </position>
 
     <managingOrganization> <!-- This location is managed by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/> 
-        <display value="Founding Fathers Memorial Hospital"/> 
+        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
     </managingOrganization>
 
     <hoursOfOperation> <!-- This location is always open -->
@@ -94,11 +94,11 @@
     </endpoint>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- Indicates that this location is handicap accessible and can provide assistance to persons with disabilities -->
-        <valueCodeableConcept> 
-            <coding> 
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/> 
-                <code value="handiaccess"/> 
-                <display value="handicap accessible"/> 
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
+                <code value="handiaccess"/>
+                <display value="handicap accessible"/>
             </coding>
             <text value="Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"/>
         </valueCodeableConcept>
@@ -130,8 +130,8 @@
                 </coding>
             </valueCodeableConcept>
         </extension>
-        <extension url="certificationID"> 
-            <valueString value="04282014-1111-2"/> 
+        <extension url="certificationID">
+            <valueString value="04282014-1111-2"/>
         </extension>
     </extension>
 

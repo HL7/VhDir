@@ -6,29 +6,29 @@
     </meta>
 
     <identifier> <!-- This location is the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <use value="secondary"/> 
-        <system value="www.foundingfathersmemorial.com/heart"/> 
-        <value value="Heart and Vascular Institute"/> 
-        <assigner> 
+        <use value="secondary"/>
+        <system value="www.foundingfathersmemorial.com/heart"/>
+        <value value="Heart and Vascular Institute"/>
+        <assigner>
             <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/> 
+            <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/> 
+            <valueCode value="active"/>
         </extension>
     </identifier>
 
     <status value="active"/> <!-- this record is active -->
 
-    <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/> 
+    <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
 
-    <description value="Heart and Vascular Institute at Founding Fathers Memorial Hospital"/> 
+    <description value="Heart and Vascular Institute at Founding Fathers Memorial Hospital"/>
 
     <type> <!-- This location is a cardiac center -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/v3/RoleCode"/>
             <code value="CARD"/>
-            <display value="Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities"/> 
+            <display value="Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities"/>
             <userSelected value="true"/>
         </coding>
         <text value="Cardiac Center"/>
@@ -88,7 +88,7 @@
                         </identifier>
                         <display value=""/> <!-- string 0..1 -->
                     </assigner>
-                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"> 
+                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
                         <valueCode value=""/> <!-- code 1..1 -->
                     </extension>
                 </identifier>

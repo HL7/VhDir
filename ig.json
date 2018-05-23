@@ -380,9 +380,9 @@
         "base": "ValueSet-valueset-primarysourcevalidationstatus.html",
         "source": "valueset-primarysourcevalidationstatus.xml"
       },
-      "ValueSet/valueset-primarysourcefailureaction": {
-        "base": "ValueSet-valueset-primarysourcefailureaction.html",
-        "source": "valueset-primarysourcefailureaction.xml"
+      "ValueSet/valueset-failureaction": {
+        "base": "ValueSet-valueset-failureaction.html",
+        "source": "valueset-failureaction.xml"
       },
       "ValueSet/valueset-primarysourcepush": {
         "base": "ValueSet-valueset-primarysourcepush.html",

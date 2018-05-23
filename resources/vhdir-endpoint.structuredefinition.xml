@@ -104,7 +104,7 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
       </type>
-    </element>        
+    </element>
     <element id="Endpoint.contact">
       <path value="Endpoint.contact" />
       <max value="1" />

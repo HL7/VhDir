@@ -5,41 +5,41 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
 	</meta>
     <identifier> <!-- Practitioner's NPI number -->
-        <use value="official"/> 
-        <type> 
-            <coding> 
-                <system value="http://hl7.org/fhir/v2/0203"/> 
-                <code value="PRN"/> 
-                <display value="Provider number"/> 
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="PRN"/>
+                <display value="Provider number"/>
                 <userSelected value="true"/>
             </coding>
-            <text value="NPI"/> 
+            <text value="NPI"/>
         </type>
         <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="1234567893"/>
         <period>
-            <start value="2005-07-16T09:00:00-05:00"/> 
+            <start value="2005-07-16T09:00:00-05:00"/>
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/> 
-            <display value="CMS"/> 
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/>
+            <display value="CMS"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/> 
+            <valueCode value="active"/>
         </extension>
     </identifier>
 	<active value="true"/> <!-- This record is active -->
 	<name> <!-- Name is George Washington -->
-        <use value="official"/> 
-        <text value="George Washington"/> 
-        <family value="Washington"/> 
-        <given value="George"/>  
+        <use value="official"/>
+        <text value="George Washington"/>
+        <family value="Washington"/>
+        <given value="George"/>
 	</name>
     <telecom> <!-- Practitioner's mobile phone number is 202-123-4567 -->
-        <system value="phone"/> 
-        <value value="202-123-4567"/> 
+        <system value="phone"/>
+        <value value="202-123-4567"/>
         <use value="mobile"/>
-        <rank value="1"/> 
+        <rank value="1"/>
     </telecom>
     <telecom> <!-- Practitioner's personal email is george.washington@whitehouse.gov -->
         <system value="email"/>
@@ -48,22 +48,22 @@
         <rank value="1"/>
     </telecom>
     <address> <!-- Home address is 1600 Pennsylvania Ave NW, Washington, DC 20006, USA at latitude 38.897957 and longitude -77.036560 -->
-        <use value="home"/> 
-        <type value="both"/> 
-        <text value="1600 Pennsylvania Ave NW, Washington, DC 20006, USA"/> 
-        <line value="1600 Pennsylvania Ave NW"/> 
-        <city value="Washington"/> 
-        <state value="DC"/> 
-        <postalCode value="20006"/> 
-        <country value="USA"/> 
-        <period> 
-            <start value="1932-02-22"/> 
+        <use value="home"/>
+        <type value="both"/>
+        <text value="1600 Pennsylvania Ave NW, Washington, DC 20006, USA"/>
+        <line value="1600 Pennsylvania Ave NW"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20006"/>
+        <country value="USA"/>
+        <period>
+            <start value="1932-02-22"/>
         </period>
-        <extension url="http://hl7.org/fhir/StructureDefinition/geolocation"> 
-            <extension url="latitude"> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
                 <valueDecimal value="38.897957"/>
             </extension>
-            <extension url="longitude"> 
+            <extension url="longitude">
                 <valueDecimal value="-77.036560"/>
             </extension>
         </extension>
@@ -71,44 +71,44 @@
     <gender value="male"/> <!-- Gender is male -->
     <birthDate value="1932-02-22"/> <!-- Birthday is Feb 22, 1932 -->
     <qualification> <!-- Describes the practitioner's general medical license (MD), which was issued by the DC Board of Medicine on July 15, 191759. -->
-        <identifier> 
-            <use value="official"/> 
-            <type> 
-                <coding> 
-                    <system value="http://hl7.org/fhir/v2/0203"/> 
-                    <code value="MD"/> 
-                    <display value="Medical License number"/> 
-                    <userSelected value="true"/> 
+        <identifier>
+            <use value="official"/>
+            <type>
+                <coding>
+                    <system value="http://hl7.org/fhir/v2/0203"/>
+                    <code value="MD"/>
+                    <display value="Medical License number"/>
+                    <userSelected value="true"/>
                 </coding>
             </type>
-            <system value="https://doh.dc.gov/bomed"/> 
-            <value value="MD12345"/> 
+            <system value="https://doh.dc.gov/bomed"/>
+            <value value="MD12345"/>
             <period>
-                <start value="1959-07-15"/> 
-                <end value="1961-07-15"/> 
+                <start value="1959-07-15"/>
+                <end value="1961-07-15"/>
             </period>
-            <assigner> 
-                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/> 
-                <display value="DC Board of Medicine"/> 
+            <assigner>
+                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+                <display value="DC Board of Medicine"/>
             </assigner>
         </identifier>
-        <code> 
-            <coding> 
-                <system value="http://hl7.org/fhir/v2/0360/2.7"/> 
-                <version value="2.8.2"/> 
-                <code value="MD"/> 
-                <display value="Doctor of Medicine"/> 
-                <userSelected value="true"/> 
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0360/2.7"/>
+                <version value="2.8.2"/>
+                <code value="MD"/>
+                <display value="Doctor of Medicine"/>
+                <userSelected value="true"/>
             </coding>
-            <text value="MD"/> 
+            <text value="MD"/>
         </code>
-        <period> 
-                <start value="1959-07-15"/> 
-                <end value="1961-07-15"/> 
+        <period>
+                <start value="1959-07-15"/>
+                <end value="1961-07-15"/>
         </period>
-        <issuer> 
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/> 
-            <display value="DC Board of Medicine"/> 
+        <issuer>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <display value="DC Board of Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active and valid in Washington, DC -->
             <extension url="status">
@@ -116,47 +116,47 @@
                     <system value="http://hl7.org/fhir/resource-status"/>
                     <code value="active"/>
                     <display value="active"/>
-                </valueCoding> 
+                </valueCoding>
             </extension>
             <extension url="whereValid">
                 <valueCodeableConcept>
-                    <coding> 
+                    <coding>
                         <system value="https://www.usps.com/"/>
-                        <code value="DC"/> 
-                        <display value="District of Columbia"/> 
-                        <userSelected value="true"/> 
+                        <code value="DC"/>
+                        <display value="District of Columbia"/>
+                        <userSelected value="true"/>
                     </coding>
-                    <text value="Washington, DC"/> 
+                    <text value="Washington, DC"/>
                 </valueCodeableConcept>
             </extension>
         </extension>
     </qualification>
     <qualification> <!-- Describes the practitioner's certificaton in Internal Medicine, issued by the American Board of Internal Medicine -->
         <identifier>
-            <system value="http://www.abim.org/"/> 
-            <value value="123456"/> 
-            <assigner> 
-                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/> 
-                <display value="American Board of Internal Medicine"/> 
+            <system value="http://www.abim.org/"/>
+            <value value="123456"/>
+            <assigner>
+                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+                <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
-        <code> 
-            <coding> 
-                <system value="http://hl7.org/fhir/v2/0360/2.7"/> 
-                <version value="2.8.2"/> 
-                <code value="MD"/> 
-                <display value="Doctor of Medicine"/> 
-                <userSelected value="true"/> 
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0360/2.7"/>
+                <version value="2.8.2"/>
+                <code value="MD"/>
+                <display value="Doctor of Medicine"/>
+                <userSelected value="true"/>
             </coding>
             <text value="Certification in Internal Medicine"/>
         </code>
-        <period> 
-                <start value="1971-07-20"/> 
-                <end value="1981-07-20"/> 
+        <period>
+                <start value="1971-07-20"/>
+                <end value="1981-07-20"/>
         </period>
-        <issuer> 
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/> 
-            <display value="American Board of Internal Medicine"/> 
+        <issuer>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+            <display value="American Board of Internal Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active, and the history indicates that it has been renewed once. -->
             <extension url="status">
@@ -164,51 +164,51 @@
                     <system value="http://hl7.org/fhir/resource-status"/>
                     <code value="active"/>
                     <display value="active"/>
-                </valueCoding> 
+                </valueCoding>
             </extension>
             <extension url="history">
-                <extension url="status"> 
+                <extension url="status">
                     <valueCoding>
-                        <code value="active"/> 
-                        <display value="active"/> 
-                        <userSelected value="true"/> 
+                        <code value="active"/>
+                        <display value="active"/>
+                        <userSelected value="true"/>
                     </valueCoding>
                 </extension>
-                <extension url="period"> 
-                    <valuePeriod> 
-                        <start value="1961-07-20"/> 
-                        <end value="1971-07-20"/> 
+                <extension url="period">
+                    <valuePeriod>
+                        <start value="1961-07-20"/>
+                        <end value="1971-07-20"/>
                     </valuePeriod>
                 </extension>
             </extension>
         </extension>
     </qualification>
     <qualification> <!-- Describes the practitioner's certification in cardiovascular disease -->
-        <identifier> 
-            <system value="http://www.abim.org/"/> 
-            <value value="123456"/> 
-            <assigner> 
+        <identifier>
+            <system value="http://www.abim.org/"/>
+            <value value="123456"/>
+            <assigner>
                 <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
-        <code> 
-            <coding> 
+        <code>
+            <coding>
                 <system value="http://hl7.org/fhir/v2/0360/2.7"/>
-                <version value="2.8.2"/> 
-                <code value="MD"/> 
+                <version value="2.8.2"/>
+                <code value="MD"/>
                 <display value="Doctor of Medicine"/>
-                <userSelected value="true"/> 
+                <userSelected value="true"/>
             </coding>
-            <text value="Certification in Cardiovascular Disease"/> 
+            <text value="Certification in Cardiovascular Disease"/>
         </code>
         <period>
-                <start value="1965-07-10"/> 
-                <end value="1975-07-10"/> 
+                <start value="1965-07-10"/>
+                <end value="1975-07-10"/>
         </period>
-        <issuer> 
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/> 
-            <display value="American Board of Internal Medicine"/> 
+        <issuer>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+            <display value="American Board of Internal Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification">
             <extension url="status">
@@ -216,80 +216,80 @@
                     <system value="http://hl7.org/fhir/resource-status"/>
                     <code value="active"/>
                     <display value="active"/>
-                </valueCoding> 
+                </valueCoding>
             </extension>
         </extension>
     </qualification>
     <communication> <!-- The practitioner is a native English speaker -->
-        <coding> 
-            <system value="urn:ietf:bcp:47"/> 
-            <code value="en-US"/> 
-            <display value="English (United States)"/> 
-            <userSelected value="true"/> 
+        <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en-US"/>
+            <display value="English (United States)"/>
+            <userSelected value="true"/>
         </coding>
-        <text value="English"/> 
+        <text value="English"/>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency">
-            <valueCodeableConcept> 
-                <coding> 
-                    <code value="5"/> 
+            <valueCodeableConcept>
+                <coding>
+                    <code value="5"/>
                     <display value="Native or bilingual proficiency"/>
-                    <userSelected value="true"/> 
+                    <userSelected value="true"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
     </communication>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct123"/> 
+            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct123"/>
         </valueReference>
     </extension>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> 
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate">
 <!--Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework -->
         <extension url="type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="ind"/>
                 <display value="Individual"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="signing"/>
                 <display value="Signing"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="certificateStandard">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="x.509v3"/>
                 <display value="x.509v3"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
         <extension url="certificate">
             <valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/> 
-        </extension>    
+        </extension>
         <extension url="expirationDate">
-            <valueDate value="1970-09-03"/> 
+            <valueDate value="1970-09-03"/>
         </extension>
         <extension url="trustFramework">
-            <valueCodeableConcept> 
+            <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/> 
-                    <code value="direct"/> 
-                    <display value="DirectTrust"/> 
-                    <userSelected value="true"/> 
+                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <code value="direct"/>
+                    <display value="DirectTrust"/>
+                    <userSelected value="true"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
     </extension>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People -->
-        <valueCodeableConcept> 
-            <coding> 
+        <valueCodeableConcept>
+            <coding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
-                <code value="cultcomp"/> 
-                <display value="Cultural competence"/> 
-                <userSelected value="true"/> 
+                <code value="cultcomp"/>
+                <display value="Cultural competence"/>
+                <userSelected value="true"/>
             </coding>
             <text value="Coordinates care with tribal healers of the Piscataway People"/>
         </valueCodeableConcept>

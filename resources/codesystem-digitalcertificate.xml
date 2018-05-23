@@ -23,7 +23,7 @@
 	<concept>
 		<code value="device"/>
 		<display value="Device"/>
-        <definition value="A certificate used to verify the identity of a device."/>               
+        <definition value="A certificate used to verify the identity of a device."/>
 	</concept>
 	<concept>
 		<code value="grp"/>

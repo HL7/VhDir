@@ -7,11 +7,11 @@
     </meta>
 
     <identifier> <!-- Founding Fathers Memorial Hospital NPI -->
-        <use value="official"/> 
-        <type> 
+        <use value="official"/>
+        <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/> 
-                <code value="PRN"/> 
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="PRN"/>
                 <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
@@ -19,52 +19,52 @@
         <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="1345678910"/>
         <period>
-            <start value="2004-04-21T11:57:00-05:00"/> 
+            <start value="2004-04-21T11:57:00-05:00"/>
         </period>
-        <assigner> 
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/> 
+        <assigner>
+            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/>
             <display value="CMS"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"> 
-            <valueCode value="active"/> 
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
         </extension>
     </identifier>
 
 	<active value="true"/> <!-- This record is active -->
 
 	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding> 
-            <system value="http://hl7.org/fhir/organization-type"/> 
-            <code value="prov"/> 
-            <display value="Healthcare Provider"/> 
+        <coding>
+            <system value="http://hl7.org/fhir/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
         </coding>
-        <text value="Hospital"/> 
+        <text value="Hospital"/>
 	</type>
 
 	<name value="Founding Fathers Memorial Hospital"/> <!-- This organization is named Founding Fathers Memorial Hospital -->
 
     <alias value="DC Memorial Hospital"> <!-- This organization was previously known as DC Memorial Hospital, from 1975-2000 -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type"> 
-            <valueCode value="historical"/> 
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type">
+            <valueCode value="historical"/>
         </extension>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod> 
-                <start value="1975"/> 
-                <end value="2000"/> 
+            <valuePeriod>
+                <start value="1975"/>
+                <end value="2000"/>
             </valuePeriod>
         </extension>
     </alias>
 
 	<telecom> <!-- Contact information for Founding Fathers can be found in the location resource for the hospital's main campus -->
-	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"> 
+	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Location/hospital1"/> 
-                <display value="Founding Fathers Memorial Hospital, main campus"/> 
+                <reference value="http://hl7.org/fhir/ig/vhdir/Location/hospital1"/>
+                <display value="Founding Fathers Memorial Hospital, main campus"/>
             </valueReference>
         </extension>
-	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"> 
-            <extension url="allDay"> 
-                <valueBoolean value="true"/> 
+	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
+            <extension url="allDay">
+                <valueBoolean value="true"/>
             </extension>
         </extension>
 	</telecom>
@@ -73,35 +73,35 @@
         <use value="work"/>
         <type value="both"/>
         <text value="330 C Street SW, Washington, DC 20201, USA"/>
-        <line value="330 C Street SW"/> 
-        <city value="Washington"/> 
-        <state value="DC"/> 
-        <postalCode value="20201"/> 
-        <country value="USA"/> 
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation"> 
-            <extension url="latitude"> 
-                <valueDecimal value="38.8859395"/> 
+        <line value="330 C Street SW"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20201"/>
+        <country value="USA"/>
+	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+                <valueDecimal value="38.8859395"/>
             </extension>
             <extension url="longitude">
-                <valueDecimal value="-77.016469"/> 
+                <valueDecimal value="-77.016469"/>
             </extension>
         </extension>
 	</address>
 
     <partOf> <!-- Founding Fathers is a hospital that is part of the Mount Vernon Health System -->
         <reference value="http://hl7.org/fhir/ig/vhdir/Organization/mtvernon"/>
-        <display value="Mount Vernon Health System"/> 
+        <display value="Mount Vernon Health System"/>
     </partOf>
 
     <contact> <!-- Describes contact information for administrative inquiries -->
-        <purpose> 
+        <purpose>
             <coding>
-                <system value="http://hl7.org/fhir/contactentity-type"/> 
-                <code value="ADMIN"/> 
-                <display value="Administrative"/> 
+                <system value="http://hl7.org/fhir/contactentity-type"/>
+                <code value="ADMIN"/>
+                <display value="Administrative"/>
             </coding>
         </purpose>
-        <name> 
+        <name>
             <use value="official"/>
             <text value="Abigail Adams"/>
             <family value="Adams"/>
@@ -139,17 +139,17 @@
             <use value="work"/>
             <type value="both"/>
             <text value="330 C Street SW, Washington, DC 20201, USA"/>
-            <line value="330 C Street SW"/> 
-            <city value="Washington"/> 
-            <state value="DC"/> 
-            <postalCode value="20201"/> 
-            <country value="USA"/> 
-            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation"> 
-                <extension url="latitude"> 
-                    <valueDecimal value="38.8859395"/> 
+            <line value="330 C Street SW"/>
+            <city value="Washington"/>
+            <state value="DC"/>
+            <postalCode value="20201"/>
+            <country value="USA"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+                <extension url="latitude">
+                    <valueDecimal value="38.8859395"/>
                 </extension>
                 <extension url="longitude">
-                    <valueDecimal value="-77.016469"/> 
+                    <valueDecimal value="-77.016469"/>
                 </extension>
             </extension>
         </address>
@@ -168,11 +168,11 @@
         <extension url="type">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="grp"/> 
-                <display value="Group"/> 
+                <code value="grp"/>
+                <display value="Group"/>
             </valueCoding>
         </extension>
-        <extension url="use"> 
+        <extension url="use">
             <valueCoding>
                 <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="auth"/>
@@ -188,7 +188,7 @@
         </extension>
         <extension url="certificate">
             <valueString value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiBGb3VuZGluZyBGYXRoZXJzIE1lbW9yaWFsIEhvc3BpdGFsDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnSEtYVVYxRUVCSUNvREQzbEF1TVZ3Q3lLdUs2DQpvNmlCaTA5cWNTS3lxQmpQWVNUNEZ1YnBBL2tGUjRTSnRaQnhJeWpBMWJvQThPVTJteHNJOVpFZ0grZU1RUFhSDQpkNUR6Tnh0ZU5VNi9rZ0U5Q2Rua1ZlNEpJRDMvbUpOeHUvY0Jic3h5YStiUGpQVENacUNLUnRpUURBNHJrNnNhDQpwckFGdk43bHVLQm9NUG5oQWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-        </extension>    
+        </extension>
         <extension url="expirationDate">
             <valueDate value="2020-08-18"/>
         </extension>
@@ -205,7 +205,7 @@
     </extension>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification"> <!--Founding Fathers received the Gold Seal of Approval from the Joint Commission -->
-        <extension url="identifier"> 
+        <extension url="identifier">
             <valueIdentifier>
                 <use value="usual"/>
                 <type>
@@ -216,22 +216,22 @@
                     </coding>
                     <text value="Joint Commission Healthcare Organization ID"/>
                 </type>
-                <system value="https://www.jointcommission.org/accreditation/accreditation_main.aspx"/> 
-                <value value="121212"/> 
+                <system value="https://www.jointcommission.org/accreditation/accreditation_main.aspx"/>
+                <value value="121212"/>
                 <assigner>
-                    <identifier> 
+                    <identifier>
                         <use value="official"/>
-                        <type> 
+                        <type>
                             <coding>
                                 <system value="http://hl7.org/fhir/v2/0203"/>
                                 <code value="EN"/>
                                 <display value="Employer Number"/>
                             </coding>
-                            <text value="Employer Identification Number (EIN)"/> 
+                            <text value="Employer Identification Number (EIN)"/>
                         </type>
-                        <value value="36-2229255"/> 
+                        <value value="36-2229255"/>
                     </identifier>
-                    <display value="The Joint Commission"/> 
+                    <display value="The Joint Commission"/>
                 </assigner>
             </valueIdentifier>
         </extension>
@@ -242,17 +242,17 @@
         </extension>
         <extension url="issuer">
             <valueReference>
-                <identifier> 
+                <identifier>
                     <use value="official"/>
-                    <type> 
+                    <type>
                         <coding>
                             <system value="http://hl7.org/fhir/v2/0203"/>
                             <code value="EN"/>
                             <display value="Employer Number"/>
                         </coding>
-                        <text value="Employer Identification Number (EIN)"/> 
+                        <text value="Employer Identification Number (EIN)"/>
                     </type>
-                    <value value="36-2229255"/> 
+                    <value value="36-2229255"/>
                 </identifier>
                 <display value="The Joint Commission"/>
             </valueReference>
@@ -262,23 +262,23 @@
                 <system value="http://hl7.org/fhir/resource-status"/>
                 <code value="active"/>
                 <display value="active"/>
-            </valueCoding> 
+            </valueCoding>
         </extension>
-        <extension url="period"> 
-            <valuePeriod> 
+        <extension url="period">
+            <valuePeriod>
                 <start value="2015-10-28"/>
-                <end value="2018-10-28"/> 
+                <end value="2018-10-28"/>
             </valuePeriod>
         </extension>
         <extension url="whereValid">
             <valueCodeableConcept>
-                <coding> 
+                <coding>
                     <system value="https://www.usps.com/"/>
-                    <code value="DC"/> 
-                    <display value="District of Columbia"/> 
-                    <userSelected value="true"/> 
+                    <code value="DC"/>
+                    <display value="District of Columbia"/>
+                    <userSelected value="true"/>
                 </coding>
-                <text value="Washington, DC"/> 
+                <text value="Washington, DC"/>
             </valueCodeableConcept>
         </extension>
     </extension>

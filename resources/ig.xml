@@ -394,9 +394,9 @@
 		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="primarysourcefailureaction" />
+			<name value="failureaction" />
 			<reference>
-				<reference value="ValueSet/valueset-primarysourcefailureaction" />
+				<reference value="ValueSet/valueset-failureaction" />
 			</reference>
 		</resource>
 		<resource>
