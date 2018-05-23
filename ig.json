@@ -87,7 +87,7 @@
     "StructureDefinition/identifier-status":{
       "base":"StructureDefinition-identifier-status.html",
       "defns":"StructureDefinition-identifier-status-definitions.html",
-      "source":"identifier-status.structuredefinition.xml"      
+      "source":"identifier-status.structuredefinition.xml"
       },
       "StructureDefinition/vhdir-validation":{
         "base":"StructureDefinition-vhdir-validation.html",
@@ -168,7 +168,7 @@
         "base":"StructureDefinition-org-description.html",
         "defns":"StructureDefinition-org-description-definitions.html",
         "source":"org-description.structuredefinition.xml"
-      },     
+      },
       "StructureDefinition/endpoint-reference":{
         "base":"StructureDefinition-endpoint-reference.html",
         "defns":"StructureDefinition-endpoint-reference-definitions.html",
@@ -232,37 +232,37 @@
       "StructureDefinition/careteam-alias":{
         "base":"StructureDefinition-careteam-alias.html",
         "defns":"StructureDefinition-careteam-alias-definitions.html",
-        "source":"careteam-alias.structuredefinition.xml"      
+        "source":"careteam-alias.structuredefinition.xml"
       },
       "StructureDefinition/contactpoint-viaintermediary":{
         "base":"StructureDefinition-contactpoint-viaintermediary.html",
         "defns":"StructureDefinition-contactpoint-viaintermediary-definitions.html",
-        "source":"contactpoint-viaintermediary.structuredefinition.xml"      
+        "source":"contactpoint-viaintermediary.structuredefinition.xml"
       },
       "StructureDefinition/contactpoint-availabletime":{
         "base":"StructureDefinition-contactpoint-availabletime.html",
         "defns":"StructureDefinition-contactpoint-availabletime-definitions.html",
-        "source":"contactpoint-availabletime.structuredefinition.xml"      
+        "source":"contactpoint-availabletime.structuredefinition.xml"
       },
       "StructureDefinition/endpoint-usecase":{
         "base":"StructureDefinition-endpoint-usecase.html",
         "defns":"StructureDefinition-endpoint-usecase-definitions.html",
-        "source":"endpoint-usecase.structuredefinition.xml"      
+        "source":"endpoint-usecase.structuredefinition.xml"
       },
       "StructureDefinition/endpoint-rank":{
         "base":"StructureDefinition-endpoint-rank.html",
         "defns":"StructureDefinition-endpoint-rank-definitions.html",
-        "source":"endpoint-rank.structuredefinition.xml"      
+        "source":"endpoint-rank.structuredefinition.xml"
       },
       "StructureDefinition/qualification":{
         "base":"StructureDefinition-qualification.html",
         "defns":"StructureDefinition-qualification-definitions.html",
-        "source":"qualification.structuredefinition.xml"   
+        "source":"qualification.structuredefinition.xml"
       },
       "StructureDefinition/practitioner-qualification":{
         "base":"StructureDefinition-practitioner-qualification.html",
         "defns":"StructureDefinition-practitioner-qualification-definitions.html",
-        "source":"practitioner-qualification.structuredefinition.xml"   
+        "source":"practitioner-qualification.structuredefinition.xml"
       },
       "CodeSystem/codesystem-digitalcertificate": {
         "base": "CodeSystem-codesystem-digitalcertificate.html",
@@ -304,9 +304,9 @@
         "base": "CodeSystem-codesystem-network-type.html",
         "source": "codesystem-network-type.xml"
       },
-      "CodeSystem/codesystem-payorcharacteristics": {
-        "base": "CodeSystem-codesystem-payorcharacteristics.html",
-        "source": "codesystem-payorcharacteristics.xml"
+      "CodeSystem/codesystem-payercharacteristics": {
+        "base": "CodeSystem-codesystem-payercharacteristics.html",
+        "source": "codesystem-payercharacteristics.xml"
       },
       "ValueSet/valueset-digitalcertificatetype": {
         "base": "ValueSet-valueset-digitalcertificatetype.html",
@@ -359,66 +359,66 @@
       "ValueSet/valueset-network-type": {
         "base": "ValueSet-valueset-network-type.html",
         "source": "valueset-network-type.xml"
-      },      
-      "ValueSet/valueset-vhdir-identifier-type": {
-        "base": "ValueSet-valueset-vhdir-identifier-type.html",
-        "source": "valueset-vhdir-identifier-type.xml"
       },
-      "ValueSet/valueset-vhdir-validationneed": {
+      "ValueSet/valueset-identifier-type": {
+        "base": "ValueSet-valueset-identifier-type.html",
+        "source": "valueset-identifier-type.xml"
+      },
+      "ValueSet/valueset-validationneed": {
         "base": "ValueSet-valueset-validationneed.html",
         "source": "valueset-validationneed.xml"
       },
-      "ValueSet/valueset-vhdir-externalvalidationtype": {
+      "ValueSet/valueset-externalvalidationtype": {
         "base": "ValueSet-valueset-externalvalidationtype.html",
         "source": "valueset-externalvalidationtype.xml"
       },
-      "ValueSet/valueset-vhdir-primarysourcevalidationprocess": {
+      "ValueSet/valueset-primarysourcevalidationprocess": {
         "base": "ValueSet-valueset-primarysourcevalidationprocess.html",
         "source": "valueset-primarysourcevalidationprocess.xml"
       },
-      "ValueSet/valueset-vhdir-primarysourcevalidationstatus": {
+      "ValueSet/valueset-primarysourcevalidationstatus": {
         "base": "ValueSet-valueset-primarysourcevalidationstatus.html",
         "source": "valueset-primarysourcevalidationstatus.xml"
       },
-      "ValueSet/valueset-vhdir-primarysourcefailureaction": {
+      "ValueSet/valueset-primarysourcefailureaction": {
         "base": "ValueSet-valueset-primarysourcefailureaction.html",
         "source": "valueset-primarysourcefailureaction.xml"
       },
-      "ValueSet/valueset-vhdir-primarysourcepush": {
+      "ValueSet/valueset-primarysourcepush": {
         "base": "ValueSet-valueset-primarysourcepush.html",
         "source": "valueset-primarysourcepush.xml"
       },
-      "ValueSet/valueset-vhdir-primarysourcepushtype": {
+      "ValueSet/valueset-primarysourcepushtype": {
         "base": "ValueSet-valueset-primarysourcepushtype.html",
         "source": "valueset-primarysourcepushtype.xml"
       },
-      "ValueSet/valueset-vhdir-attestationmethod": {
+      "ValueSet/valueset-attestationmethod": {
         "base": "ValueSet-valueset-attestationmethod.html",
         "source": "valueset-attestationmethod.xml"
       },
-      "ValueSet/valueset-vhdir-productplan-type": {
+      "ValueSet/valueset-productplan-type": {
         "base": "ValueSet-valueset-productplan-type.html",
-        "source": "valueset-productplan-type.xml" 
+        "source": "valueset-productplan-type.xml"
       },
-      "ValueSet/valueset-vhdir-coverage-type": {
+      "ValueSet/valueset-coverage-type": {
         "base": "ValueSet-valueset-coverage-type.html",
-        "source": "valueset-coverage-type.xml" 
+        "source": "valueset-coverage-type.xml"
       },
-      "ValueSet/valueset-vhdir-benefit-type": {
+      "ValueSet/valueset-benefit-type": {
         "base": "ValueSet-valueset-benefit-type.html",
-        "source": "valueset-benefit-type.xml" 
+        "source": "valueset-benefit-type.xml"
       },
-      "ValueSet/valueset-vhdir-limit-unit": {
+      "ValueSet/valueset-limit-unit": {
         "base": "ValueSet-valueset-limit-unit.html",
-        "source": "valueset-limit-unit.xml" 
+        "source": "valueset-limit-unit.xml"
       },
-      "ValueSet/valueset-vhdir-plan-type": {
+      "ValueSet/valueset-plan-type": {
         "base": "ValueSet-valueset-plan-type.html",
-        "source": "valueset-plan-type.xml" 
+        "source": "valueset-plan-type.xml"
       },
-      "ConceptMap/valueset-qualification-status": {
-        "base": "ConceptMap-valueset-qualification-status.html",
-        "source": "conceptmap-valueset-qualification-status.xml" 
+      "ConceptMap/conceptmap-qualification-status": {
+        "base": "ConceptMap-qualification-status.html",
+        "source": "conceptmap-qualification-status.xml"
       },
       "CapabilityStatement/client":{
          "base":"CapabilityStatement-client.html",

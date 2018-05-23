@@ -359,102 +359,102 @@
 		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-identifier-type" />
+			<name value="identifier-type" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-identifier-type" />
+				<reference value="ValueSet/valueset-identifier-type" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-validationneed" />
+			<name value="validationneed" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-validationneed" />
+				<reference value="ValueSet/valueset-validationneed" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-externalvalidationtype" />
+			<name value="externalvalidationtype" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-externalvalidationtype" />
+				<reference value="ValueSet/valueset-externalvalidationtype" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-primarysourcevalidationprocess" />
+			<name value="primarysourcevalidationprocess" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-primarysourcevalidationprocess" />
+				<reference value="ValueSet/valueset-primarysourcevalidationprocess" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-primarysourcevalidationstatus" />
+			<name value="primarysourcevalidationstatus" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-primarysourcevalidationstatus" />
+				<reference value="ValueSet/valueset-primarysourcevalidationstatus" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-primarysourcefailureaction" />
+			<name value="primarysourcefailureaction" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-primarysourcefailureaction" />
+				<reference value="ValueSet/valueset-primarysourcefailureaction" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-primarysourcepush" />
+			<name value="primarysourcepush" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-primarysourcepush" />
+				<reference value="ValueSet/valueset-primarysourcepush" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-primarysourcepushtype" />
+			<name value="primarysourcepushtype" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-primarysourcepushtype" />
+				<reference value="ValueSet/valueset-primarysourcepushtype" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-attestationmethod" />
+			<name value="attestationmethod" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-attestationmethod" />
+				<reference value="ValueSet/valueset-attestationmethod" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-productplan-type" />
+			<name value="productplan-type" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-productplan-type" />
+				<reference value="ValueSet/valueset-productplan-type" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-coverage-type" />
+			<name value="coverage-type" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-coverage-type" />
+				<reference value="ValueSet/valueset-coverage-type" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-benefit-type" />
+			<name value="benefit-type" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-benefit-type" />
+				<reference value="ValueSet/valueset-benefit-type" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-limit-unit" />
+			<name value="limit-unit" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-limit-unit" />
+				<reference value="ValueSet/valueset-limit-unit" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="vhdir-plan-type" />
+			<name value="plan-type" />
 			<reference>
-				<reference value="ValueSet/valueset-vhdir-plan-type" />
+				<reference value="ValueSet/valueset-plan-type" />
 			</reference>
-		</resource>		
+		</resource>
 		<resource>
 			<exampleBoolean value="false" />
 			<name value="digitalcertificate" />
@@ -527,9 +527,9 @@
 		</resource>
 		<resource>
 			<exampleBoolean value="false" />
-			<name value="payorcharacteristics" />
+			<name value="payercharacteristics" />
 			<reference>
-				<reference value="CodeSystem/codesystem-payorcharacteristics" />
+				<reference value="CodeSystem/codesystem-payercharacteristics" />
 			</reference>
 		</resource>
 		<resource>
@@ -661,7 +661,7 @@
 		<resource>
 			<exampleBoolean value="false" />
 			<reference>
-				<reference value="ConceptMap/valueset-qualification-status"/>
+				<reference value="ConceptMap/conceptmap-qualification-status"/>
 			</reference>
 		</resource>
 		<!-- upto here -->
