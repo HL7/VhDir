@@ -1,0 +1,28 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-newpatients",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-newpatients",
+  "version": "0.0.0",
+  "name": "VHDir Newpatients Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "newpatients",
+  "base": [
+    "Location"
+  ],
+  "type": "reference",
+  "description": "****TODO**** confirm type is correct",
+  "expression": "****TODO****"
+}

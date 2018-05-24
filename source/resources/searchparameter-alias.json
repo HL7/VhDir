@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-alias",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-alias",
+  "version": "0.0.0",
+  "name": "VHDir Alias Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "alias",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "string",
+  "description": "Select care teams with the specified alias",
+  "expression": "CareTeam.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias')"
+}
+

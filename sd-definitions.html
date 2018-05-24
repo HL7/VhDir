@@ -1,38 +1,18 @@
 ---
 # jekyll header
+level: 2
+active: profiles
+template: definitions
+layout: fhir-artifact
+type: {{[type]}}
+id: {{[id]}}
+topofpage: True
 ---
-
-
-  {% include header.html %}
-
-
-<!-- ============BreadCrumb=============== -->
-
-{% include container-start.html %}
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<ul class="nav nav-tabs">
-  <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
-  <li class="active"><a href="#">Detailed Descriptions</a></li>
-	<li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
-  <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
-  <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
-  <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
-</ul>
-
-<h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition: {{[id]}} - Detailed Descriptions <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
-
-<p>Definitions for the {{[type]}}-{{[id]}} Profile.</p>
+<h3>Definitions for the {{[type]}}-{{[id]}} Profile.</h3>
 
 {%include {{[type]}}-{{[id]}}-dict.xhtml%}
 
-
-
-  <!-- ==============END CONTENT END CONTENT=================== -->
-
-{% include container-end.html %}
-
-{% include footer.html %}
-</body>
-</html>
+<!-- ============CONTENT CONTENT=============== -->

@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-accessibility",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-accessibility",
+  "version": "0.0.0",
+  "name": "VHDir Accessibility Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "accessibility",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "description": "Select locations that offer the specified accessibility options",
+  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility')"
+}
+

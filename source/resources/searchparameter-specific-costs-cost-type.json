@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-specific-costs-cost-type",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-cost-type",
+  "version": "0.0.0",
+  "name": "VHDir Specific Costs Cost Type Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "specific-costs-cost-type",
+  "base": [
+    "ProductPlan"
+  ],
+  "type": "token",
+  "description": "****TODO****",
+  "expression": "ProductPlan.plan.specificCosts.benefitCosts.cost.type"
+}
+

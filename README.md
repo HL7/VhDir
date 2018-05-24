@@ -1,6 +1,8 @@
 # Hl7 Validated Healthcare Directory (HcDir) Implementation Guide Repository
 
-Authors:  Brian Postlethwaite, Bob Dieterle, ONC Contributors
+A FHIR implementation guide enabling the exchange of validated healthcare directory information between a reference source (e.g. national directory) and 'local' workflow environments (e.g. local directories).
+
+Authors:  Alex Kontur, Dan Chaputt, Brian Postlethwaite, Bob Dieterle, eric Haas, Nagesh Bashyam, ONC Contributors
 
 -----
 FHIR STU3 Implementation Guide
@@ -23,13 +25,30 @@ http://build.fhir.org/ig/HL7/VhDir/qa.html
 
 ### Local continuous builds
 
-In the build there is a batch file that performs the complete build `build.bat`.
+These are tow batch files that perform the complete build:
 
-Inside it has:
-> "C:\ProgramData\Oracle\Java\javapath\java.exe" -Xmx1024m -jar "C:\git\org.hl7.fhir.igpublisher.jar" -ig ig.json
+1. `build.bat`  (Windows)
 
-To keep the build running continually so that it only updates the files that you're changing, include the -watch option
-this is done in the new batch file `build-watch.bat`
+  Inside it has:
+  > "C:\ProgramData\Oracle\Java\javapath\java.exe" -Xmx1024m -jar "C:\git\org.hl7.fhir.igpublisher.jar" -ig ig.json
 
-For more details on the IG Publisher refer to the documentation that can be found here:
+  To keep the build running continually so that it only updates the files that you're changing, include the -watch option
+  this is done in the new batch file `build-watch.bat`
+
+1.  `pub3.sh` (iOS)
+
+  1. update the paths in the variables path1, path2, path3:
+
+  1. run bash file `pub3.sh`  with optional arguments:
+     1. `-s [directory name of source folder]` (omit if in root)
+     1. `-t` run without terminology server
+     1. `-o` run with version of the ig-publisher named in path2
+     1. -d create the definitions files from the content in source  ( see https://github.com/Healthedata1/FHIR-IGPub-filebuilder
+       )
+
+  1.  updates to pages will trigger ig-publisher to rebuild
+
+
+For more details on the IG Publisher refer to the documentation that can be
+found here:
 http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation

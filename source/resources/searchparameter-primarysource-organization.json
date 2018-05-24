@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-primarysource-organization",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-organization",
+  "version": "0.0.0",
+  "name": "VHDir Primarysource Organization Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "primarysource-organization",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
+  "description": "Select validation information for data that was validated against the specified primary source organization",
+  "expression": "VerificationResult.primarySource.organization"
+}
+

@@ -42,12 +42,13 @@ Thumbs.db
 # FHIR IG Publisher local build directories #
 #############################################
 
-qa
-temp
+generated_output/qa
+generated_output/temp
 output
 archive
 sandbox
-capstmnt_markup
+my-notes
+
 # Altova files #
 ################
 *.spp
@@ -66,5 +67,3 @@ Log-FHIR.xlsx
 ####################
 ~*.docx
 ~*.xlsx
-
-

@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-status-date",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-status-date",
+  "version": "0.0.0",
+  "name": "VHDir Status Date Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "status-date",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "date",
+  "description": "Select validation information with a validation status that occurred at the specified date/time",
+  "expression": "VerificationResult.statusDate"
+}
+

@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-primarysource-date",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-date",
+  "version": "0.0.0",
+  "name": "VHDir Primarysource Date Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "primarysource-date",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "date",
+  "description": "Select validation information for data that was validated against a primary source on the specified date",
+  "expression": "VerificationResult.primarySource.validationDate"
+}
+
