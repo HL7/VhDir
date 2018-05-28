@@ -1,49 +1,50 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="newpatientprofile" />
-  <meta>
-    <lastUpdated value="2017-12-04T12:05:18.461-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
-  <name value="newpatientprofile" />
-  <status value="draft" />
-  <date value="2017-11-13T14:13:29.07-05:00" />
-  <description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="PractitionerRole"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Location"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="New patient profile" />
-      <definition value="Additional information about new patients a practitioner/service/location accepts" />
-      <max value="*" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
-    </element>
-    <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="newpatientprofile" />
-      <short value="New patient profile" />
-      <definition value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-  </differential>
+	<id value="newpatientprofile"/>
+	<meta>
+		<lastUpdated value="2017-12-04T12:05:18.461-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+	<name value="newpatientprofile"/>
+	<title value="VhDir Newpatientprofile"/>
+	<status value="active"/>
+	<date value="2017-11-13T14:13:29.07-05:00"/>
+	<description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="PractitionerRole"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="Location"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="New patient profile"/>
+			<definition value="Additional information about new patients a practitioner/service/location accepts"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+		</element>
+		<element id="Extension.value[x]:valueString">
+			<path value="Extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="newpatientprofile"/>
+			<short value="New patient profile"/>
+			<definition value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

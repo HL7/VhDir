@@ -2,8 +2,9 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/device.xsd">
 	<id value="client"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/client"/>
-	<name value="Validated Healthcare Directory Client"/>
-	<status value="draft"/>
+	<name value="vhdir-client"/>
+	<title value="VhDir Validated Healthcare Directory Client"/>
+	<status value="active"/>
 	<date value="2017-08-04"/>
 	<publisher value="HL7 Patient Administration Committee"/>
 	<contact>

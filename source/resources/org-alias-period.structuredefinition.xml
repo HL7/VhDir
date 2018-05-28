@@ -1,45 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="org-alias-period" />
-  <meta>
-    <lastUpdated value="2017-12-04T12:30:39.569-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />
-  <name value="org-alias-period" />
-  <status value="draft" />
-  <date value="2017-09-01T06:36:02.345+10:00" />
-  <description value="the period of time the alias was actively used" />
-  <fhirVersion value="3.2.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="Organization.alias"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Period" />
-      <definition value="The period during which the alias was used" />
-      <max value="1" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period" />
-    </element>
-    <element id="Extension.value[x]:valuePeriod">
-      <path value="Extension.valuePeriod" />
-      <sliceName value="valuePeriod" />
-      <label value="period" />
-      <short value="Period" />
-      <definition value="The period during which the alias was used" />
-      <min value="1"/>
-      <type>
-        <code value="Period" />
-      </type>
-    </element>
-  </differential>
+	<id value="org-alias-period"/>
+	<meta>
+		<lastUpdated value="2017-12-04T12:30:39.569-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period"/>
+	<name value="org-alias-period"/>
+	<title value="VhDir Org Alias Period"/>
+	<status value="active"/>
+	<date value="2017-09-01T06:36:02.345+10:00"/>
+	<description value="the period of time the alias was actively used"/>
+	<fhirVersion value="3.2.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Organization.alias"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Period"/>
+			<definition value="The period during which the alias was used"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period"/>
+		</element>
+		<element id="Extension.value[x]:valuePeriod">
+			<path value="Extension.valuePeriod"/>
+			<sliceName value="valuePeriod"/>
+			<label value="period"/>
+			<short value="Period"/>
+			<definition value="The period during which the alias was used"/>
+			<min value="1"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -1,80 +1,81 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-productplan" />
-  <meta>
-    <lastUpdated value="2017-12-08T19:51:10.464-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan" />
-  <name value="vhdir-productplan" />
-  <status value="draft" />
-  <date value="2017-12-05T12:38:42.186-05:00" />
-  <description value="The details of a health insurance product/plan" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="ProductPlan" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProductPlan" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="ProductPlan">
-      <path value="ProductPlan" />
-    </element>
-    <element id="ProductPlan.id">
-      <path value="ProductPlan.id" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ProductPlan.meta">
-      <path value="ProductPlan.meta" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ProductPlan.text">
-      <path value="ProductPlan.text" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ProductPlan.extension">
-      <path value="ProductPlan.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="ProductPlan.extension:restriction">
-      <path value="ProductPlan.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="ProductPlan.identifier">
-      <path value="ProductPlan.identifier" />
-    </element>
-    <element id="ProductPlan.identifier.extension">
-      <path value="ProductPlan.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="ProductPlan.identifier.extension:status">
-      <path value="ProductPlan.identifier.extension" />
-      <sliceName value="status" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-  </differential>
+	<id value="vhdir-productplan"/>
+	<meta>
+		<lastUpdated value="2017-12-08T19:51:10.464-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan"/>
+	<name value="vhdir-productplan"/>
+	<title value="VhDir Productplan"/>
+	<status value="active"/>
+	<date value="2017-12-05T12:38:42.186-05:00"/>
+	<description value="The details of a health insurance product/plan"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="ProductPlan"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProductPlan"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="ProductPlan">
+			<path value="ProductPlan"/>
+		</element>
+		<element id="ProductPlan.id">
+			<path value="ProductPlan.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ProductPlan.meta">
+			<path value="ProductPlan.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ProductPlan.text">
+			<path value="ProductPlan.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ProductPlan.extension">
+			<path value="ProductPlan.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="ProductPlan.extension:restriction">
+			<path value="ProductPlan.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="ProductPlan.identifier">
+			<path value="ProductPlan.identifier"/>
+		</element>
+		<element id="ProductPlan.identifier.extension">
+			<path value="ProductPlan.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="ProductPlan.identifier.extension:status">
+			<path value="ProductPlan.identifier.extension"/>
+			<sliceName value="status"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -1,93 +1,94 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="boundary" />
-  <meta>
-    <lastUpdated value="2017-11-15T14:17:54.21-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary" />
-  <name value="boundary" />
-  <status value="draft" />
-  <date value="2017-11-08T09:55:55.678-05:00" />
-  <description value="Representation of a custom area or region" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="Location"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Boundary" />
-      <definition value="Representation of a custom area or region" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:region">
-      <path value="Extension.extension" />
-      <sliceName value="region" />
-      <label value="region" />
-      <short value="Represents a custom area or region" />
-      <definition value="URI to a KML or GeoJSON representing a custom area or region" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:region.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="region" />
-    </element>
-    <element id="Extension.extension:region.value[x]:valueUri">
-      <path value="Extension.extension.valueUri" />
-      <sliceName value="valueUri" />
-      <label value="region" />
-      <short value="Custom area or region" />
-      <definition value="URI to a KML or GeoJSON representing a custom area or region" />
-      <min value="1"/>
-      <type>
-        <code value="uri" />
-      </type>
-    </element>
-    <element id="Extension.extension:localName">
-      <path value="Extension.extension" />
-      <sliceName value="localName" />
-      <label value="localName" />
-      <short value="Friendly description" />
-      <definition value="Friendly description of a well-known region/area" />
-    </element>
-    <element id="Extension.extension:localName.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="localName" />
-    </element>
-    <element id="Extension.extension:localName.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="localName" />
-      <short value="Description" />
-      <definition value="Friendly description of a well-known region/area" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
-    </element>
-  </differential>
+	<id value="boundary"/>
+	<meta>
+		<lastUpdated value="2017-11-15T14:17:54.21-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+	<name value="boundary"/>
+	<title value="VhDir Boundary"/>
+	<status value="active"/>
+	<date value="2017-11-08T09:55:55.678-05:00"/>
+	<description value="Representation of a custom area or region"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Location"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Boundary"/>
+			<definition value="Representation of a custom area or region"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Extension.extension:region">
+			<path value="Extension.extension"/>
+			<sliceName value="region"/>
+			<label value="region"/>
+			<short value="Represents a custom area or region"/>
+			<definition value="URI to a KML or GeoJSON representing a custom area or region"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:region.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="region"/>
+		</element>
+		<element id="Extension.extension:region.value[x]:valueUri">
+			<path value="Extension.extension.valueUri"/>
+			<sliceName value="valueUri"/>
+			<label value="region"/>
+			<short value="Custom area or region"/>
+			<definition value="URI to a KML or GeoJSON representing a custom area or region"/>
+			<min value="1"/>
+			<type>
+				<code value="uri"/>
+			</type>
+		</element>
+		<element id="Extension.extension:localName">
+			<path value="Extension.extension"/>
+			<sliceName value="localName"/>
+			<label value="localName"/>
+			<short value="Friendly description"/>
+			<definition value="Friendly description of a well-known region/area"/>
+		</element>
+		<element id="Extension.extension:localName.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="localName"/>
+		</element>
+		<element id="Extension.extension:localName.value[x]:valueString">
+			<path value="Extension.extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="localName"/>
+			<short value="Description"/>
+			<definition value="Friendly description of a well-known region/area"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

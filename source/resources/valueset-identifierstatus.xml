@@ -3,6 +3,7 @@
 	<id value="valueset-identifierstatus"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus"/>
 	<name value="VhDir Identifier Status Value Set"/>
+	<title value="VhDir Identifier Status Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

@@ -3,7 +3,8 @@
 	<id value="codesystem-usecase"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase"/>
 	<name value="VhDir Use Case Code System"/>
-	<status value="draft"/>
+	<title value="VhDir Use Case Code System"/>
+	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
 	<contact>
@@ -24,32 +25,17 @@
 	<concept>
 		<code value="payment"/>
 		<display value="payment"/>
-		<definition value="Use cases related to any of the following activities:
-		(1) A health plan to obtain premiums or to determine or fulfill its responsibility for coverage and provision of benefits under the health plan; or
-		(2) A health care provider or health plan to obtain or provide reimbursement for the provision of health care; and
-		(3) Activities related to the individual to whom health care is provided and include, but are not limited to:
-			(i) Determinations of eligibility or coverage, and adjudication or subrogation of health benefit claims;
-			(ii) Risk adjusting amounts due based on enrollee health status and demographic characteristics;
-			(iii) Billing, claims management, collection activities, obtaining payment under a contract for reinsurance, and related health care data processing;
-			(iv) Review of health care services with respect to medical necessity, coverage under a health plan, appropriateness of care, or justification of charges;
-			(v) Utilization review activities, including precertification and preauthorization of services, concurrent and retrospective review of services; and
-			(vi) Disclosure to consumer reporting agencies of protected health information relating to collection of premiums or reimbursement."/>
+		<definition value="Use cases related to any of the following activities:   (1) A health plan to obtain premiums or to determine or fulfill its responsibility for coverage and provision of benefits under the health plan; or   (2) A health care provider or health plan to obtain or provide reimbursement for the provision of health care; and   (3) Activities related to the individual to whom health care is provided and include, but are not limited to:    (i) Determinations of eligibility or coverage, and adjudication or subrogation of health benefit claims;    (ii) Risk adjusting amounts due based on enrollee health status and demographic characteristics;    (iii) Billing, claims management, collection activities, obtaining payment under a contract for reinsurance, and related health care data processing;    (iv) Review of health care services with respect to medical necessity, coverage under a health plan, appropriateness of care, or justification of charges;    (v) Utilization review activities, including precertification and preauthorization of services, concurrent and retrospective review of services; and    (vi) Disclosure to consumer reporting agencies of protected health information relating to collection of premiums or reimbursement."/>
 	</concept>
 	<concept>
 		<code value="operations"/>
 		<display value="operations"/>
-		<definition value="Use cases related to any of the following activities:
-		(1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines; patient safety activities; population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment;
-		(2) Reviewing the competence or qualifications of health care professionals, evaluating practitioner and provider performance, health plan performance, conducting training programs in which students, trainees, or practitioners in areas of health care learn under supervision to practice or improve their skills as health care providers, training of non-health care professionals, accreditation, certification, licensing, or credentialing activities;
-		(3) Underwriting, enrollment, premium rating, and other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits, and ceding, securing, or placing a contract for reinsurance of risk relating to claims for health care;
-		(4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs;
-		(5) Business planning and development, such as conducting cost-management and planning-related analyses related to management and operations, including formulary development and administration, development or improvement of methods of payment or coverage policies; and
-		(6) Business management and general administrative activities, including, but not limited to customer service and data analyses."/>
+		<definition value="Use cases related to any of the following activities:   (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines; patient safety activities; population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment;   (2) Reviewing the competence or qualifications of health care professionals, evaluating practitioner and provider performance, health plan performance, conducting training programs in which students, trainees, or practitioners in areas of health care learn under supervision to practice or improve their skills as health care providers, training of non-health care professionals, accreditation, certification, licensing, or credentialing activities;   (3) Underwriting, enrollment, premium rating, and other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits, and ceding, securing, or placing a contract for reinsurance of risk relating to claims for health care;   (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs;   (5) Business planning and development, such as conducting cost-management and planning-related analyses related to management and operations, including formulary development and administration, development or improvement of methods of payment or coverage policies; and   (6) Business management and general administrative activities, including, but not limited to customer service and data analyses."/>
 	</concept>
 	<concept>
-			<code value="publichealth"/>
-			<display value="public health"/>
-			<definition value="Use cases related to the purpose of preventing or controlling disease, injury, or disability. This would include, for example, the reporting of a disease or injury; reporting vital events, such as births or deaths; and conducting public health surveillance, investigations, or interventions. This may include HIPAA covered or non-covered entities."/>
+		<code value="publichealth"/>
+		<display value="public health"/>
+		<definition value="Use cases related to the purpose of preventing or controlling disease, injury, or disability. This would include, for example, the reporting of a disease or injury; reporting vital events, such as births or deaths; and conducting public health surveillance, investigations, or interventions. This may include HIPAA covered or non-covered entities."/>
 	</concept>
 	<concept>
 		<code value="benefitsdetermination"/>
@@ -62,18 +48,18 @@
 		<definition value="Use cases related to an individual’s right to access and obtain a copy of ePHI pursuant to all applicable law including the right of an individual to direct that a copy of ePHI in one or more designated record sets be transmitted to another person designated by the individual. Individual includes a personal representative of the individual in question to the extent permitted under applicable law."/>
 	</concept>
 	<concept>
-			<code value="research"/>
-			<display value="research"/>
-			<definition value="Use cases related to the systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge."/>
+		<code value="research"/>
+		<display value="research"/>
+		<definition value="Use cases related to the systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge."/>
 	</concept>
 	<concept>
-			<code value="EMS"/>
-			<display value="EMS"/>
-			<definition value="Use cases related to the Emergency Medical Services such as those documented by National Emergency Medical Services Information System (NEMSIS) based systems."/>
+		<code value="EMS"/>
+		<display value="EMS"/>
+		<definition value="Use cases related to the Emergency Medical Services such as those documented by National Emergency Medical Services Information System (NEMSIS) based systems."/>
 	</concept>
 	<concept>
-			<code value="emergencyresponse"/>
-			<display value="emergency response"/>
-			<definition value="Use cases related to the support or documentation of services related to chemical, biological, radiological and nuclear defense (CBRNE) events that require a response. These may include use cases used during any phase of preparedness including the preparation, monitoring, investigation, intervention, recovery, or management of events."/>
+		<code value="emergencyresponse"/>
+		<display value="emergency response"/>
+		<definition value="Use cases related to the support or documentation of services related to chemical, biological, radiological and nuclear defense (CBRNE) events that require a response. These may include use cases used during any phase of preparedness including the preparation, monitoring, investigation, intervention, recovery, or management of events."/>
 	</concept>
 </CodeSystem>

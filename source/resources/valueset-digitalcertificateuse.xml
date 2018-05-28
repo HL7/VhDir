@@ -3,6 +3,7 @@
 	<id value="valueset-digitalcertificateuse"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
 	<name value="VhDir Digital Certificate Use Value Set"/>
+	<title value="VhDir Digital Certificate Use Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -17,13 +18,13 @@
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
 			<concept>
-		<code value="signing"/>
+				<code value="signing"/>
 			</concept>
 			<concept>
-		<code value="encrypt"/>
+				<code value="encrypt"/>
 			</concept>
-		<concept>
-			<code value="auth"/>
+			<concept>
+				<code value="auth"/>
 			</concept>
 		</include>
 	</compose>

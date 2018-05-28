@@ -1,181 +1,155 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-validation" />
-  <meta>
-    <lastUpdated value="2017-12-10T12:44:39.265-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation" />
-  <name value="vhdir-validation" />
-  <status value="draft" />
-  <date value="2017-12-10T12:42:47.483-05:00" />
-  <description value="Describes validation requirements, source(s), status and dates for one or more elements" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="VerificationResult" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/VerificationResult" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="VerificationResult">
-      <path value="VerificationResult" />
-      <short value="Validation" />
-      <definition value="Describes validation requirements, source(s), status and dates for one or more elements" />
-    </element>
-    <element id="VerificationResult.id">
-      <path value="VerificationResult.id" />
-      <mustSupport value="true" />
-    </element>
-    <element id="VerificationResult.meta">
-      <path value="VerificationResult.meta" />
-      <mustSupport value="true" />
-    </element>
-    <element id="VerificationResult.text">
-      <path value="VerificationResult.text" />
-      <mustSupport value="true" />
-    </element>
-    <element id="VerificationResult.need">
-      <path value="VerificationResult.need"/>
-      <min value="1"/>
-      <max value="1"/>
-      <!--<binding>
+	<id value="vhdir-validation"/>
+	<meta>
+		<lastUpdated value="2017-12-10T12:44:39.265-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation"/>
+	<name value="vhdir-validation"/>
+	<title value="VhDir Validation"/>
+	<status value="active"/>
+	<date value="2017-12-10T12:42:47.483-05:00"/>
+	<description value="Describes validation requirements, source(s), status and dates for one or more elements"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="VerificationResult"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/VerificationResult"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="VerificationResult">
+			<path value="VerificationResult"/>
+			<short value="Validation"/>
+			<definition value="Describes validation requirements, source(s), status and dates for one or more elements"/>
+		</element>
+		<element id="VerificationResult.id">
+			<path value="VerificationResult.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="VerificationResult.meta">
+			<path value="VerificationResult.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="VerificationResult.text">
+			<path value="VerificationResult.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="VerificationResult.need">
+			<path value="VerificationResult.need"/>
+			<min value="1"/>
+			<max value="1"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.status">
-      <path value="VerificationResult.status"/>
-      <min value="1"/>
-      <max value="1"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.status">
+			<path value="VerificationResult.status"/>
+			<min value="1"/>
+			<max value="1"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value=""/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.statusDate">
-      <path value="VerificationResult.statusDate"/>
-      <min value="1"/>
-      <max value="1"/>
-    </element>
-    <element id="VerificationResult.validationType">
-      <path value="VerificationResult.validationType"/>
-      <min value="1"/>
-      <max value="1"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.statusDate">
+			<path value="VerificationResult.statusDate"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.validationType">
+			<path value="VerificationResult.validationType"/>
+			<min value="1"/>
+			<max value="1"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.validationProcess">
-      <path value="VerificationResult.validationProcess"/>
-      <min value="1"/>
-      <max value="*"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.validationProcess">
+			<path value="VerificationResult.validationProcess"/>
+			<min value="1"/>
+			<max value="*"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value=""/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.failureAction">
-      <path value="VerificationResult.failureAction"/>
-      <min value="1"/>
-      <max value="1"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.failureAction">
+			<path value="VerificationResult.failureAction"/>
+			<min value="1"/>
+			<max value="1"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value=""/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.primarySource">
-      <path value="VerificationResult.primarySource"/>
-    </element>
-    <element id="VerificationResult.primarySource.organization">
-      <path value="VerificationResult.primarySource.organization"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="VerificationResult.primarySource.type">
-      <path value="VerificationResult.primarySource.type"/>
-      <min value="1"/>
-      <max value="*"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.primarySource">
+			<path value="VerificationResult.primarySource"/>
+		</element>
+		<element id="VerificationResult.primarySource.organization">
+			<path value="VerificationResult.primarySource.organization"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="VerificationResult.primarySource.type">
+			<path value="VerificationResult.primarySource.type"/>
+			<min value="1"/>
+			<max value="*"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value=""/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.primarySource.validationProcess">
-      <path value="VerificationResult.primarySource.validationProcess"/>
-      <min value="1"/>
-      <max value="*"/>
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
-      </binding>
-    </element>
-    <element id="VerificationResult.primarySource.validationStatus">
-      <path value="VerificationResult.primarySource.validationStatus"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.primarySource.validationProcess">
+			<path value="VerificationResult.primarySource.validationProcess"/>
+			<min value="1"/>
+			<max value="*"/>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+			</binding>
+		</element>
+		<element id="VerificationResult.primarySource.validationStatus">
+			<path value="VerificationResult.primarySource.validationStatus"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.primarySource.canPushUpdates">
-      <path value="VerificationResult.primarySource.canPushUpdates"/>
-      <min value="1"/>
-      <max value="1"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.primarySource.canPushUpdates">
+			<path value="VerificationResult.primarySource.canPushUpdates"/>
+			<min value="1"/>
+			<max value="1"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush"/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.primarySource.pushTypeAvailable">
-      <path value="VerificationResult.primarySource.pushTypeAvailable"/>
-      <!--<binding>
+      </binding>--></element><element id="VerificationResult.primarySource.pushTypeAvailable">
+			<path value="VerificationResult.primarySource.pushTypeAvailable"/><!--<binding>
         <strength value="example"/>
         <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
-      </binding>-->
-    </element>
-    <element id="VerificationResult.attestation">
-      <path value="VerificationResult.attestation"/>
-      <min value="1"/>
-      <max value="1"/>
-    </element>
-    <element id="VerificationResult.attestation.source">
-      <path value="VerificationResult.attestation.source"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
-      </type>
-    </element>
-    <element id="VerificationResult.attestation.organization">
-      <path value="VerificationResult.attestation.organization"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="VerificationResult.attestation.method">
-      <path value="VerificationResult.attestation.method"/>
-      <min value="1"/>
-      <max value="1"/>
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
-      </binding>
-    </element>
-    <element id="VerificationResult.attestation.date">
-      <path value="VerificationResult.attestation.date"/>
-      <min value="1"/>
-      <max value="1"/>
-    </element>
-    <element id="VerificationResult.validator">
-      <path value="VerificationResult.validator"/>
-    </element>
-    <element id="VerificationResult.validator.organization">
-      <path value="VerificationResult.validator.organization"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-  </differential>
+      </binding>--></element><element id="VerificationResult.attestation">
+			<path value="VerificationResult.attestation"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.attestation.source">
+			<path value="VerificationResult.attestation.source"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+			</type>
+		</element>
+		<element id="VerificationResult.attestation.organization">
+			<path value="VerificationResult.attestation.organization"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="VerificationResult.attestation.method">
+			<path value="VerificationResult.attestation.method"/>
+			<min value="1"/>
+			<max value="1"/>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
+			</binding>
+		</element>
+		<element id="VerificationResult.attestation.date">
+			<path value="VerificationResult.attestation.date"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.validator">
+			<path value="VerificationResult.validator"/>
+		</element>
+		<element id="VerificationResult.validator.organization">
+			<path value="VerificationResult.validator.organization"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

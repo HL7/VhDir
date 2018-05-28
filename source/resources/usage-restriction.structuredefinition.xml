@@ -1,47 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="usage-restriction" />
-  <meta>
-    <lastUpdated value="2017-12-15T01:53:38.143+11:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-  <name value="usage-restriction" />
-  <status value="draft" />
-  <date value="2017-10-20T10:59:36.931+11:00" />
-  <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.&#xD;&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xD;&#xA;This will be expected to be used as a modifier extension." />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <!-- <contextType value="datatype" />
-  <context value="Any" /> -->
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-    </element>
-    <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
-      <sliceName value="valueReference" />
-      <short value="Reference" />
-      <definition value="Reference to the restriction resource (consent)" />
-      <comment value="This is anticipated to usually be a reference to a contained resource (this eases distribution, and permits the same consent applying to multiple properties in the same resource)" />
-      <min value="1"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
-      </type>
-    </element>
-    <element id="valueReference:valueReference.identifier">
-      <path value="Extension.valueReference.identifier" />
-      <max value="0" />
-    </element>
-  </differential>
+	<id value="usage-restriction"/>
+	<meta>
+		<lastUpdated value="2017-12-15T01:53:38.143+11:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+	<name value="usage-restriction"/>
+	<title value="VhDir Usage Restriction"/>
+	<status value="active"/>
+	<date value="2017-10-20T10:59:36.931+11:00"/>
+	<description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.&#xD;&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xD;&#xA;This will be expected to be used as a modifier extension."/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/><!-- <contextType value="datatype" />
+  <context value="Any" /> --><type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+		</element>
+		<element id="Extension.value[x]:valueReference">
+			<path value="Extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<short value="Reference"/>
+			<definition value="Reference to the restriction resource (consent)"/>
+			<comment value="This is anticipated to usually be a reference to a contained resource (this eases distribution, and permits the same consent applying to multiple properties in the same resource)"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
+			</type>
+		</element>
+		<element id="valueReference:valueReference.identifier">
+			<path value="Extension.valueReference.identifier"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

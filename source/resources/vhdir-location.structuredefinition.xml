@@ -1,191 +1,192 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-location" />
-  <meta>
-    <lastUpdated value="2017-12-08T19:51:15.908-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location" />
-  <name value="vhdir-location" />
-  <status value="draft" />
-  <date value="2017-10-03T23:49:16.288+11:00" />
-  <publisher value="HL7 International" />
-  <description value="Defines the basic constraints and extensions on the Location resource for use in a Validated Healthcare Directory" />
-  <copyright value="HL7 International" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Location" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Location">
-      <path value="Location" />
-    </element>
-    <element id="Location.extension">
-      <path value="Location.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Location.extension:boundary">
-      <path value="Location.extension" />
-      <sliceName value="boundary" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary" />
-      </type>
-    </element>
-    <element id="Location.extension:accessibility">
-      <path value="Location.extension" />
-      <sliceName value="accessibility" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
-      </type>
-    </element>
-    <element id="Location.extension:ehr">
-      <path value="Location.extension" />
-      <sliceName value="ehr" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
-      </type>
-    </element>
-    <element id="Location.extension:newpatients">
-      <path value="Location.extension" />
-      <sliceName value="newpatients" />
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" />
-      </type>
-    </element>
-    <element id="Location.extension:newpatientprofile">
-      <path value="Location.extension" />
-      <sliceName value="newpatientprofile" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile" />
-      </type>
-    </element>
-    <element id="Location.extension:restriction">
-      <path value="Location.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="Location.identifier">
-      <path value="Location.identifier" />
-    </element>
-    <element id="Location.identifier.extension">
-      <path value="Location.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Location.identifier.extension:status">
-      <path value="Location.identifier.extension" />
-      <sliceName value="status" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-    <element id="Location.identifier.assigner">
-      <path value="Location.identifier.assigner"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Location.status">
-      <path value="Location.status"/>
-      <min value="1"/>
-    </element>
-    <element id="Location.operationalStatus">
-      <path value="Location.operationalStatus" />
-      <max value="0" />
-    </element>
-    <element id="Location.mode">
-      <path value="Location.mode" />
-      <max value="0" />
-    </element>
-    <element id="Location.telecom">
-      <path value="Location.telecom" />
-    </element>
-    <element id="Location.telecom.extension">
-      <path value="Location.telecom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Location.telecom.extension:availabletime">
-      <path value="Location.telecom.extension" />
-      <sliceName value="availabletime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
-      </type>
-    </element>
-    <element id="Location.telecom.extension:viaintermediary">
-      <path value="Location.telecom.extension" />
-      <sliceName value="viaintermediary" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
-      </type>
-    </element>
-    <element id="Location.telecom.system">
-      <path value="Location.telecom.system"/>
-      <min value="1"/>
-    </element>
-    <element id="Location.telecom.value">
-      <path value="Location.telecom.value"/>
-      <min value="1"/>
-    </element>
-    <element id="Location.managingOrganization">
-      <path value="Location.managingOrganization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Location.partOf">
-      <path value="Location.partOf"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
-      </type>
-    </element>
-    <element id="Location.endpoint">
-      <path value="Location.endpoint"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
-      </type>
-    </element>
-  </differential>
+	<id value="vhdir-location"/>
+	<meta>
+		<lastUpdated value="2017-12-08T19:51:15.908-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+	<name value="vhdir-location"/>
+	<title value="VhDir Location"/>
+	<status value="active"/>
+	<date value="2017-10-03T23:49:16.288+11:00"/>
+	<publisher value="HL7 International"/>
+	<description value="Defines the basic constraints and extensions on the Location resource for use in a Validated Healthcare Directory"/>
+	<copyright value="HL7 International"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Location"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Location">
+			<path value="Location"/>
+		</element>
+		<element id="Location.extension">
+			<path value="Location.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Location.extension:boundary">
+			<path value="Location.extension"/>
+			<sliceName value="boundary"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+			</type>
+		</element>
+		<element id="Location.extension:accessibility">
+			<path value="Location.extension"/>
+			<sliceName value="accessibility"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+			</type>
+		</element>
+		<element id="Location.extension:ehr">
+			<path value="Location.extension"/>
+			<sliceName value="ehr"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+			</type>
+		</element>
+		<element id="Location.extension:newpatients">
+			<path value="Location.extension"/>
+			<sliceName value="newpatients"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"/>
+			</type>
+		</element>
+		<element id="Location.extension:newpatientprofile">
+			<path value="Location.extension"/>
+			<sliceName value="newpatientprofile"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+			</type>
+		</element>
+		<element id="Location.extension:restriction">
+			<path value="Location.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="Location.identifier">
+			<path value="Location.identifier"/>
+		</element>
+		<element id="Location.identifier.extension">
+			<path value="Location.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Location.identifier.extension:status">
+			<path value="Location.identifier.extension"/>
+			<sliceName value="status"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="Location.identifier.assigner">
+			<path value="Location.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Location.status">
+			<path value="Location.status"/>
+			<min value="1"/>
+		</element>
+		<element id="Location.operationalStatus">
+			<path value="Location.operationalStatus"/>
+			<max value="0"/>
+		</element>
+		<element id="Location.mode">
+			<path value="Location.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Location.telecom">
+			<path value="Location.telecom"/>
+		</element>
+		<element id="Location.telecom.extension">
+			<path value="Location.telecom.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Location.telecom.extension:availabletime">
+			<path value="Location.telecom.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="Location.telecom.extension:viaintermediary">
+			<path value="Location.telecom.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="Location.telecom.system">
+			<path value="Location.telecom.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Location.telecom.value">
+			<path value="Location.telecom.value"/>
+			<min value="1"/>
+		</element>
+		<element id="Location.managingOrganization">
+			<path value="Location.managingOrganization"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Location.partOf">
+			<path value="Location.partOf"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+			</type>
+		</element>
+		<element id="Location.endpoint">
+			<path value="Location.endpoint"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

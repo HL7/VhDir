@@ -3,6 +3,7 @@
 	<id value="valueset-primarysourcevalidationstatus"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
 	<name value="VhDir Primary Source Validation Status"/>
+	<title value="VhDir Primary Source Validation Status"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,15 +17,15 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
-            <concept>
-                <code value="successful"/>
-            </concept>
-            <concept>
-                <code value="failed"/>
-            </concept>
-            <concept>
-                <code value="undetermined"/>
-            </concept>
+			<concept>
+				<code value="successful"/>
+			</concept>
+			<concept>
+				<code value="failed"/>
+			</concept>
+			<concept>
+				<code value="undetermined"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

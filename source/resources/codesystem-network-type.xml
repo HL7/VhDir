@@ -3,7 +3,8 @@
 	<id value="codesystem-network-type"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type"/>
 	<name value="VhDir Network Type Code System"/>
-	<status value="draft"/>
+	<title value="VhDir Network Type Code System"/>
+	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
 	<contact>
@@ -66,4 +67,4 @@
 		<display value="State"/>
 		<definition value="State"/>
 	</concept>
-</CodeSystem>	
+</CodeSystem>

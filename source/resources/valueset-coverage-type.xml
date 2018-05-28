@@ -3,6 +3,7 @@
 	<id value="valueset-coverage-type"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type"/>
 	<name value="VhDir Coverage Type"/>
+	<title value="VhDir Coverage Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/device.xsd">
 	<id value="server"/>
-
 	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server"/>
-	<name value="VhDir Server"/>
-	<status value="draft"/>
+	<name value="vhdir-server"/>
+	<title value="VhDir Server"/>
+	<status value="active"/>
 	<date value="2017-03-20"/>
 	<publisher value="HL7 US Realm Steering Committee"/>
 	<contact>
@@ -68,7 +68,6 @@
 				<type value="string"/>
 			</searchParam>
 		</resource>
-
 		<resource>
 			<type value="Organization"/>
 			<interaction>
@@ -125,7 +124,6 @@
 			</searchParam>
 		</resource>
 		<resource>
-
 			<type value="Practitioner"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -171,9 +169,7 @@
 				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-Name"/>
 				<type value="string"/>
 			</searchParam>
-		</resource>
-
-		<!--
+		</resource><!--
 		<operation>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 				<valueCode value="MAY"/>
@@ -184,6 +180,4 @@
 			</definition>
 		</operation>
 
--->
-	</rest>
-</CapabilityStatement>
+--></rest></CapabilityStatement>

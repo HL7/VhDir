@@ -3,6 +3,7 @@
 	<id value="valueset-aliastype"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype"/>
 	<name value="VhDir Alias Type Value Set"/>
+	<title value="VhDir Alias Type Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,12 +17,12 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-		<concept>
-		<code value="legalalternative"/>
-		</concept>
-		<concept>
-		<code value="historical"/>
-		</concept>
+			<concept>
+				<code value="legalalternative"/>
+			</concept>
+			<concept>
+				<code value="historical"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

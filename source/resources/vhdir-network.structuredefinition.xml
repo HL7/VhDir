@@ -1,270 +1,271 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-network" />
-  <meta>
-    <lastUpdated value="2017-12-10T23:37:50.386+11:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network" />
-  <name value="vhdir-network" />
-  <status value="draft" />
-  <date value="2017-09-01T06:26:52.043+10:00" />
-  <publisher value="HL7 International" />
-  <description value="Defines the properties of a Network (through extending an Organization resource) for use in a Validated Healthcare Directory" />
-  <copyright value="HL7 International" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Organization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Organization">
-      <path value="Organization" />
-      <short value="Network" />
-      <definition value="The details of a healthcare provider insurance network" />
-    </element>
-    <element id="Organization.id">
-      <path value="Organization.id" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.meta">
-      <path value="Organization.meta" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.text">
-      <path value="Organization.text" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.extension">
-      <path value="Organization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.extension:timePeriod">
-      <path value="Organization.extension" />
-      <sliceName value="timePeriod" />
-      <short value="Valid time period for this Network" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.extension:coverageArea">
-      <path value="Organization.extension" />
-      <sliceName value="coverageArea" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference" />
-      </type>
-    </element>
-    <element id="Organization.extension:restriction">
-      <path value="Organization.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="Organization.identifier">
-      <path value="Organization.identifier" />
-      <short value="Identifies this network  across multiple systems" />
-      <definition value="Identifier for the network that is used to identify the network across multiple disparate systems." />
-      <requirements value="." />
-    </element>
-    <element id="Organization.identifier.extension">
-      <path value="Organization.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.identifier.extension:status">
-      <path value="Organization.identifier.extension" />
-      <sliceName value="status" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-    <element id="Organization.identifier.assigner">
-      <path value="Organization.identifier.assigner"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Organization.active">
-      <path value="Organization.active" />
-      <label value="status" />
-      <min value="1"/>
-      <mapping>
-        <identity value="hpd" />
-        <map value="hpdProviderStatus" />
-      </mapping>
-    </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <short value="Type" />
-      <definition value="Type of network" />
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type"/>
-      </binding>
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name" />
-      <label value="Network Name" />
-      <short value="Name" />
-      <definition value="A name associated with the network (official name designated by the owner of the network)." />
-      <comment value="If the name of an network changes, consider putting the old name in the alias column so that it can still be located through searches." />
-      <requirements value="Need to use the name as the label of the network." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <label value="alias" />
-      <short value="Alternate names by which the Network is known" />
-      <definition value="A list of alternate names that the network is known as, or was known as in the past." />
-      <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the network." />
-      <requirements value="Over time networks may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the network was known by can be very useful." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <max value="0" />
-    </element>
-    <element id="Organization.address">
-      <path value="Organization.address" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.address.extension">
-      <path value="Organization.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.address.extension:geolocation">
-      <path value="Organization.address.extension" />
-      <sliceName value="geolocation" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
-      </type>
-    </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <short value="Reference to organization that owns the network" />
-      <definition value="The organization that &quot;owns&quot; this network (typically a payer)" />
-      <requirements value="Need to specify the payor organization of this network" />
-      <min value="1"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-    </element>
-    <element id="Organization.contact.name">
-      <path value="Organization.contact.name" />
-    </element>
-    <element id="Organization.contact.name.family">
-      <path value="Organization.contact.name.family" />
-      <min value="1" />
-    </element>
-    <element id="Organization.contact.name.given">
-      <path value="Organization.contact.name.given" />
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Organization.contact.telecom">
-      <path value="Organization.contact.telecom" />
-    </element>
-    <element id="Organization.contact.telecom.extension">
-      <path value="Organization.contact.telecom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.contact.telecom.extension:availabletime">
-      <path value="Organization.contact.telecom.extension" />
-      <sliceName value="availabletime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
-      </type>
-    </element>
-    <element id="Organization.contact.telecom.extension:viaintermediary">
-      <path value="Organization.contact.telecom.extension" />
-      <sliceName value="viaintermediary" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
-      </type>
-    </element>
-    <element id="Organization.contact.telecom.system">
-      <path value="Organization.contact.telecom.system"/>
-      <min value="1"/>
-    </element>
-    <element id="Organization.contact.telecom.value">
-      <path value="Organization.contact.telecom.value"/>
-      <min value="1"/>
-    </element>
-    <element id="Organization.contact.address">
-      <path value="Organization.contact.address" />
-    </element>
-    <element id="Organization.contact.address.extension">
-      <path value="Organization.contact.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.contact.address.extension:geolocation">
-      <path value="Organization.contact.address.extension" />
-      <sliceName value="geolocation" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
-      </type>
-    </element>
-    <element id="Organization.endpoint">
-      <path value="Organization.endpoint" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
-      </type>
-    </element>
-  </differential>
+	<id value="vhdir-network"/>
+	<meta>
+		<lastUpdated value="2017-12-10T23:37:50.386+11:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+	<name value="vhdir-network"/>
+	<title value="VhDir Network"/>
+	<status value="active"/>
+	<date value="2017-09-01T06:26:52.043+10:00"/>
+	<publisher value="HL7 International"/>
+	<description value="Defines the properties of a Network (through extending an Organization resource) for use in a Validated Healthcare Directory"/>
+	<copyright value="HL7 International"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Organization"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Organization">
+			<path value="Organization"/>
+			<short value="Network"/>
+			<definition value="The details of a healthcare provider insurance network"/>
+		</element>
+		<element id="Organization.id">
+			<path value="Organization.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.meta">
+			<path value="Organization.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.text">
+			<path value="Organization.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.extension">
+			<path value="Organization.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Organization.extension:timePeriod">
+			<path value="Organization.extension"/>
+			<sliceName value="timePeriod"/>
+			<short value="Valid time period for this Network"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/organization-period"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.extension:coverageArea">
+			<path value="Organization.extension"/>
+			<sliceName value="coverageArea"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"/>
+			</type>
+		</element>
+		<element id="Organization.extension:restriction">
+			<path value="Organization.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="Organization.identifier">
+			<path value="Organization.identifier"/>
+			<short value="Identifies this network  across multiple systems"/>
+			<definition value="Identifier for the network that is used to identify the network across multiple disparate systems."/>
+			<requirements value="."/>
+		</element>
+		<element id="Organization.identifier.extension">
+			<path value="Organization.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Organization.identifier.extension:status">
+			<path value="Organization.identifier.extension"/>
+			<sliceName value="status"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="Organization.identifier.assigner">
+			<path value="Organization.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Organization.active">
+			<path value="Organization.active"/>
+			<label value="status"/>
+			<min value="1"/>
+			<mapping>
+				<identity value="hpd"/>
+				<map value="hpdProviderStatus"/>
+			</mapping>
+		</element>
+		<element id="Organization.type">
+			<path value="Organization.type"/>
+			<short value="Type"/>
+			<definition value="Type of network"/>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type"/>
+			</binding>
+		</element>
+		<element id="Organization.name">
+			<path value="Organization.name"/>
+			<label value="Network Name"/>
+			<short value="Name"/>
+			<definition value="A name associated with the network (official name designated by the owner of the network)."/>
+			<comment value="If the name of an network changes, consider putting the old name in the alias column so that it can still be located through searches."/>
+			<requirements value="Need to use the name as the label of the network."/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.alias">
+			<path value="Organization.alias"/>
+			<label value="alias"/>
+			<short value="Alternate names by which the Network is known"/>
+			<definition value="A list of alternate names that the network is known as, or was known as in the past."/>
+			<comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the network."/>
+			<requirements value="Over time networks may go through many changes and may be known by different names to different users.&#xA;&#xA;For searching knowing previous names that the network was known by can be very useful."/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.telecom">
+			<path value="Organization.telecom"/>
+			<max value="0"/>
+		</element>
+		<element id="Organization.address">
+			<path value="Organization.address"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.address.extension">
+			<path value="Organization.address.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Organization.address.extension:geolocation">
+			<path value="Organization.address.extension"/>
+			<sliceName value="geolocation"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
+			</type>
+		</element>
+		<element id="Organization.partOf">
+			<path value="Organization.partOf"/>
+			<short value="Reference to organization that owns the network"/>
+			<definition value="The organization that &quot;owns&quot; this network (typically a payer)"/>
+			<requirements value="Need to specify the payor organization of this network"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.contact">
+			<path value="Organization.contact"/>
+		</element>
+		<element id="Organization.contact.name">
+			<path value="Organization.contact.name"/>
+		</element>
+		<element id="Organization.contact.name.family">
+			<path value="Organization.contact.name.family"/>
+			<min value="1"/>
+		</element>
+		<element id="Organization.contact.name.given">
+			<path value="Organization.contact.name.given"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Organization.contact.telecom">
+			<path value="Organization.contact.telecom"/>
+		</element>
+		<element id="Organization.contact.telecom.extension">
+			<path value="Organization.contact.telecom.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Organization.contact.telecom.extension:availabletime">
+			<path value="Organization.contact.telecom.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="Organization.contact.telecom.extension:viaintermediary">
+			<path value="Organization.contact.telecom.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="Organization.contact.telecom.system">
+			<path value="Organization.contact.telecom.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Organization.contact.telecom.value">
+			<path value="Organization.contact.telecom.value"/>
+			<min value="1"/>
+		</element>
+		<element id="Organization.contact.address">
+			<path value="Organization.contact.address"/>
+		</element>
+		<element id="Organization.contact.address.extension">
+			<path value="Organization.contact.address.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Organization.contact.address.extension:geolocation">
+			<path value="Organization.contact.address.extension"/>
+			<sliceName value="geolocation"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
+			</type>
+		</element>
+		<element id="Organization.endpoint">
+			<path value="Organization.endpoint"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

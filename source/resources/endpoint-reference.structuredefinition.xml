@@ -1,48 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="endpoint-reference" />
-  <meta>
-    <lastUpdated value="2017-12-07T15:08:16.087-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
-  <name value="endpoint-reference" />
-  <status value="draft" />
-  <date value="2017-11-07T12:23:01.804-05:00" />
-  <description value="The technical details of an endpoint that can be used for electronic services" />
-  <fhirVersion value="3.2.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="Practitioner"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CareTeam"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Endpoint reference" />
-      <definition value="A reference to the endpoint resource" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
-    </element>
-    <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
-      <sliceName value="valueReference" />
-      <short value="Endpoint reference" />
-      <definition value="A reference to the endpoint" />
-      <min value="1"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
-      </type>
-    </element>
-  </differential>
+	<id value="endpoint-reference"/>
+	<meta>
+		<lastUpdated value="2017-12-07T15:08:16.087-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+	<name value="endpoint-reference"/>
+	<title value="VhDir Endpoint Reference"/>
+	<status value="active"/>
+	<date value="2017-11-07T12:23:01.804-05:00"/>
+	<description value="The technical details of an endpoint that can be used for electronic services"/>
+	<fhirVersion value="3.2.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Practitioner"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="CareTeam"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Endpoint reference"/>
+			<definition value="A reference to the endpoint resource"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+		</element>
+		<element id="Extension.value[x]:valueReference">
+			<path value="Extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<short value="Endpoint reference"/>
+			<definition value="A reference to the endpoint"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

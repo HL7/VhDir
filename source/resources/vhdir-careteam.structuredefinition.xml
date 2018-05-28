@@ -1,219 +1,220 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-careteam" />
-  <meta>
-    <lastUpdated value="2017-12-08T16:57:53.313-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam" />
-  <name value="vhdir-careteam" />
-  <status value="draft" />
-  <date value="2017-10-17T14:22:04.374-04:00" />
-  <publisher value="HL7 International" />
-  <description value="Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory" />
-  <copyright value="HL7 International" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="CareTeam" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="CareTeam">
-      <path value="CareTeam"/>
-    </element>
-    <element id="CareTeam.extension">
-      <path value="CareTeam.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="CareTeam.extension:restriction">
-      <path value="CareTeam.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="CareTeam.extension:alias">
-      <path value="CareTeam.extension" />
-      <sliceName value="alias" />
-      <short value="Alias" />
-      <definition value="Alternate names by which the team is also known" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias" />
-      </type>
-    </element>
-    <element id="CareTeam.extension:location">
-      <path value="CareTeam.extension" />
-      <sliceName value="location" />
-      <short value="Location" />
-      <definition value="A reference to the location resource" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference" />
-      </type>
-    </element>
-    <element id="CareTeam.extension:service">
-      <path value="CareTeam.extension" />
-      <sliceName value="service" />
-      <short value="healthcareService" />
-      <definition value="Reference to healthcareService resources" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference" />
-      </type>
-    </element>
-    <element id="CareTeam.extension:endpoint">
-      <path value="CareTeam.extension" />
-      <sliceName value="endpoint" />
-      <short value="Endpoint reference" />
-      <definition value="A reference to the endpoint resource" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
-      </type>
-    </element>
-    <element id="CareTeam.identifier">
-      <path value="CareTeam.identifier" />
-    </element>
-    <element id="CareTeam.identifier.extension">
-      <path value="CareTeam.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="CareTeam.identifier.extension:status">
-      <path value="CareTeam.identifier.extension" />
-      <sliceName value="status" />
-      <short value="Status" />
-      <definition value="Describes the status of an identifier" />
-      <min value="1"/>
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-    <element id="CareTeam.identifier.assigner">
-      <path value="CareTeam.identifier.assigner"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization" />
-      </type>
-    </element>
-    <element id="CareTeam.status">
-      <path value="CareTeam.status"/>
-      <min value="1"/>
-    </element>
-    <element id="CareTeam.category">
-      <path value="CareTeam.category" />
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="CareTeam.subject">
-      <path value="CareTeam.subject" />
-      <max value="0" />
-    </element>
-    <element id="CareTeam.context">
-      <path value="CareTeam.context" />
-      <max value="0" />
-    </element>
-    <element id="CareTeam.participant.member">
-      <path value="CareTeam.participant.member" />
-      <definition value="The role associated with the specific person or organization who is participating/expected to participate in the care team." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
-      </type>
-    </element>
-    <element id="CareTeam.participant.onBehalfOf">
-      <path value="CareTeam.participant.onBehalfOf"/>
-      <max value="0"/>
-    </element>
-    <element id="CareTeam.reasonCode">
-      <path value="CareTeam.reasonCode"/>
-      <max value="0"/>
-    </element>
-    <element id="CareTeam.reasonReference">
-      <path value="CareTeam.reasonReference" />
-      <max value="0" />
-    </element>
-    <element id="CareTeam.managingOrganization">
-      <path value="CareTeam.managingOrganization" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="CareTeam.telecom">
-      <path value="CareTeam.telecom" />
-    </element>
-    <element id="CareTeam.telecom.extension">
-      <path value="CareTeam.telecom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="CareTeam.telecom.extension:availabletime">
-      <path value="CareTeam.telecom.extension" />
-      <sliceName value="availabletime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
-      </type>
-    </element>
-    <element id="CareTeam.telecom.extension:viaintermediary">
-      <path value="CareTeam.telecom.extension" />
-      <sliceName value="viaintermediary" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
-      </type>
-    </element>
-    <element id="CareTeam.telecom.system">
-      <path value="CareTeam.telecom.system"/>
-      <min value="1"/>
-    </element>
-    <element id="CareTeam.telecom.value">
-      <path value="CareTeam.telecom.value"/>
-      <min value="1"/>
-    </element>
-    <element id="CareTeam.note">
-      <path value="CareTeam.note"/>
-    </element>
-    <element id="CareTeam.note.author[x]">
-      <path value="CareTeam.note.author[x]"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
-      </type>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-  </differential>
+	<id value="vhdir-careteam"/>
+	<meta>
+		<lastUpdated value="2017-12-08T16:57:53.313-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
+	<name value="vhdir-careteam"/>
+	<title value="VhDir Careteam"/>
+	<status value="active"/>
+	<date value="2017-10-17T14:22:04.374-04:00"/>
+	<publisher value="HL7 International"/>
+	<description value="Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"/>
+	<copyright value="HL7 International"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="CareTeam"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="CareTeam">
+			<path value="CareTeam"/>
+		</element>
+		<element id="CareTeam.extension">
+			<path value="CareTeam.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="CareTeam.extension:restriction">
+			<path value="CareTeam.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="CareTeam.extension:alias">
+			<path value="CareTeam.extension"/>
+			<sliceName value="alias"/>
+			<short value="Alias"/>
+			<definition value="Alternate names by which the team is also known"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"/>
+			</type>
+		</element>
+		<element id="CareTeam.extension:location">
+			<path value="CareTeam.extension"/>
+			<sliceName value="location"/>
+			<short value="Location"/>
+			<definition value="A reference to the location resource"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"/>
+			</type>
+		</element>
+		<element id="CareTeam.extension:service">
+			<path value="CareTeam.extension"/>
+			<sliceName value="service"/>
+			<short value="healthcareService"/>
+			<definition value="Reference to healthcareService resources"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"/>
+			</type>
+		</element>
+		<element id="CareTeam.extension:endpoint">
+			<path value="CareTeam.extension"/>
+			<sliceName value="endpoint"/>
+			<short value="Endpoint reference"/>
+			<definition value="A reference to the endpoint resource"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+			</type>
+		</element>
+		<element id="CareTeam.identifier">
+			<path value="CareTeam.identifier"/>
+		</element>
+		<element id="CareTeam.identifier.extension">
+			<path value="CareTeam.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="CareTeam.identifier.extension:status">
+			<path value="CareTeam.identifier.extension"/>
+			<sliceName value="status"/>
+			<short value="Status"/>
+			<definition value="Describes the status of an identifier"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="CareTeam.identifier.assigner">
+			<path value="CareTeam.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="CareTeam.status">
+			<path value="CareTeam.status"/>
+			<min value="1"/>
+		</element>
+		<element id="CareTeam.category">
+			<path value="CareTeam.category"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="CareTeam.subject">
+			<path value="CareTeam.subject"/>
+			<max value="0"/>
+		</element>
+		<element id="CareTeam.context">
+			<path value="CareTeam.context"/>
+			<max value="0"/>
+		</element>
+		<element id="CareTeam.participant.member">
+			<path value="CareTeam.participant.member"/>
+			<definition value="The role associated with the specific person or organization who is participating/expected to participate in the care team."/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
+			</type>
+		</element>
+		<element id="CareTeam.participant.onBehalfOf">
+			<path value="CareTeam.participant.onBehalfOf"/>
+			<max value="0"/>
+		</element>
+		<element id="CareTeam.reasonCode">
+			<path value="CareTeam.reasonCode"/>
+			<max value="0"/>
+		</element>
+		<element id="CareTeam.reasonReference">
+			<path value="CareTeam.reasonReference"/>
+			<max value="0"/>
+		</element>
+		<element id="CareTeam.managingOrganization">
+			<path value="CareTeam.managingOrganization"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="CareTeam.telecom">
+			<path value="CareTeam.telecom"/>
+		</element>
+		<element id="CareTeam.telecom.extension">
+			<path value="CareTeam.telecom.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="CareTeam.telecom.extension:availabletime">
+			<path value="CareTeam.telecom.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="CareTeam.telecom.extension:viaintermediary">
+			<path value="CareTeam.telecom.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="CareTeam.telecom.system">
+			<path value="CareTeam.telecom.system"/>
+			<min value="1"/>
+		</element>
+		<element id="CareTeam.telecom.value">
+			<path value="CareTeam.telecom.value"/>
+			<min value="1"/>
+		</element>
+		<element id="CareTeam.note">
+			<path value="CareTeam.note"/>
+		</element>
+		<element id="CareTeam.note.author[x]">
+			<path value="CareTeam.note.author[x]"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+			</type>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

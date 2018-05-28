@@ -2,7 +2,7 @@
 
 A FHIR implementation guide enabling the exchange of validated healthcare directory information between a reference source (e.g. national directory) and 'local' workflow environments (e.g. local directories).
 
-Authors:  Alex Kontur, Dan Chaputt, Brian Postlethwaite, Bob Dieterle, eric Haas, Nagesh Bashyam, ONC Contributors
+Authors:  Alex Kontur, Dan Chaput, Brian Postlethwaite, Bob Dieterle, Eric Haas, Nagesh Bashyam, ONC Contributors
 
 -----
 FHIR STU3 Implementation Guide
@@ -25,7 +25,7 @@ http://build.fhir.org/ig/HL7/VhDir/qa.html
 
 ### Local continuous builds
 
-These are tow batch files that perform the complete build:
+These are network batch files that perform the complete build:
 
 1. `build.bat`  (Windows)
 

@@ -3,6 +3,7 @@
 	<id value="valueset-digitalcertificatetrustframework"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
 	<name value="VhDir Digital Certificate Trust Framework Value Set"/>
+	<title value="VhDir Digital Certificate Trust Framework Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -19,20 +20,20 @@
 			<concept>
 				<code value="direct"/>
 			</concept>
-		<concept>
-		<code value="FPKI"/>
-		</concept>
-		<concept>
-		<code value="SAFEBioP"/>
-		</concept>
-		<concept>
-		<code value="ONCTEF"/>
-		</concept>
-		<concept>
-		<code value="NATE"/>
-		</concept>
-		<concept>
-		<code value="other"/>
+			<concept>
+				<code value="FPKI"/>
+			</concept>
+			<concept>
+				<code value="SAFEBioP"/>
+			</concept>
+			<concept>
+				<code value="ONCTEF"/>
+			</concept>
+			<concept>
+				<code value="NATE"/>
+			</concept>
+			<concept>
+				<code value="other"/>
 			</concept>
 		</include>
 	</compose>

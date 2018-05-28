@@ -3,6 +3,7 @@
 	<id value="valueset-plan-type"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-plan-type"/>
 	<name value="VhDir Plan Type"/>
+	<title value="VhDir Plan Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

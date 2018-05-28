@@ -1,7 +1,22 @@
-TBD
+#### Supported Searches
 
+1. `GET [base]/HealthcareService?eligibility=[code]`
 
-  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
-  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
- [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
- [(how to search by string)]: http://hl7.org/fhir/STU3/search.html#string
+      *Support:*  support search by the [`eligibility`](SearchParameter-searchparameter-eligibility.html) parameter
+<hr />
+1. `GET [base]/HealthcareService?coveragearea=[id]`
+
+      *Support:*  support search by the [`coveragearea`](SearchParameter-searchparameter-coveragearea.html) parameter
+<hr />
+1. `GET [base]/HealthcareService?identifier-assigner=[id]`
+
+      *Support:*  support search by the [`identifier-assigner`](SearchParameter-searchparameter-identifier-assigner.html) parameter
+<hr />
+1. ``
+
+      *Support:*  support search by the [`newpatients`](SearchParameter-searchparameter-newpatients.html) parameter
+<hr />
+1. `GET [base]/HealthcareService?via-intermediary=[id]`
+
+      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+<hr />

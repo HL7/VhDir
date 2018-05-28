@@ -26,3 +26,4 @@
   "description": "Select validation information for the specified attribute of a resource",
   "expression": "VerificationResult.targetLocation"
 }
+

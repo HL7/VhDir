@@ -1,60 +1,36 @@
+#### Supported Searches
 
-`GET [base]/Organization?identifier=[system]|[code]`
+1. `GET [base]/Organization?coverage-area=[id]`
 
-**Example:** GET [base]/Organization?identifier=12354
+      *Support:* SHOULD support search by the [`coverage-area`](SearchParameter-searchparameter-coverage-area.html) parameter
+     <hr />
 
-*Support:* Mandatory
+1. `GET [base]/Organization?qualification-status=[code]`
 
-*Implementation Notes:*  Search based on Organization identifier  [(how to search by token)].
+      *Support:* SHALL support search by the [`qualification-status`](SearchParameter-searchparameter-qualification-status.html) parameter
+     <hr />
 
-*Response Class:*
+1. `GET [base]/Organization?qualification-code=[code]`
 
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
--   (Status 403): insufficient scope
+      *Support:* SHOULD support search by the [`qualification-code`](SearchParameter-searchparameter-qualification-code.html) parameter
+     <hr />
 
------------
+1. `GET [base]/Organization?qualification-wherevalid-location=[id]`
 
-`GET [base]/Organization?name=[string]`
+      *Support:* SHOULD support search by the [`qualification-wherevalid-location`](SearchParameter-searchparameter-qualification-wherevalid-location.html) parameter
+      <hr />
 
-**Example:** GET [base]/Organization?name=Health
+1. `GET [base]/Organization?qualification-wherevalid-code=[code]`
 
-*Support:* Mandatory
+      *Support:* SHOULD support search by the [`qualification-wherevalid-code`](SearchParameter-searchparameter-qualification-wherevalid-code.html) parameter
+      <hr />
 
-*Implementation Notes:* Search based on text name [(how to search by string)]. May also support:
-   - address-city
-   - address-state
-   - address-postalcode
+1. `GET [base]/Organization?qualification-issuer=[id]`
 
-*Response Class:*
+      *Support:* MAY support search by the [`qualification-issuer`](SearchParameter-searchparameter-qualification-issuer.html) parameter
+      <hr />
 
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
--   (Status 403): insufficient scope
+1. `GET [base]/Organization?via-intermediary=[id]`
 
------
-
-`GET [base]/Organization?address=[string]`
-
-**Example:** GET [base]/Organization?address=Arbor
-
-**Example:** GET [base]/Organization?address-postalcode=48104
-
-*Support:* Mandatory
-
-*Implementation Notes:* Search based on text address [(how to search by string)].
-
-*Response Class:*
-
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
--   (Status 403): insufficient scope
-
-
-  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
-  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
- [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
- [(how to search by string)]: http://hl7.org/fhir/STU3/search.html#string
+      *Support:* MAY support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      <hr />

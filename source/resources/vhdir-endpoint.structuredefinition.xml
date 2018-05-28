@@ -1,149 +1,150 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-endpoint" />
-  <meta>
-    <lastUpdated value="2017-12-08T19:51:07.842-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint" />
-  <name value="vhdir-endpoint" />
-  <status value="draft" />
-  <date value="2017-10-04T00:34:40.427+11:00" />
-  <description value="Defines the basic constraints and extensions on the Endpoint resource for use in a Validated Healthcare Directory" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Endpoint" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Endpoint">
-      <path value="Endpoint" />
-    </element>
-    <element id="Endpoint.extension">
-      <path value="Endpoint.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Endpoint.extension:restriction">
-      <path value="Endpoint.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="Endpoint.extension:usecase">
-      <path value="Endpoint.extension" />
-      <sliceName value="usecase" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase" />
-      </type>
-    </element>
-    <element id="Endpoint.extension:rank">
-      <path value="Endpoint.extension" />
-      <sliceName value="rank" />
-      <definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank" />
-      </type>
-    </element>
-    <element id="Endpoint.extension:digitalcertificate">
-      <path value="Endpoint.extension" />
-      <sliceName value="digitalcertificate" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
-      </type>
-    </element>
-    <element id="Endpoint.identifier">
-      <path value="Endpoint.identifier" />
-    </element>
-    <element id="Endpoint.identifier.extension">
-      <path value="Endpoint.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Endpoint.identifier.extension:status">
-      <path value="Endpoint.identifier.extension" />
-      <sliceName value="status" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-    <element id="Endpoint.identifier.assigner">
-      <path value="Endpoint.identifier.assigner"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Endpoint.managingOrganization">
-      <path value="Endpoint.managingOrganization" />
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>        
-    <element id="Endpoint.contact">
-      <path value="Endpoint.contact" />
-      <max value="1" />
-    </element>
-    <element id="Endpoint.contact.extension">
-      <path value="Endpoint.contact.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Endpoint.contact.extension:availabletime">
-      <path value="Endpoint.contact.extension" />
-      <sliceName value="availabletime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
-      </type>
-    </element>
-    <element id="Endpoint.contact.extension:viaintermediary">
-      <path value="Endpoint.contact.extension" />
-      <sliceName value="viaintermediary" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
-      </type>
-    </element>
-    <element id="Endpoint.contact.system">
-      <path value="Endpoint.contact.system"/>
-      <min value="1"/>
-    </element>
-    <element id="Endpoint.contact.value">
-      <path value="Endpoint.contact.value"/>
-      <min value="1"/>
-    </element>
-  </differential>
+	<id value="vhdir-endpoint"/>
+	<meta>
+		<lastUpdated value="2017-12-08T19:51:07.842-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+	<name value="vhdir-endpoint"/>
+	<title value="VhDir Endpoint"/>
+	<status value="active"/>
+	<date value="2017-10-04T00:34:40.427+11:00"/>
+	<description value="Defines the basic constraints and extensions on the Endpoint resource for use in a Validated Healthcare Directory"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Endpoint"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Endpoint">
+			<path value="Endpoint"/>
+		</element>
+		<element id="Endpoint.extension">
+			<path value="Endpoint.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Endpoint.extension:restriction">
+			<path value="Endpoint.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="Endpoint.extension:usecase">
+			<path value="Endpoint.extension"/>
+			<sliceName value="usecase"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase"/>
+			</type>
+		</element>
+		<element id="Endpoint.extension:rank">
+			<path value="Endpoint.extension"/>
+			<sliceName value="rank"/>
+			<definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank"/>
+			</type>
+		</element>
+		<element id="Endpoint.extension:digitalcertificate">
+			<path value="Endpoint.extension"/>
+			<sliceName value="digitalcertificate"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"/>
+			</type>
+		</element>
+		<element id="Endpoint.identifier">
+			<path value="Endpoint.identifier"/>
+		</element>
+		<element id="Endpoint.identifier.extension">
+			<path value="Endpoint.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Endpoint.identifier.extension:status">
+			<path value="Endpoint.identifier.extension"/>
+			<sliceName value="status"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="Endpoint.identifier.assigner">
+			<path value="Endpoint.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Endpoint.managingOrganization">
+			<path value="Endpoint.managingOrganization"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Endpoint.contact">
+			<path value="Endpoint.contact"/>
+			<max value="1"/>
+		</element>
+		<element id="Endpoint.contact.extension">
+			<path value="Endpoint.contact.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Endpoint.contact.extension:availabletime">
+			<path value="Endpoint.contact.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="Endpoint.contact.extension:viaintermediary">
+			<path value="Endpoint.contact.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="Endpoint.contact.system">
+			<path value="Endpoint.contact.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Endpoint.contact.value">
+			<path value="Endpoint.contact.value"/>
+			<min value="1"/>
+		</element>
+	</differential>
 </StructureDefinition>

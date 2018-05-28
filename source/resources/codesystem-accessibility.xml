@@ -3,7 +3,8 @@
 	<id value="codesystem-accessibility"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
 	<name value="VhDir Accessibility Code System"/>
-	<status value="draft"/>
+	<title value="VhDir Accessibility Code System"/>
+	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
 	<contact>
@@ -56,4 +57,4 @@
 		<display value="mobility"/>
 		<definition value="Provides services for mobility impaired persons."/>
 	</concept>
-</CodeSystem>	
+</CodeSystem>

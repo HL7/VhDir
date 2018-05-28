@@ -3,6 +3,7 @@
 	<id value="valueset-primarysourcepushtype"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
 	<name value="VhDir Primary Source Push Type"/>
+	<title value="VhDir Primary Source Push Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,15 +17,15 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
-            <concept>
-                <code value="specific"/>
-            </concept>
-            <concept>
-                <code value="any"/>
-            </concept>
-            <concept>
-                <code value="sourcedef"/>
-            </concept>
+			<concept>
+				<code value="specific"/>
+			</concept>
+			<concept>
+				<code value="any"/>
+			</concept>
+			<concept>
+				<code value="sourcedef"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

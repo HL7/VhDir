@@ -22,7 +22,8 @@
   "base": [
     "Endpoint"
   ],
-  "type": "uri",
+  "type": "reference",
   "description": "Select endpoints that support the specified standard",
   "expression": "Endpoint.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase').extension('standard')"
 }
+

@@ -1,244 +1,245 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="vhdir-practitioner" />
-  <meta>
-    <lastUpdated value="2017-12-08T19:51:21.822-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner" />
-  <name value="vhdir-practitioner" />
-  <status value="draft" />
-  <date value="2017-09-05T15:29:34.562-05:00" />
-  <publisher value="HL7 International" />
-  <description value="Defines the basic constraints and extensions on the Practitioner resource for use in a Validated Healthcare Directory" />
-  <copyright value="HL7 International" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Practitioner" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Practitioner">
-      <path value="Practitioner" />
-    </element>
-    <element id="Practitioner.extension">
-      <path value="Practitioner.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.extension:restriction">
-      <path value="Practitioner.extension" />
-      <sliceName value="restriction" />
-      <short value="Restriction" />
-      <definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction" />
-      </type>
-    </element>
-    <element id="Practitioner.extension:endpoint">
-      <path value="Practitioner.extension" />
-      <sliceName value="endpoint"/>
-      <label value="endpoint"/>
-      <short value="Reference to endpoint(s) unique to the practitioner"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference" />
-      </type>
-    </element>
-    <element id="Practitioner.extension:accessibility">
-      <path value="Practitioner.extension" />
-      <sliceName value="accessibility" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility" />
-      </type>
-    </element>
-    <element id="Practitioner.extension:digitalcertificate">
-      <path value="Practitioner.extension" />
-      <sliceName value="digitalcertificate" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate" />
-      </type>
-    </element>
-    <element id="Practitioner.identifier">
-      <path value="Practitioner.identifier" />
-    </element>
-    <element id="Practitioner.identifier.extension">
-      <path value="Practitioner.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.identifier.extension:status">
-      <path value="Practitioner.identifier.extension" />
-      <sliceName value="status" />
-      <label value="status" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" />
-      </type>
-    </element>
-    <element id="Practitioner.identifier.assigner">
-      <path value="Practitioner.identifier.assigner"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Practitioner.active">
-      <path value="Practitioner.active" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.name">
-      <path value="Practitioner.name" />
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Practitioner.name.family">
-      <path value="Practitioner.name.family" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.name.given">
-      <path value="Practitioner.name.given" />
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Practitioner.telecom">
-      <path value="Practitioner.telecom" />
-    </element>
-    <element id="Practitioner.telecom.extension">
-      <path value="Practitioner.telecom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.telecom.extension:viaintermediary">
-      <path value="Practitioner.telecom.extension" />
-      <sliceName value="viaintermediary" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" />
-      </type>
-    </element>
-    <element id="Practitioner.telecom.extension:availabletime">
-      <path value="Practitioner.telecom.extension" />
-      <sliceName value="availabletime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime" />
-      </type>
-    </element>
-    <element id="Practitioner.telecom.system">
-      <path value="Practitioner.telecom.system"/>
-      <min value="1"/>
-    </element>
-    <element id="Practitioner.telecom.value">
-      <path value="Practitioner.telecom.value"/>
-      <min value="1"/>
-    </element>
-    <element id="Practitioner.address">
-      <path value="Practitioner.address" />
-    </element>
-    <element id="Practitioner.address.extension">
-      <path value="Practitioner.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.address.extension:position">
-      <path value="Practitioner.address.extension" />
-      <sliceName value="position" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/geolocation" />
-      </type>
-    </element>
-    <element id="Practitioner.photo">
-      <path value="Practitioner.photo" />
-      <max value="1" />
-    </element>
-    <element id="Practitioner.qualification">
-      <path value="Practitioner.qualification"/>
-    </element>
-    <element id="Practitioner.qualification.extension">
-      <path value="Practitioner.qualification.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.qualification.extension:practitioner-qualification">
-      <path value="Practitioner.qualification.extension" />
-      <sliceName value="practitioner-qualification" />
-      <short value="Adds status, whereValid, history elements" />
-      <definition value="Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification" />
-      </type>
-    </element>
-    <element id="Practitioner.qualification.issuer">
-      <path value="Practitioner.qualification.issuer"/>
-      <min value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-      </type>
-    </element>
-    <element id="Practitioner.communication">
-      <path value="Practitioner.communication" />
-    </element>
-    <element id="Practitioner.communication.extension">
-      <path value="Practitioner.communication.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Practitioner.communication.extension:proficiency">
-      <path value="Practitioner.communication.extension" />
-      <sliceName value="proficiency" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency" />
-      </type>
-    </element>
-  </differential>
+	<id value="vhdir-practitioner"/>
+	<meta>
+		<lastUpdated value="2017-12-08T19:51:21.822-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+	<name value="vhdir-practitioner"/>
+	<title value="VhDir Practitioner"/>
+	<status value="active"/>
+	<date value="2017-09-05T15:29:34.562-05:00"/>
+	<publisher value="HL7 International"/>
+	<description value="Defines the basic constraints and extensions on the Practitioner resource for use in a Validated Healthcare Directory"/>
+	<copyright value="HL7 International"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Practitioner"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Practitioner">
+			<path value="Practitioner"/>
+		</element>
+		<element id="Practitioner.extension">
+			<path value="Practitioner.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.extension:restriction">
+			<path value="Practitioner.extension"/>
+			<sliceName value="restriction"/>
+			<short value="Restriction"/>
+			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			</type>
+		</element>
+		<element id="Practitioner.extension:endpoint">
+			<path value="Practitioner.extension"/>
+			<sliceName value="endpoint"/>
+			<label value="endpoint"/>
+			<short value="Reference to endpoint(s) unique to the practitioner"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+			</type>
+		</element>
+		<element id="Practitioner.extension:accessibility">
+			<path value="Practitioner.extension"/>
+			<sliceName value="accessibility"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+			</type>
+		</element>
+		<element id="Practitioner.extension:digitalcertificate">
+			<path value="Practitioner.extension"/>
+			<sliceName value="digitalcertificate"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"/>
+			</type>
+		</element>
+		<element id="Practitioner.identifier">
+			<path value="Practitioner.identifier"/>
+		</element>
+		<element id="Practitioner.identifier.extension">
+			<path value="Practitioner.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.identifier.extension:status">
+			<path value="Practitioner.identifier.extension"/>
+			<sliceName value="status"/>
+			<label value="status"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="Practitioner.identifier.assigner">
+			<path value="Practitioner.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Practitioner.active">
+			<path value="Practitioner.active"/>
+			<min value="1"/>
+		</element>
+		<element id="Practitioner.name">
+			<path value="Practitioner.name"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Practitioner.name.family">
+			<path value="Practitioner.name.family"/>
+			<min value="1"/>
+		</element>
+		<element id="Practitioner.name.given">
+			<path value="Practitioner.name.given"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Practitioner.telecom">
+			<path value="Practitioner.telecom"/>
+		</element>
+		<element id="Practitioner.telecom.extension">
+			<path value="Practitioner.telecom.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.telecom.extension:viaintermediary">
+			<path value="Practitioner.telecom.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="Practitioner.telecom.extension:availabletime">
+			<path value="Practitioner.telecom.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="Practitioner.telecom.system">
+			<path value="Practitioner.telecom.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Practitioner.telecom.value">
+			<path value="Practitioner.telecom.value"/>
+			<min value="1"/>
+		</element>
+		<element id="Practitioner.address">
+			<path value="Practitioner.address"/>
+		</element>
+		<element id="Practitioner.address.extension">
+			<path value="Practitioner.address.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.address.extension:position">
+			<path value="Practitioner.address.extension"/>
+			<sliceName value="position"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
+			</type>
+		</element>
+		<element id="Practitioner.photo">
+			<path value="Practitioner.photo"/>
+			<max value="1"/>
+		</element>
+		<element id="Practitioner.qualification">
+			<path value="Practitioner.qualification"/>
+		</element>
+		<element id="Practitioner.qualification.extension">
+			<path value="Practitioner.qualification.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.qualification.extension:practitioner-qualification">
+			<path value="Practitioner.qualification.extension"/>
+			<sliceName value="practitioner-qualification"/>
+			<short value="Adds status, whereValid, history elements"/>
+			<definition value="Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"/>
+			</type>
+		</element>
+		<element id="Practitioner.qualification.issuer">
+			<path value="Practitioner.qualification.issuer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="Practitioner.communication">
+			<path value="Practitioner.communication"/>
+		</element>
+		<element id="Practitioner.communication.extension">
+			<path value="Practitioner.communication.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.communication.extension:proficiency">
+			<path value="Practitioner.communication.extension"/>
+			<sliceName value="proficiency"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

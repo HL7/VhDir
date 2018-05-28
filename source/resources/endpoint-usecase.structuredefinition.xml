@@ -1,98 +1,99 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="endpoint-usecase" />
-  <meta>
-    <lastUpdated value="2017-12-05T09:45:58.249-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase" />
-  <name value="endpoint-usecase" />
-  <status value="draft" />
-  <date value="2017-12-05T09:40:52.923-05:00" />
-  <description value="An enumeration of specific use cases (service descriptions) supported by the endpoint" />
-  <fhirVersion value="3.2.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="Endpoint"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Use case" />
-      <definition value="An enumeration of specific use cases (service descriptions) supported by the endpoint" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:type">
-      <path value="Extension.extension" />
-      <sliceName value="type" />
-      <label value="type" />
-      <short value="Type" />
-      <definition value="Type of services supported by this endpoint" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:type.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="type" />
-    </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <label value="type" />
-      <short value="Type" />
-      <definition value="Type of services supported by this endpoint" />
-      <min value="1"/>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype"/>
-      </binding>
-    </element>
-    <element id="Extension.extension:standard">
-      <path value="Extension.extension" />
-      <sliceName value="standard" />
-      <label value="standard" />
-      <short value="Standard" />
-      <definition value="URI to the published standard (e.g. HL7 implementation guide)" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:standard.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="standard" />
-    </element>
-    <element id="Extension.extension:standard.value[x]:valueUri">
-      <path value="Extension.extension.valueUri" />
-      <sliceName value="valueUri" />
-      <label value="standard" />
-      <short value="Standard" />
-      <definition value="URI to the published standard (e.g. HL7 implementation guide)" />
-      <min value="1"/>
-      <type>
-        <code value="uri" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
-    </element>
-  </differential>
+	<id value="endpoint-usecase"/>
+	<meta>
+		<lastUpdated value="2017-12-05T09:45:58.249-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase"/>
+	<name value="endpoint-usecase"/>
+	<title value="VhDir Endpoint Usecase"/>
+	<status value="active"/>
+	<date value="2017-12-05T09:40:52.923-05:00"/>
+	<description value="An enumeration of specific use cases (service descriptions) supported by the endpoint"/>
+	<fhirVersion value="3.2.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Endpoint"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Use case"/>
+			<definition value="An enumeration of specific use cases (service descriptions) supported by the endpoint"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Extension.extension:type">
+			<path value="Extension.extension"/>
+			<sliceName value="type"/>
+			<label value="type"/>
+			<short value="Type"/>
+			<definition value="Type of services supported by this endpoint"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:type.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="type"/>
+		</element>
+		<element id="Extension.extension:type.value[x]:valueCodeableConcept">
+			<path value="Extension.extension.valueCodeableConcept"/>
+			<sliceName value="valueCodeableConcept"/>
+			<label value="type"/>
+			<short value="Type"/>
+			<definition value="Type of services supported by this endpoint"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype"/>
+			</binding>
+		</element>
+		<element id="Extension.extension:standard">
+			<path value="Extension.extension"/>
+			<sliceName value="standard"/>
+			<label value="standard"/>
+			<short value="Standard"/>
+			<definition value="URI to the published standard (e.g. HL7 implementation guide)"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:standard.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="standard"/>
+		</element>
+		<element id="Extension.extension:standard.value[x]:valueUri">
+			<path value="Extension.extension.valueUri"/>
+			<sliceName value="valueUri"/>
+			<label value="standard"/>
+			<short value="Standard"/>
+			<definition value="URI to the published standard (e.g. HL7 implementation guide)"/>
+			<min value="1"/>
+			<type>
+				<code value="uri"/>
+			</type>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

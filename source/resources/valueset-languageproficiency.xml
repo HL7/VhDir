@@ -3,6 +3,7 @@
 	<id value="valueset-languageproficiency"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-languageproficiency"/>
 	<name value="VhDir Spoken Language Proficiency"/>
+	<title value="VhDir Spoken Language Proficiency"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,6 +17,6 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency"/>
-        </include>
+		</include>
 	</compose>
 </ValueSet>

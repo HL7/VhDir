@@ -1,46 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="healthcareservice-reference" />
-  <meta>
-    <lastUpdated value="2017-11-13T15:19:32.164-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference" />
-  <name value="healthcareservice-reference" />
-  <status value="draft" />
-  <date value="2017-11-08T11:53:40.139-05:00" />
-  <description value="Reference to healthcareservice resource" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="CareTeam"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="healthcareservice" />
-      <definition value="Reference to healthcareservice resources" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference" />
-    </element>
-    <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
-      <sliceName value="valueReference" />
-      <label value="healthcareservice" />
-      <short value="Healthcare service" />
-      <definition value="Reference to healthcareservice resource" />
-      <comment value="Extension to careteam" />
-      <min value="1"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice" />
-      </type>
-    </element>
-  </differential>
+	<id value="healthcareservice-reference"/>
+	<meta>
+		<lastUpdated value="2017-11-13T15:19:32.164-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"/>
+	<name value="healthcareservice-reference"/>
+	<title value="VhDir Healthcareservice Reference"/>
+	<status value="active"/>
+	<date value="2017-11-08T11:53:40.139-05:00"/>
+	<description value="Reference to healthcareservice resource"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="CareTeam"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="healthcareservice"/>
+			<definition value="Reference to healthcareservice resources"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"/>
+		</element>
+		<element id="Extension.value[x]:valueReference">
+			<path value="Extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<label value="healthcareservice"/>
+			<short value="Healthcare service"/>
+			<definition value="Reference to healthcareservice resource"/>
+			<comment value="Extension to careteam"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>

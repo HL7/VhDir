@@ -3,6 +3,7 @@
 	<id value="valueset-accessibility"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
 	<name value="VhDir Accessibility Value Set"/>
+	<title value="VhDir Accessibility Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

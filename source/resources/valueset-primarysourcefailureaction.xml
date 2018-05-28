@@ -3,6 +3,7 @@
 	<id value="valueset-primarysourcefailureaction"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction"/>
 	<name value="VhDir Primary Source Failure Action"/>
+	<title value="VhDir Primary Source Failure Action"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>
@@ -16,15 +17,15 @@
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
-            <concept>
-                <code value="fatal"/>
-            </concept>
-            <concept>
-                <code value="warning"/>
-            </concept>
-            <concept>
-                <code value="recordonly"/>
-            </concept>
+			<concept>
+				<code value="fatal"/>
+			</concept>
+			<concept>
+				<code value="warning"/>
+			</concept>
+			<concept>
+				<code value="recordonly"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

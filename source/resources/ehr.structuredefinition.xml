@@ -1,192 +1,193 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehr" />
-  <meta>
-    <lastUpdated value="2017-12-08T18:43:43.471-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
-  <name value="ehr" />
-  <status value="draft" />
-  <date value="2017-11-13T14:19:15.411-05:00" />
-  <description value="Information about the EHR system/module used at a location" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element"/>
-    <expression value="Location"/>
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="EHR" />
-      <definition value="Information about the EHR system/module used at a location" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:developer">
-      <path value="Extension.extension" />
-      <sliceName value="developer" />
-      <label value="developer" />
-      <short value="Developer" />
-      <definition value="The developer of the EHR product" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:developer.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="developer" />
-    </element>
-    <element id="Extension.extension:developer.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="developer" />
-      <short value="Developer" />
-      <definition value="The developer of the EHR product" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:product">
-      <path value="Extension.extension" />
-      <sliceName value="product" />
-      <label value="product" />
-      <short value="Product" />
-      <definition value="The name of the EHR product" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:product.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="product" />
-    </element>
-    <element id="Extension.extension:product.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="product" />
-      <short value="Product" />
-      <definition value="The name of the EHR product" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:version">
-      <path value="Extension.extension" />
-      <sliceName value="version" />
-      <label value="version" />
-      <short value="version" />
-      <definition value="Version of the EHR product" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:version.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="version" />
-    </element>
-    <element id="Extension.extension:version.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="version" />
-      <short value="Version" />
-      <definition value="Version of the EHR product" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:certificationEdition">
-      <path value="Extension.extension" />
-      <sliceName value="certificationEdition" />
-      <label value="certificationEdition" />
-      <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:certificationEdition.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="certificationEdition" />
-    </element>
-    <element id="Extension.extension:certificationEdition.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
-      <label value="certificationEdition" />
-      <short value="Certification edition" />
-      <definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)" />
-      <min value="1"/>
-      <type>
-        <code value="Coding" />
-      </type>
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition"/>
-      </binding>
-    </element>
-    <element id="Extension.extension:patientAccess">
-      <path value="Extension.extension" />
-      <sliceName value="patientAccess" />
-      <label value="patientAccess" />
-      <short value="Patient acccess" />
-      <definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it" />
-    </element>
-    <element id="Extension.extension:patientAccess.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="patientAccess" />
-    </element>
-    <element id="Extension.extension:patientAccess.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <label value="patientAccess" />
-      <short value="Patient access" />
-      <definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it" />
-      <min value="1"/>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess"/>
-      </binding>
-    </element>
-    <element id="Extension.extension:certificationID">
-      <path value="Extension.extension" />
-      <sliceName value="certificationID" />
-      <label value="certificationID" />
-      <short value="Certification ID" />
-      <definition value="Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:certificationID.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="certificationID" />
-    </element>
-    <element id="Extension.extension:certificationID.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <label value="certificationID" />
-      <short value="Certification ID" />
-      <definition value="Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product" />
-      <min value="1"/>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
-    </element>
-  </differential>
+	<id value="ehr"/>
+	<meta>
+		<lastUpdated value="2017-12-08T18:43:43.471-05:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+	<name value="ehr"/>
+	<title value="VhDir Ehr"/>
+	<status value="active"/>
+	<date value="2017-11-13T14:19:15.411-05:00"/>
+	<description value="Information about the EHR system/module used at a location"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Location"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="EHR"/>
+			<definition value="Information about the EHR system/module used at a location"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Extension.extension:developer">
+			<path value="Extension.extension"/>
+			<sliceName value="developer"/>
+			<label value="developer"/>
+			<short value="Developer"/>
+			<definition value="The developer of the EHR product"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:developer.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="developer"/>
+		</element>
+		<element id="Extension.extension:developer.value[x]:valueString">
+			<path value="Extension.extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="developer"/>
+			<short value="Developer"/>
+			<definition value="The developer of the EHR product"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:product">
+			<path value="Extension.extension"/>
+			<sliceName value="product"/>
+			<label value="product"/>
+			<short value="Product"/>
+			<definition value="The name of the EHR product"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:product.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="product"/>
+		</element>
+		<element id="Extension.extension:product.value[x]:valueString">
+			<path value="Extension.extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="product"/>
+			<short value="Product"/>
+			<definition value="The name of the EHR product"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:version">
+			<path value="Extension.extension"/>
+			<sliceName value="version"/>
+			<label value="version"/>
+			<short value="version"/>
+			<definition value="Version of the EHR product"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:version.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="version"/>
+		</element>
+		<element id="Extension.extension:version.value[x]:valueString">
+			<path value="Extension.extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="version"/>
+			<short value="Version"/>
+			<definition value="Version of the EHR product"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:certificationEdition">
+			<path value="Extension.extension"/>
+			<sliceName value="certificationEdition"/>
+			<label value="certificationEdition"/>
+			<short value="Certification edition"/>
+			<definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:certificationEdition.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="certificationEdition"/>
+		</element>
+		<element id="Extension.extension:certificationEdition.value[x]:valueCoding">
+			<path value="Extension.extension.valueCoding"/>
+			<sliceName value="valueCoding"/>
+			<label value="certificationEdition"/>
+			<short value="Certification edition"/>
+			<definition value="Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)"/>
+			<min value="1"/>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition"/>
+			</binding>
+		</element>
+		<element id="Extension.extension:patientAccess">
+			<path value="Extension.extension"/>
+			<sliceName value="patientAccess"/>
+			<label value="patientAccess"/>
+			<short value="Patient acccess"/>
+			<definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it"/>
+		</element>
+		<element id="Extension.extension:patientAccess.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="patientAccess"/>
+		</element>
+		<element id="Extension.extension:patientAccess.value[x]:valueCodeableConcept">
+			<path value="Extension.extension.valueCodeableConcept"/>
+			<sliceName value="valueCodeableConcept"/>
+			<label value="patientAccess"/>
+			<short value="Patient access"/>
+			<definition value="Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess"/>
+			</binding>
+		</element>
+		<element id="Extension.extension:certificationID">
+			<path value="Extension.extension"/>
+			<sliceName value="certificationID"/>
+			<label value="certificationID"/>
+			<short value="Certification ID"/>
+			<definition value="Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:certificationID.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="certificationID"/>
+		</element>
+		<element id="Extension.extension:certificationID.value[x]:valueString">
+			<path value="Extension.extension.valueString"/>
+			<sliceName value="valueString"/>
+			<label value="certificationID"/>
+			<short value="Certification ID"/>
+			<definition value="Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>
