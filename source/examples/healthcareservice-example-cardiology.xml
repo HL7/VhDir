@@ -6,41 +6,41 @@
     </meta>
 
     <identifier> <!-- Internal business ID for this service, assigned by Founding Fathers Memorial Hospital -->
-        <use value="secondary"/> 
-        <type> 
-            <text value="Business ID"/> 
+        <use value="secondary"/>
+        <type>
+            <text value="Business ID"/>
         </type>
-        <system value="www.foundingfathersmemorial.com"/> 
-        <value value="service001"/> 
-        <assigner> 
+        <system value="www.foundingfathersmemorial.com"/>
+        <value value="service001"/>
+        <assigner>
             <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/> 
+            <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/> 
+            <valueCode value="active"/>
         </extension>
     </identifier>
 
     <active value="true"/> <!-- This record is active -->
 
     <providedBy> <!-- This service is provided by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/> 
-        <display value="Founding Fathers Memorial Hospital"/> 
+        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
     </providedBy>
 
     <category> <!-- This is a service provided at a hospital -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/service-category"/>
-            <code value="35"/> 
-            <display value="Hospital"/> 
+            <code value="35"/>
+            <display value="Hospital"/>
         </coding>
     </category>
 
     <type> <!-- This is a cardiology service -->
-        <coding> 
-            <system value="http://hl7.org/fhir/service-type"/> 
-            <code value="165"/> 
-            <display value="Cardiology"/> 
+        <coding>
+            <system value="http://hl7.org/fhir/service-type"/>
+            <code value="165"/>
+            <display value="Cardiology"/>
         </coding>
     </type>
 
@@ -53,8 +53,8 @@
     </specialty>
 
     <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/> 
-        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/> 
+        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
     </location>
 
     <name value="Founding Fathers Memorial Hospital Heart and Vascular Services"/> <!-- Name of the service -->
@@ -71,7 +71,7 @@
 	</telecom>
 
     <serviceProvisionCode> <!-- Fees apply for this service -->
-        <coding> 
+        <coding>
             <system value="http://hl7.org/fhir/service-provision-conditions"/>
             <code value="cost"/>
             <display value="Fees apply"/>
@@ -79,17 +79,17 @@
     </serviceProvisionCode>
 
     <eligibility> <!-- There are no eligibility requirements for this service -->
-        <text value="None"/> 
+        <text value="None"/>
     </eligibility>
 
-    <eligibilityNote value="No specific eligibility requirements"/> 
+    <eligibilityNote value="No specific eligibility requirements"/>
 
     <referralMethod> <!-- this service accepts referrals via phone -->
         <coding>
             <system value="http://hl7.org/fhir/service-referral-method"/>
             <code value="phone"/>
             <display value="phone"/>
-        </coding>        
+        </coding>
     </referralMethod>
     <referralMethod> <!-- and via fax -->
         <coding>
