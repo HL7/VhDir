@@ -19,7 +19,7 @@ paths.temp,generated_output/temp
 paths.output,output
 paths.txCache,generated_output/txCache
 paths.qa,generated_output/qa
-paths.specification,http://build.fhir.org
+paths.specification,http://hl7.org/fhir
 jurisdiction,
 sct-edition,http://snomed.info/sct/731000124108
 no-inactive-codes,FALSE
@@ -28,11 +28,13 @@ gen-examples,FALSE
 do-transforms,FALSE
 canonicalBase,http://hl7.org/fhir/ig/vhdir
 dependencyList.name,uscore
-dependencyList.location,http://hl7.org/fhir/us/core/1.0.1
+dependencyList.location,http://hl7.org/fhir/us/core
 dependencyList.source,dependencies/uscore-vp
+dependencyList.version,1.0.1
 special-urls,urn:oid:2.16.840.1.113883.6.238
 tool,jekyll
 logging,progress
 topofpage,TRUE
 allviews,TRUE
 mappings,TRUE
+npm-name,hl7.core.uv.vhdir
