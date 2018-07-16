@@ -1,0 +1,282 @@
+<ProductPlan xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/device.xsd">
+	<!-- describes a fictional Qualified Health Plan (QHP) in the Washington, DC metro area -->
+	<id value="productplan1"/>
+	<identifier>
+		<!-- Official HIOS product ID assigned by CMS -->
+		<use value="official"/>
+		<type>
+			<text value="HIOS product ID"/>
+		</type>
+		<system value="https://www.cms.gov/CCIIO/"/>
+		<value value="1234567891"/>
+		<assigner>
+			<reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+			<display value="Centers for Medicare and Medicaid Services"/>
+		</assigner>
+	</identifier>
+	<status value="active"/>
+	<!-- This record is active -->
+	<type>
+		<!-- This product offers medical coverage -->
+		<coding>
+			<system value="http://hl7.org/fhir/product-plan-type"/>
+			<code value="medical"/>
+			<display value="Medical"/>
+		</coding>
+	</type>
+	<type>
+		<!-- This product offers dental coverage -->
+		<coding>
+			<system value="http://hl7.org/fhir/product-plan-type"/>
+			<code value="dental"/>
+			<display value="Dental"/>
+		</coding>
+	</type>
+	<name value="Patriot PPO Standard"/>
+	<!-- Name of the product is Patriot PPO Standard -->
+	<alias value="Patriot Plus"/>
+	<period>
+		<start value="2018-06-06"/>
+		<end value="2019-01-01"/>
+	</period>
+	<ownedBy>
+		<!-- Reference to the owner of the product, Homeland Health Insurance -->
+		<reference value="http://hl7.org/fhir/ig/vhdir/Organization/homeland"/>
+		<display value="Homeland Health Insurance"/>
+	</ownedBy>
+	<administeredBy>
+		<reference value="http://hl7.org/fhir/ig/vhdir/Organization/homeland"/>
+		<display value="Homeland Health Insurance"/>
+	</administeredBy>
+	<coverageArea>
+		<!-- Reference to the product's coverage area, the Washington, DC metro area -->
+		<reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
+		<display value="Washington, DC metro area"/>
+	</coverageArea>
+	<contact>
+		<!-- Contact information for consumers -->
+		<purpose>
+			<coding>
+				<system value="http://hl7.org/fhir/contactentity-type"/>
+				<code value="PATINF"/>
+				<display value="Patient"/>
+			</coding>
+			<text value="General information"/>
+		</purpose>
+		<telecom>
+			<system value="phone"/>
+			<value value="202-123-5555"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@homelandinc.org"/>
+		</telecom>
+	</contact>
+	<endpoint>
+		<!-- A reference to the technical endpoints providing access to services operated for the health insurance product.
+		<reference value=""/> -->
+		<display value="patriot plan endpoint hub"/>
+	</endpoint>
+	<network>
+		<!-- A reference to the medical provider network associated with this product -->
+		<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+		<display value="Patriot Preferred Provider Network"/>
+	</network>
+	<network>
+		<!-- A reference to the dental provider network associated with this product -->
+		<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+		<display value="Patriot Dental Provider Network"/>
+	</network>
+	<coverage>
+		<!-- describes medical benefits -->
+		<type>
+			<coding>
+				<code value="medical"/>
+				<display value="Medical"/>
+			</coding>
+			<text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+		</type>
+		<network>
+			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</network>
+		<benefit>
+			<!-- basic primary care visit -->
+			<type>
+				<coding>
+					<code value="001"/>
+					<display value="Primary care visit to treat an injury or illness"/>
+				</coding>
+			</type>
+			<requirement value="N/A"/>
+			<limit>
+				<code>
+					<text value="unlimited"/>
+				</code>
+			</limit>
+		</benefit>
+	</coverage>
+	<coverage>
+		<!-- describes dental benefits -->
+		<type>
+			<coding>
+				<code value="dental"/>
+				<display value="Dental"/>
+			</coding>
+			<text value="Coverage related to dental care"/>
+		</type>
+		<network>
+			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+			<display value="Patriot Dental Provider Network"/>
+		</network>
+		<!--Specific benefits under this type of coverage.-->
+		<benefit>
+			<!-- biannual oral checkup -->
+			<type>
+				<coding>
+					<code value="052"/>
+					<display value="Basic Dental Care – Adult"/>
+				</coding>
+				<text value="Periodic oral checkup"/>
+			</type>
+			<requirement value="N/A"/>
+			<limit>
+				<value>
+					<value value="2"/>
+					<unit value="visit/yr"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="{visit}/a"/>
+				</value>
+				<code>
+					<text value="biannual oral checkup"/>
+				</code>
+			</limit>
+		</benefit>
+	</coverage>
+	<plan>
+		<!-- Information about the cost sharing features of the product -->
+		<identifier>
+			<use value="official"/>
+			<type>
+				<text value="HIOS plan ID"/>
+			</type>
+			<system value="https://www.cms.gov/CCIIO/"/>
+			<value value="123456789101112"/>
+			<assigner>
+				<reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+				<display value="Centers for Medicare and Medicaid Services"/>
+			</assigner>
+		</identifier>
+		<type>
+			<coding>
+				<code value="bronze"/>
+				<display value="Bronze"/>
+			</coding>
+			<text value="Bronze"/>
+		</type>
+		<coverageArea>
+			<!-- Reference to the product's coverage area, the Washington, DC metro area -->
+			<reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
+			<display value="Washington, DC metro area"/>
+		</coverageArea>
+		<network>
+			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+			<display value="Patriot Dental Provider Network"/>
+		</network>
+		<generalCost>
+			<!-- Describes the plan's deductible -->
+			<type>
+				<coding>
+					<code value="deductible"/>
+					<display value="Deductible"/>
+				</coding>
+				<text value="Deductible"/>
+			</type>
+			<groupSize value="1">
+			</groupSize>
+			<cost>
+				<value value="6200"/>
+				<unit value="dollars"/>
+				<system value="urn:iso:std:iso:4217"/>
+				<code value="USD"/>
+			</cost>
+			<comment value="Includes all prescription and medical costs for in-network providers"/>
+		</generalCost>
+		<specificCost>
+			<!-- Describes the costs associated with the medical coverage options -->
+			<category>
+				<coding>
+					<code value="medical"/>
+					<display value="Medical"/>
+				</coding>
+			</category>
+			<benefit>
+				<!-- $50 copay for primary care visits with an in-network preferred provider -->
+				<type>
+					<coding>
+						<code value="001"/>
+						<display value="Primary care visit to treat an injury or illness"/>
+					</coding>
+				</type>
+				<cost>
+					<type>
+						<coding>
+							<code value="copay"/>
+							<display value="Copay"/>
+						</coding>
+					</type>
+					<applicability>
+						<code value="in"/>
+						<display value="in-network"/>
+					</applicability>
+					<qualifiers>
+						<text value="in-network preferred provider"/>
+					</qualifiers>
+					<value>
+						<value value="50"/>
+						<unit value="dollars"/>
+						<system value="urn:iso:std:iso:4217"/>
+						<code value="USD"/>
+					</value>
+				</cost>
+			</benefit>
+		</specificCost>
+		<specificCost>
+			<!-- describes the costs associated with dental coverage -->
+			<category>
+				<coding>
+					<code value="dental"/>
+					<display value="Dental"/>
+				</coding>
+			</category>
+			<benefit>
+				<!-- 10% coinsurance for routine oral checkup with an in-network dental provider -->
+				<type>
+					<coding>
+						<code value="052"/>
+						<display value="Basic Dental Care – Adult"/>
+					</coding>
+				</type>
+				<cost>
+					<type>
+						<coding>
+							<code value="coinsurance"/>
+							<display value="Coinsurance"/>
+						</coding>
+					</type>
+					<applicability>
+						<code value="in"/>
+						<display value="in-network"/>
+					</applicability>
+					<qualifiers>
+						<text value="in-network provider"/>
+					</qualifiers>
+					<value>
+						<value value="10"/>
+						<unit value="percent"/>
+					</value>
+				</cost>
+			</benefit>
+		</specificCost>
+	</plan>
+</ProductPlan>
