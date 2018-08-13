@@ -69,12 +69,12 @@ Similar to practitionerRole, OrganizationRole describes relationships between or
   <img src="assets/images/diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
 </figure>
 
-### Network / Product Plan
+### Network / Insurance Plan
 
 A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Network / Product Plan </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 3: Network / Insurance Plan </strong></figcaption>
   <img src="assets/images/diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
 </figure>
 
@@ -85,7 +85,7 @@ A network is a group of practitioners and organizations that provide healthcare 
 
 Extensible binding to a value set definition for this IG means that if the data type is CodeableConcept, then one of the coding values SHALL be from the specified value set if a code applies, but if no suitable code exists in the value set and no further restrictions have been applied (such as the max valueset binding described in the next section), alternate code(s) may be provided in its place. If only text available, then just text may be used.
 
-Example: Product/Plan's coverage type coding - the source only has the text “4-way Influenza” and no coverage type code.
+Example: Insurance Plan's coverage type coding - the source only has the text “4-way Influenza” and no coverage type code.
 
 \{
       "resourceType": "InsurancePlan",
