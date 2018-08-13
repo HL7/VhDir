@@ -40,7 +40,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 Each network must have:
 
 1.  A coded value in `organization.active`
-1.  A reference to an organization or organizationRole resource indicating the owner of the network in `organization.partOf`
+1.  A reference to an organization or organizationaffiliation resource indicating the owner of the network in `organization.partOf`
 
 
 **Profile specific implementation guidance:**

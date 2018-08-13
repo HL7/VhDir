@@ -62,7 +62,7 @@ PractionerRole describes the relationship between a practitioner and an organiza
 
 ### Organization Role
 
-Similar to practitionerRole, OrganizationRole describes relationships between organizations. For example: 1) the relationship between an organization and an association it is a member of (e.g. hospitals in a hospital association),  2) an organization that provides services to another organization, such as an organization contracted to provide mental health care for another organization as part of a healthcare provider insurance network, and 3) distinct organizations forming a partnership to provide services (e.g. a cancer center).
+Similar to practitionerRole, OrganizationAffiliation describes relationships between organizations. For example: 1) the relationship between an organization and an association it is a member of (e.g. hospitals in a hospital association),  2) an organization that provides services to another organization, such as an organization contracted to provide mental health care for another organization as part of a healthcare provider insurance network, and 3) distinct organizations forming a partnership to provide services (e.g. a cancer center).
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Organization Role </strong></figcaption>

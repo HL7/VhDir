@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="vhdir-organizationrole"/>
+	<id value="vhdir-organizationaffiliation"/>
 	<meta>
 		<lastUpdated value="2017-12-10T12:29:00.342-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
-	<name value="vhdir-organizationrole"/>
-	<title value="VhDir Organizationrole"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+	<name value="vhdir-organizationaffiliation"/>
+	<title value="VhDir OrganizationAffiliation"/>
 	<status value="active"/>
 	<date value="2017-12-08T15:32:24.796-05:00"/>
 	<description value="Details about the role a participating organization plays in relation to a primary organization"/>
 	<fhirVersion value="3.4.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
-	<type value="OrganizationRole"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/OrganizationRole"/>
+	<type value="OrganizationAffiliation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation"/>
 	<derivation value="constraint"/>
 	<differential>
-		<element id="OrganizationRole">
-			<path value="OrganizationRole"/>
+		<element id="OrganizationAffiliation">
+			<path value="OrganizationAffiliation"/>
 		</element>
-		<element id="OrganizationRole.id">
-			<path value="OrganizationRole.id"/>
+		<element id="OrganizationAffiliation.id">
+			<path value="OrganizationAffiliation.id"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="OrganizationRole.meta">
-			<path value="OrganizationRole.meta"/>
+		<element id="OrganizationAffiliation.meta">
+			<path value="OrganizationAffiliation.meta"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="OrganizationRole.text">
-			<path value="OrganizationRole.text"/>
+		<element id="OrganizationAffiliation.text">
+			<path value="OrganizationAffiliation.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="OrganizationRole.extension">
-			<path value="OrganizationRole.extension"/>
+		<element id="OrganizationAffiliation.extension">
+			<path value="OrganizationAffiliation.extension"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
@@ -42,8 +42,8 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="OrganizationRole.extension:restriction">
-			<path value="OrganizationRole.extension"/>
+		<element id="OrganizationAffiliation.extension:restriction">
+			<path value="OrganizationAffiliation.extension"/>
 			<sliceName value="restriction"/>
 			<short value="Restriction"/>
 			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
@@ -54,11 +54,11 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.identifier">
-			<path value="OrganizationRole.identifier"/>
+		<element id="OrganizationAffiliation.identifier">
+			<path value="OrganizationAffiliation.identifier"/>
 		</element>
-		<element id="OrganizationRole.identifier.extension">
-			<path value="OrganizationRole.identifier.extension"/>
+		<element id="OrganizationAffiliation.identifier.extension">
+			<path value="OrganizationAffiliation.identifier.extension"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
@@ -67,8 +67,8 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="OrganizationRole.identifier.extension:status">
-			<path value="OrganizationRole.identifier.extension"/>
+		<element id="OrganizationAffiliation.identifier.extension:status">
+			<path value="OrganizationAffiliation.identifier.extension"/>
 			<sliceName value="status"/>
 			<min value="1"/>
 			<max value="1"/>
@@ -77,57 +77,57 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.identifier.assigner">
-			<path value="OrganizationRole.identifier.assigner"/>
+		<element id="OrganizationAffiliation.identifier.assigner">
+			<path value="OrganizationAffiliation.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.active">
-			<path value="OrganizationRole.active"/>
+		<element id="OrganizationAffiliation.active">
+			<path value="OrganizationAffiliation.active"/>
 			<min value="1"/>
 		</element>
-		<element id="OrganizationRole.organization">
-			<path value="OrganizationRole.organization"/>
+		<element id="OrganizationAffiliation.organization">
+			<path value="OrganizationAffiliation.organization"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.participatingOrganization">
-			<path value="OrganizationRole.participatingOrganization"/>
+		<element id="OrganizationAffiliation.participatingOrganization">
+			<path value="OrganizationAffiliation.participatingOrganization"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.network">
-			<path value="OrganizationRole.network"/>
+		<element id="OrganizationAffiliation.network">
+			<path value="OrganizationAffiliation.network"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.location">
-			<path value="OrganizationRole.location"/>
+		<element id="OrganizationAffiliation.location">
+			<path value="OrganizationAffiliation.location"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.healthcareService">
-			<path value="OrganizationRole.healthcareService"/>
+		<element id="OrganizationAffiliation.healthcareService">
+			<path value="OrganizationAffiliation.healthcareService"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.telecom">
-			<path value="OrganizationRole.telecom"/>
+		<element id="OrganizationAffiliation.telecom">
+			<path value="OrganizationAffiliation.telecom"/>
 		</element>
-		<element id="OrganizationRole.telecom.extension">
-			<path value="OrganizationRole.telecom.extension"/>
+		<element id="OrganizationAffiliation.telecom.extension">
+			<path value="OrganizationAffiliation.telecom.extension"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
@@ -136,16 +136,16 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="OrganizationRole.telecom.extension:availabletime">
-			<path value="OrganizationRole.telecom.extension"/>
+		<element id="OrganizationAffiliation.telecom.extension:availabletime">
+			<path value="OrganizationAffiliation.telecom.extension"/>
 			<sliceName value="availabletime"/>
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.telecom.extension:viaintermediary">
-			<path value="OrganizationRole.telecom.extension"/>
+		<element id="OrganizationAffiliation.telecom.extension:viaintermediary">
+			<path value="OrganizationAffiliation.telecom.extension"/>
 			<sliceName value="viaintermediary"/>
 			<min value="0"/>
 			<max value="1"/>
@@ -154,16 +154,16 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 			</type>
 		</element>
-		<element id="OrganizationRole.telecom.system">
-			<path value="OrganizationRole.telecom.system"/>
+		<element id="OrganizationAffiliation.telecom.system">
+			<path value="OrganizationAffiliation.telecom.system"/>
 			<min value="1"/>
 		</element>
-		<element id="OrganizationRole.telecom.value">
-			<path value="OrganizationRole.telecom.value"/>
+		<element id="OrganizationAffiliation.telecom.value">
+			<path value="OrganizationAffiliation.telecom.value"/>
 			<min value="1"/>
 		</element>
-		<element id="OrganizationRole.endpoint">
-			<path value="OrganizationRole.endpoint"/>
+		<element id="OrganizationAffiliation.endpoint">
+			<path value="OrganizationAffiliation.endpoint"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>

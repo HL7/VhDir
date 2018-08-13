@@ -30,8 +30,8 @@ digitalCertificate.trustFramework|CodeableConcept|DirectTrust; FBCA; other
 accessibility.type (on pracitioner & location)|CodeableConcept|Cultural competence; handicap accessible; ADA compliant; public transit options; answering service
 practitioner.communication.proficiency|CodeableConcept|Use ILR scale: 0 (no proficiency); 1 (elementary proficiency); 2 (limited working proficiency); 3 (professional working proficiency); 4 (full professional proficiency)
 organization.alias.type|code|DBA; historical; other
-organizationrole.role|CodeableConcept|provider; agency; research; payer; diagnostics; supplier; HIE/HIO; member - Note: There are a number of potential value sets to use, one specific to this IG may be created
-organizationRole.specialty|CodeableConcept|Value set may be based on qualified clinical specialty codes from NUCC
+organizationaffiliation.role|CodeableConcept|provider; agency; research; payer; diagnostics; supplier; HIE/HIO; member - Note: There are a number of potential value sets to use, one specific to this IG may be created
+organizationaffiliation.specialty|CodeableConcept|Value set may be based on qualified clinical specialty codes from NUCC
 ehr.certificationEdition|CodeableConcept|2011; 2014; 2015
 ehr.patientAccess|CodeableConcept|patient portal; secure messaging; view/download/transmit (VDT)
 careteam.mode|code|instance; kind
@@ -76,13 +76,13 @@ See the [FHIR terminology section](http://hl7.org/fhir/STU3/terminologies-system
 |http://hl7.org/fhir/administrative-gender|[FHIR](https://www.hl7.org/fhir/valueset-administrative-gender.html)|*Administrative Gender*|2.16.840.1.113883.4.642.3.1|Pracitioner.gender
 |https://www.hl7.org/fhir/v2/0360/2.7/index.html|[FHIR (HL7V2)](http://hl7.org/fhir/v2/0360/2.7)|*Listed as a V2 data set, but there is a FHIR copy also*|None listed|Qualification.code
 |http://hl7.org/fhir/valueset-organization-type.html|[FHIR](http://hl7.org/fhir/valueset-organization-type.html)|*The type of the organization - this list from FHIR will need to be extended*|	2.16.840.1.113883.4.642.3.403|Organization.type
-|http://hl7.org/fhir/valueset-practitioner-role.html|[FHIR](http://hl7.org/fhir/valueset-practitioner-role.html)|*Defines a set of codes that can be used to indicate the role of a Practitioner or Organization - Assume this will extended to organizational roles*|2.16.840.1.113883.4.642.3.430|PracitionerRole.code; OrganizationRole.Code
-|http://hl7.org/fhir/codesystem-practitioner-specialty.html|[FHIR](http://hl7.org/fhir/codesystem-practitioner-specialty.html)|*Defines a set of codes that can be used to indicate the specialty of a Practitioner or Organization. Assume this will be extended to include Organization Roles*|2.16.840.1.113883.4.642.1.433|PracitionerRole.speciality; OrganizationRole.specialty
+|http://hl7.org/fhir/valueset-practitioner-role.html|[FHIR](http://hl7.org/fhir/valueset-practitioner-role.html)|*Defines a set of codes that can be used to indicate the role of a Practitioner or Organization - Assume this will extended to organizational roles*|2.16.840.1.113883.4.642.3.430|PracitionerRole.code; OrganizationAffiliation.Code
+|http://hl7.org/fhir/codesystem-practitioner-specialty.html|[FHIR](http://hl7.org/fhir/codesystem-practitioner-specialty.html)|*Defines a set of codes that can be used to indicate the specialty of a Practitioner or Organization. Assume this will be extended to include Organization Roles*|2.16.840.1.113883.4.642.1.433|PracitionerRole.speciality; OrganizationAffiliation.specialty
 |https://www.hl7.org/fhir/valueset-service-category.html|[FHIR](https://www.hl7.org/fhir/codesystem-service-category.html)|*This value set defines an example set of codes that can be used to classify groupings of service-types/specialties*|	2.16.840.1.113883.4.642.3.511|HealthcareService.category
 |https://www.hl7.org/fhir/valueset-service-type.html|[FHIR](https://www.hl7.org/fhir/valueset-service-type.html)|*This value set defines an example set of codes of service-types*|	2.16.840.1.113883.4.642.3.512|HealthcareService.type
 |https://www.hl7.org/fhir/valueset-c80-practice-codes.html|[FHIR](https://www.hl7.org/fhir/valueset-c80-practice-codes.html)|*This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.*|2.16.840.1.113883.3.88.12.80.72|HealthcareService.specialty
 |http://hl7.org/fhir/valueset-service-provision-conditions.html|[FHIR](http://hl7.org/fhir/valueset-service-provision-conditions.html)|The code(s) that detail the conditions under which the healthcare service is available/offered|2.16.840.1.113883.4.642.3.508|HealthcareService.serviceProvisionCode
-|http://hl7.org/fhir/codesystem-days-of-week.html|[FHIR](http://hl7.org/fhir/codesystem-days-of-week.html)|*The days of the week.*|2.16.840.1.113883.4.642.1.507|PractitionerRole.availableTime.daysOfWeek; OrganizationRole.availableTime.daysOfWeek; HealthcareService.daysOfWeek
+|http://hl7.org/fhir/codesystem-days-of-week.html|[FHIR](http://hl7.org/fhir/codesystem-days-of-week.html)|*The days of the week.*|2.16.840.1.113883.4.642.1.507|PractitionerRole.availableTime.daysOfWeek; OrganizationAffiliation.availableTime.daysOfWeek; HealthcareService.daysOfWeek
 |https://www.hl7.org/fhir/codesystem-location-status.html|[FHIR](https://www.hl7.org/fhir/codesystem-location-status.html)|*Indicates whether the location is still in use. (active; suspended; inactive)*|2.16.840.1.113883.4.642.1.324|Location.status
 |http://hl7.org/fhir/ValueSet/location-mode|[FHIR](http://hl7.org/fhir/valueset-location-mode.html)|*Indicates whether a resource instance represents a specific location or a class of locations (instance; kind)*|2.16.840.1.113883.4.642.3.321|Location.mode
 |http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType|[FHIR](http://hl7.org/fhir/v3/RoleCode/cs.html)|*A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.*|2.16.840.1.113883.5.111|Location.type
@@ -107,7 +107,7 @@ http://hl7.org/fhir/identifier-type|[FHIR](http://hl7.org/fhir/identifier-type)|
 
 |URI|Source|Comment|OID (for non-FHIR systems)
 |---|---|---|---|
-|http://nucc.org/provider-taxonomy|[NUCC](http://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57)|*NUCC Provider Taxonomy*|2.16.840.1.113883.6.101|Proposed for organizationRole above
+|http://nucc.org/provider-taxonomy|[NUCC](http://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57)|*NUCC Provider Taxonomy*|2.16.840.1.113883.6.101|Proposed for organizationaffiliation above
 |http://www.rfc-editor.org/bcp/bcp13.txt|http://www.rfc-editor.org/bcp/bcp13.txt|*Defininitions for mimeType|TBD|Endpoint.payloadMimeType
 
 <p/><p/>

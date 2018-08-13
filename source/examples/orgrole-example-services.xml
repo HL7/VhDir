@@ -1,4 +1,4 @@
-<OrganizationRole  xmlns="http://hl7.org/fhir"> <!-- Describes the relationship between Founding Fathers Memorial Hospital and Independence Rehabilitation Services, Inc. Independence is contracted to provide rehab services to patients at Founding Fathers -->
+<OrganizationAffiliation  xmlns="http://hl7.org/fhir"> <!-- Describes the relationship between Founding Fathers Memorial Hospital and Independence Rehabilitation Services, Inc. Independence is contracted to provide rehab services to patients at Founding Fathers -->
 
 	<id value="orgrole1"/>
 
@@ -99,4 +99,4 @@
             </extension>
         </extension>
     </telecom>
-</OrganizationRole>
+</OrganizationAffiliation>

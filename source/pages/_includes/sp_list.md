@@ -30,7 +30,7 @@
 - [network](SearchParameter-searchparameter-network.html)
 - [via-intermediary](SearchParameter-searchparameter-via-intermediary.html)
 
-**OrganizationRole**
+**OrganizationAffiliation**
 
 - [via-intermediary](SearchParameter-searchparameter-via-intermediary.html)
 
