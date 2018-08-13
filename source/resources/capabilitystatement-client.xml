@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This profile defines the expected capabilities of the Validated Healthcare Directory Client conforming to the Validated Healthcare Directory IG."/>
 	<kind value="requirements"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<acceptUnknown value="extensions"/>
 	<format value="xml"/>
 	<format value="json"/>

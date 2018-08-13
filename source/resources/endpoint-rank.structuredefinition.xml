@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-05T09:44:08.203-05:00"/>
 	<description value="Order established by a Role, Organization... for Endpoints capable of transferring the same content"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

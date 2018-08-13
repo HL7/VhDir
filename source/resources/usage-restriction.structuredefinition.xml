@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-10-20T10:59:36.931+11:00"/>
 	<description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.&#xD;&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xD;&#xA;This will be expected to be used as a modifier extension."/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
   <context>

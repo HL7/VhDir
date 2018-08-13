@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-13T11:51:52.262-05:00"/>
 	<description value="A digital certificate, used to identify a user or group of users, or for encrypted communications"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

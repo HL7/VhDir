@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-13T14:19:15.411-05:00"/>
 	<description value="Information about the EHR system/module used at a location"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

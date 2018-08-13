@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-10T12:42:47.483-05:00"/>
 	<description value="Describes validation requirements, source(s), status and dates for one or more elements"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="VerificationResult"/>

@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-16T15:42:31.192-05:00"/>
 	<description value="Alternate names by which the team is known"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

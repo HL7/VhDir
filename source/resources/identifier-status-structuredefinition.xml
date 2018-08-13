@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-20T11:33:43.51-05:00"/>
 	<description value="Describes the status of an identifier"/>
-	<fhirVersion value="3.2.0"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

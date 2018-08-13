@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-08T10:06:43.589-05:00"/>
 	<description value="Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>
