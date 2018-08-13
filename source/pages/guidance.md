@@ -88,7 +88,7 @@ Extensible binding to a value set definition for this IG means that if the data 
 Example: Product/Plan's coverage type coding - the source only has the text “4-way Influenza” and no coverage type code.
 
 \{
-      "resourceType": "productPlan",
+      "resourceType": "InsurancePlan",
       ...
        "coverage.Type": {
         "text":"orthodontics - extended"

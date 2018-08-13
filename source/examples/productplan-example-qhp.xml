@@ -1,4 +1,4 @@
-<ProductPlan xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/device.xsd">
+<InsurancePlan xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/insuranceplan.xsd">
 	<!-- describes a fictional Qualified Health Plan (QHP) in the Washington, DC metro area -->
 	<id value="productplan1"/>
 	<identifier>
@@ -279,4 +279,4 @@
 			</benefit>
 		</specificCost>
 	</plan>
-</ProductPlan>
+</InsurancePlan>

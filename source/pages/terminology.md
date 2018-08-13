@@ -48,7 +48,7 @@ VerificationResult.primarySource.CanPushUpdates|code|yes; no; undetermined
 VerificationResult.primarySource.PushTypeAvailable|code|specific requested changes; any changes; as defined by source
 VerificationResult.attestation.attestationMethod|code|(owner; authorized representative; authorized intermediary; non-authorized source)
 network.type|Coding|PPO; HMO; ACO; Speciality; Dental; Vision; Pharmacy; National; Regional; State
-productPlan.type|Coding|Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term. Long Term Care, Hospice, Home Health
+insurancePlan.type|Coding|Medical; Dental; Mental Health; Substance Abuse; Vision; Drug; Short Term. Long Term Care, Hospice, Home Health
 productCoverage.benefits.benefitsList.description|CodeableConcept|Days; visits
 plan.planType|CodeableConcept|Platinum; Gold; Silver; Bronze; High Deductable; Low Deductable
 plan.benefitCategory.benefitType.type|CodeableConcept|preventative , primary care office visit, speciality office visit, hospitalization; emergency room; urgent care
