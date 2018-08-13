@@ -13,27 +13,27 @@
 	<fhirVersion value="3.4.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
-	<type value="ProductPlan"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProductPlan"/>
+	<type value="InsurancePlan"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
 	<derivation value="constraint"/>
 	<differential>
-		<element id="ProductPlan">
-			<path value="ProductPlan"/>
+		<element id="InsurancePlan">
+			<path value="InsurancePlan"/>
 		</element>
-		<element id="ProductPlan.id">
-			<path value="ProductPlan.id"/>
+		<element id="InsurancePlan.id">
+			<path value="InsurancePlan.id"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="ProductPlan.meta">
-			<path value="ProductPlan.meta"/>
+		<element id="InsurancePlan.meta">
+			<path value="InsurancePlan.meta"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="ProductPlan.text">
-			<path value="ProductPlan.text"/>
+		<element id="InsurancePlan.text">
+			<path value="InsurancePlan.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="ProductPlan.extension">
-			<path value="ProductPlan.extension"/>
+		<element id="InsurancePlan.extension">
+			<path value="InsurancePlan.extension"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
@@ -42,8 +42,8 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="ProductPlan.extension:restriction">
-			<path value="ProductPlan.extension"/>
+		<element id="InsurancePlan.extension:restriction">
+			<path value="InsurancePlan.extension"/>
 			<sliceName value="restriction"/>
 			<short value="Restriction"/>
 			<definition value="Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"/>
@@ -54,11 +54,11 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
-		<element id="ProductPlan.identifier">
-			<path value="ProductPlan.identifier"/>
+		<element id="InsurancePlan.identifier">
+			<path value="InsurancePlan.identifier"/>
 		</element>
-		<element id="ProductPlan.identifier.extension">
-			<path value="ProductPlan.identifier.extension"/>
+		<element id="InsurancePlan.identifier.extension">
+			<path value="InsurancePlan.identifier.extension"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
@@ -67,8 +67,8 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="ProductPlan.identifier.extension:status">
-			<path value="ProductPlan.identifier.extension"/>
+		<element id="InsurancePlan.identifier.extension:status">
+			<path value="InsurancePlan.identifier.extension"/>
 			<sliceName value="status"/>
 			<min value="0"/>
 			<max value="1"/>
