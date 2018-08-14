@@ -66,16 +66,12 @@ To determine the data elements necessary for the exchange of directory informati
 
 
 ## Validated Healthcare Directory Concept Diagram
-text
+
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
   <img src="assets/images/conceptDiagram.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram.jpg" />
 </figure>
-text
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: PractionerRole </strong></figcaption>
-  <img src="assets/images/diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
-</figure>
+
 **Attestation and validation**
 
 We designed the VHDir implementation guide to support the sharing of information from a directory of healthcare information that was both attested and validated against primary sources. Attested data is supplied by an individual (see attester) on their own behalf or who are authorized to supply data on behalf of another individual or organization. Attester asserts data they are supplying is true. 
