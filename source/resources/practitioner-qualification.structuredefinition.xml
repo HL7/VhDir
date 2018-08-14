@@ -61,7 +61,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:whereValid">
@@ -132,7 +132,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:history.extension:period">

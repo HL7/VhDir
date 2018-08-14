@@ -73,7 +73,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:use">
@@ -99,7 +99,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificateStandard">
@@ -126,7 +126,7 @@
 			</type>
 			<binding>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificate">
@@ -202,7 +202,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
 			</binding>
 		</element>
 		<element id="Extension.url">

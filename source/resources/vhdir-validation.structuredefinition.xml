@@ -39,13 +39,13 @@
 			<min value="1"/>
 			<max value="1"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
       </binding>--></element><element id="VerificationResult.status">
 			<path value="VerificationResult.status"/>
 			<min value="1"/>
 			<max value="1"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value=""/>
+        <valueSet value=""/>
       </binding>--></element><element id="VerificationResult.statusDate">
 			<path value="VerificationResult.statusDate"/>
 			<min value="1"/>
@@ -56,19 +56,19 @@
 			<min value="1"/>
 			<max value="1"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
       </binding>--></element><element id="VerificationResult.validationProcess">
 			<path value="VerificationResult.validationProcess"/>
 			<min value="1"/>
 			<max value="*"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value=""/>
+        <valueSet value=""/>
       </binding>--></element><element id="VerificationResult.failureAction">
 			<path value="VerificationResult.failureAction"/>
 			<min value="1"/>
 			<max value="1"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value=""/>
+        <valueSet value=""/>
       </binding>--></element><element id="VerificationResult.primarySource">
 			<path value="VerificationResult.primarySource"/>
 		</element>
@@ -84,30 +84,30 @@
 			<min value="1"/>
 			<max value="*"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value=""/>
+        <valueSet value=""/>
       </binding>--></element><element id="VerificationResult.primarySource.validationProcess">
 			<path value="VerificationResult.primarySource.validationProcess"/>
 			<min value="1"/>
 			<max value="*"/>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
 			</binding>
 		</element>
 		<element id="VerificationResult.primarySource.validationStatus">
 			<path value="VerificationResult.primarySource.validationStatus"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
       </binding>--></element><element id="VerificationResult.primarySource.canPushUpdates">
 			<path value="VerificationResult.primarySource.canPushUpdates"/>
 			<min value="1"/>
 			<max value="1"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush"/>
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush"/>
       </binding>--></element><element id="VerificationResult.primarySource.pushTypeAvailable">
 			<path value="VerificationResult.primarySource.pushTypeAvailable"/><!--<binding>
         <strength value="example"/>
-        <valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
       </binding>--></element><element id="VerificationResult.attestation">
 			<path value="VerificationResult.attestation"/>
 			<min value="1"/>
@@ -133,7 +133,7 @@
 			<max value="1"/>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
 			</binding>
 		</element>
 		<element id="VerificationResult.attestation.date">

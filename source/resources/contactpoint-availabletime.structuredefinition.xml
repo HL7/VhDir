@@ -59,7 +59,7 @@
 			</type>
 			<binding>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.org/fhir/ValueSet/days-of-week"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/days-of-week"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:allDay">
