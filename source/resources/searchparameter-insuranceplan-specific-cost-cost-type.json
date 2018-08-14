@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-insuranceplan-specific-cost-cost-type",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type",
+  "version": "0.0.0",
+  "name": "VHDir InsurancePlan Specific Cost Cost Type Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "insuranceplan-specific-cost-cost-type",
+  "base": "InsurancePlan",
+  "type": "token",
+  "description": "Select plans which include the specified type of cost",
+  "expression": "InsurancePlan.plan.specificCost.benefit.cost.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
+}
+

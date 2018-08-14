@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitionerrole-role",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-role",
+  "version": "0.0.0",
+  "name": "VHDir PractitionerRole Role Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-role",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "practitionerrole-role",
+  "base": "PractitionerRole",
+  "type": "token",
+  "description": "Select PractitionerRoles with the specified role",
+  "expression": "PractitionerRole.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
+}

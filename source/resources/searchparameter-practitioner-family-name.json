@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitioner-family-name",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-family-name",
+  "version": "0.0.0",
+  "name": "VHDir Practitioner Family Name Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-family",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "practitioner-family-name",
+  "base": "Practitioner",
+  "type": "string",
+  "description": "Select Practitioners with the specified family name",
+  "expression": "Practitioner.name.family",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "exact"
+}

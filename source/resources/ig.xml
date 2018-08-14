@@ -348,313 +348,793 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-via-intermediary" />
+				<reference value="SearchParameter/searchparameter-careteam-endpoint" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-validator-organization" />
+				<reference value="SearchParameter/searchparameter-careteam-identifier" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-usecase-type" />
+				<reference value="SearchParameter/searchparameter-careteam-identifier-assigner" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-usecase-standard" />
+				<reference value="SearchParameter/searchparameter-careteam-location" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-target-location" />
+				<reference value="SearchParameter/searchparameter-careteam-name" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-status" />
+				<reference value="SearchParameter/searchparameter-careteam-organization" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-status-date" />
+				<reference value="SearchParameter/searchparameter-careteam-service" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specific-costs-value" />
+				<reference value="SearchParameter/searchparameter-careteam-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specific-costs-cost-type" />
+				<reference value="SearchParameter/searchparameter-careteam-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specific-costs-category" />
+				<reference value="SearchParameter/searchparameter-careteam-category" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specific-costs-benefit-type" />
+				<reference value="SearchParameter/searchparameter-careteam-member" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specific-costs-applicability" />
+				<reference value="SearchParameter/searchparameter-endpoint-connection-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-specialty" />
+				<reference value="SearchParameter/searchparameter-endpoint-identifier" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-service" />
+				<reference value="SearchParameter/searchparameter-endpoint-identifier-assigner" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-qualification-wherevalid-location" />
+				<reference value="SearchParameter/searchparameter-endpoint-mime-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-qualification-wherevalid-code" />
+				<reference value="SearchParameter/searchparameter-endpoint-organization" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-qualification-status" />
+				<reference value="SearchParameter/searchparameter-endpoint-payload-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-qualification-issuer" />
+				<reference value="SearchParameter/searchparameter-endpoint-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-qualification-code" />
+				<reference value="SearchParameter/searchparameter-endpoint-usecase-standard" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-product-coveragearea" />
+				<reference value="SearchParameter/searchparameter-endpoint-usecase-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-primarysource-type" />
+				<reference value="SearchParameter/searchparameter-endpoint-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-primarysource-organization" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-category" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-primarysource-date" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-characteristic" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-plan-type" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-coverage-area" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-plan-network" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-eligibility" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-plan-identifier" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-endpoint" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-plan-coveragearea" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-identifier" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-organization" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-identifier-assigner" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-note-author" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-location" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-newpatients" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-name" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-network" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-new-patient" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-name" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-new-patient-network" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-mime-type" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-organization" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-member" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-specialty" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-location" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-identifier-assigner" />
+				<reference value="SearchParameter/searchparameter-healthcareservice-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-general-costs-value" />
+				<reference value="SearchParameter/searchparameter-location-accessibility" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-general-costs-type" />
+				<reference value="SearchParameter/searchparameter-location-address" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-general-costs-participants" />
+				<reference value="SearchParameter/searchparameter-location-endpoint" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-endpoint" />
+				<reference value="SearchParameter/searchparameter-location-identifier" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-eligibility" />
+				<reference value="SearchParameter/searchparameter-location-identifier-assigner" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coveragearea" />
+				<reference value="SearchParameter/searchparameter-location-new-patient" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coverage-type" />
+				<reference value="SearchParameter/searchparameter-location-new-patient-network" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coverage-network" />
+				<reference value="SearchParameter/searchparameter-location-organization" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coverage-limit-value" />
+				<reference value="SearchParameter/searchparameter-location-partof" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coverage-benefit-type" />
+				<reference value="SearchParameter/searchparameter-location-region" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-coverage-area" />
+				<reference value="SearchParameter/searchparameter-location-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-attestation-source" />
+				<reference value="SearchParameter/searchparameter-location-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-attestation-organization" />
+				<reference value="SearchParameter/searchparameter-location-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-attestation-method" />
+				<reference value="SearchParameter/searchparameter-organization-address" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-alias" />
+				<reference value="SearchParameter/searchparameter-organization-address-city" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-accessibility" />
+				<reference value="SearchParameter/searchparameter-organization-address-country" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-address-postalcode" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-address-state" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-endpoint" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-identifier-assigner" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-name" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-partof" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-qualification-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-qualification-issuer" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-qualification-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-qualification-wherevalid-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-qualification-wherevalid-location" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organization-via-intermediary" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-endpoint" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-identifier-assigner" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-location" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-participating-org" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-primary-organization" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-role" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-service" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-specialty" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-via-intermediary" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-endpoint" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-family-name" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-given-name" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-identifier-assigner" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-name" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-phonetic" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-issuer" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-location" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-via-intermediary" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-endpoint" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-identifier-assigner" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-location" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-new-patient" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-new-patient-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-organization" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-practitioner" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-qualification-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-qualification-issuer" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-qualification-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-qualification-wherevalid" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-role" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-service" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-specialty" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-practitionerrole-via-intermediary" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-product-coverage-area" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-administered-by" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-coverage-benefit-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-coverage-limit-value" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-coverage-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-coverage-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-endpoint" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-general-cost-groupsize" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-general-cost-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-general-cost-value" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-name" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-owned-by" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-plan-coverage-area" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-plan-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-plan-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-plan-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-product-identifier" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-product-network" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-product-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-category" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-value" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

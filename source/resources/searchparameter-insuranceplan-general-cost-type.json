@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-insuranceplan-general-cost-type",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-type",
+  "version": "0.0.0",
+  "name": "VHDir InsurancePlan General Cost Type Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "insuranceplan-general-cost-type",
+  "base": "InsurancePlan",
+  "type": "token",
+  "description": "Select plans with the specified type of cost",
+  "expression": "InsurancePlan.plan.generalCost.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
+}
+

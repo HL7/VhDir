@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-location-status",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-status",
+  "version": "0.0.0",
+  "name": "VHDir Location Status Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-status",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "location-status",
+  "base": "Location",
+  "type": "token",
+  "description": "Select Locations with the specified status",
+  "expression": "Location.status",
+  "multipleOr": true,
+  "multipleAnd": true
+}

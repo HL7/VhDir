@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-careteam-identifier-assigner", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-identifier-assigner", 
+  "version": "0.0.0", 
+  "name": "VHDir CareTeam Identifier Assigner Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url", 
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ], 
+  "code": "careteam-identifier-assigner", 
+  "base": "CareTeam", 
+  "type": "reference", 
+  "description": "Select CareTeams with an identifier issued by the specified organization", 
+  "expression": "CareTeam.identifier.assigner",
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "below",
+  "chain": [
+    "organization-identifier", "organization-name"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-location-identifier-assigner", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-identifier-assigner", 
+  "version": "0.0.0", 
+  "name": "VHDir Location Identifier Assigner Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url", 
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ], 
+  "code": "location-identifier-assigner", 
+  "base": "Location", 
+  "type": "reference", 
+  "description": "Select Locations with an identifier issued by the specified organization", 
+  "expression": "Location.identifier.assigner",
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "below",
+  "chain": [
+    "organization-identifier", "organization-name"
+  ]
+}

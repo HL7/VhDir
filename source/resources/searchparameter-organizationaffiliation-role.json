@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organizationaffiliation-role",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-role",
+  "version": "0.0.0",
+  "name": "VHDir OrganizationAffiliation Role Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-role",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "organizationaffiliation-role",
+  "base": "OrganizationAffiliation",
+  "type": "token",
+  "description": "Select OrganizationAffiliations with the specified role",
+  "expression": "OrganizationAffiliation.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
+}

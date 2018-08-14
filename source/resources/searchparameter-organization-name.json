@@ -1,0 +1,32 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organization-name",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-name",
+  "version": "0.0.0",
+  "name": "VHDir Organization Name Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-name",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "organization-name",
+  "base": "Organization",
+  "type": "string",
+  "description": "Select Organizations with the specified name",
+  "expression": "Organization.name|Organization.alias",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact", "contains"
+  ]
+}

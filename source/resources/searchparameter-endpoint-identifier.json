@@ -1,0 +1,32 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-endpoint-identifier",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier",
+  "version": "0.0.0",
+  "name": "VHDir Endpoint Identifier Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "endpoint-identifier",
+  "base": "Endpoint",
+  "type": "token",
+  "description": "Select Endpoints with the specified identifier",
+  "expression": "Endpoint.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text", "ofType"
+  ]
+}

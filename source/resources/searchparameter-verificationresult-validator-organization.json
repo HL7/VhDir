@@ -1,0 +1,35 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-verificationresult-validator-organization",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-validator-organization",
+  "version": "0.0.0",
+  "name": "VHDir VerificationResult Validator Organization Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "verificationresult-validator-organization",
+  "base": "VerificationResult",
+  "type": "reference",
+  "description": "Select validation information for data that was validated by the specified organization",
+  "expression": "VerificationResult.validator.organization",
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "above", "below"
+  ],
+  "chain": [
+    "organization-identifier", "organization-name"
+  ]
+}

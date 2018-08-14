@@ -1,0 +1,32 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-insuranceplan-name",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-name",
+  "version": "0.0.0",
+  "name": "VHDir InsurancePlan Name Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-name",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "insuranceplan-name",
+  "base": "InsurancePlan",
+  "type": "string",
+  "description": "Select products with the specified name",
+  "expression": "InsurancePlan.name|InsurancePlan.alias",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact", "contains"
+  ]
+}

@@ -1,0 +1,31 @@
+
+{
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-organization-via-intermediary", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-via-intermediary", 
+  "version": "0.0.0", 
+  "name": "VHDir Via Intermediary Organization Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url", 
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }          
+  ], 
+  "code": "via-intermediary", 
+  "base": "Organization", 
+  "type": "reference", 
+  "description": "Select Organizations with contact information available through the specified intermediary", 
+  "expression": "Organization.telecom.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary')|Organization.contact.telecom.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "target": [
+    "PractitionerRole", "Organization", "OrganizationAffiliation", "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}

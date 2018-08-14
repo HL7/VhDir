@@ -1,0 +1,32 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitioner-identifier",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-identifier",
+  "version": "0.0.0",
+  "name": "VHDir Practitioner Identifier Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "practitioner-identifier",
+  "base": "Practitioner",
+  "type": "token",
+  "description": "Select Practitioners with the specified identifier",
+  "expression": "Practitioner.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text", "ofType"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-location-endpoint", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-endpoint", 
+  "version": "0.0.0", 
+  "name": "VHDir Location Endpoint Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-endpoint",
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url", 
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ], 
+  "code": "location-endpoint", 
+  "base": "Location", 
+  "type": "reference", 
+  "description": "Select Locations with the specified endpoint", 
+  "expression": "Location.endpoint",
+  "target": "Endpoint",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "endpoint-identifier", "endpoint-connection-type", "endpoint-organization"
+  ]
+}

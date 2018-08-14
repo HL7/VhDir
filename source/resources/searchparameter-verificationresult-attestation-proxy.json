@@ -1,0 +1,32 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-verificationresult-attestation-proxy",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-proxy",
+  "version": "0.0.0",
+  "name": "VHDir VerificationResult Attestation Proxy Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "verificationresult-attestation-proxy",
+  "base": "VerificationResult",
+  "type": "reference",
+  "description": "Select validation information for data that was attested to by the specified proxy",
+  "expression": "VerificationResult.attestation.proxy",
+  "target": "Practitioner",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "practitioner-identifier", "practitioner-name"
+  ]
+}

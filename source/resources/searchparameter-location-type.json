@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-location-type",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-type",
+  "version": "0.0.0",
+  "name": "VHDir Location Type Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-type",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "location-type",
+  "base": "Location",
+  "type": "token",
+  "description": "Select Locations of the specified type",
+  "expression": "Location.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
+}

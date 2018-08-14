@@ -1,0 +1,36 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-endpoint-organization",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-organization",
+  "version": "0.0.0",
+  "name": "VHDir Endpoint Organization Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "endpoint-organization",
+  "base": "Endpoint",
+  "type": "reference",
+  "description": "Select Endpoints managed by the specified organization",
+  "expression": "Endpoint.managingOrganization",
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "above", "below"
+  ],
+  "chain": [
+    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+  ]
+}

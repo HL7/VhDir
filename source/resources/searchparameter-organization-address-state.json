@@ -1,0 +1,30 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organization-address-state",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-state",
+  "version": "0.0.0",
+  "name": "VHDir Organization Address State Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-state",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "organization-address-state",
+  "base": "Organization",
+  "type": "string",
+  "description": "Select organizations with an address in the specified state",
+  "expression": "Organization.address.state",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "exact"
+}

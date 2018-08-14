@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-location-region",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-region",
+  "version": "0.0.0",
+  "name": "VHDir Location Region Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "location-region",
+  "base": "Location",
+  "type": "uri",
+  "description": "Select locations defined by the specified region",
+  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary').extension('region')",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "below"
+}
