@@ -10,7 +10,7 @@
         <use value="official"/>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="PRN"/>
                 <display value="Provider number"/>
             </coding>
@@ -22,7 +22,7 @@
             <start value="2004-04-21T11:57:00-05:00"/>
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/>
+            <reference value="Organization/cms"/>
             <display value="CMS"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -58,7 +58,7 @@
 	<telecom> <!-- Contact information for Founding Fathers can be found in the location resource for the hospital's main campus -->
 	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Location/hospital1"/>
+                <reference value="Location/hospital1"/>
                 <display value="Founding Fathers Memorial Hospital, main campus"/>
             </valueReference>
         </extension>
@@ -89,7 +89,7 @@
 	</address>
 
     <partOf> <!-- Founding Fathers is a hospital that is part of the Mount Vernon Health System -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/mtvernon"/>
+        <reference value="Organization/mtvernon"/>
         <display value="Mount Vernon Health System"/>
     </partOf>
 
@@ -156,7 +156,7 @@
     </contact>
 
     <endpoint> <!-- A reference to an electronic endpoint for Founding Fathers -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345"/>
+        <reference value="Endpoint/e-12345"/>
         <display value="Founding Fathers FHIR server"/>
     </endpoint>
 
@@ -210,7 +210,7 @@
                 <use value="usual"/>
                 <type>
                     <coding>
-                        <system value="http://hl7.org/fhir/v2/0203"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                         <code value="PRN"/>
                         <display value="Provider number"/>
                     </coding>
@@ -223,7 +223,7 @@
                         <use value="official"/>
                         <type>
                             <coding>
-                                <system value="http://hl7.org/fhir/v2/0203"/>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                                 <code value="EN"/>
                                 <display value="Employer Number"/>
                             </coding>
@@ -246,7 +246,7 @@
                     <use value="official"/>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                             <code value="EN"/>
                             <display value="Employer Number"/>
                         </coding>
@@ -285,7 +285,7 @@
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"> <!-- Founding Fathers offers the Patriot PPO Standard plan to its employees -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/ProductPlan/productplan1"/>
+            <reference value="ProductPlan/productplan1"/>
             <display value="Patriot PPO Standard plan"/>
         </valueReference>
     </extension>

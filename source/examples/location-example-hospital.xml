@@ -7,10 +7,10 @@
 
     <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
         <use value="secondary"/>
-        <system value="www.foundingfathersmemorial.com"/>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
         <value value="main campus"/>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -71,7 +71,7 @@
     </position>
 
     <managingOrganization> <!-- This location is managed by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </managingOrganization>
 
@@ -89,7 +89,7 @@
     <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
 
     <endpoint> <!-- Reference to an endpoint for Founding Fathers FHIR server -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345"/>
+        <reference value="Endpoint/e-12345"/>
         <display value="Founding Fathers Memorial Hospital FHIR Server"/>
     </endpoint>
 

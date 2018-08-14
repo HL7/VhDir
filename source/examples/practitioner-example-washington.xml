@@ -21,7 +21,7 @@
             <start value="2005-07-16T09:00:00-05:00"/>
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms"/>
+            <reference value="Organization/cms"/>
             <display value="CMS"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -88,7 +88,7 @@
                 <end value="1961-07-15"/>
             </period>
             <assigner>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+                <reference value="Organization/dcbomed"/>
                 <display value="DC Board of Medicine"/>
             </assigner>
         </identifier>
@@ -107,7 +107,7 @@
                 <end value="1961-07-15"/>
         </period>
         <issuer>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <reference value="Organization/dcbomed"/>
             <display value="DC Board of Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active and valid in Washington, DC -->
@@ -136,7 +136,7 @@
             <system value="http://www.abim.org/"/>
             <value value="123456"/>
             <assigner>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+                <reference value="Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
@@ -155,7 +155,7 @@
                 <end value="1981-07-20"/>
         </period>
         <issuer>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+            <reference value="Organization/abim"/>
             <display value="American Board of Internal Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active, and the history indicates that it has been renewed once. -->
@@ -188,7 +188,7 @@
             <system value="http://www.abim.org/"/>
             <value value="123456"/>
             <assigner>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+                <reference value="Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
@@ -207,7 +207,7 @@
                 <end value="1975-07-10"/>
         </period>
         <issuer>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/abim"/>
+            <reference value="Organization/abim"/>
             <display value="American Board of Internal Medicine"/>
         </issuer>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification">
@@ -240,7 +240,7 @@
     </communication>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct123"/>
+            <reference value="Endpoint/direct123"/>
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate">

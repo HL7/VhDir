@@ -10,7 +10,7 @@
 		<system value="https://www.cms.gov/CCIIO/"/>
 		<value value="1234567891"/>
 		<assigner>
-			<reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+			<reference value="Organization/cms1"/>
 			<display value="Centers for Medicare and Medicaid Services"/>
 		</assigner>
 	</identifier>
@@ -41,16 +41,16 @@
 	</period>
 	<ownedBy>
 		<!-- Reference to the owner of the product, Homeland Health Insurance -->
-		<reference value="http://hl7.org/fhir/ig/vhdir/Organization/homeland"/>
+		<reference value="Organization/homeland"/>
 		<display value="Homeland Health Insurance"/>
 	</ownedBy>
 	<administeredBy>
-		<reference value="http://hl7.org/fhir/ig/vhdir/Organization/homeland"/>
+		<reference value="Organization/homeland"/>
 		<display value="Homeland Health Insurance"/>
 	</administeredBy>
 	<coverageArea>
 		<!-- Reference to the product's coverage area, the Washington, DC metro area -->
-		<reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
+		<reference value="Location/dc1"/>
 		<display value="Washington, DC metro area"/>
 	</coverageArea>
 	<contact>
@@ -79,12 +79,12 @@
 	</endpoint>
 	<network>
 		<!-- A reference to the medical provider network associated with this product -->
-		<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+		<reference value="Network/patriotppo"/>
 		<display value="Patriot Preferred Provider Network"/>
 	</network>
 	<network>
 		<!-- A reference to the dental provider network associated with this product -->
-		<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+		<reference value="Network/patriotdental"/>
 		<display value="Patriot Dental Provider Network"/>
 	</network>
 	<coverage>
@@ -97,7 +97,7 @@
 			<text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
 		</type>
 		<network>
-			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+			<reference value="Network/patriotppo"/>
 			<display value="Patriot Preferred Provider Network"/>
 		</network>
 		<benefit>
@@ -126,7 +126,7 @@
 			<text value="Coverage related to dental care"/>
 		</type>
 		<network>
-			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+			<reference value="Network/patriotdental"/>
 			<display value="Patriot Dental Provider Network"/>
 		</network>
 		<!--Specific benefits under this type of coverage.-->
@@ -163,7 +163,7 @@
 			<system value="https://www.cms.gov/CCIIO/"/>
 			<value value="123456789101112"/>
 			<assigner>
-				<reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+				<reference value="Organization/cms1"/>
 				<display value="Centers for Medicare and Medicaid Services"/>
 			</assigner>
 		</identifier>
@@ -176,11 +176,11 @@
 		</type>
 		<coverageArea>
 			<!-- Reference to the product's coverage area, the Washington, DC metro area -->
-			<reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
+			<reference value="Location/dc1"/>
 			<display value="Washington, DC metro area"/>
 		</coverageArea>
 		<network>
-			<reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotdental"/>
+			<reference value="Network/patriotdental"/>
 			<display value="Patriot Dental Provider Network"/>
 		</network>
 		<generalCost>
@@ -196,9 +196,7 @@
 			</groupSize>
 			<cost>
 				<value value="6200"/>
-				<unit value="dollars"/>
-				<system value="urn:iso:std:iso:4217"/>
-				<code value="USD"/>
+				<currency value="USD"/>
 			</cost>
 			<comment value="Includes all prescription and medical costs for in-network providers"/>
 		</generalCost>
@@ -226,8 +224,10 @@
 						</coding>
 					</type>
 					<applicability>
-						<code value="in"/>
-						<display value="in-network"/>
+						<coding>
+							<code value="in"/>
+							<display value="in-network"/>
+						</coding>
 					</applicability>
 					<qualifiers>
 						<text value="in-network preferred provider"/>
@@ -265,8 +265,10 @@
 						</coding>
 					</type>
 					<applicability>
-						<code value="in"/>
-						<display value="in-network"/>
+						<coding>
+							<code value="in"/>
+							<display value="in-network"/>
+						</coding>
 					</applicability>
 					<qualifiers>
 						<text value="in-network provider"/>

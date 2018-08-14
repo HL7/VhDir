@@ -10,10 +10,10 @@
         <type>
             <text value="Business ID"/>
         </type>
-        <system value="www.foundingfathersmemorial.com"/>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
         <value value="service001"/>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -24,13 +24,13 @@
     <active value="true"/> <!-- This record is active -->
 
     <providedBy> <!-- This service is provided by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </providedBy>
 
     <category> <!-- This is a service provided at a hospital -->
         <coding>
-            <system value="http://hl7.org/fhir/service-category"/>
+            <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
             <code value="35"/>
             <display value="Hospital"/>
         </coding>
@@ -38,7 +38,7 @@
 
     <type> <!-- This is a cardiology service -->
         <coding>
-            <system value="http://hl7.org/fhir/service-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
             <code value="165"/>
             <display value="Cardiology"/>
         </coding>
@@ -53,7 +53,7 @@
     </specialty>
 
     <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+        <reference value="Location/location2"/>
         <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
     </location>
 
@@ -64,7 +64,7 @@
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+                <reference value="Location/location2"/>
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
             </valueReference>
         </extension>
@@ -72,7 +72,7 @@
 
     <serviceProvisionCode> <!-- Fees apply for this service -->
         <coding>
-            <system value="http://hl7.org/fhir/service-provision-conditions"/>
+            <system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
             <code value="cost"/>
             <display value="Fees apply"/>
         </coding>
@@ -86,14 +86,14 @@
 
     <referralMethod> <!-- this service accepts referrals via phone -->
         <coding>
-            <system value="http://hl7.org/fhir/service-referral-method"/>
+            <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
             <code value="phone"/>
             <display value="phone"/>
         </coding>
     </referralMethod>
     <referralMethod> <!-- and via fax -->
         <coding>
-            <system value="http://hl7.org/fhir/service-referral-method"/>
+            <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
             <code value="fax"/>
             <display value="Fax"/>
         </coding>
@@ -115,7 +115,7 @@
     <availabilityExceptions value="No interventional cardiac procedures are scheduled on Wednesdays"/> <!-- Additional information about when the service is available -->
 
     <endpoint> <!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct321"/>
+        <reference value="Endpoint/direct321"/>
         <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
     </endpoint>
 
@@ -125,7 +125,7 @@
         </extension>
         <extension url="network">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+                <reference value="Network/patriotppo"/>
                 <display value="Patriot Preferred Provider Network"/>
             </valueReference>
         </extension>

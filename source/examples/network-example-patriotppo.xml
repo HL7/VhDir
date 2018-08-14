@@ -10,7 +10,7 @@
         <use value="secondary"/>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="NIIP"/>
                 <display value="National Insurance Payor Identifier (Payor)"/>
             </coding>
@@ -19,7 +19,7 @@
         <system value="https://www.qhpcertification.cms.gov/s/QHP"/>
         <value value="DCN001"/>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/cms1"/>
+            <reference value="Organization/cms1"/>
             <display value="Centers for Medicare and Medicaid Services"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -61,7 +61,7 @@
 	</address>
 
     <partOf> <!-- This network is owned by Homeland Health Insurance -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/homeland"/>
+        <reference value="Organization/homeland"/>
         <display value="Homeland Health Insurance"/>
     </partOf>
 
@@ -139,7 +139,7 @@
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This network is active in the DC metro area -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Location/dc1"/>
+            <reference value="Location/dc1"/>
             <display value="Washington, DC metro area"/>
         </valueReference>
     </extension>

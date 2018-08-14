@@ -22,7 +22,7 @@
     <status value="active"/> <!-- This endpoint is active -->
 
     <connectionType> <!-- This endpoint is a Direct address -->
-        <system value="http://hl7.org/fhir/endpoint-connection-type"/>
+        <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
         <code value="direct-project"/>
         <display value="Direct Project"/>
     </connectionType>
@@ -30,7 +30,7 @@
     <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/> <!-- The name of this endpoint -->
 
     <managingOrganization> <!-- This endpoint is managed by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </managingOrganization>
 

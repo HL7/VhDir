@@ -22,7 +22,7 @@
             <start value="2016-02-22"/>
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -37,12 +37,12 @@
     </period>
 
     <practitioner> <!-- George Washington -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1"/>
+        <reference value="Practitioner/practitioner1"/>
         <display value="Geroge Washington"/>
     </practitioner>
 
     <organization> <!-- Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </organization>
 
@@ -63,19 +63,19 @@
     </specialty>
 
     <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+        <reference value="Location/location2"/>
         <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
     </location>
 
     <healthcareService> <!-- Reference to a cardiac diagnostics service -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology"/>
+        <reference value="HealthcareService/ffcardiology"/>
         <display value="Founding Fathers Memorial Hospital cardiac services"/>
     </healthcareService>
 
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+                <reference value="Location/location2"/>
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
             </valueReference>
         </extension>
@@ -91,13 +91,13 @@
     </availableTime>
 
     <endpoint> <!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct321"/>
+        <reference value="Endpoint/direct321"/>
         <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
     </endpoint>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"> <!-- Dr. Washington is a member of the Patriot PPO insurance network in this role -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+            <reference value="Network/patriotppo"/>
             <display value="Patriot Preferred Provider Network"/>
         </valueReference>
     </extension>
@@ -148,7 +148,7 @@
         </extension>
         <extension url="network">
             <valueReference>
-                <reference value="http://hl7.org/fhir/ig/vhdir/Network/patriotppo"/>
+                <reference value="Network/patriotppo"/>
                 <display value="Patriot Preferred Provider Network"/>
             </valueReference>
         </extension>

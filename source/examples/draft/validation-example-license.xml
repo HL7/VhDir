@@ -3,7 +3,7 @@
 	<id value="ver1"/>
 
     <target> <!-- The target is a practitioner named George Washington -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1"/>
+        <reference value="Practitioner/practitioner1"/>
         <display value="George Washington"/>
     </target>
 
@@ -41,7 +41,7 @@
 
     <primarySource> <!-- Describes the primary source the license was validated against, the DC Board of Medicine -->
         <organization>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <reference value="Organization/dcbomed"/>
             <display value="DC Board of Medicine"/>
         </organization>
         <type> <!-- The type of primary source is a medical license board -->
@@ -68,7 +68,7 @@
 
     <attestation> <!-- Describes the entity that attested to the information being validated, George Washington  -->
         <source>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Practitioner/prac1"/>
+            <reference value="Practitioner/prac1"/>
             <display value="George Washington"/>
         </source>
         <method> <!-- George Washington attested to the information himself -->
@@ -85,7 +85,7 @@
 
     <validator> <!-- Describes the entity that validated the information. In this case, the validator is the same as the primary source, the DC Board of Medicine -->
         <organization>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/dcbomed"/>
+            <reference value="Organization/dcbomed"/>
             <display value="DC Board of Medicine"/>
         </organization>
         <identityCertificate value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"/>

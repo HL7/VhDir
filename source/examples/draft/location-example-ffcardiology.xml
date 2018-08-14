@@ -10,7 +10,7 @@
         <system value="www.foundingfathersmemorial.com/heart"/>
         <value value="Heart and Vascular Institute"/>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -151,7 +151,7 @@
     </position>
 
     <managingOrganization> <!-- Reference(Org) 0..1 -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/> <!-- string 0..1 -->
+        <reference value="Organization/foundingfathers"/> <!-- string 0..1 -->
         <display value="Founding Fathers Memorial Hospital"/> <!-- string 0..1 -->
     </managingOrganization>
 

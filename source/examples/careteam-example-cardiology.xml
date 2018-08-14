@@ -22,7 +22,7 @@
             <start value="2016-07-16T09:00:00-05:00"/>
         </period>
         <assigner>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+            <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
@@ -56,7 +56,7 @@
             </coding>
         </role>
         <member>
-            <reference value="http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1"/>
+            <reference value="PractitionerRole/practitionerrole1"/>
             <display value="George Washington, a cardiologist at the Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
         </member>
         <period>
@@ -73,7 +73,7 @@
     </reasonCode>
 
     <managingOrganization> <!-- This care team is managed by Founding Fathers Memorial Hospital -->
-        <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+        <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </managingOrganization>
 
@@ -94,21 +94,21 @@
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This care team is located at the Founding Fathers Memorial Hospital Heart and Vascular Institute -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+            <reference value="Location/location2"/>
             <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
         </valueReference>
     </extension>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"> <!-- This care team provides heart and vascular services -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology"/> 
+            <reference value="HealthcareService/ffcardiology"/> 
             <display value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
         </valueReference>
     </extension>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to an electronic endpoint for this care team -->
         <valueReference>
-            <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct321"/>
+            <reference value="Endpoint/direct321"/>
             <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
         </valueReference>
     </extension>
