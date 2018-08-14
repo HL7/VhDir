@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-primarysourcepushtype"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
-	<name value="VhDir Primary Source Push Type"/>
+	<name value="VhDirPrimarySourcePushType"/>
 	<title value="VhDir Primary Source Push Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

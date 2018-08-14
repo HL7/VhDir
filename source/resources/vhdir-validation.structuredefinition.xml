@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-10T12:44:39.265-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation"/>
-	<name value="vhdir-validation"/>
+	<name value="VhdirValidation"/>
 	<title value="VhDir Validation"/>
 	<status value="active"/>
 	<date value="2017-12-10T12:42:47.483-05:00"/>

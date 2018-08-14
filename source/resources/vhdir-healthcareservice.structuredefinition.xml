@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T17:03:41.225-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
-	<name value="vhdir-healthcareservice"/>
+	<name value="VhdirHealthcareService"/>
 	<title value="VhDir Healthcareservice"/>
 	<status value="active"/>
 	<date value="2017-10-17T10:21:21.817-04:00"/>

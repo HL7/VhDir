@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-primarysourcevalidationstatus"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
-	<name value="VhDir Primary Source Validation Status"/>
+	<name value="VhDirPrimarySourceValidationStatus"/>
 	<title value="VhDir Primary Source Validation Status"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

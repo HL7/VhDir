@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-11-16T15:49:05.354-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"/>
-	<name value="careteam-alias"/>
+	<name value="CareteamAlias"/>
 	<title value="VhDir Careteam Alias"/>
 	<status value="active"/>
 	<date value="2017-11-16T15:42:31.192-05:00"/>

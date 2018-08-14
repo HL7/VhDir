@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T19:51:10.464-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan"/>
-	<name value="vhdir-productplan"/>
+	<name value="VhdirProductPlan"/>
 	<title value="VhDir Productplan"/>
 	<status value="active"/>
 	<date value="2017-12-05T12:38:42.186-05:00"/>

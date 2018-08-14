@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T19:51:21.822-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
-	<name value="vhdir-practitioner"/>
+	<name value="VhdirPractitioner"/>
 	<title value="VhDir Practitioner"/>
 	<status value="active"/>
 	<date value="2017-09-05T15:29:34.562-05:00"/>

@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-accessibility"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
-	<name value="VhDir Accessibility Value Set"/>
+	<name value="VhDirAccessibility"/>
 	<title value="VhDir Accessibility Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

@@ -2,8 +2,8 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-validation"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
-	<name value="VhDir Validation Code System"/>
-	<title value="VhDir Validation Code System"/>
+	<name value="VhDirValidationType"/>
+	<title value="VhDir Validation Type Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

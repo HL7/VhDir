@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="productplan-reference"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"/>
-	<name value="productplan-reference"/>
-	<title value="VhDir Productplan Reference"/>
+	<name value="ProductPlanReference"/>
+	<title value="VhDir Product Plan Reference"/>
 	<status value="active"/>
 	<description value="A reference to the productPlan resource"/>
 	<fhirVersion value="3.4.0"/>

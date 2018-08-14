@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-certificationedition"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition"/>
-	<name value="VhDir Certification Edition Value Set"/>
+	<name value="VhDirCertificationEdition"/>
 	<title value="VhDir Certification Edition Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

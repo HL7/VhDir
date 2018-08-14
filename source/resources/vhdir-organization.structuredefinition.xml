@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T19:51:24.608-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-	<name value="vhdir-organization"/>
+	<name value="VhdirOrganization"/>
 	<title value="VhDir Organization"/>
 	<status value="active"/>
 	<date value="2017-09-01T06:26:52.043+10:00"/>

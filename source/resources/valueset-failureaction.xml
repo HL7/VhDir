@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-failureaction"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-failureaction"/>
-	<name value="VhDir Failure Action"/>
+	<name value="VhDirFailureAction"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 - TBD"/>

@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-15T01:46:45.466+11:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
-	<name value="vhdir-restriction"/>
+	<name value="VhdirRestriction"/>
 	<title value="VhDir Restriction"/>
 	<status value="active"/>
 	<date value="2017-12-15T01:01:31.325+11:00"/>
@@ -110,7 +110,7 @@
 		<element id="Consent.provision.actor.role">
 			<path value="Consent.provision.actor.role"/>
 			<fixedCoding>
-				<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
 				<code value="IRCP"/>
 			</fixedCoding>
 			<mustSupport value="true"/>

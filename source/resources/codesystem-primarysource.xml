@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-primarysource"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-primarysource"/>
-	<name value="VhDir Primary Source Code System"/>
+	<name value="VhDirPrimarySource"/>
 	<title value="VhDir Primary Source Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

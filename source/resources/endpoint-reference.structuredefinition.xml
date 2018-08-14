@@ -5,8 +5,8 @@
 		<lastUpdated value="2017-12-07T15:08:16.087-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
-	<name value="endpoint-reference"/>
-	<title value="VhDir Endpoint Reference"/>
+	<name value="EndpointReference"/>
+	<title value="VhDir Practitioner Endpoint Reference"/>
 	<status value="active"/>
 	<date value="2017-11-07T12:23:01.804-05:00"/>
 	<description value="The technical details of an endpoint that can be used for electronic services"/>

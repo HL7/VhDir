@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T18:39:31.218-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
-	<name value="accessibility"/>
+	<name value="Accessibility"/>
 	<title value="VhDir Accessibility"/>
 	<status value="active"/>
 	<date value="2017-11-13T12:20:23.668-05:00"/>

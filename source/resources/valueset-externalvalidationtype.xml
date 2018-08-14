@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-externalvalidationtype"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
-	<name value="VhDir External Validation Type Value Set"/>
+	<name value="VhDirExternalValidationType"/>
 	<title value="VhDir External Validation Type Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-languageproficiency"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency"/>
-	<name value="VhDir Spoken Language Proficiency Code System"/>
+	<name value="VhDirSpokenLanguageProficiency"/>
 	<title value="VhDir Spoken Language Proficiency Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-11-13T14:12:35.809-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency"/>
-	<name value="communication-proficiency"/>
+	<name value="CommunicationProficiency"/>
 	<title value="VhDir Communication Proficiency"/>
 	<status value="active"/>
 	<date value="2017-11-13T14:08:36.93-05:00"/>

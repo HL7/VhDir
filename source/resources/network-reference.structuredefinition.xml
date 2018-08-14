@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-11-15T14:17:50.788-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"/>
-	<name value="network-reference"/>
+	<name value="NetworkReference"/>
 	<title value="VhDir Network Reference"/>
 	<status value="active"/>
 	<date value="2017-10-04T01:03:04.553+11:00"/>

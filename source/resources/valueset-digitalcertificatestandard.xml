@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-digitalcertificatestandard"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
-	<name value="VhDir Digital Certificate Standard Value Set"/>
+	<name value="VhDirDigitalCertificateStandard"/>
 	<title value="VhDir Digital Certificate Standard Value Set"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

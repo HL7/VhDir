@@ -20,10 +20,10 @@
   ],
   "code": "general-costs-participants",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "token",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.generalCosts.participants"
+  "expression": "InsurancePlan.plan.generalCosts.participants"
 }
 

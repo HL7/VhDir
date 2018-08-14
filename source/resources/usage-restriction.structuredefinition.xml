@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-15T01:53:38.143+11:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
-	<name value="usage-restriction"/>
+	<name value="UsageRestriction"/>
 	<title value="VhDir Usage Restriction"/>
 	<status value="active"/>
 	<date value="2017-10-20T10:59:36.931+11:00"/>

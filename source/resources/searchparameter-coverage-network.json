@@ -20,10 +20,10 @@
   ],
   "code": "coverage-network",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "reference",
   "description": "****TODO****",
-  "expression": "ProductPlan.coverage.network"
+  "expression": "InsurancePlan.coverage.network"
 }
 

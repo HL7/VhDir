@@ -5,8 +5,8 @@
 		<lastUpdated value="2017-12-04T12:05:18.461-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
-	<name value="newpatientprofile"/>
-	<title value="VhDir Newpatientprofile"/>
+	<name value="NewPatientProfile"/>
+	<title value="VhDir New Patient Profile"/>
 	<status value="active"/>
 	<date value="2017-11-13T14:13:29.07-05:00"/>
 	<description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>

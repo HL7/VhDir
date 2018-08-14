@@ -20,10 +20,10 @@
   ],
   "code": "specific-costs-value",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "quantity",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.specificCosts.benefitCosts.cost.value"
+  "expression": "InsurancePlan.plan.specificCosts.benefitCosts.cost.value"
 }
 

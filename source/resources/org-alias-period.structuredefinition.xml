@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-04T12:30:39.569-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period"/>
-	<name value="org-alias-period"/>
+	<name value="OrgAliasPeriod"/>
 	<title value="VhDir Org Alias Period"/>
 	<status value="active"/>
 	<date value="2017-09-01T06:36:02.345+10:00"/>

@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-08T19:51:15.908-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
-	<name value="vhdir-location"/>
+	<name value="VhdirLocation"/>
 	<title value="VhDir Location"/>
 	<status value="active"/>
 	<date value="2017-10-03T23:49:16.288+11:00"/>

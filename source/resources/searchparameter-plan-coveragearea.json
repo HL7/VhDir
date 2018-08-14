@@ -20,10 +20,10 @@
   ],
   "code": "plan-coveragearea",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "reference",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.coverageArea"
+  "expression": "InsurancePlan.plan.coverageArea"
 }
 

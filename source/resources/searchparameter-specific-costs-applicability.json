@@ -20,10 +20,10 @@
   ],
   "code": "specific-costs-applicability",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "token",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.specificCosts.benefitCosts.cost.applicability"
+  "expression": "InsurancePlan.plan.specificCosts.benefitCosts.cost.applicability"
 }
 

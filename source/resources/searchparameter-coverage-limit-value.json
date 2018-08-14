@@ -20,10 +20,10 @@
   ],
   "code": "coverage-limit-value",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "quantity",
   "description": "****TODO****",
-  "expression": "ProductPlan.coverage.benefit.limits.limitValue"
+  "expression": "InsurancePlan.coverage.benefit.limits.limitValue"
 }
 

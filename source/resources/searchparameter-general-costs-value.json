@@ -20,10 +20,10 @@
   ],
   "code": "general-costs-value",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "quantity",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.generalCosts.value"
+  "expression": "InsurancePlan.plan.generalCosts.value"
 }
 

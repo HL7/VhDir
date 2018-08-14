@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-ehrcharacteristics"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
-	<name value="VhDir EHR Characteristics Code System"/>
+	<name value="VhDirEHRCharacteristics"/>
 	<title value="VhDir Ehr Characteristics Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

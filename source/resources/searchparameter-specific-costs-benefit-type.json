@@ -20,10 +20,10 @@
   ],
   "code": "specific-costs-benefit-type",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "token",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.specificCosts.benefitCosts.type"
+  "expression": "InsurancePlan.plan.specificCosts.benefitCosts.type"
 }
 

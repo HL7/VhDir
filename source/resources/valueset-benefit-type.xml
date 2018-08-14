@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-benefit-type"/>
 	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type"/>
-	<name value="VhDir Benefit Type"/>
+	<name value="VhDirBenefitType"/>
 	<title value="VhDir Benefit Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>

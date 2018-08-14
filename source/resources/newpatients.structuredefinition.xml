@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-12-04T14:33:25.501-05:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"/>
-	<name value="newpatients"/>
+	<name value="NewPatients"/>
 	<title value="VhDir Newpatients"/>
 	<status value="active"/>
 	<date value="2017-11-13T13:53:06.585-05:00"/>

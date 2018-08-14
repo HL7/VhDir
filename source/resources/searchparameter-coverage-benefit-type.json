@@ -20,10 +20,10 @@
   ],
   "code": "coverage-benefit-type",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "token",
   "description": "****TODO****",
-  "expression": "ProductPlan.coverage.benefit.type"
+  "expression": "InsurancePlan.coverage.benefit.type"
 }
 

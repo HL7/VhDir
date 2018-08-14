@@ -20,10 +20,10 @@
   ],
   "code": "plan-identifier",
   "base": [
-    "ProductPlan"
+    "InsurancePlan"
   ],
   "type": "token",
   "description": "****TODO****",
-  "expression": "ProductPlan.plan.identifier"
+  "expression": "InsurancePlan.plan.identifier"
 }
 
