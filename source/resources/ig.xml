@@ -132,7 +132,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/vhdir-organizationaffiliation" />
+				<reference value="StructureDefinition/vhdir-organizationrole" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

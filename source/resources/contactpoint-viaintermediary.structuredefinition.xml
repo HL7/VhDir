@@ -42,7 +42,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>

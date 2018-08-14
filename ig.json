@@ -272,10 +272,10 @@
             "source": "searchparameter-location.json",
             "base": "SearchParameter-searchparameter-location.html"
         },
-        "StructureDefinition/vhdir-organizationAffiliation": {
-            "source": "vhdir-organizationaffiliation.structuredefinition.xml",
-            "defns": "StructureDefinition-vhdir-organizationaffiliation-definitions.html",
-            "base": "StructureDefinition-vhdir-organizationaffiliation.html"
+        "StructureDefinition/vhdir-organizationrole": {
+            "source": "vhdir-organizationrole.structuredefinition.xml",
+            "defns": "StructureDefinition-vhdir-organizationrole-definitions.html",
+            "base": "StructureDefinition-vhdir-organizationrole.html"
         },
         "CodeSystem/codesystem-organizationdemographics": {
             "source": "codesystem-organizationdemographics.xml",

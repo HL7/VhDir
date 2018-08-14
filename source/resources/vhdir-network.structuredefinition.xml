@@ -181,7 +181,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
