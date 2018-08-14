@@ -37,7 +37,7 @@
 			<sliceName value="boundary"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/location-boundary-geojson"/>
 			</type>
 		</element>
 		<element id="Location.extension:accessibility">
