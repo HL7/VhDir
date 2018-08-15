@@ -20,9 +20,9 @@
   ],
   "code": "location-region",
   "base": "Location",
-  "type": "uri",
+  "type": "special",
   "description": "Select locations defined by the specified region",
-  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary').extension('region')",
+  "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": "below"

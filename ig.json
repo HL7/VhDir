@@ -180,7 +180,7 @@
             "source": "valueset-identifierstatus.xml",
             "base": "ValueSet-valueset-identifierstatus.html"
         },
-        "CapabilityStatement/server": {
+        "CapabilityStatement/vhdir-server": {
             "source": "capabilitystatement-server.xml",
             "base": "CapabilityStatement-server.html"
         },
@@ -485,10 +485,6 @@
         "ValueSet/valueset-identifier-type": {
             "source": "valueset-identifier-type.xml",
             "base": "ValueSet-valueset-identifier-type.html"
-        },
-        "CapabilityStatement/client": {
-            "source": "capabilitystatement-client.xml",
-            "base": "CapabilityStatement-client.html"
         },
         "ValueSet/valueset-patientaccess": {
             "source": "valueset-patientaccess.xml",

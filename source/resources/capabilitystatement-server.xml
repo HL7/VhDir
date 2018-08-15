@@ -1,182 +1,2641 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/device.xsd">
-	<id value="server"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server"/>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+	<id value="vhdir-server"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CapabilityStatement/vhdir-server"/>
 	<name value="vhdir-server"/>
-	<title value="VhDir Server"/>
-	<status value="active"/>
-	<date value="2017-03-20"/>
-	<publisher value="HL7 US Realm Steering Committee"/>
-	<contact>
-		<telecom>
-			<system value="other"/>
-			<value value="http://www.hl7.org/SpecialCommittees/usrealm/index.cfm"/>
-		</telecom>
-	</contact>
-	<description value="This profile defines the expected capabilities of the US Core Server conforming to the US Core IG."/>
+	<title value="Validated Healthcare Directory Server Capability Statement"/>
+	<status value="draft"/>
+	<date value="2018"/>
+	<description value="This Capability Statement defines the expected capabilities of a validated healthcare directory FHIR server conforming to the Validated Healthcare Directory Implementation Guide."/>
 	<kind value="requirements"/>
 	<fhirVersion value="3.4.0"/>
 	<format value="xml"/>
 	<format value="json"/>
+  	<implementationGuide value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig"/>
 	<rest>
 		<mode value="server"/>
 		<resource>
-			<type value="Location"/>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHALL"/>
-				</extension>
-				<code value="search-type"/>
-				<documentation value="Allows discovery of existing US Core location resources using different search criteria."/>
-			</interaction>
+			<type value="Practitioner"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
 				<code value="read"/>
-				<documentation value="Allows retrieval of a historical version of a US Core location instance"/>
 			</interaction>
 			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
-				</extension>
-				<code value="history-instance"/>
-				<documentation value="Allows review of changes to US Core Medication instance over time"/>
-			</interaction>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
-				</extension>
-				<code value="vread"/>
-				<documentation value="Allows retrieval of a historical version of a US Core Medication instance"/>
-			</interaction>
-			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="name"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Location-Name"/>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="Practitioner.practitioner-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Practitioner.practitioner-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Practitioner.practitioner-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Practitioner.practitioner-qualification-wherevalid-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Practitioner.practitioner-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="VerificationResult.verificationresult-attestation.proxy">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="VerificationResult.verificationresult-attestation-attester">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-practitioner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitioner-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitioner-family-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-family-name"/>
 				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitioner-given-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-given-name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitioner-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-identifier-assigner"/>
+				<type value="reference"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="address"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Location-Address"/>
+				<name value="practitioner-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitioner-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-name"/>
 				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitioner-qualification-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitioner-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-issuer"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitioner-qualification-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitioner-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitioner-qualification-wherevalid-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitioner-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-active"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitioner-phonetic"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-phonetic"/>
+				<type value="string"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="PractitionerRole"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="PractitionerRole.practitionerrole-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-practitioner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-qualification-wherevalid-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="PractitionerRole.practitionerrole-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-member">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="CareTeam.careteam-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.network-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitionerrole-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-new-patient"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-practitioner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-practitioner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-qualification-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitionerrole-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-issuer"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-qualification-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-qualification-wherevalid-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="practitionerrole-role"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-role"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-service"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-service"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="practitionerrole-specialty"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-specialty"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="practitionerrole-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-active"/>
+				<type value="token"/>
 			</searchParam>
 		</resource>
 		<resource>
 			<type value="Organization"/>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHALL"/>
-				</extension>
-				<code value="search-type"/>
-				<documentation value="Allows discovery of existing US Core organization resources using different search criteria"/>
-			</interaction>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
 				<code value="read"/>
-				<documentation value="Allows retrieval of a specific US Core organization by id"/>
 			</interaction>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
-				</extension>
-				<code value="history-instance"/>
-				<documentation value="Allows review of changes to US Core organization instance over time"/>
-			</interaction>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
+					<valueCode value="SHALL"/>
 				</extension>
 				<code value="vread"/>
-				<documentation value="Allows retrieval of a historical version of a US Core organization instance"/>
 			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="Organization.organization-organization-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-organization-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-partof">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-qualification-wherevalid-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="CareTeam.careteam-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-administered-by">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-owned-by">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-partof">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation-organizationaffiliation-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation-organizationaffiliation-participating-org">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation-organizationaffiliation-primary-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-qualification-issuer">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="VerificationResult.verificationresult-primarysource-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="VerificationResult.verificationresult-validator-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="VerificationResult.verificationresult-attestation-attester">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="CareTeam.careteam-member">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="CareTeam.careteam-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.network-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-city"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-city"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-country"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-country"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-postalcode"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-postalcode"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-state"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-state"/>
+				<type value="string"/>
+			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="identifier"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Organization-Identifier"/>
+				<name value="organization-address"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organization-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="name"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Organization-Name"/>
+				<name value="organization-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="address"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Organization-Address"/>
-				<type value="string"/>
+				<name value="organization-partof"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-partof"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-qualification-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organization-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-issuer"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-qualification-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-qualification-wherevalid-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organization-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Organization-active"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="address-use"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Organization-address-use"/>
+				<type value="token"/>
 			</searchParam>
 		</resource>
 		<resource>
-			<type value="Practitioner"/>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHALL"/>
-				</extension>
-				<code value="search-type"/>
-				<documentation value="Allows discovery of existing US Core practitioner resources using different search criteria"/>
-			</interaction>
+			<type value="OrganizationAffiliation"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
 				<code value="read"/>
-				<documentation value="Allows retrieval of a specific US Core practitioner by id"/>
-			</interaction>
-			<interaction>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
-				</extension>
-				<code value="history-instance"/>
-				<documentation value="Allows review of changes to US Core practitioner instance over time"/>
 			</interaction>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<code value="vread"/>
-				<documentation value="Allows retrieval of a historical version of a US Core practitioner instance"/>
 			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-participating-org">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-primary-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.network-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organizationaffiliation-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organizationaffiliation-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="identifier"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-Identifier"/>
+				<name value="organizationaffiliation-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="name"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-Name"/>
+				<name value="organizationaffiliation-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organizationaffiliation-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organizationaffiliation-participating-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-participating-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organizationaffiliation-primary-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-primary-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organizationaffiliation-role"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-role"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organizationaffiliation-service"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-service"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organizationaffiliation-specialty"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-specialty"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organizationaffiliation-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="HealthcareService"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="HealthcareService.healthcareservice-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="HealthcareService.healthcareservice-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="healthcareservice-category"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="healthcareservice-characteristic"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-coverage-area"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-coverage-area"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-eligibility"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-eligibility"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="healthcareservice-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="healthcareservice-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="healthcareservice-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-name"/>
 				<type value="string"/>
 			</searchParam>
-		</resource><!--
-		<operation>
-			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-				<valueCode value="MAY"/>
-			</extension>
-			<name value="patient-everything"/>
-			<definition>
-				<reference value="http://hl7.org/fhir/OperationDefinition/patient-everything"/>
-			</definition>
-		</operation>
-
---></rest></CapabilityStatement>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-new-patient"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="healthcareservice-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-specialty"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-specialty"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="healthcareservice-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="healthcareservice-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-active"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Location"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="Location.location-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Location.location-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Location.location-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Location.location-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Location.location-partof">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Location.location-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-plan-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-product-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-partof">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-network-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-qualification-wherevalid-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-qualification-wherevalid-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-qualification-wherevalid">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="CareTeam.careteam-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Endpoint.endpoint-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.network-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="location-accessibility"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-accessibility"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="location-address"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-address"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="location-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="location-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="location-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="location-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-new-patient-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="location-new-patient"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-new-patient"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="location-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="location-partof"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-partof"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="location-region"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-region"/>
+				<type value="uri"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="location-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="location-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="location-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="CareTeam"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="CareTeam.careteam-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-location">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-service">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="CareTeam.careteam-member">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-member">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="careteam-category"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="careteam-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="careteam-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="careteam-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="careteam-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-location"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="careteam-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="careteam-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="careteam-service"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-service"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="careteam-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="careteam-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="careteam-member"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-member"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Endpoint"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="Endpoint.endpoint-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Endpoint.endpoint-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Endpoint.endpoint-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="CareTeam.careteam-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Organization.organization-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation.endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Practitioner.practitioner-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="endpoint-connection-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-connection-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="endpoint-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="endpoint-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="endpoint-mime-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-mime-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="endpoint-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="endpoint-payload-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-payload-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="endpoint-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="endpoint-usecase-standard"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-usecase-standard"/>
+				<type value="uri"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="endpoint-usecase-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-usecase-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="endpoint-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="VerificationResult"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="VerificationResult.verificationresult-target">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="VerificationResult.verificationresult-attestation-attester">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="VerificationResult.verificationresult-attestation-proxy">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="VerificationResult.verificationresult-primarysource-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="VerificationResult.verificationresult-validator-organization">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-attestation-attester"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-attester"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="verificationresult-attestation-method"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-method"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-attestation-proxy"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-proxy"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="verificationresult-primarysource-date"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-date"/>
+				<type value="date"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-primarysource-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-organization"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="verificationresult-primarysource-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="verificationresult-status-date"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-status-date"/>
+				<type value="date"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-target"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-target"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-target-location"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-target-location"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-validation-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-validation-status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="verificationresult-validator-organization"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-validator-organization"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Consent"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
+		</resource>
+		<resource>
+			<type value="InsurancePlan"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="InsurancePlan.insuranceplan-product-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-administered-by">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-coverage-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-owned-by">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-plan-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-plan-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="InsurancePlan.insuranceplan-product-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-administered-by"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-administered-by"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-coverage-benefit-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-benefit-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-coverage-limit-value"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-limit-value"/>
+				<type value="quantity"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-coverage-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-coverage-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-general-cost-groupsize"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-groupsize"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-general-cost-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-general-cost-value"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-value"/>
+				<type value="quantity"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-owned-by"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-owned-by"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-plan-coverage-area"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-plan-coverage-area"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-plan-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-plan-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-plan-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-plan-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-plan-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-plan-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-product-coverage-area"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-coverage-area"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-product-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-product-network"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-network"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-product-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-specific-cost-benefit-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="insuranceplan-specific-cost-category"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-specific-cost-cost-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="insuranceplan-specific-cost-value"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-value"/>
+				<type value="quantity"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="insuranceplan-status"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-status"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Organization"/>
+			<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<referencePolicy value="literal"/>
+			<referencePolicy value="local"/>
+			<searchInclude value="Organization.organization-network-coverage-area">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-network-via-intermediary">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-organization-endpoint">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-organization-identifier-assigner">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchInclude value="Organization.organization-partof">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchInclude>
+			<searchRevInclude value="HealthcareService.healthcareservice-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="Location.location-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-coverage-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-plan-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="InsurancePlan.insuranceplan-product-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="OrganizationAffiliation.organizationaffiliation-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-new-patient-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchRevInclude value="PractitionerRole.practitionerrole-network">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+			</searchRevInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-city"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-city"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-country"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-country"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-postalcode"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-postalcode"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="organization-address-state"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-state"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-address"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-endpoint"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-endpoint"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="organization-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-identifier-assigner"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-identifier"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-name"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-partof"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-partof"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="organization-type"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-type"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="active"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Organization-active"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<name value="network-coverage-area"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network-coverage-area"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="network-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network-via-intermediary"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+	</rest>
+	<interaction>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<code value="batch"/>
+	</interaction>
+	<interaction>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<code value="search-system"/>
+	</interaction>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<name value="_content"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/Resource-content"/>
+		<type value="string"/>
+	</searchParam>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="SHALL"/>
+		</extension>
+		<name value="_id"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+		<type value="token"/>
+	</searchParam>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="SHALL"/>
+		</extension>
+		<name value="_lastUpdated"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+		<type value="date"/>
+	</searchParam>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<name value="_security"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/Resource-security"/>
+		<type value="token"/>
+	</searchParam>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<name value="_text"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/DomainResource-text"/>
+		<type value="string"/>
+	</searchParam>
+	<searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="MAY"/>
+		</extension>
+		<name value="_query"/>
+		<definition value="http://hl7.org/fhir/SearchParameter/Resource-query"/>
+		<type value="token"/>
+	</searchParam>
+	<!-- <searchParam>
+		<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+			<valueCode value="SHOULD"/>
+		</extension>
+		<name value="_type"/>
+		<definition value=""/>
+		<type value="token"/>
+	</searchParam> -->
+</CapabilityStatement>

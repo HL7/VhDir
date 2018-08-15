@@ -1338,13 +1338,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="CapabilityStatement/server" />
-			</reference>
-			<exampleBoolean value="false" />
-		</resource>
-		<resource>
-			<reference>
-				<reference value="CapabilityStatement/client" />
+				<reference value="CapabilityStatement/vhdir-server" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
