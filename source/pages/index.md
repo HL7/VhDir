@@ -11,7 +11,7 @@ F: http://build.fhir.org/
 
 ## Introduction
 
-The Validated Healthcare Directory Implementation Guide (VHDir IG) is based on [FHIR Version 4.0](http://build.fhir.org/). It was developed in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)] (http://www.healthit.gov/newsroom/about-onc) and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.
+The Validated Healthcare Directory Implementation Guide (VHDir IG) is based on [FHIR Version 4.0](http://build.fhir.org/). It was developed in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)](http://www.healthit.gov/newsroom/about-onc) and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.
 
 It describes the architectural considerations for attesting to, validating, and exchanging data from a central source of validated provider data (i.e. a Validated Healthcare Directory or VHDir), as well as a RESTful FHIR API for accessing data from a VHDir.
 
