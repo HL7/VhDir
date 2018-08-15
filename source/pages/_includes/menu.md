@@ -1,7 +1,8 @@
 {:.nav .navbar-nav}
 <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 - [Home](index.html)
-- [General Guidance](guidance.html)
+- [General Guidance](general-guidance.html)
+- [Technical Guidance](technical-guidance.html)
 - [Profiles and Logical Models](profiles.html)
 <!-- >- [Mappings](structuremaps.html) -->
 - [Extensions](extensions.html)
