@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="productplan-reference"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"/>
-	<name value="ProductPlanReference"/>
+	<id value="insuranceplan-reference"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"/>
+	<name value="InsurancePlanReference"/>
 	<title value="VhDir Product Plan Reference"/>
 	<status value="active"/>
-	<description value="A reference to the productPlan resource"/>
+	<description value="A reference to the insurancePlan resource"/>
 	<fhirVersion value="3.4.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
@@ -20,21 +20,21 @@
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="Endpoint reference"/>
-			<definition value="A reference to the productPlan resource"/>
+			<definition value="A reference to the insurancePlan resource"/>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"/>
+			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
 			<sliceName value="valueReference"/>
 			<short value="Endpoint reference"/>
-			<definition value="A reference to the productPlan"/>
+			<definition value="A reference to the insurancePlan"/>
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-insuranceplan"/>
 			</type>
 		</element>
 	</differential>

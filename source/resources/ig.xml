@@ -24,7 +24,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="InsurancePlan/productplan1" />
+				<reference value="InsurancePlan/insuranceplan1" />
 			</reference>
 			<exampleBoolean value="true" />
 		</resource>
@@ -114,7 +114,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/vhdir-productplan" />
+				<reference value="StructureDefinition/vhdir-insuranceplan" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
@@ -132,7 +132,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/vhdir-organizationrole" />
+				<reference value="StructureDefinition/vhdir-organizationaffiliation" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
@@ -192,7 +192,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/valueset-productplan-type" />
+				<reference value="ValueSet/valueset-insuranceplan-type" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
@@ -1146,7 +1146,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/productplan-reference" />
+				<reference value="StructureDefinition/insuranceplan-reference" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

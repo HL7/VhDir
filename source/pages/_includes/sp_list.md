@@ -79,7 +79,7 @@
 - [primarysource-date](SearchParameter-searchparameter-primarysource-date.html)
 - [validator-organization](SearchParameter-searchparameter-validator-organization.html)
 
-**ProductPlan**
+**InsurancePlan**
 
 - [network](SearchParameter-searchparameter-network.html)
 - [coverage-network](SearchParameter-searchparameter-coverage-network.html)

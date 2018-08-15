@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="vhdir-organizationrole"/>
+	<id value="vhdir-organizationaffiliation"/>
 	<meta>
 		<lastUpdated value="2017-12-10T12:29:00.342-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole"/>
-	<name value="VhdirOrganizationRole"/>
-	<title value="VhDir OrganizationRole"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+	<name value="VhdirOrganizationAffiliation"/>
+	<title value="VhDir OrganizationAffiliation"/>
 	<status value="active"/>
 	<date value="2017-12-08T15:32:24.796-05:00"/>
 	<description value="Details about the role a participating organization plays in relation to a primary organization"/>

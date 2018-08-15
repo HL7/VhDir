@@ -37,7 +37,7 @@ TBD
 
 **Examples:**
 
-The following are example uses for the vhdir-organizationrole profile:
+The following are example uses for the vhdir-organizationaffiliation profile:
 
 -  [Independence Rehabilitation provides rehab services to Founding Fathers Memorial Hospital](OrganizationAffiliation-orgrole1.html)
 -  [Founding Fathers Memorial Hospital is a member of Monument HIE](OrganizationAffiliation-orgrole2.html)

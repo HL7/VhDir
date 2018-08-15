@@ -79,16 +79,16 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
-		<element id="Organization.extension:productPlan">
+		<element id="Organization.extension:insurancePlan">
 			<path value="Organization.extension"/>
-			<sliceName value="productPlan"/>
-			<short value="productPlan"/>
+			<sliceName value="insurancePlan"/>
+			<short value="insurancePlan"/>
 			<definition value="Health insurance products offered by the organization to its employees"/>
 			<min value="0"/>
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"/>
 			</type>
 		</element>
 		<element id="Organization.identifier">
