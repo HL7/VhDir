@@ -55,7 +55,7 @@
 - [practitioner-qualification-issuer](SearchParameter-searchparameter-practitioner-qualification-issuer.html)
 - [practitioner-qualification-status](SearchParameter-searchparameter-practitioner-qualification-status.html)
 - [practitioner-qualification-wherevalid-code](SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html)
-- [practitioner-qualification-wherevalid](SearchParameter-searchparameter-practitioner-qualification-wherevalid.html)
+- [practitioner-qualification-wherevalid](SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html)
 - [practitioner-via-intermediary](SearchParameter-searchparameter-practitioner-via-intermediary.html)
 
 **PractitionerRole**
@@ -67,7 +67,7 @@
 - [practitionerrole-qualification-issuer](SearchParameter-searchparameter-practitionerrole-qualification-issuer.html)
 - [practitionerrole-qualification-status](SearchParameter-searchparameter-practitionerrole-qualification-status.html)
 - [practitionerrole-qualification-wherevalid-code](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html)
-- [practitionerrole-qualification-wherevalid-location](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-location.html)
+- [practitionerrole-qualification-wherevalid-location](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html)
 - [practitionerrole-via-intermediary](SearchParameter-searchparameter-practitionerrole-via-intermediary.html)
 
 **InsurancePlan**

@@ -30,7 +30,7 @@
 <hr />
 1. `GET [base]/PractitionerRole?qualification-wherevalid-location=[id]`
 
-      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid-location`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-location.html) parameter
+      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid-location`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html) parameter
 <hr />
 1. `GET [base]/PractitionerRole?via-intermediary=[id]`
 

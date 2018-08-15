@@ -22,7 +22,7 @@
 <hr />
 1. `GET [base]/Practitioner?qualification-wherevalid-location=[id]`
 
-      *Support:* SHOULD support search by the [`practitioner-qualification-wherevalid`](SearchParameter-searchparameter-practitioner-qualification-wherevalid.html) parameter
+      *Support:* SHOULD support search by the [`practitioner-qualification-wherevalid`](SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html) parameter
 <hr />
 1. `GET [base]/Practitioner?via-intermediary=[id]`
 
