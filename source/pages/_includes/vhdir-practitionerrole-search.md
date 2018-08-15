@@ -1,34 +1,38 @@
 #### Supported Searches
 
-1. `GET [base]/PractitionerRole?`
+1. `GET [base]/PractitionerRole?network=[id]`
 
-      *Support:*  support search by the [`newPatients`](SearchParameter-searchparameter-newPatients.html) parameter
+      *Support:* SHOULD support search by the [`practitionerrole-network`](SearchParameter-searchparameter-practitionerrole-network.html) parameter
 <hr />
-1. `GET [base]/PractitionerRole?qualification-status=[code]`
+1. `GET [base]/PractitionerRole?new-patient=[code]`
 
-      *Support:*  support search by the [`qualification-status`](SearchParameter-searchparameter-qualification-status.html) parameter
+      *Support:* SHOULD support search by the [`practitionerrole-new-patient`](SearchParameter-searchparameter-practitionerrole-new-patient.html) parameter
+<hr />
+1. `GET [base]/PractitionerRole?new-patient-network=[id]`
+
+      *Support:* SHOULD support search by the [`practitionerrole-new-patient-network`](SearchParameter-searchparameter-practitionerrole-new-patient-network.html) parameter
 <hr />
 1. `GET [base]/PractitionerRole?qualification-code=[code]`
 
-      *Support:*  support search by the [`qualification-code`](SearchParameter-searchparameter-qualification-code.html) parameter
-<hr />
-1. `GET [base]/PractitionerRole?qualification-wherevalid-location=[id]`
-
-      *Support:*  support search by the [`qualification-wherevalid-location`](SearchParameter-searchparameter-qualification-wherevalid-location.html) parameter
-<hr />
-1. `GET [base]/PractitionerRole?qualification-wherevalid-code=[code]`
-
-      *Support:*  support search by the [`qualification-wherevalid-code`](SearchParameter-searchparameter-qualification-wherevalid-code.html) parameter
+      *Support:* SHOULD support search by the [`practitionerrole-qualification-code`](SearchParameter-searchparameter-practitionerrole-qualification-code.html) parameter
 <hr />
 1. `GET [base]/PractitionerRole?qualification-issuer=[id]`
 
-      *Support:*  support search by the [`qualification-issuer`](SearchParameter-searchparameter-qualification-issuer.html) parameter
+      *Support:* MAY support search by the [`practitionerrole-qualification-issuer`](SearchParameter-searchparameter-practitionerrole-qualification-issuer.html) parameter
 <hr />
-1. `GET [base]/PractitionerRole?network=[id]`
+1. `GET [base]/PractitionerRole?qualification-status=[code]`
 
-      *Support:*  support search by the [`network`](SearchParameter-searchparameter-network.html) parameter
+      *Support:* SHALL support search by the [`practitionerrole-qualification-status`](SearchParameter-searchparameter-practitionerrole-qualification-status.html) parameter
+<hr />
+1. `GET [base]/PractitionerRole?qualification-wherevalid-code=[code]`
+
+      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid-code`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html) parameter
+<hr />
+1. `GET [base]/PractitionerRole?qualification-wherevalid-location=[id]`
+
+      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid-location`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-location.html) parameter
 <hr />
 1. `GET [base]/PractitionerRole?via-intermediary=[id]`
 
-      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      *Support:* MAY support search by the [`practitionerrole-via-intermediary`](SearchParameter-searchparameter-practitionerrole-via-intermediary.html) parameter
 <hr />

@@ -1,70 +1,66 @@
 #### Supported Searches
 
-1. `GET [base]/InsurancePlan?network=[id]`
-
-      *Support:*  support search by the [`network`](SearchParameter-searchparameter-network.html) parameter
-<hr />
-1. `GET [base]/InsurancePlan?coverage-network=[id]`
-
-      *Support:*  support search by the [`coverage-network`](SearchParameter-searchparameter-coverage-network.html) parameter
-<hr />
-1. `GET [base]/InsurancePlan?coverage-type=[code]`
-
-      *Support:*  support search by the [`coverage-type`](SearchParameter-searchparameter-coverage-type.html) parameter
-<hr />
 1. `GET [base]/InsurancePlan?coverage-benefit-type=[code]`
 
-      *Support:*  support search by the [`coverage-benefit-type`](SearchParameter-searchparameter-coverage-benefit-type.html) parameter
+      *Support:* SHALL support search by the [`insuranceplan-coverage-benefit-type`](SearchParameter-searchparameter-insuranceplan-coverage-benefit-type.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?coverage-limit-vaue=[prefix][number]|[system]|[code]`
 
-      *Support:*  support search by the [`coverage-limit-value`](SearchParameter-searchparameter-coverage-limit-value.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-coverage-limit-value`](SearchParameter-searchparameter-insuranceplan-coverage-limit-value.html) parameter
 <hr />
-1. `GET [base]/InsurancePlan?plan-type=[code]`
+1. `GET [base]/InsurancePlan?coverage-network=[id]`
 
-      *Support:*  support search by the [`plan-type`](SearchParameter-searchparameter-plan-type.html) parameter
+      *Support:* SHALL support search by the [`insuranceplan-coverage-network`](SearchParameter-searchparameter-insuranceplan-coverage-network.html) parameter
 <hr />
-1. `GET [base]/InsurancePlan?plan-identifier=[code]`
+1. `GET [base]/InsurancePlan?coverage-type=[code]`
 
-      *Support:*  support search by the [`plan-identifier`](SearchParameter-searchparameter-plan-identifier.html) parameter
+      *Support:* SHALL support search by the [`insuranceplan-coverage-type`](SearchParameter-searchparameter-insuranceplan-coverage-type.html) parameter
 <hr />
-1. `GET [base]/InsurancePlan?plan-coveragearea=[id]`
+1. `GET [base]/InsurancePlan?general-cost-groupsize=[number]`
 
-      *Support:*  support search by the [`plan-coveragearea`](SearchParameter-searchparameter-plan-coveragearea.html) parameter
-<hr />
-1. `GET [base]/InsurancePlan?plan-network=[id]`
-
-      *Support:*  support search by the [`plan-network`](SearchParameter-searchparameter-plan-network.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-general-cost-groupsize`](SearchParameter-searchparameter-insuranceplan-general-cost-groupsize.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?general-costs-type=[code]`
 
-      *Support:*  support search by the [`general-costs-type`](SearchParameter-searchparameter-general-costs-type.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-general-cost-type`](SearchParameter-searchparameter-insuranceplan-general-cost-type.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?general-costs-value=[prefix][number]|[system]|[code]`
 
-      *Support:*  support search by the [`general-costs-value`](SearchParameter-searchparameter-general-costs-value.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-general-cost-value`](SearchParameter-searchparameter-insuranceplan-general-cost-value.html) parameter
 <hr />
-1. `GET [base]/InsurancePlan?specific-costs-category=[code]`
+1. `GET [base]/InsurancePlan?plan-coveragearea=[id]`
 
-      *Support:*  support search by the [`specific-costs-category`](SearchParameter-searchparameter-specific-costs-category.html) parameter
+      *Support:* SHOULD support search by the [`insuranceplan-plan-coverage-area`](SearchParameter-searchparameter-insuranceplan-plan-coverage-area.html) parameter
+<hr />
+1. `GET [base]/InsurancePlan?plan-identifier=[code]`
+
+      *Support:* SHALL support search by the [`insuranceplan-plan-identifier`](SearchParameter-searchparameter-insuranceplan-plan-identifier.html) parameter
+<hr />
+1. `GET [base]/InsurancePlan?plan-network=[id]`
+
+      *Support:* SHALL support search by the [`insuranceplan-plan-network`](SearchParameter-searchparameter-insuranceplan-plan-network.html) parameter
+<hr />
+1. `GET [base]/InsurancePlan?plan-type=[code]`
+
+      *Support:* SHALL support search by the [`insuranceplan-plan-type`](SearchParameter-searchparameter-insuranceplan-plan-type.html) parameter
+<hr />
+1. `GET [base]/InsurancePlan?network=[id]`
+
+      *Support:* SHALL support search by the [`insuranceplan-product-network`](SearchParameter-searchparameter-insuranceplan-product-network.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?specific-costs-benefit-type=[code]`
 
-      *Support:*  support search by the [`specific-costs-benefit-type`](SearchParameter-searchparameter-specific-costs-benefit-type.html) parameter
+      *Support:* SHOULD support search by the [`insuranceplan-specific-cost-benefit-type`](SearchParameter-searchparameter-insuranceplan-specific-cost-benefit-type.html) parameter
+<hr />
+1. `GET [base]/InsurancePlan?specific-costs-category=[code]`
+
+      *Support:* SHOULD support search by the [`insuranceplan-specific-cost-category`](SearchParameter-searchparameter-insuranceplan-specific-cost-category.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?specific-costs-cost-type=[code]`
 
-      *Support:*  support search by the [`specific-costs-cost-type`](SearchParameter-searchparameter-specific-costs-cost-type.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-specific-cost-cost-type`](SearchParameter-searchparameter-insuranceplan-specific-cost-cost-type.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?specific-costs-value=[prefix][number]|[system]|[code]`
 
-      *Support:*  support search by the [`specific-costs-value`](SearchParameter-searchparameter-specific-costs-value.html) parameter
-<hr />
-1. `GET [base]/InsurancePlan?general-costs-participants=[code]`
-
-      *Support:* [support?] support search by the [`general-costs-participants`](SearchParameter-searchparameter-general-costs-participants.html) parameter
-<hr />
-1. `GET [base]/InsurancePlan?specific-costs-applicability=[code]`
-
-      *Support:* [support?] support search by the [`specific-costs-applicability`](SearchParameter-searchparameter-specific-costs-applicability.html) parameter
+      *Support:* MAY support search by the [`insuranceplan-specific-cost-value`](SearchParameter-searchparameter-insuranceplan-specific-cost-value.html) parameter
 <hr />

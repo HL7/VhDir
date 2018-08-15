@@ -2,5 +2,5 @@
 
 1. `GET [base]/Organization?via-intermediary=[id]`
 
-      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      *Support:* MAY support search by the [`organizationaffiliation-via-intermediary`](SearchParameter-searchparameter-organizationaffiliation-via-intermediary.html) parameter
 <hr />

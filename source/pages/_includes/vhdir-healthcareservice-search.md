@@ -2,21 +2,25 @@
 
 1. `GET [base]/HealthcareService?eligibility=[code]`
 
-      *Support:*  support search by the [`eligibility`](SearchParameter-searchparameter-eligibility.html) parameter
-<hr />
-1. `GET [base]/HealthcareService?coveragearea=[id]`
-
-      *Support:*  support search by the [`coveragearea`](SearchParameter-searchparameter-coveragearea.html) parameter
+      *Support:* SHOULD support search by the [`healthcareservice-eligibility`](SearchParameter-searchparameter-healthcareservice-eligibility.html) parameter
 <hr />
 1. `GET [base]/HealthcareService?identifier-assigner=[id]`
 
-      *Support:*  support search by the [`identifier-assigner`](SearchParameter-searchparameter-identifier-assigner.html) parameter
+      *Support:* MAY support search by the [`healthcareservice-identifier-assigner`](SearchParameter-searchparameter-healthcareservice-identifier-assigner.html) parameter
 <hr />
-1. ``
+1. `GET [base]/HealthcareService?new-patient=[code]`
 
-      *Support:*  support search by the [`newpatients`](SearchParameter-searchparameter-newpatients.html) parameter
+      *Support:* SHOULD support search by the [`healthcareservice-new-patient`](SearchParameter-searchparameter-healthcareservice-new-patient.html) parameter
+<hr />
+1. `GET [base]/HealthcareService?new-patient-network=[id]`
+
+      *Support:* SHOULD support search by the [`healthcareservice-new-patient-network`](SearchParameter-searchparameter-healthcareservice-new-patient-network.html) parameter
+<hr />
+1. `GET [base]/HealthcareService?specialty=[code]`
+
+      *Support:* SHOULD support search by the [`healthcareservice-specialty`](SearchParameter-searchparameter-healthcareservice-specialty.html) parameter
 <hr />
 1. `GET [base]/HealthcareService?via-intermediary=[id]`
 
-      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      *Support:* MAY support search by the [`healthcareservice-via-intermediary`](SearchParameter-searchparameter-healthcareservice-via-intermediary.html) parameter
 <hr />

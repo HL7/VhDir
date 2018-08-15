@@ -1,18 +1,18 @@
 #### Supported Searches
 
-1. `GET [base]/Endpoint?identifier-assigner=[id]`
+1. `GET [base]/Endpoint?mime-type=[code]`
 
-      *Support:*  support search by the [`identifier-assigner`](SearchParameter-searchparameter-identifier-assigner.html) parameter
+      *Support:* MAY support search by the [`endpoint-mime-type`](SearchParameter-searchparameter-endpoint-mime-type.html) parameter
+<hr />
+1. `GET [base]/Endpoint?usecase-standard=[uri]`
+
+      *Support:* SHOULD support search by the [`endpoint-usecase-standard`](SearchParameter-searchparameter-endpoint-usecase-standard.html) parameter
 <hr />
 1. `GET [base]/Endpoint?usecase-type=[code]`
 
-      *Support:*  support search by the [`usecase-type`](SearchParameter-searchparameter-usecase-type.html) parameter
-<hr />
-1. ``
-
-      *Support:*  support search by the [`usecase-standard`](SearchParameter-searchparameter-usecase-standard.html) parameter
+      *Support:* SHOULD support search by the [`endpoint-usecase-type`](SearchParameter-searchparameter-endpoint-usecase-type.html) parameter
 <hr />
 1. `GET [base]/Endpoint?via-intermediary=[id]`
 
-      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      *Support:* MAY support search by the [`endpoint-via-intermediary`](SearchParameter-searchparameter-endpoint-via-intermediary.html) parameter
 <hr />

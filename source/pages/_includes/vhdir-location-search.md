@@ -1,14 +1,22 @@
 #### Supported Searches
 
-1. `GET [base]/Location?accessibility=[code]`
+1. `GET [base]/Location?identifier-assigner=[id]`
 
-      *Support:* [support?] support search by the [`accessibility`](SearchParameter-searchparameter-accessibility.html) parameter
+      *Support:* MAY support search by the [`location-identifier-assigner`](SearchParameter-searchparameter-location-identifier-assigner.html) parameter
 <hr />
-1. ``
+1. `GET [base]/Location?new-patient=[code]`
 
-      *Support:*  support search by the [`newpatients`](SearchParameter-searchparameter-newpatients.html) parameter
+      *Support:* SHOULD support search by the [`location-new-patient`](SearchParameter-searchparameter-location-new-patient.html) parameter
+<hr />
+1. `GET [base]/Location?new-patient-network=[id]`
+
+      *Support:* SHOULD support search by the [`location-new-patient-network`](SearchParameter-searchparameter-location-new-patient-network.html) parameter
+<hr />
+1. `GET [base]/Location?region=[uri]`
+
+      *Support:* MAY support search by the [`location-region`](SearchParameter-searchparameter-location-region.html) parameter
 <hr />
 1. `GET [base]/Location?via-intermediary=[id]`
 
-      *Support:*  support search by the [`via-intermediary`](SearchParameter-searchparameter-via-intermediary.html) parameter
+      *Support:* MAY support search by the [`location-via-intermediary`](SearchParameter-searchparameter-location-via-intermediary.html) parameter
 <hr />
