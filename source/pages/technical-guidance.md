@@ -20,10 +20,12 @@ F: http://build.fhir.org/
 
 ## Validated Healthcare Directory Concept Diagram
 
+
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
   <img src="assets/images/conceptDiagram.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram.jpg" />
 </figure>
+
 
 This diagram depicts the high-level conceptual design of a central source of validated healthcare directory data. RESTful FHIR APIs facilitate the movement data into and out of a validated healthcare directory (VHDir) at different points, including:
 * Attestation: Individuals and organizations (via an authorized representative) attest to information about themselves for inclusion in the VHDir. See [link] for more information about attestation.
