@@ -4,7 +4,7 @@
   "id": "searchparameter-verificationresult-attestation-method",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-method",
   "version": "0.0.0",
-  "name": "VHDir Verificationresult Attestation Method Search Parameter",
+  "name": "VHDir VerificationResult Attestation Method Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +19,11 @@
     }
   ],
   "code": "verificationresult-attestation-method",
-  "base": [
-    "VerificationResult"
-  ],
+  "base": "VerificationResult",
   "type": "token",
   "description": "Select validation information for data that was attested to using the specified method",
-  "expression": "VerificationResult.attestation.method"
+  "expression": "VerificationResult.attestation.method",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }
-

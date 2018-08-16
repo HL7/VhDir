@@ -4,7 +4,7 @@
   "id": "searchparameter-verificationresult-target-location",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-target-location",
   "version": "0.0.0",
-  "name": "VHDir Verificationresult Target Location Search Parameter",
+  "name": "VHDir VerificationResult Target Location Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +19,13 @@
     }
   ],
   "code": "verificationresult-target-location",
-  "base": [
-    "VerificationResult"
-  ],
+  "base": "VerificationResult",
   "type": "string",
   "description": "Select validation information for the specified attribute of a resource",
-  "expression": "VerificationResult.targetLocation"
+  "expression": "VerificationResult.targetLocation",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact", "contains"
+  ]
 }
-
