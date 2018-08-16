@@ -19,7 +19,7 @@ paths.temp,generated_output/temp
 paths.output,output
 paths.txCache,generated_output/txCache
 paths.qa,generated_output/qa
-paths.specification,http://hl7.org/fhir
+paths.specification,http://build.fhir.org/
 jurisdiction,
 sct-edition,http://snomed.info/sct/731000124108
 no-inactive-codes,FALSE

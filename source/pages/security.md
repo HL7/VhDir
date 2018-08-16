@@ -37,21 +37,21 @@ For the purposes of US Core, security conformance requirements are as follows:
 -   Systems MAY protect the confidentiality of data at rest via encryption and associated access controls. The policies and methods used are outside the scope of this specification.
 
 
-  [FHIR Communications]: http://hl7.org/fhir/STU3/security.html#http
+  [FHIR Communications]: {{site.data.fhir.path}}/security.html#http
   [Smart On FHIR]: http://fhir-docs.smarthealthit.org/argonaut-dev/authorization/backend-services/
-  [FHIR Security Labels]: http://hl7.org/fhir/STU3/security-labels.html
+  [FHIR Security Labels]: {{site.data.fhir.path}}/security-labels.html
   [General Security Considerations]: #general-security-considerations
-  [FHIR Provenance]: http://hl7.org/fhir/STU3/provenance.html
-  [FHIR Digital Signatures]: http://hl7.org/fhir/STU3/security.html#digital%20signatures
+  [FHIR Provenance]: {{site.data.fhir.path}}/provenance.html
+  [FHIR Digital Signatures]: {{site.data.fhir.path}}/security.html#digital%20signatures
 
-  [security considerations]: http://hl7.org/fhir/STU3/security.html
-  [Communications]: http://hl7.org/fhir/STU3/security.html#http
-  [Authentication]: http://hl7.org/fhir/STU3/security.html#authentication
-  [Authorization/Access Control]: http://hl7.org/fhir/STU3/security.html#authorization/access%20control
-  [Audit Logging]: http://hl7.org/fhir/STU3/security.html#audit%20logging
-  [Digital Signatures]: http://hl7.org/fhir/STU3/security.html#digital%20signatures
-  [Security Labels]: http://hl7.org/fhir/STU3/security-labels.html
-  [Narrative]: http://hl7.org/fhir/STU3/security.html#narrative
-  [AuditEvent]: http://hl7.org/fhir/STU3/auditevent.html
-  [Audit Logging]: http://hl7.org/fhir/STU3/security.html#audit
-  [Consent]: http://hl7.org/fhir/STU3/consent.html
+  [security considerations]: {{site.data.fhir.path}}/security.html
+  [Communications]: {{site.data.fhir.path}}/security.html#http
+  [Authentication]: {{site.data.fhir.path}}/security.html#authentication
+  [Authorization/Access Control]: {{site.data.fhir.path}}/security.html#authorization/access%20control
+  [Audit Logging]: {{site.data.fhir.path}}/security.html#audit%20logging
+  [Digital Signatures]: {{site.data.fhir.path}}/security.html#digital%20signatures
+  [Security Labels]: {{site.data.fhir.path}}/security-labels.html
+  [Narrative]: {{site.data.fhir.path}}/security.html#narrative
+  [AuditEvent]: {{site.data.fhir.path}}/auditevent.html
+  [Audit Logging]: {{site.data.fhir.path}}/security.html#audit
+  [Consent]: {{site.data.fhir.path}}/consent.html

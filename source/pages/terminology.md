@@ -74,7 +74,7 @@ See the [FHIR terminology section](http://hl7.org/fhir/STU3/terminologies-system
 |URI|Source|Comment|OID (for OID based Terminolgy Systems)|Used in
 |---|---|---|---|
 |http://hl7.org/fhir/administrative-gender|[FHIR](https://www.hl7.org/fhir/valueset-administrative-gender.html)|*Administrative Gender*|2.16.840.1.113883.4.642.3.1|Pracitioner.gender
-|https://www.hl7.org/fhir/v2/0360/2.7/index.html|[FHIR (HL7V2)](http://hl7.org/fhir/v2/0360/2.7)|*Listed as a V2 data set, but there is a FHIR copy also*|None listed|Qualification.code
+|https://www.hl7.org/fhir/v2/0360/2.7/index.html|[FHIR (HL7V2)](http://terminology.hl7.org/ValueSet/v2-2.7-0360)|*Listed as a V2 data set, but there is a FHIR copy also*|None listed|Qualification.code
 |http://hl7.org/fhir/valueset-organization-type.html|[FHIR](http://hl7.org/fhir/valueset-organization-type.html)|*The type of the organization - this list from FHIR will need to be extended*|	2.16.840.1.113883.4.642.3.403|Organization.type
 |http://hl7.org/fhir/valueset-practitioner-role.html|[FHIR](http://hl7.org/fhir/valueset-practitioner-role.html)|*Defines a set of codes that can be used to indicate the role of a Practitioner or Organization - Assume this will extended to organizational roles*|2.16.840.1.113883.4.642.3.430|PracitionerRole.code; OrganizationAffiliation.Code
 |http://hl7.org/fhir/codesystem-practitioner-specialty.html|[FHIR](http://hl7.org/fhir/codesystem-practitioner-specialty.html)|*Defines a set of codes that can be used to indicate the specialty of a Practitioner or Organization. Assume this will be extended to include Organization Roles*|2.16.840.1.113883.4.642.1.433|PracitionerRole.speciality; OrganizationAffiliation.specialty

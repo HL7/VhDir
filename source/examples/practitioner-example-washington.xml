@@ -94,7 +94,7 @@
         </identifier>
         <code>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0360/2.7"/>
+                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
                 <version value="2.8.2"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
@@ -142,7 +142,7 @@
         </identifier>
         <code>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0360/2.7"/>
+                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
                 <version value="2.8.2"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
@@ -194,7 +194,7 @@
         </identifier>
         <code>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0360/2.7"/>
+                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
                 <version value="2.8.2"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
