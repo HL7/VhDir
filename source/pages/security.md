@@ -31,7 +31,7 @@ For the purposes of US Core, security conformance requirements are as follows:
 -   Systems SHALL conform to [FHIR Communications] requirements.
 -   For Authentication and Authorization, Systems SHALL use the [Smart on FHIR OAuth 2.0 profiles](http://docs.smarthealthit.org/authorization/). NOTE: The Smart On FHIR specifications include the required OAuth2 scopes for enabling security decisions.
 -   Systems SHOULD implement requirements from [FHIR Security Labels] to provide information on the type and sensitivity of data.
--   Systems SHALL implement consent requirements per their state, local, and institutional policies. The Business Associate Agreements SHOULD document systems mutual consent requirements. US Core actors SHALL ensure that any necessary consent records such DAF actors SHALL ensure that any necessary FHIR Consent records exist DAF actors SHALL ensure that FHIR [Consent] or other consent records exist and are reviewed prior to each exchange of patient-identifiable healthcare information. This verification should be logged in the same manner as other transactions, as discussed above under [General Security Considerations].
+-   Systems SHALL implement consent requirements per their state, local, and institutional policies. The Business Associate Agreements SHOULD document systems mutual consent requirements. US Core actors SHALL ensure that any necessary consent records such DAF actors SHALL ensure that any necessary FHIR Consent records exist DAF actors SHALL ensure that FHIR [Consent] or other consent records exist and are reviewed prior to each exchange of patient-identifiable healthcare information. This verification should be logged in the same manner as other transactions, as discussed above.
 -   Systems SHOULD makes the right Provenance statements using the [FHIR Provenance] resource and associated requirements.
 -   Systems MAY implement the [FHIR Digital Signatures] and provide feedback on it’s appropriateness for US Core transactions.
 -   Systems MAY protect the confidentiality of data at rest via encryption and associated access controls. The policies and methods used are outside the scope of this specification.
@@ -40,7 +40,6 @@ For the purposes of US Core, security conformance requirements are as follows:
   [FHIR Communications]: {{site.data.fhir.path}}/security.html#http
   [Smart On FHIR]: http://fhir-docs.smarthealthit.org/argonaut-dev/authorization/backend-services/
   [FHIR Security Labels]: {{site.data.fhir.path}}/security-labels.html
-  [General Security Considerations]: #general-security-considerations
   [FHIR Provenance]: {{site.data.fhir.path}}/provenance.html
   [FHIR Digital Signatures]: {{site.data.fhir.path}}/security.html#digital%20signatures
 

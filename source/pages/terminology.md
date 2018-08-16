@@ -7,7 +7,7 @@ sectionnumbering: true
 F: http://build.fhir.org/
 ---
 
-This page lists all the ValueSets, CodeSystems, and ConceptMaps defined as part of the Validated Healthcare Directory implementation Guide. For more information on using codes in resources, see the [guidance section](guidance.html#using-codes-in-vhdir-profiles) as well as in the [FHIR specification](http://hl7.org/fhir/STU3/terminologies.html).
+This page lists all the ValueSets, CodeSystems, and ConceptMaps defined as part of the Validated Healthcare Directory implementation Guide. For more information on using codes in resources, see the <!-- >[guidance section](guidance.html#using-codes-in-vhdir-profiles) as well as in --> the [FHIR specification](http://hl7.org/fhir/STU3/terminologies.html).
 
 All code systems and value sets in the guide are proposed and undergoing review and harmonization.
 
