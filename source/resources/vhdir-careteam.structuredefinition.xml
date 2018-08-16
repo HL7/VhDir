@@ -108,7 +108,6 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
 			</type>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
 		</element>
 		<element id="CareTeam.identifier.assigner">
 			<path value="CareTeam.identifier.assigner"/>
