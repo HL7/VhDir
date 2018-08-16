@@ -12,6 +12,8 @@ active: capstatements
 
 {% include list-simple-capabilitystatements.xhtml %}
 
+<br/>
+
 <!--
 ```
 Steps for adding this narrative to CapStatements  - if you don't want to generate it

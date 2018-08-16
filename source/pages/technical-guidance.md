@@ -21,11 +21,11 @@ F: http://build.fhir.org/
 ## Validated Healthcare Directory Concept Diagram
 
 
-This diagram depicts the high-level conceptual design of a central source of validated healthcare directory data. 
+This diagram depicts the high-level conceptual design of a central source of validated healthcare directory data.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
-  <img src="assets/images/conceptDiagram.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram.jpg" />
+  <img src="assets/images/conceptDiagram.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
 </figure>
 
 In this diagram, RESTful FHIR APIs facilitate the movement data into and out of a validated healthcare directory (VHDir) at different points, including:
@@ -35,7 +35,7 @@ In this diagram, RESTful FHIR APIs facilitate the movement data into and out of 
 
 ## Attestation
 
-Attestation describes the process by which authorized entities submit information about themselves, their roles, their relationships, etc. for inclusion in a healthcare directory. 
+Attestation describes the process by which authorized entities submit information about themselves, their roles, their relationships, etc. for inclusion in a healthcare directory.
 
 Guidance in this section is primarily intended to describe expectations for implementers using a FHIR API to manage attestation. An implementer’s unique implementation context, including local business needs, applicable laws/regulations/policies, usability considerations, etc. will determine an implementer’s approach to many of the attestation considerations described in this section. As we do not anticipate every implementer will use the same approach to attestation, we have not provided a set of attestation profiles or defined an attestation API. Implementers SHALL make any attestation requirements, including but not limited to profiles and/or API documentation, available to any stakeholders involved in the attestation process.
 
@@ -67,7 +67,7 @@ We expect stakeholders will typically use a [SMART on FHIR application](https://
 
 Before accepting attested data, a validated healthcare directory should have policies to ensure:
 * Any attester application has successfully registered and integrated with the validated healthcare directory.
-* Attesters have successfully completed any identify proofing requirements. 
+* Attesters have successfully completed any identify proofing requirements.
 * Any credentials or digital certificates that must be exchanged have been exchanged, validated, and are functional.
 * The validated healthcare directory has set and made available any permissions/rights that govern the scope of data an attester may submit.
 * Any representatives/intermediaries submitting data on behalf of an individual/entity have been appropriately authorized.
@@ -91,9 +91,9 @@ The FHIR specification [describes multiple approaches](http://build.fhir.org/htt
   * A Bundle of type “transaction” is processed as a single atomic unit, and the whole collection will fail if any of the interactions defined in the Bundle fail.
 Additionally, the FHIR specification provides support for [asynchronous interactions](http://build.fhir.org/async.html), which may be necessary to facilitate processing of large amounts of data.
 
-This implementation guide is not prescriptive about which approach(es) a validated healthcare directory should use to manage attestation. However, as any attestation will likely involve the submission of multiple FHIR resources representing information about one or more attesters, transaction Bundles can alleviate the need for more complex logic to manage referential integrity in attested information. 
+This implementation guide is not prescriptive about which approach(es) a validated healthcare directory should use to manage attestation. However, as any attestation will likely involve the submission of multiple FHIR resources representing information about one or more attesters, transaction Bundles can alleviate the need for more complex logic to manage referential integrity in attested information.
 
-Implementations relying on individual API interactions or batch Bundles may have to specify an “order of operations” to ensure attested data can be successfully submitted to the validated healthcare directory server. 
+Implementations relying on individual API interactions or batch Bundles may have to specify an “order of operations” to ensure attested data can be successfully submitted to the validated healthcare directory server.
 
 [insert proposed order of operations here]
 
@@ -107,7 +107,7 @@ To manage duplicate records, we generally recommend that validated healthcare di
 
 Validation is critical for ensuring that users of a healthcare directory can rely upon the data in the directory. Validation can refer to separate but related processes: validation of FHIR resources (e.g. checking consistency w/data type, required elements are present, references to existing resources are correct, codes are from appropriate value set etc.), and validation of data against a primary source (e.g. verifying an address using Post Office records). This section describes the latter.
 
-Implementers will typically determine how primary source validation occurs operationally, based in part on the capabilities of the primary sources used for validation. For example, a primary source may already offer a mechanism like an API for validating content against its records. In other cases, an implementer may want to define an API that the primary source can access to push and/or pull content related to validation. Implementers may also consider less technical approaches, such as manual validation, or more stringent requirements, such as mailing a postcard to confirm an address. 
+Implementers will typically determine how primary source validation occurs operationally, based in part on the capabilities of the primary sources used for validation. For example, a primary source may already offer a mechanism like an API for validating content against its records. In other cases, an implementer may want to define an API that the primary source can access to push and/or pull content related to validation. Implementers may also consider less technical approaches, such as manual validation, or more stringent requirements, such as mailing a postcard to confirm an address.
 
 Certain types of data may have different validation requirements. For example, validating a relationship might require confirmation from each stakeholder participating in the relationship. Some data may have to be validated more frequently (e.g. license status), while other data can be validated once (e.g. education history) or not at all (e.g. a provider’s spoken language proficiency).
 
@@ -120,13 +120,13 @@ This implementation guide includes a Validation profile for the VerificationResu
 * The entity conducting validation, including its identity and when it validated the data
 * The outcome of validation for the targeted data
 
-Validation may occur on the total contents of a resource, a collection of elements in a resource, or a single element. Any entity with access to a data element in a validated healthcare directory SHALL also have access to any validation information pertaining to that element. 
+Validation may occur on the total contents of a resource, a collection of elements in a resource, or a single element. Any entity with access to a data element in a validated healthcare directory SHALL also have access to any validation information pertaining to that element.
 
 ## Exchange
 
-The primary focus of this implementation guide is a RESTful API for obtaining data from a Validated Healthcare Directory. The exchange API only supports a one-directional flow of information from a Validated Healthcare Directory into local environments (i.e. HTTP GETs). 
+The primary focus of this implementation guide is a RESTful API for obtaining data from a Validated Healthcare Directory. The exchange API only supports a one-directional flow of information from a Validated Healthcare Directory into local environments (i.e. HTTP GETs).
 
-Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public. 
+Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.
 
 The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a Validated Healthcare Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant (see the [Capability Statements Section](capstatements.html) for more information about conformance).
 
