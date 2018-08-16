@@ -41,7 +41,7 @@ Thumbs.db
 
 # FHIR IG Publisher local build directories #
 #############################################
-
+my-notes
 qa
 temp
 output
@@ -66,5 +66,3 @@ Log-FHIR.xlsx
 ####################
 ~*.docx
 ~*.xlsx
-
-
