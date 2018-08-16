@@ -25,7 +25,7 @@ This diagram depicts the high-level conceptual design of a central source of val
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
-  <img src="assets/images/conceptDiagram.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
+  <img src="assets/images/diagram5.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
 </figure>
 
 In this diagram, RESTful FHIR APIs facilitate the movement data into and out of a validated healthcare directory (VHDir) at different points, including:
