@@ -80,7 +80,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
 
 <!--  ********remove the tabs editing purposes if status draft ********* -->
 
-{% if {{site.data.structuredefinitions.{{[id]}}.status}} == "active" %}
+{% if site.data.structuredefinitions.{{[id]}}.status == "active" %}
 
 <div id="tabs">
 
@@ -137,7 +137,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
   </div>
  </div>
 {% endraw %}-->
-<!--{% raw %}
+
  <div id="tabs-json">
   <div id="json">
    <div id="json-inner">
@@ -147,7 +147,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
    </div>
   </div>
  </div>
-{% endraw %}-->
+
 {% endif %}
 
 
@@ -176,7 +176,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
       </div>
 </div>
 <!-- =======Snapshot======== -->
-{% unless {{site.data.structuredefinitions.{{[id]}}.kind}} == "logical" %}
+{% unless site.data.structuredefinitions.{{[id]}}.kind == "logical" %}
   <div id="all-tbl-snap">
    <p><b>Snapshot View</b></p>
    <div id="all-tbl-snap-inner">
@@ -194,8 +194,6 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
          </div>
         </div>
     {% endraw %}-->
-
-        <!--{% raw %}
     <div id="all-json">
      <p><b>JSON Template</b></p>
      <div id="all-json-inner">
@@ -204,7 +202,6 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
         </pre>
     </div>
   </div>
-    {% endraw %}-->
 {% endif %}
 
  </div>
@@ -218,7 +215,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
 <br />
 
 
-{% if {{site.data.structuredefinitions.{{[id]}}.kind}} == "resource" %}
+{% if site.data.structuredefinitions.{{[id]}}.kind == "resource" %}
 
   <!-- search text here-->
   <a name="search"> </a>
@@ -229,7 +226,7 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
   {% capture my-include %}{% include {{[id]}}-search.md id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
 
 
-{% elsif {{site.data.structuredefinitions.{{[id]}}.kind}} == "logical" %}
+{% elsif site.data.structuredefinitions.{{[id]}}.kind == "logical" %}
 
 
   <a name="mapping-tables"> </a>

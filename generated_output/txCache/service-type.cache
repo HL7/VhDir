@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "code" : "165"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cardiology",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "code" : "165",
+  "display" : "Cardiology"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cardiology",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

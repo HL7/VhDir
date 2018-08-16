@@ -1,0 +1,161 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "concept" : [{
+        "code" : "medical"
+      },
+      {
+        "code" : "dental"
+      },
+      {
+        "code" : "menthlth"
+      },
+      {
+        "code" : "substanceabuse"
+      },
+      {
+        "code" : "vision"
+      },
+      {
+        "code" : "drug"
+      },
+      {
+        "code" : "stc"
+      },
+      {
+        "code" : "ltc"
+      },
+      {
+        "code" : "hospice"
+      },
+      {
+        "code" : "homehealth"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "concept" : [{
+        "code" : "cat"
+      },
+      {
+        "code" : "bronze"
+      },
+      {
+        "code" : "bronzeexp"
+      },
+      {
+        "code" : "silver"
+      },
+      {
+        "code" : "gold"
+      },
+      {
+        "code" : "platinum"
+      },
+      {
+        "code" : "lowded"
+      },
+      {
+        "code" : "highded"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "concept" : [{
+        "code" : "medical"
+      },
+      {
+        "code" : "dental"
+      },
+      {
+        "code" : "menthlth"
+      },
+      {
+        "code" : "substanceabuse"
+      },
+      {
+        "code" : "vision"
+      },
+      {
+        "code" : "drug"
+      },
+      {
+        "code" : "stc"
+      },
+      {
+        "code" : "ltc"
+      },
+      {
+        "code" : "hospice"
+      },
+      {
+        "code" : "homehealth"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "concept" : [{
+        "code" : "cat"
+      },
+      {
+        "code" : "bronze"
+      },
+      {
+        "code" : "bronzeexp"
+      },
+      {
+        "code" : "silver"
+      },
+      {
+        "code" : "gold"
+      },
+      {
+        "code" : "platinum"
+      },
+      {
+        "code" : "lowded"
+      },
+      {
+        "code" : "highded"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+}
+-------------------------------------------------------------------------------------
