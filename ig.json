@@ -414,10 +414,6 @@
             "base": "StructureDefinition-contactpoint-availabletime.html",
             "defns": "StructureDefinition-contactpoint-availabletime-definitions.html"
         },
-        "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location": {
-            "source": "searchparameter-practitioner-qualification-wherevalid-location.json",
-            "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"
-        },
         "SearchParameter/searchparameter-practitionerrole-qualification-code": {
             "source": "searchparameter-practitionerrole-qualification-code.json",
             "base": "SearchParameter-searchparameter-practitionerrole-qualification-code.html"
@@ -488,10 +484,6 @@
         "SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type": {
             "source": "searchparameter-insuranceplan-specific-cost-cost-type.json",
             "base": "SearchParameter-searchparameter-insuranceplan-specific-cost-cost-type.html"
-        },
-        "SearchParameter/searchparameter-endpoint-status": {
-            "source": "searchparameter-endpoint-status.json",
-            "base": "SearchParameter-searchparameter-endpoint-status.html"
         },
         "SearchParameter/searchparameter-practitionerrole-qualification-status": {
             "source": "searchparameter-practitionerrole-qualification-status.json",
@@ -596,10 +588,6 @@
         "SearchParameter/searchparameter-practitioner-endpoint": {
             "source": "searchparameter-practitioner-endpoint.json",
             "base": "SearchParameter-searchparameter-practitioner-endpoint.html"
-        },
-        "SearchParameter/searchparameter-location-status": {
-            "source": "searchparameter-location-status.json",
-            "base": "SearchParameter-searchparameter-location-status.html"
         },
         "StructureDefinition/practitioner-qualification": {
             "source": "practitioner-qualification.structuredefinition.xml",
@@ -719,10 +707,6 @@
         "SearchParameter/searchparameter-location-new-patient": {
             "source": "searchparameter-location-new-patient.json",
             "base": "SearchParameter-searchparameter-location-new-patient.html"
-        },
-        "SearchParameter/searchparameter-practitioner-phonetic": {
-            "source": "searchparameter-practitioner-phonetic.json",
-            "base": "SearchParameter-searchparameter-practitioner-phonetic.html"
         },
         "ValueSet/valueset-digitalcertificateuse": {
             "source": "valueset-digitalcertificateuse.xml",
@@ -928,9 +912,9 @@
             "base": "StructureDefinition-healthcareservice-reference.html",
             "defns": "StructureDefinition-healthcareservice-reference-definitions.html"
         },
-        "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
+        "SearchParameter/organizationaffiliation-participating-organization": {
             "source": "searchparameter-organizationaffiliation-participating-org.json",
-            "base": "SearchParameter-searchparameter-organizationaffiliation-participating-org.html"
+            "base": "SearchParameter-organizationaffiliation-participating-organization.html"
         },
         "SearchParameter/searchparameter-insuranceplan-endpoint": {
             "source": "searchparameter-insuranceplan-endpoint.json",
@@ -947,10 +931,6 @@
         "SearchParameter/searchparameter-healthcareservice-endpoint": {
             "source": "searchparameter-healthcareservice-endpoint.json",
             "base": "SearchParameter-searchparameter-healthcareservice-endpoint.html"
-        },
-        "SearchParameter/searchparameter-careteam-status": {
-            "source": "searchparameter-careteam-status.json",
-            "base": "SearchParameter-searchparameter-careteam-status.html"
         },
         "SearchParameter/searchparameter-healthcareservice-name": {
             "source": "searchparameter-healthcareservice-name.json",
@@ -997,10 +977,6 @@
         "ValueSet/valueset-certificationedition": {
             "source": "valueset-certificationedition.xml",
             "base": "ValueSet-valueset-certificationedition.html"
-        },
-        "SearchParameter/searchparameter-insuranceplan-status": {
-            "source": "searchparameter-insuranceplan-status.json",
-            "base": "SearchParameter-searchparameter-insuranceplan-status.html"
         },
         "SearchParameter/searchparameter-organizationaffiliation-via-intermediary": {
             "source": "searchparameter-organizationaffiliation-via-intermediary.json",
@@ -1050,10 +1026,6 @@
         "SearchParameter/searchparameter-practitionerrole-organization": {
             "source": "searchparameter-practitionerrole-organization.json",
             "base": "SearchParameter-searchparameter-practitionerrole-organization.html"
-        },
-        "SearchParameter/searchparameter-verificationresult-target": {
-            "source": "searchparameter-verificationresult-target.json",
-            "base": "SearchParameter-searchparameter-verificationresult-target.html"
         },
         "SearchParameter/searchparameter-careteam-member": {
             "source": "searchparameter-careteam-member.json",

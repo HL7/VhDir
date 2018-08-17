@@ -172,14 +172,6 @@
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHOULD"/>
-				</extension>
-				<name value="practitioner-qualification-wherevalid-location"/>
-				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"/>
-				<type value="reference"/>
-			</searchParam>
-			<searchParam>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitioner-via-intermediary"/>
@@ -193,14 +185,6 @@
 				<name value="active"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-active"/>
 				<type value="token"/>
-			</searchParam>
-			<searchParam>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="MAY"/>
-				</extension>
-				<name value="practitioner-phonetic"/>
-				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-phonetic"/>
-				<type value="string"/>
 			</searchParam>
 		</resource>
 		<resource>
@@ -2122,14 +2106,6 @@
 				<name value="verificationresult-status-date"/>
 				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-status-date"/>
 				<type value="date"/>
-			</searchParam>
-			<searchParam>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHALL"/>
-				</extension>
-				<name value="verificationresult-target"/>
-				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-target"/>
-				<type value="reference"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
