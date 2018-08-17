@@ -77,5 +77,203 @@
 				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
+		<element id="InsurancePlan.identifier.assigner">
+			<path value="InsurancePlan.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.status">
+			<path value="InsurancePlan.status"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="InsurancePlan.ownedBy">
+			<path value="InsurancePlan.ownedBy"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.administeredBy">
+			<path value="InsurancePlan.administeredBy"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.coverageArea">
+			<path value="InsurancePlan.coverageArea"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.contact">
+			<path value="InsurancePlan.contact"/>
+		</element>
+		<element id="InsurancePlan.contact.name">
+			<path value="InsurancePlan.contact.name"/>
+		</element>
+		<element id="InsurancePlan.contact.name.family">
+			<path value="InsurancePlan.contact.name.family"/>
+			<min value="1"/>
+		</element>
+		<element id="InsurancePlan.contact.name.given">
+			<path value="InsurancePlan.contact.name.given"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="InsurancePlan.contact.telecom">
+			<path value="InsurancePlan.contact.telecom"/>
+		</element>
+		<element id="InsurancePlan.contact.telecom.extension">
+			<path value="InsurancePlan.contact.telecom.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="InsurancePlan.contact.telecom.extension:viaintermediary">
+			<path value="InsurancePlan.contact.telecom.extension"/>
+			<sliceName value="viaintermediary"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.contact.telecom.extension:availabletime">
+			<path value="InsurancePlan.contact.telecom.extension"/>
+			<sliceName value="availabletime"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.contact.telecom.system">
+			<path value="InsurancePlan.contact.telecom.system"/>
+			<min value="1"/>
+		</element>
+		<element id="InsurancePlan.contact.telecom.value">
+			<path value="InsurancePlan.contact.telecom.value"/>
+			<min value="1"/>
+		</element>
+		<element id="InsurancePlan.endpoint">
+			<path value="InsurancePlan.endpoint"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.network">
+			<path value="InsurancePlan.network"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.coverage">
+			<path value="InsurancePlan.coverage"/>
+		</element>
+		<element id="InsurancePlan.coverage.type">
+			<path value="InsurancePlan.coverage.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.coverage.network">
+			<path value="InsurancePlan.coverage.network"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.coverage.benefit">
+			<path value="InsurancePlan.coverage.benefit"/>
+		</element>
+		<element id="InsurancePlan.coverage.benefit.type">
+			<path value="InsurancePlan.coverage.benefit.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.coverage.benefit.limit">
+			<path value="InsurancePlan.coverage.benefit.limit"/>
+		</element>
+		<element id="InsurancePlan.coverage.benefit.limit.code">
+			<path value="InsurancePlan.coverage.benefit.limit.code"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.plan">
+			<path value="InsurancePlan.plan"/>
+		</element>
+		<element id="InsurancePlan.plan.identifier">
+			<path value="InsurancePlan.plan.identifier"/>
+			<short value="Business identifier for plan"/>
+		</element>
+		<element id="InsurancePlan.plan.identifier.extension">
+			<path value="InsurancePlan.plan.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="InsurancePlan.plan.identifier.extension:status">
+			<path value="InsurancePlan.plan.identifier.extension"/>
+			<sliceName value="status"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.plan.identifier.assigner">
+			<path value="InsurancePlan.plan.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.plan.type">
+			<path value="InsurancePlan.plan.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-plan-type"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.plan.coverageArea">
+			<path value="InsurancePlan.plan.coverageArea"/>
+			<short value="Where plan applies"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+			</type>
+		</element>
+		<element id="InsurancePlan.plan.network">
+			<path value="InsurancePlan.plan.network"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+			</type>
+		</element>
 	</differential>
 </StructureDefinition>
