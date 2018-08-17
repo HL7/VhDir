@@ -6,7 +6,7 @@
 	<title value="VhDir Accessibility Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
-	<publisher value="HL7 - TBD"/>
+	<publisher value="HL7"/>
 	<contact>
 		<telecom>
 			<system value="other"/>
@@ -20,7 +20,7 @@
 	<concept>
 		<code value="cultcomp"/>
 		<display value="Cultural competence"/>
-		<definition value="Provides services that meet the social,cultural, and linguistic needs of persons."/>
+		<definition value="Provides services that meet the social, cultural, and linguistic needs of persons."/>
 	</concept>
 	<concept>
 		<code value="handiaccess"/>

@@ -6,7 +6,7 @@
 	<title value="VhDir Payer Characteristics Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
-	<publisher value="HL7 - TBD"/>
+	<publisher value="HL7"/>
 	<contact>
 		<telecom>
 			<system value="other"/>
@@ -27,7 +27,7 @@
 		<definition value="Dental insurance coverage."/>
 	</concept>
 	<concept>
-		<code value="mentHlth"/>
+		<code value="menthlth"/>
 		<display value="Mental Health"/>
 		<definition value="Mental health insurance coverage."/>
 	</concept>

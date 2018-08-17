@@ -1081,7 +1081,7 @@
             "source": "valueset-primarysourcepush.xml",
             "base": "ValueSet-valueset-primarysourcepush.html"
         },
-        "ValueSet/valueset-validationprocess": {
+        "ValueSet/valueset-primarysourcevalidationprocess": {
             "source": "valueset-primarysourcevalidationprocess.xml",
             "base": "ValueSet-valueset-primarysourcevalidationprocess.html"
         },
