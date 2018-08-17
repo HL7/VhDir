@@ -35,9 +35,8 @@
 <hr />
 1. `GET [base]/Endpoint?endpoint-status=[code]`
 
-      *Support:* SHALL support search by the `status` parameter: `http://hl7.org/fhir/SearchParameter/Endpoint-status`
+      *Support:* SHALL support search by the [`endpoint-status`](SearchParameter-searchparameter-endpoint-status) parameter
 <hr />
-
 1. `GET [base]/Endpoint?endpoint-usecase-standard=[uri]`
 
       *Support:* SHOULD support search by the [`endpoint-usecase-standard`](SearchParameter-searchparameter-endpoint-usecase-standard.html) parameter  

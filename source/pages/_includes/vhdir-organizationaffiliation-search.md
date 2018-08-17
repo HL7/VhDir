@@ -4,68 +4,68 @@
 
       *Support:* SHALL support search by the `active` parameter: `http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active`
 <hr />
-1. `GET [base]/OrganizationAffiliation?endpoint=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-endpoint=[id]`
 
-      *Support:* SHOULD support search by the [`endpoint`](SearchParameter-searchparameter-organizationaffiliation-endpoint.html) parameter
+      *Support:* SHOULD support search by the [`organizationaffiliation-endpoint`](SearchParameter-searchparameter-organizationaffiliation-endpoint.html) parameter
    - with a target type:  `Endpoint`   
-   - including these search paramaters which may be chained:  `identifier`, `connection-type`, `organization`
+   - including these search paramaters which may be chained:  `endpoint-identifier`, `endpoint-connection-type`, `endpoint-organization`
 <hr />
-1. `GET [base]/OrganizationAffiliation?identifier=[code]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-identifier=[code]`
 
-      *Support:* SHALL support search by the [`identifier`](SearchParameter-searchparameter-organizationaffiliation-identifier.html) parameter  
+      *Support:* SHALL support search by the [`organizationaffiliation-identifier`](SearchParameter-searchparameter-organizationaffiliation-identifier.html) parameter
    - including the modifiers:  `text`, `ofType`   
 <hr />
-1. `GET [base]/Organization?identifier-assigner=[id]`
+1. `GET [base]/Organization?organizationaffiliation-identifier-assigner=[id]`
 
       *Support:* MAY support search by the [`organizationaffiliation-identifier-assigner`](SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html) parameter
    - with a target type:  `Organization`
    - including the modifiers:  `below`  
-   - including these search paramaters which may be chained:  `identifier`, `name`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`
 <hr />
-1. `GET [base]/OrganizationAffiliation?location=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-location=[id]`
 
-      *Support:* SHALL support search by the [`location`](SearchParameter-searchparameter-organizationaffiliation-location.html) parameter
+      *Support:* SHALL support search by the [`organizationaffiliation-location`](SearchParameter-searchparameter-organizationaffiliation-location.html) parameter
    - with a target type:  `Location`
    - including the modifiers:  `above`, `below`  
-   - including these search paramaters which may be chained:  `identifier`, `type`, `address`, `organization`
+   - including these search paramaters which may be chained:  `location-identifier`, `location-type`, `location-address`, `location-organization`
 <hr />
-1. `GET [base]/OrganizationAffiliation?network=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-network=[id]`
 
-      *Support:* SHOULD support search by the [`network`](SearchParameter-searchparameter-organizationaffiliation-network.html) parameter
+      *Support:* SHOULD support search by the [`organizationaffiliation-network`](SearchParameter-searchparameter-organizationaffiliation-network.html) parameter
    - with a target type:  `Organization`   
-   - including these search paramaters which may be chained:  `identifier`, `name`, `partof`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-partof`
 <hr />
-1. `GET [base]/OrganizationAffiliation?participating-organization=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-participating-org=[id]`
 
-      *Support:* SHALL support search by the [`participating-organization`](SearchParameter-organizationaffiliation-participating-organization.html) parameter
+      *Support:* SHALL support search by the [`organizationaffiliation-participating-org`](SearchParameter-organizationaffiliation-participating-org.html) parameter
    - with a target type:  `Organization`
    - including the modifiers:  `above`, `below`  
-   - including these search paramaters which may be chained:  `identifier`, `name`, `address`, `partof`, `type`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-address`, `organization-partof`, `organization-type`
 <hr />
-1. `GET [base]/OrganizationAffiliation?primary-organization=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-primary-organization=[id]`
 
-      *Support:* SHALL support search by the [`primary-organization`](SearchParameter-searchparameter-organizationaffiliation-primary-organization.html) parameter
+      *Support:* SHALL support search by the [`organizationaffiliation-primary-organization`](SearchParameter-searchparameter-organizationaffiliation-primary-organization.html) parameter
    - with a target type:  `Organization`
    - including the modifiers:  `above`, `below`  
-   - including these search paramaters which may be chained:  `identifier`, `type`, `address`, `name`, `partof`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-type`, `organization-address`, `organization-name`, `organization-partof`
 <hr />
-1. `GET [base]/OrganizationAffiliation?role=[code]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-role=[code]`
 
-      *Support:* SHALL support search by the [`role`](SearchParameter-searchparameter-organizationaffiliation-role.html) parameter  
+      *Support:* SHALL support search by the [`organizationaffiliation-role`](SearchParameter-searchparameter-organizationaffiliation-role.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/OrganizationAffiliation?service=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-service=[id]`
 
-      *Support:* SHOULD support search by the [`service`](SearchParameter-searchparameter-organizationaffiliation-service.html) parameter
+      *Support:* SHOULD support search by the [`organizationaffiliation-service`](SearchParameter-searchparameter-organizationaffiliation-service.html) parameter
    - with a target type:  `HealthcareService`   
-   - including these search paramaters which may be chained:  `identifier`, `category`, `organization`, `location`
+   - including these search paramaters which may be chained:  `healthcareservice-identifier`, `healthcareservice-category`, `healthcareservice-organization`, `healthcareservice-location`
 <hr />
-1. `GET [base]/OrganizationAffiliation?specialty=[code]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-specialty=[code]`
 
-      *Support:* SHOULD support search by the [`specialty`](SearchParameter-searchparameter-organizationaffiliation-specialty.html) parameter  
+      *Support:* SHOULD support search by the [`organizationaffiliation-specialty`](SearchParameter-searchparameter-organizationaffiliation-specialty.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/Organization?via-intermediary=[id]`
+1. `GET [base]/Organization?organizationaffiliation-via-intermediary=[id]`
 
       *Support:* MAY support search by the [`organizationaffiliation-via-intermediary`](SearchParameter-searchparameter-organizationaffiliation-via-intermediary.html) parameter
    - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
