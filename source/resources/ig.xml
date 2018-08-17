@@ -18,6 +18,24 @@
 	<definition>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/identifier-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/contactpoint-viaintermediary" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/contactpoint-availabletime" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="Bundle/womens-shelter" />
 			</reference>
 			<exampleBoolean value="true" />
@@ -1278,12 +1296,6 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/identifier-status" />
-			</reference>
-			<exampleBoolean value="false" />
-		</resource>
-		<resource>
-			<reference>
 				<reference value="StructureDefinition/healthcareservice-reference" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -1315,18 +1327,6 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/digitalcertificate" />
-			</reference>
-			<exampleBoolean value="false" />
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/contactpoint-viaintermediary" />
-			</reference>
-			<exampleBoolean value="false" />
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/contactpoint-availabletime" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
