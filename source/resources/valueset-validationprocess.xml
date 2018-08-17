@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-validationprocess"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationprocess"/>
+	<name value="VhDirValidationProcess"/>
+	<title value="VhDir Validation Process"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Documents the external source validation requirements for this element or set of elements."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+			<concept>
+				<code value="editcheck"/>
+			</concept>
+			<concept>
+				<code value="valueset"/>
+			</concept>
+			<concept>
+				<code value="extsource"/>
+			</concept>
+			<concept>
+				<code value="standalone"/>
+			</concept>
+			<concept>
+				<code value="incontext"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

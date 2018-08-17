@@ -1081,9 +1081,17 @@
             "source": "valueset-primarysourcepush.xml",
             "base": "ValueSet-valueset-primarysourcepush.html"
         },
-        "ValueSet/valueset-primarysourcevalidationprocess": {
+        "ValueSet/valueset-validationprocess": {
             "source": "valueset-primarysourcevalidationprocess.xml",
             "base": "ValueSet-valueset-primarysourcevalidationprocess.html"
+        },
+        "ValueSet/valueset-validationprocess": {
+            "source": "valueset-validationprocess.xml",
+            "base": "ValueSet-valueset-validationprocess.html"
+        },
+        "ValueSet/valueset-primarysourcetype": {
+            "source": "valueset-primarysourcetype.xml",
+            "base": "ValueSet-valueset-primarysourcetype.html"
         },
         "SearchParameter/searchparameter-organization-qualification-status": {
             "source": "searchparameter-organization-qualification-status.json",

@@ -17,44 +17,44 @@
 	<caseSensitive value="true"/>
 	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationtype"/>
 	<content value="complete"/>
-	<!-- <concept>
-		<code value="none"/>
-		<display value="none"/>
+	<concept>
+		<code value="noneneeded"/>
+		<display value="None needed"/>
 		<definition value="No validation needed/planned for this resource or element."/>
 	</concept> -->
 	<concept>
 		<code value="initial"/>
-		<display value="Validation only needed once after initial attestation"/>
-		<definition value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'"/>
+		<display value="Initial"/>
+		<definition value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'."/>
 	</concept>
 	<concept>
 		<code value="periodic"/>
-		<display value="Validation is needed after initial attestation and on a periodic basis"/>
+		<display value="Periodic"/>
 		<definition value="Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."/>
 	</concept>
 	<concept>
 		<code value="attested"/>
-		<display value="Indicates the element or resource has only been attested."/>
+		<display value="Attested"/>
 		<definition value="Indicates the element or resource has only been attested."/>
 	</concept>
 	<concept>
 		<code value="validated"/>
-		<display value="Indicates the element or resource has been successfully validated."/>
+		<display value="Validated"/>
 		<definition value="Indicates the element or resource has been successfully validated."/>
 	</concept>
 	<concept>
 		<code value="inprocess"/>
-		<display value="Indicates the element or resource is currently being validated."/>
+		<display value="Inprocess"/>
 		<definition value="Indicates the element or resource is currently being validated."/>
 	</concept>
 	<concept>
 		<code value="reqreval"/>
-		<display value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
+		<display value="Required revalidation"/>
 		<definition value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
 	</concept>
 	<concept>
 		<code value="valfailed"/>
-		<display value="Indicates validation was attepted on an element or resource and that validation failed."/>
+		<display value="Valiation failed"/>
 		<definition value="Indicates validation was attepted on an element or resource and that validation failed."/>
 	</concept>
 	<concept>
@@ -74,49 +74,49 @@
 	</concept>
 	<concept>
 		<code value="editcheck"/>
-		<display value="Indicates the element or resource is validated for format, range, presence, or other similar properties."/>
-		<definition value="to review"/>
+		<display value="Edit check"/>
+		<definition value="Indicates the element or resource is validated for format, range, presence, or other similar properties."/>
 	</concept>
 	<concept>
 		<code value="valueset"/>
-		<display value="Indicates the element or resource is validated against a value set."/>
-		<definition value="to review"/>
+		<display value="Valueset"/>
+		<definition value="Indicates the element or resource is validated against a value set."/>
 	</concept>
 	<concept>
 		<code value="extsource"/>
-		<display value="Indicates the element or resource is validated against an external source."/>
-		<definition value="to review"/>
+		<display value="External source"/>
+		<definition value="Indicates the element or resource is validated against an external source."/>
 	</concept>
 	<concept>
 		<code value="standalone"/>
-		<display value="Indicates the element or resource is validated by itself and is unrelated to other elements or resources."/>
-		<definition value="to review"/>
+		<display value="Stand alone"/>
+		<definition value="Indicates the element or resource is validated by itself and is unrelated to other elements or resources."/>
 	</concept>
 	<concept>
 		<code value="incontext"/>
-		<display value="Indicates the element or resource is validated by the existence or value of another related element or resource."/>
-		<definition value="to review"/>
+		<display value="In context"/>
+		<definition value="Indicates the element or resource is validated by the existence or value of another related element or resource."/>
 	</concept>
 	<concept>
 		<code value="fatal"/>
-		<display value="A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken."/>
-		<definition value="to review"/>
+		<display value="Fatal"/>
+		<definition value="A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken."/>
 	</concept>
 	<concept>
 		<code value="warning"/>
-		<display value="A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization."/>
-		<definition value="to review"/>
+		<display value="Warning"/>
+		<definition value="A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization."/>
 	</concept>
 	<concept>
 		<code value="recordonly"/>
-		<display value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
-		<definition value="to review"/>
+		<display value="Record only"/>
+		<definition value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
 	</concept>
-	<!-- <concept>
-		<code value="none"/>
-		<display value="A failure that is unlikely to be relevant to any local workflow environment."/>
-		<definition value="to review"/>
-	</concept> -->
+		<concept>
+		<code value="noaction"/>
+		<display value="No action"/>
+		<definition value="A failure that is unlikely to be relevant to any local workflow environment."/>
+	</concept>
 	<concept>
 		<code value="manual"/>
 		<display value="Manual"/>
@@ -179,7 +179,7 @@
 	</concept>
 	<concept>
 		<code value="owner"/>
-		<display value="Indicate the element or resource was owner"/>
+		<display value="Owner"/>
 		<definition value="Indicates the element or resource was attested to by the individual who owned the data."/>
 	</concept>
 	<concept>
@@ -189,12 +189,52 @@
 	</concept>
 	<concept>
 		<code value="authint"/>
-		<display value="Authorized intermediary, eg CA Directory"/>
+		<display value="Authorized intermediary"/>
 		<definition value="Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data."/>
 	</concept>
 	<concept>
 		<code value="non-auth-src"/>
 		<display value="Non-authorized source"/>
-		<definition value="Indicates the element or resource was attested to by an individual or system that was not deignated to attest by the owner of the data."/>
+		<definition value="Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data."/>
+	</concept>
+	<concept>
+		<code value="licenseboard"/>
+		<display value="License Board"/>
+		<definition value="License Board"/>
+	</concept>
+	<concept>
+		<code value="primaryed"/>
+		<display value="Primary Education"/>
+		<definition value="Primary Education"/>
+	</concept>
+	<concept>
+		<code value="continuinged"/>
+		<display value="Continuing Education"/>
+		<definition value="Continuing Education"/>
+	</concept>
+	<concept>
+		<code value="postalservice"/>
+		<display value="Postal Service"/>
+		<definition value="Postal Service"/>
+	</concept>
+	<concept>
+		<code value="relowner"/>
+		<display value="Relationship owner"/>
+		<definition value="Relationship owner"/>
+	</concept>
+	<concept>
+		<code value="regauth"/>
+		<display value="Registration Authority"/>
+		<definition value="Registration Authority"/>
+	</concept>
+	<concept>
+		<code value="legalsource"/>
+		<display value="Legal source"/>
+		<definition value="Legal source"/>
+	</concept>
+	<concept>
+		<code value="issuingsource"/>
+		<display value="Issuing source"/>
+		<definition value="Issuing source"/>
 	</concept>
 </CodeSystem>

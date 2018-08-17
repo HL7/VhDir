@@ -390,6 +390,18 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-validationprocess" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-primarysourcetype" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/usage-restriction" />
 			</reference>
 			<exampleBoolean value="false" />

@@ -20,51 +20,51 @@
 	<concept>
 		<code value="ppo"/>
 		<display value="PPO"/>
-		<definition value="PPO"/>
+		<definition value="A Preferred Provider Organization (PPO) is a type of health plan that contracts with medical providers, such as hospitals and doctors, to create a network of participating providers. You pay less if you use providers that belong to the plan’s network. You can use doctors, hospitals, and providers outside of the network for an additional cost."/>
 	</concept>
 	<concept>
 		<code value="hmo"/>
 		<display value="HMO"/>
-		<definition value="HMO"/>
+		<definition value="A Health Maintenance Organization (HMO) is a type of health insurance plan that usually limits coverage to care from doctors who work for or contract with the HMO. It generally won't cover out-of-network care except in an emergency. HMOs often provide integrated care and focus on prevention and wellness."/>
 	</concept>
 	<concept>
 		<code value="aco"/>
 		<display value="ACO"/>
-		<definition value="ACO"/>
+		<definition value="An Accountable Care Organization (ACO) is a group of health care providers who give coordinated care, chronic disease management, and thereby improve the quality of care patients get. The organization's payment is tied to achieving health care quality goals and outcomes that result in cost savings."/>
 	</concept>
 	<concept>
 		<code value="specialty"/>
 		<display value="Specialty"/>
-		<definition value="Specialty"/>
+		<definition value="Focuses on a specific area of medicine, such as endocrinology or rheumatology."/>
 	</concept>
 	<concept>
 		<code value="dental"/>
 		<display value="Dental"/>
-		<definition value="dental"/>
+		<definition value="Benefits that help pay for the cost of visits to a dentist for basic or preventive services, like teeth cleaning, X-rays, and fillings."/>
 	</concept>
 	<concept>
 		<code value="vision"/>
 		<display value="Vision"/>
-		<definition value="Vision"/>
+		<definition value="A health benefit that at least partially covers vision care, like eye exams and glasses."/>
 	</concept>
 	<concept>
 		<code value="pharmacy"/>
 		<display value="Pharmacy"/>
-		<definition value="Pharmacy"/>
+		<definition value="Health insurance or plan that helps pay for prescription drugs and medications."/>
 	</concept>
 	<concept>
 		<code value="national"/>
 		<display value="National"/>
-		<definition value="National"/>
+		<definition value="In-network providers may be found nationally."/>
 	</concept>
 	<concept>
 		<code value="regional"/>
 		<display value="Regional"/>
-		<definition value="Regional"/>
+		<definition value="In-network providers are confined to a specific region."/>
 	</concept>
 	<concept>
 		<code value="state"/>
 		<display value="State"/>
-		<definition value="State"/>
+		<definition value="In-network providers are confined to a specific state."/>
 	</concept>
 </CodeSystem>
