@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-name",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-name",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Name Search Parameter",
+  "name": "VHDir Healthcareservice Name Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-name",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,14 +18,15 @@
       ]
     }
   ],
-  "code": "healthcareservice-name",
-  "base": "HealthcareService",
+  "code": "name",
+  "base": [
+    "HealthcareService"
+  ],
   "type": "string",
-  "description": "Select HealthcareServices with the specified name",
+  "description": "A portion of the Healthcare service name",
   "expression": "HealthcareService.name",
-  "multipleOr": true,
-  "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

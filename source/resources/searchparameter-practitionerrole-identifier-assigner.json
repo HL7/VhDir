@@ -1,32 +1,37 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-practitionerrole-identifier-assigner", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-identifier-assigner", 
-  "version": "0.0.0", 
-  "name": "VHDir PractitionerRole Identifier Assigner Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitionerrole-identifier-assigner",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-identifier-assigner",
+  "version": "0.0.0",
+  "name": "VHDir Practitionerrole Identifier Assigner Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "practitionerrole-identifier-assigner", 
-  "base": "PractitionerRole", 
-  "type": "reference", 
-  "description": "Select PractitionerRoles with an identifier issued by the specified organization", 
+  ],
+  "code": "practitionerrole-identifier-assigner",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "description": "Select roles with an identifier assigned by the specified organization",
   "expression": "PractitionerRole.identifier.assigner",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "below",
+  "target": [
+    "Organization"
+  ],
+  "modifier": [
+    "below"
+  ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "identifier",
+    "name"
   ]
 }

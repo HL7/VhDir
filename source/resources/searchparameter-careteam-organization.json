@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-organization",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-organization",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Organization Search Parameter",
+  "name": "VHDir Careteam Organization Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,17 +18,24 @@
     }
   ],
   "code": "careteam-organization",
-  "base": "CareTeam",
+  "base": [
+    "CareTeam"
+  ],
   "type": "reference",
   "description": "Select care teams managed by the specified organization",
   "expression": "CareTeam.managingOrganization",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Organization"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "identifier",
+    "name",
+    "address",
+    "partof",
+    "type"
   ]
 }

@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-organization",
@@ -19,18 +18,25 @@
       ]
     }
   ],
-  "code": "location-organization",
-  "base": "Location",
+  "code": "organization",
+  "base": [
+    "Location"
+  ],
   "type": "reference",
-  "description": "Select Locations managed by the specified organization",
+  "description": "Searches for locations that are managed by the provided organization",
   "expression": "Location.managingOrganization",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Organization"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "identifier",
+    "name",
+    "address",
+    "partof",
+    "type"
   ]
 }

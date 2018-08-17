@@ -1,31 +1,33 @@
-
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-healthcareservice-via-intermediary", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary", 
-  "version": "0.0.0", 
-  "name": "VHDir Via Intermediary HealthcareService Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-healthcareservice-via-intermediary",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary",
+  "version": "0.0.0",
+  "name": "VHDir Healthcareservice Via Intermediary Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
-    }          
-  ], 
-  "code": "via-intermediary", 
-  "base": "HealthcareService",
-  "type": "reference", 
-  "description": "Select HealthcareServices with contact information available through the specified intermediary", 
+    }
+  ],
+  "code": "healthcareservice-via-intermediary",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "reference",
+  "description": "Select services with contact information available through the specified intermediary",
   "expression": "HealthcareService.telecom.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
-    "PractitionerRole", "Organization", "OrganizationAffiliation", "Location"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true
+    "PractitionerRole",
+    "Organization",
+    "OrganizationAffiliation",
+    "Location"
+  ]
 }

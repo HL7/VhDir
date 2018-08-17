@@ -1,24 +1,29 @@
 #### Supported Searches
 
-1. `GET [base]/CareTeam?careteam-category=[code]`
+1. `GET [base]/CareTeam?endpoint=[id]`
 
-      *Support* MAY support search by the [`careteam-category`](SearchParameter-searchparameter-careteam-category.html) parameter
+      *Support:* SHOULD support search by the [`careteam-endpoint`](SearchParameter-searchparameter-careteam-endpoint.html) parameter
+   - with a target type:  `Endpoint`   
+   - including these search paramaters which may be chained:  `identifier`, `connection-type`, `organization`
 <hr />
-1. `GET [base]/CareTeam?careteam-endpoint=[id]`
+1. `GET [base]/CareTeam?identifier=[code]`
 
-      *Support* SHOULD support search by the [`careteam-endpoint`](SearchParameter-searchparameter-careteam-endpoint.html) parameter
+      *Support:* SHALL support search by the [`identifier`](SearchParameter-searchparameter-careteam-identifier.html) parameter  
+   - including the modifiers:  `text`, `ofType`   
 <hr />
-1. `GET [base]/CareTeam?careteam-identifier=[code]`
-
-      *Support* SHOULD support search by the [`careteam-identifier`](SearchParameter-searchparameter-careteam-identifier.html) parameter
-<hr />
-1. `GET [base]/CareTeam?careteam-identifier-assigner=[id]`
+1. `GET [base]/CareTeam?identifier-assigner=[id]`
 
       *Support:* MAY support search by the [`careteam-identifier-assigner`](SearchParameter-searchparameter-careteam-identifier-assigner.html) parameter
+   - with a target type:  `Organization`
+   - including the modifiers:  `below`  
+   - including these search paramaters which may be chained:  `identifier`, `name`
 <hr />
 1. `GET [base]/CareTeam?careteam-location=[id]`
 
       *Support:* SHALL support search by the [`careteam-location`](SearchParameter-searchparameter-careteam-location.html) parameter
+   - with a target type:  `Location`
+   - including the modifiers:  `above`, `below`  
+   - including these search paramaters which may be chained:  `identifier`, `type`, `address`, `organization`
 <hr />
 1. `GET [base]/CareTeam?careteam-member=[id]`
 
@@ -26,21 +31,38 @@
 <hr />
 1. `GET [base]/CareTeam?careteam-name=[string]`
 
-      *Support:* SHOULD support search by the [`careteam-name`](SearchParameter-searchparameter-careteam-name.html) parameter
+      *Support:* SHOULD support search by the [`careteam-name`](SearchParameter-searchparameter-careteam-name.html) parameter  
+   - including the modifiers:  `exact`, `contains`   
 <hr />
 1. `GET [base]/CareTeam?careteam-organization=[id]`
 
       *Support:* SHALL support search by the [`careteam-organization`](SearchParameter-searchparameter-careteam-organization.html) parameter
+   - with a target type:  `Organization`
+   - including the modifiers:  `above`, `below`  
+   - including these search paramaters which may be chained:  `identifier`, `name`, `address`, `partof`, `type`
 <hr />
 1. `GET [base]/CareTeam?careteam-service=[id]`
 
       *Support:* SHOULD support search by the [`careteam-service`](SearchParameter-searchparameter-careteam-service.html) parameter
+   - with a target type:  `HealthcareService`   
+   - including these search paramaters which may be chained:  `identifier`, `category`, `organization`, `location`
+<hr />
+1. `GET [base]/CareTeam?status=[code]`
+
+      *Support:* SHALL support search by the `status` parameter: `http://hl7.org/fhir/SearchParameter/CareTeam-status`
 <hr />
 1. `GET [base]/CareTeam?careteam-status=[code]`
 
-      *Support:* SHALL support search by the [`careteam-status`](SearchParameter-searchparameter-careteam-status.html) parameter
+      *Support:* MAY support search by the [`careteam-via-intermediary`](SearchParameter-searchparameter-careteam-via-intermediary.html) parameter
+   - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
+<hr />
+1. `GET [base]/CareTeam?category=[code]`
+
+      *Support:* MAY support search by the [`category`](SearchParameter-searchparameter-careteam-category.html) parameter  
+   - including the modifiers:  `text`   
 <hr />
 1. `GET [base]/CareTeam?careteam-via-intermediary=[id]`
 
-      *Support:* MAY support search by the [`careteam-via-intermediary`](SearchParameter-searchparameter-careteam-via-intermediary.html) parameter
+      *Support:* SHALL support search by the [`careteam-member`](SearchParameter-searchparameter-careteam-member.html) parameter
+   - with a target type:  `PractitionerRole, Organization, CareTeam`    
 <hr />

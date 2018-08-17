@@ -1,32 +1,37 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-organizationaffiliation-identifier-assigner", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner", 
-  "version": "0.0.0", 
-  "name": "VHDir OrganizationAffiliation Identifier Assigner Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organizationaffiliation-identifier-assigner",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner",
+  "version": "0.0.0",
+  "name": "VHDir Organizationaffiliation Identifier Assigner Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "organizationaffiliation-identifier-assigner", 
-  "base": "OrganizationAffiliation", 
-  "type": "reference", 
-  "description": "Select OrganizationAffiliations with an identifier issued by the specified organization", 
+  ],
+  "code": "organizationaffiliation-identifier-assigner",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
+  "description": "Select roles with an identifier assigned by the specified organization",
   "expression": "OrganizationAffiliation.identifier.assigner",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "below",
+  "target": [
+    "Organization"
+  ],
+  "modifier": [
+    "below"
+  ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "identifier",
+    "name"
   ]
 }

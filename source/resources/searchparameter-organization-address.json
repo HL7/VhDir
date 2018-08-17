@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address",
@@ -19,14 +18,15 @@
       ]
     }
   ],
-  "code": "organization-address",
-  "base": "Organization",
+  "code": "address",
+  "base": [
+    "Organization"
+  ],
   "type": "string",
-  "description": "Select organizations with the specified address (matches any of the string elements of an address)",
+  "description": "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text",
   "expression": "Organization.address",
-  "multipleOr": true,
-  "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "contains",
+    "exact"
   ]
 }

@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-general-cost-groupsize",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-groupsize",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan General Cost Group Size Search Parameter",
+  "name": "VHDir Insuranceplan General Cost Groupsize Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,13 +18,19 @@
     }
   ],
   "code": "insuranceplan-general-cost-groupsize",
-  "base": "InsurancePlan",
-  "type": "token",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "number",
   "description": "Select plans with costs for the specified group size",
   "expression": "InsurancePlan.plan.generalCost.groupSize",
-  "multipleOr": true,
-  "multipleAnd": true,
   "comparator": [
-    "eq", "gt", "lt", "ge", "le", "sa", "eb"
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
   ]
 }

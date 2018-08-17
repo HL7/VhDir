@@ -1,28 +1,30 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-organization-qualification-wherevalid-code", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-code", 
-  "version": "0.0.0", 
-  "name": "VHDir Organization Qualification Wherevalid Code Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organization-qualification-wherevalid-code",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-code",
+  "version": "0.0.0",
+  "name": "VHDir Organization Qualification Wherevalid Code Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "organization-qualification-wherevalid-code", 
-  "base": "Organization", 
-  "type": "token", 
-  "description": "Select Organizations with a qualification that is valid at the location indicated by the specified code", 
+  ],
+  "code": "organization-qualification-wherevalid-code",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "description": "Select organizations with a qualification that is valid at the location indicated by the specified code",
   "expression": "Organization.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

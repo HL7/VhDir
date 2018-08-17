@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-identifier",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Identifier Search Parameter",
+  "name": "VHDir Organizationaffiliation Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-identifier",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,14 +18,15 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-identifier",
-  "base": "OrganizationAffiliation",
+  "code": "identifier",
+  "base": [
+    "OrganizationAffiliation"
+  ],
   "type": "token",
   "description": "Select OrganizationAffiliations with the specified identifier",
   "expression": "OrganizationAffiliation.identifier",
-  "multipleOr": true,
-  "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

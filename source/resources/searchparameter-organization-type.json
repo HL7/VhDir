@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-type",
@@ -19,12 +18,14 @@
       ]
     }
   ],
-  "code": "organization-type",
-  "base": "Organization",
+  "code": "type",
+  "base": [
+    "Organization"
+  ],
   "type": "token",
-  "description": "Select Organizations of the specified type",
+  "description": "A code for the type of organization",
   "expression": "Organization.type",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }
