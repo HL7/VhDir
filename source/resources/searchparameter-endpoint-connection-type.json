@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-connection-type",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "connection-type",
-  "base": [
-    "Endpoint"
-  ],
+  "code": "endpoint-connection-type",
+  "base": "Endpoint",
   "type": "token",
   "description": "Select Endpoints that support the specified protocol/profile/standard",
   "expression": "Endpoint.connectionType",
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }

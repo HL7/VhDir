@@ -1,27 +1,26 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-new-patient",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient",
-  "version": "0.0.0",
-  "name": "VHDir Healthcareservice New Patient Search Parameter",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-healthcareservice-new-patient", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient", 
+  "version": "0.0.0", 
+  "name": "VHDir HealthcareService New Patient Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "healthcareservice-new-patient",
-  "base": [
-    "HealthcareService"
-  ],
-  "type": "token",
-  "description": "Select services that are/are not accepting new patients",
-  "expression": "HealthcareService.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')"
+  ], 
+  "code": "healthcareservice-new-patient", 
+  "base": "HealthcareService", 
+  "type": "token", 
+  "description": "Select HealthcareServices that are/are not accepting new patients", 
+  "expression": "HealthcareService.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "multipleAnd": true
 }

@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-primary-organization",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-primary-organization",
   "version": "0.0.0",
-  "name": "VHDir Organizationaffiliation Primary Organization Search Parameter",
+  "name": "VHDir OrganizationAffiliation Primary Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,25 +19,18 @@
       ]
     }
   ],
-  "code": "primary-organization",
-  "base": [
-    "OrganizationAffiliation"
-  ],
+  "code": "organizationaffiliation-primary-organization",
+  "base": "OrganizationAffiliation",
   "type": "reference",
   "description": "Select roles offered by the specified organization",
   "expression": "OrganizationAffiliation.organization",
-  "target": [
-    "Organization"
-  ],
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "type",
-    "address",
-    "name",
-    "partof"
+    "organization-identifier", "organization-type", "organization-address", "organization-name", "organization-partof"
   ]
 }

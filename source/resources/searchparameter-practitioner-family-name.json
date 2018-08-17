@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-family-name",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "family",
-  "base": [
-    "Practitioner"
-  ],
+  "code": "practitioner-family-name",
+  "base": "Practitioner",
   "type": "string",
   "description": "Select Practitioners with the specified family name",
   "expression": "Practitioner.name.family",
-  "modifier": [
-    "exact"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "exact"
 }

@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-member",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-member",
   "version": "0.0.0",
-  "name": "VHDir Careteam Member Search Parameter",
+  "name": "VHDir CareTeam Member Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,13 +19,17 @@
     }
   ],
   "code": "careteam-member",
-  "base": [
-    "CareTeam"
-  ],
+  "base": "CareTeam",
   "type": "reference",
   "description": "Select care teams that include the specified member",
   "expression": "CareTeam.participant.member",
   "target": [
     "PractitionerRole", "Organization", "CareTeam"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "type",
+  "chain": [
+    "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-practitioner", "practitionerrole-organization", "practitionerrole-role", "organization-address", "organization-identifier", "organization-name", "organization-partof", "careteam-identifier", "careteam-location", "careteam-organization"
   ]
 }

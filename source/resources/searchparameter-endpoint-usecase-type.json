@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-usecase-type",
@@ -18,13 +19,11 @@
     }
   ],
   "code": "endpoint-usecase-type",
-  "base": [
-    "Endpoint"
-  ],
+  "base": "Endpoint",
   "type": "token",
   "description": "Select endpoints that support the type of services indicated by the specified code",
   "expression": "Endpoint.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase').extension('type')",
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }

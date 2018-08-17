@@ -1,39 +1,34 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-practitionerrole-qualification-wherevalid",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid",
-  "version": "0.0.0",
-  "name": "VHDir Practitionerrole Qualification Wherevalid Location Search Parameter",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-practitionerrole-qualification-wherevalid", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid", 
+  "version": "0.0.0", 
+  "name": "VHDir PractitionerRole Qualification Wherevalid Location Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "practitionerrole-qualification-wherevalid",
-  "base": [
-    "PractitionerRole"
-  ],
-  "type": "reference",
-  "description": "Select roles where the practitioner's role-specific qualification is valid in the specified location",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('whereValid').as(reference)",
-  "target": [
-    "Location"
-  ],
+  ], 
+  "code": "practitionerrole-qualification-wherevalid", 
+  "base": "PractitionerRole", 
+  "type": "reference", 
+  "description": "Select PractitionerRoles with a qualification that is valid at the specified location", 
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
+  "target": "Location",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "address",
-    "organization"
+    "location-identifier", "location-address", "location-organization"
   ]
 }

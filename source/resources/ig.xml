@@ -414,6 +414,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="SearchParameter/searchparameter-verificationresult-target" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="SearchParameter/searchparameter-verificationresult-status-date" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -576,6 +582,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-location" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="SearchParameter/searchparameter-practitioner-qualification-status" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -630,6 +642,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="SearchParameter/searchparameter-practitioner-phonetic" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="SearchParameter/searchparameter-organizationaffiliation-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -660,7 +678,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/organizationaffiliation-participating-organization" />
+				<reference value="SearchParameter/searchparameter-organizationaffiliation-participating-org" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
@@ -876,6 +894,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="SearchParameter/searchparameter-location-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-value" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -1009,6 +1033,12 @@
 		<resource>
 			<reference>
 				<reference value="SearchParameter/searchparameter-insuranceplan-administered-by" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-insuranceplan-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
@@ -1158,6 +1188,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="SearchParameter/searchparameter-endpoint-status" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="SearchParameter/searchparameter-careteam-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
@@ -1213,6 +1249,12 @@
 		<resource>
 			<reference>
 				<reference value="SearchParameter/searchparameter-careteam-category" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="SearchParameter/searchparameter-careteam-status" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

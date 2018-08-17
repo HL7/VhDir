@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-service",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-service",
   "version": "0.0.0",
-  "name": "VHDir Careteam Service Search Parameter",
+  "name": "VHDir CareTeam Service Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,19 +19,14 @@
     }
   ],
   "code": "careteam-service",
-  "base": [
-    "CareTeam"
-  ],
+  "base": "CareTeam",
   "type": "reference",
   "description": "Select care teams providing the specified service",
   "expression": "CareTeam.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference')",
-  "target": [
-    "HealthcareService"
-  ],
+  "target": "HealthcareService",
+  "multipleOr": true,
+  "multipleAnd": true,
   "chain": [
-    "identifier",
-    "category",
-    "organization",
-    "location"
+    "healthcareservice-identifier", "healthcareservice-category", "healthcareservice-organization", "healthcareservice-location"
   ]
 }

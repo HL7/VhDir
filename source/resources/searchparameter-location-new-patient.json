@@ -1,27 +1,26 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-location-new-patient",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-new-patient",
-  "version": "0.0.0",
-  "name": "VHDir Location New Patient Search Parameter",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-location-new-patient", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-new-patient", 
+  "version": "0.0.0", 
+  "name": "VHDir Location New Patient Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "location-new-patient",
-  "base": [
-    "Location"
-  ],
-  "type": "token",
-  "description": "Select locations that are/are not accepting new patients",
-  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')"
+  ], 
+  "code": "location-new-patient", 
+  "base": "Location", 
+  "type": "token", 
+  "description": "Select locations that are/are not accepting new patients", 
+  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "multipleAnd": true
 }

@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address-city",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "address-city",
-  "base": [
-    "Organization"
-  ],
+  "code": "organization-address-city",
+  "base": "Organization",
   "type": "string",
   "description": "Select organizations with an address in the specified city",
   "expression": "Organization.address.city",
-  "modifier": [
-    "exact"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "exact"
 }

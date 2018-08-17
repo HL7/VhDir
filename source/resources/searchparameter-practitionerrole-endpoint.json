@@ -1,36 +1,32 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-practitionerrole-endpoint",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-endpoint",
-  "version": "0.0.0",
-  "name": "VHDir Practitionerrole Endpoint Search Parameter",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-practitionerrole-endpoint", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-endpoint", 
+  "version": "0.0.0", 
+  "name": "VHDir PractitionerRole Endpoint Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-endpoint",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "endpoint",
-  "base": [
-    "PractitionerRole"
-  ],
-  "type": "reference",
-  "description": "Select PractitionerRoles using the specified endpoint",
+  ], 
+  "code": "practitionerrole-endpoint", 
+  "base": "PractitionerRole", 
+  "type": "reference", 
+  "description": "Select PractitionerRoles with the specified endpoint", 
   "expression": "PractitionerRole.endpoint",
-  "target": [
-    "Endpoint"
-  ],
+  "target": "Endpoint",
+  "multipleOr": true,
+  "multipleAnd": true,
   "chain": [
-    "identifier",
-    "connection-type",
-    "organization"
+    "endpoint-identifier", "endpoint-connection-type", "endpoint-organization"
   ]
 }

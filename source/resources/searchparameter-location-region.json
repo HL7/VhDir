@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-region",
@@ -18,10 +19,8 @@
     }
   ],
   "code": "location-region",
-  "base": [
-    "Location"
-  ],
-  "type": "uri",
+  "base": "Location",
+  "type": "special",
   "description": "Select locations defined by the specified region",
   "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,

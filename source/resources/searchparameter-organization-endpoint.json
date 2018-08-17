@@ -1,36 +1,32 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-organization-endpoint",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-endpoint",
-  "version": "0.0.0",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-organization-endpoint", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-endpoint", 
+  "version": "0.0.0", 
   "name": "VHDir Organization Endpoint Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-endpoint",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "endpoint",
-  "base": [
-    "Organization"
-  ],
-  "type": "reference",
-  "description": "Select Organizations using the specified endpoint",
+  ], 
+  "code": "organization-endpoint", 
+  "base": "Organization", 
+  "type": "reference", 
+  "description": "Select Organizations with the specified endpoint", 
   "expression": "Organization.endpoint",
-  "target": [
-    "Endpoint"
-  ],
+  "target": "Endpoint",
+  "multipleOr": true,
+  "multipleAnd": true,
   "chain": [
-    "identifier",
-    "connection-type",
-    "organization"
+    "endpoint-identifier", "endpoint-connection-type", "endpoint-organization"
   ]
 }

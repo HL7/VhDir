@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-identifier",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-identifier",
   "version": "0.0.0",
-  "name": "VHDir Practitionerrole Identifier Search Parameter",
+  "name": "VHDir PractitionerRole Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-identifier",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,15 +19,14 @@
       ]
     }
   ],
-  "code": "identifier",
-  "base": [
-    "PractitionerRole"
-  ],
+  "code": "practitionerrole-identifier",
+  "base": "PractitionerRole",
   "type": "token",
   "description": "Select PractitionerRoles with the specified identifier",
   "expression": "PractitionerRole.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "text",
-    "ofType"
+    "text", "ofType"
   ]
 }

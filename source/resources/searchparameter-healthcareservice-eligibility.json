@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-eligibility",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-eligibility",
   "version": "0.0.0",
-  "name": "VHDir Healthcareservice Eligibility Search Parameter",
+  "name": "VHDir HealthcareService Eligibility Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,13 +19,11 @@
     }
   ],
   "code": "healthcareservice-eligibility",
-  "base": [
-    "HealthcareService"
-  ],
+  "base": "HealthcareService",
   "type": "token",
   "description": "Select services with the specified eligibility requirements",
   "expression": "HealthcareService.eligibility",
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }

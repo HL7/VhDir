@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-organization",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-organization",
   "version": "0.0.0",
-  "name": "VHDir Healthcareservice Organization Search Parameter",
+  "name": "VHDir HealthcareService Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-organization",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,25 +19,18 @@
       ]
     }
   ],
-  "code": "organization",
-  "base": [
-    "HealthcareService"
-  ],
+  "code": "healthcareservice-organization",
+  "base": "HealthcareService",
   "type": "reference",
-  "description": "The organization that provides this Healthcare Service",
+  "description": "Select HealthcareServices provided by the specified organization",
   "expression": "HealthcareService.providedBy",
-  "target": [
-    "Organization"
-  ],
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "name",
-    "address",
-    "partof",
-    "type"
+    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
   ]
 }

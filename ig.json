@@ -912,9 +912,9 @@
             "base": "StructureDefinition-healthcareservice-reference.html",
             "defns": "StructureDefinition-healthcareservice-reference-definitions.html"
         },
-        "SearchParameter/organizationaffiliation-participating-organization": {
+        "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
             "source": "searchparameter-organizationaffiliation-participating-org.json",
-            "base": "SearchParameter-organizationaffiliation-participating-organization.html"
+            "base": "SearchParameter-organizationaffiliation-participating-org.html"
         },
         "SearchParameter/searchparameter-insuranceplan-endpoint": {
             "source": "searchparameter-insuranceplan-endpoint.json",
@@ -1088,6 +1088,34 @@
         "SearchParameter/searchparameter-organization-qualification-status": {
             "source": "searchparameter-organization-qualification-status.json",
             "base": "SearchParameter-searchparameter-organization-qualification-status.html"
+        },
+        "SearchParameter/searchparameter-careteam-status": {
+            "source": "searchparameter-careteam-status.json",
+            "base": "SearchParameter-searchparameter-careteam-status.html"
+        },
+        "SearchParameter/searchparameter-endpoint-status": {
+            "source": "searchparameter-endpoint-status.json",
+            "base": "SearchParameter-searchparameter-endpoint-status.html"
+        },
+        "SearchParameter/searchparameter-insuranceplan-status": {
+            "source": "searchparameter-insuranceplan-status.json",
+            "base": "SearchParameter-searchparameter-insuranceplan-status.html"
+        },
+        "SearchParameter/searchparameter-location-status": {
+            "source": "searchparameter-location-status.json",
+            "base": "SearchParameter-searchparameter-location-status.html"
+        },
+        "SearchParameter/searchparameter-practitioner-phonetic": {
+            "source": "searchparameter-practitioner-phonetic.json",
+            "base": "SearchParameter-searchparameter-practitioner-phonetic.html"
+        },
+        "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location": {
+            "source": "searchparameter-practitioner-qualification-wherevalid-location.json",
+            "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"
+        },
+        "SearchParameter/searchparameter-verificationresult-target": {
+            "source": "searchparameter-verificationresult-target.json",
+            "base": "SearchParameter-searchparameter-verificationresult-target.html"
         }
     },
     "extraTemplates": [

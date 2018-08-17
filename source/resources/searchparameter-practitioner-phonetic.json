@@ -1,0 +1,29 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitioner-phonetic",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-phonetic",
+  "version": "0.0.0",
+  "name": "VHDir Practitioner Phonetic Name Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "practitioner-phonetic",
+  "base": "Practitioner",
+  "type": "string",
+  "description": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)",
+  "expression": "Practitioner.name",
+  "multipleOr": true,
+  "multipleAnd": true
+}

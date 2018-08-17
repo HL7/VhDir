@@ -1,36 +1,32 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-endpoint",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-endpoint",
-  "version": "0.0.0",
-  "name": "VHDir Healthcareservice Endpoint Search Parameter",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-healthcareservice-endpoint", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-endpoint", 
+  "version": "0.0.0", 
+  "name": "VHDir HealthcareService Endpoint Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-endpoint",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "endpoint",
-  "base": [
-    "HealthcareService"
-  ],
-  "type": "reference",
-  "description": "Select HealthcareService using the specified endpoint",
+  ], 
+  "code": "healthcareservice-endpoint", 
+  "base": "HealthcareService", 
+  "type": "reference", 
+  "description": "Select HealthcareServices with the specified endpoint", 
   "expression": "HealthcareService.endpoint",
-  "target": [
-    "Endpoint"
-  ],
+  "target": "Endpoint",
+  "multipleOr": true,
+  "multipleAnd": true,
   "chain": [
-    "identifier",
-    "connection-type",
-    "organization"
+    "endpoint-identifier", "endpointconnection-type", "endpoint-organization"
   ]
 }

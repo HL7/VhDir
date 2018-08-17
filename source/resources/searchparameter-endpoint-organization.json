@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-organization",
@@ -18,25 +19,18 @@
       ]
     }
   ],
-  "code": "organization",
-  "base": [
-    "Endpoint"
-  ],
+  "code": "endpoint-organization",
+  "base": "Endpoint",
   "type": "reference",
-  "description": "The organization that is managing the endpoint",
+  "description": "Select Endpoints managed by the specified organization",
   "expression": "Endpoint.managingOrganization",
-  "target": [
-    "Organization"
-  ],
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "name",
-    "address",
-    "partof",
-    "type"
+    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
   ]
 }

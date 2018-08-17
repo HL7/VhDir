@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-given-name",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "given",
-  "base": [
-    "Practitioner"
-  ],
+  "code": "practitioner-given-name",
+  "base": "Practitioner",
   "type": "string",
   "description": "Select Practitioners with the specified given name",
   "expression": "Practitioner.name.given",
-  "modifier": [
-    "exact"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "exact"
 }

@@ -1,10 +1,11 @@
 
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-endpoint-mime-type",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-mime-type",
+  "id": "searchparameter-location-status",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-status",
   "version": "0.0.0",
-  "name": "VHDir Endpoint Mime Type Search Parameter",
+  "name": "VHDir Location Status Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-status",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,11 +19,11 @@
       ]
     }
   ],
-  "code": "endpoint-mime-type",
-  "base": "Endpoint",
+  "code": "location-status",
+  "base": "Location",
   "type": "token",
-  "description": "Select endpoints that support the specified media type",
-  "expression": "Endpoint.payloadMimeType",
+  "description": "Select Locations with the specified status",
+  "expression": "Location.status",
   "multipleOr": true,
   "multipleAnd": true
 }

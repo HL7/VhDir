@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-primarysource-date",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-date",
   "version": "0.0.0",
-  "name": "VHDir Verificationresult Primarysource Date Search Parameter",
+  "name": "VHDir VerificationResult Primary Source Date Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,19 +19,13 @@
     }
   ],
   "code": "verificationresult-primarysource-date",
-  "base": [
-    "VerificationResult"
-  ],
+  "base": "VerificationResult",
   "type": "date",
   "description": "Select validation information for data that was validated against a primary source on the specified date",
   "expression": "VerificationResult.primarySource.validationDate",
+  "multipleOr": true,
+  "multipleAnd": true,
   "comparator": [
-    "eq",
-    "gt",
-    "lt",
-    "ge",
-    "le",
-    "sa",
-    "eb"
+    "eq", "gt", "lt", "ge", "le", "sa", "eb"
   ]
 }

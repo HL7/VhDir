@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-validation-status",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-validation-status",
   "version": "0.0.0",
-  "name": "VHDir Verificationresult Validation Status Search Parameter",
+  "name": "VHDir VerificationResult Validation Status Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,10 +19,10 @@
     }
   ],
   "code": "verificationresult-validation-status",
-  "base": [
-    "VerificationResult"
-  ],
+  "base": "VerificationResult",
   "type": "token",
   "description": "Select validation information with the specified status",
-  "expression": "VerificationResult.status"
+  "expression": "VerificationResult.status",
+  "multipleOr": true,
+  "multipleAnd": true
 }

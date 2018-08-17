@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-primarysource-organization",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-organization",
   "version": "0.0.0",
-  "name": "VHDir Verificationresult Primarysource Organization Search Parameter",
+  "name": "VHDir VerificationResult Primary Source Organization Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,21 +19,17 @@
     }
   ],
   "code": "verificationresult-primarysource-organization",
-  "base": [
-    "VerificationResult"
-  ],
+  "base": "VerificationResult",
   "type": "reference",
   "description": "Select validation information for data that was validated against the specified primary source organization",
   "expression": "VerificationResult.primarySource.organization",
-  "target": [
-    "Organization"
-  ],
+  "target": "Organization",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "name"
+    "organization-identifier", "organization-name"
   ]
 }

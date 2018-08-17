@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-network-coverage-area",
@@ -18,17 +19,14 @@
     }
   ],
   "code": "network-coverage-area",
-  "base": [
-    "Organization"
-  ],
+  "base": "Organization",
   "type": "reference",
-  "description": "Select organizations (networks) that operate in the specified location",
+  "description": "Select health insurance provider networks available in a region described by the specified location",
   "expression": "Organization.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference')",
-  "target": [
-    "Location"
-  ],
+  "target": "Location",
+  "multipleOr": true,
+  "multipleAnd": true,
   "chain": [
-    "identifier",
-    "region"
+    "location-identifier", "location-region"
   ]
 }

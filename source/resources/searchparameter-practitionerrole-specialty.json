@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-specialty",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-specialty",
   "version": "0.0.0",
-  "name": "VHDir Practitionerrole Specialty Search Parameter",
+  "name": "VHDir PractitionerRole Specialty Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "specialty",
-  "base": [
-    "PractitionerRole"
-  ],
+  "code": "practitionerrole-specialty",
+  "base": "PractitionerRole",
   "type": "token",
-  "description": "The practitioner has this specialty at an organization",
+  "description": "Select PractitionerRoles associated with the specified specialty",
   "expression": "PractitionerRole.specialty",
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }

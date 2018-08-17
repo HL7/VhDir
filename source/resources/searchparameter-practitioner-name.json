@@ -1,3 +1,4 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-name",
@@ -18,15 +19,14 @@
       ]
     }
   ],
-  "code": "name",
-  "base": [
-    "Practitioner"
-  ],
+  "code": "practitioner-name",
+  "base": "Practitioner",
   "type": "string",
-  "description": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text",
+  "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
   "expression": "Practitioner.name",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "contains",
-    "exact"
+    "exact", "contains"
   ]
 }

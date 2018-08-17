@@ -1,27 +1,27 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-practitioner-qualification-status",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-status",
-  "version": "0.0.0",
-  "name": "VHDir Practitioner Qualification Status Search Parameter",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-practitioner-qualification-status", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-status", 
+  "version": "0.0.0", 
+  "name": "VHDir Practitioner Qualification Status Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "practitioner-qualification-status",
-  "base": [
-    "Practitioner"
-  ],
-  "type": "token",
-  "description": "Select practitioners with a qualification status matching the specified code",
-  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification').extension('status')"
+  ], 
+  "code": "practitioner-qualification-status", 
+  "base": "Practitioner",
+  "type": "token", 
+  "description": "Select Practitioners with a qualification status matching the specified code", 
+  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification').extension('status')",
+  "multipleOr": true,
+  "multipleAnd": true
 }

@@ -1,27 +1,26 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "searchparameter-practitionerrole-new-patient",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient",
-  "version": "0.0.0",
-  "name": "VHDir Practitionerrole New Patient Search Parameter",
-  "status": "draft",
-  "date": "2018-05-23",
-  "publisher": "HL7 Patient Administration Committee",
+  "resourceType": "SearchParameter", 
+  "id": "searchparameter-practitionerrole-new-patient", 
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient", 
+  "version": "0.0.0", 
+  "name": "VHDir PractitionerRole New Patient Search Parameter", 
+  "status": "draft", 
+  "date": "2018-05-23", 
+  "publisher": "HL7 Patient Administration Committee", 
   "contact": [
     {
       "telecom": [
         {
-          "system": "url",
+          "system": "url", 
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ],
-  "code": "practitionerrole-new-patient",
-  "base": [
-    "PractitionerRole"
-  ],
-  "type": "token",
-  "description": "Select roles that are/are not accepting new patients",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')"
+  ], 
+  "code": "practitionerrole-new-patient", 
+  "base": "PractitionerRole", 
+  "type": "token", 
+  "description": "Select PractitionerRoles that are/are not accepting new patients", 
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "multipleAnd": true
 }

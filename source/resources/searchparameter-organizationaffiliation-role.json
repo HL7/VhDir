@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-role",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organizationaffiliation-role",
   "version": "0.0.0",
-  "name": "VHDir Organizationaffiliation Role Search Parameter",
+  "name": "VHDir OrganizationAffiliation Role Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-role",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,14 +19,12 @@
       ]
     }
   ],
-  "code": "role",
-  "base": [
-    "OrganizationAffiliation"
-  ],
+  "code": "organizationaffiliation-role",
+  "base": "OrganizationAffiliation",
   "type": "token",
-  "description": "Select roles of the specified type",
+  "description": "Select OrganizationAffiliations with the specified role",
   "expression": "OrganizationAffiliation.code",
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "text"
 }

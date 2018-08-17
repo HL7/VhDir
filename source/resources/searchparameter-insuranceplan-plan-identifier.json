@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-plan-identifier",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-plan-identifier",
   "version": "0.0.0",
-  "name": "VHDir Insuranceplan Plan Identifier Search Parameter",
+  "name": "VHDir InsurancePlan Plan Identifier Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,14 +19,13 @@
     }
   ],
   "code": "insuranceplan-plan-identifier",
-  "base": [
-    "InsurancePlan"
-  ],
+  "base": "InsurancePlan",
   "type": "token",
   "description": "Select plans with the specified identifier",
   "expression": "InsurancePlan.plan.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "text",
-    "ofType"
+    "text", "ofType"
   ]
 }

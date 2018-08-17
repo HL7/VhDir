@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-location",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-location",
   "version": "0.0.0",
-  "name": "VHDir Healthcareservice Location Search Parameter",
+  "name": "VHDir HealthcareService Location Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-location",
   "status": "draft",
   "date": "2018-05-23",
@@ -18,24 +19,18 @@
       ]
     }
   ],
-  "code": "location",
-  "base": [
-    "HealthcareService"
-  ],
+  "code": "healthcareservice-location",
+  "base": "HealthcareService",
   "type": "reference",
-  "description": "The location of the Healthcare Service",
+  "description": "Select HealthcareServices available at the specified location",
   "expression": "HealthcareService.location",
-  "target": [
-    "Location"
-  ],
+  "target": "Location",
+  "multipleOr": true,
+  "multipleAnd": true,
   "modifier": [
-    "above",
-    "below"
+    "above", "below"
   ],
   "chain": [
-    "identifier",
-    "type",
-    "address",
-    "organization"
+    "location-identifier", "location-address", "location-organization", "location-type"
   ]
 }

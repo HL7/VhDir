@@ -1,9 +1,10 @@
+
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-limit-value",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-limit-value",
   "version": "0.0.0",
-  "name": "VHDir Insuranceplan Coverage Limit Value Search Parameter",
+  "name": "VHDir InsurancePlan Coverage Limit Value Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,19 +19,13 @@
     }
   ],
   "code": "insuranceplan-coverage-limit-value",
-  "base": [
-    "InsurancePlan"
-  ],
+  "base": "InsurancePlan",
   "type": "quantity",
   "description": "Select health insurance products with covered benefits limited in the specified manner",
   "expression": "InsurancePlan.coverage.benefit.limit.value",
+  "multipleOr": true,
+  "multipleAnd": true,
   "comparator": [
-    "eq",
-    "gt",
-    "lt",
-    "ge",
-    "le",
-    "sa",
-    "eb"
+    "eq", "gt", "lt", "ge", "le", "sa", "eb"
   ]
 }
