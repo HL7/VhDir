@@ -4,7 +4,7 @@
 
     <identifier> <!-- Internal business ID for the relationship created by Founding Fathers Memorial Hospital -->
         <use value="secondary"/>
-        <system value="www.foundingfathersmemorial.com"/>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
         <value value="service002"/>
         <assigner>
             <reference value="Organization/foundingfathers"/>

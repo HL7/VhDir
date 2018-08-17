@@ -18,7 +18,7 @@
 	<type>
 		<!-- This product offers medical coverage -->
 		<coding>
-			<system value="http://hl7.org/fhir/product-plan-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/insurance-plan-type"/>
 			<code value="medical"/>
 			<display value="Medical"/>
 		</coding>
@@ -26,7 +26,7 @@
 	<type>
 		<!-- This product offers dental coverage -->
 		<coding>
-			<system value="http://hl7.org/fhir/product-plan-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/insurance-plan-type"/>
 			<code value="dental"/>
 			<display value="Dental"/>
 		</coding>
@@ -56,7 +56,7 @@
 		<!-- Contact information for consumers -->
 		<purpose>
 			<coding>
-				<system value="http://hl7.org/fhir/contactentity-type"/>
+				<system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
 				<code value="PATINF"/>
 				<display value="Patient"/>
 			</coding>
@@ -223,8 +223,9 @@
 					</type>
 					<applicability>
 						<coding>
-							<code value="in"/>
-							<display value="in-network"/>
+							<system value="http://terminology.hl7.org/CodeSystem/applicability"/>
+							<code value="in-network"/>
+							<display value="In Network"/>
 						</coding>
 					</applicability>
 					<qualifiers>
@@ -264,8 +265,9 @@
 					</type>
 					<applicability>
 						<coding>
-							<code value="in"/>
-							<display value="in-network"/>
+							<system value="http://terminology.hl7.org/CodeSystem/applicability"/>
+							<code value="in-network"/>
+							<display value="In Network"/>
 						</coding>
 					</applicability>
 					<qualifiers>
