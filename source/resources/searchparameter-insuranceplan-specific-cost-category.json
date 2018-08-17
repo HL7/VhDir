@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-specific-cost-category",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-category",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Specific Cost Category Search Parameter",
+  "name": "VHDir Insuranceplan Specific Cost Category Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +18,13 @@
     }
   ],
   "code": "insuranceplan-specific-cost-category",
-  "base": "InsurancePlan",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select plans which include costs for the specified category of coverage",
   "expression": "InsurancePlan.plan.specificCost.category",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

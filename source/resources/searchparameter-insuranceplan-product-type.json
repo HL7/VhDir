@@ -1,11 +1,10 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-product-type",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-type",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Product Type Search Parameter",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-type",
+  "name": "VHDir Insuranceplan Product Type Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-product-type",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,12 +18,14 @@
       ]
     }
   ],
-  "code": "insuranceplan-product-type",
-  "base": "InsurancePlan",
+  "code": "product-type",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select products of the specified type",
   "expression": "InsurancePlan.type",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

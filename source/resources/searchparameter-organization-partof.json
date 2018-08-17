@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-partof",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-partof",
   "version": "0.0.0",
-  "name": "VHDir Organization Part Of Search Parameter",
+  "name": "VHDir Organization Partof Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-partof",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,18 +18,24 @@
       ]
     }
   ],
-  "code": "organization-partof",
-  "base": "Organization",
+  "code": "partof",
+  "base": [
+    "Organization"
+  ],
   "type": "reference",
-  "description": "Select Organizations that are part of the specified organization",
+  "description": "An organization of which this organization forms a part",
   "expression": "Organization.partOf",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Organization"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-type"
+    "organization-identifier",
+    "organization-name",
+    "organization-address",
+    "organization-type"
   ]
 }

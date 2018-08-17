@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-administered-by",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-administered-by",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Administered-by Search Parameter",
+  "name": "VHDir Insuranceplan Administered By Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-administered-by",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,18 +18,23 @@
       ]
     }
   ],
-  "code": "insuranceplan-administered-by",
-  "base": "InsurancePlan",
+  "code": "administered-by",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "reference",
   "description": "Select products that are administered by the specified organization",
   "expression": "InsurancePlan.administeredBy",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Organization"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-partof"
+    "identifier",
+    "name",
+    "partof"
   ]
 }

@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-payload-type",
@@ -19,12 +18,14 @@
       ]
     }
   ],
-  "code": "endpoint-payload-type",
-  "base": "Endpoint",
+  "code": "payload-type",
+  "base": [
+    "Endpoint"
+  ],
   "type": "token",
   "description": "Select Endpoints that support the specified type of content",
   "expression": "Endpoint.payloadType",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

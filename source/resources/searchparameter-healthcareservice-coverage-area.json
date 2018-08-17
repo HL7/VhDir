@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-coverage-area",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-coverage-area",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Coverage Area Search Parameter",
+  "name": "VHDir Healthcareservice Coverage Area Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,14 +18,17 @@
     }
   ],
   "code": "healthcareservice-coverage-area",
-  "base": "HealthcareService",
+  "base": [
+    "HealthcareService"
+  ],
   "type": "reference",
-  "description": "Select services available in a region described by the specified location",
+  "description": "Select services offered in a region described by the specified location",
   "expression": "HealthcareService.coverageArea",
-  "target": "Location",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Location"
+  ],
   "chain": [
-    "location-identifier", "location-region"
+    "identifier",
+    "region"
   ]
 }

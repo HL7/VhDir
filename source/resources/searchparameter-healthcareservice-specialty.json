@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-specialty",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-specialty",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Specialty Search Parameter",
+  "name": "VHDir Healthcareservice Specialty Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +18,13 @@
     }
   ],
   "code": "healthcareservice-specialty",
-  "base": "HealthcareService",
+  "base": [
+    "HealthcareService"
+  ],
   "type": "token",
   "description": "Select services associated with the specified specialty",
   "expression": "HealthcareService.specialty",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

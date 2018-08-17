@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-partof",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-partof",
   "version": "0.0.0",
-  "name": "VHDir Location Part Of Search Parameter",
+  "name": "VHDir Location Partof Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-partof",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,18 +18,24 @@
       ]
     }
   ],
-  "code": "location-partof",
-  "base": "Location",
+  "code": "partof",
+  "base": [
+    "Location"
+  ],
   "type": "reference",
-  "description": "Select Locations that are part of the specified location",
+  "description": "A location of which this location is a part",
   "expression": "Location.partOf",
-  "target": "Location",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Location"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-type", "location-address", "location-organization"
+    "identifier",
+    "type",
+    "address",
+    "organization"
   ]
 }

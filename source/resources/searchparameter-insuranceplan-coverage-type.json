@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-type",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-type",
   "version": "0.0.0",
-  "name": "VHDir Product Coverage Type Search Parameter",
+  "name": "VHDir Insuranceplan Coverage Type Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +18,13 @@
     }
   ],
   "code": "insuranceplan-coverage-type",
-  "base": "InsurancePlan",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select products offering the specified type of coverage",
   "expression": "InsurancePlan.coverage.type",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

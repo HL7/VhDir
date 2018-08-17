@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-network",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-network",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Coverage Network Search Parameter",
+  "name": "VHDir Insuranceplan Coverage Network Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,14 +18,18 @@
     }
   ],
   "code": "insuranceplan-coverage-network",
-  "base": "InsurancePlan",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "reference",
   "description": "Select products offering covered benefits through the specified health insurance provider network",
   "expression": "InsurancePlan.coverage.network",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Organization"
+  ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-partof"
+    "identifier",
+    "name",
+    "partof"
   ]
 }

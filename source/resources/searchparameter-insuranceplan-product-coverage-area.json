@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-product-coverage-area",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-product-coverage-area",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Product Coverage Area Search Parameter",
+  "name": "VHDir Insuranceplan Product Coverage Area Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,14 +18,17 @@
     }
   ],
   "code": "insuranceplan-product-coverage-area",
-  "base": "InsurancePlan",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "reference",
   "description": "Select products that are offered in the specified location",
   "expression": "InsurancePlan.coverageArea",
-  "target": "Location",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Location"
+  ],
   "chain": [
-    "location-identifier", "location-region"
+    "identifier",
+    "region"
   ]
 }

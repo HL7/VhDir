@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-identifier",
@@ -19,14 +18,15 @@
       ]
     }
   ],
-  "code": "location-identifier",
-  "base": "Location",
+  "code": "identifier",
+  "base": [
+    "Location"
+  ],
   "type": "token",
   "description": "Select Locations with the specified identifier",
   "expression": "Location.identifier",
-  "multipleOr": true,
-  "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

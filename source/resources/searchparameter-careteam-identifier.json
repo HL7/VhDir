@@ -1,10 +1,10 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-identifier",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-identifier",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Identifier Search Parameter",
+  "name": "VHDir Careteam Identifier Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,14 +18,15 @@
       ]
     }
   ],
-  "code": "careteam-identifier",
-  "base": "CareTeam",
+  "code": "identifier",
+  "base": [
+    "CareTeam"
+  ],
   "type": "token",
   "description": "Select CareTeams with the specified identifier",
   "expression": "CareTeam.identifier",
-  "multipleOr": true,
-  "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

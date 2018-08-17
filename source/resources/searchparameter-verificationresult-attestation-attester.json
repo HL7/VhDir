@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-attestation-attester",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-attestation-attester",
   "version": "0.0.0",
-  "name": "VHDir VerificationResult Attestation Attester Search Parameter",
+  "name": "VHDir Verificationresult Attestation Attester Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,17 +18,25 @@
     }
   ],
   "code": "verificationresult-attestation-attester",
-  "base": "VerificationResult",
+  "base": [
+    "VerificationResult"
+  ],
   "type": "reference",
   "description": "Select validation information for data that was attested to by the specified source",
   "expression": "VerificationResult.attestation.attester",
   "target": [
-    "Practitioner", "Organization"
+    "Practitioner",
+    "Organization"
   ],
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "type",
+  "modifier": [
+    "type"
+  ],
   "chain": [
-    "organization-identifier", "organization-address", "organization-name", "organization-partof", "practitioner-name", "practitioner-identifier"
+    "identifier",
+    "address",
+    "name",
+    "partof",
+    "practitioner-identifier",
+    "practitioner-name"
   ]
 }

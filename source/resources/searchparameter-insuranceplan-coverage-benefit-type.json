@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-benefit-type",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-benefit-type",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Coverage Benefit Type Search Parameter",
+  "name": "VHDir Insuranceplan Coverage Benefit Type Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,11 +18,13 @@
     }
   ],
   "code": "insuranceplan-coverage-benefit-type",
-  "base": "InsurancePlan",
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select health insurance products offering covered benefits of the specified type",
   "expression": "InsurancePlan.coverage.benefit.type",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

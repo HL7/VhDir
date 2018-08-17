@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-location",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-location",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Location Search Parameter",
+  "name": "VHDir Careteam Location Search Parameter",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -19,17 +18,23 @@
     }
   ],
   "code": "careteam-location",
-  "base": "CareTeam",
+  "base": [
+    "CareTeam"
+  ],
   "type": "reference",
   "description": "Select care teams operating at the specified location",
   "expression": "CareTeam.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference')",
-  "target": "Location",
-  "multipleOr": true,
-  "multipleAnd": true,
+  "target": [
+    "Location"
+  ],
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization", "location-type"
+    "identifier",
+    "type",
+    "address",
+    "organization"
   ]
 }

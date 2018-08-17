@@ -1,10 +1,9 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address-postalcode",
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-address-postalcode",
   "version": "0.0.0",
-  "name": "VHDir Organization Address Postal Code Search Parameter",
+  "name": "VHDir Organization Address Postalcode Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-postalcode",
   "status": "draft",
   "date": "2018-05-23",
@@ -19,12 +18,14 @@
       ]
     }
   ],
-  "code": "organization-address-postalcode",
-  "base": "Organization",
+  "code": "address-postalcode",
+  "base": [
+    "Organization"
+  ],
   "type": "string",
   "description": "Select organizations with an address with the specified postal code",
   "expression": "Organization.address.postalCode",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "exact"
+  "modifier": [
+    "exact"
+  ]
 }

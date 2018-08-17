@@ -1,32 +1,37 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-endpoint-identifier-assigner", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner", 
-  "version": "0.0.0", 
-  "name": "VHDir Endpoint Identifier Assigner Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-endpoint-identifier-assigner",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner",
+  "version": "0.0.0",
+  "name": "VHDir Endpoint Identifier Assigner Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "endpoint-identifier-assigner", 
-  "base": "Endpoint", 
-  "type": "reference", 
-  "description": "Select Endpoints with an identifier issued by the specified organization", 
+  ],
+  "code": "endpoint-identifier-assigner",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "reference",
+  "description": "Select endpoints with an identifier assigned by the specified organization",
   "expression": "Endpoint.identifier.assigner",
-  "target": "Organization",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "below",
+  "target": [
+    "Organization"
+  ],
+  "modifier": [
+    "below"
+  ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "identifier",
+    "name"
   ]
 }
