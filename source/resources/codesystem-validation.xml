@@ -17,11 +17,11 @@
 	<caseSensitive value="true"/>
 	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationtype"/>
 	<content value="complete"/>
-	<concept>
+	<!-- <concept>
 		<code value="none"/>
 		<display value="none"/>
 		<definition value="No validation needed/planned for this resource or element."/>
-	</concept>
+	</concept> -->
 	<concept>
 		<code value="initial"/>
 		<display value="Validation only needed once after initial attestation"/>
@@ -112,11 +112,11 @@
 		<display value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
 		<definition value="to review"/>
 	</concept>
-	<concept>
+	<!-- <concept>
 		<code value="none"/>
 		<display value="A failure that is unlikely to be relevant to any local workflow environment."/>
 		<definition value="to review"/>
-	</concept>
+	</concept> -->
 	<concept>
 		<code value="manual"/>
 		<display value="Manual"/>

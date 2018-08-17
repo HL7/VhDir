@@ -19,56 +19,6 @@
 	<concept>
 		<code value="medical"/>
 		<display value="Medical"/>
-		<definition value="Type of insurance plan that covers medical services."/>
-	</concept>
-	<concept>
-		<code value="dental"/>
-		<display value="Dental"/>
-		<definition value="Type of insurance plan that covers dental services."/>
-	</concept>
-	<concept>
-		<code value="menthlth"/>
-		<display value="Mental Health"/>
-		<definition value="Type of insurance plan that covers substance abuse services."/>
-	</concept>
-	<concept>
-		<code value="substanceabuse"/>
-		<display value="Substance Abuse"/>
-		<definition value="Type of insurance plan that covers substance abuse services."/>
-	</concept>
-	<concept>
-		<code value="vision"/>
-		<display value="Vision"/>
-		<definition value="Type of insurance plan that covers vision services."/>
-	</concept>
-	<concept>
-		<code value="drug"/>
-		<display value="Drug"/>
-		<definition value="Type of insurance plan that covers prescription drugs."/>
-	</concept>
-	<concept>
-		<code value="stc"/>
-		<display value="Short Term Care"/>
-		<definition value="Type of insurance plan that covers short term care."/>
-	</concept>
-	<concept>
-		<code value="ltc"/>
-		<display value="Long Term Care"/>
-		<definition value="Type of insurance plan that covers long term care."/>
-	</concept>
-	<concept>
-		<code value="hospice"/>
-		<display value="Hospice"/>
-		<definition value="Type of insurance plan that covers hospice services."/>
-	</concept>
-	<concept>
-		<code value="homehealth"/>
-		<display value="Home Health"/>
-		<definition value="Type of insurance plan that covers home health services."/>
-	</concept>
-	<concept>
-		<code value="medical"/>
-		<display value="Medical"/>
 		<definition value="Medical insurance coverage."/>
 	</concept>
 	<concept>
@@ -126,11 +76,11 @@
 		<display value="Advanced Imaging (CT/PET Scans, MRIs)"/>
 		<definition value="Advances imaging techniques services (CT/PET Scans, MRIs) coverage."/>
 	</concept>
-	<concept>
+	<!-- <concept>
 		<code value="prev"/>
 		<display value="Preventive Care/Screening/Immunization"/>
 		<definition value="Preventive Care/Screening/Immunization."/>
-	</concept>
+	</concept> -->
 	<concept>
 		<code value="rehab"/>
 		<display value="Rehabilitation"/>
@@ -196,11 +146,11 @@
 		<display value="Urgent Care Centers or Facilities"/>
 		<definition value="Urgent Care Centers or Facilities."/>
 	</concept>
-	<concept>
+	<!-- <concept>
 		<code value="homehealth"/>
 		<display value="Home Health Care Services"/>
 		<definition value="Home Health Care Services."/>
-	</concept>
+	</concept> -->
 	<concept>
 		<code value="erservice"/>
 		<display value="Emergency Room Services"/>
