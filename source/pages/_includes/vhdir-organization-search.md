@@ -1,9 +1,5 @@
 #### Supported Searches
 
-1. `GET [base]/Network?via-intermediary=[id]`
-
-      *Support:* MAY support search by the [`network-via-intermediary`](SearchParameter-searchparameter-network-via-intermediary.html) parameter
-<hr />
 1. `GET [base]/Organization?identifier-assigner=[id]`
 
       *Support:* MAY support search by the [`organization-identifier-assigner`](SearchParameter-searchparameter-organization-identifier-assigner.html) parameter

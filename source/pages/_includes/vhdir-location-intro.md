@@ -32,7 +32,7 @@ TBD
 
 The following are example uses for the vhdir-location profile:
 
--  [Founding Fathers Memorial Hospital, Main Campus](Location-hospital1.html)
+-  [Founding Fathers Memorial Hospital, Main Campus](Location-loc-ffmh.html)
 
 
 **Mandatory Data Elements**

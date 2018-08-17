@@ -35,14 +35,13 @@
 
 **Organization**
 
-- [network-via-intermediary](SearchParameter-searchparameter-network-via-intermediary.html)
 - [organization-identifier-assigner](SearchParameter-searchparameter-organization-identifier-assigner.html)
 - [organization-qualification-code](SearchParameter-searchparameter-organization-qualification-code.html)
 - [organization-qualification-issuer](SearchParameter-searchparameter-organization-qualification-issuer.html)
 - [organization-qualification-status](SearchParameter-searchparameter-organization-qualification-status.html)
 - [organization-qualification-wherevalid-code](SearchParameter-searchparameter-organization-qualification-wherevalid-code.html)
 - [organization-qualification-wherevalid-location](SearchParameter-searchparameter-organization-qualification-wherevalid-location.html)
-- [organization-via-intermediary](SearchParameter-searchparameter-organization-via-intermediary.html)
+- [via-intermediary](SearchParameter-searchparameter-organization-via-intermediary.html)
 
 **OrganizationAffiliation**
 

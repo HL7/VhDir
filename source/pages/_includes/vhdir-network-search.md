@@ -4,10 +4,6 @@
 
       *Support:* SHOULD support search by the [`network-coverage-area`](SearchParameter-searchparameter-network-coverage-area.html) parameter
 <hr />
-1. `GET [base]/Organization?network-via-intermediary=[id]`
-
-      *Support:* MAY support search by the [`network-via-intermediary`](SearchParameter-searchparameter-network-via-intermediary.html) parameter
-<hr />
 1. `GET [base]/Organization?organization-address=[string]`
 
       *Support:* SHALL support search by the [`organization-address`](SearchParameter-searchparameter-organization-address.html) parameter
