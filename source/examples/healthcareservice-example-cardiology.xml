@@ -11,7 +11,7 @@
         </extension>
         <extension url="network">
             <valueReference>
-                <reference value="Network/patriotppo"/>
+                <reference value="Organization/patriotppo"/>
                 <display value="Patriot Preferred Provider Network"/>
             </valueReference>
         </extension>
@@ -23,6 +23,10 @@
         </extension>
         <use value="secondary"/>
         <type>
+            <coding>
+                <system value="http://example.org/identifiers"/>
+                <code value="BID"/>
+            </coding>
             <text value="Business ID"/>
         </type>
         <system value="http://example.org/www.foundingfathersmemorial.com"/>
@@ -65,7 +69,7 @@
     </specialty>
 
     <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="Location/location2"/>
+        <reference value="Location/loc-ffmh-hvi"/>
         <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
     </location>
 
@@ -76,10 +80,12 @@
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="Location/location2"/>
+                <reference value="Location/loc-ffmh-hvi"/>
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
             </valueReference>
         </extension>
+        <system value="fax" />
+        <value value="555 12345" />
 	</telecom>
 
     <serviceProvisionCode> <!-- Fees apply for this service -->

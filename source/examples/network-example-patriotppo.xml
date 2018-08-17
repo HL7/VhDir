@@ -6,7 +6,23 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
     </meta>
 
+    <extension url="http://hl7.org/fhir/StructureDefinition/organization-period"> <!-- This network has been active since March 11, 2012 -->
+        <valuePeriod>
+            <start value="2012-03-11"/>
+        </valuePeriod>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This network is active in the DC metro area -->
+        <valueReference>
+            <reference value="Location/wash-dc-metro"/>
+            <display value="Washington, DC metro area"/>
+        </valueReference>
+    </extension>
+
     <identifier> <!-- An identifier for this network, assigned during the qualified health plan application process -->
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
         <use value="secondary"/>
         <type>
             <coding>
@@ -19,12 +35,8 @@
         <system value="https://www.qhpcertification.cms.gov/s/QHP"/>
         <value value="DCN001"/>
         <assigner>
-            <reference value="Organization/cms1"/>
             <display value="Centers for Medicare and Medicaid Services"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
     </identifier>
 
 	<active value="true"/> <!-- This network is active -->
@@ -42,14 +54,6 @@
     <alias value="Patriot PPO"/> <!-- An alias for this network -->
 
 	<address> <!-- An address for this network is 101 Independence Ave SE, Washington, DC 20540 -->
-        <use value="work"/>
-        <type value="both"/>
-        <text value="101 Independence Ave SE, Washington, DC 20540"/>
-        <line value="101 Independence Ave SE"/>
-        <city value="Washington"/>
-        <state value="DC"/>
-        <postalCode value="20540"/>
-        <country value="USA"/>
 	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
                 <valueDecimal value="38.888684"/>
@@ -58,6 +62,14 @@
                 <valueDecimal value="-77.004719"/>
             </extension>
         </extension>
+        <use value="work"/>
+        <type value="both"/>
+        <text value="101 Independence Ave SE, Washington, DC 20540"/>
+        <line value="101 Independence Ave SE"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20540"/>
+        <country value="USA"/>
 	</address>
 
     <partOf> <!-- This network is owned by Homeland Health Insurance -->
@@ -68,7 +80,7 @@
     <contact> <!-- For administrative inquiries, contact James Madison at 202-010-1234, Mon-Fri, 9:00 am - 5:00 pm -->
         <purpose>
             <coding>
-                <system value="http://hl7.org/fhir/contactentity-type"/>
+                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
                 <code value="ADMIN"/>
                 <display value="Administrative"/>
             </coding>
@@ -80,9 +92,6 @@
             <given value="James"/>
         </name>
         <telecom>
-            <system value="phone"/>
-            <value value="202-010-1234"/>
-            <use value="work"/>
             <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
                 <extension url="daysOfWeek">
                     <valueCode value="mon"/>
@@ -106,16 +115,11 @@
                     <valueTime value="17:00:00"/>
                 </extension>
             </extension>
+            <system value="phone"/>
+            <value value="202-010-1234"/>
+            <use value="work"/>
         </telecom>
         <address>
-            <use value="work"/>
-            <type value="both"/>
-            <text value="101 Independence Ave SE, Washington, DC 20540"/>
-            <line value="101 Independence Ave SE"/>
-            <city value="Washington"/>
-            <state value="DC"/>
-            <postalCode value="20540"/>
-            <country value="USA"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
                 <extension url="latitude">
                     <valueDecimal value="38.888684"/>
@@ -124,24 +128,19 @@
                     <valueDecimal value="-77.004719"/>
                 </extension>
             </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="101 Independence Ave SE, Washington, DC 20540"/>
+            <line value="101 Independence Ave SE"/>
+            <city value="Washington"/>
+            <state value="DC"/>
+            <postalCode value="20540"/>
+            <country value="USA"/>
         </address>
     </contact>
 
     <endpoint> <!-- A link to Homeland Health Insurance's public API -->
         <display value="homelandinsurance.org/services/network"/>
     </endpoint>
-
-    <extension url="http://hl7.org/fhir/StructureDefinition/organization-period"> <!-- This network has been active since March 11, 2012 -->
-        <valuePeriod>
-            <start value="2012-03-11"/>
-        </valuePeriod>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This network is active in the DC metro area -->
-        <valueReference>
-            <reference value="Location/dc1"/>
-            <display value="Washington, DC metro area"/>
-        </valueReference>
-    </extension>
 
 </Organization>

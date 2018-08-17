@@ -33,7 +33,7 @@
     </organization>
 
     <network> <!-- Independence and Founding Father providers participate in the Patriot Preferred Provider Network -->
-        <reference value="Network/patriotppo"/>
+        <reference value="Organization/patriotppo"/>
         <display value="Patriot Preferred Provider Network"/>
     </network>
 
@@ -57,7 +57,7 @@
     </specialty>
 
     <location> <!-- Rehab services are provided at Founding Fathers Memorial Hospital -->
-        <reference value="Location/foundingfathers1"/>
+        <reference value="Location/loc-ffmh"/>
         <display value="Founding Fathers Memorial Hospital"/>
     </location>
 

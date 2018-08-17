@@ -6,7 +6,8 @@
 	</meta>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
         <valueReference>
-            <reference value="Endpoint/direct123"/>
+            <reference value="Endpoint/direct321"/>
+            <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/>
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate">
@@ -80,7 +81,6 @@
             <start value="2005-07-16T09:00:00-05:00"/>
         </period>
         <assigner>
-            <reference value="Organization/cms"/>
             <display value="CMS"/>
         </assigner>
     </identifier>
@@ -151,10 +151,9 @@
             <use value="official"/>
             <type>
                 <coding>
-                    <system value="http://hl7.org/fhir/v2/0203"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
                     <code value="MD"/>
                     <display value="Medical License number"/>
-                    <userSelected value="true"/>
                 </coding>
             </type>
             <system value="https://doh.dc.gov/bomed"/>
@@ -164,13 +163,12 @@
                 <end value="1961-07-15"/>
             </period>
             <assigner>
-                <reference value="Organization/dcbomed"/>
                 <display value="DC Board of Medicine"/>
             </assigner>
         </identifier>
         <code>
             <coding>
-                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
                 <version value="2.8.2"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
@@ -183,7 +181,6 @@
                 <end value="1961-07-15"/>
         </period>
         <issuer>
-            <reference value="Organization/dcbomed"/>
             <display value="DC Board of Medicine"/>
         </issuer>
     </qualification>
@@ -216,14 +213,12 @@
             <system value="http://www.abim.org/"/>
             <value value="123456"/>
             <assigner>
-                <reference value="Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
         <code>
             <coding>
-                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
-                <version value="2.8.2"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
                 <userSelected value="true"/>
@@ -235,7 +230,6 @@
                 <end value="1981-07-20"/>
         </period>
         <issuer>
-            <reference value="Organization/abim"/>
             <display value="American Board of Internal Medicine"/>
         </issuer>
     </qualification>
@@ -253,13 +247,12 @@
             <system value="http://www.abim.org/"/>
             <value value="123456"/>
             <assigner>
-                <reference value="Organization/abim"/>
                 <display value="American Board of Internal Medicine"/>
             </assigner>
         </identifier>
         <code>
             <coding>
-                <system value="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
                 <version value="2.8.2"/>
                 <code value="MD"/>
                 <display value="Doctor of Medicine"/>
@@ -272,7 +265,6 @@
                 <end value="1975-07-10"/>
         </period>
         <issuer>
-            <reference value="Organization/abim"/>
             <display value="American Board of Internal Medicine"/>
         </issuer>
     </qualification>

@@ -7,7 +7,7 @@
         <type>
             <text value="member hospital"/>
         </type>
-        <system value="www.monumentHIE.com"/>
+        <system value="http://example.org/www.monumentHIE.com"/>
         <value value="hosp32"/>
         <assigner>
             <reference value="Organization/monumentHIE"/>

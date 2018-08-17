@@ -121,6 +121,11 @@
     "license": "CC0-1.0",
     "source": "ig.xml",
     "resources": {
+        "StructureDefinition/identifier-status": {
+            "source": "identifier-status-structuredefinition.xml",
+            "base": "StructureDefinition-identifier-status.html",
+            "defns": "StructureDefinition-identifier-status-definitions.html"
+        },
         "ConceptMap/conceptmap-qualification-status": {
             "source": "conceptmap-qualification-status.xml",
             "base": "ConceptMap-conceptmap-qualification-status.html"
@@ -579,10 +584,6 @@
             "source": "practitioner-example-washington.xml",
             "base": "Practitioner-practitioner1.html"
         },
-        "SearchParameter/searchparameter-network-via-intermediary": {
-            "source": "searchparameter-network-via-intermediary.json",
-            "base": "SearchParameter-searchparameter-network-via-intermediary.html"
-        },
         "StructureDefinition/vhdir-organization": {
             "source": "vhdir-organization.structuredefinition.xml",
             "base": "StructureDefinition-vhdir-organization.html",
@@ -654,9 +655,17 @@
             "source": "valueset-benefit-type.xml",
             "base": "ValueSet-valueset-benefit-type.html"
         },
-        "Location/hospital1": {
-            "source": "location-example-hospital.xml",
-            "base": "Location-hospital1.html"
+        "Location/wash-dc-metro": {
+            "source": "location-wash-dc-metro.xml",
+            "base": "Location-wash-dc-metro.html"
+        },
+        "Location/loc-ffmmh": {
+            "source": "location-loc-ffmh.xml",
+            "base": "Location-example-loc-ffmh.html"
+        },
+        "Location/loc-ffmh-hvi": {
+            "source": "location-loc-ffmh-hvi.xml",
+            "base": "Location-example-ffmh-hvi.html"
         },
         "SearchParameter/searchparameter-organizationaffiliation-location": {
             "source": "searchparameter-organizationaffiliation-location.json",
@@ -694,6 +703,18 @@
         "Organization/foundingfathers": {
             "source": "org-example-foundingfathers.xml",
             "base": "Organization-foundingfathers.html"
+        },
+        "Organization/mtvernon": {
+            "source": "org-example-mtvernon.xml",
+            "base": "Organization-mtvernon.html"
+        },
+        "Organization/homeland": {
+            "source": "org-example-homeland.xml",
+            "base": "Organization-homeland.html"
+        },
+        "Organization/patriotdental": {
+            "source": "org-example-patriotdental.xml",
+            "base": "Organization-patriotdental.html"
         },
         "SearchParameter/searchparameter-location-new-patient": {
             "source": "searchparameter-location-new-patient.json",
@@ -910,11 +931,6 @@
         "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
             "source": "searchparameter-organizationaffiliation-participating-org.json",
             "base": "SearchParameter-searchparameter-organizationaffiliation-participating-org.html"
-        },
-        "StructureDefinition/identifier-status": {
-            "source": "identifier-status-structuredefinition.xml",
-            "base": "StructureDefinition-identifier-status.html",
-            "defns": "StructureDefinition-identifier-status-definitions.html"
         },
         "SearchParameter/searchparameter-insuranceplan-endpoint": {
             "source": "searchparameter-insuranceplan-endpoint.json",

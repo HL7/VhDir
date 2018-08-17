@@ -10,7 +10,6 @@
 		<system value="https://www.cms.gov/CCIIO/"/>
 		<value value="1234567891"/>
 		<assigner>
-			<reference value="Organization/cms1"/>
 			<display value="Centers for Medicare and Medicaid Services"/>
 		</assigner>
 	</identifier>
@@ -50,7 +49,7 @@
 	</administeredBy>
 	<coverageArea>
 		<!-- Reference to the product's coverage area, the Washington, DC metro area -->
-		<reference value="Location/dc1"/>
+		<reference value="Location/wash-dc-metro"/>
 		<display value="Washington, DC metro area"/>
 	</coverageArea>
 	<contact>
@@ -79,12 +78,12 @@
 	</endpoint>
 	<network>
 		<!-- A reference to the medical provider network associated with this product -->
-		<reference value="Network/patriotppo"/>
+		<reference value="Organization/patriotppo"/>
 		<display value="Patriot Preferred Provider Network"/>
 	</network>
 	<network>
 		<!-- A reference to the dental provider network associated with this product -->
-		<reference value="Network/patriotdental"/>
+		<reference value="Organization/patriotdental"/>
 		<display value="Patriot Dental Provider Network"/>
 	</network>
 	<coverage>
@@ -97,7 +96,7 @@
 			<text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
 		</type>
 		<network>
-			<reference value="Network/patriotppo"/>
+			<reference value="Organization/patriotppo"/>
 			<display value="Patriot Preferred Provider Network"/>
 		</network>
 		<benefit>
@@ -126,7 +125,7 @@
 			<text value="Coverage related to dental care"/>
 		</type>
 		<network>
-			<reference value="Network/patriotdental"/>
+			<reference value="Organization/patriotdental"/>
 			<display value="Patriot Dental Provider Network"/>
 		</network>
 		<!--Specific benefits under this type of coverage.-->
@@ -163,7 +162,6 @@
 			<system value="https://www.cms.gov/CCIIO/"/>
 			<value value="123456789101112"/>
 			<assigner>
-				<reference value="Organization/cms1"/>
 				<display value="Centers for Medicare and Medicaid Services"/>
 			</assigner>
 		</identifier>
@@ -176,11 +174,11 @@
 		</type>
 		<coverageArea>
 			<!-- Reference to the product's coverage area, the Washington, DC metro area -->
-			<reference value="Location/dc1"/>
+			<reference value="Location/wash-dc-metro"/>
 			<display value="Washington, DC metro area"/>
 		</coverageArea>
 		<network>
-			<reference value="Network/patriotdental"/>
+			<reference value="Organization/patriotdental"/>
 			<display value="Patriot Dental Provider Network"/>
 		</network>
 		<generalCost>

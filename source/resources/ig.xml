@@ -72,6 +72,30 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="Organization/mtvernon" />
+			</reference>
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Organization/homeland" />
+			</reference>
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Organization/patriotdental" />
+			</reference>
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Location/wash-dc-metro" />
+			</reference>
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="Organization/patriotppo" />
 			</reference>
 			<exampleBoolean value="true" />
@@ -84,7 +108,13 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Location/hospital1" />
+				<reference value="Location/loc-ffmh" />
+			</reference>
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Location/loc-ffmh-hvi" />
 			</reference>
 			<exampleBoolean value="true" />
 		</resource>
@@ -781,12 +811,6 @@
 		<resource>
 			<reference>
 				<reference value="SearchParameter/searchparameter-organization-address-city" />
-			</reference>
-			<exampleBoolean value="false" />
-		</resource>
-		<resource>
-			<reference>
-				<reference value="SearchParameter/searchparameter-network-via-intermediary" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

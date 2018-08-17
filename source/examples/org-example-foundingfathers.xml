@@ -7,6 +7,9 @@
     </meta>
 
     <identifier> <!-- Founding Fathers Memorial Hospital NPI -->
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
         <use value="official"/>
         <type>
             <coding>
@@ -22,19 +25,15 @@
             <start value="2004-04-21T11:57:00-05:00"/>
         </period>
         <assigner>
-            <reference value="Organization/cms"/>
             <display value="CMS"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
     </identifier>
 
 	<active value="true"/> <!-- This record is active -->
 
 	<type> <!-- This organization is a healthcare provider/hospital -->
         <coding>
-            <system value="http://hl7.org/fhir/organization-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
         </coding>
@@ -58,8 +57,8 @@
 	<telecom> <!-- Contact information for Founding Fathers can be found in the location resource for the hospital's main campus -->
 	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
-                <reference value="Location/hospital1"/>
-                <display value="Founding Fathers Memorial Hospital, main campus"/>
+                <reference value="Location/loc-ffmh"/>
+                <display value="Founding Fathers Memorial Hospital"/>
             </valueReference>
         </extension>
 	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -70,14 +69,6 @@
 	</telecom>
 
 	<address> <!-- Founding Fathers' address is 330 C Street SW, Washington, DC 20201, USA -->
-        <use value="work"/>
-        <type value="both"/>
-        <text value="330 C Street SW, Washington, DC 20201, USA"/>
-        <line value="330 C Street SW"/>
-        <city value="Washington"/>
-        <state value="DC"/>
-        <postalCode value="20201"/>
-        <country value="USA"/>
 	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
                 <valueDecimal value="38.8859395"/>
@@ -86,6 +77,14 @@
                 <valueDecimal value="-77.016469"/>
             </extension>
         </extension>
+        <use value="work"/>
+        <type value="both"/>
+        <text value="330 C Street SW, Washington, DC 20201, USA"/>
+        <line value="330 C Street SW"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20201"/>
+        <country value="USA"/>
 	</address>
 
     <partOf> <!-- Founding Fathers is a hospital that is part of the Mount Vernon Health System -->
@@ -96,7 +95,7 @@
     <contact> <!-- Describes contact information for administrative inquiries -->
         <purpose>
             <coding>
-                <system value="http://hl7.org/fhir/contactentity-type"/>
+                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
                 <code value="ADMIN"/>
                 <display value="Administrative"/>
             </coding>
@@ -108,9 +107,6 @@
             <given value="Abigail"/>
         </name>
         <telecom>
-            <system value="phone"/>
-            <value value="202-444-5555"/>
-            <use value="work"/>
             <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"> 
                 <extension url="daysOfWeek">
                     <valueCode value="mon"/>
@@ -134,16 +130,11 @@
                     <valueTime value="18:00:00"/>
                 </extension>
             </extension>
+            <system value="phone"/>
+            <value value="202-444-5555"/>
+            <use value="work"/>
         </telecom>
         <address>
-            <use value="work"/>
-            <type value="both"/>
-            <text value="330 C Street SW, Washington, DC 20201, USA"/>
-            <line value="330 C Street SW"/>
-            <city value="Washington"/>
-            <state value="DC"/>
-            <postalCode value="20201"/>
-            <country value="USA"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
                 <extension url="latitude">
                     <valueDecimal value="38.8859395"/>
@@ -152,142 +143,20 @@
                     <valueDecimal value="-77.016469"/>
                 </extension>
             </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="330 C Street SW, Washington, DC 20201, USA"/>
+            <line value="330 C Street SW"/>
+            <city value="Washington"/>
+            <state value="DC"/>
+            <postalCode value="20201"/>
+            <country value="USA"/>
         </address>
     </contact>
 
     <endpoint> <!-- A reference to an electronic endpoint for Founding Fathers -->
-        <reference value="Endpoint/e-12345"/>
-        <display value="Founding Fathers FHIR server"/>
+        <reference value="Endpoint/direct321"/>
+        <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/>
     </endpoint>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description"> <!-- A description of Founding Fathers -->
-        <valueString value="Founding Fathers Memorial Hospital is a 700-bed medical center providing top-rated healthcare services to the Washington, DC metropolitan area"/>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> <!-- Describes a digital certificate used by Founding Fathers to verify the organization's identity -->
-        <extension url="type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="grp"/>
-                <display value="Group"/>
-            </valueCoding>
-        </extension>
-        <extension url="use">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="auth"/>
-                <display value="Authentication"/>
-            </valueCoding>
-        </extension>
-        <extension url="certificateStandard">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                <code value="x.509v3"/>
-                <display value="x.509v3"/>
-            </valueCoding>
-        </extension>
-        <extension url="certificate">
-            <valueString value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiBGb3VuZGluZyBGYXRoZXJzIE1lbW9yaWFsIEhvc3BpdGFsDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnSEtYVVYxRUVCSUNvREQzbEF1TVZ3Q3lLdUs2DQpvNmlCaTA5cWNTS3lxQmpQWVNUNEZ1YnBBL2tGUjRTSnRaQnhJeWpBMWJvQThPVTJteHNJOVpFZ0grZU1RUFhSDQpkNUR6Tnh0ZU5VNi9rZ0U5Q2Rua1ZlNEpJRDMvbUpOeHUvY0Jic3h5YStiUGpQVENacUNLUnRpUURBNHJrNnNhDQpwckFGdk43bHVLQm9NUG5oQWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-        </extension>
-        <extension url="expirationDate">
-            <valueDate value="2020-08-18"/>
-        </extension>
-        <extension url="trustFramework">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-                    <code value="FPKI"/>
-                    <display value="Federal Public Key Infrastructure (FPKI)/Federal Trust Framework"/>
-                    <userSelected value="true"/>
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification"> <!--Founding Fathers received the Gold Seal of Approval from the Joint Commission -->
-        <extension url="identifier">
-            <valueIdentifier>
-                <use value="usual"/>
-                <type>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                        <code value="PRN"/>
-                        <display value="Provider number"/>
-                    </coding>
-                    <text value="Joint Commission Healthcare Organization ID"/>
-                </type>
-                <system value="https://www.jointcommission.org/accreditation/accreditation_main.aspx"/>
-                <value value="121212"/>
-                <assigner>
-                    <identifier>
-                        <use value="official"/>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="EN"/>
-                                <display value="Employer Number"/>
-                            </coding>
-                            <text value="Employer Identification Number (EIN)"/>
-                        </type>
-                        <value value="36-2229255"/>
-                    </identifier>
-                    <display value="The Joint Commission"/>
-                </assigner>
-            </valueIdentifier>
-        </extension>
-        <extension url="code">
-            <valueCodeableConcept>
-                <text value="Joint Commission Gold Seal of Approval"/>
-            </valueCodeableConcept>
-        </extension>
-        <extension url="issuer">
-            <valueReference>
-                <identifier>
-                    <use value="official"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="EN"/>
-                            <display value="Employer Number"/>
-                        </coding>
-                        <text value="Employer Identification Number (EIN)"/>
-                    </type>
-                    <value value="36-2229255"/>
-                </identifier>
-                <display value="The Joint Commission"/>
-            </valueReference>
-        </extension>
-        <extension url="status">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/resource-status"/>
-                <code value="active"/>
-                <display value="active"/>
-            </valueCoding>
-        </extension>
-        <extension url="period">
-            <valuePeriod>
-                <start value="2015-10-28"/>
-                <end value="2018-10-28"/>
-            </valuePeriod>
-        </extension>
-        <extension url="whereValid">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="https://www.usps.com/"/>
-                    <code value="DC"/>
-                    <display value="District of Columbia"/>
-                    <userSelected value="true"/>
-                </coding>
-                <text value="Washington, DC"/>
-            </valueCodeableConcept>
-        </extension>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"> <!-- Founding Fathers offers the Patriot PPO Standard plan to its employees -->
-        <valueReference>
-            <reference value="InsurancePlan/insuranceplan1"/>
-            <display value="Patriot PPO Standard plan"/>
-        </valueReference>
-    </extension>
 
 </Organization>

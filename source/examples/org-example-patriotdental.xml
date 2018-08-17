@@ -1,0 +1,21 @@
+<Organization  xmlns="http://hl7.org/fhir"> <!-- Describes demographic information about Founding Fathers Memorial Hospital -->
+
+	<id value="patriotdental"/>
+
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+    </meta>
+   
+	<active value="true"/> <!-- This record is active -->
+
+	<type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="pay"/>
+            <display value="Payer"/>
+        </coding>
+        <text value="Health System"/>
+	</type>
+
+	<name value="Patriot Dental Provider Network"/>
+</Organization>

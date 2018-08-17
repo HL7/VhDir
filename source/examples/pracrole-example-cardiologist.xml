@@ -6,98 +6,9 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
     </meta>
 
-    <identifier> <!-- Internal business ID for George Washington assigned by Founding Fathers -->
-        <use value="secondary"/>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
-            </coding>
-            <text value="Hospital ID"/>
-        </type>
-        <system value="www.foundingfathersmemorial.com"/>
-        <value value="provider276"/>
-        <period>
-            <start value="2016-02-22"/>
-        </period>
-        <assigner>
-            <reference value="Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/>
-        </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active -->
-
-    <period> <!-- George Washington began working at Founding Fathers on February 22, 2016 -->
-        <start value="2016-02-22"/>
-    </period>
-
-    <practitioner> <!-- George Washington -->
-        <reference value="Practitioner/practitioner1"/>
-        <display value="Geroge Washington"/>
-    </practitioner>
-
-    <organization> <!-- Founding Fathers Memorial Hospital -->
-        <reference value="Organization/foundingfathers"/>
-        <display value="Founding Fathers Memorial Hospital"/>
-    </organization>
-
-    <code> <!-- George Washington is a doctor at Founding Fathers -->
-        <coding>
-            <system value="http://hl7.org/fhir/practitioner-role"/>
-            <code value="doctor"/>
-            <display value="Doctor"/>
-        </coding>
-    </code>
-
-    <specialty > <!-- George Washington is a Cardiologist -->
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="394579002"/>
-            <display value="Cardiology"/>
-        </coding>
-    </specialty>
-
-    <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="Location/location2"/>
-        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
-    </location>
-
-    <healthcareService> <!-- Reference to a cardiac diagnostics service -->
-        <reference value="HealthcareService/ffcardiology"/>
-        <display value="Founding Fathers Memorial Hospital cardiac services"/>
-    </healthcareService>
-
-	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="Location/location2"/>
-                <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
-            </valueReference>
-        </extension>
-	</telecom>
-
-    <availableTime> <!-- Dr. Washington is available at this location to perform cardiac services Mon-Thu, 9:00 am - 12:00 pm -->
-        <daysOfWeek value="mon"/>
-        <daysOfWeek value="tue"/>
-        <daysOfWeek value="wed"/>
-        <daysOfWeek value="thu"/>
-        <availableStartTime value="09:00:00"/>
-        <availableEndTime value="12:00:00"/>
-    </availableTime>
-
-    <endpoint> <!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
-        <reference value="Endpoint/direct321"/>
-        <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
-    </endpoint>
-
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"> <!-- Dr. Washington is a member of the Patriot PPO insurance network in this role -->
         <valueReference>
-            <reference value="Network/patriotppo"/>
+            <reference value="Organization/patriotppo"/>
             <display value="Patriot Preferred Provider Network"/>
         </valueReference>
     </extension>
@@ -148,7 +59,7 @@
         </extension>
         <extension url="network">
             <valueReference>
-                <reference value="Network/patriotppo"/>
+                <reference value="Organization/patriotppo"/>
                 <display value="Patriot Preferred Provider Network"/>
             </valueReference>
         </extension>
@@ -211,4 +122,94 @@
             </valuePeriod>
         </extension>
     </extension>
+
+    <identifier> <!-- Internal business ID for George Washington assigned by Founding Fathers -->
+        <use value="secondary"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="PRN"/>
+                <display value="Provider number"/>
+            </coding>
+            <text value="Hospital ID"/>
+        </type>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
+        <value value="provider276"/>
+        <period>
+            <start value="2016-02-22"/>
+        </period>
+        <assigner>
+            <reference value="Organization/foundingfathers"/>
+            <display value="Founding Fathers Memorial Hospital"/>
+        </assigner>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
+    </identifier>
+
+	<active value="true"/> <!-- This record is active -->
+
+    <period> <!-- George Washington began working at Founding Fathers on February 22, 2016 -->
+        <start value="2016-02-22"/>
+    </period>
+
+    <practitioner> <!-- George Washington -->
+        <reference value="Practitioner/practitioner1"/>
+        <display value="Geroge Washington"/>
+    </practitioner>
+
+    <organization> <!-- Founding Fathers Memorial Hospital -->
+        <reference value="Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
+    </organization>
+
+    <code> <!-- George Washington is a doctor at Founding Fathers -->
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/practitioner-role"/>
+            <code value="doctor"/>
+            <display value="Doctor"/>
+        </coding>
+    </code>
+
+    <specialty > <!-- George Washington is a Cardiologist -->
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394579002"/>
+            <display value="Cardiology"/>
+        </coding>
+    </specialty>
+
+    <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
+        <reference value="Location/loc-ffmh-hvi"/>
+        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+    </location>
+
+    <healthcareService> <!-- Reference to a cardiac diagnostics service -->
+        <reference value="HealthcareService/ffcardiology"/>
+        <display value="Founding Fathers Memorial Hospital cardiac services"/>
+    </healthcareService>
+
+	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
+            <valueReference>
+                <reference value="Location/loc-ffmh-hvi"/>
+                <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+            </valueReference>
+        </extension>
+	</telecom>
+
+    <availableTime> <!-- Dr. Washington is available at this location to perform cardiac services Mon-Thu, 9:00 am - 12:00 pm -->
+        <daysOfWeek value="mon"/>
+        <daysOfWeek value="tue"/>
+        <daysOfWeek value="wed"/>
+        <daysOfWeek value="thu"/>
+        <availableStartTime value="09:00:00"/>
+        <availableEndTime value="12:00:00"/>
+    </availableTime>
+
+    <endpoint> <!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
+        <reference value="Endpoint/direct321"/>
+        <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
+    </endpoint>
+
 </PractitionerRole>

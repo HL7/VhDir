@@ -1,97 +1,10 @@
 <Location  xmlns="http://hl7.org/fhir">
 
-	<id value="hospital1"/>
+	<id value="loc-ffmh"/>
 	<meta>
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
     </meta>
 
-    <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
-        <use value="secondary"/>
-        <system value="http://example.org/www.foundingfathersmemorial.com"/>
-        <value value="main campus"/>
-        <assigner>
-            <reference value="Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/>
-        </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
-    </identifier>
-
-    <status value="active"/> <!-- this record is active -->
-
-    <name value="Founding Fathers Memorial Hospital"/>
-
-    <description value="Main campus of Founding Fathers Memorial Hospital"/>
-
-    <type> <!-- This location is a hospital -->
-        <coding>
-            <system value="http://hl7.org/fhir/v3/RoleCode"/>
-            <code value="HOSP"/>
-            <display value="Hospital"/> 
-            <userSelected value="true"/>
-        </coding>
-    </type>
-
-    <telecom> <!-- Contact this location at any time of day by phone at 202-101-0123 -->
-        <system value="phone"/>
-        <value value="202-101-0123"/>
-        <use value="work"/>
-        <rank value="1"/>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
-    </telecom>
-
-	<address> <!-- This location's address is 330 C Street SW, Washington, DC 20201, USA -->
-        <use value="work"/>
-        <type value="both"/>
-        <text value="330 C Street SW, Washington, DC 20201, USA"/>
-        <line value="330 C Street SW"/>
-        <city value="Washington"/>
-        <state value="DC"/>
-        <postalCode value="20201"/>
-        <country value="USA"/>
-	</address>
-
-    <physicalType> <!-- This location is a collection of buildings or other locations such as a site or a campus -->
-        <coding>
-            <system value="http://hl7.org/fhir/location-physical-type"/>
-            <code value="si"/>
-            <display value="Site"/>
-            <userSelected value="true"/>
-        </coding>
-    </physicalType>
-
-    <position> <!-- Coordinates of this location -->
-        <longitude value="38.8859395"/>
-        <latitude value="-77.016469"/>
-    </position>
-
-    <managingOrganization> <!-- This location is managed by Founding Fathers Memorial Hospital -->
-        <reference value="Organization/foundingfathers"/>
-        <display value="Founding Fathers Memorial Hospital"/>
-    </managingOrganization>
-
-    <hoursOfOperation> <!-- This location is always open -->
-        <daysOfWeek value="mon"/>
-        <daysOfWeek value="tue"/>
-        <daysOfWeek value="wed"/>
-        <daysOfWeek value="thu"/>
-        <daysOfWeek value="fri"/>
-        <daysOfWeek value="sat"/>
-        <daysOfWeek value="sun"/>
-        <allDay value="true"/>
-    </hoursOfOperation>
-
-    <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
-
-    <endpoint> <!-- Reference to an endpoint for Founding Fathers FHIR server -->
-        <reference value="Endpoint/e-12345"/>
-        <display value="Founding Fathers Memorial Hospital FHIR Server"/>
-    </endpoint>
 
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- Indicates that this location is handicap accessible and can provide assistance to persons with disabilities -->
         <valueCodeableConcept>
@@ -134,5 +47,93 @@
             <valueString value="04282014-1111-2"/>
         </extension>
     </extension>
+
+    <identifier> <!-- This location is the main campus for Founding Fathers Memorial Hospital -->
+        <use value="secondary"/>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
+        <value value="main campus"/>
+        <assigner>
+            <reference value="Organization/foundingfathers"/>
+            <display value="Founding Fathers Memorial Hospital"/>
+        </assigner>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
+    </identifier>
+
+    <status value="active"/> <!-- this record is active -->
+
+    <name value="Founding Fathers Memorial Hospital"/>
+
+    <description value="Main campus of Founding Fathers Memorial Hospital"/>
+
+    <type> <!-- This location is a hospital -->
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="HOSP"/>
+            <display value="Hospital"/> 
+            <userSelected value="true"/>
+        </coding>
+    </type>
+
+    <telecom> <!-- Contact this location at any time of day by phone at 202-101-0123 -->
+        <system value="phone"/>
+        <value value="202-101-0123"/>
+        <use value="work"/>
+        <rank value="1"/>
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
+            <extension url="allDay">
+                <valueBoolean value="true"/>
+            </extension>
+        </extension>
+    </telecom>
+
+	<address> <!-- This location's address is 330 C Street SW, Washington, DC 20201, USA -->
+        <use value="work"/>
+        <type value="both"/>
+        <text value="330 C Street SW, Washington, DC 20201, USA"/>
+        <line value="330 C Street SW"/>
+        <city value="Washington"/>
+        <state value="DC"/>
+        <postalCode value="20201"/>
+        <country value="USA"/>
+	</address>
+
+    <physicalType> <!-- This location is a collection of buildings or other locations such as a site or a campus -->
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+            <code value="si"/>
+            <display value="Site"/>
+            <userSelected value="true"/>
+        </coding>
+    </physicalType>
+
+    <position> <!-- Coordinates of this location -->
+        <longitude value="38.8859395"/>
+        <latitude value="-77.016469"/>
+    </position>
+
+    <managingOrganization> <!-- This location is managed by Founding Fathers Memorial Hospital -->
+        <reference value="Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
+    </managingOrganization>
+
+    <hoursOfOperation> <!-- This location is always open -->
+        <daysOfWeek value="mon"/>
+        <daysOfWeek value="tue"/>
+        <daysOfWeek value="wed"/>
+        <daysOfWeek value="thu"/>
+        <daysOfWeek value="fri"/>
+        <daysOfWeek value="sat"/>
+        <daysOfWeek value="sun"/>
+        <allDay value="true"/>
+    </hoursOfOperation>
+
+    <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
+
+    <endpoint> <!-- Reference to an endpoint for Founding Fathers FHIR server -->
+        <reference value="Endpoint/direct321"/>
+        <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/>
+    </endpoint>
 
 </Location>
