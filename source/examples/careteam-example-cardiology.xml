@@ -6,17 +6,45 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
     </meta>
 
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"> <!-- This care team is also known as the Founding Fathers Heart Team -->
+        <valueString value="Founding Fathers Heart Team"/>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This care team is located at the Founding Fathers Memorial Hospital Heart and Vascular Institute -->
+        <valueReference>
+            <reference value="Location/loc-ffmh-hvi"/>
+            <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
+        </valueReference>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"> <!-- This care team provides heart and vascular services -->
+        <valueReference>
+            <reference value="HealthcareService/ffcardiology"/> 
+            <display value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
+        </valueReference>
+    </extension>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to an electronic endpoint for this care team -->
+        <valueReference>
+            <reference value="Endpoint/direct321"/>
+            <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
+        </valueReference>
+    </extension>
+
     <identifier> <!-- Internal business ID for the care team assigned by Founding Fathers Memorial Hospital -->
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active" />
+        </extension>
         <use value="secondary"/>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="PRN"/>
                 <display value="Provider number"/>
             </coding>
             <text value="Business ID"/>
         </type>
-        <system value="www.foundingfathersmemorial.com"/>
+        <system value="http://example.org/www.foundingfathersmemorial.com"/>
         <value value="careteam0021"/>
         <period>
             <start value="2016-07-16T09:00:00-05:00"/>
@@ -25,18 +53,15 @@
             <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
     </identifier>
 
     <status value="active"/> <!-- This care team is active -->
 
     <category> <!-- This care team focuses on a specific condition -->
         <coding>
-            <system value="http://hl7.org/fhir/care-team-category"/>
-            <code value="condition"/>
-            <display value="Condition"/>
+            <system value="http://loinc.org"/>
+            <code value="LA27978-8"/>
+            <display value="Condition-focused care team"/>
             <userSelected value="true"/>
         </coding>
     </category>
@@ -64,14 +89,6 @@
         </period>
     </participant>
 
-    <reasonCode> <!-- This care team exists to treat patients with heart disease -->
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="56265001"/>
-            <display value="Heart disease (disorder)"/>
-        </coding>
-    </reasonCode>
-
     <managingOrganization> <!-- This care team is managed by Founding Fathers Memorial Hospital -->
         <reference value="Organization/foundingfathers"/>
         <display value="Founding Fathers Memorial Hospital"/>
@@ -88,30 +105,6 @@
         <text value="This care team was founded to optimize the management of complex cardiac cases"/>
     </note>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"> <!-- This care team is also known as the Founding Fathers Heart Team -->
-        <valueString value="Founding Fathers Heart Team"/>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This care team is located at the Founding Fathers Memorial Hospital Heart and Vascular Institute -->
-        <valueReference>
-            <reference value="Location/location2"/>
-            <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
-        </valueReference>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"> <!-- This care team provides heart and vascular services -->
-        <valueReference>
-            <reference value="HealthcareService/ffcardiology"/> 
-            <display value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
-        </valueReference>
-    </extension>
-
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to an electronic endpoint for this care team -->
-        <valueReference>
-            <reference value="Endpoint/direct321"/>
-            <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
-        </valueReference>
-    </extension>
 </CareTeam>
 
     

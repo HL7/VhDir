@@ -2,15 +2,17 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 **Background & Scope**
 
-A care team consists of the providers and/or organizations responsible for the care of a patient. It is defined not as a collection of individuals and organizations, but as a collection of roles; each member of a care team is represented through an associated role. Therefore, this profile removes references to practitioner and organization resources in `CareTeam.member` and adds references to PractitionerRole and OrganizationAffiliation. For example, Dr. Smith (an individual) does not participate on a care team. Rather, Dr. Smith in his role as a provider at Acme Hospital participates on a care team.
+A care team consists of the providers and/or organizations responsible for the care of a patient. Individuals participating on a VHDir CareTeam SHALL be represented through an associated role. Therefore, this profile removes references to the Practitioner resource in `CareTeam.participant.member`. For example, Dr. Smith (an individual) does not participate on a care team. Rather, Dr. Smith in his role as a provider at Acme Hospital participates on a care team.
 
-A care team may be functionally "empty," i.e. the roles on the care team are not filled by individuals or organizations. For example, a care team may be comprised of a primary care provider, care coordinator, and specialist without indicating the individuals filling those roles. This enables entities to describe existing care teams while masking the identity of the individuals/organizations that are involved, or to represent standing care teams that are filled on an ad hoc basis in response to a condition/event.
+A care team may be functionally "empty," i.e. the roles on the care team are not filled by individuals. For example, a care team may be comprised of a primary care provider role, care coordinator role, and specialist role without indicating the individuals filling those roles. This enables entities to describe existing care teams while masking the identity of the individuals/organizations that are involved, or to represent standing care teams that are filled by individuals on an ad hoc basis in response to a condition/event.
 
 This profile modifies the base CareTeam resource in the following manner:
 
 *  Constrains the cardinality of `careTeam.status` (1..1), `careTeam.category` (1..*), `careTeam.context` (0..0), `careTeam.subject` (0..0), `careTeam.onBehalfOf` (0..0), `careTeam.managingOrganization` (0..1), `careTeam.reasonCode` (0..0), `careTeam.reasonReference` (0..0), `careTeam.telecom.system` (1..1), and `careTeam.telecom.value` (1..1)
 
 *   Modifies the data type of careTeam.note.author (removes references to Patient and RelatedPerson resources)
+
+*   Modifies the data type of CareTeam.participant.member (removes references to Patient, RelatedPerson, and Practitioner resources)
 
 *  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
 
@@ -46,8 +48,3 @@ Each CareTeam must have:
 
 1.  One status code in `careTeam.status`
 1.  At least one type of care team in `careTeam.category`
-
-
-**Profile specific implementation guidance:**
-
-- TBD

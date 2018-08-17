@@ -2,7 +2,7 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 **Background & Scope**
 
-The HealthcareService resource typically describes services offered by an organization at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.
+The HealthcareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.
 
 This profile modifies the base HealthcareService resource in the following manner:
 

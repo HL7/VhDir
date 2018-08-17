@@ -5,57 +5,6 @@
         <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
     </meta>
 
-    <identifier> <!-- An identifier for this endpoint, a direct address -->
-        <use value="usual"/>
-        <type>
-            <text value="Direct Address"/>
-        </type>
-        <value value="heart@direct.ffhospital.com"/>
-        <assigner>
-            <display value="Revolutionary Health Information Service Provider"/>
-        </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
-    </identifier>
-
-    <status value="active"/> <!-- This endpoint is active -->
-
-    <connectionType> <!-- This endpoint is a Direct address -->
-        <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
-        <code value="direct-project"/>
-        <display value="Direct Project"/>
-    </connectionType>
-
-    <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/> <!-- The name of this endpoint -->
-
-    <managingOrganization> <!-- This endpoint is managed by Founding Fathers Memorial Hospital -->
-        <reference value="Organization/foundingfathers"/>
-        <display value="Founding Fathers Memorial Hospital"/>
-    </managingOrganization>
-
-    <contact> <!-- For more information about this endpoint, call 202-101-0123 -->
-        <system value="phone"/>
-        <value value="202-101-0123"/>
-        <use value="work"/>
-    </contact>
-
-    <period> <!-- This endpoint has been active since November 19, 2014 -->
-        <start value="2014-11-19"/>
-    </period>
-
-    <payloadType> <!-- This endpoint can receive HL7 CCD documents -->
-        <coding>
-            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
-            <code value="urn:ihe:pcc:xphr:2007"/>
-            <display value="HL7 CCD Document"/>
-        </coding>
-    </payloadType>
-
-    <payloadMimeType value="application/hl7-v3+xml"/> <!-- Payload mimetype is application/hl7-v3+xml -->
-
-    <address value="heart@direct.ffhospital.com"/> <!-- Direct address -->
-
     <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase"> <!-- This endpoint is used to support treatment and conforms to the Direct messaging specification at the indicated URL -->
         <extension url="type">
             <valueCodeableConcept>
@@ -120,4 +69,56 @@
             </valueCodeableConcept>
         </extension>
     </extension>
+
+    <identifier> <!-- An identifier for this endpoint, a direct address -->
+        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+        </extension>
+        <use value="usual"/>
+        <type>
+            <text value="Direct Address"/>
+        </type>
+        <value value="heart@direct.ffhospital.com"/>
+        <assigner>
+            <display value="Revolutionary Health Information Service Provider"/>
+        </assigner>
+    </identifier>
+
+    <status value="active"/> <!-- This endpoint is active -->
+
+    <connectionType> <!-- This endpoint is a Direct address -->
+        <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+        <code value="direct-project"/>
+        <display value="Direct Project"/>
+    </connectionType>
+
+    <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/> <!-- The name of this endpoint -->
+
+    <managingOrganization> <!-- This endpoint is managed by Founding Fathers Memorial Hospital -->
+        <reference value="Organization/foundingfathers"/>
+        <display value="Founding Fathers Memorial Hospital"/>
+    </managingOrganization>
+
+    <contact> <!-- For more information about this endpoint, call 202-101-0123 -->
+        <system value="phone"/>
+        <value value="202-101-0123"/>
+        <use value="work"/>
+    </contact>
+
+    <period> <!-- This endpoint has been active since November 19, 2014 -->
+        <start value="2014-11-19"/>
+    </period>
+
+    <payloadType> <!-- This endpoint can receive HL7 CCD documents -->
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
+            <code value="urn:ihe:pcc:xphr:2007"/>
+            <display value="HL7 CCD Document"/>
+        </coding>
+    </payloadType>
+
+    <payloadMimeType value="application/hl7-v3+xml"/> <!-- Payload mimetype is application/hl7-v3+xml -->
+
+    <address value="heart@direct.ffhospital.com"/> <!-- Direct address -->
+
 </Endpoint>

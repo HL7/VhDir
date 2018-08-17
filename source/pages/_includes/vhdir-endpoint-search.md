@@ -12,10 +12,10 @@
 <hr />
 1. `GET [base]/Endpoint?identifier-assigner=[id]`
 
-      *Support:* MAY support search by the [`endpoint-identifier-assigner`](SearchParameter-searchparameter-endpoint-identifier-assigner.html) parameter 
-   - with a target type:  `Organization` 
+      *Support:* MAY support search by the [`endpoint-identifier-assigner`](SearchParameter-searchparameter-endpoint-identifier-assigner.html) parameter
+   - with a target type:  `Organization`
    - including the modifiers:  `below`  
-   - including these search paramaters which may be chained:  `identifier`, `name` 
+   - including these search paramaters which may be chained:  `identifier`, `name`
 <hr />
 1. `GET [base]/Endpoint?mime-type=[code]`
 
@@ -23,10 +23,10 @@
 <hr />
 1. `GET [base]/Endpoint?organization=[id]`
 
-      *Support:* SHALL support search by the [`organization`](SearchParameter-searchparameter-endpoint-organization.html) parameter 
-   - with a target type:  `Organization` 
+      *Support:* SHALL support search by the [`organization`](SearchParameter-searchparameter-endpoint-organization.html) parameter
+   - with a target type:  `Organization`
    - including the modifiers:  `above`, `below`  
-   - including these search paramaters which may be chained:  `identifier`, `name`, `address`, `partof`, `type` 
+   - including these search paramaters which may be chained:  `identifier`, `name`, `address`, `partof`, `type`
 <hr />
 1. `GET [base]/Endpoint?payload-type=[code]`
 
@@ -36,6 +36,18 @@
 1. `GET [base]/Endpoint?status=[code]`
 
       *Support:* SHALL support search by the `status` parameter: `http://hl7.org/fhir/SearchParameter/Endpoint-status`
+<hr />
+1. `GET [base]/Endpoint?endpoint-organization=[id]`
+
+      *Support:* SHALL support search by the [`endpoint-organization`](SearchParameter-searchparameter-endpoint-organization.html) parameter
+<hr />
+1. `GET [base]/Endpoint?endpoint-payload-type=[code]`
+
+      *Support:* SHOULD support search by the [`endpoint-payload-type`](SearchParameter-searchparameter-endpoint-payload-type.html) parameter
+<hr />
+1. `GET [base]/Endpoint?endpoint-status=[code]`
+
+      *Support:* SHALL support search by the [`endpoint-status`](SearchParameter-searchparameter-endpoint-status.html) parameter
 <hr />
 1. `GET [base]/Endpoint?usecase-standard=[uri]`
 
@@ -49,6 +61,6 @@
 <hr />
 1. `GET [base]/Endpoint?via-intermediary=[id]`
 
-      *Support:* MAY support search by the [`endpoint-via-intermediary`](SearchParameter-searchparameter-endpoint-via-intermediary.html) parameter 
+      *Support:* MAY support search by the [`endpoint-via-intermediary`](SearchParameter-searchparameter-endpoint-via-intermediary.html) parameter
    - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
 <hr />

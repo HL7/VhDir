@@ -5,7 +5,7 @@
       *Support:* SHALL support search by the target parameter: `http://hl7.org/fhir/SearchParameter/VerificationResult-target`
    - with a target type:  `Any`
 <hr />
-1. `GET [base]/VerificationResult?attestation-source=[id]`
+1. `GET [base]/Vergit puificationResult?attestation-source=[id]`
 
       *Support:* SHALL support search by the [`verificationresult-attestation-attester`](SearchParameter-searchparameter-verificationresult-attestation-attester.html) parameter
    - with a target type:  `Practitioner`, `Organization`
