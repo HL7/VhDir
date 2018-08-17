@@ -5,6 +5,7 @@
   "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-target",
   "version": "0.0.0",
   "name": "VHDir VerificationResult Target Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/VerificationResult-target",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
