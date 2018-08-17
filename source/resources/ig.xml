@@ -660,7 +660,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-organizationaffiliation-participating-org" />
+				<reference value="SearchParameter/organizationaffiliation-participating-organization" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
