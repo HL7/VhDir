@@ -53,9 +53,6 @@
             <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
     </identifier>
 
     <status value="active"/> <!-- This care team is active -->
