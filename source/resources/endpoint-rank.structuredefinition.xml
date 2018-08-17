@@ -24,7 +24,7 @@
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="Rank"/>
-			<definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content"/>
+			<definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content (1 = highest)"/>
 			<max value="1"/>
 		</element>
 		<element id="Extension.url">
@@ -36,7 +36,7 @@
 			<sliceName value="valuePositiveInt"/>
 			<label value="rank"/>
 			<short value="Rank"/>
-			<definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content"/>
+			<definition value="Order established by a Role, Organization... for Endpoints capable of transferring the same content (1 = highest)"/>
 			<min value="1"/>
 			<type>
 				<code value="positiveInt"/>

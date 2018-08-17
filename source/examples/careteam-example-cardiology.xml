@@ -62,9 +62,9 @@
 
     <category> <!-- This care team focuses on a specific condition -->
         <coding>
-            <system value="http://hl7.org/fhir/care-team-category"/>
-            <code value="condition"/>
-            <display value="Condition"/>
+            <system value="http://loinc.org"/>
+            <code value="LA27978-8"/>
+            <display value="Condition-focused care team"/>
             <userSelected value="true"/>
         </coding>
     </category>

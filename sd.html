@@ -100,12 +100,12 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
    <div id="tbl-diff-inner">
      <a name="summary"> </a>
 
-{% include {{[type]}}-{{[id]}}-summary.xhtml %}
-
-
 <!--{% raw %}
-{% capture my-include %}{% include {{[id]}}-summary.md id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
+{% include {{[type]}}-{{[id]}}-summary.xhtml %}
 {% endraw %}-->
+
+{% capture my-include %}{% include {{[id]}}-summary.md id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
+
    </div>
   </div>
  </div>

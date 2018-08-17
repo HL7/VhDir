@@ -24,6 +24,5 @@
   "description": "Select locations defined by the specified region",
   "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": "below"
+  "multipleAnd": true
 }

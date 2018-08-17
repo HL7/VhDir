@@ -6,7 +6,7 @@ An organization is a formal or informal grouping of people or organizations with
 
 This profile modifies the base Organization resource in the following manner:
 
-*  Constrains the cardinality of `organization.active` (1..1), `organizaton.type` (1..*), `organization.name` (1..1), `organization.telecom.system` (1..1), `organization.telecom.value` (1..1), `organization.contact.name.family` (1..1), `organization.contact.name.given` (1..*), `organization.contact.telecom.system` (1..1), and `organization.contact.telecom.value` (1..1)
+*  Constrains the cardinality of `organization.active` (1..1), `organization.type` (1..*), `organization.name` (1..1), `organization.telecom.system` (1..1), `organization.telecom.value` (1..1), `organization.contact.name.family` (1..1), `organization.contact.name.given` (1..*), `organization.contact.telecom.system` (1..1), and `organization.contact.telecom.value` (1..1)
 
 *  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
 

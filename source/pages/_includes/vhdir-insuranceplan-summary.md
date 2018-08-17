@@ -1,10 +1,10 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  At least one covered benefit described in `insurancePlan.productCoverage`. This attribute consists of a number of other mandatory attributes:
-    1.  One type in `insurancePlan.productCoverage.coverageType`
-    1.  At least one benefit described in `insurancePlan.productCoverage.benefits`
-    1.  One type in `insurancePlan.productCoverage.benefits.type`
-    1.  At least one specific benefit described in `insurancePlan.productCoverage.benefits.benefitList`
-    1.  One description of the benefit in `insurancePlan.productCoverage.benefits.benefitList.description`
-1.  At least one cost described in `insurancePlan.plan`.
-    1.  For each cost in `insurancePlan.benefitCategory.benefit.costs`, one type in `insurancePlan.benefitCategory.benefit.costs.type`
+1.  A coded value in `InsurancePlan.status`
+1.  A reference to an organization that issues the product/plan in `InsurancePlan.ownedBy`
+1.  A reference to an organization that administers the product/plan in `InsurancePlan.administeredBy`
+1.  For each set of coverage details, one coded type of coverage in `InsurancePlan.coverage.type`
+1.  For each set of coverage details, at least one covered benefit in `InsurancePlan.coverage.benefit`, including a coded type of benefit in `InsurancePlan.coverage.benefit.type`
+1.  For each set of specific costs associated with a Plan, a coded value indicating the general category of benefit the cost applies to in `InsurancePlan.plan.specificCost.category`
+1.  For each set specific costs associated with a covered benefit, a coded type of benefit in `InsurancePlan.plan.specificCost.benefit.type`
+1.  For each set of specific costs associated with covered benefits, a coded type of cost in `InsurancePlan.plan.specificCost.benefit.cost.type`

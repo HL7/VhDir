@@ -140,7 +140,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="CareTeam.participant.onBehalfOf">
@@ -160,7 +160,6 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
