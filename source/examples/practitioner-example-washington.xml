@@ -150,11 +150,7 @@
         <identifier>
             <use value="official"/>
             <type>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
-                    <code value="MD"/>
-                    <display value="Medical License number"/>
-                </coding>
+                <text value="Medical License number"/>
             </type>
             <system value="https://doh.dc.gov/bomed"/>
             <value value="MD12345"/>

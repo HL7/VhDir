@@ -282,7 +282,7 @@
 				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplancosttype"/>
 			</binding>
 		</element>
-		<element value="InsurancePlan.plan.specificCost">
+		<element id="InsurancePlan.plan.specificCost">
 			<path value="InsurancePlan.plan.specificCost"/>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.category">

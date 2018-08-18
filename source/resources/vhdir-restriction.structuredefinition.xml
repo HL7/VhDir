@@ -63,7 +63,7 @@
 			<path value="Consent.organization"/>
 			<max value="0"/>
 		</element>
-		<element id="Consent.source[x]">
+		<element id="Consent.source">
 			<path value="Consent.source[x]"/>
 			<max value="0"/>
 		</element>

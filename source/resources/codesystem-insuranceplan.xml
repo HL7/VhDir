@@ -133,11 +133,6 @@
 		<definition value="Coinsurance"/>
 	</concept>
 	<concept>
-		<code value="deductible"/>
-		<display value="Deductible"/>
-		<definition value="Deductible"/>
-		</concept>
-	<concept>
 		<code value="in-network"/>
 		<display value="In-network"/>
 		<definition value="In-network"/>

@@ -196,6 +196,9 @@
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
             </valueReference>
         </extension>
+        <!-- Extracted/copied from FFMH -->
+        <system value="phone"/>
+        <value value="202-101-0123"/>
 	</telecom>
 
     <availableTime> <!-- Dr. Washington is available at this location to perform cardiac services Mon-Thu, 9:00 am - 12:00 pm -->

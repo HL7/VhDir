@@ -44,7 +44,11 @@
 
     <alias value="DC Memorial Hospital"> <!-- This organization was previously known as DC Memorial Hospital, from 1975-2000 -->
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding value="historical"/>
+            <valueCoding>
+                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+                <code value="historical"/>
+                <display value="Historical"/>
+            </valueCoding>
         </extension>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period">
             <valuePeriod>
@@ -66,6 +70,9 @@
                 <valueBoolean value="true"/>
             </extension>
         </extension>
+        <!-- Extracted/copied from FFMH -->
+        <system value="phone"/>
+        <value value="202-101-0123"/>
 	</telecom>
 
 	<address> <!-- Founding Fathers' address is 330 C Street SW, Washington, DC 20201, USA -->

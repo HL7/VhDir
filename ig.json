@@ -647,7 +647,7 @@
             "source": "location-wash-dc-metro.xml",
             "base": "Location-wash-dc-metro.html"
         },
-        "Location/loc-ffmmh": {
+        "Location/loc-ffmh": {
             "source": "location-loc-ffmh.xml",
             "base": "Location-example-loc-ffmh.html"
         },

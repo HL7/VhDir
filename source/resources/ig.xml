@@ -4,7 +4,8 @@
 	<id value="ig" />
 	<url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig" />
 	<version value="0.2.0" />
-	<name value="Validated Healthcare Directory" />
+	<name value="VhDir" />
+	<title value="Validated Healthcare Directory" />
 	<status value="draft" />
 	<publisher value="HL7 Patient Administration Committee" />
 	<copyright value="Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License" />
@@ -379,6 +380,12 @@
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-aliastype" />
+			</reference>
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="CodeSystem/codesystem-accessibility" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>
