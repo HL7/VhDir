@@ -272,7 +272,7 @@
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
-		<element value="InsurancePlan.plan.generalCost">
+		<element id="InsurancePlan.plan.generalCost">
 			<path value="InsurancePlan.plan.generalCost"/>
 		</element>
 		<element id="InsurancePlan.plan.generalCost.type">
