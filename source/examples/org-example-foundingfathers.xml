@@ -44,7 +44,7 @@
 
     <alias value="DC Memorial Hospital"> <!-- This organization was previously known as DC Memorial Hospital, from 1975-2000 -->
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type">
-            <valueCode value="historical"/>
+            <valueCoding value="historical"/>
         </extension>
         <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period">
             <valuePeriod>

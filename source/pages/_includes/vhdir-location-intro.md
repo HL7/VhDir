@@ -15,7 +15,7 @@ This profile modifies the base Lractitioner resource in the following manner:
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of a location's identifier
 1.  [Via intermediary](StructureDefinition-contactpoint-viaintermediary.html) (0..1) - a reference to an alternative point of contact for this location
 1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when a location is available for contact
-1.  [Boundary](StructureDefinition-boundary.html) (0..*) - indicates a region/area for the location
+1.  [Boundary-geojson](http://hl7.org/fhir/StructureDefinition/location-boundary-geojson) (0..*) - indicates a region/area for the location
 1.  [Accessibility](StructureDefinition-accessibility.html) (0..*) - indicates accessibility options available at the location (e.g. handicap accessibility)
 1.  [EHR](StructureDefinition-ehr.html) (0..*) - provides information about the EHR product(s) used at the location
 1.  [NewPatients](StructureDefinition-newpatients.html) (0..*) - indicates whether the location is accepting new patients

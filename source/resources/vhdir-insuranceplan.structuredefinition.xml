@@ -22,15 +22,12 @@
 		</element>
 		<element id="InsurancePlan.id">
 			<path value="InsurancePlan.id"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="InsurancePlan.meta">
 			<path value="InsurancePlan.meta"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="InsurancePlan.text">
 			<path value="InsurancePlan.text"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="InsurancePlan.extension">
 			<path value="InsurancePlan.extension"/>
@@ -274,6 +271,53 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
+		</element>
+		<element value="InsurancePlan.plan.generalCost">
+			<path value="InsurancePlan.plan.generalCost"/>
+		</element>
+		<element id="InsurancePlan.plan.generalCost.type">
+			<path value="InsurancePlan.plan.generalCost.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplancosttype"/>
+			</binding>
+		</element>
+		<element value="InsurancePlan.plan.specificCost">
+			<path value="InsurancePlan.plan.specificCost"/>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.category">
+			<path value="InsurancePlan.plan.specificCost.category"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplancostcategory"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.benefit">
+			<path value="InsurancePlan.plan.specificCost.benefit"/>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.benefit.type">
+			<path value="InsurancePlan.plan.specificCost.benefit.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefittype"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.benefit.cost">
+			<path value="InsurancePlan.plan.specificCost.benefit.cost"/>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.benefit.cost.type">
+			<path value="InsurancePlan.plan.specificCost.benefit.cost.type"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
+			</binding>
+		</element>
+		<element id="InsurancePlan.plan.specificCost.benefit.cost.qualifiers">
+			<path value="InsurancePlan.plan.specificCost.benefit.cost.qualifiers"/>
+			<!--<binding>
+				<strength value="example"/>
+				<valueSet value=""/>
+			</binding>-->
 		</element>
 	</differential>
 </StructureDefinition>

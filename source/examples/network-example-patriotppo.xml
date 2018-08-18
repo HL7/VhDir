@@ -112,14 +112,6 @@
             <use value="work"/>
         </telecom>
         <address>
-            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-                <extension url="latitude">
-                    <valueDecimal value="38.888684"/>
-                </extension>
-                <extension url="longitude">
-                    <valueDecimal value="-77.004719"/>
-                </extension>
-            </extension>
             <use value="work"/>
             <type value="both"/>
             <text value="101 Independence Ave SE, Washington, DC 20540"/>

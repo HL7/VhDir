@@ -19,9 +19,6 @@ Network is a profile on the Organization resource. This profile modifies the bas
 1.  [Coverage area](StructureDefinition-location-reference.html) (0..*) - Indicates a coverage area for the network
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a network is restricted
 
-*  Adds new value sets/updates value set bindings:
-
-TBD
 
 
 
@@ -44,4 +41,4 @@ Each network must have:
 
 **Profile specific implementation guidance:**
 
-- TBD
+- PractitionerRole and OrganizationAffiliation are used to indicate a Practitioner and Organization's participation in a Network, respectively

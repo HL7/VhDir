@@ -221,27 +221,6 @@
 			<path value="Organization.contact.telecom.value"/>
 			<min value="1"/>
 		</element>
-		<element id="Organization.contact.address">
-			<path value="Organization.contact.address"/>
-		</element>
-		<element id="Organization.contact.address.extension">
-			<path value="Organization.contact.address.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
-		<element id="Organization.contact.address.extension:geolocation">
-			<path value="Organization.contact.address.extension"/>
-			<sliceName value="geolocation"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
-			</type>
-		</element>
 		<element id="Organization.endpoint">
 			<path value="Organization.endpoint"/>
 			<type>
