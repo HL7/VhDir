@@ -6,7 +6,7 @@ This implementation guide was developed to support the need for validated provid
 
 This profile modifies the base VerificationResult resource in the following manner:
 
-*  Constrains the cardinality of `verificationResult.need` (1..1), `verificationResult.statusDate` (1..1), `verificationResult.validationType` (1..1), `verificationResult.validationProcess` (1..*), `verificationResult.failureAction` (1..1), `verificationResult.primarySource.type` (1..*), `verificationResult.primarySource.validationProcess` (1..*), `verificationResult.primarySource.canPushUpdates` (1..1), `verificationResult.attestation.method` (1..1), `verificationResult.attestation.date` (1..1),
+*  Constrains the cardinality of `VerificationResult.target` (1..*), `verificationResult.need` (1..1), `verificationResult.statusDate` (1..1), `verificationResult.validationType` (1..1), `verificationResult.validationProcess` (1..*), `verificationResult.failureAction` (1..1), `verificationResult.primarySource.type` (1..*), `verificationResult.attestation.method` (1..1), `verificationResult.attestation.date` (1..1)
 
 *  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
 
@@ -28,18 +28,14 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 Each VerificationResult resource must have:
 1.  At least one target in `verificationResult.target`
 1.  A coded representation of how often the target is validated in `verificationResult.need`
-1.  At least one coded representation of the target's current validation status in `verificationResult.status`
+1.  A coded representation of the target's current validation status in `verificationResult.status`
 1.  A date/time when the target's validation status was last updated in `verificationResult.statusDate`
 1.  A coded representation of whether the target is validated against a primary source(s) in `verificationResult.validationType`
 1.  At least one coded/text representation of the process by which the target was validated in `verificationResult.validationProcess`
 1.  A coded representation of what happens if validation of the target fails in `verificationResult.failureAction`
 1.  For each primary source described:
     1.  At least one coded/text representation of the type of primary source in `verificationResult.primarySource.type`
-    1.  At least one coded/text representation of the method for communicating with the primary source in `verificationResult.primarySource.validationProcess`
-    1.  A coded indication of whether the primary source can push updates/alerts in `verificationResult.primarySource.canPushUpdates`
-1.  For each attestation source described:
-    1.  One coded/text representation of who is providing attested information in `verificationResult.attestation.method`
-    1.  One date on which the target was attested to in `verificationResult.attestation.date`
+1.  Information about the source of the attested information in `VerificationResult.attestation`, including a reference to a Practitioner or Organization resource representing the source of the information in `VerificationResult.attestation.source`
 1.  For each validator described:
     1.  One reference to the Organization resource for the validator in `verificationResult.validator.organization`
 
@@ -53,7 +49,7 @@ The core of the verificationResult resource includes basic information about how
 *  `verificationResult.status` describes the current status of validation for the target. `verificationResult.statusDate` indicates when the validation status was last updated.
 *  `verificationResult.validationType` describes what the target is validated against (i.e. whether it is validated against a single primary source, whether it is validated against multiple sources, or whether it wasn't validated because attested information is sufficient)
 *  `verificationResult.validationProcess` describes the validation processes for validating the target
-*  `verificationResult.lastCompleted` and `verificationResult.nextScheduled` describe the last completed and next scheduled dates of validation for the target
+*  `verificationResult.lastPerformed` and `verificationResult.nextScheduled` describe the last completed and next scheduled dates of validation for the target
 *  `verificationResult.failureAction` describes what happens if validation of the target fails
 
 The resource also provides information about entities involved in the validation process:
@@ -65,10 +61,11 @@ The resource also provides information about entities involved in the validation
 *  `canPushUpdates` and `pushTypeAvailable` indicate whether a primary source can push updates or alerts (e.g. alerting the validated healthcare directory if a license board suspends a practitioner's license)
 
 `verificationResult.attestation` provides information about who attested to the information being validated
-*  `source` identifies an individual attesting to the target, `organization` identifies an organization attesting to the target. If a value is present in `organization`, there should also be a value in `source` (because an individual typically attests on behalf of an organization).
+*  `source` identifies the source of the attested information (a practitioner or organization), `organization` identifies an organization attesting to the target. If a value is present in `organization`, there should also be a value in `source` (because an individual typically attests on behalf of an organization).
 *  `method` indicates who is providing the attested information. Often, an individual will attest to their own information. However, another entity may submit attested information on an individual's behalf (e.g. a practice manager attests to information on behalf of all providers in a group practice). 
 *  `date` indicates when the information was attested to
-*  `sourceIdentityCertificate` and `proxyIdentityCertificate` assert the identity of the individual attesting to information and any proxy providing attested information on their behalf. <!-- `signedSourceAttestation` and `signedProxyRight` assert that information was attested to/provided by the entity with the right to do so.-->
+*  `sourceIdentityCertificate` and `proxyIdentityCertificate` assert the identity of the individual attesting to information and any proxy providing attested information on their behalf. 
+*  `signedSourceAttestation` and `signedProxyRight` assert that information was attested to/provided by the entity with the right to do so.-->
 
 `verificationResult.validator` provides information about the entity performing the validation of the target
 *  `organization` identifies the validating organization, and `identityCertificate` asserts their identity

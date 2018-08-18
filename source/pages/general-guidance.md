@@ -54,24 +54,26 @@ For more information on the ONC and FHA effort see the [ONC Techlab Healthcare D
 To determine which resources to profile, extensions to create, etc. we reviewed a number of use cases supported by healthcare directories today:
 
 * Basic Information Exchange
-  * A1. Enable electronic exchange (e.g. discovery of electronic end points such as IHE/EHR endpoints, FHIR server URLs, Direct addresses)
-  * A2. Find an individual and/or organization (even if no electronic end point is available)
+  * A1. Enable electronic exchange (e.g. discovery of electronic end points such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses
+  * A2. Find an individual and/or organization (even if no electronic end point is available) - enables users to find  contact and other identifying information about healthcare organizations and individual healthcare providers
 * Patient/Payer focused	
-  * B1. Find provider accessibility information (specialty, office hours, languages spoken, taking patients)
-  * B2. Relationship between provider and insurance plan (insurance accepted) or plan and provider (network)
-  * B3. Plan selection and enrollment
-  * B4. Claims management (adjudication, prior authorization, payment)
+  * B1. Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations
+  * B2. Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved
+  * B3. Plan selection and enrollment - enables individuals and consumers to find information about health plans for the purposes of enrollment, including information about the  health care providers and organizations that participate in a particular payer network, plan, or product and other information that can help the consumer make an informed choice about choosing the plan that best meets their health care needs
+  * B4. Claims management (adjudication, prior authorization, payment) - enables entities to discover information about providers to support claims processing, adjudication, prior authorization, and other reimbursement/payment related activities
 * Care Delivery / Value Based Care	
-  * C1. Provider relationship with a patient (e.g. for alerts)
-  * C2. Provider relationship with other providers in context of a patient (e.g. care team communications)
+  * C1. Provider relationship with a patient (e.g. for alerts) - supports discovery of provider-patient relationships to enable cross-organization workflows and processes for care coordination
+  * C2. Provider relationship with other providers in context of a patient (e.g. care team communications) - enables individual providers/organizations/care team members to identify each other, communicate and exchange information, expand the care team (e.g. referrals), and coordinate care within and across organizational boundaries
 * Other	
-  * D1. Provider credentialing
-  * D2. Quality or regulatory reporting (e.g. aggregate data, plan networks)
-  * D3. Detection of fraud; inappropriate approval of services and/or payment for services
+  * D1. Provider credentialing -  supports the process of establishing and evaluating the qualifications of a health care provider by verifying the provider’s experience, expertise, interests, and willingness to provide medical care
+  * D2. Quality or regulatory reporting (e.g. aggregate data, plan networks) - enables providers and health plans to consolidate and standardize the electronic exchange of quality-related data and performance results in addition to helping providers use their own information consistently to "report once"
+  * D3. Detection of fraud; inappropriate approval of services and/or payment for services - enables discovery of provider information for evaluating or responding to suspected cases of fraud or improper approval/payment for healthcare services
 
 For each use case, we described the general information requirements necessary to support the use case. We then specified the general information requirements as discrete data elements using FHIR resources. Therefore, this implementation guide covers a broad set of data elements supporting a range of use cases that may reasonably be collected, validated, and exchanged from a central source of validated provider data.
 
 ## Overview of Validated Healthcare Directory - Resource Relationships
+
+Note: the following diagrams provide a high-level view of the relationships between resources used in this IG. They do not necessarily reflect all of the relationships/references between resources.
 
 ### Practitioner
 

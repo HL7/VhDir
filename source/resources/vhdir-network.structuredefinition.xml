@@ -154,24 +154,6 @@
 			<path value="Organization.address"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Organization.address.extension">
-			<path value="Organization.address.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
-		<element id="Organization.address.extension:geolocation">
-			<path value="Organization.address.extension"/>
-			<sliceName value="geolocation"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
-			</type>
-		</element>
 		<element id="Organization.partOf">
 			<path value="Organization.partOf"/>
 			<short value="Reference to organization that owns the network"/>

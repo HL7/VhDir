@@ -15,7 +15,6 @@ Network is a profile on the Organization resource. This profile modifies the bas
 1.  [Identifier status](StructureDefinition-identifier-status.html) (1..1) - indicates the status of an organization's identifier
 1.  [Via intermediary](StructureDefinition-contactpoint-viaintermediary.html) (0..1) - a reference to an alternative point of contact for this organization
 1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when an organization is available for contact
-1.  [Geolocation](http://hl7.org/fhir/StructureDefinition/geolocation) (0..1) - indicates the absolute geographic location of an organization's address
 1.  [Period](http://hl7.org/fhir/StructureDefinition/organization-period) (0..1) - Represents a time period for the network
 1.  [Coverage area](StructureDefinition-location-reference.html) (0..*) - Indicates a coverage area for the network
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a network is restricted

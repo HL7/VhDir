@@ -24,52 +24,61 @@
 		</element>
 		<element id="VerificationResult.id">
 			<path value="VerificationResult.id"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="VerificationResult.meta">
 			<path value="VerificationResult.meta"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="VerificationResult.text">
 			<path value="VerificationResult.text"/>
-			<mustSupport value="true"/>
+		</element>
+		<element id="VerificationResult.target">
+			<path value="VerificationResult.target"/>
+			<min value="1"/>
+			<max value="*"/>
 		</element>
 		<element id="VerificationResult.need">
 			<path value="VerificationResult.need"/>
 			<min value="1"/>
-			<max value="1"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
-      </binding>--></element><element id="VerificationResult.status">
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.status">
 			<path value="VerificationResult.status"/>
 			<min value="1"/>
-			<max value="1"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value=""/>
-      </binding>--></element><element id="VerificationResult.statusDate">
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.statusDate">
 			<path value="VerificationResult.statusDate"/>
 			<min value="1"/>
 			<max value="1"/>
 		</element>
 		<element id="VerificationResult.validationType">
 			<path value="VerificationResult.validationType"/>
+			<short value="nothing|single|multiple"/>
+			<definition value="What the target is validated against (nothing|single source|multiple sources)"/>
 			<min value="1"/>
-			<max value="1"/><!--<binding>
+			<max value="1"/>
+			<binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
-      </binding>--></element><element id="VerificationResult.validationProcess">
+      </binding>
+		</element>
+		<element id="VerificationResult.validationProcess">
 			<path value="VerificationResult.validationProcess"/>
+			<short value="The process(es) by which the target is validated"/>
+			<definition value="The process(es) by which the target is validated"/>
 			<min value="1"/>
-			<max value="*"/><!--<binding>
+			<max value="*"/>
+			<binding>
         <strength value="example"/>
-        <valueSet value=""/>
-      </binding>--></element><element id="VerificationResult.failureAction">
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationprocess"/>
+      </binding>
+		</element>
+		<element id="VerificationResult.failureAction">
 			<path value="VerificationResult.failureAction"/>
 			<min value="1"/>
-			<max value="1"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value=""/>
-      </binding>--></element><element id="VerificationResult.primarySource">
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.primarySource">
 			<path value="VerificationResult.primarySource"/>
 		</element>
 		<element id="VerificationResult.primarySource.organization">
@@ -77,17 +86,23 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
 			</type>
 		</element>
 		<element id="VerificationResult.primarySource.type">
 			<path value="VerificationResult.primarySource.type"/>
+			<short value="Type of primary source"/>
+			<definition value="Type of primary source"/>
 			<min value="1"/>
-			<max value="*"/><!--<binding>
+			<max value="*"/>
+			<binding>
         <strength value="example"/>
-        <valueSet value=""/>
-      </binding>--></element><element id="VerificationResult.primarySource.validationProcess">
+        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcetype"/>
+      </binding>
+		</element>
+		<element id="VerificationResult.primarySource.validationProcess">
 			<path value="VerificationResult.primarySource.validationProcess"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="*"/>
 			<binding>
 				<strength value="example"/>
@@ -95,45 +110,60 @@
 			</binding>
 		</element>
 		<element id="VerificationResult.primarySource.validationStatus">
-			<path value="VerificationResult.primarySource.validationStatus"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus"/>
-      </binding>--></element><element id="VerificationResult.primarySource.canPushUpdates">
+			<path value="VerificationResult.primarySource.validationStatus"/>
+		</element>
+		<element id="VerificationResult.primarySource.canPushUpdates">
 			<path value="VerificationResult.primarySource.canPushUpdates"/>
-			<min value="1"/>
-			<max value="1"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush"/>
-      </binding>--></element><element id="VerificationResult.primarySource.pushTypeAvailable">
-			<path value="VerificationResult.primarySource.pushTypeAvailable"/><!--<binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype"/>
-      </binding>--></element><element id="VerificationResult.attestation">
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="VerificationResult.primarySource.pushTypeAvailable">
+			<path value="VerificationResult.primarySource.pushTypeAvailable"/>
+		</element>
+		<element id="VerificationResult.attestation">
 			<path value="VerificationResult.attestation"/>
 			<min value="1"/>
 			<max value="1"/>
 		</element>
 		<element id="VerificationResult.attestation.source">
 			<path value="VerificationResult.attestation.source"/>
+			<label value="attester"/>
+			<short value="Attestation source"/>
+			<definition value="Source of the attested information"/>
+			<alias value="attester"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+			</type>
+		</element>
+		<element id="VerificationResult.attestation.organization">
+			<path value="VerificationResult.attestation.organization"/>
+			<label value="proxy"/>
+			<short value="Proxy for attested information"/>
+			<definition value="The individual attesting to information on behalf of an individual or organization"/>
+			<alias value="proxy"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
 			</type>
 		</element>
-		<element id="VerificationResult.attestation.organization">
-			<path value="VerificationResult.attestation.organization"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-			</type>
-		</element>
 		<element id="VerificationResult.attestation.method">
 			<path value="VerificationResult.attestation.method"/>
+			<label value="process"/>
+			<short value="Attestation process"/>
+			<definition value="The process by which attested information was submitted"/>
+			<alias value="process"/>
 			<min value="1"/>
 			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod"/>
+				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
 			</binding>
 		</element>
 		<element id="VerificationResult.attestation.date">

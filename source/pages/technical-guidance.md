@@ -93,9 +93,18 @@ Additionally, the FHIR specification provides support for [asynchronous interact
 
 This implementation guide is not prescriptive about which approach(es) a validated healthcare directory should use to manage attestation. However, as any attestation will likely involve the submission of multiple FHIR resources representing information about one or more attesters, transaction Bundles can alleviate the need for more complex logic to manage referential integrity in attested information.
 
-Implementations relying on individual API interactions or batch Bundles may have to specify an “order of operations” to ensure attested data can be successfully submitted to the validated healthcare directory server.
+Implementations relying on individual API interactions or batch Bundles may have to specify an “order of operations” to ensure attested data can be successfully submitted to the validated healthcare directory server. For example, as a general guideline, resources may need to be submitted in the order of:
 
-[insert proposed order of operations here]
+1.	Organization
+2.	Endpoint
+3.	Practitioner
+4.	Location
+5.	Network
+6.	ProductPlan
+7.	healthcareService
+8.	organizationRole
+9.	practitionerRole
+10.	careTeam
 
 Depending on the context of implementation, entities maintaining a validated healthcare directory may have to manage record collision or duplication (i.e. multiple attesters attempting to simultaneously submit updates to the same record, or multiple attesters attempting to attest about the same set of information).
 
@@ -126,9 +135,15 @@ Validation may occur on the total contents of a resource, a collection of elemen
 
 The primary focus of this implementation guide is a RESTful API for obtaining data from a Validated Healthcare Directory. The exchange API only supports a one-directional flow of information from a Validated Healthcare Directory into local environments (i.e. HTTP GETs).
 
+Any Validated Healthcare Directory IG conformant implementation:
+
+*  SHALL support profiles: organization, practitioner, location, practitionerRole, endpoint, validation
+*  SHOULD support profiles: healthcareService, careTeam, network, productPlan, restriction, organizationRole
+*  SHALL indicate which data elements they support within the profiles, and SHALL be capable of returning each supported data element in response to a query
+
 Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.
 
-The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a Validated Healthcare Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant (see the [Capability Statements Section](capstatements.html) for more information about conformance).
+The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a Validated Healthcare Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant.
 
 We acknowledge that this decision has the potential to impact the interoperability of healthcare directory data and lead to variable implementations. However, we believe this risk is balanced by the potential for greater standardization of healthcare directory data enabled by this IG. We expect jurisdictions (e.g. countries) to further constrain this IG to meet their unique needs and publish the results openly and transparently.
 
@@ -145,23 +160,6 @@ Likewise, implementers should consider supporting a mechanism to push urgent upd
 We envisioned VHDir as a public or semi-public utility. Stakeholders who agreed to abide by the VHDir’s policies and procedures, signed a data use agreement, etc. would generally have access to VHDir data (Note: we consider specific operational policies and legal agreements out of scope for this IG). However, in some implementations, a VHDir may include sensitive data that is not publicly accessible or accessible to every VHDir stakeholder. For example, an implementer might not want to make data about military personnel, emergency responders/volunteers, or domestic violence shelters available to everyone with access to a VHDir, or to users in a local environment who have access to data obtained from a VHDir.
 
 We expect that a VHDir’s operational policies and legal agreements will clearly delineate which data stakeholders can access, and if necessary, require stakeholders to protect the privacy/confidentiality of sensitive information in downstream local environments. As such, we have included a Restriction profile based on the Consent resource to convey any restrictions associated with a data element, collection of elements, or resource obtained from a VHDir.
-
-## Must Support
-*Must Support* on any data element SHALL be interpreted as follows:
-
-
-* Validated Healthcare Directory Responders SHALL be capable of including the data element as part of the query results as specified by the [Validated Healthcare Directory Capability Statement].
-* Validated Healthcare Directory Requestors SHALL be capable of processing resource instances containing the data elements without generating an error and causing the application to fail. In other words Validated Healthcare Directory Requestors SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
-* In situations where information on a particular data element is not present and the reason for absence is unknown, Validated Healthcare Directory Responders SHALL NOT include the data elements in the resource instance returned as part of the query results.
-* When querying Validated Healthcare Directory Responders, Validated Healthcare Directory Requestors SHALL interpret missing data elements within resource instances as data not present in the Validated Healthcare Directory Responder's systems.
-* In situations where information on a particular data element is missing and the Validated Healthcare Directory Responder knows the precise reason for the absence of data, Validated Healthcare Directory  Responders SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
-* Validated Healthcare Directory Requestors SHALL be able to process resource instances containing data elements asserting missing information.
-
-
-* NOTE: Typically *Validated Healthcare Directory Responder* Actor = Server and *Validated Healthcare Directory Requestor Actor* = Client
-* NOTE: Validated Healthcare Directory Responders who do not have the capability to store or return a data element tagged as Supported in Validated Healthcare Directory profiles can still claim conformance to the Validated Healthcare Directory profiles per the Validated Healthcare Directory conformance resources.
-* NOTE: The above definition of Supported is derived from HL7v2 concept "Required but may be empty - RE" described in HL7v2 V28_CH02B_Conformance.doc.
-* NOTE: Readers are advised to understand [FHIR Terminology] requirements, [FHIR RESTful API] based on the HTTP protocol, along with [FHIR Data Types], [FHIR Search] and [FHIR Resource] formats before implementing Validated Healthcare Directory  requirements.
 
 
 ------------------------------------------------------------------------
