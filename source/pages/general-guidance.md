@@ -49,6 +49,10 @@ Such a central source would include a broad set of provider data to support a va
 
 For more information on the ONC and FHA effort see the [ONC Techlab Healthcare Directory Project](https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/Healthcare+Directory)
 
+## Relation to US Core and other IGs
+
+This implementation guide was written for an international audience. We expect different jurisdictions considering implementating a VHDir will design their implementations in accordance with jurisdictional requirements, such as national profiles/IGs. In the United States, for example, we expect a VHDir would align with an R4 version of the US Core IG once it becomes available.
+
 ## The Validated Healthcare Directory Data Model
 
 To determine which resources to profile, extensions to create, etc. we reviewed a number of use cases supported by healthcare directories today:
