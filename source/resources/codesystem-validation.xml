@@ -21,7 +21,7 @@
 		<code value="noneneeded"/>
 		<display value="None needed"/>
 		<definition value="No validation needed/planned for this resource or element."/>
-	</concept> -->
+	</concept>
 	<concept>
 		<code value="initial"/>
 		<display value="Initial"/>
