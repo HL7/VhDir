@@ -6,7 +6,7 @@
 	<title value="VhDir Validation Type Code System"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
-	<publisher value="HL7 - TBD"/>
+	<publisher value="HL7"/>
 	<contact>
 		<telecom>
 			<system value="other"/>
@@ -58,18 +58,18 @@
 		<definition value="Indicates validation was attepted on an element or resource and that validation failed."/>
 	</concept>
 	<concept>
-		<code value="none"/>
-		<display value="None"/>
+		<code value="nothing"/>
+		<display value="Nothing"/>
 		<definition value="No external validation is required."/>
 	</concept>
 	<concept>
-		<code value="primarysource"/>
-		<display value="Primary source"/>
+		<code value="single"/>
+		<display value="Single"/>
 		<definition value="Indicates the element or resource is validated against a single source."/>
 	</concept>
 	<concept>
-		<code value="multisource"/>
-		<display value="Multi-source"/>
+		<code value="multiple"/>
+		<display value="Multiple"/>
 		<definition value="Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."/>
 	</concept>
 	<concept>
@@ -123,14 +123,19 @@
 		<definition value="The resource or element is validated manually."/>
 	</concept>
 	<concept>
-		<code value="api"/>
-		<display value="API"/>
-		<definition value="The resource or element is validated via an application programming interface (API)."/>
+		<code value="portal"/>
+		<display value="Portal"/>
+		<definition value="The resource or element is validated via a portal into a source of valid data."/>
 	</concept>
 	<concept>
 		<code value="push"/>
 		<display value="Push"/>
 		<definition value="Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory"/>
+	</concept>
+	<concept>
+		<code value="pull"/>
+		<display value="Pull"/>
+		<definition value="Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory"/>
 	</concept>
 	<concept>
 		<code value="successful"/>
@@ -236,5 +241,10 @@
 		<code value="issuingsource"/>
 		<display value="Issuing source"/>
 		<definition value="Issuing source"/>
+	</concept>
+	<concept>
+		<code value="attester"/>
+		<display value="Attester"/>
+		<definition value="Attester"/>
 	</concept>
 </CodeSystem>

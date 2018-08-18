@@ -32,6 +32,9 @@
 			<concept>
 				<code value="incontext"/>
 			</concept>
+			<concept>
+				<code value="attester"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

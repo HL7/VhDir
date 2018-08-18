@@ -62,4 +62,9 @@
 		<display value="authoritative source"/>
 		<definition value="authoritative source"/>
 	</concept>
+	<concept>
+		<code value="attester"/>
+		<display value="attester"/>
+		<definition value="attester"/>
+	</concept>
 </CodeSystem>

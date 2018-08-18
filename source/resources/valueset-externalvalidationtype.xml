@@ -18,13 +18,13 @@
 		<include>
 			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
 			<concept>
-				<code value="none"/>
+				<code value="nothing"/>
 			</concept>
 			<concept>
-				<code value="primarysource"/>
+				<code value="single"/>
 			</concept>
 			<concept>
-				<code value="multisource"/>
+				<code value="multiple"/>
 			</concept>
 		</include>
 	</compose>
