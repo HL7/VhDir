@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-insuranceplan"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-insuranceplan"/>
+	<name value="VhDirinsuranceplan"/>
+	<title value="VhDir Insurance Plan Code System"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the various attributes of an Insurance Plan"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-insuranceplan"/>
+	<content value="complete"/>
+	<concept>
+		<code value="premium"/>
+		<display value="Premium"/>
+		<definition value="Premium"/>
+	</concept>
+	<concept>
+		<code value="deductible"/>
+		<display value="Deductible"/>
+		<definition value="Deductible"/>
+	</concept>
+	<concept>
+		<code value="cap"/>
+		<display value="Cap"/>
+		<definition value="Cap"/>
+	</concept>
+	<concept>
+		<code value="self"/>
+		<display value="Self"/>
+		<definition value="Self"/>
+	</concept>
+	<concept>
+		<code value="selfplusone"/>
+		<display value="Self plus one"/>
+		<definition value="Self plus one"/>
+	</concept>
+	<concept>
+		<code value="selfandfamily"/>
+		<display value="Self and family"/>
+		<definition value="Self and family"/>
+	</concept>
+	<concept>
+		<code value="medical"/>
+		<display value="Medical"/>
+		<definition value="Nedical"/>
+	</concept>
+	<concept>
+		<code value="dental"/>
+		<display value="Dental"/>
+		<definition value="Dental"/>
+	</concept>
+	<concept>
+		<code value="vision"/>
+		<display value="Vision"/>
+		<definition value="Vision"/>
+	</concept>
+	<concept>
+		<code value="drug"/>
+		<display value="Drug"/>
+		<definition value="Drug"/>
+	</concept>
+	<concept>
+		<code value="mentalhealth"/>
+		<display value="Mental health"/>
+		<definition value="Mental health"/>
+	</concept>
+	<concept>
+		<code value="substanceabuse"/>
+		<display value="Substance abuse"/>
+		<definition value="Substance abuse"/>
+	</concept>
+	<concept>
+		<code value="hospicehomehealth"/>
+		<display value="Hospice and home health"/>
+		<definition value="Hospice and home health"/>
+	</concept>
+	<concept>
+		<code value="preventative"/>
+		<display value="Preventative"/>
+		<definition value="Preventative"/>
+	</concept>
+	<concept>
+		<code value="primarycareov"/>
+		<display value="Primary care office visit"/>
+		<definition value="Primary care office visit"/>
+	</concept>
+	<concept>
+		<code value="specialityov"/>
+		<display value="Speciality care office visit"/>
+		<definition value="Speciality care office visit"/>
+	</concept>
+	<concept>
+		<code value="hospitalization"/>
+		<display value="Hospitalization"/>
+		<definition value="Hospitalization"/>
+	</concept>
+	<concept>
+		<code value="emergencyroom"/>
+		<display value="Emergency room"/>
+		<definition value="Emergency room"/>
+	</concept>
+	<concept>
+		<code value="urgentcare"/>
+		<display value="Urgent care"/>
+		<definition value="Urgent care"/>
+	</concept>
+	<concept>
+		<code value="copay"/>
+		<display value="Copay"/>
+		<definition value="Copay"/>
+	</concept>
+	<concept>
+		<code value="individualcap"/>
+		<display value="Individual cap"/>
+		<definition value="Individual cap"/>
+	</concept>
+	<concept>
+		<code value="familycap"/>
+		<display value="Family cap"/>
+		<definition value="Family cap"/>
+	</concept>
+	<concept>
+		<code value="coinsurance"/>
+		<display value="Coinsurance"/>
+		<definition value="Coinsurance"/>
+	</concept>
+	<concept>
+		<code value="deductible"/>
+		<display value="Deductible"/>
+		<definition value="Deductible"/>
+		</concept>
+	<concept>
+		<code value="in-network"/>
+		<display value="In-network"/>
+		<definition value="In-network"/>
+	</concept>
+	<concept>
+		<code value="out-of-network"/>
+		<display value="Out-of-network"/>
+		<definition value="Out-of-network"/>
+	</concept>
+	<concept>
+		<code value="other"/>
+		<display value="Other"/>
+		<definition value="Other"/>
+	</concept>
+</CodeSystem>

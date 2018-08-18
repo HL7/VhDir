@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-insuranceplanbenefitcosttype"/>
+	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
+	<name value="VhDirInsPlanBenefitCostType"/>
+	<title value="VhDir Insurance Plan Benefit Cost Type"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate the cost for a particular benefit on a plan."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-insuranceplan"/>
+            <concept>
+	        	<code value="copay"/>
+	        </concept>
+            <concept>
+                <code value="individualcap"/>
+            </concept>
+            <concept>
+                <code value="familycap"/>
+            </concept>
+            <concept>
+                <code value="coinsurance"/>
+            </concept>
+            <concept>
+                <code value="deductible"/>
+                </concept>
+            <concept>
+                <code value="in-network"/>
+            </concept>
+            <concept>
+                <code value="out-of-network"/>
+            </concept>
+            <concept>
+                <code value="other"/>
+            </concept>
+        </include>
+	</compose>
+</ValueSet>

@@ -957,6 +957,10 @@
             "source": "codesystem-ehrcharacteristics.xml",
             "base": "CodeSystem-codesystem-ehrcharacteristics.html"
         },
+        "CodeSystem/codesystem-insuranceplan": {
+            "source": "codesystem-insuranceplan.xml",
+            "base": "CodeSystem-codesystem-insuranceplan.html"
+        },
         "SearchParameter/searchparameter-practitioner-qualification-wherevalid-code": {
             "source": "searchparameter-practitioner-qualification-wherevalid-code.json",
             "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html"
@@ -1092,6 +1096,26 @@
         "ValueSet/valueset-primarysourcetype": {
             "source": "valueset-primarysourcetype.xml",
             "base": "ValueSet-valueset-primarysourcetype.html"
+        },
+        "ValueSet/valueset-insuranceplancosttype": {
+            "source": "valueset-insuranceplancosttype.xml",
+            "base": "ValueSet-valueset-insuranceplancosttype.html"
+        },
+        "ValueSet/valueset-insuranceplangroupsize": {
+            "source": "valueset-insuranceplangroupsize.xml",
+            "base": "ValueSet-valueset-insuranceplangroupsize.html"
+        },
+        "ValueSet/valueset-insuranceplancostcategory": {
+            "source": "valueset-insuranceplancostcategory.xml",
+            "base": "ValueSet-valueset-insuranceplancostcategory.html"
+        },
+        "ValueSet/valueset-insuranceplanbenefittype": {
+            "source": "valueset-insuranceplanbenefittype.xml",
+            "base": "ValueSet-valueset-insuranceplanbenefittype.html"
+        },
+        "ValueSet/valueset-insuranceplanbenefitcosttype": {
+            "source": "valueset-insuranceplanbenefitcosttype.xml",
+            "base": "ValueSet-valueset-insuranceplanbenefitcosttype.html"
         },
         "SearchParameter/searchparameter-organization-qualification-status": {
             "source": "searchparameter-organization-qualification-status.json",
