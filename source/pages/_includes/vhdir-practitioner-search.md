@@ -64,7 +64,7 @@
 <hr />
 1. `GET [base]/Practitioner?practitioner-qualification-wherevalid-location=[id]`
 
-      *Support:* SHOULD support search by the [`practitioner-qualification-wherevalid`](SearchParameter-searchparameter-practitioner-qualification-wherevalid.html) parameter
+      *Support:* SHOULD support search by the [`practitioner-qualification-wherevalid-location`](SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html) parameter
    - with a target type:  `Location`
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `location-identifier`, `location-address`, `location-organization`
