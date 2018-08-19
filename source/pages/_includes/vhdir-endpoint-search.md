@@ -35,7 +35,7 @@
 <hr />
 1. `GET [base]/Endpoint?endpoint-status=[code]`
 
-      *Support:* SHALL support search by the [`endpoint-status`](SearchParameter-searchparameter-endpoint-status) parameter
+      *Support:* SHALL support search by the [`endpoint-status`](SearchParameter-searchparameter-endpoint-status.html) parameter
 <hr />
 1. `GET [base]/Endpoint?endpoint-usecase-standard=[uri]`
 
