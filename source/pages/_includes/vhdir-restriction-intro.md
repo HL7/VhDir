@@ -21,8 +21,8 @@ The restriction profile consists of the following elements:
 
 The following are example uses for the vhdir-restriction profile:
 
--  [Restricted address for a women's shelter](location-womens-shelter.html)
--  [Restricted contact details for services provided by a women's shelter](healthcareservice-womens-shelter.html)
+-  [Restricted address for a women's shelter](Location-loc-ws.html)
+-  [Restricted contact details for services provided by a women's shelter](HealthcareService-hcs-ws.html)
 
 
 **Mandatory Data Elements**
