@@ -18,4 +18,9 @@
 	</type>
 
 	<name value="Patriot Dental Provider Network"/>
+
+    <partOf> <!-- This network is owned by Homeland Health Insurance -->
+        <reference value="Organization/homeland"/>
+        <display value="Homeland Health Insurance"/>
+    </partOf>
 </Organization>

@@ -1,0 +1,22 @@
+<Organization  xmlns="http://hl7.org/fhir"> <!-- Describes demographic information about Monument HIE -->
+
+	<id value="monumentHIE"/>
+
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+    </meta>
+
+	<active value="true"/>
+
+	<type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="other"/>
+            <display value="Other"/>
+        </coding>
+        <text value="Health information exchange organization"/>
+	</type>
+
+	<name value="Monument Health Information Exchange"/>
+
+</Organization>

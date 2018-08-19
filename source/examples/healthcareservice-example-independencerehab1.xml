@@ -1,0 +1,76 @@
+<HealthcareService  xmlns="http://hl7.org/fhir">
+
+	<id value="independencerehab1"/>
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+    </meta>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients">
+        <extension url="acceptingPatients">
+            <valueBoolean value="true"/>
+        </extension>
+        <extension url="network">
+            <valueReference>
+                <reference value="Organization/patriotppo"/>
+                <display value="Patriot Preferred Provider Network"/>
+            </valueReference>
+        </extension>
+    </extension>
+
+    <active value="true"/>
+
+    <providedBy>
+        <reference value="Organization/independencerehab"/>
+        <display value="Independence Rehabilitation Services, Inc."/>
+    </providedBy>
+
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+            <code value="27"/>
+            <display value="Specialist Medical"/>
+        </coding>
+    </category>
+
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="576"/>
+            <display value="Rehabilitation"/>
+        </coding>
+    </type>
+
+    <specialty>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394602003"/>
+            <display value="Rehabilitation"/>
+        </coding>
+    </specialty>
+
+    <location>
+        <reference value="Location/loc-ffmh"/>
+        <display value="Founding Fathers Memorial Hospital"/>
+    </location>
+
+    <name value="Independence Rehab - Inpatient rehabilitation services"/>
+
+    <comment value="Provides inpatient medical and vocational rehabilitation services to improve independence and employability of clients"/>
+
+    <eligibility>
+        <text value="Referral"/>
+    </eligibility>
+
+    <eligibilityNote value="Appointments require referral"/>
+
+    <referralMethod>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
+            <code value="phone"/>
+            <display value="phone"/>
+        </coding>
+    </referralMethod>
+
+    <appointmentRequired value="true"/>
+
+</HealthcareService>

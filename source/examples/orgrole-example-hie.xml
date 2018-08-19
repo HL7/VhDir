@@ -40,7 +40,7 @@
     </code>
 
     <endpoint> <!-- Reference to the endpoint for sending data to Founding Fathers through the HIE -->
-        <reference value="Endpoint/foundingfathersHIE"/>
+        <!-- <reference value="Endpoint/foundingfathersHIE"/> -->
         <display value="Founding Fathers Memorial Hospital HIE endpoint"/>
     </endpoint>
 

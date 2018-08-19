@@ -1,0 +1,57 @@
+<HealthcareService  xmlns="http://hl7.org/fhir">
+
+	<id value="independencerehab2"/>
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+    </meta>
+
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients">
+        <extension url="acceptingPatients">
+            <valueBoolean value="true"/>
+        </extension>
+        <extension url="network">
+            <valueReference>
+                <reference value="Organization/patriotppo"/>
+                <display value="Patriot Preferred Provider Network"/>
+            </valueReference>
+        </extension>
+    </extension>
+
+    <active value="true"/>
+
+    <providedBy>
+        <reference value="Organization/independencerehab"/>
+        <display value="Independence Rehabilitation Services, Inc."/>
+    </providedBy>
+
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+            <code value="27"/>
+            <display value="Specialist Medical"/>
+        </coding>
+    </category>
+
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="576"/>
+            <display value="Rehabilitation"/>
+        </coding>
+    </type>
+
+    <specialty>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394602003"/>
+            <display value="Rehabilitation"/>
+        </coding>
+    </specialty>
+
+    <name value="Independence Rehab - Outpatient rehabilitation services"/>
+
+    <comment value="Provides outpatient medical and vocational rehabilitation services to improve independence and employability of clients"/>
+
+    <appointmentRequired value="true"/>
+
+</HealthcareService>

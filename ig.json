@@ -704,6 +704,22 @@
             "source": "org-example-patriotdental.xml",
             "base": "Organization-patriotdental.html"
         },
+        "Organization/monumentHIE": {
+            "source": "organization-example-monumenthie.xml",
+            "base": "Organization-example-monumenthie.html"
+        },
+        "Organization/independencerehab": {
+            "source": "organization-example-independencerehab.xml",
+            "base": "Organization-example-independencerehab.html"
+        },
+        "HealthcareService/independencerehab1": {
+            "source": "healthcareservice-example-independencerehab1.xml",
+            "base": "HealthcareService-example-independencerehab1.html"
+        },
+        "HealthcareService/independencerehab2": {
+            "source": "healthcareservice-example-independencerehab2.xml",
+            "base": "HealthcareService-example-independencerehab2.html"
+        },
         "SearchParameter/searchparameter-location-new-patient": {
             "source": "searchparameter-location-new-patient.json",
             "base": "SearchParameter-searchparameter-location-new-patient.html"

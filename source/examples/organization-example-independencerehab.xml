@@ -1,0 +1,22 @@
+<Organization  xmlns="http://hl7.org/fhir"> <!-- Example describing demographic information about Independence Rehabilitation Services, Inc. -->
+
+	<id value="independencerehab"/>
+
+	<meta>
+        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+    </meta>
+
+	<active value="true"/>
+
+	<type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
+        </coding>
+        <text value="Rehabilitation services provider"/>
+	</type>
+
+	<name value="Independence Rehabilitation Services, Inc."/>
+
+</Organization>
