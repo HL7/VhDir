@@ -113,7 +113,7 @@
         }
     ],
     "working-dir": "/Users/ehaas/Documents/FHIR/VhDir/",
-    "version": "3.4.0",
+    "version": "3.5.0",
     "allviews": "true",
     "npm-name": "hl7.core.uv.vhdir",
     "html-template": "html-template.html",

@@ -1,4 +1,5 @@
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "xml"
 }, "valueSet" :{
@@ -15,6 +16,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "json"
 }, "valueSet" :{
@@ -31,6 +33,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "medical"
 }, "valueSet" :null}####
@@ -40,6 +43,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "001"
 }, "valueSet" :null}####
@@ -49,6 +53,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "dental"
 }, "valueSet" :null}####
@@ -58,6 +63,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "052"
 }, "valueSet" :null}####
@@ -67,6 +73,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "bronze"
 }, "valueSet" :null}####
@@ -76,6 +83,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "deductible"
 }, "valueSet" :null}####
@@ -85,6 +93,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "copay"
 }, "valueSet" :null}####
@@ -94,6 +103,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "in"
 }, "valueSet" :null}####
@@ -103,6 +113,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "coinsurance"
 }, "valueSet" :null}####
@@ -112,6 +123,7 @@ v: {
   "error" : "Unable to provide support for code system "
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "USD"
 }, "valueSet" :{
@@ -128,6 +140,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "application/hl7-v3+xml"
 }, "valueSet" :{
@@ -140,6 +153,22 @@ v: {
 }}####
 v: {
   "display" : "application/hl7-v3+xml",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/geo+json"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}}####
+v: {
+  "display" : "application/geo+json",
   "severity" : null,
   "error" : ""
 }
