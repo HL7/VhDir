@@ -119,6 +119,6 @@
 
     <payloadMimeType value="application/hl7-v3+xml"/> <!-- Payload mimetype is application/hl7-v3+xml -->
 
-    <address value="heart@direct.ffhospital.com"/> <!-- Direct address -->
+    <address value="mailto:heart@direct.ffhospital.com"/> <!-- Direct address -->
 
 </Endpoint>

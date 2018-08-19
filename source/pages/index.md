@@ -19,7 +19,7 @@ Although we developed this guide from the conceptual starting point of a nationa
 
 Likewise, we provide general guidance about the technical architecture and capabilities of a central source of validated provider data, but are not prescriptive about what an implementation must include.  
 
-For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](vhdir-change-notes.html).
+For more information on the history of Validated Healthcare Directory see the [Validated Healthcare Directory change notes](change-notes.html).
 
 
 ## Validated Healthcare Directory Profiles
