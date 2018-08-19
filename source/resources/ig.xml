@@ -907,7 +907,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="SearchParameter/searchparameter-location-region" />
+				<reference value="SearchParameter/searchparameter-location-contains" />
 			</reference>
 			<exampleBoolean value="false" />
 		</resource>

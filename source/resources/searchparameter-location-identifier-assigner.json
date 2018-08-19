@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "location-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": "Location", 
   "type": "reference", 
   "description": "Select Locations with an identifier issued by the specified organization", 

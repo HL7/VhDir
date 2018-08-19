@@ -12,7 +12,7 @@
 
       *Support:* SHOULD support search by the [`network-coverage-area`](SearchParameter-searchparameter-network-coverage-area.html) parameter 
    - with a target type:  `Location`   
-   - including these search paramaters which may be chained:  `location-identifier`, `location-region` 
+   - including these search paramaters which may be chained:  `location-identifier`, `location-contains` 
 <hr />
 1. `GET [base]/Organization?organization-address=[string]`
 

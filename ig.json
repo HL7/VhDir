@@ -556,9 +556,9 @@
             "source": "searchparameter-insuranceplan-plan-identifier.json",
             "base": "SearchParameter-searchparameter-insuranceplan-plan-identifier.html"
         },
-        "SearchParameter/searchparameter-location-region": {
-            "source": "searchparameter-location-region.json",
-            "base": "SearchParameter-searchparameter-location-region.html"
+        "SearchParameter/searchparameter-location-contains": {
+            "source": "searchparameter-location-contains.json",
+            "base": "SearchParameter-searchparameter-location-contains.html"
         },
         "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid": {
             "source": "searchparameter-practitionerrole-qualification-wherevalid.json",

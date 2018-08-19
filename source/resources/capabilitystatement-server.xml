@@ -1624,8 +1624,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="MAY"/>
 				</extension>
-				<name value="location-region"/>
-				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-region"/>
+				<name value="location-contains"/>
+				<definition value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-contains"/>
 				<type value="uri"/>
 			</searchParam>
 			<searchParam>

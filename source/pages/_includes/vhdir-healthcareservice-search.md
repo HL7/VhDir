@@ -18,7 +18,7 @@
 
       *Support:* SHOULD support search by the [`healthcareservice-coverage-area`](SearchParameter-searchparameter-healthcareservice-coverage-area.html) parameter
    - with a target type:  `Location`   
-   - including these search paramaters which may be chained:  `location-identifier`, `location-region`
+   - including these search paramaters which may be chained:  `location-identifier`, `location-contains`
 <hr />
 1. `GET [base]/HealthcareService?healthcareservice-eligibility=[code]`
 

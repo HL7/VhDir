@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "location-new-patient", 
+  "code": "new-patient", 
   "base": "Location", 
   "type": "token", 
   "description": "Select locations that are/are not accepting new patients", 

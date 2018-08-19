@@ -56,7 +56,7 @@
 - [location-new-patient-network](SearchParameter-searchparameter-location-new-patient-network.html)
 - [location-organization](SearchParameter-searchparameter-location-organization.html)
 - [location-partof](SearchParameter-searchparameter-location-partof.html)
-- [location-region](SearchParameter-searchparameter-location-region.html)
+- [location-contains](SearchParameter-searchparameter-location-contains.html)
 - [location-status](SearchParameter-searchparameter-location-status.html)
 - [location-type](SearchParameter-searchparameter-location-type.html)
 - [location-via-intermediary](SearchParameter-searchparameter-location-via-intermediary.html)

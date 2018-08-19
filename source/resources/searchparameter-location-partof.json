@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "location-partof",
+  "code": "partof",
   "base": "Location",
   "type": "reference",
   "description": "Select Locations that are part of the specified location",

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "location-identifier",
+  "code": "identifier",
   "base": "Location",
   "type": "token",
   "description": "Select Locations with the specified identifier",

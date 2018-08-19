@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "location-new-patient-network", 
+  "code": "new-patient-network", 
   "base": "Location", 
   "type": "reference", 
   "description": "Select locations that are part of the specified network and are/are not accepting new patients", 

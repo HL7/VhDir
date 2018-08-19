@@ -1,12 +1,12 @@
 
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-region",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-region",
+  "id": "searchparameter-location-contains",
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-contains",
   "version": "0.0.0",
   "name": "VHDir Location Region Search Parameter",
   "status": "draft",
-  "date": "2018-05-23",
+  "date": "2018-08-19",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
@@ -18,10 +18,10 @@
       ]
     }
   ],
-  "code": "location-region",
+  "code": "contains",
   "base": "Location",
   "type": "special",
-  "description": "Select locations defined by the specified region",
+  "description": "Select locations that contain the specified co-ordinates",
   "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,
   "multipleAnd": true

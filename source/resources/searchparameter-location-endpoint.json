@@ -18,7 +18,7 @@
       ]
     }
   ], 
-  "code": "location-endpoint", 
+  "code": "endpoint", 
   "base": "Location", 
   "type": "reference", 
   "description": "Select Locations with the specified endpoint", 

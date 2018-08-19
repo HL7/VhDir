@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "location-type",
+  "code": "type",
   "base": "Location",
   "type": "token",
   "description": "Select Locations of the specified type",

@@ -27,6 +27,6 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "location-identifier", "location-region"
+    "location-identifier", "location-contains"
   ]
 }

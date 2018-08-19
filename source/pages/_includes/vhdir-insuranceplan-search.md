@@ -65,7 +65,7 @@
 
       *Support:* SHOULD support search by the [`insuranceplan-plan-coverage-area`](SearchParameter-searchparameter-insuranceplan-plan-coverage-area.html) parameter
    - with a target type:  `Location`   
-   - including these search paramaters which may be chained:  `location-identifier`, `location-region`
+   - including these search paramaters which may be chained:  `location-identifier`, `location-contains`
 <hr />
 1. `GET [base]/InsurancePlan?insuranceplan-plan-identifier=[code]`
 
@@ -87,7 +87,7 @@
 
       *Support:* SHOULD support search by the [`insuranceplan-product-coverage-area`](SearchParameter-searchparameter-insuranceplan-product-coverage-area.html) parameter
    - with a target type:  `Location`   
-   - including these search paramaters which may be chained:  `location-identifier`, `location-region`
+   - including these search paramaters which may be chained:  `location-identifier`, `location-contains`
 <hr />
 1. `GET [base]/InsurancePlan?insuranceplan-product-identifier=[code]
 
