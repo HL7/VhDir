@@ -649,11 +649,11 @@
         },
         "Location/loc-ffmh": {
             "source": "location-loc-ffmh.xml",
-            "base": "Location-example-loc-ffmh.html"
+            "base": "Location-loc-ffmh.html"
         },
         "Location/loc-ffmh-hvi": {
             "source": "location-loc-ffmh-hvi.xml",
-            "base": "Location-example-ffmh-hvi.html"
+            "base": "Location-loc-ffmh-hvi.html"
         },
         "SearchParameter/searchparameter-organizationaffiliation-location": {
             "source": "searchparameter-organizationaffiliation-location.json",
@@ -706,19 +706,19 @@
         },
         "Organization/monumentHIE": {
             "source": "organization-example-monumenthie.xml",
-            "base": "Organization-example-monumenthie.html"
+            "base": "Organization-monumentHIE.html"
         },
         "Organization/independencerehab": {
             "source": "organization-example-independencerehab.xml",
-            "base": "Organization-example-independencerehab.html"
+            "base": "Organization-independencerehab.html"
         },
         "HealthcareService/independencerehab1": {
             "source": "healthcareservice-example-independencerehab1.xml",
-            "base": "HealthcareService-example-independencerehab1.html"
+            "base": "HealthcareService-independencerehab1.html"
         },
         "HealthcareService/independencerehab2": {
             "source": "healthcareservice-example-independencerehab2.xml",
-            "base": "HealthcareService-example-independencerehab2.html"
+            "base": "HealthcareService-independencerehab2.html"
         },
         "SearchParameter/searchparameter-location-new-patient": {
             "source": "searchparameter-location-new-patient.json",
