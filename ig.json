@@ -930,7 +930,7 @@
         },
         "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
             "source": "searchparameter-organizationaffiliation-participating-org.json",
-            "base": "SearchParameter-organizationaffiliation-participating-org.html"
+            "base": "SearchParameter-searchparameter-organizationaffiliation-participating-org.html"
         },
         "SearchParameter/searchparameter-insuranceplan-endpoint": {
             "source": "searchparameter-insuranceplan-endpoint.json",

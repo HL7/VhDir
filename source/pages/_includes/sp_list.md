@@ -128,7 +128,7 @@
 - [practitioner-qualification-issuer](SearchParameter-searchparameter-practitioner-qualification-issuer.html)
 - [practitioner-qualification-status](SearchParameter-searchparameter-practitioner-qualification-status.html)
 - [practitioner-qualification-wherevalid-code](SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html)
-- [practitioner-qualification-wherevalid](SearchParameter-searchparameter-practitioner-qualification-wherevalid.html)
+- [practitioner-qualification-wherevalid-location](SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html)
 - [practitioner-via-intermediary](SearchParameter-searchparameter-practitioner-via-intermediary.html)
 
 **PractitionerRole**
