@@ -37,7 +37,7 @@
 <hr />
 1. `GET [base]/OrganizationAffiliation?organizationaffiliation-participating-org=[id]`
 
-      *Support:* SHALL support search by the [`organizationaffiliation-participating-org`](SearchParameter-organizationaffiliation-participating-org.html) parameter
+      *Support:* SHALL support search by the [`organizationaffiliation-participating-org`](SearchParameter-searchparameter-organizationaffiliation-participating-org.html) parameter
    - with a target type:  `Organization`
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-address`, `organization-partof`, `organization-type`

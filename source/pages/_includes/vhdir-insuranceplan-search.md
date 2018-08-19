@@ -91,7 +91,7 @@
 <hr />
 1. `GET [base]/InsurancePlan?insuranceplan-product-identifier=[code]
 
-      *Support:* SHALL support search by the [`insuranceplan-product-identifier`](SearchParameter-searchparameter-insuranceplan-identifier.html) parameter
+      *Support:* SHALL support search by the [`insuranceplan-product-identifier`](SearchParameter-searchparameter-insuranceplan-product-identifier.html) parameter
 <hr />
 1. `GET [base]/InsurancePlan?insuranceplan-product-network=[id]`
 

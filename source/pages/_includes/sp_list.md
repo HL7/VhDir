@@ -107,7 +107,7 @@
 - [organizationaffiliation-identifier-assigner](SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html)
 - [organizationaffiliation-location](SearchParameter-searchparameter-organizationaffiliation-location.html)
 - [organizationaffiliation-network](SearchParameter-searchparameter-organizationaffiliation-network.html)
-- [organizationaffiliation-participating-org](SearchParameter-organizationaffiliation-participating-org.html)
+- [organizationaffiliation-participating-org](SearchParameter-searchparameter-organizationaffiliation-participating-org.html)
 - [organizationaffiliation-primary-organization](SearchParameter-searchparameter-organizationaffiliation-primary-organization.html)
 - [organizationaffiliation-role](SearchParameter-searchparameter-organizationaffiliation-role.html)
 - [organizationaffiliation-service](SearchParameter-searchparameter-organizationaffiliation-service.html)
