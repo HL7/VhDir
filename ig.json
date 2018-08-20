@@ -105,7 +105,7 @@
     "broken-links": "warning",
     "sct-edition": "http://snomed.info/sct/731000124108",
     "fixed-business-version": "0.2.0",
-    "canonicalBase": "http://hl7.org/fhir/ig/vhdir",
+    "canonicalBase": "http://hl7.org/fhir/uv/vhdir",
     "swagger": [
         {
             "capabilities": "server",
