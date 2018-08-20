@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-15T01:01:31.325+11:00"/>
 	<description value="Restriction on use/release of exchanged information&#xD;&#xA;"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Consent"/>

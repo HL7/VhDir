@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-09-01T06:36:02.345+10:00"/>
 	<description value="the period of time the alias was actively used"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

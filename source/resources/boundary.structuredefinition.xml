@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-08T09:55:55.678-05:00"/>
 	<description value="Representation of a custom area or region"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

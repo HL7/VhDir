@@ -11,7 +11,7 @@
 	<date value="2017-12-08T09:54:07.16-05:00"/>
 	<description value="Qualifications obtained by training and certification"/>
 	<purpose value="Extension to add qualifications on organization and practitionerRole resources"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

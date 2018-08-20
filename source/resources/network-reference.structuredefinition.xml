@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-10-04T01:03:04.553+11:00"/>
 	<description value="A reference to the Network"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

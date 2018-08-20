@@ -9,7 +9,7 @@
 	<title value="VhDir Practitionerrole"/>
 	<status value="active"/>
 	<date value="2017-10-03T23:59:49.231+11:00"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="PractitionerRole"/>

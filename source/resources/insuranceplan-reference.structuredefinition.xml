@@ -6,7 +6,7 @@
 	<title value="VhDir Product Plan Reference"/>
 	<status value="active"/>
 	<description value="A reference to the insurancePlan resource"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

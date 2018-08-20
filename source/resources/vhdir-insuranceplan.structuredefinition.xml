@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-05T12:38:42.186-05:00"/>
 	<description value="The details of a health insurance product/plan"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="InsurancePlan"/>

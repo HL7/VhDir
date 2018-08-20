@@ -11,7 +11,7 @@ codesystems,
 valuesets,
 structuremaps,
 source,ig.xml
-version,3.4.0
+version,3.5.0
 fixed-business-version,0.2.0
 paths.pages,framework|source/pages
 paths.resources,source/resources|source/examples

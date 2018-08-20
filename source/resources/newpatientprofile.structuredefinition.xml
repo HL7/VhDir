@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-11-13T14:13:29.07-05:00"/>
 	<description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

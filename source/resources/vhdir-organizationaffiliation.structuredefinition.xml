@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-12-08T15:32:24.796-05:00"/>
 	<description value="Details about the role a participating organization plays in relation to a primary organization"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="OrganizationAffiliation"/>

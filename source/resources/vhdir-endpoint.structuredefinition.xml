@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<date value="2017-10-04T00:34:40.427+11:00"/>
 	<description value="Defines the basic constraints and extensions on the Endpoint resource for use in a Validated Healthcare Directory"/>
-	<fhirVersion value="3.4.0"/>
+	<fhirVersion value="3.5.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Endpoint"/>
