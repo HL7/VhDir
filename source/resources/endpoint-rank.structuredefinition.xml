@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-05T09:46:01.905-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank"/>
 	<name value="EndpointRank"/>
 	<title value="VhDir Endpoint Rank"/>
 	<status value="active"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank"/>
 		</element>
 		<element id="Extension.value[x]:valuePositiveInt">
 			<path value="Extension.valuePositiveInt"/>

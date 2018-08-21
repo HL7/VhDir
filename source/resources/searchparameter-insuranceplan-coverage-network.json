@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-network",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-network",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-network",
   "version": "0.0.0",
   "name": "VHDir InsurancePlan Coverage Network Search Parameter",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-healthcareservice-new-patient", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient", 
   "version": "0.0.0", 
   "name": "VHDir HealthcareService New Patient Search Parameter", 
   "status": "draft", 
@@ -21,6 +21,6 @@
   "base": "HealthcareService", 
   "type": "token", 
   "description": "Select HealthcareServices that are/are not accepting new patients", 
-  "expression": "HealthcareService.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
   "multipleAnd": true
 }

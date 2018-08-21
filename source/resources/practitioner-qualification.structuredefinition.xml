@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T19:34:42.049-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"/>
 	<name value="PractitionerQualification"/>
 	<title value="VhDir Practitioner Qualification"/>
 	<status value="active"/>
@@ -61,7 +61,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:whereValid">
@@ -87,7 +87,7 @@
 			</type>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 		<element id="Extension.extension:history">
@@ -132,7 +132,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:history.extension:period">
@@ -169,7 +169,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

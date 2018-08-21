@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-validation-status",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-verificationresult-validation-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-validation-status",
   "version": "0.0.0",
   "name": "VHDir VerificationResult Validation Status Search Parameter",
   "status": "draft",

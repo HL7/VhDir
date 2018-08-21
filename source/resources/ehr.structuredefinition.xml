@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T18:43:43.471-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr"/>
 	<name value="EHR"/>
 	<title value="VhDir Ehr"/>
 	<status value="active"/>
@@ -129,7 +129,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-certificationedition"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:patientAccess">
@@ -155,7 +155,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-patientaccess"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificationID">
@@ -183,7 +183,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

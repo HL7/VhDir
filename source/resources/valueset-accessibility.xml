@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-accessibility"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-accessibility"/>
 	<name value="VhDirAccessibility"/>
 	<title value="VhDir Accessibility Value Set"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="Codes for documenting general categories of accommodations available."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
 		</include>
 	</compose>
 </ValueSet>

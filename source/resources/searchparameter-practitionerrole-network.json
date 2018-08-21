@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitionerrole-network", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-network", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-network", 
   "version": "0.0.0", 
   "name": "VHDir PractitionerRole Network Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "PractitionerRole",
   "type": "reference", 
   "description": "Select roles where the practitioner is a member of the specified health insurance provider network", 
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')",
   "target": "Organization",
   "multipleOr": true,
   "multipleAnd": true,

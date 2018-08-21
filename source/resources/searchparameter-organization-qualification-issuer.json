@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-organization-qualification-issuer", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-issuer", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-issuer", 
   "version": "0.0.0", 
   "name": "VHDir Organization Qualification Issuer Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "Organization",
   "type": "reference", 
   "description": "Select Organizations with a qualification issued by the specified organization", 
-  "expression": "Organization.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('issuer')",
+  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
   "target": "Organization",
   "multipleOr": true,
   "multipleAnd": true,

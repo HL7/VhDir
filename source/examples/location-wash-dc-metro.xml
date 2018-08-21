@@ -2,7 +2,7 @@
 
 	<id value="wash-dc-metro"/>
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
     </meta>
 
     <extension url="http://hl7.org/fhir/StructureDefinition/location-boundary-geojson">

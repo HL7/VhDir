@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-limit-value",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-limit-value",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-limit-value",
   "version": "0.0.0",
   "name": "VHDir InsurancePlan Coverage Limit Value Search Parameter",
   "status": "draft",

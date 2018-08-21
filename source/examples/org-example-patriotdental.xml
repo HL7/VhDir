@@ -3,7 +3,7 @@
 	<id value="patriotdental"/>
 
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
     </meta>
    
 	<active value="true"/> <!-- This record is active -->

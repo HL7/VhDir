@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-failureaction"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-failureaction"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-failureaction"/>
 	<name value="VhDirFailureAction"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
@@ -15,7 +15,7 @@
 	<description value="This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
             <concept>
                 <code value="fatal"/>
             </concept>

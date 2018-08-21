@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T18:37:47.658-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"/>
 	<name value="DigitalCertificate"/>
 	<title value="VhDir Digitalcertificate"/>
 	<status value="active"/>
@@ -73,7 +73,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetype"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:use">
@@ -99,7 +99,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificateuse"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificateStandard">
@@ -126,7 +126,7 @@
 			</type>
 			<binding>
 				<strength value="required"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatestandard"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificate">
@@ -202,12 +202,12 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
 			</binding>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

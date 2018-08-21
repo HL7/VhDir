@@ -3,11 +3,11 @@
 	<id value="foundingfathers"/>
 
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
     </meta>
 
     <identifier> <!-- Founding Fathers Memorial Hospital NPI -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
         <use value="official"/>
@@ -43,14 +43,14 @@
 	<name value="Founding Fathers Memorial Hospital"/> <!-- This organization is named Founding Fathers Memorial Hospital -->
 
     <alias value="DC Memorial Hospital"> <!-- This organization was previously known as DC Memorial Hospital, from 1975-2000 -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
                 <code value="historical"/>
                 <display value="Historical"/>
             </valueCoding>
         </extension>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
             <valuePeriod>
                 <start value="1975"/>
                 <end value="2000"/>
@@ -59,13 +59,13 @@
     </alias>
 
 	<telecom> <!-- Contact information for Founding Fathers can be found in the location resource for the hospital's main campus -->
-	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
+	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
                 <reference value="Location/loc-ffmh"/>
                 <display value="Founding Fathers Memorial Hospital"/>
             </valueReference>
         </extension>
-	    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
+	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
             <extension url="allDay">
                 <valueBoolean value="true"/>
             </extension>
@@ -114,7 +114,7 @@
             <given value="Abigail"/>
         </name>
         <telecom>
-            <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"> 
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
                 <extension url="daysOfWeek">
                     <valueCode value="mon"/>
                 </extension>

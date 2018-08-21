@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-04T12:30:40.926-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type"/>
 	<name value="OrgAliasType"/>
 	<title value="VhDir Org Alias Type"/>
 	<status value="active"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type"/>
 		</element>
 		<element id="Extension.value[x]:valueCoding">
 			<path value="Extension.valueCoding"/>
@@ -43,7 +43,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-aliastype"/>
 			</binding>
 		</element>
 	</differential>

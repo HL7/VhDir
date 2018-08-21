@@ -1,13 +1,13 @@
 ﻿<HealthcareService xmlns="http://hl7.org/fhir">
 	<id value="hcs-ws" />
 	<meta>
-		<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice" />
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice" />
 	</meta>
 	<contained>
 		<Consent>
 			<id value="restrict" />
 			<meta>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction" />
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction" />
 			</meta>
 			<status value="in-progress" />
 			<scope>
@@ -51,7 +51,7 @@
 		<text value="Women's shelter" />
 	</type>
 	<location>
-		<extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction">
 			<valueReference>
 				<reference value="#restrict" />
 			</valueReference>
@@ -66,7 +66,7 @@
 		<value value="https://exmaple.org/The-W-shelter" />
 	</telecom>
 	<telecom>
-		<extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction">
 			<valueReference>
 				<reference value="#restrict" />
 			</valueReference>

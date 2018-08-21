@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="insuranceplan-reference"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference"/>
 	<name value="InsurancePlanReference"/>
 	<title value="VhDir Product Plan Reference"/>
 	<status value="active"/>
@@ -24,7 +24,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/insuranceplan-reference"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -34,7 +34,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-insuranceplan"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"/>
 			</type>
 		</element>
 	</differential>

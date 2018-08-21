@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-languageproficiency"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-languageproficiency"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-languageproficiency"/>
 	<name value="VhDirSpokenLanguageProficiency"/>
 	<title value="VhDir Spoken Language Proficiency"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-languageproficiency"/>
 		</include>
 	</compose>
 </ValueSet>

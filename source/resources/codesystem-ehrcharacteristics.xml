@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-ehrcharacteristics"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
 	<name value="VhDirEHRCharacteristics"/>
 	<title value="VhDir Ehr Characteristics Code System"/>
 	<status value="active"/>

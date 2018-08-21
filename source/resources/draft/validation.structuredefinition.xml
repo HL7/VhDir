@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T18:53:02.778-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/validation"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/validation"/>
 	<name value="Validation"/>
 	<title value="VhDir Validation"/>
 	<status value="active"/>
@@ -306,7 +306,7 @@
 			<definition value="Reference to the primary source"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Extension.extension:primarySource.extension:sourceType">
@@ -488,7 +488,7 @@
 			<definition value="The individual attesting to information"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
 			</type>
 		</element>
 		<element id="Extension.extension:attestation.extension:attestationOrg">
@@ -511,7 +511,7 @@
 			<definition value="The organization attesting to information"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Extension.extension:attestation.extension:attestationMethod">
@@ -692,7 +692,7 @@
 			<definition value="Reference to the organization validating information"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Extension.extension:validator.extension:validatorCert">
@@ -793,7 +793,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/validation"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/validation"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

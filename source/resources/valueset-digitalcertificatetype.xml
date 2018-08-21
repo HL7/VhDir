@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-digitalcertificatetype"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetype"/>
 	<name value="VhDirDigitalCertificateType"/>
 	<title value="VhDir Digital Certificate Type Value Set"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="In a certificate-based public key cryptographic system, certificates are issued to subscribers, whose name appears as the subject in the certificate. This value set defines a set of terms describing the types of subscribers who may be issued digital certificates."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
 			<concept>
 				<code value="TLS/SSL"/>
 			</concept>

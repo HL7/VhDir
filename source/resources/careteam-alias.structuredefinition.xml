@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-16T15:49:05.354-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias"/>
 	<name value="CareteamAlias"/>
 	<title value="VhDir Careteam Alias"/>
 	<status value="active"/>
@@ -28,7 +28,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias"/>
 		</element>
 		<element id="Extension.value[x]:valueString">
 			<path value="Extension.valueString"/>

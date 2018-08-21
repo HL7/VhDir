@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitionerrole-new-patient-network", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient-network", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient-network", 
   "version": "0.0.0", 
   "name": "VHDir PractitionerRole New Patient Network Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "PractitionerRole", 
   "type": "reference", 
   "description": "Select PractitionerRoles that are part of the specified network and are/are not accepting new patients", 
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('network')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
   "target": "Organization",
   "multipleOr": true,
   "multipleAnd": true,

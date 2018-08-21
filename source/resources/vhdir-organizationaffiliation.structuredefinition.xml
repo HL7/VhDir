@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-10T12:29:00.342-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
 	<name value="VhdirOrganizationAffiliation"/>
 	<title value="VhDir OrganizationAffiliation"/>
 	<status value="active"/>
@@ -51,7 +51,7 @@
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.identifier">
@@ -74,14 +74,14 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.identifier.assigner">
 			<path value="OrganizationAffiliation.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.active">
@@ -92,35 +92,35 @@
 			<path value="OrganizationAffiliation.organization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.participatingOrganization">
 			<path value="OrganizationAffiliation.participatingOrganization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.network">
 			<path value="OrganizationAffiliation.network"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.location">
 			<path value="OrganizationAffiliation.location"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.healthcareService">
 			<path value="OrganizationAffiliation.healthcareService"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.telecom">
@@ -141,7 +141,7 @@
 			<sliceName value="availabletime"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.telecom.extension:viaintermediary">
@@ -151,7 +151,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 			</type>
 		</element>
 		<element id="OrganizationAffiliation.telecom.system">
@@ -166,7 +166,7 @@
 			<path value="OrganizationAffiliation.endpoint"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"/>
 			</type>
 		</element>
 	</differential>

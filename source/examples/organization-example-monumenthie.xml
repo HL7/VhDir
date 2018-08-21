@@ -3,7 +3,7 @@
 	<id value="monumentHIE"/>
 
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
     </meta>
 
 	<active value="true"/>

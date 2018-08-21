@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-externalvalidationtype"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-externalvalidationtype"/>
 	<name value="VhDirExternalValidationType"/>
 	<title value="VhDir External Validation Type Value Set"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="Attested information varies in the means by which it is validated. For example information some information may be validated by a single external source. Other information such as participation in a network or another relationship may require mulitple sources. Some cannot, and will be validated. This value set defines a set of codes describing the means of validation."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
 			<concept>
 				<code value="nothing"/>
 			</concept>

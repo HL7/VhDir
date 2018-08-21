@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-name",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-careteam-name",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-name",
   "version": "0.0.0",
   "name": "VHDir CareTeam Name Search Parameter",
   "status": "draft",
@@ -22,7 +22,7 @@
   "base": "CareTeam",
   "type": "string",
   "description": "Select care teams with the specified name",
-  "expression": "CareTeam.name|CareTeam.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias')",
+  "expression": "CareTeam.name|CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

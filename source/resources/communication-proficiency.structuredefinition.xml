@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-13T14:12:35.809-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"/>
 	<name value="CommunicationProficiency"/>
 	<title value="VhDir Communication Proficiency"/>
 	<status value="active"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"/>
 		</element>
 		<element id="Extension.value[x]:valueCodeableConcept">
 			<path value="Extension.valueCodeableConcept"/>
@@ -43,7 +43,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-languageproficiency"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-languageproficiency"/>
 			</binding>
 		</element>
 	</differential>

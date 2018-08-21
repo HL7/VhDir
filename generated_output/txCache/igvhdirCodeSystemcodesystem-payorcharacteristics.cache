@@ -3,7 +3,7 @@
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "system" : "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics",
       "concept" : [{
         "code" : "medical"
       },
@@ -39,14 +39,14 @@
 }}
 ####
 e: {
-  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics"
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "system" : "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics",
       "concept" : [{
         "code" : "cat"
       },
@@ -76,14 +76,14 @@ e: {
 }}
 ####
 e: {
-  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics"
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "system" : "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics",
       "concept" : [{
         "code" : "medical"
       },
@@ -119,14 +119,14 @@ e: {
 }}
 ####
 e: {
-  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics"
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+      "system" : "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics",
       "concept" : [{
         "code" : "cat"
       },
@@ -156,6 +156,6 @@ e: {
 }}
 ####
 e: {
-  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics"
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payorcharacteristics"
 }
 -------------------------------------------------------------------------------------

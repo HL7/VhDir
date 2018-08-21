@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-20T11:57:54.347-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 	<name value="ContactPointViaIntermediary"/>
 	<title value="VhDir Contactpoint Viaintermediary"/>
 	<status value="active"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -40,10 +40,10 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 	</differential>

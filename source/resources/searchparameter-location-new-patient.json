@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-location-new-patient", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-new-patient", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-new-patient", 
   "version": "0.0.0", 
   "name": "VHDir Location New Patient Search Parameter", 
   "status": "draft", 
@@ -21,6 +21,6 @@
   "base": "Location", 
   "type": "token", 
   "description": "Select locations that are/are not accepting new patients", 
-  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
   "multipleAnd": true
 }

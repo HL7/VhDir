@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T19:51:21.822-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
 	<name value="VhdirPractitioner"/>
 	<title value="VhDir Practitioner"/>
 	<status value="active"/>
@@ -41,7 +41,7 @@
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
 		<element id="Practitioner.extension:endpoint">
@@ -53,7 +53,7 @@
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"/>
 			</type>
 		</element>
 		<element id="Practitioner.extension:accessibility">
@@ -61,7 +61,7 @@
 			<sliceName value="accessibility"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"/>
 			</type>
 		</element>
 		<element id="Practitioner.extension:digitalcertificate">
@@ -69,7 +69,7 @@
 			<sliceName value="digitalcertificate"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"/>
 			</type>
 		</element>
 		<element id="Practitioner.identifier">
@@ -93,14 +93,14 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
 		<element id="Practitioner.identifier.assigner">
 			<path value="Practitioner.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Practitioner.active">
@@ -141,7 +141,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 			</type>
 		</element>
 		<element id="Practitioner.telecom.extension:availabletime">
@@ -149,7 +149,7 @@
 			<sliceName value="availabletime"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"/>
 			</type>
 		</element>
 		<element id="Practitioner.telecom.system">
@@ -209,7 +209,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"/>
 			</type>
 		</element>
 		<element id="Practitioner.qualification.issuer">
@@ -217,7 +217,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Practitioner.communication">
@@ -238,7 +238,7 @@
 			<sliceName value="proficiency"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"/>
 			</type>
 		</element>
 	</differential>

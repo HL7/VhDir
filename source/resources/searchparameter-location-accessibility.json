@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-accessibility",
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-accessibility",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-accessibility",
   "version": "0.0.0",
   "name": "VHDir Location Accessibility Search Parameter",
   "status": "draft",
@@ -22,7 +22,7 @@
   "base": "Location",
   "type": "token",
   "description": "Select locations that offer the specified accessibility options",
-  "expression": "Location.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility')",
+  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": "text"

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitioner-qualification-issuer", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-issuer", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-issuer", 
   "version": "0.0.0", 
   "name": "VHDir Practitioner Qualification Issuer Search Parameter", 
   "status": "draft", 

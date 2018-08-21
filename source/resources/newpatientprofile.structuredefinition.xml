@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-04T12:05:18.461-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"/>
 	<name value="NewPatientProfile"/>
 	<title value="VhDir New Patient Profile"/>
 	<status value="active"/>
@@ -33,7 +33,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"/>
 		</element>
 		<element id="Extension.value[x]:valueString">
 			<path value="Extension.valueString"/>

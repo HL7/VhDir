@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-organizationdemographics"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
 	<name value="VhDirOrganizationDemographics"/>
 	<title value="VhDir Organization Demographics Code System"/>
 	<status value="active"/>
@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes of an Organization."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-organizationdemographicsAliasType"/>
+	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/VhDir-organizationdemographicsAliasType"/>
 	<content value="complete"/>
 	<concept>
 		<code value="legalalternative"/>

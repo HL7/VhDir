@@ -13,7 +13,7 @@
             <reference value="Organization/monumentHIE"/>
             <display value="Monument Health Information Exchange"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
     </identifier>

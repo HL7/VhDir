@@ -54,7 +54,7 @@
         </type>
         <validationProcess> <!-- The method of validation with the primary source is manual, via email -->
             <coding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/validation-process"/> <!-- code system hasn't been created yet, this is a placeholder -->
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation-process"/> <!-- code system hasn't been created yet, this is a placeholder -->
                 <code value="manual"/>
                 <display value="Manual"/>
             </coding>
@@ -73,7 +73,7 @@
         </source>
         <method> <!-- George Washington attested to the information himself -->
             <coding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/attestation-method"/> <!-- code system hasn't been created yet, this is a placeholder -->
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/attestation-method"/> <!-- code system hasn't been created yet, this is a placeholder -->
                 <code value="owner"/>
                 <display value="Owner"/>
                 <userSelected value="true"/>

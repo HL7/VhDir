@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-07T15:08:16.087-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"/>
 	<name value="EndpointReference"/>
 	<title value="VhDir Practitioner Endpoint Reference"/>
 	<status value="active"/>
@@ -32,7 +32,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -42,7 +42,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"/>
 			</type>
 		</element>
 	</differential>

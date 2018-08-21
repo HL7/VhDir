@@ -2,7 +2,7 @@
 
 	<id value="location2"/>
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
     </meta>
 
     <identifier> <!-- This location is the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
@@ -13,7 +13,7 @@
             <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
     </identifier>
@@ -43,7 +43,7 @@
             <start value=""/> <!-- dateTime 0..1 -->
             <end value=""/> <!-- dateTime 0..1 -->
         </period>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference> <!-- Reference(practitioner|org|location) 1..1 -->
                 <reference value=""/> <!-- string 0..1 -->
                 <identifier> <!-- 0..1 -->
@@ -88,14 +88,14 @@
                         </identifier>
                         <display value=""/> <!-- string 0..1 -->
                     </assigner>
-                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+                    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
                         <valueCode value=""/> <!-- code 1..1 -->
                     </extension>
                 </identifier>
                 <display value=""/> <!-- string 0..1 -->
             </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"> <!-- 0..* -->
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> <!-- 0..* -->
             <extension url="daysOfWeek"> <!-- 0..* -->
                 <valueCode value=""/> <!-- code 1..1 -->
             </extension>
@@ -165,7 +165,7 @@
         <display value=""/> <!-- string 0..1 -->
     </endpoint>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- 0..* -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"> <!-- 0..* -->
         <extension url="type"> <!-- 1..1 -->
             <valueCodeableConcept> <!-- 1..1 -->
                 <coding> <!-- 0..* -->
@@ -183,7 +183,7 @@
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"> <!-- 0..* -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr"> <!-- 0..* -->
         <extension url="developer"> <!-- 0..1 -->
             <valueString value=""/> <!-- string 1..1 -->
         </extension>
@@ -219,7 +219,7 @@
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- 0..* -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"> <!-- 0..* -->
         <extension url="acceptingPatients"> <!-- 1..1 -->
             <valueBoolean value=""/> <!-- boolean 1..1 -->
         </extension>
@@ -268,7 +268,7 @@
                         </identifier>
                         <display value=""/> <!-- string 0..1 -->
                     </assigner>
-                    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"> <!-- 1..1 -->
+                    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"> <!-- 1..1 -->
                         <valueCode value=""/> <!-- code 1..1 -->
                     </extension>
                 </identifier>
@@ -277,11 +277,11 @@
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"> <!-- 0..1 -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"> <!-- 0..1 -->
         <valueString value=""/> <!-- string 1..1 -->
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-availability"> <!-- 0..* -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-availability"> <!-- 0..* -->
         <extension url="availableTime"> <!-- 0..* -->
             <extension url="daysOfWeek"> <!-- 0..* -->
                 <valueCode value=""/> <!-- code 1..1 -->

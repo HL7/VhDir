@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T19:51:15.908-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 	<name value="VhdirLocation"/>
 	<title value="VhDir Location"/>
 	<status value="active"/>
@@ -45,7 +45,7 @@
 			<sliceName value="accessibility"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"/>
 			</type>
 		</element>
 		<element id="Location.extension:ehr">
@@ -53,7 +53,7 @@
 			<sliceName value="ehr"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr"/>
 			</type>
 		</element>
 		<element id="Location.extension:newpatients">
@@ -63,7 +63,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"/>
 			</type>
 		</element>
 		<element id="Location.extension:newpatientprofile">
@@ -71,7 +71,7 @@
 			<sliceName value="newpatientprofile"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"/>
 			</type>
 		</element>
 		<element id="Location.extension:restriction">
@@ -83,7 +83,7 @@
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
 		<element id="Location.identifier">
@@ -106,14 +106,14 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
 		<element id="Location.identifier.assigner">
 			<path value="Location.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Location.status">
@@ -146,7 +146,7 @@
 			<sliceName value="availabletime"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"/>
 			</type>
 		</element>
 		<element id="Location.telecom.extension:viaintermediary">
@@ -156,7 +156,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 			</type>
 		</element>
 		<element id="Location.telecom.system">
@@ -171,21 +171,21 @@
 			<path value="Location.managingOrganization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="Location.partOf">
 			<path value="Location.partOf"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 		<element id="Location.endpoint">
 			<path value="Location.endpoint"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"/>
 			</type>
 		</element>
 	</differential>

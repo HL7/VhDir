@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-validationneed"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationneed"/>
 	<name value="VhDirPrimarySourceValidationNeed"/>
 	<title value="VhDir Primary Source Validation Need"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all. This value set defines a set of codes that describe how often validation is needed, if at all."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
 			<concept>
 				<code value="noneneeded"/>
 			</concept>

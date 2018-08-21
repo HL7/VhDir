@@ -7,7 +7,7 @@
 			<xhtml:p>Based upon the 2015 Edition Certification Requirements, the NDC vaccine codes SHOULD be supported as translations to the CVX vaccine codes.</xhtml:p>
 		</xhtml:div>
 	</text>
---><url value="http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status"/>
+--><url value="http://hl7.org/fhir/uv/vhdir/ConceptMap/conceptmap-qualification-status"/>
 	<name value="Qualification Status Value Set – Status Code Mapping"/>
 	<title value="VhDir Qualification Status Value Set – Status Code Mapping"/>
 	<status value="active"/>
@@ -15,10 +15,10 @@
 	<date value="2018-04-20"/>
 	--><description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/><!-->
 	<requirements value=""/>
-	--><sourceUri value="http://hl7.org/fhir/ig/vhdir/Valueset-valueset-qualificationstatus"/>
+	--><sourceUri value="http://hl7.org/fhir/uv/vhdir/Valueset-valueset-qualificationstatus"/>
 	<targetUri value="http://hl7.org/fhir/ValueSet/resource-status"/>
 	<group>
-		<source value="hhttp://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus"/>
+		<source value="hhttp://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus"/>
 		<target value="http://hl7.org/fhir/ValueSet/resource-status"/>
 		<element>
 			<code value="active"/>

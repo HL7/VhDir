@@ -2,33 +2,33 @@
 	<id value="practitioner1"/>
 	<meta>
 		<versionId value="1"/>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
 	</meta>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization) -->
         <valueReference>
             <reference value="Endpoint/direct321"/>
             <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/>
         </valueReference>
     </extension>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate">
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
         <!--Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework -->
         <extension url="type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="ind"/>
                 <display value="Individual"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="signing"/>
                 <display value="Signing"/>
             </valueCoding>
         </extension>
         <extension url="certificateStandard">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="x.509v3"/>
                 <display value="x.509v3"/>
             </valueCoding>
@@ -42,7 +42,7 @@
         <extension url="trustFramework">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                     <code value="direct"/>
                     <display value="DirectTrust"/>
                     <userSelected value="true"/>
@@ -50,10 +50,10 @@
             </valueCodeableConcept>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"> <!-- The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"> <!-- The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People -->
         <valueCodeableConcept>
             <coding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
                 <code value="cultcomp"/>
                 <display value="Cultural competence"/>
                 <userSelected value="true"/>
@@ -62,7 +62,7 @@
         </valueCodeableConcept>
     </extension>
     <identifier> <!-- Practitioner's NPI number -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
         <use value="official"/>
@@ -127,7 +127,7 @@
     <gender value="male"/> <!-- Gender is male -->
     <birthDate value="1932-02-22"/> <!-- Birthday is Feb 22, 1932 -->
     <qualification> <!-- Describes the practitioner's general medical license (MD), which was issued by the DC Board of Medicine on July 15, 191759. -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active and valid in Washington, DC -->
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active and valid in Washington, DC -->
             <extension url="status">
                 <valueCoding>
                     <system value="http://hl7.org/fhir/resource-status"/>
@@ -181,7 +181,7 @@
         </issuer>
     </qualification>
     <qualification> <!-- Describes the practitioner's certificaton in Internal Medicine, issued by the American Board of Internal Medicine -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active, and the history indicates that it has been renewed once. -->
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"> <!-- the license is currently active, and the history indicates that it has been renewed once. -->
             <extension url="status">
                 <valueCoding>
                     <system value="http://hl7.org/fhir/resource-status"/>
@@ -230,7 +230,7 @@
         </issuer>
     </qualification>
     <qualification> <!-- Describes the practitioner's certification in cardiovascular disease -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
             <extension url="status">
                 <valueCoding>
                     <system value="http://hl7.org/fhir/resource-status"/>
@@ -272,7 +272,7 @@
             <userSelected value="true"/>
         </coding>
         <text value="English"/>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
             <valueCodeableConcept>
                 <coding>
                     <code value="5"/>

@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-10T12:44:39.265-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation"/>
 	<name value="VhdirValidation"/>
 	<title value="VhDir Validation"/>
 	<status value="active"/>
@@ -59,7 +59,7 @@
 			<max value="1"/>
 			<binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype"/>
+        <valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-externalvalidationtype"/>
       </binding>
 		</element>
 		<element id="VerificationResult.validationProcess">
@@ -70,7 +70,7 @@
 			<max value="*"/>
 			<binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationprocess"/>
+        <valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationprocess"/>
       </binding>
 		</element>
 		<element id="VerificationResult.failureAction">
@@ -85,8 +85,8 @@
 			<path value="VerificationResult.primarySource.organization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
 			</type>
 		</element>
 		<element id="VerificationResult.primarySource.type">
@@ -97,7 +97,7 @@
 			<max value="*"/>
 			<binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcetype"/>
+        <valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcetype"/>
       </binding>
 		</element>
 		<element id="VerificationResult.primarySource.validationProcess">
@@ -106,7 +106,7 @@
 			<max value="*"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
 			</binding>
 		</element>
 		<element id="VerificationResult.primarySource.validationStatus">
@@ -135,8 +135,8 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="VerificationResult.attestation.organization">
@@ -147,7 +147,7 @@
 			<alias value="proxy"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
 			</type>
 		</element>
 		<element id="VerificationResult.attestation.method">
@@ -163,7 +163,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
 			</binding>
 		</element>
 		<element id="VerificationResult.attestation.date">
@@ -178,7 +178,7 @@
 			<path value="VerificationResult.validator.organization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 	</differential>

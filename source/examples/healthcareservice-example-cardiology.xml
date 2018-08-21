@@ -2,10 +2,10 @@
 
 	<id value="ffcardiology"/>
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
     </meta>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- When offered by providers participating in Patriot PPO, this service is accepting new patients -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"> <!-- When offered by providers participating in Patriot PPO, this service is accepting new patients -->
         <extension url="acceptingPatients">
             <valueBoolean value="true"/>
         </extension>
@@ -18,7 +18,7 @@
     </extension>
 
     <identifier> <!-- Internal business ID for this service, assigned by Founding Fathers Memorial Hospital -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
         <use value="secondary"/>
@@ -78,7 +78,7 @@
     <comment value="Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research"/> <!-- additional information about the service -->
 
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
                 <reference value="Location/loc-ffmh-hvi"/>
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-digitalcertificatetrustframework"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
 	<name value="VhDirDigitalCertificateTrustFramework"/>
 	<title value="VhDir Digital Certificate Trust Framework Value Set"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="A trust framework is developed by a community whose members have similar goals and perspectives. It defines the rights and responsibilities of that community’s participants in an identity ecosystem, specifies the policies and standards specific to the community, and defines the community-specific processes and procedures that provide assurance. A trust framework may define how community members conduct identity management responsibilities; share, use, protect, and secure identity information; perform specific roles within the community; and/or manage liability and legal issues. This value set defines common trust frameworks for certificate-based public key cryptographic systems in healthcare."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
 			<concept>
 				<code value="direct"/>
 			</concept>

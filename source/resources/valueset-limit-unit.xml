@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-limit-unit"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-limit-unit"/>
 	<name value="VhDirLimitUnit"/>
 	<title value="VhDir Limit Unit"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicates the unit of any limit on a benefit in a product/plan."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
 			<concept>
 				<code value="days"/>
 			</concept>

@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-15T01:53:38.143+11:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 	<name value="UsageRestriction"/>
 	<title value="VhDir Usage Restriction"/>
 	<status value="active"/>
@@ -28,7 +28,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -39,7 +39,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction"/>
 			</type>
 		</element>
 		<element id="valueReference:valueReference.identifier">

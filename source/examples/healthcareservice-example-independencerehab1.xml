@@ -2,10 +2,10 @@
 
 	<id value="independencerehab1"/>
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
     </meta>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients">
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
         <extension url="acceptingPatients">
             <valueBoolean value="true"/>
         </extension>

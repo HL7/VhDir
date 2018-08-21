@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-15T14:17:54.21-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/boundary"/>
 	<name value="boundary"/>
 	<title value="VhDir Boundary"/>
 	<status value="active"/>
@@ -84,7 +84,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/boundary"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

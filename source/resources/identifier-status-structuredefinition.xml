@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-20T11:48:37.913-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 	<name value="IdentifierStatus"/>
 	<title value="VhDir Identifier Status"/>
 	<status value="active"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 		</element>
 		<element id="Extension.value[x]:valueCode">
 			<path value="Extension.valueCode"/>
@@ -43,7 +43,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-identifierstatus"/>
 			</binding>
 		</element>
 	</differential>

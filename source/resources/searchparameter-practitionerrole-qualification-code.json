@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitionerrole-qualification-code", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code", 
   "version": "0.0.0", 
   "name": "VHDir PractitionerRole Qualification Code Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "PractitionerRole",
   "type": "token", 
   "description": "Select PractitionerRoles with a type of qualification matching the specified code", 
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('code')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('code')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": "text"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-network-type"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
 	<name value="VhDirNetworkType"/>
 	<title value="VhDir Network Type Code System"/>
 	<status value="active"/>
@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting network."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type"/>
+	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-network-type"/>
 	<content value="complete"/>
 	<concept>
 		<code value="ppo"/>

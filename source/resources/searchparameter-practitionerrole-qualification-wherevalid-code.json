@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitionerrole-qualification-wherevalid-code", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code", 
   "version": "0.0.0", 
   "name": "VHDir PractitionerRole Qualification Wherevalid Code Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "PractitionerRole", 
   "type": "token", 
   "description": "Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code", 
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": "text"

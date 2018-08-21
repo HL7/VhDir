@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-practitioner-qualification-status", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-practitioner-qualification-status", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-status", 
   "version": "0.0.0", 
   "name": "VHDir Practitioner Qualification Status Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "Practitioner",
   "type": "token", 
   "description": "Select Practitioners with a qualification status matching the specified code", 
-  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification').extension('status')",
+  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('status')",
   "multipleOr": true,
   "multipleAnd": true
 }

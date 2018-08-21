@@ -10,7 +10,7 @@
             <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
     </identifier>
@@ -75,7 +75,7 @@
         <system value="phone"/>
         <value value="202-109-8765"/>
         <use value="work"/>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
             <extension url="daysOfWeek">
                 <valueCode value="mon"/>
             </extension>

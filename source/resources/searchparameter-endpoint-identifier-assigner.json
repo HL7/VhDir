@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-endpoint-identifier-assigner", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner", 
   "version": "0.0.0", 
   "name": "VHDir Endpoint Identifier Assigner Search Parameter", 
   "status": "draft", 

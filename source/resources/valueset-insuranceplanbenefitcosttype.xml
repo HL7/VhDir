@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-insuranceplanbenefitcosttype"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
 	<name value="VhDirInsPlanBenefitCostType"/>
 	<title value="VhDir Insurance Plan Benefit Cost Type"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicate the cost for a particular benefit on a plan."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-insuranceplan"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-insuranceplan"/>
             <concept>
 	        	<code value="copay"/>
 	        </concept>

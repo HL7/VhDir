@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-11-15T14:17:50.788-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"/>
 	<name value="NetworkReference"/>
 	<title value="VhDir Network Reference"/>
 	<status value="active"/>
@@ -32,7 +32,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -43,7 +43,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
 	</differential>

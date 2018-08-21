@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-insuranceplan"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-insuranceplan"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-insuranceplan"/>
 	<name value="VhDirinsuranceplan"/>
 	<title value="VhDir Insurance Plan Code System"/>
 	<status value="active"/>
@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the various attributes of an Insurance Plan"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-insuranceplan"/>
+	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/VhDir-insuranceplan"/>
 	<content value="complete"/>
 	<concept>
 		<code value="premium"/>

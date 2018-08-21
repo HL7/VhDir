@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T19:51:10.464-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-insuranceplan"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"/>
 	<name value="VhdirInsurancePlan"/>
 	<title value="VhDir InsurancePlan"/>
 	<status value="active"/>
@@ -48,7 +48,7 @@
 			<max value="*"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.identifier">
@@ -71,14 +71,14 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.identifier.assigner">
 			<path value="InsurancePlan.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.status">
@@ -92,7 +92,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.administeredBy">
@@ -101,14 +101,14 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.coverageArea">
 			<path value="InsurancePlan.coverageArea"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.contact">
@@ -146,7 +146,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.contact.telecom.extension:availabletime">
@@ -154,7 +154,7 @@
 			<sliceName value="availabletime"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.contact.telecom.system">
@@ -169,14 +169,14 @@
 			<path value="InsurancePlan.endpoint"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.network">
 			<path value="InsurancePlan.network"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.coverage">
@@ -186,14 +186,14 @@
 			<path value="InsurancePlan.coverage.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-coverage-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.coverage.network">
 			<path value="InsurancePlan.coverage.network"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.coverage.benefit">
@@ -203,7 +203,7 @@
 			<path value="InsurancePlan.coverage.benefit.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-benefit-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.coverage.benefit.limit">
@@ -213,7 +213,7 @@
 			<path value="InsurancePlan.coverage.benefit.limit.code"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-limit-unit"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan">
@@ -240,21 +240,21 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.plan.identifier.assigner">
 			<path value="InsurancePlan.plan.identifier.assigner"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.plan.type">
 			<path value="InsurancePlan.plan.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-plan-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-plan-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.coverageArea">
@@ -262,14 +262,14 @@
 			<short value="Where plan applies"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.plan.network">
 			<path value="InsurancePlan.plan.network"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network"/>
+				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"/>
 			</type>
 		</element>
 		<element id="InsurancePlan.plan.generalCost">
@@ -279,7 +279,7 @@
 			<path value="InsurancePlan.plan.generalCost.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplancosttype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancosttype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost">
@@ -289,7 +289,7 @@
 			<path value="InsurancePlan.plan.specificCost.category"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplancostcategory"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostcategory"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit">
@@ -299,7 +299,7 @@
 			<path value="InsurancePlan.plan.specificCost.benefit.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefittype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefittype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit.cost">
@@ -309,7 +309,7 @@
 			<path value="InsurancePlan.plan.specificCost.benefit.cost.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit.cost.qualifiers">

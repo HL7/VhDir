@@ -2,7 +2,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-healthcareservice-via-intermediary", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary", 
   "version": "0.0.0", 
   "name": "VHDir Via Intermediary HealthcareService Search Parameter", 
   "status": "draft", 
@@ -22,7 +22,7 @@
   "base": "HealthcareService",
   "type": "reference", 
   "description": "Select HealthcareServices with contact information available through the specified intermediary", 
-  "expression": "HealthcareService.telecom.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "expression": "HealthcareService.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole", "Organization", "OrganizationAffiliation", "Location"
   ],

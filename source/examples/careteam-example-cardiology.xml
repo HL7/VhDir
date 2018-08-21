@@ -3,28 +3,28 @@
 	<id value="cardiologycareteam1"/>
 
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam"/>
     </meta>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias"> <!-- This care team is also known as the Founding Fathers Heart Team -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias"> <!-- This care team is also known as the Founding Fathers Heart Team -->
         <valueString value="Founding Fathers Heart Team"/>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference"> <!-- This care team is located at the Founding Fathers Memorial Hospital Heart and Vascular Institute -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference"> <!-- This care team is located at the Founding Fathers Memorial Hospital Heart and Vascular Institute -->
         <valueReference>
             <reference value="Location/loc-ffmh-hvi"/>
             <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
         </valueReference>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference"> <!-- This care team provides heart and vascular services -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/healthcareservice-reference"> <!-- This care team provides heart and vascular services -->
         <valueReference>
             <reference value="HealthcareService/ffcardiology"/> 
             <display value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
         </valueReference>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to an electronic endpoint for this care team -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"> <!-- A reference to an electronic endpoint for this care team -->
         <valueReference>
             <reference value="Endpoint/direct321"/>
             <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
@@ -32,7 +32,7 @@
     </extension>
 
     <identifier> <!-- Internal business ID for the care team assigned by Founding Fathers Memorial Hospital -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active" />
         </extension>
         <use value="secondary"/>

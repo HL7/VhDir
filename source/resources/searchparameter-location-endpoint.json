@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-location-endpoint", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location-endpoint", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-endpoint", 
   "version": "0.0.0", 
   "name": "VHDir Location Endpoint Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-endpoint",

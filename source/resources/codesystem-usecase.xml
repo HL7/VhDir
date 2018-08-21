@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-usecase"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-usecase"/>
 	<name value="VhDirUseCase"/>
 	<title value="VhDir Use Case Code System"/>
 	<status value="active"/>
@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting the various attributes of a Use Case"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/VhDir-usecasetype"/>
+	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/VhDir-usecasetype"/>
 	<content value="complete"/>
 	<concept>
 		<code value="treatment"/>

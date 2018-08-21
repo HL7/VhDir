@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter", 
   "id": "searchparameter-organization-qualification-wherevalid-location", 
-  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-location", 
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-location", 
   "version": "0.0.0", 
   "name": "VHDir Organization Qualification Wherevalid Location Search Parameter", 
   "status": "draft", 
@@ -21,7 +21,7 @@
   "base": "Organization", 
   "type": "reference", 
   "description": "Select Organizations with a qualification that is valid at the specified location", 
-  "expression": "Organization.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
+  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
   "target": "Location",
   "multipleOr": true,
   "multipleAnd": true,

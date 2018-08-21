@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-12-08T18:39:31.218-05:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"/>
 	<name value="Accessibility"/>
 	<title value="VhDir Accessibility"/>
 	<status value="active"/>
@@ -32,7 +32,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility"/>
+			<fixedUri value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"/>
 		</element>
 		<element id="Extension.value[x]:valueCodeableConcept">
 			<path value="Extension.valueCodeableConcept"/>
@@ -46,7 +46,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-accessibility"/>
 			</binding>
 		</element>
 	</differential>

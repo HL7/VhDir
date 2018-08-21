@@ -3,34 +3,34 @@
 	<id value="practitionerrole1"/>
 
 	<meta>
-        <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
     </meta>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference"> <!-- Dr. Washington is a member of the Patriot PPO insurance network in this role -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"> <!-- Dr. Washington is a member of the Patriot PPO insurance network in this role -->
         <valueReference>
             <reference value="Organization/patriotppo"/>
             <display value="Patriot Preferred Provider Network"/>
         </valueReference>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate"> <!-- An x.509v3 digital identity certificate associated with Dr. Washington -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"> <!-- An x.509v3 digital identity certificate associated with Dr. Washington -->
         <extension url="type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="ind"/>
                 <display value="Individual"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="signing"/>
                 <display value="Signing"/>
             </valueCoding>
         </extension>
         <extension url="certificateStandard">
             <valueCoding>
-                <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                 <code value="x.509v3"/>
                 <display value="x.509v3"/>
             </valueCoding>
@@ -44,7 +44,7 @@
         <extension url="trustFramework">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
                     <code value="direct"/>
                     <display value="DirectTrust"/>
                     <userSelected value="true"/>
@@ -53,7 +53,7 @@
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients"> <!-- Dr. Washington is accepting new patients with health plans associated with the Patriot PPO -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"> <!-- Dr. Washington is accepting new patients with health plans associated with the Patriot PPO -->
         <extension url="acceptingPatients">
             <valueBoolean value="true"/>
         </extension>
@@ -65,11 +65,11 @@
         </extension>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile"> <!-- Describes conditions under which Dr. Washington is accepting new patients in this role -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"> <!-- Describes conditions under which Dr. Washington is accepting new patients in this role -->
         <valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
     </extension>
 
-    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification"> <!-- Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification"> <!-- Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location -->
         <extension url="identifier">
             <valueIdentifier>
                 <use value="official"/>
@@ -142,7 +142,7 @@
             <reference value="Organization/foundingfathers"/>
             <display value="Founding Fathers Memorial Hospital"/>
         </assigner>
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
     </identifier>
@@ -190,7 +190,7 @@
     </healthcareService>
 
 	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
-        <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary">
+        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
             <valueReference>
                 <reference value="Location/loc-ffmh-hvi"/>
                 <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>

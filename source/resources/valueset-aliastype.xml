@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd%20-STU3/fhir-all.xsd">
 	<id value="valueset-aliastype"/>
-	<url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-aliastype"/>
 	<name value="VhDirAliasType"/>
 	<title value="VhDir Alias Type Value Set"/>
 	<status value="active"/>
@@ -16,7 +16,7 @@
 	<description value="Codes for documenting the reason behind the existence of an alias."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
 			<concept>
 				<code value="legalalternative"/>
 			</concept>
