@@ -11,7 +11,7 @@ codesystems,
 valuesets,
 structuremaps,
 source,ig.xml
-version,3.5.0
+version,3.6.0
 fixed-business-version,0.2.0
 paths.pages,framework|source/pages
 paths.resources,source/resources|source/examples
@@ -26,10 +26,9 @@ no-inactive-codes,FALSE
 broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
-canonicalBase,http://hl7.org/fhir/ig/vhdir
+canonicalBase,http://hl7.org/fhir/uv/vhdir
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core
-dependencyList.source,dependencies/uscore-vp
 dependencyList.version,1.0.1
 special-urls,urn:oid:2.16.840.1.113883.6.238
 tool,jekyll

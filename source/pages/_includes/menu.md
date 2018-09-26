@@ -3,7 +3,7 @@
 - [Home](index.html)
 - [General Guidance](general-guidance.html)
 - [Technical Guidance](technical-guidance.html)
-- [Profiles and Logical Models](profiles.html)
+- [Profiles](profiles.html)
 <!-- >- [Mappings](structuremaps.html) -->
 - [Extensions](extensions.html)
 - [Terminology](terminology.html)
