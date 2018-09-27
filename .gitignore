@@ -41,6 +41,7 @@ c:\\temp\\json.json
 
 # FHIR IG Publisher local build directories #
 #############################################
+ballot
 my-notes
 qa
 temp
