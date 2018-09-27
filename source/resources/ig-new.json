@@ -19,7 +19,8 @@
   }],
   "url" : "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig",
   "version" : "0.2.0",
-  "name" : "Validated Healthcare Directory",
+  "name" : "VhDir",
+  "title" : "Validated Healthcare Directory",
   "status" : "draft",
   "publisher" : "HL7 Patient Administration Committee",
   "copyright" : "Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License",
@@ -33,12 +34,51 @@
     "version" : "1.0.1"
   }],
   "definition" : {
-    "package" : [{
-      "name" : "base"
-    }],
     "resource" : [{
       "reference" : {
+        "reference" : "StructureDefinition/identifier-status"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/contactpoint-viaintermediary"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/contactpoint-availabletime"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "Bundle/womens-shelter"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/monumentHIE"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/independencerehab"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab1"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab2"
       },
       "exampleBoolean" : true
     },
@@ -68,19 +108,7 @@
     },
     {
       "reference" : {
-        "reference" : "Organization/monumentHIE"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Organization/independencerehab"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Organization/patriotdental"
+        "reference" : "Organization/foundingfathers"
       },
       "exampleBoolean" : true
     },
@@ -98,7 +126,13 @@
     },
     {
       "reference" : {
-        "reference" : "Organization/foundingfathers"
+        "reference" : "Organization/patriotdental"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/wash-dc-metro"
       },
       "exampleBoolean" : true
     },
@@ -111,12 +145,6 @@
     {
       "reference" : {
         "reference" : "Location/loc-ws"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Location/wash-dc-metro"
       },
       "exampleBoolean" : true
     },
@@ -141,18 +169,6 @@
     {
       "reference" : {
         "reference" : "HealthcareService/hcs-ws"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "HealthcareService/independencerehab2"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "HealthcareService/independencerehab1"
       },
       "exampleBoolean" : true
     },
@@ -248,12 +264,6 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/valueset-validationprocess"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "ValueSet/valueset-validationneed"
       },
       "exampleBoolean" : false
@@ -279,12 +289,6 @@
     {
       "reference" : {
         "reference" : "ValueSet/valueset-primarysourcevalidationprocess"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-primarysourcetype"
       },
       "exampleBoolean" : false
     },
@@ -333,36 +337,6 @@
     {
       "reference" : {
         "reference" : "ValueSet/valueset-languageproficiency"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-insuranceplangroupsize"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-insuranceplancosttype"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-insuranceplancostcategory"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-insuranceplanbenefittype"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/valueset-insuranceplanbenefitcosttype"
       },
       "exampleBoolean" : false
     },
@@ -452,7 +426,55 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/codesystem-accessibility"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/valueset-accessibility"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-validationprocess"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-primarysourcetype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplancosttype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplangroupsize"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplancostcategory"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplanbenefittype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplanbenefitcosttype"
       },
       "exampleBoolean" : false
     },
@@ -476,13 +498,13 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-verificationresult-target"
+        "reference" : "SearchParameter/searchparameter-verificationresult-target-location"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-verificationresult-target-location"
+        "reference" : "SearchParameter/searchparameter-verificationresult-target"
       },
       "exampleBoolean" : false
     },
@@ -644,13 +666,13 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"
+        "reference" : "SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"
+        "reference" : "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"
       },
       "exampleBoolean" : false
     },
@@ -669,12 +691,6 @@
     {
       "reference" : {
         "reference" : "SearchParameter/searchparameter-practitioner-qualification-code"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/searchparameter-practitioner-phonetic"
       },
       "exampleBoolean" : false
     },
@@ -711,6 +727,12 @@
     {
       "reference" : {
         "reference" : "SearchParameter/searchparameter-practitioner-endpoint"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/searchparameter-practitioner-phonetic"
       },
       "exampleBoolean" : false
     },
@@ -902,7 +924,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-location-status"
+        "reference" : "SearchParameter/searchparameter-location-contains"
       },
       "exampleBoolean" : false
     },
@@ -950,12 +972,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-location-contains"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/searchparameter-location-address"
       },
       "exampleBoolean" : false
@@ -968,7 +984,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-insuranceplan-status"
+        "reference" : "SearchParameter/searchparameter-location-status"
       },
       "exampleBoolean" : false
     },
@@ -1112,6 +1128,12 @@
     },
     {
       "reference" : {
+        "reference" : "SearchParameter/searchparameter-insuranceplan-status"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/searchparameter-healthcareservice-via-intermediary"
       },
       "exampleBoolean" : false
@@ -1220,12 +1242,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-endpoint-status"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/searchparameter-endpoint-payload-type"
       },
       "exampleBoolean" : false
@@ -1262,13 +1278,13 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-careteam-via-intermediary"
+        "reference" : "SearchParameter/searchparameter-endpoint-status"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-careteam-status"
+        "reference" : "SearchParameter/searchparameter-careteam-via-intermediary"
       },
       "exampleBoolean" : false
     },
@@ -1323,6 +1339,12 @@
     {
       "reference" : {
         "reference" : "SearchParameter/searchparameter-careteam-category"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/searchparameter-careteam-status"
       },
       "exampleBoolean" : false
     },
@@ -1388,12 +1410,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/identifier-status"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/healthcareservice-reference"
       },
       "exampleBoolean" : false
@@ -1425,18 +1441,6 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/digitalcertificate"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/contactpoint-viaintermediary"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/contactpoint-availabletime"
       },
       "exampleBoolean" : false
     },
@@ -1496,12 +1500,6 @@
     },
     {
       "reference" : {
-        "reference" : "CodeSystem/codesystem-insuranceplan"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "CodeSystem/codesystem-ehrcharacteristics"
       },
       "exampleBoolean" : false
@@ -1520,7 +1518,7 @@
     },
     {
       "reference" : {
-        "reference" : "CodeSystem/codesystem-accessibility"
+        "reference" : "CodeSystem/codesystem-insuranceplan"
       },
       "exampleBoolean" : false
     },

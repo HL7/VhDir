@@ -16,7 +16,8 @@
   </extension>
   <url value="http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig"/>
   <version value="0.2.0"/>
-  <name value="Validated Healthcare Directory"/>
+  <name value="VhDir"/>
+  <title value="Validated Healthcare Directory"/>
   <status value="draft"/>
   <publisher value="HL7 Patient Administration Committee"/>
   <copyright value="Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License"/>
@@ -29,12 +30,51 @@
     <version value="1.0.1"/>
   </dependsOn>
   <definition>
-    <package>
-      <name value="base"/>
-    </package>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/identifier-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-availabletime"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Bundle/womens-shelter"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/monumentHIE"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/independencerehab"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab2"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -64,19 +104,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/monumentHIE"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Organization/independencerehab"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Organization/patriotdental"/>
+        <reference value="Organization/foundingfathers"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -94,7 +122,13 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/foundingfathers"/>
+        <reference value="Organization/patriotdental"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/wash-dc-metro"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -107,12 +141,6 @@
     <resource>
       <reference>
         <reference value="Location/loc-ws"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Location/wash-dc-metro"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -137,18 +165,6 @@
     <resource>
       <reference>
         <reference value="HealthcareService/hcs-ws"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="HealthcareService/independencerehab2"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="HealthcareService/independencerehab1"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -244,12 +260,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/valueset-validationprocess"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ValueSet/valueset-validationneed"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -275,12 +285,6 @@
     <resource>
       <reference>
         <reference value="ValueSet/valueset-primarysourcevalidationprocess"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -329,36 +333,6 @@
     <resource>
       <reference>
         <reference value="ValueSet/valueset-languageproficiency"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-insuranceplangroupsize"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-insuranceplancosttype"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-insuranceplancostcategory"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-insuranceplanbenefittype"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-insuranceplanbenefitcosttype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -448,7 +422,55 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/codesystem-accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/valueset-accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-validationprocess"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcetype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplancosttype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplangroupsize"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplancostcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplanbenefittype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplanbenefitcosttype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -472,13 +494,13 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-verificationresult-target"/>
+        <reference value="SearchParameter/searchparameter-verificationresult-target-location"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-verificationresult-target-location"/>
+        <reference value="SearchParameter/searchparameter-verificationresult-target"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -640,13 +662,13 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"/>
+        <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"/>
+        <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-location"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -665,12 +687,6 @@
     <resource>
       <reference>
         <reference value="SearchParameter/searchparameter-practitioner-qualification-code"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/searchparameter-practitioner-phonetic"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -707,6 +723,12 @@
     <resource>
       <reference>
         <reference value="SearchParameter/searchparameter-practitioner-endpoint"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/searchparameter-practitioner-phonetic"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -898,7 +920,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-location-status"/>
+        <reference value="SearchParameter/searchparameter-location-contains"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -946,12 +968,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-location-contains"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/searchparameter-location-address"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -964,7 +980,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-insuranceplan-status"/>
+        <reference value="SearchParameter/searchparameter-location-status"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -1108,6 +1124,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/searchparameter-insuranceplan-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/searchparameter-healthcareservice-via-intermediary"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -1216,12 +1238,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-endpoint-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/searchparameter-endpoint-payload-type"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -1258,13 +1274,13 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-careteam-via-intermediary"/>
+        <reference value="SearchParameter/searchparameter-endpoint-status"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-careteam-status"/>
+        <reference value="SearchParameter/searchparameter-careteam-via-intermediary"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -1319,6 +1335,12 @@
     <resource>
       <reference>
         <reference value="SearchParameter/searchparameter-careteam-category"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/searchparameter-careteam-status"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -1384,12 +1406,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/identifier-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/healthcareservice-reference"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -1421,18 +1437,6 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/digitalcertificate"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/contactpoint-availabletime"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -1492,12 +1496,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/codesystem-insuranceplan"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CodeSystem/codesystem-ehrcharacteristics"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -1516,7 +1514,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/codesystem-accessibility"/>
+        <reference value="CodeSystem/codesystem-insuranceplan"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

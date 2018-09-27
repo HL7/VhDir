@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA27978-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA27978-8",
+  "display" : "Condition-focused care team"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Condition-focused care team\" is not a valid display for the code {http://loinc.org}LA27978-8 - should be one of []"
+}
+-------------------------------------------------------------------------------------
