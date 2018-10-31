@@ -17,7 +17,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/ehaas/Documents/FHIR/VhDir/source/pages"
   }],
-  "url" : "http://hl7.org/fhir/uv/vhdir/ImplemnentationGuide/ig",
+  "url" : "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig",
   "version" : "0.2.0",
   "name" : "VhDir",
   "title" : "Validated Healthcare Directory",
@@ -193,15 +193,9 @@
     },
     {
       "reference" : {
-        "reference" : "VerificationResult/ver1"
+        "reference" : "VerificationResult/example-license"
       },
       "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/vhdir-validation"
-      },
-      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -1544,6 +1538,12 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/accessibility"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/vhdir-validation"
       },
       "exampleBoolean" : false
     }],

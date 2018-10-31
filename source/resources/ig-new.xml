@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/ehaas/Documents/FHIR/VhDir/source/pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/vhdir/ImplemnentationGuide/ig"/>
+  <url value="http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig"/>
   <version value="0.2.0"/>
   <name value="VhDir"/>
   <title value="Validated Healthcare Directory"/>
@@ -189,15 +189,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="VerificationResult/ver1"/>
+        <reference value="VerificationResult/example-license"/>
       </reference>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/vhdir-validation"/>
-      </reference>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
@@ -1540,6 +1534,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/vhdir-validation"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
