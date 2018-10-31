@@ -40,7 +40,7 @@
 	<validationProcess>
 		<!-- the license was validated against a primary source -->
 		<coding>
-			<system value="http://hl7.org/fhir/validation-process"/>
+			<system value="http://terminology.hl7.org/CodeSystem/validation-process"/>
 			<code value="primary"/>
 			<display value="primary source"/>
 		</coding>
@@ -79,7 +79,7 @@
 		<type>
 			<!-- The type of primary source is a medical license board -->
 			<coding>
-				<system value="http://hl7.org/fhir/primary-source-type"/>
+				<system value="http://terminology.hl7.org/CodeSystem/primary-source-type"/>
 				<code value="lic-board"/>
 				<display value="License Board"/>
 				<userSelected value="true"/>
@@ -88,8 +88,7 @@
 		<communicationMethod>
 			<!-- The method of validation with the primary source is manual, via email -->
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation-process"/>
-				<!-- code system hasn't been created yet, this is a placeholder -->
+				<system value="http://terminology.hl7.org/CodeSystem/verificationresult-communication-method"/>
 				<code value="manual"/>
 				<display value="Manual"/>
 			</coding>
@@ -139,14 +138,13 @@
 	<attestation>
 		<!-- Describes the entity that attested to the information being validated, George Washington  -->
 		<who>
-			<reference value="Practitioner/prac1"/>
+			<reference value="Practitioner/practitioner1"/>
 			<display value="George Washington"/>
 		</who>
 		<communicationMethod>
 			<!-- George Washington attested to the information himself -->
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/attestation-method"/>
-				<!-- code system hasn't been created yet, this is a placeholder -->
+				<system value="http://terminology.hl7.org/CodeSystem/verificationresult-communication-method"/>
 				<code value="owner"/>
 				<display value="Owner"/>
 				<userSelected value="true"/>
