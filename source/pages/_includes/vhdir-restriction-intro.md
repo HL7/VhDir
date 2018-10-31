@@ -6,7 +6,7 @@ The FHIR specification contains a security meta tag which can be used to inform 
 
 This implementation guide profiles the Consent resource to provide additional details about the nature of restrictions on content passed from the validated healthcare directory to downstream workflow environments. 
 
-Typically, the "restriction" resource will function as a [contained resource](https://www.hl7.org/fhir/references.html#contained).
+
 
 The restriction profile consists of the following elements:
 
@@ -38,7 +38,7 @@ Each Consent resource must have:
 
 **Profile specific implementation guidance:**
 
-- TBD
+This resource is expected to be a [contained resource](https://www.hl7.org/fhir/references.html#contained) in the resources whose content is restricted by it. Therefore, there are no restful interactions defined for this resource type.
 
 
 **Terminology**

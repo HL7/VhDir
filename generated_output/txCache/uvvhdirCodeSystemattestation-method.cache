@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/vhdir/CodeSystem/attestation-method",
+  "code" : "owner"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/vhdir/CodeSystem/attestation-method\" is not known; The code provided (http://hl7.org/fhir/uv/vhdir/CodeSystem/attestation-method#owner) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -1,140 +1,145 @@
-<HealthcareService  xmlns="http://hl7.org/fhir">
-
+<HealthcareService xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd-current/fhir-all.xsd">
 	<id value="ffcardiology"/>
 	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
-    </meta>
-
-    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"> <!-- When offered by providers participating in Patriot PPO, this service is accepting new patients -->
-        <extension url="acceptingPatients">
-            <valueBoolean value="true"/>
-        </extension>
-        <extension url="network">
-            <valueReference>
-                <reference value="Organization/patriotppo"/>
-                <display value="Patriot Preferred Provider Network"/>
-            </valueReference>
-        </extension>
-    </extension>
-
-    <identifier> <!-- Internal business ID for this service, assigned by Founding Fathers Memorial Hospital -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
-        <use value="secondary"/>
-        <type>
-            <coding>
-                <system value="http://example.org/identifiers"/>
-                <code value="BID"/>
-            </coding>
-            <text value="Business ID"/>
-        </type>
-        <system value="http://example.org/www.foundingfathersmemorial.com"/>
-        <value value="service001"/>
-        <assigner>
-            <reference value="Organization/foundingfathers"/>
-            <display value="Founding Fathers Memorial Hospital"/>
-        </assigner>
-    </identifier>
-
-    <active value="true"/> <!-- This record is active -->
-
-    <providedBy> <!-- This service is provided by Founding Fathers Memorial Hospital -->
-        <reference value="Organization/foundingfathers"/>
-        <display value="Founding Fathers Memorial Hospital"/>
-    </providedBy>
-
-    <category> <!-- This is a service provided at a hospital -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
-            <code value="35"/>
-            <display value="Hospital"/>
-        </coding>
-    </category>
-
-    <type> <!-- This is a cardiology service -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
-            <code value="165"/>
-            <display value="Cardiology"/>
-        </coding>
-    </type>
-
-    <specialty> <!-- Specialty for this service is cardiology -->
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="394579002"/>
-            <display value="Cardiology"/>
-        </coding>
-    </specialty>
-
-    <location> <!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
-        <reference value="Location/loc-ffmh-hvi"/>
-        <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
-    </location>
-
-    <name value="Founding Fathers Memorial Hospital Heart and Vascular Services"/> <!-- Name of the service -->
-
-    <comment value="Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research"/> <!-- additional information about the service -->
-
-	<telecom> <!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="Location/loc-ffmh-hvi"/>
-                <display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
-            </valueReference>
-        </extension>
-        <system value="fax" />
-        <value value="555 12345" />
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<!-- When offered by providers participating in Patriot PPO, this service is accepting new patients -->
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+	<identifier>
+		<!-- Internal business ID for this service, assigned by Founding Fathers Memorial Hospital -->
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://example.org/identifiers"/>
+				<code value="BID"/>
+			</coding>
+			<text value="Business ID"/>
+		</type>
+		<system value="http://example.org/www.foundingfathersmemorial.com"/>
+		<value value="service001"/>
+		<assigner>
+			<reference value="Organization/foundingfathers"/>
+			<display value="Founding Fathers Memorial Hospital"/>
+		</assigner>
+	</identifier>
+	<active value="true"/>
+	<!-- This record is active -->
+	<providedBy>
+		<!-- This service is provided by Founding Fathers Memorial Hospital -->
+		<reference value="Organization/foundingfathers"/>
+		<display value="Founding Fathers Memorial Hospital"/>
+	</providedBy>
+	<category>
+		<!-- This is a service provided at a hospital -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+			<code value="35"/>
+			<display value="Hospital"/>
+		</coding>
+	</category>
+	<type>
+		<!-- This is a cardiology service -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+			<code value="165"/>
+			<display value="Cardiology"/>
+		</coding>
+	</type>
+	<specialty>
+		<!-- Specialty for this service is cardiology -->
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="394579002"/>
+			<display value="Cardiology"/>
+		</coding>
+	</specialty>
+	<location>
+		<!-- A reference to the location resource of the Heart and Vascular Institute at Founding Fathers Memorial Hospital -->
+		<reference value="Location/loc-ffmh-hvi"/>
+		<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+	</location>
+	<name value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
+	<!-- Name of the service -->
+	<comment value="Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research"/>
+	<!-- additional information about the service -->
+	<telecom>
+		<!-- Contact information is available via the resource for the Founding Fathers Heart and Vascular Institute -->
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+		<system value="fax"/>
+		<value value="555 12345"/>
 	</telecom>
-
-    <serviceProvisionCode> <!-- Fees apply for this service -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
-            <code value="cost"/>
-            <display value="Fees apply"/>
-        </coding>
-    </serviceProvisionCode>
-
-    <eligibility> <!-- There are no eligibility requirements for this service -->
-        <text value="None"/>
-    </eligibility>
-
-    <eligibilityNote value="No specific eligibility requirements"/>
-
-    <referralMethod> <!-- this service accepts referrals via phone -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
-            <code value="phone"/>
-            <display value="phone"/>
-        </coding>
-    </referralMethod>
-    <referralMethod> <!-- and via fax -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
-            <code value="fax"/>
-            <display value="Fax"/>
-        </coding>
-    </referralMethod>
-
-    <appointmentRequired value="true"/> <!-- An appointment is required for this service -->
-
-    <availableTime> <!-- This service is available Mon-Fri, 8:00 am - 6:00 pm -->
-        <daysOfWeek value="mon"/>
-        <daysOfWeek value="tue"/>
-        <daysOfWeek value="wed"/>
-        <daysOfWeek value="thu"/>
-        <daysOfWeek value="fri"/>
-        <allDay value="false"/>
-        <availableStartTime value="08:00:00"/>
-        <availableEndTime value="18:00:00"/>
-    </availableTime>
-
-    <availabilityExceptions value="No interventional cardiac procedures are scheduled on Wednesdays"/> <!-- Additional information about when the service is available -->
-
-    <endpoint> <!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
-        <reference value="Endpoint/direct321"/>
-        <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
-    </endpoint>
-
+	<serviceProvisionCode>
+		<!-- Fees apply for this service -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
+			<code value="cost"/>
+			<display value="Fees apply"/>
+		</coding>
+	</serviceProvisionCode>
+	
+<!--	
+	<eligibility>
+	<code>
+-->	
+		<!-- There are no eligibility requirements for this service -->
+<!--
+		<text value="None"/></code>
+		<comment value="No specific eligibility requirements"/>
+	</eligibility>
+-->
+	
+	<referralMethod>
+		<!-- this service accepts referrals via phone -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
+			<code value="phone"/>
+			<display value="phone"/>
+		</coding>
+	</referralMethod>
+	<referralMethod>
+		<!-- and via fax -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
+			<code value="fax"/>
+			<display value="Fax"/>
+		</coding>
+	</referralMethod>
+	<appointmentRequired value="true"/>
+	<!-- An appointment is required for this service -->
+	<availableTime>
+		<!-- This service is available Mon-Fri, 8:00 am - 6:00 pm -->
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<daysOfWeek value="fri"/>
+		<allDay value="false"/>
+		<availableStartTime value="08:00:00"/>
+		<availableEndTime value="18:00:00"/>
+	</availableTime>
+	<availabilityExceptions value="No interventional cardiac procedures are scheduled on Wednesdays"/>
+	<!-- Additional information about when the service is available -->
+	<endpoint>
+		<!-- A reference to a Direct address used by providers at the Founding Fathers Heart and Vascular Institute -->
+		<reference value="Endpoint/direct321"/>
+		<display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
+	</endpoint>
 </HealthcareService>

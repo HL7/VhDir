@@ -18,7 +18,7 @@ TBD
 
 The following are example uses for the vhdir-validation profile:
 
--  [Validation of a practitioner's medical license](VerificationResult-license.html)
+-  [Validation of a practitioner's medical license](VerificationResult-example-license.html)
 
 
 **Mandatory Data Elements**

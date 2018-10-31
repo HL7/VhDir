@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd-current/fhir-all.xsd">
 	<id value="practitioner-qualification"/>
 	<meta>
 		<lastUpdated value="2017-12-08T19:34:42.049-05:00"/>
@@ -64,6 +64,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
 			</binding>
 		</element>
+		
+		
 		<element id="Extension.extension:whereValid">
 			<path value="Extension.extension"/>
 			<sliceName value="whereValid"/>
@@ -71,7 +73,13 @@
 			<short value="Where the qualification is valid"/>
 			<definition value="Indicates where this qualification is valid"/>
 			<max value="1"/>
+			<binding>
+				<strength value="example"></strength>
+				<valueSet value="http://hl7.org/fhir/us/core-r4/ValueSet/us-core-usps-state"></valueSet>
+			</binding>
 		</element>
+		
+		
 		<element id="Extension.extension:whereValid.url">
 			<path value="Extension.extension.url"/>
 			<fixedUri value="whereValid"/>

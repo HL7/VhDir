@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
 	<name value="VhdirHealthcareService"/>
-	<title value="VhDir Healthcareservice"/>
+	<title value="VhDir Healthcare Service"/>
 	<status value="active"/>
 	<date value="2017-10-17T10:21:21.817-04:00"/>
 	<publisher value="HL7 International"/>

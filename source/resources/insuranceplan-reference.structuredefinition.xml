@@ -3,7 +3,7 @@
 	<id value="insuranceplan-reference"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference"/>
 	<name value="InsurancePlanReference"/>
-	<title value="VhDir Product Plan Reference"/>
+	<title value="VhDir Insurance Plan Reference"/>
 	<status value="active"/>
 	<description value="A reference to the insurancePlan resource"/>
 	<fhirVersion value="3.5.0"/>
@@ -29,8 +29,8 @@
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
 			<sliceName value="valueReference"/>
-			<short value="Endpoint reference"/>
-			<definition value="A reference to the insurancePlan"/>
+			<short value="A reference to the insurance plan"/>
+			<definition value="A reference to the insurance plan"/>
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>

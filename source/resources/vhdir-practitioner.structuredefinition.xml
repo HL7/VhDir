@@ -85,6 +85,7 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
+		
 		<element id="Practitioner.identifier.extension:status">
 			<path value="Practitioner.identifier.extension"/>
 			<sliceName value="status"/>
@@ -96,6 +97,7 @@
 				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
 			</type>
 		</element>
+		
 		<element id="Practitioner.identifier.assigner">
 			<path value="Practitioner.identifier.assigner"/>
 			<type>
@@ -190,6 +192,7 @@
 		<element id="Practitioner.qualification">
 			<path value="Practitioner.qualification"/>
 		</element>
+		
 		<element id="Practitioner.qualification.extension">
 			<path value="Practitioner.qualification.extension"/>
 			<slicing>
@@ -200,6 +203,7 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
+		
 		<element id="Practitioner.qualification.extension:practitioner-qualification">
 			<path value="Practitioner.qualification.extension"/>
 			<sliceName value="practitioner-qualification"/>
@@ -212,6 +216,36 @@
 				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"/>
 			</type>
 		</element>
+		
+		
+		<element id="Practitioner.qualification.identifier">
+			<path value="Practitioner.qualification.identifier"/>
+		</element>		
+		
+		<element id="Practitioner.qualification.identifier.extension">
+			<path value="Practitioner.qualification.identifier.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		
+			<element id="Practitioner.qualification.identifier.extension:status">
+			<path value="Practitioner.qualification.identifier.extension"/>
+			<sliceName value="status"/>
+			<label value="status"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"/>
+			</type>
+		</element>
+
+		
 		<element id="Practitioner.qualification.issuer">
 			<path value="Practitioner.qualification.issuer"/>
 			<min value="1"/>
@@ -220,6 +254,8 @@
 				<targetProfile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
 			</type>
 		</element>
+		
+		
 		<element id="Practitioner.communication">
 			<path value="Practitioner.communication"/>
 		</element>

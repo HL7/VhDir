@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam"/>
 	<name value="VhdirCareTeam"/>
-	<title value="VhDir Careteam"/>
+	<title value="VhDir Care Team"/>
 	<status value="active"/>
 	<date value="2017-10-17T14:22:04.374-04:00"/>
 	<publisher value="HL7 International"/>

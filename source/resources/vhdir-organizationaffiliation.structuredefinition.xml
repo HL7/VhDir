@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
 	<name value="VhdirOrganizationAffiliation"/>
-	<title value="VhDir OrganizationAffiliation"/>
+	<title value="VhDir Organization Affiliation"/>
 	<status value="active"/>
 	<date value="2017-12-08T15:32:24.796-05:00"/>
 	<description value="Details about the role a participating organization plays in relation to a primary organization"/>

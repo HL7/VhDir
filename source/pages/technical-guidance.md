@@ -55,7 +55,7 @@ Each of these scenarios may encompass different sets of “permitted” data. Fo
   * Information represented using the Organization, PractitionerRole, OrganizationRole, HealthcareService, CareTeam, Location, and Endpoint profiles
   * In cases where individual practitioners operate as solo practitioners without a relationship to a legal organization, implementers should consider representing the individual using both a Practitioner and Organization resource and assigning the “organization” rights to the individual.
 * A payer organization (through an authorized representative) may attest to its own demographic information (e.g. name, address, contact info, etc.), services, locations, care teams, other organizations, health insurance provider networks and products/plans it owns/manages, and its relationships with other organizations and providers.
-  * Information represented as Organization, OrganizationRole, HealthcareService, CareTeam, Location, Endpoint, Network, and ProductPlan profiles
+  * Information represented as Organization, OrganizationRole, HealthcareService, CareTeam, Location, Endpoint, Network, and InsurancePlan profiles
 * An authorized intermediary may submit attested data on behalf of any of the previously described stakeholders. An intermediary should not submit data that has not been attested to, such as data that has been “scraped” from public sources. An example of an intermediary could be a state directory that collects information from providers in its jurisdiction, and then passes that information to a national directory.
 
 Additionally, implementers may set requirements for the minimum amount of data different groups of stakeholders must attest to. For example, a US implementation might require all licensed providers to attest to their National Provider Identifier (NPI). In general, implementers might specify different minimum attestation requirements across three classes of stakeholders:
@@ -100,7 +100,7 @@ Implementations relying on individual API interactions or batch Bundles may have
 3.	Practitioner
 4.	Location
 5.	Network
-6.	ProductPlan
+6.	InsurancePlan
 7.	healthcareService
 8.	organizationRole
 9.	practitionerRole

@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
 	<name value="VhdirPractitionerRole"/>
-	<title value="VhDir Practitionerrole"/>
+	<title value="VhDir Practitioner Role"/>
 	<status value="active"/>
 	<date value="2017-10-03T23:59:49.231+11:00"/>
 	<fhirVersion value="3.5.0"/>

@@ -3,7 +3,7 @@
 	<id value="valueset-insuranceplan-type"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplan-type"/>
 	<name value="VhDirInsurancePlanType"/>
-	<title value="VhDir Product Plan Type"/>
+	<title value="VhDir Insurance Plan Type"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
@@ -13,7 +13,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="This value set defines a set of codes that indicate the type of a product plan."/>
+	<description value="This value set defines a set of codes that indicate the type of a insurance plan."/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>

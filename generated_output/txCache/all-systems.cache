@@ -1,4 +1,5 @@
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "xml"
 }, "valueSet" :{
@@ -15,6 +16,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "json"
 }, "valueSet" :{
@@ -31,6 +33,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "medical"
 }, "valueSet" :null}####
@@ -40,6 +43,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#medical) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "001"
 }, "valueSet" :null}####
@@ -49,6 +53,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#001) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "dental"
 }, "valueSet" :null}####
@@ -58,6 +63,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#dental) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "052"
 }, "valueSet" :null}####
@@ -67,6 +73,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#052) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "bronze"
 }, "valueSet" :null}####
@@ -76,6 +83,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#bronze) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "deductible"
 }, "valueSet" :null}####
@@ -85,6 +93,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#deductible) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "copay"
 }, "valueSet" :null}####
@@ -94,6 +103,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#copay) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "coinsurance"
 }, "valueSet" :null}####
@@ -103,6 +113,7 @@ v: {
   "error" : "The code system \"\" is not known; The code provided (#coinsurance) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "application/geo+json"
 }, "valueSet" :{
@@ -119,6 +130,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "USD"
 }, "valueSet" :{
@@ -135,6 +147,7 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "code" : "application/hl7-v3+xml"
 }, "valueSet" :{
@@ -147,6 +160,106 @@ v: {
 }}####
 v: {
   "display" : "application/hl7-v3+xml",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "a"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "second"
+        }],
+        "code" : "s",
+        "display" : "second",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "秒"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "minute"
+        }],
+        "code" : "min",
+        "display" : "minute",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "分钟"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "hour"
+        }],
+        "code" : "h",
+        "display" : "hour",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "小时"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "day"
+        }],
+        "code" : "d",
+        "display" : "day",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "天"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "week"
+        }],
+        "code" : "wk",
+        "display" : "week",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "星期"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "month"
+        }],
+        "code" : "mo",
+        "display" : "month",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "月"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "year"
+        }],
+        "code" : "a",
+        "display" : "year",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "年"
+        }]
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "year",
   "severity" : null,
   "error" : ""
 }
