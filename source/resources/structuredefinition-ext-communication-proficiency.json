@@ -1,0 +1,57 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Practitioner.communication",
+            "type": "element"
+        }
+    ],
+    "date": "2017-11-13T14:08:36.93-05:00",
+    "derivation": "constraint",
+    "description": "Level of proficiency",
+    "differential": {
+        "element": [
+            {
+                "definition": "Level of proficiency",
+                "id": "Extension",
+                "max": "1",
+                "path": "Extension",
+                "short": "Proficiency"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-languageproficiency"
+                },
+                "definition": "Level of proficiency",
+                "id": "Extension.valueCodeableConcept:valueCodeableConcept",
+                "label": "proficiency",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.valueCodeableConcept",
+                "short": "Proficiency",
+                "sliceName": "valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "communication-proficiency",
+    "kind": "complex-type",
+    "name": "CommunicationProficiency",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Communication Proficiency",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
+}

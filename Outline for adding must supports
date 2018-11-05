@@ -1,0 +1,25 @@
+1. use json with python models
+2. add in must support for
+  all existing elements and add in element with only must supports 
+    excluding the root,  extension/ modifierextension roots, id and elements inherited from Resource and domainresource and extension descendent.
+    
+generated white lists using snapshot
+
+create blacklist
+
+['id','meta','implicitRules','language','text']
+
+
+
+li = [0, 1, 2, 3]
+
+running = True
+while running:
+    for idx, elem in enumerate(li):
+        thiselem = elem
+        nextelem = li[(idx + 1) % len(li)]
+
+
+3 compare snapshot to root element ids to make a list to add to diff
+
+make sure the python model is valid and up to date for R4  - can't do primitives extesnsions  check if there are any.

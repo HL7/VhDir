@@ -1,0 +1,120 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Endpoint",
+            "type": "element"
+        }
+    ],
+    "date": "2017-12-05T09:40:52.923-05:00",
+    "derivation": "constraint",
+    "description": "An enumeration of specific use cases (service descriptions) supported by the endpoint",
+    "differential": {
+        "element": [
+            {
+                "definition": "An enumeration of specific use cases (service descriptions) supported by the endpoint",
+                "id": "Extension",
+                "path": "Extension",
+                "short": "Use case"
+            },
+            {
+                "id": "Extension.extension",
+                "mustSupport": false,
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Type of services supported by this endpoint",
+                "id": "Extension.extension:type",
+                "label": "type",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Type",
+                "sliceName": "type"
+            },
+            {
+                "fixedUri": "type",
+                "id": "Extension.extension:type.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype"
+                },
+                "definition": "Type of services supported by this endpoint",
+                "id": "Extension.extension:type.valueCodeableConcept:valueCodeableConcept",
+                "label": "type",
+                "min": 1,
+                "path": "Extension.extension.valueCodeableConcept",
+                "short": "Type",
+                "sliceName": "valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "definition": "URI to the published standard (e.g. HL7 implementation guide)",
+                "id": "Extension.extension:standard",
+                "label": "standard",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Standard",
+                "sliceName": "standard"
+            },
+            {
+                "fixedUri": "standard",
+                "id": "Extension.extension:standard.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "URI to the published standard (e.g. HL7 implementation guide)",
+                "id": "Extension.extension:standard.valueUri:valueUri",
+                "label": "standard",
+                "min": 1,
+                "path": "Extension.extension.valueUri",
+                "short": "Standard",
+                "sliceName": "valueUri",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ]
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "id": "Extension.value[x]",
+                "max": "0",
+                "mustSupport": true,
+                "path": "Extension.value[x]"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "endpoint-usecase",
+    "kind": "complex-type",
+    "name": "EndpointUsecase",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Endpoint Usecase",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase"
+}

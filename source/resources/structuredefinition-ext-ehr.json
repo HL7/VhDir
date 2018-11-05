@@ -1,0 +1,238 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Location",
+            "type": "element"
+        }
+    ],
+    "date": "2017-11-13T14:19:15.411-05:00",
+    "derivation": "constraint",
+    "description": "Information about the EHR system/module used at a location",
+    "differential": {
+        "element": [
+            {
+                "definition": "Information about the EHR system/module used at a location",
+                "id": "Extension",
+                "path": "Extension",
+                "short": "EHR"
+            },
+            {
+                "id": "Extension.extension",
+                "mustSupport": false,
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "The developer of the EHR product",
+                "id": "Extension.extension:developer",
+                "label": "developer",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Developer",
+                "sliceName": "developer"
+            },
+            {
+                "fixedUri": "developer",
+                "id": "Extension.extension:developer.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "The developer of the EHR product",
+                "id": "Extension.extension:developer.valueString:valueString",
+                "label": "developer",
+                "min": 1,
+                "path": "Extension.extension.valueString",
+                "short": "Developer",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "definition": "The name of the EHR product",
+                "id": "Extension.extension:product",
+                "label": "product",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Product",
+                "sliceName": "product"
+            },
+            {
+                "fixedUri": "product",
+                "id": "Extension.extension:product.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "The name of the EHR product",
+                "id": "Extension.extension:product.valueString:valueString",
+                "label": "product",
+                "min": 1,
+                "path": "Extension.extension.valueString",
+                "short": "Product",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "definition": "Version of the EHR product",
+                "id": "Extension.extension:version",
+                "label": "version",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "version",
+                "sliceName": "version"
+            },
+            {
+                "fixedUri": "version",
+                "id": "Extension.extension:version.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Version of the EHR product",
+                "id": "Extension.extension:version.valueString:valueString",
+                "label": "version",
+                "min": 1,
+                "path": "Extension.extension.valueString",
+                "short": "Version",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "definition": "Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)",
+                "id": "Extension.extension:certificationEdition",
+                "label": "certificationEdition",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Certification edition",
+                "sliceName": "certificationEdition"
+            },
+            {
+                "fixedUri": "certificationEdition",
+                "id": "Extension.extension:certificationEdition.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-certificationedition"
+                },
+                "definition": "Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)",
+                "id": "Extension.extension:certificationEdition.valueCoding:valueCoding",
+                "label": "certificationEdition",
+                "min": 1,
+                "path": "Extension.extension.valueCoding",
+                "short": "Certification edition",
+                "sliceName": "valueCoding",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "definition": "Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it",
+                "id": "Extension.extension:patientAccess",
+                "label": "patientAccess",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Patient acccess",
+                "sliceName": "patientAccess"
+            },
+            {
+                "fixedUri": "patientAccess",
+                "id": "Extension.extension:patientAccess.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-patientaccess"
+                },
+                "definition": "Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it",
+                "id": "Extension.extension:patientAccess.valueCodeableConcept:valueCodeableConcept",
+                "label": "patientAccess",
+                "min": 1,
+                "path": "Extension.extension.valueCodeableConcept",
+                "short": "Patient access",
+                "sliceName": "valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "definition": "Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product",
+                "id": "Extension.extension:certificationID",
+                "label": "certificationID",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Certification ID",
+                "sliceName": "certificationID"
+            },
+            {
+                "fixedUri": "certificationID",
+                "id": "Extension.extension:certificationID.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product",
+                "id": "Extension.extension:certificationID.valueString:valueString",
+                "label": "certificationID",
+                "min": 1,
+                "path": "Extension.extension.valueString",
+                "short": "Certification ID",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "id": "Extension.value[x]",
+                "max": "0",
+                "mustSupport": true,
+                "path": "Extension.value[x]"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "ehr",
+    "kind": "complex-type",
+    "name": "EHR",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Ehr",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr"
+}

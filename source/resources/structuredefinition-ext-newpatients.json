@@ -1,0 +1,127 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "PractitionerRole",
+            "type": "element"
+        },
+        {
+            "expression": "Location",
+            "type": "element"
+        },
+        {
+            "expression": "HealthcareService",
+            "type": "element"
+        }
+    ],
+    "date": "2017-11-13T13:53:06.585-05:00",
+    "derivation": "constraint",
+    "description": "An indication of whether a location, service, or practitioner is accepting new patients",
+    "differential": {
+        "element": [
+            {
+                "definition": "An indication of whether a location, service, or practitioner is accepting new patients",
+                "id": "Extension",
+                "path": "Extension",
+                "short": "New patients"
+            },
+            {
+                "id": "Extension.extension",
+                "mustSupport": false,
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Whether the practitioner/service/location is accepting new patients",
+                "id": "Extension.extension:acceptingPatients",
+                "label": "acceptingPatients",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Accepting patients",
+                "sliceName": "acceptingPatients"
+            },
+            {
+                "fixedUri": "acceptingPatients",
+                "id": "Extension.extension:acceptingPatients.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Whether the practitioner/service/location is accepting new patients",
+                "id": "Extension.extension:acceptingPatients.valueBoolean:valueBoolean",
+                "label": "acceptingPatients",
+                "min": 1,
+                "path": "Extension.extension.valueBoolean",
+                "short": "Accepting patients",
+                "sliceName": "valueBoolean",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "definition": "The healthcare provider insurance network for which the practitioner/service/location is accepting new patients.",
+                "id": "Extension.extension:network",
+                "label": "network",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Network",
+                "sliceName": "network"
+            },
+            {
+                "fixedUri": "network",
+                "id": "Extension.extension:network.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "The healthcare provider insurance network for which the practitioner/service/location is accepting new patients.",
+                "id": "Extension.extension:network.valueReference:valueReference",
+                "label": "network",
+                "min": 1,
+                "path": "Extension.extension.valueReference",
+                "short": "network",
+                "sliceName": "valueReference",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+                        ]
+                    }
+                ]
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "id": "Extension.value[x]",
+                "max": "0",
+                "mustSupport": true,
+                "path": "Extension.value[x]"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "newpatients",
+    "kind": "complex-type",
+    "name": "NewPatients",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Newpatients",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"
+}

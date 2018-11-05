@@ -47,7 +47,7 @@
       "base": "SearchParameter-searchparameter-location-endpoint.html"
     },
     "StructureDefinition/vhdir-endpoint": {
-      "source": "vhdir-endpoint.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-endpoint.json",
       "base": "StructureDefinition-vhdir-endpoint.html",
       "defns": "StructureDefinition-vhdir-endpoint-definitions.html"
     },
@@ -76,7 +76,7 @@
       "base": "SearchParameter-searchparameter-organizationaffiliation-location.html"
     },
     "StructureDefinition/digitalcertificate": {
-      "source": "digitalcertificate.structuredefinition.xml",
+      "source": "structuredefinition-ext-digitalcertificate.json",
       "base": "StructureDefinition-digitalcertificate.html",
       "defns": "StructureDefinition-digitalcertificate-definitions.html"
     },
@@ -85,7 +85,7 @@
       "base": "Organization-patriotppo.html"
     },
     "StructureDefinition/org-alias-period": {
-      "source": "org-alias-period.structuredefinition.xml",
+      "source": "structuredefinition-ext-org-alias-period.json",
       "base": "StructureDefinition-org-alias-period.html",
       "defns": "StructureDefinition-org-alias-period-definitions.html"
     },
@@ -142,7 +142,7 @@
       "base": "SearchParameter-searchparameter-organization-type.html"
     },
     "StructureDefinition/network-reference": {
-      "source": "network-reference.structuredefinition.xml",
+      "source": "structuredefinition-ext-network-reference.json",
       "base": "StructureDefinition-network-reference.html",
       "defns": "StructureDefinition-network-reference-definitions.html"
     },
@@ -167,7 +167,7 @@
       "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"
     },
     "StructureDefinition/accessibility": {
-      "source": "accessibility.structuredefinition.xml",
+      "source": "structuredefinition-ext-accessibility.json",
       "base": "StructureDefinition-accessibility.html",
       "defns": "StructureDefinition-accessibility-definitions.html"
     },
@@ -252,12 +252,12 @@
       "base": "SearchParameter-searchparameter-organization-address-city.html"
     },
     "StructureDefinition/usage-restriction": {
-      "source": "usage-restriction.structuredefinition.xml",
+      "source": "structuredefinition-ext-usage-restriction.json",
       "base": "StructureDefinition-usage-restriction.html",
       "defns": "StructureDefinition-usage-restriction-definitions.html"
     },
     "StructureDefinition/contactpoint-viaintermediary": {
-      "source": "contactpoint-viaintermediary.structuredefinition.xml",
+      "source": "structuredefinition-ext-contactpoint-viaintermediary.json",
       "base": "StructureDefinition-contactpoint-viaintermediary.html",
       "defns": "StructureDefinition-contactpoint-viaintermediary-definitions.html"
     },
@@ -270,7 +270,7 @@
       "base": "SearchParameter-searchparameter-practitioner-family-name.html"
     },
     "StructureDefinition/practitioner-qualification": {
-      "source": "practitioner-qualification.structuredefinition.xml",
+      "source": "structuredefinition-ext-practitioner-qualification.json",
       "base": "StructureDefinition-practitioner-qualification.html",
       "defns": "StructureDefinition-practitioner-qualification-definitions.html"
     },
@@ -283,12 +283,12 @@
       "base": "SearchParameter-searchparameter-location-accessibility.html"
     },
     "StructureDefinition/newpatients": {
-      "source": "newpatients.structuredefinition.xml",
+      "source": "structuredefinition-ext-newpatients.json",
       "base": "StructureDefinition-newpatients.html",
       "defns": "StructureDefinition-newpatients-definitions.html"
     },
     "StructureDefinition/identifier-status": {
-      "source": "identifier-status-structuredefinition.xml",
+      "source": "structuredefinition-ext-identifier-status.json",
       "base": "StructureDefinition-identifier-status.html",
       "defns": "StructureDefinition-identifier-status-definitions.html"
     },
@@ -297,7 +297,7 @@
       "base": "SearchParameter-searchparameter-insuranceplan-coverage-network.html"
     },
     "StructureDefinition/endpoint-usecase": {
-      "source": "endpoint-usecase.structuredefinition.xml",
+      "source": "structuredefinition-ext-endpoint-usecase.json",
       "base": "StructureDefinition-endpoint-usecase.html",
       "defns": "StructureDefinition-endpoint-usecase-definitions.html"
     },
@@ -318,7 +318,7 @@
       "base": "ValueSet-valueset-limit-unit.html"
     },
     "StructureDefinition/vhdir-restriction": {
-      "source": "vhdir-restriction.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-restriction.json",
       "base": "StructureDefinition-vhdir-restriction.html",
       "defns": "StructureDefinition-vhdir-restriction-definitions.html"
     },
@@ -387,7 +387,7 @@
       "base": "ValueSet-valueset-coverage-type.html"
     },
     "StructureDefinition/org-description": {
-      "source": "org-description.structuredefinition.xml",
+      "source": "structuredefinition-ext-org-description.json",
       "base": "StructureDefinition-org-description.html",
       "defns": "StructureDefinition-org-description-definitions.html"
     },
@@ -436,7 +436,7 @@
       "base": "SearchParameter-searchparameter-organization-partof.html"
     },
     "StructureDefinition/vhdir-location": {
-      "source": "vhdir-location.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-location.json",
       "base": "StructureDefinition-vhdir-location.html",
       "defns": "StructureDefinition-vhdir-location-definitions.html"
     },
@@ -541,7 +541,7 @@
       "base": "SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html"
     },
     "StructureDefinition/vhdir-practitioner": {
-      "source": "vhdir-practitioner.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-practitioner.json",
       "base": "StructureDefinition-vhdir-practitioner.html",
       "defns": "StructureDefinition-vhdir-practitioner-definitions.html"
     },
@@ -570,7 +570,7 @@
       "base": "ValueSet-valueset-identifier-type.html"
     },
     "StructureDefinition/newpatientprofile": {
-      "source": "newpatientprofile.structuredefinition.xml",
+      "source": "structuredefinition-ext-newpatientprofile.json",
       "base": "StructureDefinition-newpatientprofile.html",
       "defns": "StructureDefinition-newpatientprofile-definitions.html"
     },
@@ -579,7 +579,7 @@
       "base": "Endpoint-direct321.html"
     },
     "StructureDefinition/location-reference": {
-      "source": "location-reference.structuredefinition.xml",
+      "source": "structuredefinition-ext-location-reference.json",
       "base": "StructureDefinition-location-reference.html",
       "defns": "StructureDefinition-location-reference-definitions.html"
     },
@@ -604,7 +604,7 @@
       "base": "CodeSystem-codesystem-insuranceplan.html"
     },
     "StructureDefinition/org-alias-type": {
-      "source": "org-alias-type.structuredefinition.xml",
+      "source": "structuredefinition-ext-org-alias-type.json",
       "base": "StructureDefinition-org-alias-type.html",
       "defns": "StructureDefinition-org-alias-type-definitions.html"
     },
@@ -621,7 +621,7 @@
       "base": "SearchParameter-searchparameter-insuranceplan-general-cost-value.html"
     },
     "StructureDefinition/vhdir-validation": {
-      "source": "vhdir-validation.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-validation.json",
       "base": "StructureDefinition-vhdir-validation.html",
       "defns": "StructureDefinition-vhdir-validation-definitions.html"
     },
@@ -646,17 +646,17 @@
       "base": "Bundle-womens-shelter.html"
     },
     "StructureDefinition/vhdir-insuranceplan": {
-      "source": "vhdir-insuranceplan.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-insuranceplan.json",
       "base": "StructureDefinition-vhdir-insuranceplan.html",
       "defns": "StructureDefinition-vhdir-insuranceplan-definitions.html"
     },
     "StructureDefinition/qualification": {
-      "source": "qualification.structuredefinition.xml",
+      "source": "structuredefinition-ext-qualification.json",
       "base": "StructureDefinition-qualification.html",
       "defns": "StructureDefinition-qualification-definitions.html"
     },
     "StructureDefinition/communication-proficiency": {
-      "source": "communication-proficiency.structuredefinition.xml",
+      "source": "structuredefinition-ext-communication-proficiency.json",
       "base": "StructureDefinition-communication-proficiency.html",
       "defns": "StructureDefinition-communication-proficiency-definitions.html"
     },
@@ -693,7 +693,7 @@
       "base": "Location-loc-ffmh.html"
     },
     "StructureDefinition/vhdir-careteam": {
-      "source": "vhdir-careteam.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-careteam.json",
       "base": "StructureDefinition-vhdir-careteam.html",
       "defns": "StructureDefinition-vhdir-careteam-definitions.html"
     },
@@ -726,7 +726,7 @@
       "base": "Organization-independencerehab.html"
     },
     "StructureDefinition/vhdir-network": {
-      "source": "vhdir-network.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-network.json",
       "base": "StructureDefinition-vhdir-network.html",
       "defns": "StructureDefinition-vhdir-network-definitions.html"
     },
@@ -743,7 +743,7 @@
       "base": "SearchParameter-searchparameter-location-identifier.html"
     },
     "StructureDefinition/endpoint-rank": {
-      "source": "endpoint-rank.structuredefinition.xml",
+      "source": "structuredefinition-ext-endpoint-rank.json",
       "base": "StructureDefinition-endpoint-rank.html",
       "defns": "StructureDefinition-endpoint-rank-definitions.html"
     },
@@ -784,12 +784,12 @@
       "base": "SearchParameter-searchparameter-organization-identifier.html"
     },
     "StructureDefinition/endpoint-reference": {
-      "source": "endpoint-reference.structuredefinition.xml",
+      "source": "structuredefinition-ext-endpoint-reference.json",
       "base": "StructureDefinition-endpoint-reference.html",
       "defns": "StructureDefinition-endpoint-reference-definitions.html"
     },
     "StructureDefinition/contactpoint-availabletime": {
-      "source": "contactpoint-availabletime.structuredefinition.xml",
+      "source": "structuredefinition-ext-contactpoint-availabletime.json",
       "base": "StructureDefinition-contactpoint-availabletime.html",
       "defns": "StructureDefinition-contactpoint-availabletime-definitions.html"
     },
@@ -818,7 +818,7 @@
       "base": "Location-wash-dc-metro.html"
     },
     "StructureDefinition/insuranceplan-reference": {
-      "source": "insuranceplan-reference.structuredefinition.xml",
+      "source": "structuredefinition-ext-insuranceplan-reference.json",
       "base": "StructureDefinition-insuranceplan-reference.html",
       "defns": "StructureDefinition-insuranceplan-reference-definitions.html"
     },
@@ -859,7 +859,7 @@
       "base": "ValueSet-valueset-network-type.html"
     },
     "StructureDefinition/vhdir-organization": {
-      "source": "vhdir-organization.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-organization.json",
       "base": "StructureDefinition-vhdir-organization.html",
       "defns": "StructureDefinition-vhdir-organization-definitions.html"
     },
@@ -896,7 +896,7 @@
       "base": "SearchParameter-searchparameter-insuranceplan-coverage-type.html"
     },
     "StructureDefinition/healthcareservice-reference": {
-      "source": "healthcareservice-reference.structuredefinition.xml",
+      "source": "structuredefinition-ext-healthcareservice-reference.json",
       "base": "StructureDefinition-healthcareservice-reference.html",
       "defns": "StructureDefinition-healthcareservice-reference-definitions.html"
     },
@@ -977,7 +977,7 @@
       "base": "ValueSet-valueset-digitalcertificatetrustframework.html"
     },
     "StructureDefinition/vhdir-organizationaffiliation": {
-      "source": "vhdir-organizationaffiliation.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-organizationaffiliation.json",
       "base": "StructureDefinition-vhdir-organizationaffiliation.html",
       "defns": "StructureDefinition-vhdir-organizationaffiliation-definitions.html"
     },
@@ -1006,7 +1006,7 @@
       "base": "SearchParameter-searchparameter-location-new-patient.html"
     },
     "StructureDefinition/vhdir-practitionerrole": {
-      "source": "vhdir-practitionerrole.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-practitionerrole.json",
       "base": "StructureDefinition-vhdir-practitionerrole.html",
       "defns": "StructureDefinition-vhdir-practitionerrole-definitions.html"
     },
@@ -1027,7 +1027,7 @@
       "base": "SearchParameter-searchparameter-insuranceplan-status.html"
     },
     "StructureDefinition/careteam-alias": {
-      "source": "careteam-alias.structuredefinition.xml",
+      "source": "structuredefinition-ext-careteam-alias.json",
       "base": "StructureDefinition-careteam-alias.html",
       "defns": "StructureDefinition-careteam-alias-definitions.html"
     },
@@ -1036,7 +1036,7 @@
       "base": "SearchParameter-searchparameter-healthcareservice-specialty.html"
     },
     "StructureDefinition/vhdir-healthcareservice": {
-      "source": "vhdir-healthcareservice.structuredefinition.xml",
+      "source": "structuredefinition-profile-vhdir-healthcareservice.json",
       "base": "StructureDefinition-vhdir-healthcareservice.html",
       "defns": "StructureDefinition-vhdir-healthcareservice-definitions.html"
     },
@@ -1065,7 +1065,7 @@
     },
 
     "StructureDefinition/ehr": {
-      "source": "ehr.structuredefinition.xml",
+      "source": "structuredefinition-ext-ehr.json",
       "base": "StructureDefinition-ehr.html",
       "defns": "StructureDefinition-ehr-definitions.html"
     },

@@ -1,0 +1,591 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+    "copyright": "HL7 International",
+    "date": "2017-09-05T15:29:34.562-05:00",
+    "derivation": "constraint",
+    "description": "Defines the basic constraints and extensions on the Practitioner resource for use in a Validated Healthcare Directory",
+    "differential": {
+        "element": [
+            {
+                "id": "Practitioner",
+                "path": "Practitioner"
+            },
+            {
+                "id": "Practitioner.extension",
+                "mustSupport": false,
+                "path": "Practitioner.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties",
+                "id": "Practitioner.extension:restriction",
+                "max": "*",
+                "min": 0,
+                "mustSupport": true,
+                "path": "Practitioner.extension",
+                "short": "Restriction",
+                "sliceName": "restriction",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.extension:endpoint",
+                "label": "endpoint",
+                "max": "*",
+                "min": 0,
+                "mustSupport": true,
+                "path": "Practitioner.extension",
+                "short": "Reference to endpoint(s) unique to the practitioner",
+                "sliceName": "endpoint",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.extension:accessibility",
+                "mustSupport": true,
+                "path": "Practitioner.extension",
+                "sliceName": "accessibility",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.modifierExtension",
+                "mustSupport": true,
+                "path": "Practitioner.modifierExtension"
+            },
+            {
+                "id": "Practitioner.extension:digitalcertificate",
+                "mustSupport": true,
+                "path": "Practitioner.extension",
+                "sliceName": "digitalcertificate",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.identifier",
+                "mustSupport": true,
+                "path": "Practitioner.identifier"
+            },
+            {
+                "id": "Practitioner.identifier.extension",
+                "mustSupport": false,
+                "path": "Practitioner.identifier.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.identifier.use",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.use"
+            },
+            {
+                "id": "Practitioner.identifier.type",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.type"
+            },
+            {
+                "id": "Practitioner.identifier.system",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.system"
+            },
+            {
+                "id": "Practitioner.identifier.value",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.value"
+            },
+            {
+                "id": "Practitioner.identifier.period",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.period"
+            },
+            {
+                "id": "Practitioner.identifier.extension:status",
+                "label": "status",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.identifier.extension",
+                "sliceName": "status",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.identifier.assigner",
+                "mustSupport": true,
+                "path": "Practitioner.identifier.assigner",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.active",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.active"
+            },
+            {
+                "id": "Practitioner.name.extension",
+                "mustSupport": true,
+                "path": "Practitioner.name.extension"
+            },
+            {
+                "id": "Practitioner.name.use",
+                "mustSupport": true,
+                "path": "Practitioner.name.use"
+            },
+            {
+                "id": "Practitioner.name.text",
+                "mustSupport": true,
+                "path": "Practitioner.name.text"
+            },
+            {
+                "id": "Practitioner.name",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.name"
+            },
+            {
+                "id": "Practitioner.name.family",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.name.family"
+            },
+            {
+                "id": "Practitioner.name.prefix",
+                "mustSupport": true,
+                "path": "Practitioner.name.prefix"
+            },
+            {
+                "id": "Practitioner.name.suffix",
+                "mustSupport": true,
+                "path": "Practitioner.name.suffix"
+            },
+            {
+                "id": "Practitioner.name.period",
+                "mustSupport": true,
+                "path": "Practitioner.name.period"
+            },
+            {
+                "id": "Practitioner.name.given",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.name.given"
+            },
+            {
+                "id": "Practitioner.telecom",
+                "mustSupport": true,
+                "path": "Practitioner.telecom"
+            },
+            {
+                "id": "Practitioner.telecom.extension",
+                "mustSupport": false,
+                "path": "Practitioner.telecom.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.telecom.extension:viaintermediary",
+                "max": "1",
+                "min": 0,
+                "mustSupport": true,
+                "path": "Practitioner.telecom.extension",
+                "sliceName": "viaintermediary",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.telecom.extension:availabletime",
+                "mustSupport": true,
+                "path": "Practitioner.telecom.extension",
+                "sliceName": "availabletime",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.telecom.system",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.telecom.system"
+            },
+            {
+                "id": "Practitioner.telecom.use",
+                "mustSupport": true,
+                "path": "Practitioner.telecom.use"
+            },
+            {
+                "id": "Practitioner.telecom.rank",
+                "mustSupport": true,
+                "path": "Practitioner.telecom.rank"
+            },
+            {
+                "id": "Practitioner.telecom.period",
+                "mustSupport": true,
+                "path": "Practitioner.telecom.period"
+            },
+            {
+                "id": "Practitioner.telecom.value",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.telecom.value"
+            },
+            {
+                "id": "Practitioner.address",
+                "mustSupport": true,
+                "path": "Practitioner.address"
+            },
+            {
+                "id": "Practitioner.address.extension",
+                "mustSupport": false,
+                "path": "Practitioner.address.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.address.use",
+                "mustSupport": true,
+                "path": "Practitioner.address.use"
+            },
+            {
+                "id": "Practitioner.address.type",
+                "mustSupport": true,
+                "path": "Practitioner.address.type"
+            },
+            {
+                "id": "Practitioner.address.text",
+                "mustSupport": true,
+                "path": "Practitioner.address.text"
+            },
+            {
+                "id": "Practitioner.address.line",
+                "mustSupport": true,
+                "path": "Practitioner.address.line"
+            },
+            {
+                "id": "Practitioner.address.city",
+                "mustSupport": true,
+                "path": "Practitioner.address.city"
+            },
+            {
+                "id": "Practitioner.address.district",
+                "mustSupport": true,
+                "path": "Practitioner.address.district"
+            },
+            {
+                "id": "Practitioner.address.state",
+                "mustSupport": true,
+                "path": "Practitioner.address.state"
+            },
+            {
+                "id": "Practitioner.address.postalCode",
+                "mustSupport": true,
+                "path": "Practitioner.address.postalCode"
+            },
+            {
+                "id": "Practitioner.address.country",
+                "mustSupport": true,
+                "path": "Practitioner.address.country"
+            },
+            {
+                "id": "Practitioner.address.period",
+                "mustSupport": true,
+                "path": "Practitioner.address.period"
+            },
+            {
+                "id": "Practitioner.gender",
+                "mustSupport": true,
+                "path": "Practitioner.gender"
+            },
+            {
+                "id": "Practitioner.birthDate",
+                "mustSupport": true,
+                "path": "Practitioner.birthDate"
+            },
+            {
+                "id": "Practitioner.address.extension:position",
+                "max": "1",
+                "min": 0,
+                "mustSupport": true,
+                "path": "Practitioner.address.extension",
+                "sliceName": "position",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/StructureDefinition/geolocation"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.photo",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Practitioner.photo"
+            },
+            {
+                "id": "Practitioner.qualification",
+                "mustSupport": true,
+                "path": "Practitioner.qualification"
+            },
+            {
+                "id": "Practitioner.qualification.extension",
+                "mustSupport": false,
+                "path": "Practitioner.qualification.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.qualification.modifierExtension",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.modifierExtension"
+            },
+            {
+                "definition": "Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification",
+                "id": "Practitioner.qualification.extension:practitioner-qualification",
+                "max": "1",
+                "min": 0,
+                "mustSupport": true,
+                "path": "Practitioner.qualification.extension",
+                "short": "Adds status, whereValid, history elements",
+                "sliceName": "practitioner-qualification",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.qualification.identifier",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.extension",
+                "mustSupport": false,
+                "path": "Practitioner.qualification.identifier.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.qualification.identifier.use",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.use"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.type",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.type"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.system",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.system"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.value",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.value"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.period",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.period"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.assigner",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.assigner"
+            },
+            {
+                "id": "Practitioner.qualification.code",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.code"
+            },
+            {
+                "id": "Practitioner.qualification.period",
+                "mustSupport": true,
+                "path": "Practitioner.qualification.period"
+            },
+            {
+                "id": "Practitioner.qualification.identifier.extension:status",
+                "label": "status",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.qualification.identifier.extension",
+                "sliceName": "status",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.qualification.issuer",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Practitioner.qualification.issuer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Practitioner.communication",
+                "mustSupport": true,
+                "path": "Practitioner.communication"
+            },
+            {
+                "id": "Practitioner.communication.extension",
+                "mustSupport": false,
+                "path": "Practitioner.communication.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Practitioner.communication.coding",
+                "mustSupport": true,
+                "path": "Practitioner.communication.coding"
+            },
+            {
+                "id": "Practitioner.communication.text",
+                "mustSupport": true,
+                "path": "Practitioner.communication.text"
+            },
+            {
+                "id": "Practitioner.communication.extension:proficiency",
+                "mustSupport": true,
+                "path": "Practitioner.communication.extension",
+                "sliceName": "proficiency",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "vhdir-practitioner",
+    "kind": "resource",
+    "name": "VhdirPractitioner",
+    "publisher": "HL7 International",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Practitioner",
+    "type": "Practitioner",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+}

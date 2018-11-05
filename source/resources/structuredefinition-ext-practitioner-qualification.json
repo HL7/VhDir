@@ -1,0 +1,223 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Practitioner.qualification",
+            "type": "element"
+        }
+    ],
+    "date": "2017-12-08T10:06:43.589-05:00",
+    "derivation": "constraint",
+    "description": "Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification",
+    "differential": {
+        "element": [
+            {
+                "definition": "Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification",
+                "id": "Extension",
+                "max": "1",
+                "path": "Extension",
+                "short": "Adds status, whereValid, history elements"
+            },
+            {
+                "id": "Extension.extension",
+                "mustSupport": false,
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Current status of the qualification",
+                "id": "Extension.extension:status",
+                "label": "status",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Status",
+                "sliceName": "status"
+            },
+            {
+                "fixedUri": "status",
+                "id": "Extension.extension:status.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"
+                },
+                "definition": "Current status of the qualification",
+                "id": "Extension.extension:status.valueCoding:valueCoding",
+                "label": "status",
+                "min": 1,
+                "path": "Extension.extension.valueCoding",
+                "short": "Status",
+                "sliceName": "valueCoding",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/us/core-r4/ValueSet/us-core-usps-state"
+                },
+                "definition": "Indicates where this qualification is valid",
+                "id": "Extension.extension:whereValid",
+                "label": "whereValid",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Where the qualification is valid",
+                "sliceName": "whereValid"
+            },
+            {
+                "fixedUri": "whereValid",
+                "id": "Extension.extension:whereValid.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Indicates where this qualification is valid",
+                "id": "Extension.extension:whereValid.value[x]",
+                "label": "whereValid",
+                "min": 1,
+                "path": "Extension.extension.value[x]",
+                "short": "Where the qualification is valid",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    },
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "definition": "Describes the history of this qualification",
+                "id": "Extension.extension:history",
+                "label": "history",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "History",
+                "sliceName": "history"
+            },
+            {
+                "id": "Extension.extension:history.extension",
+                "path": "Extension.extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Previous status of the qualification",
+                "id": "Extension.extension:history.extension:status",
+                "label": "status",
+                "max": "1",
+                "min": 1,
+                "path": "Extension.extension.extension",
+                "short": "Previous status",
+                "sliceName": "status"
+            },
+            {
+                "fixedUri": "status",
+                "id": "Extension.extension:history.extension:status.url",
+                "path": "Extension.extension.extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"
+                },
+                "definition": "Previous status of the qualification",
+                "id": "Extension.extension:history.extension:status.valueCoding:valueCoding",
+                "label": "status",
+                "min": 1,
+                "path": "Extension.extension.extension.valueCoding",
+                "short": "Previous status",
+                "sliceName": "valueCoding",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "definition": "Period during which the status applied",
+                "id": "Extension.extension:history.extension:period",
+                "label": "period",
+                "max": "1",
+                "min": 1,
+                "path": "Extension.extension.extension",
+                "short": "Period",
+                "sliceName": "period"
+            },
+            {
+                "fixedUri": "period",
+                "id": "Extension.extension:history.extension:period.url",
+                "path": "Extension.extension.extension.url"
+            },
+            {
+                "definition": "Period during which the status applied",
+                "id": "Extension.extension:history.extension:period.valuePeriod:valuePeriod",
+                "label": "period",
+                "min": 1,
+                "path": "Extension.extension.extension.valuePeriod",
+                "short": "Period",
+                "sliceName": "valuePeriod",
+                "type": [
+                    {
+                        "code": "Period"
+                    }
+                ]
+            },
+            {
+                "fixedUri": "history",
+                "id": "Extension.extension:history.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "id": "Extension.extension:history.value[x]",
+                "max": "0",
+                "path": "Extension.extension.value[x]"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "id": "Extension.value[x]",
+                "max": "0",
+                "mustSupport": true,
+                "path": "Extension.value[x]"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "practitioner-qualification",
+    "kind": "complex-type",
+    "name": "PractitionerQualification",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Practitioner Qualification",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+}

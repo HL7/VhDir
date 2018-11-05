@@ -1,0 +1,737 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/InsurancePlan",
+    "date": "2017-12-05T12:38:42.186-05:00",
+    "derivation": "constraint",
+    "description": "The details of a health insurance product/plan",
+    "differential": {
+        "element": [
+            {
+                "id": "InsurancePlan",
+                "path": "InsurancePlan"
+            },
+            {
+                "id": "InsurancePlan.id",
+                "path": "InsurancePlan.id"
+            },
+            {
+                "id": "InsurancePlan.meta",
+                "path": "InsurancePlan.meta"
+            },
+            {
+                "id": "InsurancePlan.text",
+                "path": "InsurancePlan.text"
+            },
+            {
+                "id": "InsurancePlan.extension",
+                "mustSupport": false,
+                "path": "InsurancePlan.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "InsurancePlan.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.modifierExtension"
+            },
+            {
+                "definition": "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties",
+                "id": "InsurancePlan.extension:restriction",
+                "max": "*",
+                "min": 0,
+                "mustSupport": true,
+                "path": "InsurancePlan.extension",
+                "short": "Restriction",
+                "sliceName": "restriction",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.identifier",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier"
+            },
+            {
+                "id": "InsurancePlan.identifier.extension",
+                "mustSupport": false,
+                "path": "InsurancePlan.identifier.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "InsurancePlan.identifier.use",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.use"
+            },
+            {
+                "id": "InsurancePlan.identifier.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.type"
+            },
+            {
+                "id": "InsurancePlan.identifier.system",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.system"
+            },
+            {
+                "id": "InsurancePlan.identifier.value",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.value"
+            },
+            {
+                "id": "InsurancePlan.identifier.period",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.period"
+            },
+            {
+                "id": "InsurancePlan.identifier.extension:status",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.extension",
+                "sliceName": "status",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.identifier.assigner",
+                "mustSupport": true,
+                "path": "InsurancePlan.identifier.assigner",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.type"
+            },
+            {
+                "id": "InsurancePlan.name",
+                "mustSupport": true,
+                "path": "InsurancePlan.name"
+            },
+            {
+                "id": "InsurancePlan.alias",
+                "mustSupport": true,
+                "path": "InsurancePlan.alias"
+            },
+            {
+                "id": "InsurancePlan.period",
+                "mustSupport": true,
+                "path": "InsurancePlan.period"
+            },
+            {
+                "id": "InsurancePlan.status",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.status"
+            },
+            {
+                "id": "InsurancePlan.ownedBy",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.ownedBy",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.administeredBy",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.administeredBy",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.coverageArea",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverageArea",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.contact.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.extension"
+            },
+            {
+                "id": "InsurancePlan.contact.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.contact.purpose",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.purpose"
+            },
+            {
+                "id": "InsurancePlan.contact",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact"
+            },
+            {
+                "id": "InsurancePlan.contact.name.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.extension"
+            },
+            {
+                "id": "InsurancePlan.contact.name.use",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.use"
+            },
+            {
+                "id": "InsurancePlan.contact.name.text",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.text"
+            },
+            {
+                "id": "InsurancePlan.contact.name",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name"
+            },
+            {
+                "id": "InsurancePlan.contact.name.family",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.family"
+            },
+            {
+                "id": "InsurancePlan.contact.name.prefix",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.prefix"
+            },
+            {
+                "id": "InsurancePlan.contact.name.suffix",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.suffix"
+            },
+            {
+                "id": "InsurancePlan.contact.name.period",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.period"
+            },
+            {
+                "id": "InsurancePlan.contact.name.given",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.name.given"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.extension",
+                "mustSupport": false,
+                "path": "InsurancePlan.contact.telecom.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.extension:viaintermediary",
+                "max": "1",
+                "min": 0,
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.extension",
+                "sliceName": "viaintermediary",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.extension:availabletime",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.extension",
+                "sliceName": "availabletime",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.system",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.system"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.use",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.use"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.rank",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.rank"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.period",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.period"
+            },
+            {
+                "id": "InsurancePlan.contact.address",
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.address"
+            },
+            {
+                "id": "InsurancePlan.contact.telecom.value",
+                "min": 1,
+                "mustSupport": true,
+                "path": "InsurancePlan.contact.telecom.value"
+            },
+            {
+                "id": "InsurancePlan.endpoint",
+                "mustSupport": true,
+                "path": "InsurancePlan.endpoint",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.network",
+                "mustSupport": true,
+                "path": "InsurancePlan.network",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.coverage.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.extension"
+            },
+            {
+                "id": "InsurancePlan.coverage.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.coverage",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-coverage-type"
+                },
+                "id": "InsurancePlan.coverage.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.type"
+            },
+            {
+                "id": "InsurancePlan.coverage.network",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.network",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.extension"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.requirement",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.requirement"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-benefit-type"
+                },
+                "id": "InsurancePlan.coverage.benefit.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.type"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.limit.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.limit.extension"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.limit.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.limit.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.limit.value",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.limit.value"
+            },
+            {
+                "id": "InsurancePlan.coverage.benefit.limit",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.limit"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-limit-unit"
+                },
+                "id": "InsurancePlan.coverage.benefit.limit.code",
+                "mustSupport": true,
+                "path": "InsurancePlan.coverage.benefit.limit.code"
+            },
+            {
+                "id": "InsurancePlan.plan.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.extension"
+            },
+            {
+                "id": "InsurancePlan.plan.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.plan",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier",
+                "short": "Business identifier for plan"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.extension",
+                "mustSupport": false,
+                "path": "InsurancePlan.plan.identifier.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.use",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.use"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.type"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.system",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.system"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.value",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.value"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.period",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.period"
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.extension:status",
+                "max": "1",
+                "min": 0,
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.extension",
+                "sliceName": "status",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.plan.identifier.assigner",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.identifier.assigner",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-plan-type"
+                },
+                "id": "InsurancePlan.plan.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.type"
+            },
+            {
+                "id": "InsurancePlan.plan.coverageArea",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.coverageArea",
+                "short": "Where plan applies",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.plan.network",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.network",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.extension"
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost"
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost.groupSize",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.groupSize"
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost.cost",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.cost"
+            },
+            {
+                "id": "InsurancePlan.plan.generalCost.comment",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.comment"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancosttype"
+                },
+                "id": "InsurancePlan.plan.generalCost.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.generalCost.type"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.extension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostcategory"
+                },
+                "id": "InsurancePlan.plan.specificCost.category",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.category"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.extension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefittype"
+                },
+                "id": "InsurancePlan.plan.specificCost.benefit.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.type"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.extension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.extension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.modifierExtension",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.modifierExtension"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.applicability",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.applicability"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"
+                },
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.type",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.type"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.value",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.value"
+            },
+            {
+                "id": "InsurancePlan.plan.specificCost.benefit.cost.qualifiers",
+                "mustSupport": true,
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.qualifiers"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "vhdir-insuranceplan",
+    "kind": "resource",
+    "name": "VhdirInsurancePlan",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Insurance Plan",
+    "type": "InsurancePlan",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"
+}

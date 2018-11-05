@@ -1,0 +1,323 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/VerificationResult",
+    "date": "2017-12-10T12:42:47.483-05:00",
+    "derivation": "constraint",
+    "description": "Describes validation requirements, source(s), status and dates for one or more elements",
+    "differential": {
+        "element": [
+            {
+                "definition": "Describes validation requirements, source(s), status and dates for one or more elements",
+                "id": "VerificationResult",
+                "path": "VerificationResult",
+                "short": "Validation"
+            },
+            {
+                "id": "VerificationResult.targetLocation",
+                "mustSupport": true,
+                "path": "VerificationResult.targetLocation"
+            },
+            {
+                "id": "VerificationResult.target",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.target"
+            },
+            {
+                "id": "VerificationResult.status",
+                "mustSupport": true,
+                "path": "VerificationResult.status"
+            },
+            {
+                "id": "VerificationResult.need",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.need"
+            },
+            {
+                "id": "VerificationResult.statusDate",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.statusDate"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-validation-type"
+                },
+                "definition": "What the target is validated against (nothing|single source|multiple sources)",
+                "id": "VerificationResult.validationType",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.validationType",
+                "short": "nothing|single|multiple"
+            },
+            {
+                "id": "VerificationResult.frequency",
+                "mustSupport": true,
+                "path": "VerificationResult.frequency"
+            },
+            {
+                "id": "VerificationResult.lastPerformed",
+                "mustSupport": true,
+                "path": "VerificationResult.lastPerformed"
+            },
+            {
+                "id": "VerificationResult.nextScheduled",
+                "mustSupport": true,
+                "path": "VerificationResult.nextScheduled"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationprocess"
+                },
+                "definition": "The process(es) by which the target is validated",
+                "id": "VerificationResult.validationProcess",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.validationProcess",
+                "short": "The process(es) by which the target is validated"
+            },
+            {
+                "id": "VerificationResult.failureAction",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.failureAction"
+            },
+            {
+                "id": "VerificationResult.primarySource.extension",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.extension"
+            },
+            {
+                "id": "VerificationResult.primarySource.modifierExtension",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.modifierExtension"
+            },
+            {
+                "id": "VerificationResult.primarySource",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource"
+            },
+            {
+                "id": "VerificationResult.primarySource.who",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.who",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type"
+                },
+                "definition": "Type of primary source",
+                "id": "VerificationResult.primarySource.type",
+                "max": "*",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.type",
+                "short": "Type of primary source"
+            },
+            {
+                "id": "VerificationResult.primarySource.validationStatus",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.validationStatus"
+            },
+            {
+                "id": "VerificationResult.primarySource.validationDate",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.validationDate"
+            },
+            {
+                "id": "VerificationResult.primarySource.canPushUpdates",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.canPushUpdates"
+            },
+            {
+                "id": "VerificationResult.primarySource.pushTypeAvailable",
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.pushTypeAvailable"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-communication-method"
+                },
+                "id": "VerificationResult.primarySource.communicationMethod",
+                "max": "*",
+                "min": 0,
+                "mustSupport": true,
+                "path": "VerificationResult.primarySource.communicationMethod"
+            },
+            {
+                "id": "VerificationResult.attestation.extension",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.extension"
+            },
+            {
+                "id": "VerificationResult.attestation.modifierExtension",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.modifierExtension"
+            },
+            {
+                "id": "VerificationResult.attestation",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.attestation"
+            },
+            {
+                "alias": [
+                    "attester"
+                ],
+                "definition": "Source of the attested information",
+                "id": "VerificationResult.attestation.who",
+                "label": "attester",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.who",
+                "short": "Attestation source",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "alias": [
+                    "proxy"
+                ],
+                "definition": "The individual attesting to information on behalf of an individual or organization",
+                "id": "VerificationResult.attestation.onBehalfOf",
+                "label": "proxy",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.onBehalfOf",
+                "short": "Proxy for attested information",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "alias": [
+                    "process"
+                ],
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-communication-method"
+                },
+                "definition": "The process by which attested information was submitted",
+                "id": "VerificationResult.attestation.communicationMethod",
+                "label": "process",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.communicationMethod",
+                "short": "Attestation process",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "VerificationResult.attestation.sourceIdentityCertificate",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.sourceIdentityCertificate"
+            },
+            {
+                "id": "VerificationResult.attestation.proxyIdentityCertificate",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.proxyIdentityCertificate"
+            },
+            {
+                "id": "VerificationResult.attestation.proxySignature",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.proxySignature"
+            },
+            {
+                "id": "VerificationResult.attestation.sourceSignature",
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.sourceSignature"
+            },
+            {
+                "id": "VerificationResult.validator",
+                "mustSupport": true,
+                "path": "VerificationResult.validator"
+            },
+            {
+                "id": "VerificationResult.validator.extension",
+                "mustSupport": true,
+                "path": "VerificationResult.validator.extension"
+            },
+            {
+                "id": "VerificationResult.validator.modifierExtension",
+                "mustSupport": true,
+                "path": "VerificationResult.validator.modifierExtension"
+            },
+            {
+                "id": "VerificationResult.attestation.date",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "VerificationResult.attestation.date"
+            },
+            {
+                "id": "VerificationResult.validator.identityCertificate",
+                "mustSupport": true,
+                "path": "VerificationResult.validator.identityCertificate"
+            },
+            {
+                "id": "VerificationResult.validator.attestationSignature",
+                "mustSupport": true,
+                "path": "VerificationResult.validator.attestationSignature"
+            },
+            {
+                "id": "VerificationResult.validator.organization",
+                "mustSupport": true,
+                "path": "VerificationResult.validator.organization",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "vhdir-validation",
+    "kind": "resource",
+    "name": "VhdirValidation",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Validation",
+    "type": "VerificationResult",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation"
+}

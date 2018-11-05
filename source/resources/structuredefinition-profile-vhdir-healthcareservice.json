@@ -1,0 +1,446 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+    "copyright": "HL7 International",
+    "date": "2017-10-17T10:21:21.817-04:00",
+    "derivation": "constraint",
+    "description": "Defines the basic constraints and extensions on the HealthcareService resource for use in a Validated Healthcare Directory",
+    "differential": {
+        "element": [
+            {
+                "id": "HealthcareService",
+                "path": "HealthcareService"
+            },
+            {
+                "id": "HealthcareService.extension",
+                "mustSupport": false,
+                "path": "HealthcareService.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties",
+                "id": "HealthcareService.extension:restriction",
+                "max": "*",
+                "min": 0,
+                "mustSupport": true,
+                "path": "HealthcareService.extension",
+                "short": "Restriction",
+                "sliceName": "restriction",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.modifierExtension",
+                "mustSupport": true,
+                "path": "HealthcareService.modifierExtension"
+            },
+            {
+                "definition": "An indication of whether a location, service, or practitioner is accepting new patients",
+                "id": "HealthcareService.extension:newpatients",
+                "mustSupport": true,
+                "path": "HealthcareService.extension",
+                "short": "New patients",
+                "sliceName": "newpatients",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.identifier",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier"
+            },
+            {
+                "id": "HealthcareService.identifier.extension",
+                "mustSupport": false,
+                "path": "HealthcareService.identifier.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "HealthcareService.identifier.use",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.use"
+            },
+            {
+                "id": "HealthcareService.identifier.type",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.type"
+            },
+            {
+                "id": "HealthcareService.identifier.system",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.system"
+            },
+            {
+                "id": "HealthcareService.identifier.value",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.value"
+            },
+            {
+                "id": "HealthcareService.identifier.period",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.period"
+            },
+            {
+                "definition": "Describes the status of an identifier",
+                "id": "HealthcareService.identifier.extension:status",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.extension",
+                "short": "Status",
+                "sliceName": "status",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.identifier.assigner",
+                "mustSupport": true,
+                "path": "HealthcareService.identifier.assigner",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.active",
+                "min": 1,
+                "mustSupport": true,
+                "path": "HealthcareService.active"
+            },
+            {
+                "id": "HealthcareService.category",
+                "mustSupport": true,
+                "path": "HealthcareService.category"
+            },
+            {
+                "id": "HealthcareService.type",
+                "mustSupport": true,
+                "path": "HealthcareService.type"
+            },
+            {
+                "id": "HealthcareService.specialty",
+                "mustSupport": true,
+                "path": "HealthcareService.specialty"
+            },
+            {
+                "id": "HealthcareService.providedBy",
+                "mustSupport": true,
+                "path": "HealthcareService.providedBy",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.name",
+                "mustSupport": true,
+                "path": "HealthcareService.name"
+            },
+            {
+                "id": "HealthcareService.comment",
+                "mustSupport": true,
+                "path": "HealthcareService.comment"
+            },
+            {
+                "id": "HealthcareService.extraDetails",
+                "mustSupport": true,
+                "path": "HealthcareService.extraDetails"
+            },
+            {
+                "id": "HealthcareService.photo",
+                "mustSupport": true,
+                "path": "HealthcareService.photo"
+            },
+            {
+                "id": "HealthcareService.location",
+                "mustSupport": true,
+                "path": "HealthcareService.location",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.telecom",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom"
+            },
+            {
+                "id": "HealthcareService.telecom.extension",
+                "mustSupport": false,
+                "path": "HealthcareService.telecom.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Time period when the contact point is to be used",
+                "id": "HealthcareService.telecom.extension:availabletime",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.extension",
+                "short": "Available time",
+                "sliceName": "availabletime",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                        ]
+                    }
+                ]
+            },
+            {
+                "definition": "Represents an external point of contact responsible for handling communications with this entity",
+                "id": "HealthcareService.telecom.extension:viaintermediary",
+                "max": "1",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.extension",
+                "short": "viaintermediary",
+                "sliceName": "viaintermediary",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.telecom.system",
+                "min": 1,
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.system"
+            },
+            {
+                "id": "HealthcareService.telecom.use",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.use"
+            },
+            {
+                "id": "HealthcareService.telecom.rank",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.rank"
+            },
+            {
+                "id": "HealthcareService.telecom.period",
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.period"
+            },
+            {
+                "id": "HealthcareService.telecom.value",
+                "min": 1,
+                "mustSupport": true,
+                "path": "HealthcareService.telecom.value"
+            },
+            {
+                "id": "HealthcareService.serviceProvisionCode",
+                "mustSupport": true,
+                "path": "HealthcareService.serviceProvisionCode"
+            },
+            {
+                "id": "HealthcareService.eligibility",
+                "mustSupport": true,
+                "path": "HealthcareService.eligibility"
+            },
+            {
+                "id": "HealthcareService.eligibility.extension",
+                "mustSupport": true,
+                "path": "HealthcareService.eligibility.extension"
+            },
+            {
+                "id": "HealthcareService.eligibility.modifierExtension",
+                "mustSupport": true,
+                "path": "HealthcareService.eligibility.modifierExtension"
+            },
+            {
+                "id": "HealthcareService.eligibility.code",
+                "mustSupport": true,
+                "path": "HealthcareService.eligibility.code"
+            },
+            {
+                "id": "HealthcareService.eligibility.comment",
+                "mustSupport": true,
+                "path": "HealthcareService.eligibility.comment"
+            },
+            {
+                "id": "HealthcareService.program",
+                "mustSupport": true,
+                "path": "HealthcareService.program"
+            },
+            {
+                "id": "HealthcareService.characteristic",
+                "mustSupport": true,
+                "path": "HealthcareService.characteristic"
+            },
+            {
+                "id": "HealthcareService.communication",
+                "mustSupport": true,
+                "path": "HealthcareService.communication"
+            },
+            {
+                "id": "HealthcareService.referralMethod",
+                "mustSupport": true,
+                "path": "HealthcareService.referralMethod"
+            },
+            {
+                "id": "HealthcareService.appointmentRequired",
+                "mustSupport": true,
+                "path": "HealthcareService.appointmentRequired"
+            },
+            {
+                "id": "HealthcareService.availableTime",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime"
+            },
+            {
+                "id": "HealthcareService.availableTime.extension",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.extension"
+            },
+            {
+                "id": "HealthcareService.availableTime.modifierExtension",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.modifierExtension"
+            },
+            {
+                "id": "HealthcareService.availableTime.daysOfWeek",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.daysOfWeek"
+            },
+            {
+                "id": "HealthcareService.availableTime.allDay",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.allDay"
+            },
+            {
+                "id": "HealthcareService.availableTime.availableStartTime",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.availableStartTime"
+            },
+            {
+                "id": "HealthcareService.availableTime.availableEndTime",
+                "mustSupport": true,
+                "path": "HealthcareService.availableTime.availableEndTime"
+            },
+            {
+                "id": "HealthcareService.notAvailable",
+                "mustSupport": true,
+                "path": "HealthcareService.notAvailable"
+            },
+            {
+                "id": "HealthcareService.notAvailable.extension",
+                "mustSupport": true,
+                "path": "HealthcareService.notAvailable.extension"
+            },
+            {
+                "id": "HealthcareService.notAvailable.modifierExtension",
+                "mustSupport": true,
+                "path": "HealthcareService.notAvailable.modifierExtension"
+            },
+            {
+                "id": "HealthcareService.notAvailable.description",
+                "mustSupport": true,
+                "path": "HealthcareService.notAvailable.description"
+            },
+            {
+                "id": "HealthcareService.notAvailable.during",
+                "mustSupport": true,
+                "path": "HealthcareService.notAvailable.during"
+            },
+            {
+                "id": "HealthcareService.availabilityExceptions",
+                "mustSupport": true,
+                "path": "HealthcareService.availabilityExceptions"
+            },
+            {
+                "id": "HealthcareService.coverageArea",
+                "mustSupport": true,
+                "path": "HealthcareService.coverageArea",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "HealthcareService.endpoint",
+                "mustSupport": true,
+                "path": "HealthcareService.endpoint",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "vhdir-healthcareservice",
+    "kind": "resource",
+    "name": "VhdirHealthcareService",
+    "publisher": "HL7 International",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Healthcare Service",
+    "type": "HealthcareService",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"
+}
