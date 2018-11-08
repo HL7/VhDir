@@ -1,0 +1,60 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Practitioner",
+            "type": "element"
+        },
+        {
+            "expression": "Location",
+            "type": "element"
+        }
+    ],
+    "date": "2017-11-13T12:20:23.668-05:00",
+    "derivation": "constraint",
+    "description": "Accessibility options offered to the patient/consumer",
+    "differential": {
+        "element": [
+            {
+                "definition": "Accessibility options offered to the patient/consumer",
+                "id": "Extension",
+                "path": "Extension",
+                "short": "Accessibility"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-accessibility"
+                },
+                "definition": "Accessibility options offered to the patient/consumer",
+                "id": "Extension.valueCodeableConcept:valueCodeableConcept",
+                "label": "Accessibility",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.valueCodeableConcept",
+                "short": "Accessibility",
+                "sliceName": "valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "accessibility",
+    "kind": "complex-type",
+    "name": "Accessibility",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Accessibility",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"
+}

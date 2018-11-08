@@ -1,0 +1,53 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Organization",
+            "type": "element"
+        }
+    ],
+    "date": "2017-09-01T06:37:50.645+10:00",
+    "derivation": "constraint",
+    "description": "Additional descriptive content",
+    "differential": {
+        "element": [
+            {
+                "definition": "Additional descriptive content",
+                "id": "Extension",
+                "max": "1",
+                "path": "Extension",
+                "short": "Description"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "definition": "Additional descriptive content",
+                "id": "Extension.valueString:valueString",
+                "label": "description",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.valueString",
+                "short": "Description",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "org-description",
+    "kind": "complex-type",
+    "name": "OrgDescription",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Org Description",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description"
+}

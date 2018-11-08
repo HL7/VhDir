@@ -1,0 +1,57 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "PractitionerRole",
+            "type": "element"
+        },
+        {
+            "expression": "Location",
+            "type": "element"
+        }
+    ],
+    "date": "2017-11-13T14:13:29.07-05:00",
+    "derivation": "constraint",
+    "description": "Additional information about new patients a practitioner/service/location accepts (e.g. only children)",
+    "differential": {
+        "element": [
+            {
+                "definition": "Additional information about new patients a practitioner/service/location accepts",
+                "id": "Extension",
+                "max": "*",
+                "path": "Extension",
+                "short": "New patient profile"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "definition": "Additional information about new patients a practitioner/service/location accepts (e.g. only children)",
+                "id": "Extension.valueString:valueString",
+                "label": "newpatientprofile",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.valueString",
+                "short": "New patient profile",
+                "sliceName": "valueString",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "newpatientprofile",
+    "kind": "complex-type",
+    "name": "NewPatientProfile",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir New Patient Profile",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"
+}

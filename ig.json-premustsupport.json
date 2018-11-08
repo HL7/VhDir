@@ -1,0 +1,1175 @@
+{
+  "canonicalBase": "http://hl7.org/fhir/uv/vhdir",
+  "source": "ig.xml",
+  "version": "3.6.0",
+  "name": "ValidatedHealthcareDirectory",
+  "paths": {
+    "resources": [
+      "source/resources",
+      "source/examples"
+    ],
+    "pages": [
+      "framework",
+      "source/pages"
+    ],
+    "temp": "generated_output/temp",
+    "qa": "generated_output/qa",
+    "output": "output",
+    "txCache": "generated_output/txCache",
+    "specification": "http://build.fhir.org/"
+  },
+  "swagger": [
+    {
+      "mode": "single",
+      "capabilities": "server"
+    }
+  ],
+  "gen-examples": "false",
+  "resources": {
+    "SearchParameter/searchparameter-practitioner-name": {
+      "source": "searchparameter-practitioner-name.json",
+      "base": "SearchParameter-searchparameter-practitioner-name.html"
+    },
+    "ValueSet/valueset-insuranceplancostcategory": {
+      "source": "valueset-insuranceplancostcategory.xml",
+      "base": "ValueSet-valueset-insuranceplancostcategory.html"
+    },
+    "Organization/patriotdental": {
+      "source": "org-example-patriotdental.xml",
+      "base": "Organization-patriotdental.html"
+    },
+    "ValueSet/valueset-benefit-type": {
+      "source": "valueset-benefit-type.xml",
+      "base": "ValueSet-valueset-benefit-type.html"
+    },
+    "SearchParameter/searchparameter-location-endpoint": {
+      "source": "searchparameter-location-endpoint.json",
+      "base": "SearchParameter-searchparameter-location-endpoint.html"
+    },
+    "StructureDefinition/vhdir-endpoint": {
+      "source": "vhdir-endpoint.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-endpoint.html",
+      "defns": "StructureDefinition-vhdir-endpoint-definitions.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-eligibility": {
+      "source": "searchparameter-healthcareservice-eligibility.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-eligibility.html"
+    },
+    "SearchParameter/searchparameter-careteam-service": {
+      "source": "searchparameter-careteam-service.json",
+      "base": "SearchParameter-searchparameter-careteam-service.html"
+    },
+    "ValueSet/valueset-attestationmethod": {
+      "source": "valueset-attestationmethod.xml",
+      "base": "ValueSet-valueset-attestationmethod.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-new-patient-network": {
+      "source": "searchparameter-practitionerrole-new-patient-network.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-new-patient-network.html"
+    },
+    "SearchParameter/searchparameter-practitioner-endpoint": {
+      "source": "searchparameter-practitioner-endpoint.json",
+      "base": "SearchParameter-searchparameter-practitioner-endpoint.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-location": {
+      "source": "searchparameter-organizationaffiliation-location.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-location.html"
+    },
+    "StructureDefinition/digitalcertificate": {
+      "source": "digitalcertificate.structuredefinition.xml",
+      "base": "StructureDefinition-digitalcertificate.html",
+      "defns": "StructureDefinition-digitalcertificate-definitions.html"
+    },
+    "Organization/patriotppo": {
+      "source": "network-example-patriotppo.xml",
+      "base": "Organization-patriotppo.html"
+    },
+    "StructureDefinition/org-alias-period": {
+      "source": "org-alias-period.structuredefinition.xml",
+      "base": "StructureDefinition-org-alias-period.html",
+      "defns": "StructureDefinition-org-alias-period-definitions.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-plan-type": {
+      "source": "searchparameter-insuranceplan-plan-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-plan-type.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-general-cost-type": {
+      "source": "searchparameter-insuranceplan-general-cost-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-general-cost-type.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-specific-cost-category": {
+      "source": "searchparameter-insuranceplan-specific-cost-category.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-specific-cost-category.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-plan-identifier": {
+      "source": "searchparameter-insuranceplan-plan-identifier.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-plan-identifier.html"
+    },
+    "SearchParameter/searchparameter-organization-qualification-wherevalid-location": {
+      "source": "searchparameter-organization-qualification-wherevalid-location.json",
+      "base": "SearchParameter-searchparameter-organization-qualification-wherevalid-location.html"
+    },
+    "ValueSet/valueset-primarysourcevalidationprocess": {
+      "source": "valueset-primarysourcevalidationprocess.xml",
+      "base": "ValueSet-valueset-primarysourcevalidationprocess.html"
+    },
+    "SearchParameter/searchparameter-practitioner-identifier-assigner": {
+      "source": "searchparameter-practitioner-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-practitioner-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-careteam-location": {
+      "source": "searchparameter-careteam-location.json",
+      "base": "SearchParameter-searchparameter-careteam-location.html"
+    },
+    "ValueSet/valueset-usecasetype": {
+      "source": "valueset-usecasetype.xml",
+      "base": "ValueSet-valueset-usecasetype.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-product-network": {
+      "source": "searchparameter-insuranceplan-product-network.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-product-network.html"
+    },
+    "SearchParameter/searchparameter-organization-qualification-code": {
+      "source": "searchparameter-organization-qualification-code.json",
+      "base": "SearchParameter-searchparameter-organization-qualification-code.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-specialty": {
+      "source": "searchparameter-practitionerrole-specialty.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-specialty.html"
+    },
+    "SearchParameter/searchparameter-organization-type": {
+      "source": "searchparameter-organization-type.json",
+      "base": "SearchParameter-searchparameter-organization-type.html"
+    },
+    "StructureDefinition/network-reference": {
+      "source": "network-reference.structuredefinition.xml",
+      "base": "StructureDefinition-network-reference.html",
+      "defns": "StructureDefinition-network-reference-definitions.html"
+    },
+    "ValueSet/valueset-primarysourcefailureaction": {
+      "source": "valueset-primarysourcefailureaction.xml",
+      "base": "ValueSet-valueset-primarysourcefailureaction.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-new-patient": {
+      "source": "searchparameter-healthcareservice-new-patient.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-new-patient.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-primarysource-date": {
+      "source": "searchparameter-verificationresult-primarysource-date.json",
+      "base": "SearchParameter-searchparameter-verificationresult-primarysource-date.html"
+    },
+    "Location/loc-ws": {
+      "source": "location-womens-shelter.xml",
+      "base": "Location-loc-ws.html"
+    },
+    "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location": {
+      "source": "searchparameter-practitioner-qualification-wherevalid-location.json",
+      "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"
+    },
+    "StructureDefinition/accessibility": {
+      "source": "accessibility.structuredefinition.xml",
+      "base": "StructureDefinition-accessibility.html",
+      "defns": "StructureDefinition-accessibility-definitions.html"
+    },
+    "Organization/foundingfathers": {
+      "source": "org-example-foundingfathers.xml",
+      "base": "Organization-foundingfathers.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-status-date": {
+      "source": "searchparameter-verificationresult-status-date.json",
+      "base": "SearchParameter-searchparameter-verificationresult-status-date.html"
+    },
+    "ValueSet/valueset-qualificationstatus": {
+      "source": "valueset-qualificationstatus.xml",
+      "base": "ValueSet-valueset-qualificationstatus.html"
+    },
+    "SearchParameter/searchparameter-careteam-name": {
+      "source": "searchparameter-careteam-name.json",
+      "base": "SearchParameter-searchparameter-careteam-name.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-qualification-issuer": {
+      "source": "searchparameter-practitionerrole-qualification-issuer.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-qualification-issuer.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-identifier-assigner": {
+      "source": "searchparameter-healthcareservice-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-role": {
+      "source": "searchparameter-organizationaffiliation-role.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-role.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-name": {
+      "source": "searchparameter-insuranceplan-name.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-name.html"
+    },
+    "SearchParameter/searchparameter-practitioner-qualification-wherevalid-code": {
+      "source": "searchparameter-practitioner-qualification-wherevalid-code.json",
+      "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-attestation-method": {
+      "source": "searchparameter-verificationresult-attestation-method.json",
+      "base": "SearchParameter-searchparameter-verificationresult-attestation-method.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-endpoint": {
+      "source": "searchparameter-organizationaffiliation-endpoint.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-endpoint.html"
+    },
+    "ValueSet/valueset-insuranceplan-type": {
+      "source": "valueset-insuranceplan-type.xml",
+      "base": "ValueSet-valueset-insuranceplan-type.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-coverage-limit-value": {
+      "source": "searchparameter-insuranceplan-coverage-limit-value.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-coverage-limit-value.html"
+    },
+    "SearchParameter/searchparameter-location-status": {
+      "source": "searchparameter-location-status.json",
+      "base": "SearchParameter-searchparameter-location-status.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-product-identifier": {
+      "source": "searchparameter-insuranceplan-product-identifier.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-product-identifier.html"
+    },
+    "ValueSet/valueset-identifierstatus": {
+      "source": "valueset-identifierstatus.xml",
+      "base": "ValueSet-valueset-identifierstatus.html"
+    },
+    "ValueSet/valueset-primarysourcepushtype": {
+      "source": "valueset-primarysourcepushtype.xml",
+      "base": "ValueSet-valueset-primarysourcepushtype.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-service": {
+      "source": "searchparameter-organizationaffiliation-service.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-service.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-administered-by": {
+      "source": "searchparameter-insuranceplan-administered-by.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-administered-by.html"
+    },
+    "SearchParameter/searchparameter-organization-address-city": {
+      "source": "searchparameter-organization-address-city.json",
+      "base": "SearchParameter-searchparameter-organization-address-city.html"
+    },
+    "StructureDefinition/usage-restriction": {
+      "source": "usage-restriction.structuredefinition.xml",
+      "base": "StructureDefinition-usage-restriction.html",
+      "defns": "StructureDefinition-usage-restriction-definitions.html"
+    },
+    "StructureDefinition/contactpoint-viaintermediary": {
+      "source": "contactpoint-viaintermediary.structuredefinition.xml",
+      "base": "StructureDefinition-contactpoint-viaintermediary.html",
+      "defns": "StructureDefinition-contactpoint-viaintermediary-definitions.html"
+    },
+    "SearchParameter/searchparameter-location-contains": {
+      "source": "searchparameter-location-contains.json",
+      "base": "SearchParameter-searchparameter-location-contains.html"
+    },
+    "SearchParameter/searchparameter-practitioner-family-name": {
+      "source": "searchparameter-practitioner-family-name.json",
+      "base": "SearchParameter-searchparameter-practitioner-family-name.html"
+    },
+    "StructureDefinition/practitioner-qualification": {
+      "source": "practitioner-qualification.structuredefinition.xml",
+      "base": "StructureDefinition-practitioner-qualification.html",
+      "defns": "StructureDefinition-practitioner-qualification-definitions.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-practitioner": {
+      "source": "searchparameter-practitionerrole-practitioner.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-practitioner.html"
+    },
+    "SearchParameter/searchparameter-location-accessibility": {
+      "source": "searchparameter-location-accessibility.json",
+      "base": "SearchParameter-searchparameter-location-accessibility.html"
+    },
+    "StructureDefinition/newpatients": {
+      "source": "newpatients.structuredefinition.xml",
+      "base": "StructureDefinition-newpatients.html",
+      "defns": "StructureDefinition-newpatients-definitions.html"
+    },
+    "StructureDefinition/identifier-status": {
+      "source": "identifier-status-structuredefinition.xml",
+      "base": "StructureDefinition-identifier-status.html",
+      "defns": "StructureDefinition-identifier-status-definitions.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-coverage-network": {
+      "source": "searchparameter-insuranceplan-coverage-network.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-coverage-network.html"
+    },
+    "StructureDefinition/endpoint-usecase": {
+      "source": "endpoint-usecase.structuredefinition.xml",
+      "base": "StructureDefinition-endpoint-usecase.html",
+      "defns": "StructureDefinition-endpoint-usecase-definitions.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-endpoint": {
+      "source": "searchparameter-insuranceplan-endpoint.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-endpoint.html"
+    },
+    "SearchParameter/searchparameter-location-new-patient-network": {
+      "source": "searchparameter-location-new-patient-network.json",
+      "base": "SearchParameter-searchparameter-location-new-patient-network.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-coverage-area": {
+      "source": "searchparameter-healthcareservice-coverage-area.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-coverage-area.html"
+    },
+    "ValueSet/valueset-limit-unit": {
+      "source": "valueset-limit-unit.xml",
+      "base": "ValueSet-valueset-limit-unit.html"
+    },
+    "StructureDefinition/vhdir-restriction": {
+      "source": "vhdir-restriction.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-restriction.html",
+      "defns": "StructureDefinition-vhdir-restriction-definitions.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-category": {
+      "source": "searchparameter-healthcareservice-category.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-category.html"
+    },
+    "OrganizationAffiliation/orgrole2": {
+      "source": "orgrole-example-hie.xml",
+      "base": "OrganizationAffiliation-orgrole2.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-location": {
+      "source": "searchparameter-healthcareservice-location.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-location.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-primarysource-type": {
+      "source": "searchparameter-verificationresult-primarysource-type.json",
+      "base": "SearchParameter-searchparameter-verificationresult-primarysource-type.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-specific-cost-value": {
+      "source": "searchparameter-insuranceplan-specific-cost-value.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-specific-cost-value.html"
+    },
+    "ValueSet/valueset-validationprocess": {
+      "source": "valueset-validationprocess.xml",
+      "base": "ValueSet-valueset-validationprocess.html"
+    },
+    "CodeSystem/codesystem-credentialstatus": {
+      "source": "codesystem-credentialstatus.xml",
+      "base": "CodeSystem-codesystem-credentialstatus.html"
+    },
+    "SearchParameter/searchparameter-endpoint-payload-type": {
+      "source": "searchparameter-endpoint-payload-type.json",
+      "base": "SearchParameter-searchparameter-endpoint-payload-type.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-organization": {
+      "source": "searchparameter-practitionerrole-organization.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-organization.html"
+    },
+    "ValueSet/valueset-accessibility": {
+      "source": "valueset-accessibility.xml",
+      "base": "ValueSet-valueset-accessibility.html"
+    },
+    "SearchParameter/searchparameter-endpoint-status": {
+      "source": "searchparameter-endpoint-status.json",
+      "base": "SearchParameter-searchparameter-endpoint-status.html"
+    },
+    "SearchParameter/searchparameter-location-organization": {
+      "source": "searchparameter-location-organization.json",
+      "base": "SearchParameter-searchparameter-location-organization.html"
+    },
+    "CodeSystem/codesystem-languageproficiency": {
+      "source": "codesystem-languageproficiency.xml",
+      "base": "CodeSystem-codesystem-languageproficiency.html"
+    },
+    "SearchParameter/searchparameter-careteam-via-intermediary": {
+      "source": "searchparameter-careteam-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-careteam-via-intermediary.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-network": {
+      "source": "searchparameter-practitionerrole-network.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-network.html"
+    },
+    "ValueSet/valueset-coverage-type": {
+      "source": "valueset-coverage-type.xml",
+      "base": "ValueSet-valueset-coverage-type.html"
+    },
+    "StructureDefinition/org-description": {
+      "source": "org-description.structuredefinition.xml",
+      "base": "StructureDefinition-org-description.html",
+      "defns": "StructureDefinition-org-description-definitions.html"
+    },
+    "CodeSystem/codesystem-primarysource": {
+      "source": "codesystem-primarysource.xml",
+      "base": "CodeSystem-codesystem-primarysource.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-attestation-proxy": {
+      "source": "searchparameter-verificationresult-attestation-proxy.json",
+      "base": "SearchParameter-searchparameter-verificationresult-attestation-proxy.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-identifier": {
+      "source": "searchparameter-practitionerrole-identifier.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-identifier.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-validator-organization": {
+      "source": "searchparameter-verificationresult-validator-organization.json",
+      "base": "SearchParameter-searchparameter-verificationresult-validator-organization.html"
+    },
+    "HealthcareService/ffcardiology": {
+      "source": "healthcareservice-example-cardiology.xml",
+      "base": "HealthcareService-ffcardiology.html"
+    },
+    "ValueSet/valueset-insuranceplancosttype": {
+      "source": "valueset-insuranceplancosttype.xml",
+      "base": "ValueSet-valueset-insuranceplancosttype.html"
+    },
+    "SearchParameter/searchparameter-organization-address": {
+      "source": "searchparameter-organization-address.json",
+      "base": "SearchParameter-searchparameter-organization-address.html"
+    },
+    "SearchParameter/searchparameter-organization-address-country": {
+      "source": "searchparameter-organization-address-country.json",
+      "base": "SearchParameter-searchparameter-organization-address-country.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-identifier": {
+      "source": "searchparameter-healthcareservice-identifier.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-identifier.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-identifier": {
+      "source": "searchparameter-organizationaffiliation-identifier.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-identifier.html"
+    },
+    "SearchParameter/searchparameter-organization-partof": {
+      "source": "searchparameter-organization-partof.json",
+      "base": "SearchParameter-searchparameter-organization-partof.html"
+    },
+    "StructureDefinition/vhdir-location": {
+      "source": "vhdir-location.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-location.html",
+      "defns": "StructureDefinition-vhdir-location-definitions.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code": {
+      "source": "searchparameter-practitionerrole-qualification-wherevalid-code.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid": {
+      "source": "searchparameter-practitionerrole-qualification-wherevalid.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html"
+    },
+    "HealthcareService/independencerehab1": {
+      "source": "healthcareservice-example-independencerehab1.xml",
+      "base": "HealthcareService-independencerehab1.html"
+    },
+    "ValueSet/valueset-digitalcertificatetype": {
+      "source": "valueset-digitalcertificatetype.xml",
+      "base": "ValueSet-valueset-digitalcertificatetype.html"
+    },
+    "CareTeam/cardiologycareteam1": {
+      "source": "careteam-example-cardiology.xml",
+      "base": "CareTeam-cardiologycareteam1.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-target-location": {
+      "source": "searchparameter-verificationresult-target-location.json",
+      "base": "SearchParameter-searchparameter-verificationresult-target-location.html"
+    },
+    "CodeSystem/codesystem-accessibility": {
+      "source": "codesystem-accessibility.xml",
+      "base": "CodeSystem-codesystem-accessibility.html"
+    },
+    "SearchParameter/searchparameter-practitioner-identifier": {
+      "source": "searchparameter-practitioner-identifier.json",
+      "base": "SearchParameter-searchparameter-practitioner-identifier.html"
+    },
+    "SearchParameter/searchparameter-practitioner-qualification-status": {
+      "source": "searchparameter-practitioner-qualification-status.json",
+      "base": "SearchParameter-searchparameter-practitioner-qualification-status.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-network": {
+      "source": "searchparameter-organizationaffiliation-network.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-network.html"
+    },
+    "SearchParameter/searchparameter-endpoint-identifier": {
+      "source": "searchparameter-endpoint-identifier.json",
+      "base": "SearchParameter-searchparameter-endpoint-identifier.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-characteristic": {
+      "source": "searchparameter-healthcareservice-characteristic.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-characteristic.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-owned-by": {
+      "source": "searchparameter-insuranceplan-owned-by.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-owned-by.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-identifier-assigner": {
+      "source": "searchparameter-practitionerrole-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-identifier-assigner.html"
+    },
+    "CapabilityStatement/vhdir-server": {
+      "source": "capabilitystatement-server.xml",
+      "base": "CapabilityStatement-vhdir-server.html"
+    },
+    "SearchParameter/searchparameter-endpoint-identifier-assigner": {
+      "source": "searchparameter-endpoint-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-endpoint-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-product-type": {
+      "source": "searchparameter-insuranceplan-product-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-product-type.html"
+    },
+    "SearchParameter/searchparameter-location-address": {
+      "source": "searchparameter-location-address.json",
+      "base": "SearchParameter-searchparameter-location-address.html"
+    },
+    "ValueSet/valueset-insuranceplanbenefitcosttype": {
+      "source": "valueset-insuranceplanbenefitcosttype.xml",
+      "base": "ValueSet-valueset-insuranceplanbenefitcosttype.html"
+    },
+    "CodeSystem/codesystem-network-type": {
+      "source": "codesystem-network-type.xml",
+      "base": "CodeSystem-codesystem-network-type.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-location": {
+      "source": "searchparameter-practitionerrole-location.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-location.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-new-patient-network": {
+      "source": "searchparameter-healthcareservice-new-patient-network.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-new-patient-network.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-organization": {
+      "source": "searchparameter-healthcareservice-organization.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-organization.html"
+    },
+    "ValueSet/valueset-aliastype": {
+      "source": "valueset-aliastype.xml",
+      "base": "ValueSet-valueset-aliastype.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-identifier-assigner": {
+      "source": "searchparameter-organizationaffiliation-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html"
+    },
+    "StructureDefinition/vhdir-practitioner": {
+      "source": "vhdir-practitioner.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-practitioner.html",
+      "defns": "StructureDefinition-vhdir-practitioner-definitions.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-via-intermediary": {
+      "source": "searchparameter-practitionerrole-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-via-intermediary.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-type": {
+      "source": "searchparameter-healthcareservice-type.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-type.html"
+    },
+    "SearchParameter/searchparameter-careteam-endpoint": {
+      "source": "searchparameter-careteam-endpoint.json",
+      "base": "SearchParameter-searchparameter-careteam-endpoint.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-validation-status": {
+      "source": "searchparameter-verificationresult-validation-status.json",
+      "base": "SearchParameter-searchparameter-verificationresult-validation-status.html"
+    },
+    "SearchParameter/searchparameter-location-partof": {
+      "source": "searchparameter-location-partof.json",
+      "base": "SearchParameter-searchparameter-location-partof.html"
+    },
+    "ValueSet/valueset-identifier-type": {
+      "source": "valueset-identifier-type.xml",
+      "base": "ValueSet-valueset-identifier-type.html"
+    },
+    "StructureDefinition/newpatientprofile": {
+      "source": "newpatientprofile.structuredefinition.xml",
+      "base": "StructureDefinition-newpatientprofile.html",
+      "defns": "StructureDefinition-newpatientprofile-definitions.html"
+    },
+    "Endpoint/direct321": {
+      "source": "endpoint-example-direct.xml",
+      "base": "Endpoint-direct321.html"
+    },
+    "StructureDefinition/location-reference": {
+      "source": "location-reference.structuredefinition.xml",
+      "base": "StructureDefinition-location-reference.html",
+      "defns": "StructureDefinition-location-reference-definitions.html"
+    },
+    "Organization/mtvernon": {
+      "source": "org-example-mtvernon.xml",
+      "base": "Organization-mtvernon.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-endpoint": {
+      "source": "searchparameter-practitionerrole-endpoint.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-endpoint.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-service": {
+      "source": "searchparameter-practitionerrole-service.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-service.html"
+    },
+    "InsurancePlan/insuranceplan1": {
+      "source": "insuranceplan-example-qhp.xml",
+      "base": "InsurancePlan-insuranceplan1.html"
+    },
+    "CodeSystem/codesystem-insuranceplan": {
+      "source": "codesystem-insuranceplan.xml",
+      "base": "CodeSystem-codesystem-insuranceplan.html"
+    },
+    "StructureDefinition/org-alias-type": {
+      "source": "org-alias-type.structuredefinition.xml",
+      "base": "StructureDefinition-org-alias-type.html",
+      "defns": "StructureDefinition-org-alias-type-definitions.html"
+    },
+    "CodeSystem/codesystem-organizationdemographics": {
+      "source": "codesystem-organizationdemographics.xml",
+      "base": "CodeSystem-codesystem-organizationdemographics.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-new-patient": {
+      "source": "searchparameter-practitionerrole-new-patient.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-new-patient.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-general-cost-value": {
+      "source": "searchparameter-insuranceplan-general-cost-value.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-general-cost-value.html"
+    },
+    "StructureDefinition/vhdir-validation": {
+      "source": "vhdir-validation.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-validation.html",
+      "defns": "StructureDefinition-vhdir-validation-definitions.html"
+    },
+    "SearchParameter/searchparameter-organization-endpoint": {
+      "source": "searchparameter-organization-endpoint.json",
+      "base": "SearchParameter-searchparameter-organization-endpoint.html"
+    },
+    "SearchParameter/searchparameter-location-identifier-assigner": {
+      "source": "searchparameter-location-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-location-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-specialty": {
+      "source": "searchparameter-organizationaffiliation-specialty.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-specialty.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-product-coverage-area": {
+      "source": "searchparameter-insuranceplan-product-coverage-area.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-product-coverage-area.html"
+    },
+    "Bundle/womens-shelter": {
+      "source": "womens-shelter.xml",
+      "base": "Bundle-womens-shelter.html"
+    },
+    "StructureDefinition/vhdir-insuranceplan": {
+      "source": "vhdir-insuranceplan.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-insuranceplan.html",
+      "defns": "StructureDefinition-vhdir-insuranceplan-definitions.html"
+    },
+    "StructureDefinition/qualification": {
+      "source": "qualification.structuredefinition.xml",
+      "base": "StructureDefinition-qualification.html",
+      "defns": "StructureDefinition-qualification-definitions.html"
+    },
+    "StructureDefinition/communication-proficiency": {
+      "source": "communication-proficiency.structuredefinition.xml",
+      "base": "StructureDefinition-communication-proficiency.html",
+      "defns": "StructureDefinition-communication-proficiency-definitions.html"
+    },
+    "ValueSet/valueset-externalvalidationtype": {
+      "source": "valueset-externalvalidationtype.xml",
+      "base": "ValueSet-valueset-externalvalidationtype.html"
+    },
+    "Location/loc-ffmh-hvi": {
+      "source": "location-loc-ffmh-hvi.xml",
+      "base": "Location-loc-ffmh-hvi.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-role": {
+      "source": "searchparameter-practitionerrole-role.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-role.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-qualification-code": {
+      "source": "searchparameter-practitionerrole-qualification-code.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-qualification-code.html"
+    },
+    "CodeSystem/codesystem-payercharacteristics": {
+      "source": "codesystem-payercharacteristics.xml",
+      "base": "CodeSystem-codesystem-payercharacteristics.html"
+    },
+    "SearchParameter/searchparameter-endpoint-via-intermediary": {
+      "source": "searchparameter-endpoint-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-endpoint-via-intermediary.html"
+    },
+    "HealthcareService/hcs-ws": {
+      "source": "healthcareservice-womens-shelter.xml",
+      "base": "HealthcareService-hcs-ws.html"
+    },
+    "Location/loc-ffmh": {
+      "source": "location-loc-ffmh.xml",
+      "base": "Location-loc-ffmh.html"
+    },
+    "StructureDefinition/vhdir-careteam": {
+      "source": "vhdir-careteam.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-careteam.html",
+      "defns": "StructureDefinition-vhdir-careteam-definitions.html"
+    },
+    "SearchParameter/searchparameter-careteam-member": {
+      "source": "searchparameter-careteam-member.json",
+      "base": "SearchParameter-searchparameter-careteam-member.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-endpoint": {
+      "source": "searchparameter-healthcareservice-endpoint.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-endpoint.html"
+    },
+    "CodeSystem/codesystem-usecase": {
+      "source": "codesystem-usecase.xml",
+      "base": "CodeSystem-codesystem-usecase.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-coverage-benefit-type": {
+      "source": "searchparameter-insuranceplan-coverage-benefit-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-coverage-benefit-type.html"
+    },
+    "SearchParameter/searchparameter-endpoint-organization": {
+      "source": "searchparameter-endpoint-organization.json",
+      "base": "SearchParameter-searchparameter-endpoint-organization.html"
+    },
+    "ValueSet/valueset-primarysourcepush": {
+      "source": "valueset-primarysourcepush.xml",
+      "base": "ValueSet-valueset-primarysourcepush.html"
+    },
+    "Organization/independencerehab": {
+      "source": "organization-example-independencerehab.xml",
+      "base": "Organization-independencerehab.html"
+    },
+    "StructureDefinition/vhdir-network": {
+      "source": "vhdir-network.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-network.html",
+      "defns": "StructureDefinition-vhdir-network-definitions.html"
+    },
+    "SearchParameter/searchparameter-organization-address-postalcode": {
+      "source": "searchparameter-organization-address-postalcode.json",
+      "base": "SearchParameter-searchparameter-organization-address-postalcode.html"
+    },
+    "ValueSet/valueset-failureaction": {
+      "source": "valueset-failureaction.xml",
+      "base": "ValueSet-valueset-failureaction.html"
+    },
+    "SearchParameter/searchparameter-location-identifier": {
+      "source": "searchparameter-location-identifier.json",
+      "base": "SearchParameter-searchparameter-location-identifier.html"
+    },
+    "StructureDefinition/endpoint-rank": {
+      "source": "endpoint-rank.structuredefinition.xml",
+      "base": "StructureDefinition-endpoint-rank.html",
+      "defns": "StructureDefinition-endpoint-rank-definitions.html"
+    },
+    "SearchParameter/searchparameter-endpoint-usecase-standard": {
+      "source": "searchparameter-endpoint-usecase-standard.json",
+      "base": "SearchParameter-searchparameter-endpoint-usecase-standard.html"
+    },
+    "ValueSet/valueset-primarysourcetype": {
+      "source": "valueset-primarysourcetype.xml",
+      "base": "ValueSet-valueset-primarysourcetype.html"
+    },
+    "SearchParameter/searchparameter-careteam-organization": {
+      "source": "searchparameter-careteam-organization.json",
+      "base": "SearchParameter-searchparameter-careteam-organization.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-primary-organization": {
+      "source": "searchparameter-organizationaffiliation-primary-organization.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-primary-organization.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-primarysource-organization": {
+      "source": "searchparameter-verificationresult-primarysource-organization.json",
+      "base": "SearchParameter-searchparameter-verificationresult-primarysource-organization.html"
+    },
+    "ValueSet/valueset-languageproficiency": {
+      "source": "valueset-languageproficiency.xml",
+      "base": "ValueSet-valueset-languageproficiency.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-name": {
+      "source": "searchparameter-healthcareservice-name.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-name.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-plan-network": {
+      "source": "searchparameter-insuranceplan-plan-network.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-plan-network.html"
+    },
+    "SearchParameter/searchparameter-organization-identifier": {
+      "source": "searchparameter-organization-identifier.json",
+      "base": "SearchParameter-searchparameter-organization-identifier.html"
+    },
+    "StructureDefinition/endpoint-reference": {
+      "source": "endpoint-reference.structuredefinition.xml",
+      "base": "StructureDefinition-endpoint-reference.html",
+      "defns": "StructureDefinition-endpoint-reference-definitions.html"
+    },
+    "StructureDefinition/contactpoint-availabletime": {
+      "source": "contactpoint-availabletime.structuredefinition.xml",
+      "base": "StructureDefinition-contactpoint-availabletime.html",
+      "defns": "StructureDefinition-contactpoint-availabletime-definitions.html"
+    },
+    "ValueSet/valueset-patientaccess": {
+      "source": "valueset-patientaccess.xml",
+      "base": "ValueSet-valueset-patientaccess.html"
+    },
+    "SearchParameter/searchparameter-practitioner-qualification-code": {
+      "source": "searchparameter-practitioner-qualification-code.json",
+      "base": "SearchParameter-searchparameter-practitioner-qualification-code.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
+      "source": "searchparameter-organizationaffiliation-participating-org.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-participating-org.html"
+    },
+    "SearchParameter/searchparameter-organization-qualification-wherevalid-code": {
+      "source": "searchparameter-organization-qualification-wherevalid-code.json",
+      "base": "SearchParameter-searchparameter-organization-qualification-wherevalid-code.html"
+    },
+    "ValueSet/valueset-insuranceplanbenefittype": {
+      "source": "valueset-insuranceplanbenefittype.xml",
+      "base": "ValueSet-valueset-insuranceplanbenefittype.html"
+    },
+    "Location/wash-dc-metro": {
+      "source": "location-wash-dc-metro.xml",
+      "base": "Location-wash-dc-metro.html"
+    },
+    "StructureDefinition/insuranceplan-reference": {
+      "source": "insuranceplan-reference.structuredefinition.xml",
+      "base": "StructureDefinition-insuranceplan-reference.html",
+      "defns": "StructureDefinition-insuranceplan-reference-definitions.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-target": {
+      "source": "searchparameter-verificationresult-target.json",
+      "base": "SearchParameter-searchparameter-verificationresult-target.html"
+    },
+    "SearchParameter/searchparameter-organization-identifier-assigner": {
+      "source": "searchparameter-organization-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-organization-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-organization-via-intermediary": {
+      "source": "searchparameter-organization-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-organization-via-intermediary.html"
+    },
+    "SearchParameter/searchparameter-practitioner-given-name": {
+      "source": "searchparameter-practitioner-given-name.json",
+      "base": "SearchParameter-searchparameter-practitioner-given-name.html"
+    },
+    "ValueSet/valueset-validationneed": {
+      "source": "valueset-validationneed.xml",
+      "base": "ValueSet-valueset-validationneed.html"
+    },
+    "HealthcareService/independencerehab2": {
+      "source": "healthcareservice-example-independencerehab2.xml",
+      "base": "HealthcareService-independencerehab2.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-general-cost-groupsize": {
+      "source": "searchparameter-insuranceplan-general-cost-groupsize.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-general-cost-groupsize.html"
+    },
+    "OrganizationAffiliation/orgrole1": {
+      "source": "orgrole-example-services.xml",
+      "base": "OrganizationAffiliation-orgrole1.html"
+    },
+    "ValueSet/valueset-network-type": {
+      "source": "valueset-network-type.xml",
+      "base": "ValueSet-valueset-network-type.html"
+    },
+    "StructureDefinition/vhdir-organization": {
+      "source": "vhdir-organization.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-organization.html",
+      "defns": "StructureDefinition-vhdir-organization-definitions.html"
+    },
+    "SearchParameter/searchparameter-network-coverage-area": {
+      "source": "searchparameter-network-coverage-area.json",
+      "base": "SearchParameter-searchparameter-network-coverage-area.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type": {
+      "source": "searchparameter-insuranceplan-specific-cost-benefit-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-specific-cost-benefit-type.html"
+    },
+    "SearchParameter/searchparameter-location-type": {
+      "source": "searchparameter-location-type.json",
+      "base": "SearchParameter-searchparameter-location-type.html"
+    },
+    "SearchParameter/searchparameter-careteam-identifier-assigner": {
+      "source": "searchparameter-careteam-identifier-assigner.json",
+      "base": "SearchParameter-searchparameter-careteam-identifier-assigner.html"
+    },
+    "SearchParameter/searchparameter-practitioner-phonetic": {
+      "source": "searchparameter-practitioner-phonetic.json",
+      "base": "SearchParameter-searchparameter-practitioner-phonetic.html"
+    },
+    "SearchParameter/searchparameter-careteam-status": {
+      "source": "searchparameter-careteam-status.json",
+      "base": "SearchParameter-searchparameter-careteam-status.html"
+    },
+    "PractitionerRole/practitionerrole1": {
+      "source": "pracrole-example-cardiologist.xml",
+      "base": "PractitionerRole-practitionerrole1.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-coverage-type": {
+      "source": "searchparameter-insuranceplan-coverage-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-coverage-type.html"
+    },
+    "StructureDefinition/healthcareservice-reference": {
+      "source": "healthcareservice-reference.structuredefinition.xml",
+      "base": "StructureDefinition-healthcareservice-reference.html",
+      "defns": "StructureDefinition-healthcareservice-reference-definitions.html"
+    },
+    "SearchParameter/searchparameter-endpoint-usecase-type": {
+      "source": "searchparameter-endpoint-usecase-type.json",
+      "base": "SearchParameter-searchparameter-endpoint-usecase-type.html"
+    },
+    "ValueSet/valueset-insuranceplangroupsize": {
+      "source": "valueset-insuranceplangroupsize.xml",
+      "base": "ValueSet-valueset-insuranceplangroupsize.html"
+    },
+    "SearchParameter/searchparameter-endpoint-mime-type": {
+      "source": "searchparameter-endpoint-mime-type.json",
+      "base": "SearchParameter-searchparameter-endpoint-mime-type.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-plan-coverage-area": {
+      "source": "searchparameter-insuranceplan-plan-coverage-area.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-plan-coverage-area.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-via-intermediary": {
+      "source": "searchparameter-healthcareservice-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-via-intermediary.html"
+    },
+    "CodeSystem/codesystem-validation": {
+      "source": "codesystem-validation.xml",
+      "base": "CodeSystem-codesystem-validation.html"
+    },
+    "SearchParameter/searchparameter-organization-address-state": {
+      "source": "searchparameter-organization-address-state.json",
+      "base": "SearchParameter-searchparameter-organization-address-state.html"
+    },
+    "SearchParameter/searchparameter-endpoint-connection-type": {
+      "source": "searchparameter-endpoint-connection-type.json",
+      "base": "SearchParameter-searchparameter-endpoint-connection-type.html"
+    },
+    "Organization/homeland": {
+      "source": "org-example-homeland.xml",
+      "base": "Organization-homeland.html"
+    },
+    "SearchParameter/searchparameter-careteam-identifier": {
+      "source": "searchparameter-careteam-identifier.json",
+      "base": "SearchParameter-searchparameter-careteam-identifier.html"
+    },
+    "SearchParameter/searchparameter-careteam-category": {
+      "source": "searchparameter-careteam-category.json",
+      "base": "SearchParameter-searchparameter-careteam-category.html"
+    },
+    "SearchParameter/searchparameter-location-via-intermediary": {
+      "source": "searchparameter-location-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-location-via-intermediary.html"
+    },
+    "SearchParameter/searchparameter-verificationresult-attestation-attester": {
+      "source": "searchparameter-verificationresult-attestation-attester.json",
+      "base": "SearchParameter-searchparameter-verificationresult-attestation-attester.html"
+    },
+    "CodeSystem/codesystem-ehrcharacteristics": {
+      "source": "codesystem-ehrcharacteristics.xml",
+      "base": "CodeSystem-codesystem-ehrcharacteristics.html"
+    },
+    "ConceptMap/conceptmap-qualification-status": {
+      "source": "conceptmap-qualification-status.xml",
+      "base": "ConceptMap-conceptmap-qualification-status.html"
+    },
+    "SearchParameter/searchparameter-practitionerrole-qualification-status": {
+      "source": "searchparameter-practitionerrole-qualification-status.json",
+      "base": "SearchParameter-searchparameter-practitionerrole-qualification-status.html"
+    },
+    "SearchParameter/searchparameter-organizationaffiliation-via-intermediary": {
+      "source": "searchparameter-organizationaffiliation-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-organizationaffiliation-via-intermediary.html"
+    },
+    "ValueSet/valueset-digitalcertificatestandard": {
+      "source": "valueset-digitalcertificatestandard.xml",
+      "base": "ValueSet-valueset-digitalcertificatestandard.html"
+    },
+    "ValueSet/valueset-digitalcertificatetrustframework": {
+      "source": "valueset-digitalcertificatetrustframework.xml",
+      "base": "ValueSet-valueset-digitalcertificatetrustframework.html"
+    },
+    "StructureDefinition/vhdir-organizationaffiliation": {
+      "source": "vhdir-organizationaffiliation.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-organizationaffiliation.html",
+      "defns": "StructureDefinition-vhdir-organizationaffiliation-definitions.html"
+    },
+    "ValueSet/valueset-digitalcertificateuse": {
+      "source": "valueset-digitalcertificateuse.xml",
+      "base": "ValueSet-valueset-digitalcertificateuse.html"
+    },
+    "CodeSystem/codesystem-digitalcertificate": {
+      "source": "codesystem-digitalcertificate.xml",
+      "base": "CodeSystem-codesystem-digitalcertificate.html"
+    },
+    "SearchParameter/searchparameter-organization-name": {
+      "source": "searchparameter-organization-name.json",
+      "base": "SearchParameter-searchparameter-organization-name.html"
+    },
+    "SearchParameter/searchparameter-practitioner-via-intermediary": {
+      "source": "searchparameter-practitioner-via-intermediary.json",
+      "base": "SearchParameter-searchparameter-practitioner-via-intermediary.html"
+    },
+    "ValueSet/valueset-primarysourcevalidationstatus": {
+      "source": "valueset-primarysourcevalidationstatus.xml",
+      "base": "ValueSet-valueset-primarysourcevalidationstatus.html"
+    },
+    "SearchParameter/searchparameter-location-new-patient": {
+      "source": "searchparameter-location-new-patient.json",
+      "base": "SearchParameter-searchparameter-location-new-patient.html"
+    },
+    "StructureDefinition/vhdir-practitionerrole": {
+      "source": "vhdir-practitionerrole.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-practitionerrole.html",
+      "defns": "StructureDefinition-vhdir-practitionerrole-definitions.html"
+    },
+    "Practitioner/practitioner1": {
+      "source": "practitioner-example-washington.xml",
+      "base": "Practitioner-practitioner1.html"
+    },
+    "SearchParameter/searchparameter-organization-qualification-status": {
+      "source": "searchparameter-organization-qualification-status.json",
+      "base": "SearchParameter-searchparameter-organization-qualification-status.html"
+    },
+    "ValueSet/valueset-certificationedition": {
+      "source": "valueset-certificationedition.xml",
+      "base": "ValueSet-valueset-certificationedition.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-status": {
+      "source": "searchparameter-insuranceplan-status.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-status.html"
+    },
+    "StructureDefinition/careteam-alias": {
+      "source": "careteam-alias.structuredefinition.xml",
+      "base": "StructureDefinition-careteam-alias.html",
+      "defns": "StructureDefinition-careteam-alias-definitions.html"
+    },
+    "SearchParameter/searchparameter-healthcareservice-specialty": {
+      "source": "searchparameter-healthcareservice-specialty.json",
+      "base": "SearchParameter-searchparameter-healthcareservice-specialty.html"
+    },
+    "StructureDefinition/vhdir-healthcareservice": {
+      "source": "vhdir-healthcareservice.structuredefinition.xml",
+      "base": "StructureDefinition-vhdir-healthcareservice.html",
+      "defns": "StructureDefinition-vhdir-healthcareservice-definitions.html"
+    },
+    "SearchParameter/searchparameter-organization-qualification-issuer": {
+      "source": "searchparameter-organization-qualification-issuer.json",
+      "base": "SearchParameter-searchparameter-organization-qualification-issuer.html"
+    },
+    "SearchParameter/searchparameter-practitioner-qualification-issuer": {
+      "source": "searchparameter-practitioner-qualification-issuer.json",
+      "base": "SearchParameter-searchparameter-practitioner-qualification-issuer.html"
+    },
+    "ValueSet/valueset-plan-type": {
+      "source": "valueset-plan-type.xml",
+      "base": "ValueSet-valueset-plan-type.html"
+    },
+    
+    
+    "Organization/monumentHIE": {
+      "source": "organization-example-monumentHIE.xml",
+      "base": "Organization-monumentHIE.html"
+    },
+    
+    "VerificationResult/example-license": {
+      "source": "verificationresult-example-license.xml",
+      "base": "VerificationResult-example-license.html"
+    },
+
+    "StructureDefinition/ehr": {
+      "source": "ehr.structuredefinition.xml",
+      "base": "StructureDefinition-ehr.html",
+      "defns": "StructureDefinition-ehr-definitions.html"
+    },
+    "SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type": {
+      "source": "searchparameter-insuranceplan-specific-cost-cost-type.json",
+      "base": "SearchParameter-searchparameter-insuranceplan-specific-cost-cost-type.html"
+    }
+  },
+  "dependencyList": [
+    {
+      "name": "uscore",
+      "location": "http://hl7.org/fhir/us/core",
+      "version": "1.0.1"
+    }
+  ],
+  "status": "draft",
+  "defaults": {
+    "StructureDefinition": {
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html",
+      "template-mappings": "sd-mappings.html"
+    },
+    "StructureMap": {
+      "template-base": "ex.html",
+      "profiles": false,
+      "content": false,
+      "script": false
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "Any": {
+      "template-base": "base.html",
+      "template-format": "format.html",
+      "swagger": "true"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "Organization": {
+      "template-base": "ex.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "Practitioner": {
+      "template-base": "ex.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "Location": {
+      "template-base": "ex.html"
+    },
+    "Endpoint": {
+      "template-base": "ex.html"
+    },
+    "Bundle": {
+      "template-base": "ex.html"
+    },
+    "InsurancePlan": {
+      "template-base": "ex.html"
+    },
+    "HealthcareService": {
+      "template-base": "ex.html"
+    },
+    "PractitionerRole": {
+      "template-base": "ex.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "CareTeam": {
+      "template-base": "ex.html"
+    },
+    "OrganizationAffiliation": {
+      "template-base": "ex.html"
+    }
+  },
+  "tool": "jekyll",
+  "license": "CC0-1.0",
+  "broken-links": "warning",
+  "title": "Validated Healthcare Directory",
+  "working-dir": "/Users/ehaas/Documents/FHIR/VhDir/",
+  "topofpage": "true",
+  "special-urls": [
+    "urn:oid:2.16.840.1.113883.6.238"
+  ],
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "mappings": "true",
+  "publisher": "HL7 Patient Administration Committee",
+  "fixed-business-version": "0.2.0",
+  "pub_url": "ehaas@healthedatainc.com",
+  "allviews": "true",
+  "no-inactive-codes": "false",
+  "npm-name": "hl7.core.uv.vhdir",
+  "extraTemplates": [
+    "mappings"
+  ],
+  "logging": [
+    "progress"
+  ],
+  "do-transforms": "false"
+}

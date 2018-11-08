@@ -3,39 +3,44 @@
     "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
     "context": [
         {
-            "expression": "Organization",
+            "expression": "PractitionerRole",
+            "type": "element"
+        },
+        {
+            "expression": "OrganizationAffiliation",
             "type": "element"
         }
     ],
-    "date": "2018-11-08T11:58:03-08:00",
+    "date": "2017-10-04T01:03:04.553+11:00",
     "derivation": "constraint",
-    "description": "A reference to the insurancePlan resource",
+    "description": "A reference to the Network",
     "differential": {
         "element": [
             {
-                "definition": "A reference to the insurancePlan resource",
+                "definition": "A reference to the network resource",
                 "id": "Extension",
                 "path": "Extension",
-                "short": "Endpoint reference"
+                "short": "Network reference"
             },
             {
-                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference",
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference",
                 "id": "Extension.url",
                 "path": "Extension.url"
             },
             {
-                "definition": "A reference to the insurance plan",
+                "definition": "Reference to the Network",
                 "id": "Extension.valueReference:valueReference",
+                "label": "network",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Extension.valueReference",
-                "short": "A reference to the insurance plan",
+                "short": "Network",
                 "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
                         ]
                     }
                 ]
@@ -43,12 +48,12 @@
         ]
     },
     "fhirVersion": "3.6.0",
-    "id": "insuranceplan-reference",
+    "id": "network-reference",
     "kind": "complex-type",
-    "name": "InsurancePlanReference",
+    "name": "NetworkReference",
     "resourceType": "StructureDefinition",
     "status": "active",
-    "title": "VhDir Insurance Plan Reference",
+    "title": "VhDir Network Reference",
     "type": "Extension",
-    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference"
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"
 }

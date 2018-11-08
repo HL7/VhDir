@@ -2,6 +2,7 @@
 # FHIR R4 models 'fhirr4models' package in /Users/ehaas/Documents/Python/Venv/Flask36/lib/python3.6/site-packages
 import fhirr4models.structuredefinition as sd
 import fhirr4models.elementdefinition as ed
+
 from fhirr4models.fhirabstractbase import FHIRValidationError
 import json, yaml, isodate
 from pprint import pprint
@@ -11,10 +12,11 @@ import sys
 ignore_elements = ['id','meta','implicitRules','language','text']
 
 # in_path ='/Users/ehaas/Downloads/'
-#in_path ='/Users/ehaas/Documents/FHIR/VhDir/output'
-in_path = '/Users/ehaas/Documents/FHIR/VhDir/source/pre_mustsupport_profiles'
+in_path ='/Users/ehaas/Documents/FHIR/VhDir/output'
+#in_path = '/Users/ehaas/Documents/FHIR/VhDir/source/pre_mustsupport_profiles'
 out_path = '/Users/ehaas/Documents/FHIR/VhDir/source/mustsupport_profiles'
-# fname = 'StructureDefinition-vhdir-practitioner'
+#profile_list = ['StructureDefinition-vhdir-practitioner']
+
 
 profile_list = ['StructureDefinition-vhdir-careteam',
 'StructureDefinition-vhdir-endpoint',
@@ -24,9 +26,11 @@ profile_list = ['StructureDefinition-vhdir-careteam',
 'StructureDefinition-vhdir-network',
 'StructureDefinition-vhdir-organization',
 'StructureDefinition-vhdir-organizationaffiliation',
+'StructureDefinition-vhdir-practitioner'
 'StructureDefinition-vhdir-practitionerrole',
 'StructureDefinition-vhdir-restriction',
 'StructureDefinition-vhdir-validation']
+
 
 extension_list = ['StructureDefinition-accessibility',
 'StructureDefinition-careteam-alias',
@@ -77,7 +81,7 @@ def create_new_diff_list(old_diff_list): # generated white lists of elements usi
 
     # blacklist of elements to ignore
     ignore_elements = ['id','meta','implicitRules','language','text','contained']
-    ignore_me_too = ['id','url']
+    ignore_me_too = ['id','url','modifierExtension']
     ignore_extension_list = []
     new_diff_list = []
 
@@ -89,9 +93,6 @@ def create_new_diff_list(old_diff_list): # generated white lists of elements usi
 
         not_extension_element = not any(':' in s for s in element_id_list[0:-1])
         # print('element_id_list minus 1  = {} check for : = {}'.format(element_id_list[0:-1],not_extension_element))
-
-
-
         element_id_firstdot = element_id_list[1]
         element_id_lastdot = element_id_list[-1]
 
@@ -127,31 +128,41 @@ def process_diff(old_diff_list, new_diff_list): # use generated list to process 
                 else:
                     print('add mustSupport = True to {}'.format(element_index))
                     profile.differential.element[element_index].mustSupport = True
-            else:
+            elif new_element_id_lastdot not in exclude_mustsupport_list:
                 new_element = ed.ElementDefinition(dict(id=new_element_id,path=new_element_id,mustSupport=True))
                 print('out = {}'.format(new_element_id))
                 try:
-                    old_diff_list.insert(element_index, new_element)
                     element_index = element_index + 1  # increment the element index if multiple new elements
+                    print('*** element_index = {}, element.id = {}'.format(element_index,profile.differential.element[element_index].id))
+                    old_diff_list.insert(element_index, new_element)
                 except UnboundLocalError:
                     print ('===========skip element = {new_element_id} ================='.format(new_element_id=new_element_id))
-                    
+                except IndexError:
+                    old_diff_list.append(new_element)
         
                 # print('old_diff_list ={}'.format(old_diff_list))
     return()
 
 
 def remove_elements():  # remove unwanted elements from the Source
+    print('===========remove elements=============')
     del_elements= ['meta','text','version','mapping','snapshot']
     for del_element in del_elements:
         print(del_element, type(del_element))
-        setattr(profile, del_element, None)
+        setattr(profile, del_element, None)   
+    print("profile.differential.element length={}".format(len(profile.differential.element)))
+    try:
+        temp_diff_list = [item for item in profile.differential.element[1:] if item.id.split('.')[1] not in (del_elements + ['id'])]
+        print("temp_diff_list length ={}".format(len(temp_diff_list)))
+    except IndexError:
+        pass
+    #temp_diff_list = temp_diff_list.insert(0,profile.differential.element[0]) 
+        
+    setattr(profile.differential, 'element', [profile.differential.element[0]] + temp_diff_list )
+
+
+    # print(json.dumps(profile.differential.as_json(),indent=4))
     return()
-
-
-
-
-
 
 def main():  # add must supports to all elements and recreate a different
 
@@ -168,6 +179,7 @@ def main():  # add must supports to all elements and recreate a different
     # save to out_path
     fjson_name = 'structuredefinition-profile-{profile_id}'.format(profile_id=profile.id) # for profiles
     #fjson_name = 'structuredefinition-ext-{profile_id}'.format(profile_id=profile.id) # for extensions
+    
     put_rjson(profile,fjson_name)
     return()
 
@@ -180,8 +192,9 @@ for fname in profile_list:
         print(r_type)
         if __name__ == '__main__':
             main()
-    except FHIRValidationError:
+    except FHIRValidationError as e:
         print ('==================type={fname} will not load into model============'.format(fname=fname))
+        print(e)
 
 print('done')
      

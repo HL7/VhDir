@@ -1,0 +1,43 @@
+08-11-2018 09:45 VHDIR notes
+
+Brian and Dragon with servers:
+  Server Location?
+
+sample data sets.
+
+Create data:
+
+
+check with Jason W. - Synthea:  Using real people and organizations  - all real Data
+
+change
+ provider name,
+ org name,
+ npi numbers
+ 
+ look at if internal
+ 
+ restricted geography:
+1-2 states
+100-200 organizations
+1000s providers
+locations
+providerrole
+endpoints
+plans  - a few
+
+make up from spreadsheet
+  
+ Connectathon track
+ 
+credential an individual 
+certify an organization (locations, services)
+
+need an npi
+
+create scenarios
+
+find x around location ( 10 mile radius )
+
+
+remove mod-extensions and extension from diff and must-supports

@@ -1,0 +1,53 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Endpoint",
+            "type": "element"
+        }
+    ],
+    "date": "2017-12-05T09:44:08.203-05:00",
+    "derivation": "constraint",
+    "description": "Order established by a Role, Organization... for Endpoints capable of transferring the same content",
+    "differential": {
+        "element": [
+            {
+                "definition": "Order established by a Role, Organization... for Endpoints capable of transferring the same content (1 = highest)",
+                "id": "Extension",
+                "max": "1",
+                "path": "Extension",
+                "short": "Rank"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "definition": "Order established by a Role, Organization... for Endpoints capable of transferring the same content (1 = highest)",
+                "id": "Extension.valuePositiveInt:valuePositiveInt",
+                "label": "rank",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.valuePositiveInt",
+                "short": "Rank",
+                "sliceName": "valuePositiveInt",
+                "type": [
+                    {
+                        "code": "positiveInt"
+                    }
+                ]
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "endpoint-rank",
+    "kind": "complex-type",
+    "name": "EndpointRank",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Endpoint Rank",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank"
+}

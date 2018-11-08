@@ -1,0 +1,334 @@
+{
+    "abstract": false,
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "context": [
+        {
+            "expression": "Organization",
+            "type": "element"
+        },
+        {
+            "expression": "PractitionerRole",
+            "type": "element"
+        }
+    ],
+    "date": "2017-12-08T09:54:07.16-05:00",
+    "derivation": "constraint",
+    "description": "Qualifications obtained by training and certification",
+    "differential": {
+        "element": [
+            {
+                "definition": "Qualifications obtained by training and certification",
+                "id": "Extension",
+                "path": "Extension",
+                "short": "Qualification"
+            },
+            {
+                "id": "Extension.extension",
+                "mustSupport": false,
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "An identifier for this qualification",
+                "id": "Extension.extension:identifier",
+                "label": "identifier",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Identifier",
+                "sliceName": "identifier"
+            },
+            {
+                "fixedUri": "identifier",
+                "id": "Extension.extension:identifier.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "An identifier for this qualification",
+                "id": "Extension.extension:identifier.valueIdentifier:valueIdentifier",
+                "label": "identifier",
+                "min": 1,
+                "path": "Extension.extension.valueIdentifier",
+                "short": "Identifier",
+                "sliceName": "valueIdentifier",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "definition": "Coded representation of the qualification",
+                "id": "Extension.extension:code",
+                "label": "code",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Code",
+                "sliceName": "code"
+            },
+            {
+                "fixedUri": "code",
+                "id": "Extension.extension:code.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Coded representation of the qualification",
+                "id": "Extension.extension:code.valueCodeableConcept:valueCodeableConcept",
+                "label": "code",
+                "min": 1,
+                "path": "Extension.extension.valueCodeableConcept",
+                "short": "Code",
+                "sliceName": "valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "definition": "Organization that regulates and issues the qualification",
+                "id": "Extension.extension:issuer",
+                "label": "issuer",
+                "max": "1",
+                "min": 1,
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Issuer",
+                "sliceName": "issuer"
+            },
+            {
+                "fixedUri": "issuer",
+                "id": "Extension.extension:issuer.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Organization that regulates and issues the qualification",
+                "id": "Extension.extension:issuer.valueReference:valueReference",
+                "label": "issuer",
+                "min": 1,
+                "path": "Extension.extension.valueReference",
+                "short": "Issuer",
+                "sliceName": "valueReference",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "definition": "Current status of the qualification",
+                "id": "Extension.extension:status",
+                "label": "status",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Status",
+                "sliceName": "status"
+            },
+            {
+                "fixedUri": "status",
+                "id": "Extension.extension:status.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Current status of the qualification",
+                "id": "Extension.extension:status.valueCoding:valueCoding",
+                "label": "status",
+                "min": 1,
+                "path": "Extension.extension.valueCoding",
+                "short": "Status",
+                "sliceName": "valueCoding",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "definition": "Period during which the qualification is valid",
+                "id": "Extension.extension:period",
+                "label": "period",
+                "max": "1",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Period",
+                "sliceName": "period"
+            },
+            {
+                "fixedUri": "period",
+                "id": "Extension.extension:period.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Period during which the qualification is valid",
+                "id": "Extension.extension:period.valuePeriod:valuePeriod",
+                "label": "period",
+                "min": 1,
+                "path": "Extension.extension.valuePeriod",
+                "short": "Period",
+                "sliceName": "valuePeriod",
+                "type": [
+                    {
+                        "code": "Period"
+                    }
+                ]
+            },
+            {
+                "definition": "Indicates where this qualification is valid",
+                "id": "Extension.extension:whereValid",
+                "label": "whereValid",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "Where the qualification is valid",
+                "sliceName": "whereValid"
+            },
+            {
+                "fixedUri": "whereValid",
+                "id": "Extension.extension:whereValid.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "definition": "Indicates where this qualification is valid",
+                "id": "Extension.extension:whereValid.value[x]",
+                "label": "whereValid",
+                "min": 1,
+                "path": "Extension.extension.value[x]",
+                "short": "Where the qualification is valid",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    },
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "definition": "Describes the history of this qualification",
+                "id": "Extension.extension:history",
+                "label": "history",
+                "mustSupport": true,
+                "path": "Extension.extension",
+                "short": "History",
+                "sliceName": "history"
+            },
+            {
+                "id": "Extension.extension:history.extension",
+                "path": "Extension.extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "path": "url",
+                            "type": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "definition": "Previous status of the qualification",
+                "id": "Extension.extension:history.extension:status",
+                "label": "status",
+                "max": "1",
+                "min": 1,
+                "path": "Extension.extension.extension",
+                "short": "Previous status",
+                "sliceName": "status"
+            },
+            {
+                "fixedUri": "status",
+                "id": "Extension.extension:history.extension:status.url",
+                "path": "Extension.extension.extension.url"
+            },
+            {
+                "definition": "Previous status of the qualification",
+                "id": "Extension.extension:history.extension:status.valueCoding:valueCoding",
+                "label": "status",
+                "min": 1,
+                "path": "Extension.extension.extension.valueCoding",
+                "short": "Previous status",
+                "sliceName": "valueCoding",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "definition": "Period during which the status applied",
+                "id": "Extension.extension:history.extension:period",
+                "label": "period",
+                "max": "1",
+                "min": 1,
+                "path": "Extension.extension.extension",
+                "short": "Period",
+                "sliceName": "period"
+            },
+            {
+                "fixedUri": "period",
+                "id": "Extension.extension:history.extension:period.url",
+                "path": "Extension.extension.extension.url"
+            },
+            {
+                "definition": "Period during which the status applied",
+                "id": "Extension.extension:history.extension:period.valuePeriod:valuePeriod",
+                "label": "period",
+                "min": 1,
+                "path": "Extension.extension.extension.valuePeriod",
+                "short": "Period",
+                "sliceName": "valuePeriod",
+                "type": [
+                    {
+                        "code": "Period"
+                    }
+                ]
+            },
+            {
+                "fixedUri": "history",
+                "id": "Extension.extension:history.url",
+                "path": "Extension.extension.url"
+            },
+            {
+                "id": "Extension.extension:history.value[x]",
+                "max": "0",
+                "path": "Extension.extension.value[x]"
+            },
+            {
+                "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification",
+                "id": "Extension.url",
+                "path": "Extension.url"
+            },
+            {
+                "id": "Extension.value[x]",
+                "max": "0",
+                "mustSupport": true,
+                "path": "Extension.value[x]"
+            }
+        ]
+    },
+    "fhirVersion": "3.6.0",
+    "id": "qualification",
+    "kind": "complex-type",
+    "name": "Qualification",
+    "purpose": "Extension to add qualifications on organization and practitionerRole resources",
+    "resourceType": "StructureDefinition",
+    "status": "active",
+    "title": "VhDir Qualification",
+    "type": "Extension",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification"
+}
