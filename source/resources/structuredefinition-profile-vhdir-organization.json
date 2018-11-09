@@ -118,6 +118,7 @@
             },
             {
                 "id": "Organization.identifier",
+                "short": "Identifies this network across multiple systems",
                 "mustSupport": true,
                 "path": "Organization.identifier"
             },
@@ -191,6 +192,7 @@
             },
             {
                 "id": "Organization.active",
+                "short": "Whether the network's record is still in active use",
                 "label": "status",
                 "mapping": [
                     {
@@ -204,18 +206,21 @@
             },
             {
                 "id": "Organization.type",
+                "short": "Kind of network",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Organization.type"
             },
             {
                 "id": "Organization.name",
+                "short": "Name used for the network",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Organization.name"
             },
             {
                 "id": "Organization.alias",
+                "short": "A list of alternate names that the network is known as, or was known as in the past",
                 "mustSupport": true,
                 "path": "Organization.alias"
             },
@@ -348,6 +353,7 @@
             },
             {
                 "id": "Organization.address",
+                "short": "An address for the network",
                 "mustSupport": true,
                 "path": "Organization.address"
             },
@@ -433,6 +439,7 @@
             },
             {
                 "id": "Organization.partOf",
+                "short": "The organization of which this network forms a part",
                 "mustSupport": true,
                 "path": "Organization.partOf",
                 "type": [
@@ -446,6 +453,7 @@
             },
             {
                 "id": "Organization.contact",
+                "short": "Contact for the network for a certain purpose",
                 "mustSupport": true,
                 "path": "Organization.contact"
             },
@@ -660,6 +668,7 @@
             },
             {
                 "id": "Organization.endpoint",
+                "short": "Technical endpoints providing access to services operated for the network",
                 "mustSupport": true,
                 "path": "Organization.endpoint",
                 "type": [

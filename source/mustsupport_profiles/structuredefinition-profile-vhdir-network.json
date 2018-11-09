@@ -153,6 +153,7 @@
             },
             {
                 "id": "Organization.active",
+                "short": "Whether the network's record is still in active use"
                 "label": "status",
                 "mapping": [
                     {
