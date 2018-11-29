@@ -1,0 +1,55 @@
+OrganizationAffiliation
+  What is scope - HIE relationship , Networks (PPO)
+  make a handful adn randomly assign?
+Organization
+  from Synthea data
+Location ( same as address for org and practitioner)
+
+HealthcareService
+  ?
+  
+Endpoint
+  direct addresses
+
+
+Practitioner
+   from CMS data
+
+PractitionerRole
+    from CMs data
+
+Network
+  1-2 (PPO)
+
+
+todo get to validate.
+
+
+3 states
+   Mass, RI, Conn
+1-2k practitioners, PRs,
+10-20 organizations
+
+hospitals
+clinics
+specialties
+
+3-4 Networks
+
+King Hospital System
+Acme Healthcare
+Blue Hope
+
+  Acme Insurance Co
+  Green Circle
+  Persona
+  HIE
+Direct addresses
+
+org roles.
+
+
+
+
+
+
