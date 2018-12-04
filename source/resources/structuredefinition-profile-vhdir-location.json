@@ -44,6 +44,8 @@
                 "mustSupport": true,
                 "path": "Location.extension",
                 "sliceName": "accessibility",
+                "short": "Accessibility options offered by the location",
+                "definition": "An extension to describe accessibility options offered at the location (e.g. handicap access)",
                 "type": [
                     {
                         "code": "Extension",
@@ -58,6 +60,8 @@
                 "mustSupport": true,
                 "path": "Location.extension",
                 "sliceName": "ehr",
+                "short": "EHR at the location",
+                "definition": "An extension to describe the electronic health record (EHR) product(s) in use at a location",
                 "type": [
                     {
                         "code": "Extension",
@@ -74,6 +78,8 @@
                 "mustSupport": true,
                 "path": "Location.extension",
                 "sliceName": "newpatients",
+                "short": "Whether the location is accepting new patients",
+                "definition": "An extension to indicate whether the location is accepting new patients",
                 "type": [
                     {
                         "code": "Extension",
@@ -88,6 +94,8 @@
                 "mustSupport": true,
                 "path": "Location.extension",
                 "sliceName": "newpatientprofile",
+                "short": "Type of new patients accepted",
+                "definition": "An extension to provide information about the types of new patients a location accepts",
                 "type": [
                     {
                         "code": "Extension",

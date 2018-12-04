@@ -24,12 +24,12 @@
                 }
             },
             {
-                "definition": "Optional Extension Element - found in all resources.",
                 "id": "PractitionerRole.extension:Network",
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
-                "short": "Optional Extensions Element",
                 "sliceName": "Network",
+                "short": "A health insurance provider network the practitioner belongs to",
+                "definition": "An extension referencing a health insurance provider network",
                 "type": [
                     {
                         "code": "Extension",
@@ -46,6 +46,8 @@
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
                 "sliceName": "newpatients",
+                "short": "Whether the practitioner is accepting new patients",
+                "definition": "An extension to indicate whether the practitioner is accepting new patients",
                 "type": [
                     {
                         "code": "Extension",
@@ -60,6 +62,8 @@
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
                 "sliceName": "newpatientprofile",
+                "short": "Type of new patients accepted",
+                "definition": "An extension to provide information about the types of new patients a practitioner accepts",
                 "type": [
                     {
                         "code": "Extension",
@@ -74,6 +78,8 @@
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
                 "sliceName": "digitalcertificate",
+                "short": "Digital certificate specific to this role",
+                "definition": "An extension to describe digital certificates",
                 "type": [
                     {
                         "code": "Extension",
