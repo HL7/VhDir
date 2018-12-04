@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-practitionerrole-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:17:54.537845Z"/>
+  <timestamp value="2018-12-04T20:46:43.855694Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9995334207"/>
     <resource>
@@ -36,7 +36,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9995334207"/>
-          <display value="Heriberto SOUCIER"/>
+          <display value="Eldridge Jakubowski"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -78,7 +78,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9995334207-direct"/>
-          <display value="Direct address for Heriberto SOUCIER Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Eldridge Jakubowski Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -121,7 +121,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9990283779"/>
-          <display value="V&#237;ctor JAVIER"/>
+          <display value="Manuel Morales"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -163,7 +163,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9990283779-direct"/>
-          <display value="Direct address for V&#237;ctor JAVIER Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Manuel Morales Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -206,7 +206,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9992607917"/>
-          <display value="Thomas ROWLAND"/>
+          <display value="Julio Vega"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9998062387"/>
@@ -248,7 +248,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9992607917-direct"/>
-          <display value="Direct address for Thomas ROWLAND Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Julio Vega Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -291,7 +291,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9996940463"/>
-          <display value="Johnathan DIEZ"/>
+          <display value="Germ&#225;n Valdez"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -333,7 +333,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9996940463-direct"/>
-          <display value="Direct address for Johnathan DIEZ Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Germ&#225;n Valdez Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -376,7 +376,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9993011061"/>
-          <display value="Basil LETIEN"/>
+          <display value="Curt Hansen"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9990789741"/>
@@ -418,7 +418,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9993011061-direct"/>
-          <display value="Direct address for Basil LETIEN Speech, Language and Hearing Service Providers Role"/>
+          <display value="Direct address for Curt Hansen Speech, Language and Hearing Service Providers Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>

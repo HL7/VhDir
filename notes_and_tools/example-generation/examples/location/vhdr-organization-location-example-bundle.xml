@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-location-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:17:47.466489Z"/>
+  <timestamp value="2018-12-04T20:46:37.502207Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-location-9992607537"/>
     <resource>

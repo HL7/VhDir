@@ -74,7 +74,7 @@ def get_csv(in_path,type):
             if type=='practitioner':
                 random_name=make_new_name(i['Provider Gender Code'])
                 i['Provider First Name']=random_name[0]
-                i['PProvider Last Name (Legal Name)']=random_name[1]
+                i['Provider Last Name (Legal Name)']=random_name[1]
             escape_xml(i)
        logging.info('updated row = {i}'.format(i=pformat(i)))
             
