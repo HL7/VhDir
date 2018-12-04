@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-practitioner-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:08:07.601854Z"/>
+  <timestamp value="2018-12-04T20:17:53.984741Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9995334207"/>
     <resource>
@@ -38,9 +38,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Mckinley SOUCIER"/>
+          <text value="Heriberto SOUCIER"/>
           <family value="SOUCIER"/>
-          <given value="Mckinley"/>
+          <given value="Heriberto"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -225,9 +225,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Marco Antonio JAVIER"/>
+          <text value="V&#237;ctor JAVIER"/>
           <family value="JAVIER"/>
-          <given value="Marco Antonio"/>
+          <given value="V&#237;ctor"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -363,9 +363,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Jae ROWLAND"/>
+          <text value="Thomas ROWLAND"/>
           <family value="ROWLAND"/>
-          <given value="Jae"/>
+          <given value="Thomas"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -501,9 +501,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Giovanni DIEZ"/>
+          <text value="Johnathan DIEZ"/>
           <family value="DIEZ"/>
-          <given value="Giovanni"/>
+          <given value="Johnathan"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -590,20 +590,11 @@
         <communication>
           <coding>
             <system value="urn:ietf:bcp:47"/>
-            <code value="es"/>
-            <display value="Spanish"/>
+            <code value="en"/>
+            <display value="English"/>
             <userSelected value="true"/>
           </coding>
-          <text value="English and Spanish"/>
-        </communication>
-        <communication>
-          <coding>
-            <system value="urn:ietf:bcp:47"/>
-            <code value="{communication_code}"/>
-            <display value="{communication_display}"/>
-            <userSelected value="true"/>
-          </coding>
-          <text value="{communication_display}"/>
+          <text value="English"/>
         </communication>
       </Practitioner>
     </resource>
@@ -648,9 +639,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Timmy LETIEN"/>
+          <text value="Basil LETIEN"/>
           <family value="LETIEN"/>
-          <given value="Timmy"/>
+          <given value="Basil"/>
           <suffix value="AU.D."/>
         </name>
         <telecom>

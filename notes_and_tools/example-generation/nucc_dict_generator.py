@@ -14,8 +14,8 @@ logging.debug('Start of program')
 
 # in_path ='/Users/ehaas/Downloads/'
 #in_path ='/Users/ehaas/Documents/FHIR/VhDir/synthea/src/main/resources/providers'
-in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes and tools/nucc_taxonomy.csv'
-out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes and tools/example-generation'
+in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/nucc_taxonomy.csv'
+out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation'
 out_file = 'nucc_dict.py'
 specialty_codesystem ='http://hl7.org/fhir/ValueSet/c80-practice-codes'
 server_path = 'http://test.fhir.org/r4'

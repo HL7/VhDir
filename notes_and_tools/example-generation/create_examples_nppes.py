@@ -24,8 +24,8 @@ logging.debug('Start of program')
 
 #***********Globals******************
 
-in_path ='/Users/ehaas/Documents/FHIR/VhDir/notes and tools/example-generation/sample-nppes-data'
-out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes and tools/example-generation/examples'
+in_path ='/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/sample-nppes-data'
+out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
 server_path = 'http://test.fhir.org/r4'
 
 def make_new_npi(old_npi):

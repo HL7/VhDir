@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-organization-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:08:00.897658Z"/>
+  <timestamp value="2018-12-04T20:17:47.423354Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9992607537"/>
     <resource>
@@ -66,6 +66,10 @@
           <postalCode value="02740"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -76,9 +80,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Leslie Mante"/>
-            <family value="Mante"/>
-            <given value="Leslie"/>
+            <text value="Archie Johns"/>
+            <family value="Johns"/>
+            <given value="Archie"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -202,6 +206,10 @@
           <postalCode value="060692096"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -212,9 +220,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Johanna Schroeder"/>
-            <family value="Schroeder"/>
-            <given value="Johanna"/>
+            <text value="Orlando White"/>
+            <family value="White"/>
+            <given value="Orlando"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -352,9 +360,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Sammy Parker"/>
-            <family value="Parker"/>
-            <given value="Sammy"/>
+            <text value="Mar&#237;a Cristina Qui&#241;&#243;nez"/>
+            <family value="Qui&#241;&#243;nez"/>
+            <given value="Mar&#237;a Cristina"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -492,9 +500,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Eduardo Sol&#237;s"/>
-            <family value="Sol&#237;s"/>
-            <given value="Eduardo"/>
+            <text value="Marth Altenwerth"/>
+            <family value="Altenwerth"/>
+            <given value="Marth"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -628,9 +636,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Ilda Tillman"/>
-            <family value="Tillman"/>
-            <given value="Ilda"/>
+            <text value="Salina Harber"/>
+            <family value="Harber"/>
+            <given value="Salina"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">

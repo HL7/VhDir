@@ -17,7 +17,7 @@ logging.debug('Start of program')
 # in_path ='/Users/ehaas/Downloads/'
 #in_path ='/Users/ehaas/Documents/FHIR/VhDir/synthea/src/main/resources/providers'
 in_path = '/Volumes/Laptop_Backup/NPPES'
-out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes and tools/example-generation/sample-nppes-data'
+out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/sample-nppes-data'
 server_path = 'http://test.fhir.org/r4'
 nppes_file = 'npidata_pfile_20050523-20181111'
 nppes_endpoint_file = 'endpoint_pfile_20050523-20181111'
