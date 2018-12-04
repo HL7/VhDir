@@ -39,6 +39,8 @@
                 "mustSupport": true,
                 "path": "Organization.extension",
                 "sliceName": "description",
+                "short": "Description of organization",
+                "definition": "An extension to provide a human-readable description of the organization",
                 "type": [
                     {
                         "code": "Extension",
@@ -53,6 +55,8 @@
                 "mustSupport": true,
                 "path": "Organization.extension",
                 "sliceName": "digitalcertificate",
+                "short": "Organization's digital certificate",
+                "definition": "An extension to describe digital certificates",
                 "type": [
                     {
                         "code": "Extension",
@@ -245,6 +249,8 @@
                 "mustSupport": true,
                 "path": "Organization.alias.extension",
                 "sliceName": "type",
+                "short": "Type of alias",
+                "definition": "An extension to specify the type of alias an organization used",
                 "type": [
                     {
                         "code": "Extension",
@@ -261,6 +267,8 @@
                 "mustSupport": true,
                 "path": "Organization.alias.extension",
                 "sliceName": "period",
+                "short": "Time period for alias",
+                "definition": "An extension to describe the period of time an organization’s alias was in use",
                 "type": [
                     {
                         "code": "Extension",

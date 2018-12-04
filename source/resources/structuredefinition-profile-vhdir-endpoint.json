@@ -47,6 +47,8 @@
                 "mustSupport": true,
                 "path": "Endpoint.extension",
                 "sliceName": "usecase",
+                "short": "Use cases (service descriptions) supported by the endpoint",
+                "definition": "An extension to indicate the specific use cases/services supported by an endpoint, e.g. “I support this implementation guide at this endpoint”",
                 "type": [
                     {
                         "code": "Extension",
@@ -64,6 +66,7 @@
                 "mustSupport": true,
                 "path": "Endpoint.extension",
                 "sliceName": "rank",
+                "short": "Preferred order for connecting to the endpoint",
                 "type": [
                     {
                         "code": "Extension",
@@ -78,6 +81,8 @@
                 "mustSupport": true,
                 "path": "Endpoint.extension",
                 "sliceName": "digitalcertificate",
+                "short": "Digital certificate associated with the endpoint",
+                "definition": "An extension to describe digital certificates",
                 "type": [
                     {
                         "code": "Extension",

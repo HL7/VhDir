@@ -180,7 +180,7 @@
                     "min": 0,
                     "path": "DomainResource.extension"
                 },
-                "definition": "An Extension",
+                "definition": "An extension to describe accessibility options offered by the practitioner (e.g. cultural competence)",
                 "id": "Practitioner.extension:accessibility",
                 "isModifier": false,
                 "isSummary": false,
@@ -188,7 +188,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.extension",
-                "short": "Extension",
+                "short": "Accessibility options offered by practitioner",
                 "sliceName": "accessibility",
                 "type": [
                     {
@@ -205,7 +205,7 @@
                     "min": 0,
                     "path": "DomainResource.extension"
                 },
-                "definition": "An Extension",
+                "definition": "An extension to describe digital certificates",
                 "id": "Practitioner.extension:digitalcertificate",
                 "isModifier": false,
                 "isSummary": false,
@@ -213,7 +213,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.extension",
-                "short": "Extension",
+                "short": "Practitioner's digital certificate",
                 "sliceName": "digitalcertificate",
                 "type": [
                     {
@@ -992,7 +992,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.telecom.extension",
-                "short": "viaintermediary",
+                "short": "via intermediary",
                 "sliceName": "viaintermediary",
                 "type": [
                     {
@@ -2539,7 +2539,7 @@
                     "min": 0,
                     "path": "Element.extension"
                 },
-                "definition": "An Extension",
+                "definition": "An extension to express a practitioner’s spoken proficiency with a language",
                 "id": "Practitioner.communication.extension:proficiency",
                 "isModifier": false,
                 "isSummary": false,
@@ -2547,7 +2547,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.communication.extension",
-                "short": "Extension",
+                "short": "Spoken language proficiency",
                 "sliceName": "proficiency",
                 "type": [
                     {

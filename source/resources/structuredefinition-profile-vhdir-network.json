@@ -33,6 +33,7 @@
                 "mustSupport": true,
                 "path": "Organization.extension",
                 "short": "Valid time period for this Network",
+                "definition": "The date range that this network should be considered available.",
                 "sliceName": "timePeriod",
                 "type": [
                     {
@@ -48,6 +49,8 @@
                 "mustSupport": true,
                 "path": "Organization.extension",
                 "sliceName": "coverageArea",
+                "short": "Network coverage area",
+                "definition": "An extension referencing a Location resource defining the coverage area of a health insurance provider network",
                 "type": [
                     {
                         "code": "Extension",
