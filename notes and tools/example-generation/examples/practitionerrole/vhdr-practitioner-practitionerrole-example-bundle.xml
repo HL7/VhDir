@@ -1,0 +1,1236 @@
+<Bundle xmlns="http://hl7.org/fhir">
+<id value="vhdir-practitionerrole-examples-bundle"/>
+ <type value="batch"/>
+ <timestamp value="2018-12-04T17:57:59.985903Z"/>
+ 
+<entry>
+ <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9995334207"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
+ <resource>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="vhdir-practitionerrole-9995334207"/> <!-- eh: one role per practitioner to start use nppes to give second role based on taxonomy_codes -->
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<!-- eh:todo
+	e.g.,Dr. Washington is a member of the Patriot PPO insurance network in this role
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference">
+		<valueReference>
+			<reference value="Organization/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</valueReference>
+	</extension>
+-->
+<!-- eh:todo
+e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
+
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
+		<extension url="type">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="ind"/>
+				<display value="Individual"/>
+			</valueCoding>
+		</extension>
+		<extension url="use">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="signing"/>
+				<display value="Signing"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificateStandard">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="x.509v3"/>
+				<display value="x.509v3"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificate">
+			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+		</extension>
+		<extension url="expirationDate">
+			<valueDate value="1970-09-03"/>
+		</extension>
+		<extension url="trustFramework">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<code value="direct"/>
+					<display value="DirectTrust"/>
+					<userSelected value="true"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Dr. Washington is accepting new patients with health plans associated with the Patriot PPO
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g., Describes conditions under which Dr. Washington is accepting new patients in this role 
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification">
+		<extension url="identifier">
+			<valueIdentifier>
+				<use value="official"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="PRN"/>
+						<display value="Provider number"/>
+					</coding>
+					<text value="DEA Registration Number"/>
+				</type>
+				<system value="https://www.deadiversion.usdoj.gov/"/>
+				<value value="CW1234563"/>
+				<period>
+					<start value="2016-02-26"/>
+					<end value="2019-02-26"/>
+				</period>
+				<assigner>
+					<identifier>
+						<value value="US Drug Enforcement Administration (DEA)"/>
+					</identifier>
+					<display value="US Drug Enforcement Administration (DEA)"/>
+				</assigner>
+			</valueIdentifier>
+		</extension>
+		<extension url="code">
+			<valueCodeableConcept>
+				<text value="DEA Registration Number"/>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="issuer">
+			<valueReference>
+				<identifier>
+					<value value="US Drug Enforcement Administration (DEA)"/>
+				</identifier>
+				<display value="US Drug Enforcement Administration (DEA)"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/resource-status"/>
+				<code value="active"/>
+				<display value="active"/>
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="2016-02-26"/>
+				<end value="2019-02-26"/>
+			</valuePeriod>
+		</extension>
+	</extension>
+-->
+
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Hospital ID"/>
+		</type>
+		<system value="https://vassar-health-connecticut-inc.com"/><!-- create from assigned org -->
+		<value value="001334359"/><!--grab PRN or create one-->
+		<period>
+			<start value="2016-02-22"/><!-- randomize-->
+		</period>
+	<!--eh: todo
+		<assigner>
+			<reference value="identifier_assigner"/>
+			<display value="identifier_assigner_display"/>
+		</assigner>
+	-->
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/><!--eh: should the same identifier period randomize -->
+	</period>
+	
+	<practitioner>
+		<!-- George Washington -->
+		<reference value="Practitioner/vhdir-practitioner-9995334207"/><!--baed on practitioner-->
+		<display value="Jaime SOUCIER"/>
+	</practitioner>
+	
+	<organization>
+		<!-- Founding Fathers Memorial Hospital -->
+		<reference value="Organization/vhdir-organization-9995131442"/><!--randomly assign to o based on lat lon or zip - get org list by zip-->
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</organization>
+	
+	<code>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="207R00000X"/><!-- use nucc_role mapping codes? add second or third if present?-->
+			<display value="Allopathic and Osteopathic Physicians"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>	<!-- use nucc  specialty_displayn maps-->
+			<code value="207RC0000X"/>
+			<display value="Cardiovascular Disease"/>
+		</coding>
+	</specialty>
+	<location>
+		<reference value="Location/vhdir-location-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-internal-medicine-healthcareservice-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC. Internal Medicine Healthcare Service"/>
+	</healthcareService>
+	<telecom>
+		<!-- 
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+	-->
+
+		<system value="phone"/>
+		<value value="8607144820"/>
+	</telecom>
+	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+	
+	<endpoint>
+		<reference value="Endpoint/vhdir-practitionerrole-9995334207-direct"/>
+	  <display value="Direct address for Jaime SOUCIER Allopathic and Osteopathic Physicians Role"/>
+	</endpoint>
+	
+</PractitionerRole>
+</resource>
+ <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
+  <method value="PUT"/>
+  <url value="PractitionerRole/vhdir-practitionerrole-9995334207"/><!-- 1..1 URL for HTTP equivalent of this entry -->
+ </request>
+</entry>
+<entry>
+ <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9990283779"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
+ <resource>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="vhdir-practitionerrole-9990283779"/> <!-- eh: one role per practitioner to start use nppes to give second role based on taxonomy_codes -->
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<!-- eh:todo
+	e.g.,Dr. Washington is a member of the Patriot PPO insurance network in this role
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference">
+		<valueReference>
+			<reference value="Organization/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</valueReference>
+	</extension>
+-->
+<!-- eh:todo
+e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
+
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
+		<extension url="type">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="ind"/>
+				<display value="Individual"/>
+			</valueCoding>
+		</extension>
+		<extension url="use">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="signing"/>
+				<display value="Signing"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificateStandard">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="x.509v3"/>
+				<display value="x.509v3"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificate">
+			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+		</extension>
+		<extension url="expirationDate">
+			<valueDate value="1970-09-03"/>
+		</extension>
+		<extension url="trustFramework">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<code value="direct"/>
+					<display value="DirectTrust"/>
+					<userSelected value="true"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Dr. Washington is accepting new patients with health plans associated with the Patriot PPO
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g., Describes conditions under which Dr. Washington is accepting new patients in this role 
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification">
+		<extension url="identifier">
+			<valueIdentifier>
+				<use value="official"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="PRN"/>
+						<display value="Provider number"/>
+					</coding>
+					<text value="DEA Registration Number"/>
+				</type>
+				<system value="https://www.deadiversion.usdoj.gov/"/>
+				<value value="CW1234563"/>
+				<period>
+					<start value="2016-02-26"/>
+					<end value="2019-02-26"/>
+				</period>
+				<assigner>
+					<identifier>
+						<value value="US Drug Enforcement Administration (DEA)"/>
+					</identifier>
+					<display value="US Drug Enforcement Administration (DEA)"/>
+				</assigner>
+			</valueIdentifier>
+		</extension>
+		<extension url="code">
+			<valueCodeableConcept>
+				<text value="DEA Registration Number"/>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="issuer">
+			<valueReference>
+				<identifier>
+					<value value="US Drug Enforcement Administration (DEA)"/>
+				</identifier>
+				<display value="US Drug Enforcement Administration (DEA)"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/resource-status"/>
+				<code value="active"/>
+				<display value="active"/>
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="2016-02-26"/>
+				<end value="2019-02-26"/>
+			</valuePeriod>
+		</extension>
+	</extension>
+-->
+
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Hospital ID"/>
+		</type>
+		<system value="https://vassar-health-connecticut-inc.com"/><!-- create from assigned org -->
+		<value value="001289017"/><!--grab PRN or create one-->
+		<period>
+			<start value="2016-02-22"/><!-- randomize-->
+		</period>
+	<!--eh: todo
+		<assigner>
+			<reference value="identifier_assigner"/>
+			<display value="identifier_assigner_display"/>
+		</assigner>
+	-->
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/><!--eh: should the same identifier period randomize -->
+	</period>
+	
+	<practitioner>
+		<!-- George Washington -->
+		<reference value="Practitioner/vhdir-practitioner-9990283779"/><!--baed on practitioner-->
+		<display value="Dan JAVIER"/>
+	</practitioner>
+	
+	<organization>
+		<!-- Founding Fathers Memorial Hospital -->
+		<reference value="Organization/vhdir-organization-9995131442"/><!--randomly assign to o based on lat lon or zip - get org list by zip-->
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</organization>
+	
+	<code>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="207R00000X"/><!-- use nucc_role mapping codes? add second or third if present?-->
+			<display value="Allopathic and Osteopathic Physicians"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>	<!-- use nucc  specialty_displayn maps-->
+			<code value="207RE0101X"/>
+			<display value="Endocrinology, Diabetes and Metabolism"/>
+		</coding>
+	</specialty>
+	<location>
+		<reference value="Location/vhdir-location-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-internal-medicine-healthcareservice-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC. Internal Medicine Healthcare Service"/>
+	</healthcareService>
+	<telecom>
+		<!-- 
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+	-->
+
+		<system value="phone"/>
+		<value value="8602472137"/>
+	</telecom>
+	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+	
+	<endpoint>
+		<reference value="Endpoint/vhdir-practitionerrole-9990283779-direct"/>
+	  <display value="Direct address for Dan JAVIER Allopathic and Osteopathic Physicians Role"/>
+	</endpoint>
+	
+</PractitionerRole>
+</resource>
+ <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
+  <method value="PUT"/>
+  <url value="PractitionerRole/vhdir-practitionerrole-9990283779"/><!-- 1..1 URL for HTTP equivalent of this entry -->
+ </request>
+</entry>
+<entry>
+ <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9992607917"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
+ <resource>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="vhdir-practitionerrole-9992607917"/> <!-- eh: one role per practitioner to start use nppes to give second role based on taxonomy_codes -->
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<!-- eh:todo
+	e.g.,Dr. Washington is a member of the Patriot PPO insurance network in this role
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference">
+		<valueReference>
+			<reference value="Organization/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</valueReference>
+	</extension>
+-->
+<!-- eh:todo
+e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
+
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
+		<extension url="type">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="ind"/>
+				<display value="Individual"/>
+			</valueCoding>
+		</extension>
+		<extension url="use">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="signing"/>
+				<display value="Signing"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificateStandard">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="x.509v3"/>
+				<display value="x.509v3"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificate">
+			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+		</extension>
+		<extension url="expirationDate">
+			<valueDate value="1970-09-03"/>
+		</extension>
+		<extension url="trustFramework">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<code value="direct"/>
+					<display value="DirectTrust"/>
+					<userSelected value="true"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Dr. Washington is accepting new patients with health plans associated with the Patriot PPO
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g., Describes conditions under which Dr. Washington is accepting new patients in this role 
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification">
+		<extension url="identifier">
+			<valueIdentifier>
+				<use value="official"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="PRN"/>
+						<display value="Provider number"/>
+					</coding>
+					<text value="DEA Registration Number"/>
+				</type>
+				<system value="https://www.deadiversion.usdoj.gov/"/>
+				<value value="CW1234563"/>
+				<period>
+					<start value="2016-02-26"/>
+					<end value="2019-02-26"/>
+				</period>
+				<assigner>
+					<identifier>
+						<value value="US Drug Enforcement Administration (DEA)"/>
+					</identifier>
+					<display value="US Drug Enforcement Administration (DEA)"/>
+				</assigner>
+			</valueIdentifier>
+		</extension>
+		<extension url="code">
+			<valueCodeableConcept>
+				<text value="DEA Registration Number"/>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="issuer">
+			<valueReference>
+				<identifier>
+					<value value="US Drug Enforcement Administration (DEA)"/>
+				</identifier>
+				<display value="US Drug Enforcement Administration (DEA)"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/resource-status"/>
+				<code value="active"/>
+				<display value="active"/>
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="2016-02-26"/>
+				<end value="2019-02-26"/>
+			</valuePeriod>
+		</extension>
+	</extension>
+-->
+
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Hospital ID"/>
+		</type>
+		<system value="https://deutsches-altenheim-inc.com"/><!-- create from assigned org -->
+		<value value="002113901"/><!--grab PRN or create one-->
+		<period>
+			<start value="2016-02-22"/><!-- randomize-->
+		</period>
+	<!--eh: todo
+		<assigner>
+			<reference value="identifier_assigner"/>
+			<display value="identifier_assigner_display"/>
+		</assigner>
+	-->
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/><!--eh: should the same identifier period randomize -->
+	</period>
+	
+	<practitioner>
+		<!-- George Washington -->
+		<reference value="Practitioner/vhdir-practitioner-9992607917"/><!--baed on practitioner-->
+		<display value="Rupert ROWLAND"/>
+	</practitioner>
+	
+	<organization>
+		<!-- Founding Fathers Memorial Hospital -->
+		<reference value="Organization/vhdir-organization-9998062387"/><!--randomly assign to o based on lat lon or zip - get org list by zip-->
+		<display value="DEUTSCHES ALTENHEIM INC."/>
+	</organization>
+	
+	<code>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="207R00000X"/><!-- use nucc_role mapping codes? add second or third if present?-->
+			<display value="Allopathic and Osteopathic Physicians"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>	<!-- use nucc  specialty_displayn maps-->
+			<code value="207RG0300X"/>
+			<display value="Geriatric Medicine"/>
+		</coding>
+	</specialty>
+	<location>
+		<reference value="Location/vhdir-location-9998062387"/>
+		<display value="DEUTSCHES ALTENHEIM INC."/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-internal-medicine-healthcareservice-9998062387"/>
+		<display value="DEUTSCHES ALTENHEIM INC. Internal Medicine Healthcare Service"/>
+	</healthcareService>
+	<telecom>
+		<!-- 
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+	-->
+
+		<system value="phone"/>
+		<value value="6173638293"/>
+	</telecom>
+	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+	
+	<endpoint>
+		<reference value="Endpoint/vhdir-practitionerrole-9992607917-direct"/>
+	  <display value="Direct address for Rupert ROWLAND Allopathic and Osteopathic Physicians Role"/>
+	</endpoint>
+	
+</PractitionerRole>
+</resource>
+ <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
+  <method value="PUT"/>
+  <url value="PractitionerRole/vhdir-practitionerrole-9992607917"/><!-- 1..1 URL for HTTP equivalent of this entry -->
+ </request>
+</entry>
+<entry>
+ <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9996940463"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
+ <resource>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="vhdir-practitionerrole-9996940463"/> <!-- eh: one role per practitioner to start use nppes to give second role based on taxonomy_codes -->
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<!-- eh:todo
+	e.g.,Dr. Washington is a member of the Patriot PPO insurance network in this role
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference">
+		<valueReference>
+			<reference value="Organization/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</valueReference>
+	</extension>
+-->
+<!-- eh:todo
+e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
+
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
+		<extension url="type">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="ind"/>
+				<display value="Individual"/>
+			</valueCoding>
+		</extension>
+		<extension url="use">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="signing"/>
+				<display value="Signing"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificateStandard">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="x.509v3"/>
+				<display value="x.509v3"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificate">
+			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+		</extension>
+		<extension url="expirationDate">
+			<valueDate value="1970-09-03"/>
+		</extension>
+		<extension url="trustFramework">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<code value="direct"/>
+					<display value="DirectTrust"/>
+					<userSelected value="true"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Dr. Washington is accepting new patients with health plans associated with the Patriot PPO
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g., Describes conditions under which Dr. Washington is accepting new patients in this role 
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification">
+		<extension url="identifier">
+			<valueIdentifier>
+				<use value="official"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="PRN"/>
+						<display value="Provider number"/>
+					</coding>
+					<text value="DEA Registration Number"/>
+				</type>
+				<system value="https://www.deadiversion.usdoj.gov/"/>
+				<value value="CW1234563"/>
+				<period>
+					<start value="2016-02-26"/>
+					<end value="2019-02-26"/>
+				</period>
+				<assigner>
+					<identifier>
+						<value value="US Drug Enforcement Administration (DEA)"/>
+					</identifier>
+					<display value="US Drug Enforcement Administration (DEA)"/>
+				</assigner>
+			</valueIdentifier>
+		</extension>
+		<extension url="code">
+			<valueCodeableConcept>
+				<text value="DEA Registration Number"/>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="issuer">
+			<valueReference>
+				<identifier>
+					<value value="US Drug Enforcement Administration (DEA)"/>
+				</identifier>
+				<display value="US Drug Enforcement Administration (DEA)"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/resource-status"/>
+				<code value="active"/>
+				<display value="active"/>
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="2016-02-26"/>
+				<end value="2019-02-26"/>
+			</valuePeriod>
+		</extension>
+	</extension>
+-->
+
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Hospital ID"/>
+		</type>
+		<system value="https://vassar-health-connecticut-inc.com"/><!-- create from assigned org -->
+		<value value="001425330"/><!--grab PRN or create one-->
+		<period>
+			<start value="2016-02-22"/><!-- randomize-->
+		</period>
+	<!--eh: todo
+		<assigner>
+			<reference value="identifier_assigner"/>
+			<display value="identifier_assigner_display"/>
+		</assigner>
+	-->
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/><!--eh: should the same identifier period randomize -->
+	</period>
+	
+	<practitioner>
+		<!-- George Washington -->
+		<reference value="Practitioner/vhdir-practitioner-9996940463"/><!--baed on practitioner-->
+		<display value="Numbers DIEZ"/>
+	</practitioner>
+	
+	<organization>
+		<!-- Founding Fathers Memorial Hospital -->
+		<reference value="Organization/vhdir-organization-9995131442"/><!--randomly assign to o based on lat lon or zip - get org list by zip-->
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</organization>
+	
+	<code>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="207R00000X"/><!-- use nucc_role mapping codes? add second or third if present?-->
+			<display value="Allopathic and Osteopathic Physicians"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>	<!-- use nucc  specialty_displayn maps-->
+			<code value="207RE0101X"/>
+			<display value="Endocrinology, Diabetes and Metabolism"/>
+		</coding>
+	</specialty>
+	<location>
+		<reference value="Location/vhdir-location-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC."/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-internal-medicine-healthcareservice-9995131442"/>
+		<display value="VASSAR HEALTH CONNECTICUT, INC. Internal Medicine Healthcare Service"/>
+	</healthcareService>
+	<telecom>
+		<!-- 
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+	-->
+
+		<system value="phone"/>
+		<value value="8602472137"/>
+	</telecom>
+	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+	
+	<endpoint>
+		<reference value="Endpoint/vhdir-practitionerrole-9996940463-direct"/>
+	  <display value="Direct address for Numbers DIEZ Allopathic and Osteopathic Physicians Role"/>
+	</endpoint>
+	
+</PractitionerRole>
+</resource>
+ <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
+  <method value="PUT"/>
+  <url value="PractitionerRole/vhdir-practitionerrole-9996940463"/><!-- 1..1 URL for HTTP equivalent of this entry -->
+ </request>
+</entry>
+<entry>
+ <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9993011061"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
+ <resource>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="vhdir-practitionerrole-9993011061"/> <!-- eh: one role per practitioner to start use nppes to give second role based on taxonomy_codes -->
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<!-- eh:todo
+	e.g.,Dr. Washington is a member of the Patriot PPO insurance network in this role
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference">
+		<valueReference>
+			<reference value="Organization/patriotppo"/>
+			<display value="Patriot Preferred Provider Network"/>
+		</valueReference>
+	</extension>
+-->
+<!-- eh:todo
+e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
+
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
+		<extension url="type">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="ind"/>
+				<display value="Individual"/>
+			</valueCoding>
+		</extension>
+		<extension url="use">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="signing"/>
+				<display value="Signing"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificateStandard">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<code value="x.509v3"/>
+				<display value="x.509v3"/>
+			</valueCoding>
+		</extension>
+		<extension url="certificate">
+			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
+		</extension>
+		<extension url="expirationDate">
+			<valueDate value="1970-09-03"/>
+		</extension>
+		<extension url="trustFramework">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<code value="direct"/>
+					<display value="DirectTrust"/>
+					<userSelected value="true"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Dr. Washington is accepting new patients with health plans associated with the Patriot PPO
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+		<extension url="acceptingPatients">
+			<valueBoolean value="true"/>
+		</extension>
+		<extension url="network">
+			<valueReference>
+				<reference value="Organization/patriotppo"/>
+				<display value="Patriot Preferred Provider Network"/>
+			</valueReference>
+		</extension>
+	</extension>
+-->
+
+<!-- eh:todo e.g., Describes conditions under which Dr. Washington is accepting new patients in this role 
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value="New patients are accepted via referral from providers participating in Patriot PPO"/>
+	</extension>
+-->
+
+<!-- eh:todo e.g.,Information about Dr. Washington's registration w/the DEA to prescribe controlled substances at this location
+
+	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification">
+		<extension url="identifier">
+			<valueIdentifier>
+				<use value="official"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="PRN"/>
+						<display value="Provider number"/>
+					</coding>
+					<text value="DEA Registration Number"/>
+				</type>
+				<system value="https://www.deadiversion.usdoj.gov/"/>
+				<value value="CW1234563"/>
+				<period>
+					<start value="2016-02-26"/>
+					<end value="2019-02-26"/>
+				</period>
+				<assigner>
+					<identifier>
+						<value value="US Drug Enforcement Administration (DEA)"/>
+					</identifier>
+					<display value="US Drug Enforcement Administration (DEA)"/>
+				</assigner>
+			</valueIdentifier>
+		</extension>
+		<extension url="code">
+			<valueCodeableConcept>
+				<text value="DEA Registration Number"/>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="issuer">
+			<valueReference>
+				<identifier>
+					<value value="US Drug Enforcement Administration (DEA)"/>
+				</identifier>
+				<display value="US Drug Enforcement Administration (DEA)"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/resource-status"/>
+				<code value="active"/>
+				<display value="active"/>
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="2016-02-26"/>
+				<end value="2019-02-26"/>
+			</valuePeriod>
+		</extension>
+	</extension>
+-->
+
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Hospital ID"/>
+		</type>
+		<system value="https://eye-associates-pc.com"/><!-- create from assigned org -->
+		<value value="9774726"/><!--grab PRN or create one-->
+		<period>
+			<start value="2016-02-22"/><!-- randomize-->
+		</period>
+	<!--eh: todo
+		<assigner>
+			<reference value="identifier_assigner"/>
+			<display value="identifier_assigner_display"/>
+		</assigner>
+	-->
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/><!--eh: should the same identifier period randomize -->
+	</period>
+	
+	<practitioner>
+		<!-- George Washington -->
+		<reference value="Practitioner/vhdir-practitioner-9993011061"/><!--baed on practitioner-->
+		<display value="Asa LETIEN"/>
+	</practitioner>
+	
+	<organization>
+		<!-- Founding Fathers Memorial Hospital -->
+		<reference value="Organization/vhdir-organization-9990789741"/><!--randomly assign to o based on lat lon or zip - get org list by zip-->
+		<display value="EYE ASSOCIATES PC"/>
+	</organization>
+	
+	<code>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="231H00000X"/><!-- use nucc_role mapping codes? add second or third if present?-->
+			<display value="Speech, Language and Hearing Service Providers"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://www.wpc.edi.com/taxonomy"/>	<!-- use nucc  specialty_displayn maps-->
+			<code value="231H00000X"/>
+			<display value="Audiologist"/>
+		</coding>
+	</specialty>
+	<location>
+		<reference value="Location/vhdir-location-9990789741"/>
+		<display value="EYE ASSOCIATES PC"/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-miscellaneous-healthcareservice-9990789741"/>
+		<display value="EYE ASSOCIATES PC Miscellaneous Healthcare Service"/>
+	</healthcareService>
+	<telecom>
+		<!-- 
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
+			<valueReference>
+				<reference value="Location/loc-ffmh-hvi"/>
+				<display value="Founding Fathers Memorial Hospital, Heart and Vascular Institute"/>
+			</valueReference>
+		</extension>
+	-->
+
+		<system value="phone"/>
+		<value value="9789221888"/>
+	</telecom>
+	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+	
+	<endpoint>
+		<reference value="Endpoint/vhdir-practitionerrole-9993011061-direct"/>
+	  <display value="Direct address for Asa LETIEN Speech, Language and Hearing Service Providers Role"/>
+	</endpoint>
+	
+</PractitionerRole>
+</resource>
+ <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
+  <method value="PUT"/>
+  <url value="PractitionerRole/vhdir-practitionerrole-9993011061"/><!-- 1..1 URL for HTTP equivalent of this entry -->
+ </request>
+</entry>
+</Bundle>

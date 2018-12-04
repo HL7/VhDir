@@ -1,8 +1,10 @@
-<Location xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd-current/fhir-all.xsd">
-	<id value="loc-ffmh"/>
+<Location xmlns="http://hl7.org/fhir">
+	<id value="{f_id}"/>
+	
 	<meta>
 		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
 	</meta>
+	
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
 		<!-- Indicates that this location is handicap accessible and can provide assistance to persons with disabilities -->
 		<valueCodeableConcept>
@@ -11,11 +13,15 @@
 				<code value="handiaccess"/>
 				<display value="handicap accessible"/>
 			</coding>
-			<text value="Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"/>
+			<text value="Offers a variety of services and programs for persons with disabilities"/>
 		</valueCodeableConcept>
 	</extension>
+	
+	<!-- eh: hold off on this for now
+			
+			E.g., This location uses the Revolutionary Professional EHR v10.4.3. The EHR product is certified to the 2014 Edition requirements. The product includes a patient portal.
+
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr">
-		<!-- This location uses the Revolutionary Professional EHR v10.4.3. The EHR product is certified to the 2014 Edition requirements. The product includes a patient portal. -->
 		<extension url="developer">
 			<valueString value="Revolutionary Health"/>
 		</extension>
@@ -45,57 +51,113 @@
 			<valueString value="04282014-1111-2"/>
 		</extension>
 	</extension>
+-->
+<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+	<extension url="acceptingPatients">
+		<valueBoolean value="true"/>
+	</extension>
+	<extension url="acceptingPatients">
+		<valueReference>
+				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<display value="Acme Insurance Co"/>
+		</valueReference>
+	</extension>	
+	</extension>
+
+<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+	<extension url="acceptingPatients">
+		<valueBoolean value="true"/>
+	</extension>
+	<extension url="acceptingPatients">
+		<valueReference>
+				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<display value="Persona"/>
+		</valueReference>
+	</extension>	
+	</extension>
+
+<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients">
+	<extension url="acceptingPatients">
+		<valueBoolean value="true"/>
+	</extension>
+	<extension url="acceptingPatients">
+		<valueReference>
+				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<display value="Green Circle"/>
+		</valueReference>	
+	</extension>	
+	</extension>
+
+	<extension> url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile">
+		<valueString value ="This location accepts all types of patients">
+	</extension>
+
+<!--  eh: todo 
+	<extension> url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction">
+		<valueReference>
+				<reference value="#vhdir-restriction-{npi}"/> 
+				<display value="usage restriction"/>
+		</valueReference>	
+	</extension>
+-->
+
+
 	<identifier>
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
 			<valueCode value="active"/>
-		</extension>
-		<!-- This location is the main campus for Founding Fathers Memorial Hospital -->
+		</extension
 		<use value="secondary"/>
-		<system value="http://example.org/www.foundingfathersmemorial.com"/>
-		<value value="main campus"/>
+		<system value="{location_identifier_system}"/>
+		<value value="main campus"/> <!-- eh: randomize this too -->
 		<assigner>
-			<reference value="Organization/foundingfathers"/>
-			<display value="Founding Fathers Memorial Hospital"/>
+			<reference value="Organization/vhdir-org-{npi}"/>
+			<display value="{name}"/>
 		</assigner>
 	</identifier>
-	<status value="active"/>
-	<!-- this record is active -->
-	<name value="Founding Fathers Memorial Hospital"/>
-	<description value="Main campus of Founding Fathers Memorial Hospital"/>
+	
+	
+	<status value="active"/> <!--eh: todo randomize this-->
+	
+	<name value="{name}"/>
+	<description value="Main campus of {name}"/>
+	
 	<type>
-		<!-- This location is a hospital -->
+		<!-- mapped from Taxonomy Code -->
 		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<code value="HOSP"/>
-			<display value="Hospital"/>
+			<system value="http://www.wpc.edi.com/taxonomy"/>
+			<code value="{type_code}"/>
+			<display value="{type_code_display}"/>
 			<userSelected value="true"/>
 		</coding>
 	</type>
+	
+	
 	<telecom>
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
 			<extension url="allDay">
 				<valueBoolean value="true"/>
 			</extension>
 		</extension>
-		<!-- Contact this location at any time of day by phone at 202-101-0123 -->
+		
 		<system value="phone"/>
-		<value value="202-101-0123"/>
+		<value value="{phone}"/>
 		<use value="work"/>
 		<rank value="1"/>
 	</telecom>
+	
 	<address>
-		<!-- This location's address is 330 C Street SW, Washington, DC 20201, USA -->
 		<use value="work"/>
 		<type value="both"/>
-		<text value="330 C Street SW, Washington, DC 20201, USA"/>
-		<line value="330 C Street SW"/>
-		<city value="Washington"/>
-		<state value="DC"/>
-		<postalCode value="20201"/>
+		<text value="{address}, {city}, {state} {zip}"/>
+		<line value="{adress}"/>
+		<city value="{city}"/>
+		<state value="{state}"/>
+		<postalCode value="{zip}"/>
 		<country value="USA"/>
 	</address>
+	
+	<!-- eh: hold off since not easy to discern this from NPPESS data,  e.g.,	a collection of buildings or other locations such as a site or a campus 
 	<physicalType>
-		<!-- This location is a collection of buildings or other locations such as a site or a campus -->
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
 			<code value="si"/>
@@ -103,16 +165,21 @@
 			<userSelected value="true"/>
 		</coding>
 	</physicalType>
+-->
+
 	<position>
 		<!-- Coordinates of this location -->
-		<longitude value="38.8859395"/>
-		<latitude value="-77.016469"/>
+		<longitude value="{LON}"/>
+		<latitude value="{LAT}"/>
 	</position>
-	<managingOrganization>
+	
+	<managingOrganization>  <!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
 		<!-- This location is managed by Founding Fathers Memorial Hospital -->
-		<reference value="Organization/foundingfathers"/>
-		<display value="Founding Fathers Memorial Hospital"/>
+		<reference value="Organization/vhdir-organization-{managing_org_npi}"/>
+		<display value="{managing_org}"/>
 	</managingOrganization>
+	
+	
 	<hoursOfOperation>
 		<!-- This location is always open -->
 		<daysOfWeek value="mon"/>
@@ -125,9 +192,12 @@
 		<allDay value="true"/>
 	</hoursOfOperation>
 	<availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
-	<endpoint>
-		<!-- Reference to an endpoint for Founding Fathers FHIR server -->
-		<reference value="Endpoint/direct321"/>
-		<display value="Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"/>
+	
+	
+	<endpoint> <!-- A reference to an electronic endpoint -->
+			<reference value="Endpoint/vhdir-{type}-{npi}-direct"/>
+			<display value="{name} Direct address"/>
 	</endpoint>
+	
+	
 </Location>

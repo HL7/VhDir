@@ -2,7 +2,7 @@ OrganizationAffiliation
   What is scope - HIE relationship , Networks (PPO)
   make a handful adn randomly assign?
 Organization
-  from Synthea data
+  from NPPES data  -get rid of comments
 Location ( same as address for org and practitioner)
 
 HealthcareService
@@ -14,6 +14,7 @@ Endpoint
 
 Practitioner
    from CMS data
+   remove all the comments
 
 PractitionerRole
     from CMs data
