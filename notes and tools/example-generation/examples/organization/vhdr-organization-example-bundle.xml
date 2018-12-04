@@ -1,911 +1,693 @@
 <Bundle xmlns="http://hl7.org/fhir">
-<id value="vhdir-organization-examples-bundle"/>
- <type value="batch"/>
- <timestamp value="2018-12-04T17:57:51.468314Z"/>
- 
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9992607537"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Organization xmlns="http://hl7.org/fhir"> <!-- synthetic organization -->
-
-	<id value="vhdir-organization-9992607537"/>
-
-	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
-    </meta>
-
-    <identifier> <!-- NPI -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+  <id value="vhdir-organization-examples-bundle"/>
+  <type value="batch"/>
+  <timestamp value="2018-12-04T20:08:00.897658Z"/>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9992607537"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-9992607537"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI -->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
-        </extension>
-        <use value="official"/>
-        <type>
+          </extension>
+          <use value="official"/>
+          <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-npi"/>
-        <value value="9992607537"/>
-        <period>
-            <start value="2004-04-21T11:57:00-05:00"/> <!-- could randomize this-->
-        </period>
-        <assigner>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9992607537"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
             <display value="CMS"/>
-        </assigner>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active could randomize this as well-->
-
-	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
-        </coding>
-        <text value="Healthcare Provider"/>
-	</type>
-
-	<name value="GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."/>
-	
-<!-- todo add aliases
-    <alias value="DC Memorial Hospital"> 
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod>
-                <start value="1975"/>
-                <end value="2000"/>
-            </valuePeriod>
-        </extension>
-    </alias>
--->
-
-	<telecom> <!-- Contact information -->
-
-		<!-- eh: todo add contactpoint 
-
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="todo"/>
-                <display value="todo"/>
-            </valueReference>
-        </extension>
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
--->
-        <!-- Extracted/copied from FFMH -->
-        <system value="phone"/>
-        <value value="5089926553"/><!-- todo format phone -->
-	</telecom>
-
-	<address>
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+          </coding>
+          <text value="Healthcare Provider"/>
+        </type>
+        <name value="GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."/>
+        <telecom>
+          <system value="phone"/>
+          <value value="5089926553"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
+              <valueDecimal value="41.633416"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-70.951045"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="874 PURCHASE ST, NEW BEDFORD, MA 02740"/>
+          <line value="874 PURCHASE ST"/>
+          <city value="NEW BEDFORD"/>
+          <state value="MA"/>
+          <postalCode value="02740"/>
+          <country value="USA"/>
+        </address>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Leslie Mante"/>
+            <family value="Mante"/>
+            <given value="Leslie"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="5089926553"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
                 <valueDecimal value="41.633416"/>
-            </extension>
-            <extension url="longitude">
+              </extension>
+              <extension url="longitude">
                 <valueDecimal value="-70.951045"/>
+              </extension>
             </extension>
-        </extension>
-        <use value="work"/>
-        <type value="both"/>
-        <text value="874 PURCHASE ST, NEW BEDFORD, MA 02740"/>
-        <line value="874 PURCHASE ST"/>
-        <city value="NEW BEDFORD"/>
-        <state value="MA"/>
-        <postalCode value="02740"/>
-        <country value="USA"/>
-	</address>
-	
-	<partOf>
-		<!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
-		<reference value="Organization/vhdir-organization-9990030000"/>
-		<display value="Blue Hope"/>
-	</partOf>
-    <contact> <!-- Describes contact information for administrative inquiries  TODO randomize this -->
-        <purpose>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
-                <code value="ADMIN"/>
-                <display value="Administrative"/>
-            </coding>
-        </purpose>
-        <name>
-            <use value="official"/>
-            <text value="Lucas Lindgren"/>
-            <family value="Lindgren"/>
-            <given value="Lucas"/>
-        </name>
-        <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
-                <extension url="daysOfWeek">
-                    <valueCode value="mon"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="tue"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="wed"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="thu"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="fri"/>
-                </extension>
-                <extension url="availableStartTime">
-                    <valueTime value="07:00:00"/>
-                </extension>
-                <extension url="availableEndTime">
-                    <valueTime value="18:00:00"/>
-                </extension>
-            </extension>
-            <system value="phone"/>
-            <value value="5089926553"/> <!-- for now is the same as above-->
             <use value="work"/>
-        </telecom>
-        <address> <!-- for now is the same as above-->
-					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-				            <extension url="latitude">
-				                <valueDecimal value="41.633416"/>
-				            </extension>
-				            <extension url="longitude">
-				                <valueDecimal value="-70.951045"/>
-				            </extension>
-				        </extension>
-				        <use value="work"/>
-				        <type value="both"/>
-				        <text value="874 PURCHASE ST, NEW BEDFORD, MA 02740"/>
-				        <line value="874 PURCHASE ST"/>
-				        <city value="NEW BEDFORD"/>
-				        <state value="MA"/>
-				        <postalCode value="02740"/>
-				        <country value="USA"/>
-					</address>    </contact>
-
-    <endpoint> <!-- A reference to an electronic endpoint -->
-        <reference value="Endpoint/vhdir-organization-9992607537-direct"/>
-        <display value="GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC. Direct address"/>
-    </endpoint>
-
-</Organization></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Organization/vhdir-organization-9992607537"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9995131442"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Organization xmlns="http://hl7.org/fhir"> <!-- synthetic organization -->
-
-	<id value="vhdir-organization-9995131442"/>
-
-	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
-    </meta>
-
-    <identifier> <!-- NPI -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <type value="both"/>
+            <text value="874 PURCHASE ST, NEW BEDFORD, MA 02740"/>
+            <line value="874 PURCHASE ST"/>
+            <city value="NEW BEDFORD"/>
+            <state value="MA"/>
+            <postalCode value="02740"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-9992607537-direct"/>
+          <display value="GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC. Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-9992607537"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9995131442"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-9995131442"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI -->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
-        </extension>
-        <use value="official"/>
-        <type>
+          </extension>
+          <use value="official"/>
+          <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-npi"/>
-        <value value="9995131442"/>
-        <period>
-            <start value="2004-04-21T11:57:00-05:00"/> <!-- could randomize this-->
-        </period>
-        <assigner>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9995131442"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
             <display value="CMS"/>
-        </assigner>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active could randomize this as well-->
-
-	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
-        </coding>
-        <text value="Healthcare Provider"/>
-	</type>
-
-	<name value="VASSAR HEALTH CONNECTICUT, INC."/>
-	
-<!-- todo add aliases
-    <alias value="DC Memorial Hospital"> 
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod>
-                <start value="1975"/>
-                <end value="2000"/>
-            </valuePeriod>
-        </extension>
-    </alias>
--->
-
-	<telecom> <!-- Contact information -->
-
-		<!-- eh: todo add contactpoint 
-
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="todo"/>
-                <display value="todo"/>
-            </valueReference>
-        </extension>
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
--->
-        <!-- Extracted/copied from FFMH -->
-        <system value="phone"/>
-        <value value="8603644084"/><!-- todo format phone -->
-	</telecom>
-
-	<address>
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+          </coding>
+          <text value="Healthcare Provider"/>
+        </type>
+        <name value="VASSAR HEALTH CONNECTICUT, INC."/>
+        <telecom>
+          <system value="phone"/>
+          <value value="8603644084"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
+              <valueDecimal value="41.874681"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-73.433903"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="50 HOSPITAL HILL RD, SHARON, CT 060692096"/>
+          <line value="50 HOSPITAL HILL RD"/>
+          <city value="SHARON"/>
+          <state value="CT"/>
+          <postalCode value="060692096"/>
+          <country value="USA"/>
+        </address>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Johanna Schroeder"/>
+            <family value="Schroeder"/>
+            <given value="Johanna"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="8603644084"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
                 <valueDecimal value="41.874681"/>
-            </extension>
-            <extension url="longitude">
+              </extension>
+              <extension url="longitude">
                 <valueDecimal value="-73.433903"/>
+              </extension>
             </extension>
-        </extension>
-        <use value="work"/>
-        <type value="both"/>
-        <text value="50 HOSPITAL HILL RD, SHARON, CT 060692096"/>
-        <line value="50 HOSPITAL HILL RD"/>
-        <city value="SHARON"/>
-        <state value="CT"/>
-        <postalCode value="060692096"/>
-        <country value="USA"/>
-	</address>
-	
-	<partOf>
-		<!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
-		<reference value="Organization/vhdir-organization-9990010000"/>
-		<display value="King Hospital System"/>
-	</partOf>
-    <contact> <!-- Describes contact information for administrative inquiries  TODO randomize this -->
-        <purpose>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
-                <code value="ADMIN"/>
-                <display value="Administrative"/>
-            </coding>
-        </purpose>
-        <name>
-            <use value="official"/>
-            <text value="Jos&#233; Luis Sol&#237;s"/>
-            <family value="Sol&#237;s"/>
-            <given value="Jos&#233; Luis"/>
-        </name>
-        <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
-                <extension url="daysOfWeek">
-                    <valueCode value="mon"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="tue"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="wed"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="thu"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="fri"/>
-                </extension>
-                <extension url="availableStartTime">
-                    <valueTime value="07:00:00"/>
-                </extension>
-                <extension url="availableEndTime">
-                    <valueTime value="18:00:00"/>
-                </extension>
-            </extension>
-            <system value="phone"/>
-            <value value="8603644084"/> <!-- for now is the same as above-->
             <use value="work"/>
-        </telecom>
-        <address> <!-- for now is the same as above-->
-					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-				            <extension url="latitude">
-				                <valueDecimal value="41.874681"/>
-				            </extension>
-				            <extension url="longitude">
-				                <valueDecimal value="-73.433903"/>
-				            </extension>
-				        </extension>
-				        <use value="work"/>
-				        <type value="both"/>
-				        <text value="50 HOSPITAL HILL RD, SHARON, CT 060692096"/>
-				        <line value="50 HOSPITAL HILL RD"/>
-				        <city value="SHARON"/>
-				        <state value="CT"/>
-				        <postalCode value="060692096"/>
-				        <country value="USA"/>
-					</address>    </contact>
-
-    <endpoint> <!-- A reference to an electronic endpoint -->
-        <reference value="Endpoint/vhdir-organization-9995131442-direct"/>
-        <display value="VASSAR HEALTH CONNECTICUT, INC. Direct address"/>
-    </endpoint>
-
-</Organization></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Organization/vhdir-organization-9995131442"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9990789741"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Organization xmlns="http://hl7.org/fhir"> <!-- synthetic organization -->
-
-	<id value="vhdir-organization-9990789741"/>
-
-	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
-    </meta>
-
-    <identifier> <!-- NPI -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <type value="both"/>
+            <text value="50 HOSPITAL HILL RD, SHARON, CT 060692096"/>
+            <line value="50 HOSPITAL HILL RD"/>
+            <city value="SHARON"/>
+            <state value="CT"/>
+            <postalCode value="060692096"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-9995131442-direct"/>
+          <display value="VASSAR HEALTH CONNECTICUT, INC. Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-9995131442"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9990789741"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-9990789741"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI -->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
-        </extension>
-        <use value="official"/>
-        <type>
+          </extension>
+          <use value="official"/>
+          <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-npi"/>
-        <value value="9990789741"/>
-        <period>
-            <start value="2004-04-21T11:57:00-05:00"/> <!-- could randomize this-->
-        </period>
-        <assigner>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9990789741"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
             <display value="CMS"/>
-        </assigner>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active could randomize this as well-->
-
-	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
-        </coding>
-        <text value="Healthcare Provider"/>
-	</type>
-
-	<name value="EYE ASSOCIATES PC"/>
-	
-<!-- todo add aliases
-    <alias value="DC Memorial Hospital"> 
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod>
-                <start value="1975"/>
-                <end value="2000"/>
-            </valuePeriod>
-        </extension>
-    </alias>
--->
-
-	<telecom> <!-- Contact information -->
-
-		<!-- eh: todo add contactpoint 
-
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="todo"/>
-                <display value="todo"/>
-            </valueReference>
-        </extension>
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
--->
-        <!-- Extracted/copied from FFMH -->
-        <system value="phone"/>
-        <value value="7812724944"/><!-- todo format phone -->
-	</telecom>
-
-	<address>
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+          </coding>
+          <text value="Healthcare Provider"/>
+        </type>
+        <name value="EYE ASSOCIATES PC"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="7812724944"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
+              <valueDecimal value="42.504844"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.201539"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="172 CAMBRIDGE ST, BURLINGTON, MA 018032984"/>
+          <line value="172 CAMBRIDGE ST"/>
+          <city value="BURLINGTON"/>
+          <state value="MA"/>
+          <postalCode value="018032984"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Sammy Parker"/>
+            <family value="Parker"/>
+            <given value="Sammy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="7812724944"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
                 <valueDecimal value="42.504844"/>
-            </extension>
-            <extension url="longitude">
+              </extension>
+              <extension url="longitude">
                 <valueDecimal value="-71.201539"/>
+              </extension>
             </extension>
-        </extension>
-        <use value="work"/>
-        <type value="both"/>
-        <text value="172 CAMBRIDGE ST, BURLINGTON, MA 018032984"/>
-        <line value="172 CAMBRIDGE ST"/>
-        <city value="BURLINGTON"/>
-        <state value="MA"/>
-        <postalCode value="018032984"/>
-        <country value="USA"/>
-	</address>
-	
-	<partOf>
-		<!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
-		<reference value="Organization/vhdir-organization-9990030000"/>
-		<display value="Blue Hope"/>
-	</partOf>
-    <contact> <!-- Describes contact information for administrative inquiries  TODO randomize this -->
-        <purpose>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
-                <code value="ADMIN"/>
-                <display value="Administrative"/>
-            </coding>
-        </purpose>
-        <name>
-            <use value="official"/>
-            <text value="Katrice Windler"/>
-            <family value="Windler"/>
-            <given value="Katrice"/>
-        </name>
-        <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
-                <extension url="daysOfWeek">
-                    <valueCode value="mon"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="tue"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="wed"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="thu"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="fri"/>
-                </extension>
-                <extension url="availableStartTime">
-                    <valueTime value="07:00:00"/>
-                </extension>
-                <extension url="availableEndTime">
-                    <valueTime value="18:00:00"/>
-                </extension>
-            </extension>
-            <system value="phone"/>
-            <value value="7812724944"/> <!-- for now is the same as above-->
             <use value="work"/>
-        </telecom>
-        <address> <!-- for now is the same as above-->
-					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-				            <extension url="latitude">
-				                <valueDecimal value="42.504844"/>
-				            </extension>
-				            <extension url="longitude">
-				                <valueDecimal value="-71.201539"/>
-				            </extension>
-				        </extension>
-				        <use value="work"/>
-				        <type value="both"/>
-				        <text value="172 CAMBRIDGE ST, BURLINGTON, MA 018032984"/>
-				        <line value="172 CAMBRIDGE ST"/>
-				        <city value="BURLINGTON"/>
-				        <state value="MA"/>
-				        <postalCode value="018032984"/>
-				        <country value="USA"/>
-					</address>    </contact>
-
-    <endpoint> <!-- A reference to an electronic endpoint -->
-        <reference value="Endpoint/vhdir-organization-9990789741-direct"/>
-        <display value="EYE ASSOCIATES PC Direct address"/>
-    </endpoint>
-
-</Organization></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Organization/vhdir-organization-9990789741"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9998062387"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Organization xmlns="http://hl7.org/fhir"> <!-- synthetic organization -->
-
-	<id value="vhdir-organization-9998062387"/>
-
-	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
-    </meta>
-
-    <identifier> <!-- NPI -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <type value="both"/>
+            <text value="172 CAMBRIDGE ST, BURLINGTON, MA 018032984"/>
+            <line value="172 CAMBRIDGE ST"/>
+            <city value="BURLINGTON"/>
+            <state value="MA"/>
+            <postalCode value="018032984"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-9990789741-direct"/>
+          <display value="EYE ASSOCIATES PC Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-9990789741"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9998062387"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-9998062387"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI -->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
-        </extension>
-        <use value="official"/>
-        <type>
+          </extension>
+          <use value="official"/>
+          <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-npi"/>
-        <value value="9998062387"/>
-        <period>
-            <start value="2004-04-21T11:57:00-05:00"/> <!-- could randomize this-->
-        </period>
-        <assigner>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9998062387"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
             <display value="CMS"/>
-        </assigner>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active could randomize this as well-->
-
-	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
-        </coding>
-        <text value="Healthcare Provider"/>
-	</type>
-
-	<name value="DEUTSCHES ALTENHEIM INC."/>
-	
-<!-- todo add aliases
-    <alias value="DC Memorial Hospital"> 
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod>
-                <start value="1975"/>
-                <end value="2000"/>
-            </valuePeriod>
-        </extension>
-    </alias>
--->
-
-	<telecom> <!-- Contact information -->
-
-		<!-- eh: todo add contactpoint 
-
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="todo"/>
-                <display value="todo"/>
-            </valueReference>
-        </extension>
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
--->
-        <!-- Extracted/copied from FFMH -->
-        <system value="phone"/>
-        <value value="6173251230"/><!-- todo format phone -->
-	</telecom>
-
-	<address>
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+          </coding>
+          <text value="Healthcare Provider"/>
+        </type>
+        <name value="DEUTSCHES ALTENHEIM INC."/>
+        <telecom>
+          <system value="phone"/>
+          <value value="6173251230"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
+              <valueDecimal value="42.277897"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.155833"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="2222 CENTRE ST, WEST ROXBURY, MA 021324034"/>
+          <line value="2222 CENTRE ST"/>
+          <city value="WEST ROXBURY"/>
+          <state value="MA"/>
+          <postalCode value="021324034"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Eduardo Sol&#237;s"/>
+            <family value="Sol&#237;s"/>
+            <given value="Eduardo"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="6173251230"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
                 <valueDecimal value="42.277897"/>
-            </extension>
-            <extension url="longitude">
+              </extension>
+              <extension url="longitude">
                 <valueDecimal value="-71.155833"/>
+              </extension>
             </extension>
-        </extension>
-        <use value="work"/>
-        <type value="both"/>
-        <text value="2222 CENTRE ST, WEST ROXBURY, MA 021324034"/>
-        <line value="2222 CENTRE ST"/>
-        <city value="WEST ROXBURY"/>
-        <state value="MA"/>
-        <postalCode value="021324034"/>
-        <country value="USA"/>
-	</address>
-	
-	<partOf>
-		<!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
-		<reference value="Organization/vhdir-organization-9990010000"/>
-		<display value="King Hospital System"/>
-	</partOf>
-    <contact> <!-- Describes contact information for administrative inquiries  TODO randomize this -->
-        <purpose>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
-                <code value="ADMIN"/>
-                <display value="Administrative"/>
-            </coding>
-        </purpose>
-        <name>
-            <use value="official"/>
-            <text value="Ariadna Rocha"/>
-            <family value="Rocha"/>
-            <given value="Ariadna"/>
-        </name>
-        <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
-                <extension url="daysOfWeek">
-                    <valueCode value="mon"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="tue"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="wed"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="thu"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="fri"/>
-                </extension>
-                <extension url="availableStartTime">
-                    <valueTime value="07:00:00"/>
-                </extension>
-                <extension url="availableEndTime">
-                    <valueTime value="18:00:00"/>
-                </extension>
-            </extension>
-            <system value="phone"/>
-            <value value="6173251230"/> <!-- for now is the same as above-->
             <use value="work"/>
-        </telecom>
-        <address> <!-- for now is the same as above-->
-					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-				            <extension url="latitude">
-				                <valueDecimal value="42.277897"/>
-				            </extension>
-				            <extension url="longitude">
-				                <valueDecimal value="-71.155833"/>
-				            </extension>
-				        </extension>
-				        <use value="work"/>
-				        <type value="both"/>
-				        <text value="2222 CENTRE ST, WEST ROXBURY, MA 021324034"/>
-				        <line value="2222 CENTRE ST"/>
-				        <city value="WEST ROXBURY"/>
-				        <state value="MA"/>
-				        <postalCode value="021324034"/>
-				        <country value="USA"/>
-					</address>    </contact>
-
-    <endpoint> <!-- A reference to an electronic endpoint -->
-        <reference value="Endpoint/vhdir-organization-9998062387-direct"/>
-        <display value="DEUTSCHES ALTENHEIM INC. Direct address"/>
-    </endpoint>
-
-</Organization></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Organization/vhdir-organization-9998062387"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9990780047"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Organization xmlns="http://hl7.org/fhir"> <!-- synthetic organization -->
-
-	<id value="vhdir-organization-9990780047"/>
-
-	<meta>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
-    </meta>
-
-    <identifier> <!-- NPI -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <type value="both"/>
+            <text value="2222 CENTRE ST, WEST ROXBURY, MA 021324034"/>
+            <line value="2222 CENTRE ST"/>
+            <city value="WEST ROXBURY"/>
+            <state value="MA"/>
+            <postalCode value="021324034"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-9998062387-direct"/>
+          <display value="DEUTSCHES ALTENHEIM INC. Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-9998062387"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9990780047"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-9990780047"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI -->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
-        </extension>
-        <use value="official"/>
-        <type>
+          </extension>
+          <use value="official"/>
+          <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
             </coding>
             <text value="NPI"/>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-npi"/>
-        <value value="9990780047"/>
-        <period>
-            <start value="2004-04-21T11:57:00-05:00"/> <!-- could randomize this-->
-        </period>
-        <assigner>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9990780047"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
             <display value="CMS"/>
-        </assigner>
-    </identifier>
-
-	<active value="true"/> <!-- This record is active could randomize this as well-->
-
-	<type> <!-- This organization is a healthcare provider/hospital -->
-        <coding>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
             <display value="Healthcare Provider"/>
-        </coding>
-        <text value="Healthcare Provider"/>
-	</type>
-
-	<name value="HARRINGTON MEMORIAL HOSPITAL, INC."/>
-	
-<!-- todo add aliases
-    <alias value="DC Memorial Hospital"> 
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
-            <valuePeriod>
-                <start value="1975"/>
-                <end value="2000"/>
-            </valuePeriod>
-        </extension>
-    </alias>
--->
-
-	<telecom> <!-- Contact information -->
-
-		<!-- eh: todo add contactpoint 
-
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary">
-            <valueReference>
-                <reference value="todo"/>
-                <display value="todo"/>
-            </valueReference>
-        </extension>
-	    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
-            <extension url="allDay">
-                <valueBoolean value="true"/>
-            </extension>
-        </extension>
--->
-        <!-- Extracted/copied from FFMH -->
-        <system value="phone"/>
-        <value value="5087659771"/><!-- todo format phone -->
-	</telecom>
-
-	<address>
-	    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+          </coding>
+          <text value="Healthcare Provider"/>
+        </type>
+        <name value="HARRINGTON MEMORIAL HOSPITAL, INC."/>
+        <telecom>
+          <system value="phone"/>
+          <value value="5087659771"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
             <extension url="latitude">
-                <valueDecimal value="42.129251"/>
+              <valueDecimal value="42.129251"/>
             </extension>
             <extension url="longitude">
-                <valueDecimal value="-72.031155"/>
+              <valueDecimal value="-72.031155"/>
             </extension>
-        </extension>
-        <use value="work"/>
-        <type value="both"/>
-        <text value="100 SOUTH STREET, SOUTHBRIDGE, MA 01550"/>
-        <line value="100 SOUTH STREET"/>
-        <city value="SOUTHBRIDGE"/>
-        <state value="MA"/>
-        <postalCode value="01550"/>
-        <country value="USA"/>
-	</address>
-	
-	<partOf>
-		<!-- eh:  randomize whether belong to King Hospital System, Acme Healthcare or Blue Hope or none -->
-		<reference value="Organization/vhdir-organization-9990030000"/>
-		<display value="Blue Hope"/>
-	</partOf>
-    <contact> <!-- Describes contact information for administrative inquiries  TODO randomize this -->
-        <purpose>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="100 SOUTH STREET, SOUTHBRIDGE, MA 01550"/>
+          <line value="100 SOUTH STREET"/>
+          <city value="SOUTHBRIDGE"/>
+          <state value="MA"/>
+          <postalCode value="01550"/>
+          <country value="USA"/>
+        </address>
+        <contact>
+          <purpose>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
-                <code value="ADMIN"/>
-                <display value="Administrative"/>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
             </coding>
-        </purpose>
-        <name>
+          </purpose>
+          <name>
             <use value="official"/>
-            <text value="Scot Sawayn"/>
-            <family value="Sawayn"/>
-            <given value="Scot"/>
-        </name>
-        <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
-                <extension url="daysOfWeek">
-                    <valueCode value="mon"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="tue"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="wed"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="thu"/>
-                </extension>
-                <extension url="daysOfWeek">
-                    <valueCode value="fri"/>
-                </extension>
-                <extension url="availableStartTime">
-                    <valueTime value="07:00:00"/>
-                </extension>
-                <extension url="availableEndTime">
-                    <valueTime value="18:00:00"/>
-                </extension>
+            <text value="Ilda Tillman"/>
+            <family value="Tillman"/>
+            <given value="Ilda"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
             </extension>
             <system value="phone"/>
-            <value value="5087659771"/> <!-- for now is the same as above-->
+            <value value="5087659771"/>
             <use value="work"/>
-        </telecom>
-        <address> <!-- for now is the same as above-->
-					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-				            <extension url="latitude">
-				                <valueDecimal value="42.129251"/>
-				            </extension>
-				            <extension url="longitude">
-				                <valueDecimal value="-72.031155"/>
-				            </extension>
-				        </extension>
-				        <use value="work"/>
-				        <type value="both"/>
-				        <text value="100 SOUTH STREET, SOUTHBRIDGE, MA 01550"/>
-				        <line value="100 SOUTH STREET"/>
-				        <city value="SOUTHBRIDGE"/>
-				        <state value="MA"/>
-				        <postalCode value="01550"/>
-				        <country value="USA"/>
-					</address>    </contact>
-
-    <endpoint> <!-- A reference to an electronic endpoint -->
-        <reference value="Endpoint/vhdir-organization-9990780047-direct"/>
-        <display value="HARRINGTON MEMORIAL HOSPITAL, INC. Direct address"/>
-    </endpoint>
-
-</Organization></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Organization/vhdir-organization-9990780047"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="42.129251"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-72.031155"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="100 SOUTH STREET, SOUTHBRIDGE, MA 01550"/>
+            <line value="100 SOUTH STREET"/>
+            <city value="SOUTHBRIDGE"/>
+            <state value="MA"/>
+            <postalCode value="01550"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-9990780047-direct"/>
+          <display value="HARRINGTON MEMORIAL HOSPITAL, INC. Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-9990780047"/>
+    </request>
+  </entry>
 </Bundle>

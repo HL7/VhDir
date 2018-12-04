@@ -1,1348 +1,802 @@
 <Bundle xmlns="http://hl7.org/fhir">
-<id value="vhdir-practitioner-examples-bundle"/>
- <type value="batch"/>
- <timestamp value="2018-12-04T17:57:59.373670Z"/>
- 
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9995334207"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Practitioner xmlns="http://hl7.org/fhir">
-	<!-- synthetic practitioner -->
-	
-	<id value="vhdir-practitioner-9995334207"/>
-	<meta>
-		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
-	</meta>
-	
-<!--*******************************
-
- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization)
-
-url = 'type' Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework
-
-************************************
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference">	
-		<valueReference>
-			<reference value="Endpoint/vhdir-practitioner-9995334207-direct"/>
-			<display value="Practitioner 9995334207 Direct address"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
-		<extension url="type">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="ind"/>
-				<display value="Individual"/>
-			</valueCoding>
-		</extension>
-		<extension url="use">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="signing"/>
-				<display value="Signing"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificateStandard">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="x.509v3"/>
-				<display value="x.509v3"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificate">
-			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-		</extension>
-		<extension url="expirationDate">
-			<valueDate value="1970-09-03"/>
-		</extension>
-		<extension url="trustFramework">
-			<valueCodeableConcept>
-				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-					<code value="direct"/>
-					<display value="DirectTrust"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
--->
-
-<!--********************	e.g. The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People *********
-
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
-				<code value="cultcomp"/>
-				<display value="Cultural competence"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Coordinates care with tribal healers of the Piscataway People"/>
-		</valueCodeableConcept>
-	</extension>
-	
--->
-	<identifier>
-		<!-- Practitioner's NPI number -->
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-			<valueCode value="active"/><!-- active  eh: check for deactive codes or randomize this -->
-		</extension>
-		<use value="official"/>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-				<code value="PRN"/>
-				<display value="Provider number"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="NPI"/>
-		</type>
-		<system value="http://hl7.org/fhir/sid/us-npi"/>
-		<value value="9995334207"/>
-		<period>  <!--  EH: add more values and stop values to this -->
-			<start value="2005-07-16T09:00:00-05:00"/>
-		</period>
-		<assigner>
-			<display value="CMS"/>
-		</assigner>
-	</identifier>
-	
-	<active value="true"/> 
-	<!-- This record is active  eh: randomize this -->
-	<name>
-
-		<use value="official"/>
-		<text value="Jaime SOUCIER"/>
-		<family value="SOUCIER"/>
-		<given value="Jaime"/>
-		<suffix value="MD"/>
-	</name>
-	<telecom>
-		<!-- max of two-->
-		<system value="phone"/>
-		<value value="8607146581"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="1"/>
-	</telecom>
-	<telecom>
-		<!-- Practitioner's phone max of two-->
-		<system value="phone"/>
-		<value value="8607148311"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="2"/>
-	</telecom>
-	<address>
-	<extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-		<extension url="latitude">
-				<valueDecimal value="41.774499"/>
-		</extension>
-		<extension url="longitude">
-				<valueDecimal value="-72.699537"/>
-		</extension>
-		</extension>
-		<use value="home"/>
-		<type value="both"/> <!-- eh:  todo make this a choice -->
-		<text value="1000 ASYLUM AVE, HARTFORD, CT 061051770"/>
-		<line value="1000 ASYLUM AVE"/>
-		<city value="HARTFORD"/>
-		<state value="CT"/>
-		<postalCode value="061051770"/>
-		<country value="USA"/>
-<!--  EH: todo add this in
-		<period>
-			<start value="1932-02-22"/> 
-		</period>
-	-->
-	</address>
-	<gender value="male"/>
-	<birthDate value="1964-06-19"/> <!--eh: do we need this -->
-	
-	<qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="CT"/>
-						<display value="Connecticut"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Connecticut"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://ct.gov/DPH"/> <!-- This is made up for now ... will need to research  -->
-			<value value="033435"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Connecticut Medical Examining Board"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="207RC0000X"/>
-				<display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification><qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="CT"/>
-						<display value="Connecticut"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Connecticut"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://ct.gov/DPH"/> <!-- This is made up for now ... will need to research  -->
-			<value value="033435"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Connecticut Medical Examining Board"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="207RC0000X"/>
-				<display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification> <!-- repeating qualification element -->
-	<communication>
-		<!-- eh: todo
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
-			<valueCodeableConcept>
-				<coding>
-					<code value="5"/>
-					<display value="Native or bilingual proficiency"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension> -->
-		<coding>
-			<system value="urn:ietf:bcp:47"/>
-			<code value="en"/>
-			<display value="English"/>
-			<userSelected value="true"/>
-		</coding> 
-		<text value="English"/>
-	</communication> <!-- repeating qualification element -->
-	</Practitioner></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Practitioner/vhdir-practitioner-9995334207"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9990283779"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Practitioner xmlns="http://hl7.org/fhir">
-	<!-- synthetic practitioner -->
-	
-	<id value="vhdir-practitioner-9990283779"/>
-	<meta>
-		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
-	</meta>
-	
-<!--*******************************
-
- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization)
-
-url = 'type' Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework
-
-************************************
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference">	
-		<valueReference>
-			<reference value="Endpoint/vhdir-practitioner-9990283779-direct"/>
-			<display value="Practitioner 9990283779 Direct address"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
-		<extension url="type">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="ind"/>
-				<display value="Individual"/>
-			</valueCoding>
-		</extension>
-		<extension url="use">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="signing"/>
-				<display value="Signing"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificateStandard">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="x.509v3"/>
-				<display value="x.509v3"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificate">
-			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-		</extension>
-		<extension url="expirationDate">
-			<valueDate value="1970-09-03"/>
-		</extension>
-		<extension url="trustFramework">
-			<valueCodeableConcept>
-				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-					<code value="direct"/>
-					<display value="DirectTrust"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
--->
-
-<!--********************	e.g. The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People *********
-
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
-				<code value="cultcomp"/>
-				<display value="Cultural competence"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Coordinates care with tribal healers of the Piscataway People"/>
-		</valueCodeableConcept>
-	</extension>
-	
--->
-	<identifier>
-		<!-- Practitioner's NPI number -->
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-			<valueCode value="active"/><!-- active  eh: check for deactive codes or randomize this -->
-		</extension>
-		<use value="official"/>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-				<code value="PRN"/>
-				<display value="Provider number"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="NPI"/>
-		</type>
-		<system value="http://hl7.org/fhir/sid/us-npi"/>
-		<value value="9990283779"/>
-		<period>  <!--  EH: add more values and stop values to this -->
-			<start value="2005-07-16T09:00:00-05:00"/>
-		</period>
-		<assigner>
-			<display value="CMS"/>
-		</assigner>
-	</identifier>
-	
-	<active value="true"/> 
-	<!-- This record is active  eh: randomize this -->
-	<name>
-
-		<use value="official"/>
-		<text value="Dan JAVIER"/>
-		<family value="JAVIER"/>
-		<given value="Dan"/>
-		<suffix value="MD"/>
-	</name>
-	<telecom>
-		<!-- max of two-->
-		<system value="phone"/>
-		<value value="8602630253"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="1"/>
-	</telecom>
-	<telecom>
-		<!-- Practitioner's phone max of two-->
-		<system value="phone"/>
-		<value value="8602630262"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="2"/>
-	</telecom>
-	<address>
-	<extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-		<extension url="latitude">
-				<valueDecimal value="41.698899"/>
-		</extension>
-		<extension url="longitude">
-				<valueDecimal value="-72.667887"/>
-		</extension>
-		</extension>
-		<use value="home"/>
-		<type value="both"/> <!-- eh:  todo make this a choice -->
-		<text value="30 JORDAN LN, WETHERSFIELD, CT 061091278"/>
-		<line value="30 JORDAN LN"/>
-		<city value="WETHERSFIELD"/>
-		<state value="CT"/>
-		<postalCode value="061091278"/>
-		<country value="USA"/>
-<!--  EH: todo add this in
-		<period>
-			<start value="1932-02-22"/> 
-		</period>
-	-->
-	</address>
-	<gender value="male"/>
-	<birthDate value="1964-06-19"/> <!--eh: do we need this -->
-	
-	<qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="CT"/>
-						<display value="Connecticut"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Connecticut"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://ct.gov/DPH"/> <!-- This is made up for now ... will need to research  -->
-			<value value="028901"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Connecticut Medical Examining Board"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="207RE0101X"/>
-				<display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification> <!-- repeating qualification element -->
-	<communication>
-		<!-- eh: todo
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
-			<valueCodeableConcept>
-				<coding>
-					<code value="5"/>
-					<display value="Native or bilingual proficiency"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension> -->
-		<coding>
-			<system value="urn:ietf:bcp:47"/>
-			<code value="en"/>
-			<display value="English"/>
-			<userSelected value="true"/>
-		</coding> 
-		<text value="English"/>
-	</communication> <!-- repeating qualification element -->
-	</Practitioner></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Practitioner/vhdir-practitioner-9990283779"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9992607917"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Practitioner xmlns="http://hl7.org/fhir">
-	<!-- synthetic practitioner -->
-	
-	<id value="vhdir-practitioner-9992607917"/>
-	<meta>
-		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
-	</meta>
-	
-<!--*******************************
-
- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization)
-
-url = 'type' Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework
-
-************************************
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference">	
-		<valueReference>
-			<reference value="Endpoint/vhdir-practitioner-9992607917-direct"/>
-			<display value="Practitioner 9992607917 Direct address"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
-		<extension url="type">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="ind"/>
-				<display value="Individual"/>
-			</valueCoding>
-		</extension>
-		<extension url="use">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="signing"/>
-				<display value="Signing"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificateStandard">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="x.509v3"/>
-				<display value="x.509v3"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificate">
-			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-		</extension>
-		<extension url="expirationDate">
-			<valueDate value="1970-09-03"/>
-		</extension>
-		<extension url="trustFramework">
-			<valueCodeableConcept>
-				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-					<code value="direct"/>
-					<display value="DirectTrust"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
--->
-
-<!--********************	e.g. The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People *********
-
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
-				<code value="cultcomp"/>
-				<display value="Cultural competence"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Coordinates care with tribal healers of the Piscataway People"/>
-		</valueCodeableConcept>
-	</extension>
-	
--->
-	<identifier>
-		<!-- Practitioner's NPI number -->
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-			<valueCode value="active"/><!-- active  eh: check for deactive codes or randomize this -->
-		</extension>
-		<use value="official"/>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-				<code value="PRN"/>
-				<display value="Provider number"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="NPI"/>
-		</type>
-		<system value="http://hl7.org/fhir/sid/us-npi"/>
-		<value value="9992607917"/>
-		<period>  <!--  EH: add more values and stop values to this -->
-			<start value="2005-07-16T09:00:00-05:00"/>
-		</period>
-		<assigner>
-			<display value="CMS"/>
-		</assigner>
-	</identifier>
-	
-	<active value="true"/> 
-	<!-- This record is active  eh: randomize this -->
-	<name>
-
-		<use value="official"/>
-		<text value="Rupert ROWLAND"/>
-		<family value="ROWLAND"/>
-		<given value="Rupert"/>
-		<suffix value="MD"/>
-	</name>
-	<telecom>
-		<!-- max of two-->
-		<system value="phone"/>
-		<value value="6173638293"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="1"/>
-	</telecom>
-	<telecom>
-		<!-- Practitioner's phone max of two-->
-		<system value="phone"/>
-		<value value="6173638929"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="2"/>
-	</telecom>
-	<address>
-	<extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-		<extension url="latitude">
-				<valueDecimal value="42.284197"/>
-		</extension>
-		<extension url="longitude">
-				<valueDecimal value="-71.120896"/>
-		</extension>
-		</extension>
-		<use value="home"/>
-		<type value="both"/> <!-- eh:  todo make this a choice -->
-		<text value="1200 CENTRE ST, ROSLINDALE, MA 021311000"/>
-		<line value="1200 CENTRE ST"/>
-		<city value="ROSLINDALE"/>
-		<state value="MA"/>
-		<postalCode value="021311000"/>
-		<country value="USA"/>
-<!--  EH: todo add this in
-		<period>
-			<start value="1932-02-22"/> 
-		</period>
-	-->
-	</address>
-	<gender value="male"/>
-	<birthDate value="1964-06-19"/> <!--eh: do we need this -->
-	
-	<qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="MA"/>
-						<display value="Massachusetts"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Massachusetts"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://www.mass.gov/orgs"/> <!-- This is made up for now ... will need to research  -->
-			<value value="246645"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Board of Registration in Medicine (BORIM)"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="207RG0300X"/>
-				<display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Geriatric Medicine"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Geriatric Medicine"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification> <!-- repeating qualification element -->
-	<communication>
-		<!-- eh: todo
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
-			<valueCodeableConcept>
-				<coding>
-					<code value="5"/>
-					<display value="Native or bilingual proficiency"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension> -->
-		<coding>
-			<system value="urn:ietf:bcp:47"/>
-			<code value="en"/>
-			<display value="English"/>
-			<userSelected value="true"/>
-		</coding> 
-		<text value="English"/>
-	</communication> <!-- repeating qualification element -->
-	</Practitioner></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Practitioner/vhdir-practitioner-9992607917"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9996940463"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Practitioner xmlns="http://hl7.org/fhir">
-	<!-- synthetic practitioner -->
-	
-	<id value="vhdir-practitioner-9996940463"/>
-	<meta>
-		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
-	</meta>
-	
-<!--*******************************
-
- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization)
-
-url = 'type' Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework
-
-************************************
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference">	
-		<valueReference>
-			<reference value="Endpoint/vhdir-practitioner-9996940463-direct"/>
-			<display value="Practitioner 9996940463 Direct address"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
-		<extension url="type">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="ind"/>
-				<display value="Individual"/>
-			</valueCoding>
-		</extension>
-		<extension url="use">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="signing"/>
-				<display value="Signing"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificateStandard">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="x.509v3"/>
-				<display value="x.509v3"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificate">
-			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-		</extension>
-		<extension url="expirationDate">
-			<valueDate value="1970-09-03"/>
-		</extension>
-		<extension url="trustFramework">
-			<valueCodeableConcept>
-				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-					<code value="direct"/>
-					<display value="DirectTrust"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
--->
-
-<!--********************	e.g. The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People *********
-
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
-				<code value="cultcomp"/>
-				<display value="Cultural competence"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Coordinates care with tribal healers of the Piscataway People"/>
-		</valueCodeableConcept>
-	</extension>
-	
--->
-	<identifier>
-		<!-- Practitioner's NPI number -->
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-			<valueCode value="active"/><!-- active  eh: check for deactive codes or randomize this -->
-		</extension>
-		<use value="official"/>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-				<code value="PRN"/>
-				<display value="Provider number"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="NPI"/>
-		</type>
-		<system value="http://hl7.org/fhir/sid/us-npi"/>
-		<value value="9996940463"/>
-		<period>  <!--  EH: add more values and stop values to this -->
-			<start value="2005-07-16T09:00:00-05:00"/>
-		</period>
-		<assigner>
-			<display value="CMS"/>
-		</assigner>
-	</identifier>
-	
-	<active value="true"/> 
-	<!-- This record is active  eh: randomize this -->
-	<name>
-
-		<use value="official"/>
-		<text value="Numbers DIEZ"/>
-		<family value="DIEZ"/>
-		<given value="Numbers"/>
-		<suffix value="MD"/>
-	</name>
-	<telecom>
-		<!-- max of two-->
-		<system value="phone"/>
-		<value value="8602630253"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="1"/>
-	</telecom>
-	<telecom>
-		<!-- Practitioner's phone max of two-->
-		<system value="phone"/>
-		<value value="8602630262"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="2"/>
-	</telecom>
-	<address>
-	<extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-		<extension url="latitude">
-				<valueDecimal value="41.698899"/>
-		</extension>
-		<extension url="longitude">
-				<valueDecimal value="-72.667887"/>
-		</extension>
-		</extension>
-		<use value="home"/>
-		<type value="both"/> <!-- eh:  todo make this a choice -->
-		<text value="30 JORDAN LN, WETHERSFIELD, CT 061091278"/>
-		<line value="30 JORDAN LN"/>
-		<city value="WETHERSFIELD"/>
-		<state value="CT"/>
-		<postalCode value="061091278"/>
-		<country value="USA"/>
-<!--  EH: todo add this in
-		<period>
-			<start value="1932-02-22"/> 
-		</period>
-	-->
-	</address>
-	<gender value="male"/>
-	<birthDate value="1964-06-19"/> <!--eh: do we need this -->
-	
-	<qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="CT"/>
-						<display value="Connecticut"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Connecticut"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://ct.gov/DPH"/> <!-- This is made up for now ... will need to research  -->
-			<value value="042533"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Connecticut Medical Examining Board"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="207RE0101X"/>
-				<display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification> <!-- repeating qualification element -->
-	<communication>
-		<!-- eh: todo
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
-			<valueCodeableConcept>
-				<coding>
-					<code value="5"/>
-					<display value="Native or bilingual proficiency"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension> -->
-		<coding>
-			<system value="urn:ietf:bcp:47"/>
-			<code value="en"/>
-			<display value="English"/>
-			<userSelected value="true"/>
-		</coding> 
-		<text value="English"/>
-	</communication> <!-- repeating qualification element -->
-	</Practitioner></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Practitioner/vhdir-practitioner-9996940463"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
-<entry>
- <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9993011061"/><!-- 0..1 URI for resource (Absolute URL server address or URI for UUID/OID) -->
- <resource><Practitioner xmlns="http://hl7.org/fhir">
-	<!-- synthetic practitioner -->
-	
-	<id value="vhdir-practitioner-9993011061"/>
-	<meta>
-		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
-	</meta>
-	
-<!--*******************************
-
- A reference to the practitioner's personal electronic endpoint (independent of their role with an organization)
-
-url = 'type' Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework
-
-************************************
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference">	
-		<valueReference>
-			<reference value="Endpoint/vhdir-practitioner-9993011061-direct"/>
-			<display value="Practitioner 9993011061 Direct address"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
-		<extension url="type">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="ind"/>
-				<display value="Individual"/>
-			</valueCoding>
-		</extension>
-		<extension url="use">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="signing"/>
-				<display value="Signing"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificateStandard">
-			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-				<code value="x.509v3"/>
-				<display value="x.509v3"/>
-			</valueCoding>
-		</extension>
-		<extension url="certificate">
-			<valueString value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
-		</extension>
-		<extension url="expirationDate">
-			<valueDate value="1970-09-03"/>
-		</extension>
-		<extension url="trustFramework">
-			<valueCodeableConcept>
-				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
-					<code value="direct"/>
-					<display value="DirectTrust"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
--->
-
-<!--********************	e.g. The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People *********
-
-
-	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
-				<code value="cultcomp"/>
-				<display value="Cultural competence"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Coordinates care with tribal healers of the Piscataway People"/>
-		</valueCodeableConcept>
-	</extension>
-	
--->
-	<identifier>
-		<!-- Practitioner's NPI number -->
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-			<valueCode value="active"/><!-- active  eh: check for deactive codes or randomize this -->
-		</extension>
-		<use value="official"/>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-				<code value="PRN"/>
-				<display value="Provider number"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="NPI"/>
-		</type>
-		<system value="http://hl7.org/fhir/sid/us-npi"/>
-		<value value="9993011061"/>
-		<period>  <!--  EH: add more values and stop values to this -->
-			<start value="2005-07-16T09:00:00-05:00"/>
-		</period>
-		<assigner>
-			<display value="CMS"/>
-		</assigner>
-	</identifier>
-	
-	<active value="true"/> 
-	<!-- This record is active  eh: randomize this -->
-	<name>
-
-		<use value="official"/>
-		<text value="Asa LETIEN"/>
-		<family value="LETIEN"/>
-		<given value="Asa"/>
-		<suffix value="AU.D."/>
-	</name>
-	<telecom>
-		<!-- max of two-->
-		<system value="phone"/>
-		<value value="9789221888"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="1"/>
-	</telecom>
-	<telecom>
-		<!-- Practitioner's phone max of two-->
-		<system value="phone"/>
-		<value value="9789274608"/> <!-- eh: todo format phone -->
-		<use value="work"/>
-		<rank value="2"/>
-	</telecom>
-	<address>
-	<extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
-		<extension url="latitude">
-				<valueDecimal value="42.565145"/>
-		</extension>
-		<extension url="longitude">
-				<valueDecimal value="-70.853843"/>
-		</extension>
-		</extension>
-		<use value="home"/>
-		<type value="both"/> <!-- eh:  todo make this a choice -->
-		<text value="266 CABOT ST, BEVERLY, MA 019153370"/>
-		<line value="266 CABOT ST"/>
-		<city value="BEVERLY"/>
-		<state value="MA"/>
-		<postalCode value="019153370"/>
-		<country value="USA"/>
-<!--  EH: todo add this in
-		<period>
-			<start value="1932-02-22"/> 
-		</period>
-	-->
-	</address>
-	<gender value="male"/>
-	<birthDate value="1964-06-19"/> <!--eh: do we need this -->
-	
-	<qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="MA"/>
-						<display value="Massachusetts"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Massachusetts"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://www.mass.gov/orgs"/> <!-- This is made up for now ... will need to research  -->
-			<value value="123"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Board of Registration in Medicine (BORIM)"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="231H00000X"/>
-				<display value="Speech, Language and Hearing Service Providers/Audiologist"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Speech, Language and Hearing Service Providers/Audiologist"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification><qualification> 
-		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
-			<!-- the license is currently active and valid  eh: randomize this and make max of two -->
-			<extension url="status">
-				<valueCoding>
-					<system value="http://hl7.org/fhir/resource-status"/>
-					<code value="active"/>
-					<display value="active"/>
-				</valueCoding>
-				
-			</extension>
-			<extension url="whereValid">
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://www.usps.com/"/>
-						<code value="MA"/>
-						<display value="Massachusetts"/>
-						<userSelected value="true"/>
-					</coding>
-					<text value="Massachusetts"/>
-				</valueCodeableConcept>
-			</extension>
-		</extension>
-		<identifier>
-			<!-- eh: tdo make max of two -->
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> <!-- This record is active  eh: randomize this -->
-			</extension>
-			<use value="official"/>
-			<type>
-				<text value="Medical License number"/>
-			</type>
-			<system value="https://www.mass.gov/orgs"/> <!-- This is made up for now ... will need to research  -->
-			<value value="123"/>
-			<period>
-				<start value="2018-06-19"/>  <!-- ask how to create these...can randomize -->
-				<end value="2021-06-19"/>
-			</period>
-			<assigner>
-				<display value="Board of Registration in Medicine (BORIM)"/>
-			</assigner>
-		</identifier>
-		<code>
-			<coding>
-				<system value="http://www.wpc.edi.com/taxonomy"/>
-				<code value="231H00000X"/>
-				<display value="Speech, Language and Hearing Service Providers/Audiologist"/>
-				<userSelected value="true"/>
-			</coding>
-			<text value="Speech, Language and Hearing Service Providers/Audiologist"/>
-		</code>
-		<!--  eh: todo later ... discuss
-		<period>
-			<start value="2018-01-01"/>
-			<end value="2020-01-01"/>
-		</period>
-		<issuer>
-			<display value="http://qual_issuer"/>
-		</issuer>
-		-->
-	</qualification> <!-- repeating qualification element -->
-	<communication>
-		<!-- eh: todo
-			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
-			<valueCodeableConcept>
-				<coding>
-					<code value="5"/>
-					<display value="Native or bilingual proficiency"/>
-					<userSelected value="true"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension> -->
-		<coding>
-			<system value="urn:ietf:bcp:47"/>
-			<code value="en"/>
-			<display value="English"/>
-			<userSelected value="true"/>
-		</coding> 
-		<text value="English"/>
-	</communication> <!-- repeating qualification element -->
-	</Practitioner></resource>
- <request>  <!-- ?? 0..1 Additional execution information (transaction/batch/history) -->
-  <method value="PUT"/>
-  <url value="Practitioner/vhdir-practitioner-9993011061"/><!-- 1..1 URL for HTTP equivalent of this entry -->
- </request>
-</entry>
+  <id value="vhdir-practitioner-examples-bundle"/>
+  <type value="batch"/>
+  <timestamp value="2018-12-04T20:08:07.601854Z"/>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9995334207"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <!-- synthetic practitioner -->
+        <id value="vhdir-practitioner-9995334207"/>
+        <meta>
+          <versionId value="1"/>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="NPI"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9995334207"/>
+          <period>
+            <start value="2005-07-16T09:00:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="CMS"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Mckinley SOUCIER"/>
+          <family value="SOUCIER"/>
+          <given value="Mckinley"/>
+          <suffix value="MD"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="8607146581"/>
+          <use value="work"/>
+          <rank value="1"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="8607148311"/>
+          <use value="work"/>
+          <rank value="2"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.774499"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.699537"/>
+            </extension>
+          </extension>
+          <use value="home"/>
+          <type value="both"/>
+          <text value="1000 ASYLUM AVE, HARTFORD, CT 061051770"/>
+          <line value="1000 ASYLUM AVE"/>
+          <city value="HARTFORD"/>
+          <state value="CT"/>
+          <postalCode value="061051770"/>
+          <country value="USA"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1964-06-19"/>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="CT"/>
+                  <display value="Connecticut"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Connecticut"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://ct.gov/DPH"/>
+            <value value="033435"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Connecticut Medical Examining Board"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="207RC0000X"/>
+              <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
+          </code>
+        </qualification>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="CT"/>
+                  <display value="Connecticut"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Connecticut"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://ct.gov/DPH"/>
+            <value value="033435"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Connecticut Medical Examining Board"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="207RC0000X"/>
+              <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
+          </code>
+        </qualification>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en"/>
+            <display value="English"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="English"/>
+        </communication>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/vhdir-practitioner-9995334207"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9990283779"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <!-- synthetic practitioner -->
+        <id value="vhdir-practitioner-9990283779"/>
+        <meta>
+          <versionId value="1"/>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="NPI"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9990283779"/>
+          <period>
+            <start value="2005-07-16T09:00:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="CMS"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Marco Antonio JAVIER"/>
+          <family value="JAVIER"/>
+          <given value="Marco Antonio"/>
+          <suffix value="MD"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="8602630253"/>
+          <use value="work"/>
+          <rank value="1"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="8602630262"/>
+          <use value="work"/>
+          <rank value="2"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.698899"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.667887"/>
+            </extension>
+          </extension>
+          <use value="home"/>
+          <type value="both"/>
+          <text value="30 JORDAN LN, WETHERSFIELD, CT 061091278"/>
+          <line value="30 JORDAN LN"/>
+          <city value="WETHERSFIELD"/>
+          <state value="CT"/>
+          <postalCode value="061091278"/>
+          <country value="USA"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1964-06-19"/>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="CT"/>
+                  <display value="Connecticut"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Connecticut"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://ct.gov/DPH"/>
+            <value value="028901"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Connecticut Medical Examining Board"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="207RE0101X"/>
+              <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
+          </code>
+        </qualification>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en"/>
+            <display value="English"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="English"/>
+        </communication>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/vhdir-practitioner-9990283779"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9992607917"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <!-- synthetic practitioner -->
+        <id value="vhdir-practitioner-9992607917"/>
+        <meta>
+          <versionId value="1"/>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="NPI"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9992607917"/>
+          <period>
+            <start value="2005-07-16T09:00:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="CMS"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Jae ROWLAND"/>
+          <family value="ROWLAND"/>
+          <given value="Jae"/>
+          <suffix value="MD"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="6173638293"/>
+          <use value="work"/>
+          <rank value="1"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="6173638929"/>
+          <use value="work"/>
+          <rank value="2"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="42.284197"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.120896"/>
+            </extension>
+          </extension>
+          <use value="home"/>
+          <type value="both"/>
+          <text value="1200 CENTRE ST, ROSLINDALE, MA 021311000"/>
+          <line value="1200 CENTRE ST"/>
+          <city value="ROSLINDALE"/>
+          <state value="MA"/>
+          <postalCode value="021311000"/>
+          <country value="USA"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1964-06-19"/>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="MA"/>
+                  <display value="Massachusetts"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Massachusetts"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://www.mass.gov/orgs"/>
+            <value value="246645"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Board of Registration in Medicine (BORIM)"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="207RG0300X"/>
+              <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Geriatric Medicine"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Geriatric Medicine"/>
+          </code>
+        </qualification>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en"/>
+            <display value="English"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="English"/>
+        </communication>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/vhdir-practitioner-9992607917"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9996940463"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <!-- synthetic practitioner -->
+        <id value="vhdir-practitioner-9996940463"/>
+        <meta>
+          <versionId value="1"/>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="NPI"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9996940463"/>
+          <period>
+            <start value="2005-07-16T09:00:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="CMS"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Giovanni DIEZ"/>
+          <family value="DIEZ"/>
+          <given value="Giovanni"/>
+          <suffix value="MD"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="8602630253"/>
+          <use value="work"/>
+          <rank value="1"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="8602630262"/>
+          <use value="work"/>
+          <rank value="2"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.698899"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.667887"/>
+            </extension>
+          </extension>
+          <use value="home"/>
+          <type value="both"/>
+          <text value="30 JORDAN LN, WETHERSFIELD, CT 061091278"/>
+          <line value="30 JORDAN LN"/>
+          <city value="WETHERSFIELD"/>
+          <state value="CT"/>
+          <postalCode value="061091278"/>
+          <country value="USA"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1964-06-19"/>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="CT"/>
+                  <display value="Connecticut"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Connecticut"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://ct.gov/DPH"/>
+            <value value="042533"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Connecticut Medical Examining Board"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="207RE0101X"/>
+              <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
+          </code>
+        </qualification>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="es"/>
+            <display value="Spanish"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="English and Spanish"/>
+        </communication>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="{communication_code}"/>
+            <display value="{communication_display}"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="{communication_display}"/>
+        </communication>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/vhdir-practitioner-9996940463"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9993011061"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <!-- synthetic practitioner -->
+        <id value="vhdir-practitioner-9993011061"/>
+        <meta>
+          <versionId value="1"/>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="NPI"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="9993011061"/>
+          <period>
+            <start value="2005-07-16T09:00:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="CMS"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Timmy LETIEN"/>
+          <family value="LETIEN"/>
+          <given value="Timmy"/>
+          <suffix value="AU.D."/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="9789221888"/>
+          <use value="work"/>
+          <rank value="1"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="9789274608"/>
+          <use value="work"/>
+          <rank value="2"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="42.565145"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-70.853843"/>
+            </extension>
+          </extension>
+          <use value="home"/>
+          <type value="both"/>
+          <text value="266 CABOT ST, BEVERLY, MA 019153370"/>
+          <line value="266 CABOT ST"/>
+          <city value="BEVERLY"/>
+          <state value="MA"/>
+          <postalCode value="019153370"/>
+          <country value="USA"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1964-06-19"/>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="MA"/>
+                  <display value="Massachusetts"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Massachusetts"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://www.mass.gov/orgs"/>
+            <value value="123"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Board of Registration in Medicine (BORIM)"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="231H00000X"/>
+              <display value="Speech, Language and Hearing Service Providers/Audiologist"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Speech, Language and Hearing Service Providers/Audiologist"/>
+          </code>
+        </qualification>
+        <qualification>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
+            <extension url="status">
+              <valueCoding>
+                <system value="http://hl7.org/fhir/resource-status"/>
+                <code value="active"/>
+                <display value="active"/>
+              </valueCoding>
+            </extension>
+            <extension url="whereValid">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://www.usps.com/"/>
+                  <code value="MA"/>
+                  <display value="Massachusetts"/>
+                  <userSelected value="true"/>
+                </coding>
+                <text value="Massachusetts"/>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <identifier>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+              <valueCode value="active"/>
+            </extension>
+            <use value="official"/>
+            <type>
+              <text value="Medical License number"/>
+            </type>
+            <system value="https://www.mass.gov/orgs"/>
+            <value value="123"/>
+            <period>
+              <start value="2018-06-19"/>
+              <end value="2021-06-19"/>
+            </period>
+            <assigner>
+              <display value="Board of Registration in Medicine (BORIM)"/>
+            </assigner>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <code value="231H00000X"/>
+              <display value="Speech, Language and Hearing Service Providers/Audiologist"/>
+              <userSelected value="true"/>
+            </coding>
+            <text value="Speech, Language and Hearing Service Providers/Audiologist"/>
+          </code>
+        </qualification>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en"/>
+            <display value="English"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="English"/>
+        </communication>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/vhdir-practitioner-9993011061"/>
+    </request>
+  </entry>
 </Bundle>

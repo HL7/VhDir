@@ -181,8 +181,17 @@ def write_xml(out_path,type,file,source=None):
     with open('{out_path}/{type}/vhdr-{r_type}-example-bundle.xml'.format(out_path=out_path, type=type, r_type=r_type ), 'w') as fxml:
         logging.info('writing to file = {out_path}/{type}/vhdr-{type}-example-bundle.xml'.format(out_path=out_path, type=type ))
         # prettify before saving
-        root = etree.fromstring(file)
+        parser = etree.XMLParser(remove_blank_text=True)
+        root = etree.fromstring(file, parser=parser)
         fxml.write(etree.tostring(root, pretty_print=True).decode())
+        
+def write_resource_csv(type,data):
+    with open('{out_path}/{type}/sample-nppes-{type}-data.csv'.format(out_path=out_path,type=type), mode='w', newline='') as csv_file:
+        writer = csv.writer(csv_file, dialect='excel', quoting=csv.QUOTE_ALL)
+        writer.writerow(['NPI','Resource ID','Name','References List'])
+        for line in data:
+            writer.writerow(line)
+
 
 def get_prov_identifier(pract_id):
     n = 7
@@ -254,7 +263,6 @@ def get_hcs_code(nucc):
     except KeyError:
         return('miscellaneous')
 
-
 def get_hcs_display(nucc):
     try:
         return(titlecase(nucc_healthcareservice_map[nucc]))
@@ -292,9 +300,10 @@ def hcs_example(item,f_id,type,npi,hcs): # hcs= healthcareservice
     f_id=f_id,
     npi=npi,
     name=item['Provider Organization Name (Legal Business Name)'],
+    hcs_code=spinalcase(hcs),
     HCS_Name=hcs.upper(),
     identifier_system=urlify(item['Provider Organization Name (Legal Business Name)']),
-    identifier_value=hcs,
+    identifier_value='{npi}-{hcs}'.format(npi=npi,hcs=spinalcase(hcs)),
     phone=item['Provider Business Practice Location Address Telephone Number'],
     service_list=get_specialty(hcs,'s_list'),
     specialty=get_specialty(hcs,'s_xml')
@@ -326,7 +335,7 @@ def get_specialty(hcs,return_type): # hcs= healthcareservice
     # specialties=choices(service_list,k=5) # list of five specialties
     # logging.info(random_service_list)
     if return_type=='s_list':
-        return(', '.join(specialties))
+        return(', '.join([get_specialty_display(specialty) for specialty in specialties]))
     for specialty in specialties:
         logging.info('hcs={hcs}, specialty={specialty}'.format(hcs=hcs,specialty=specialty))
         
@@ -476,7 +485,7 @@ def main(type,id_list,source=None):
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             example = org_example(item,f_id,type,npi)
-            id_list.append((npi,f_id,item['Provider Organization Name (Legal Business Name)']))
+            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
             entries = create_entry(entries,server_path,f_id,example,Type)
 
     elif type == 'location':
@@ -485,7 +494,7 @@ def main(type,id_list,source=None):
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             example = loc_example(item,f_id,type,npi)
-            id_list.append((npi,f_id,item['Provider Organization Name (Legal Business Name)']))
+            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
             entries = create_entry(entries,server_path,f_id,example,Type)
 
             #if source == 'organization':
@@ -497,11 +506,11 @@ def main(type,id_list,source=None):
         for item in org_list:
             npi = item['NPI']
             for service in healthcareservice_list:
-                hcs_type='{hcs}-{type}'.format(type=type,hcs=spinalcase(service))
+                hcs_type='{hcs}-{type}'.format(type=type,hcs=spinalcase(service[0:27]))
                 f_id=get_f_id(hcs_type,npi)
-                logging.info('create resource id = {f_id}'.format(f_id=f_id)) 
+                logging.info('create resource id = {f_id}'.format(f_id=f_id))
                 example = hcs_example(item,f_id,type,npi,service)
-                id_list.append((npi,f_id,'{name} {Service}'.format(name=item['Provider Organization Name (Legal Business Name)'],Service=type.upper())))
+                id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{name} {Service} Service'.format(name=item['Provider Organization Name (Legal Business Name)'],Service=titlecase(service))))
                 entries = create_entry(entries,server_path,f_id,example,Type)
 
     elif type == 'practitioner':
@@ -510,7 +519,7 @@ def main(type,id_list,source=None):
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             example = pract_example(item,f_id,type,npi)
-            id_list.append((npi,f_id,'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
+            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
             entries = create_entry(entries,server_path,f_id,example,Type)
         
     elif type == 'practitionerrole': # one or more for each practitioner need to assign to org
@@ -527,7 +536,7 @@ def main(type,id_list,source=None):
                 org_npi = org_item['NPI']
                 example = practrole_example(item,org_item,f_id,type,pract_npi,org_npi)
                 org_npi_list.append(org_npi)
-                id_list.append((pract_npi,f_id,'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)']),org_npi_list))
+                id_list.append((pract_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)']),org_npi_list))
                 entries = create_entry(entries,server_path,f_id,example,Type)
  
 
@@ -540,7 +549,7 @@ def main(type,id_list,source=None):
 
     write_xml(out_path,type,batch_bundle,source)  #save to file
 
-
+    return()
 
 #This only happens when this module is called directly:
 if __name__ == "__main__":
@@ -562,10 +571,11 @@ if __name__ == "__main__":
     #main('location',resource_keys['location'],'practitioner')
 
         
-    for type in resource_keys:
+    for k,v in resource_keys.items(): # convert to csv:
+        write_resource_csv(k,v)
         #pairs = [str([*t]) for t in resource_keys[type]]
         #print(pairs)
-        logging.info('{} resource_keys:\n {}'.format(type.capitalize(),resource_keys[type]))
+        #logging.info('{} resource_keys:\n {}'.format(type.capitalize(),resource_keys[type]))
 
     logging.debug('end of program')
 
