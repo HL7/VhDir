@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-organization-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:46:37.483879Z"/>
+  <timestamp value="2018-12-04T21:10:28.479124Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9992607537"/>
     <resource>
@@ -66,6 +66,10 @@
           <postalCode value="02740"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -76,9 +80,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Trey Ullrich"/>
-            <family value="Ullrich"/>
-            <given value="Trey"/>
+            <text value="Miriam Conn"/>
+            <family value="Conn"/>
+            <given value="Miriam"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -202,10 +206,6 @@
           <postalCode value="060692096"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -216,9 +216,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Samira Lind"/>
-            <family value="Lind"/>
-            <given value="Samira"/>
+            <text value="Ariadna Serna"/>
+            <family value="Serna"/>
+            <given value="Ariadna"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -343,8 +343,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -356,9 +356,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Latanya Dach"/>
-            <family value="Dach"/>
-            <given value="Latanya"/>
+            <text value="Yasuko Bayer"/>
+            <family value="Bayer"/>
+            <given value="Yasuko"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -483,8 +483,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990030000"/>
-          <display value="Blue Hope"/>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
         </partOf>
         <contact>
           <purpose>
@@ -496,9 +496,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Josie Flatley"/>
-            <family value="Flatley"/>
-            <given value="Josie"/>
+            <text value="Beryl Maggio"/>
+            <family value="Maggio"/>
+            <given value="Beryl"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -623,8 +623,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -636,9 +636,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Lynn Mosciski"/>
-            <family value="Mosciski"/>
-            <given value="Lynn"/>
+            <text value="Boris Kris"/>
+            <family value="Kris"/>
+            <given value="Boris"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">

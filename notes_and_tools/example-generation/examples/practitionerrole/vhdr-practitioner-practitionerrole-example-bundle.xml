@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-practitionerrole-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:46:43.855694Z"/>
+  <timestamp value="2018-12-04T21:10:35.257679Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-practitionerrole-9995334207"/>
     <resource>
@@ -36,7 +36,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9995334207"/>
-          <display value="Eldridge Jakubowski"/>
+          <display value="Markus Hackett"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -53,7 +53,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="207RC0000X"/>
-            <display value="Cardiovascular Disease"/>
+            <display value="Internal Medicine/Cardiovascular Disease"/>
           </coding>
         </specialty>
         <location>
@@ -78,7 +78,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9995334207-direct"/>
-          <display value="Direct address for Eldridge Jakubowski Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Markus Hackett Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -121,7 +121,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9990283779"/>
-          <display value="Manuel Morales"/>
+          <display value="Deshawn D'Amore"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -138,7 +138,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="207RE0101X"/>
-            <display value="Endocrinology, Diabetes and Metabolism"/>
+            <display value="Internal Medicine/Endocrinology, Diabetes and Metabolism"/>
           </coding>
         </specialty>
         <location>
@@ -163,7 +163,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9990283779-direct"/>
-          <display value="Direct address for Manuel Morales Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Deshawn D'Amore Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -206,7 +206,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9992607917"/>
-          <display value="Julio Vega"/>
+          <display value="Ricardo Cardona"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9998062387"/>
@@ -223,7 +223,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="207RG0300X"/>
-            <display value="Geriatric Medicine"/>
+            <display value="Internal Medicine/Geriatric Medicine"/>
           </coding>
         </specialty>
         <location>
@@ -248,7 +248,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9992607917-direct"/>
-          <display value="Direct address for Julio Vega Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Ricardo Cardona Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -291,7 +291,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9996940463"/>
-          <display value="Germ&#225;n Valdez"/>
+          <display value="Isreal Greenholt"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9995131442"/>
@@ -308,7 +308,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="207RE0101X"/>
-            <display value="Endocrinology, Diabetes and Metabolism"/>
+            <display value="Internal Medicine/Endocrinology, Diabetes and Metabolism"/>
           </coding>
         </specialty>
         <location>
@@ -333,7 +333,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9996940463-direct"/>
-          <display value="Direct address for Germ&#225;n Valdez Allopathic and Osteopathic Physicians Role"/>
+          <display value="Direct address for Isreal Greenholt Allopathic and Osteopathic Physicians Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>
@@ -376,7 +376,7 @@
         </period>
         <practitioner>
           <reference value="Practitioner/vhdir-practitioner-9993011061"/>
-          <display value="Curt Hansen"/>
+          <display value="Lon Wilderman"/>
         </practitioner>
         <organization>
           <reference value="Organization/vhdir-organization-9990789741"/>
@@ -418,7 +418,7 @@
         </availableTime>
         <endpoint>
           <reference value="Endpoint/vhdir-practitionerrole-9993011061-direct"/>
-          <display value="Direct address for Curt Hansen Speech, Language and Hearing Service Providers Role"/>
+          <display value="Direct address for Lon Wilderman Speech, Language and Hearing Service Providers Role"/>
         </endpoint>
       </PractitionerRole>
     </resource>

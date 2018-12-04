@@ -1,6 +1,7 @@
 # ===================================
 # create VHDIR FHIR resources instances from the subset of the nppes data files:
 # run in python 3.5 or above
+# see requirements.txt for modules
 # ====================================
 
 import fhir_example_templates as f_templ
@@ -27,6 +28,9 @@ logging.debug('Start of program')
 in_path ='/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/sample-nppes-data'
 out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
 server_path = 'http://test.fhir.org/r4'
+
+
+#***********Global modified NPPES ORG and PRACT extracts******************
 
 def make_new_npi(old_npi):
         new_npi='999{}'.format(old_npi[3:])  ##rep;ace first 3 digits of npi with 999 TODO validate to validate with Luhn algorithm ... todo check for dupes
@@ -87,6 +91,7 @@ pract_list = get_csv(in_path,'practitioner') # practitioner data gleaned from NP
 
 #**********************************************
 
+#***********more Globals******************
 
 # state specific data (Name,license system ( i made up),licencing body name)
 usps_map = dict(
@@ -104,8 +109,7 @@ hosp_systems = {
 'None': ''
 }
 
-
-resource_keys = {}  # create a map of resource_ids to create a relational table
+#***************  Functions *********************
 
 def get_f_id(type,npi,source=None):
     if source:
@@ -247,7 +251,7 @@ def get_specialty_display(nucc):
             
         d2=nucc_dict[nucc][3]
         if d2:
-            specialty_display = d2
+            specialty_display = '{d1}/{d2}'.format(d1=d1,d2=d2)
             #logging.info('Map to NUCC specialty  code = {k} NUCC_specialty = {s}'.format(k=k,s=s2))
         elif d1:
             specialty_display = d1
@@ -401,7 +405,7 @@ def pract_example(item,f_id,type,npi):
             license_assigner=usps_map[item['Provider License Number State Code_1']][2],
             med_license=item['Provider License Number_1'],
             qual_code=item['Healthcare Provider Taxonomy Code_1'],
-            qual_code_system='http://www.wpc.edi.com/taxonomy',
+            qual_code_system='http://nucc.org/provider-taxonomy',
             qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_1'])
             )
             
@@ -414,7 +418,7 @@ def pract_example(item,f_id,type,npi):
             license_assigner=usps_map[item['Provider License Number State Code_1']][2],
             med_license=item['Provider License Number_1'],
             qual_code=item['Healthcare Provider Taxonomy Code_1'],
-            qual_code_system='http://www.wpc.edi.com/taxonomy',
+            qual_code_system='http://nucc.org/provider-taxonomy',
             qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_1'])
             )
         qualification = qualification + qualification1
@@ -457,7 +461,7 @@ def create_batch_bundle(entries,type):
     entries=entries, type=type
     ))
 
-
+#****************  Main  *************************
 
 def main(type,id_list,source=None):
     '''
@@ -550,6 +554,8 @@ def main(type,id_list,source=None):
     write_xml(out_path,type,batch_bundle,source)  #save to file
 
     return()
+    
+#********************* __name__ == "__main__" ********************
 
 #This only happens when this module is called directly:
 if __name__ == "__main__":
@@ -578,6 +584,3 @@ if __name__ == "__main__":
         #logging.info('{} resource_keys:\n {}'.format(type.capitalize(),resource_keys[type]))
 
     logging.debug('end of program')
-
-   
-# create VHDIR FHIR resources instances using this data

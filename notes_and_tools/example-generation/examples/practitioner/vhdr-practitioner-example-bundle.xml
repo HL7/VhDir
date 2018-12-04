@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-practitioner-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-04T20:46:43.540128Z"/>
+  <timestamp value="2018-12-04T21:10:34.894969Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-practitioner-9995334207"/>
     <resource>
@@ -38,9 +38,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Eldridge Jakubowski"/>
-          <family value="Jakubowski"/>
-          <given value="Eldridge"/>
+          <text value="Markus Hackett"/>
+          <family value="Hackett"/>
+          <given value="Markus"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -116,7 +116,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="207RC0000X"/>
               <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
               <userSelected value="true"/>
@@ -165,7 +165,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="207RC0000X"/>
               <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Cardiovascular Disease"/>
               <userSelected value="true"/>
@@ -176,11 +176,20 @@
         <communication>
           <coding>
             <system value="urn:ietf:bcp:47"/>
-            <code value="en"/>
-            <display value="English"/>
+            <code value="es"/>
+            <display value="Spanish"/>
             <userSelected value="true"/>
           </coding>
-          <text value="English"/>
+          <text value="English and Spanish"/>
+        </communication>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="{communication_code}"/>
+            <display value="{communication_display}"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="{communication_display}"/>
         </communication>
       </Practitioner>
     </resource>
@@ -225,9 +234,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Manuel Morales"/>
-          <family value="Morales"/>
-          <given value="Manuel"/>
+          <text value="Deshawn D'Amore"/>
+          <family value="D'Amore"/>
+          <given value="Deshawn"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -303,7 +312,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="207RE0101X"/>
               <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
               <userSelected value="true"/>
@@ -363,9 +372,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Julio Vega"/>
-          <family value="Vega"/>
-          <given value="Julio"/>
+          <text value="Ricardo Cardona"/>
+          <family value="Cardona"/>
+          <given value="Ricardo"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -441,7 +450,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="207RG0300X"/>
               <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Geriatric Medicine"/>
               <userSelected value="true"/>
@@ -501,9 +510,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Germ&#225;n Valdez"/>
-          <family value="Valdez"/>
-          <given value="Germ&#225;n"/>
+          <text value="Isreal Greenholt"/>
+          <family value="Greenholt"/>
+          <given value="Isreal"/>
           <suffix value="MD"/>
         </name>
         <telecom>
@@ -579,7 +588,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="207RE0101X"/>
               <display value="Allopathic &amp; Osteopathic Physicians/Internal Medicine, Endocrinology, Diabetes &amp; Metabolism"/>
               <userSelected value="true"/>
@@ -590,20 +599,11 @@
         <communication>
           <coding>
             <system value="urn:ietf:bcp:47"/>
-            <code value="es"/>
-            <display value="Spanish"/>
+            <code value="en"/>
+            <display value="English"/>
             <userSelected value="true"/>
           </coding>
-          <text value="English and Spanish"/>
-        </communication>
-        <communication>
-          <coding>
-            <system value="urn:ietf:bcp:47"/>
-            <code value="{communication_code}"/>
-            <display value="{communication_display}"/>
-            <userSelected value="true"/>
-          </coding>
-          <text value="{communication_display}"/>
+          <text value="English"/>
         </communication>
       </Practitioner>
     </resource>
@@ -648,9 +648,9 @@
         <active value="true"/>
         <name>
           <use value="official"/>
-          <text value="Curt Hansen"/>
-          <family value="Hansen"/>
-          <given value="Curt"/>
+          <text value="Lon Wilderman"/>
+          <family value="Wilderman"/>
+          <given value="Lon"/>
           <suffix value="AU.D."/>
         </name>
         <telecom>
@@ -726,7 +726,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="231H00000X"/>
               <display value="Speech, Language and Hearing Service Providers/Audiologist"/>
               <userSelected value="true"/>
@@ -775,7 +775,7 @@
           </identifier>
           <code>
             <coding>
-              <system value="http://www.wpc.edi.com/taxonomy"/>
+              <system value="http://nucc.org/provider-taxonomy"/>
               <code value="231H00000X"/>
               <display value="Speech, Language and Hearing Service Providers/Audiologist"/>
               <userSelected value="true"/>
@@ -786,11 +786,20 @@
         <communication>
           <coding>
             <system value="urn:ietf:bcp:47"/>
-            <code value="en"/>
-            <display value="English"/>
+            <code value="es"/>
+            <display value="Spanish"/>
             <userSelected value="true"/>
           </coding>
-          <text value="English"/>
+          <text value="English and Spanish"/>
+        </communication>
+        <communication>
+          <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="{communication_code}"/>
+            <display value="{communication_display}"/>
+            <userSelected value="true"/>
+          </coding>
+          <text value="{communication_display}"/>
         </communication>
       </Practitioner>
     </resource>
