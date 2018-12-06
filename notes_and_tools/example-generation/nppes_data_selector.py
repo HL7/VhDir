@@ -30,7 +30,7 @@ allowed_org_codes = ('261Q','282N','2865','302','305','273','284','261Q')
 def get_nppes(type,max):
     count = 0
     files = []
-    with open('{in_path}/{nppes_file}.csv'.format(in_path=in_path,nppes_file=nppes_file)) as f:
+    with open('{in_path}/{nppes_file}.csv'.format(in_path=in_path,nppes_file=nppes_file),encoding='utf-8') as f:
         for i,line in enumerate(csv.DictReader(f, fieldnames=None, restkey='id', restval=None, dialect='excel')):
 
             if line['Entity Type Code'] == type and line['Provider Business Practice Location Address State Name'] in states and (type != '2' or line['Healthcare Provider Taxonomy Code_1'].startswith(allowed_org_codes)):
@@ -44,7 +44,7 @@ def get_nppes(type,max):
 
 def get_nppes_endpoints(npi):
     print('endpoint npi ={}'.format(npi))
-    with open('{in_path}/{nppes_endpoint_file}.csv'.format(in_path=in_path,nppes_endpoint_file=nppes_endpoint_file)) as f:
+    with open('{in_path}/{nppes_endpoint_file}.csv'.format(in_path=in_path,nppes_endpoint_file=nppes_endpoint_file),encoding='utf-8') as f:
         for line in csv.DictReader(f, fieldnames=None, restkey='id', restval=None, dialect='excel'):
             print(npi, line['NPI'],line['Endpoint'])
             if line['NPI'] == npi :
@@ -57,8 +57,8 @@ def write_nppes_data(file_name,data):
         fieldnames = fn.fieldnames
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames, dialect='excel', quoting=csv.QUOTE_ALL)
         writer.writeheader()
-        for line in data:
-            print('writing .... {} npi = {}'.format(file_name, line["NPI"]))
+        for i,line in enumerate(data):
+            print('({i})writing to {file_name} npi = {npi}'.format(i=i,file_name=file_name,npi=line["NPI"]))
             writer.writerow(line)
 
         
@@ -66,16 +66,16 @@ def write_nppes_data(file_name,data):
 #This only happens when this module is called directly:
 if __name__ == "__main__":
     endpoints =[]
-    practitioners = get_nppes('1',20)  # 'Entity Type Code'] == '1' for practitioners,  max records = 2000
+    practitioners = get_nppes('1',2000)  # 'Entity Type Code'] == '1' for practitioners,  max records = 2000
     for i,item in enumerate(practitioners):
         print('practitioner{} npi = {}'.format(i, item["NPI"]))
         # get_nppes_endpoints(item["NPI"])  # is empty :-(
-        write_nppes_data('practitioner',practitioners)  # write to new file
+    write_nppes_data('practitioner_20181204',practitioners)  # write to new file
         
     organizations = get_nppes('2',40)  # 'Entity Type Code'] == '2' for organizations,  max records = 20
     for i,item in enumerate(organizations):
         print('organization{} npi = {}'.format(i, item["NPI"]))
-    write_nppes_data('organization',organizations)  # write to new file
+    write_nppes_data('organization_20181204',organizations)  # write to new file
 
         
         

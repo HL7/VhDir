@@ -1378,6 +1378,25 @@ nucc_role_map ={
  '385HR2065X': ('385H00000X', 'Respite Care Facility'),
  '390200000X': ('390200000X', 'Student, Health Care'),
  '405300000X': ('405300000X', 'Other Service Providers')}
+ 
+ 
+ 
+nucc_sct_specialty_map = {
+    '231H00000X': ('94578005','Audiological medicine'),
+    '208D00000X': ('394814009 ','General practice'),
+    '1223G0001X': ('394814009','General practice'),
+    '163WG0000X': ('394814009','General practice'),
+    '1835G0000X': ('394814009','General practice'),
+    '213EG0000X': ('394814009','General practice'),
+    '207R00000X': ('419192003','Internal medicine'),
+    '207W00000X': ('394594003','Ophthalmology'),
+    '208600000X': ('394609007','Surgery-general'),
+    '207X00000X': ('394801008','Surgery-Trauma and orthopedics'),
+    '207N00000X': ('394582007','Dermatology'),
+    '207Q00000X': ('419772000','Family practice'),
+    '363LF0000X': ('419772000','Family practice')
+    }
+
 
 
 #This only happens when this module is called directly:

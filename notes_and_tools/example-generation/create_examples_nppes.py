@@ -10,11 +10,11 @@ import rR_dict as rr
 import name_generator as names
 import taxonomy_codes as t
 from nucc_dict import nucc_dict
-from nucc_maps import nucc_healthcareservice_map, healthcareservice_list, nucc_role_map
+from nucc_maps import nucc_healthcareservice_map, healthcareservice_list, nucc_role_map, nucc_sct_specialty_map
 import csv
 import string
 import lxml.etree as etree
-from random import choice, choices
+from random import choice, choices, randint
 from pprint import pprint, pformat
 from datetime import datetime
 from stringcase import spinalcase, titlecase, snakecase
@@ -64,11 +64,12 @@ def escape_xml(item): # check for xml characters and escape
 
 
 def get_csv(in_path,type):
-    max = 5
-    with open('{in_path}/sample-nppes-{type}-data.csv'.format(in_path=in_path,type=type)) as f:
-       logging.info('reading file = sample-nppes-{type}-data.csv'.format(type=type))
+    max = 2000
+    in_file = 'sample-nppes-{type}_20181204-data.csv'.format(type=type)
+    with open('{in_path}/{in_file}'.format(in_path=in_path,in_file=in_file)) as f:
+       logging.info('reading file = {in_file}'.format(in_file=in_file))
        my_list = [j for i,j in enumerate(csv.DictReader(f,fieldnames=None, restkey='id', restval=None, dialect='excel')) if i < max]
-       logging.info('content = {line}'.format(line= pformat(my_list)))
+       # logging.info('content = {line}'.format(line= pformat(my_list)))
        for i in my_list:  #update npis
             i['NPI'] = make_new_npi(i['NPI'])
             if type=='organization':  # Randomize names
@@ -80,7 +81,7 @@ def get_csv(in_path,type):
                 i['Provider First Name']=random_name[0]
                 i['Provider Last Name (Legal Name)']=random_name[1]
             escape_xml(i)
-       logging.info('updated row = {i}'.format(i=pformat(i)))
+       # logging.info('updated row = {i}'.format(i=pformat(i)))
             
     return(my_list)
 
@@ -150,7 +151,7 @@ def get_phone1(item):
     elif phone2 and phone2 != phone0:
         return(phone2)
     elif phone3 and phone3 != phone0:
-        return(phone)
+        return(phone3)
     else:
         return('5555555555')
 
@@ -219,9 +220,8 @@ def get_org(state,postal_code):  # gert o rg based on state and closest zip
     distance_list.sort(key=lambda tup: tup[0]) #sort list by first item in tuple
             
     logging.info('org_choices= {org_choices}'.format(org_choices=[i[0:2] for i in distance_list]))
-    # todo select 1-3 just one for now...
-    # org_npi = [i[1] for i in distance_list][0]
-    org_item = [i[3] for i in distance_list[0:1]]
+    # randomly assign to 1-3 orgs
+    org_item = [i[3] for i in distance_list[0:choice([1,2,3])]]
     logging.info('org_item = {org_item}'.format(org_item=org_item))
     return(org_item)  # return list of org items
 
@@ -247,25 +247,47 @@ def get_practspecialty_code(nucc):
         return('Allopathic and Osteopathic Physicians')
 
 def get_specialty_display(nucc): 
-        d1=nucc_dict[nucc][2]
-            
-        d2=nucc_dict[nucc][3]
-        if d2:
-            specialty_display = '{d1}/{d2}'.format(d1=d1,d2=d2)
-            #logging.info('Map to NUCC specialty  code = {k} NUCC_specialty = {s}'.format(k=k,s=s2))
-        elif d1:
-            specialty_display = d1
-            #logging.info('Map to NUCC specialty  code = {k} NUCC specialty = {s}'.format(k=k,s=s1))
-        else:
-            specialty_display = 'general practice'
-            #logging.info('Map to NUCC specialty  code = {k} NUCC specialty = {s}'.format(k=k,s='general practice'))
-        return(specialty_display)    
+    d1=nucc_dict[nucc][2]
+        
+    d2=nucc_dict[nucc][3]
+    if d2:
+        specialty_display = '{d1}/{d2}'.format(d1=d1,d2=d2)
+        #logging.info('Map to NUCC specialty  code = {k} NUCC_specialty = {s}'.format(k=k,s=s2))
+    elif d1:
+        specialty_display = d1
+        #logging.info('Map to NUCC specialty  code = {k} NUCC specialty = {s}'.format(k=k,s=s1))
+    else:
+        specialty_display = 'general practice'
+        #logging.info('Map to NUCC specialty  code = {k} NUCC specialty = {s}'.format(k=k,s='general practice'))
+    return(specialty_display)
+
+
+def get_addl_snomed_coding(nucc):
+    try:
+        return(f_templ.addl_snomed_coding_template.format(
+        specialty_code=nucc_sct_specialty_map[nucc][0],
+        specialty_display=nucc_sct_specialty_map[nucc][1]
+        ))
+    except KeyError:
+        return('')
+
+
+def get_addl_specialty(nucc):
+    if nucc:
+        return(f_templ.addl_specialty_template.format(
+        specialty_code=nucc,
+        specialty_display=get_specialty_display(nucc),
+        addl_snomed_coding=get_addl_snomed_coding(nucc),
+        ))
+    else:
+        return('')
 
 def get_hcs_code(nucc):
     try:
         return(spinalcase(nucc_healthcareservice_map[nucc]))
     except KeyError:
         return('miscellaneous')
+
 
 def get_hcs_display(nucc):
     try:
@@ -292,6 +314,8 @@ def practrole_example(pract_item,org_item,f_id,type,pract_npi,org_npi): # need t
     type_code_display=get_practrole_display(pract_item['Healthcare Provider Taxonomy Code_1']),
     specialty_code=pract_item['Healthcare Provider Taxonomy Code_1'],
     specialty_display=get_specialty_display(pract_item['Healthcare Provider Taxonomy Code_1']),
+    addl_snomed_coding=get_addl_snomed_coding(pract_item['Healthcare Provider Taxonomy Code_1']),
+    addl_specialty=get_addl_specialty(pract_item['Healthcare Provider Taxonomy Code_2']),
     hcs_code=get_hcs_code(pract_item['Healthcare Provider Taxonomy Code_1']),
     HCS_Name=get_hcs_display(pract_item['Healthcare Provider Taxonomy Code_1']),
     location_phone=pract_item['Provider Business Practice Location Address Telephone Number']
@@ -522,21 +546,24 @@ def main(type,id_list,source=None):
             npi = item['NPI']
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
-            example = pract_example(item,f_id,type,npi)
-            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
-            entries = create_entry(entries,server_path,f_id,example,Type)
+            try:
+                example = pract_example(item,f_id,type,npi)
+                id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
+                entries = create_entry(entries,server_path,f_id,example,Type)
+            except KeyError as e:
+                logging.error('practitioner {f_id} skipped because of {e}'.format(f_id=f_id,e=e))
         
     elif type == 'practitionerrole': # one or more for each practitioner need to assign to org
         for item in pract_list:
             org_npi_list=[]
             pract_npi = item['NPI']
-            f_id=get_f_id(type,pract_npi)
-            logging.info('create resource id = {f_id}'.format(f_id=f_id))
             
             org_item_list=get_org(item['Provider Business Practice Location Address State Name'],item['Provider Business Practice Location Address Postal Code']) # get lst of org item jsut one for now
             #logging.info('org_item_list ={}',format(org_item_list))
 
-            for org_item in org_item_list:
+            for i,org_item in enumerate(org_item_list):
+                f_id=get_f_id(type,'{pract_npi}-{i}'.format(pract_npi=pract_npi,i=i))
+                logging.info('create resource id = {f_id}'.format(f_id=f_id))
                 org_npi = org_item['NPI']
                 example = practrole_example(item,org_item,f_id,type,pract_npi,org_npi)
                 org_npi_list.append(org_npi)

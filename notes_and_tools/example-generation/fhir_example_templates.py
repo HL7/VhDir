@@ -625,7 +625,9 @@ practitionerrole_template = '''
 			<code value="{specialty_code}"/>
 			<display value="{specialty_display}"/>
 		</coding>
+		{addl_snomed_coding}
 	</specialty>
+	{addl_specialty}
 	<location>
 		<reference value="Location/vhdir-location-{org_npi}"/>
 		<display value="{org_name}"/>
@@ -656,6 +658,27 @@ practitionerrole_template = '''
 	
 </PractitionerRole>
 '''
+
+#***********************2nd_specialty_template******************************
+
+
+addl_specialty_template = '''<specialty>
+		<coding>
+			<system value="http://nucc.org/provider-taxonomy"/>
+			<code value="{specialty_code}"/>
+			<display value="{specialty_display}"/>
+		</coding>
+		{addl_snomed_coding}
+	</specialty>'''
+	
+#***********************addl_specialty_coding_template******************************
+
+addl_snomed_coding_template = '''<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="{specialty_code}"/>
+			<display value="{specialty_display}"/>
+		</coding>'''
+
 
 
 #***********************bundle_templates******************************

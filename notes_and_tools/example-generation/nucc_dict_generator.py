@@ -23,7 +23,7 @@ server_path = 'http://test.fhir.org/r4'
 def get_nucc():
     nucc_dict = {}
     nucc_groups = []
-    with open('{in_path}'.format(in_path=in_path)) as f:
+    with open('{in_path}'.format(in_path=in_path),encoding='utf-8') as f:
         fieldnames = ['Code', 'Grouping', 'Classification', 'Specialization', 'Definition', 'Notes']
         next(csv.DictReader(f, fieldnames=fieldnames), None)  # skip the headers
         for line in csv.DictReader(f, fieldnames=fieldnames):
@@ -96,10 +96,12 @@ if __name__ == "__main__":
     nucc_dict = get_nucc()
     #with open('{out_path}/{out_file}'.format(out_path=out_path,out_file=out_file),'w') as fout:
     #    fout.write(pformat(nucc_dict, width=1000))
-    print('nucc_role_map =')
-    pprint(get_nucc_role(nucc_dict),width=200)
+    # print('nucc_role_map =')
+    # pprint(get_nucc_role(nucc_dict),width=200)
     # get_nucc_specialty(nucc_dict)
     # get_nucc_hcs(nucc_dict)
+    
+
         
         
 logging.debug('end of program')
