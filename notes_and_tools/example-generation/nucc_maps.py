@@ -1397,7 +1397,52 @@ nucc_sct_specialty_map = {
     '363LF0000X': ('419772000','Family practice')
     }
 
-
+nucc_sct_role_map = {
+'231H00000X':('309418004', 'Audiologist'),
+'124Q00000X':('26042002', 'Dental hygienist'),
+'122300000X':('106289002', 'Dental surgeon'),
+'1223S0112X':('49993003', 'Maxillofacial surgeon'),
+'133V00000X':('159033005', 'Dietician'),
+'163W00000X':('224535009', 'Registered nurse'),
+'364S00000X':('106292003', 'Nurse'),
+'367500000X':('405278004', 'Certified registered nurse anesthetist'),
+'363L00000X':('224571005', 'Nurse practitioner'),
+'152W00000X':('28229004', 'Optometrist'),
+'183500000X':('46255001', 'Pharmacist'),
+'1835P0018X':('159010009', 'Hospital pharmacist'),
+'111N00000X':('3842006', 'Chiropractor'),
+'207ZP0101X':('61207006', 'Medical pathologist'),
+'213E00000X':('159034004', 'Podiatrist'),
+'2084P0800X':('80584001', 'Psychiatrist'),
+'2085R0202X':('66862007', 'Radiologist'),
+'363AS0400X':('449161006', 'PA - physician assistant'),
+'103T00000X':('59944000', 'Psychologist'),
+'1041C0700X':('106328005', 'Social worker'),
+'235Z00000X':('265938005', 'Physio/occup/speech therapist'),
+'246W00000X':('159036002', 'ECG technician'),
+'246RM2200X':('159285000', 'Medical laboratory technician'),
+'183700000X':('159040006', 'Pharmacy technician'),
+'246Q00000X':('386629007', 'Laboratory technologist'),
+'246QM0706X':('386626000', 'Medical technologist'),
+'225A00000X':('80546007', 'OT - Occupational therapist'),
+'225100000X':('36682004', 'PT - Physiotherapist'),
+'227900000X':('442867008', 'Respiratory therapist'),
+'174M00000X':('106290006', 'Veterinarian'),
+'376K00000X':('73265009', 'Nursing aid'),
+'101Y00000X':('304291006', 'Bereavement counselor'),
+'146L00000X':('397897005', 'Paramedic'),
+'146N00000X':('397897005', 'Paramedic'),
+'207PE0004X':('409971007', 'Emergency medical services'),
+'171R00000X':('40570005', 'Interpreter'),
+'390200000X':('65853000', 'Student'),
+'146M00000X':('397897005', 'Paramedic'),
+'146D00000X':('397897005', 'Paramedic'),
+'207ZP0102X':('61207006', 'Medical pathologist'),
+'363A00000X':('449161006', 'PA - physician assistant'),
+'104100000X':('106328005', 'Social worker'),
+'246R00000X':('159285000', 'Medical laboratory technician'),
+'227800000X':('442867008', 'Respiratory therapist')
+}
 
 #This only happens when this module is called directly:
 

@@ -1,0 +1,25 @@
+hpid,partof_id,partof_display,name,phone,address,city,state,zip,prov_type_code,prov_type_display,prov_type_text
+HPID010000,Acme Insurance Co,Acme Insurance Co of Masschusetts,MA Bronze Plan PPO,6075555555,120 St James Ave,Boston,MA,2101,ppo,PPO,Preferred Provider Organization (PPO)
+HPID020000,Green Circle Ins,Green Circle of Masschusetts,MA Bronze HSA PPO,6075555555,800 Washington St,Boston,MA,2101,hmo,HMO,Health Maintenance Organization (HMO)
+HPID030000,Persona,Persona of Masschusetts,MA Silver 70 PPO,6075555555,120 Royall St,Boston,MA,2101,ppo,PPO,Preferred Provider Organization (PPO)
+HPID040000,Acme Insurance Co,Acme Insurance Co of Connecticut,CT Bronze Plan PPO,9595555555,690 Asylum Avenue,Hartford,CT,6101,ppo,PPO,Preferred Provider Organization (PPO)
+HPID050000,Green Circle Ins,Green Circle of Connecticut,CT Bronze HSA PPO,9595555555,185 Asylum Street,Hartford,CT,6101,hmo,HMO,Health Maintenance Organization (HMO)
+HPID060000,Persona,Persona of Connecticut,CT Silver 70 PPO,9595555555,27 Grove Street,Hartford,CT,6101,ppo,PPO,Preferred Provider Organization (PPO)
+HPID070000,Acme Insurance Co,Acme Insurance Co of Rhode Island,RI Bronze Plan PPO,4015555555,111 Westminster Street,Providence,RI,2901,ppo,PPO,Preferred Provider Organization (PPO)
+HPID080000,Green Circle Ins,Green Circle of Rhode Island,RI Bronze HSA PPO,4015555555,One Financial Plaza,Providence,RI,2901,hmo,HMO,Health Maintenance Organization (HMO)
+HPID090000,Persona,Persona of Rhode Island,RI Silver 70 PPO,4015555555,500 Exchange Street,Providence,RI,2901,ppo,PPO,Preferred Provider Organization (PPO)
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,

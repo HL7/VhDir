@@ -12,7 +12,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
         <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
     </meta>
 
-    <identifier> <!-- NPI -->
+    <identifier> <!-- NPI  or NIPI-->
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>
         </extension>
@@ -20,10 +20,10 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
         <type>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PRN"/>
-                <display value="Provider number"/>
+                <code value="{identifier_type_code}"/>
+                <display value="{identifier_type_display}"/>
             </coding>
-            <text value="NPI"/>
+            <text value="{identifier_type_text}"/>
         </type>
         <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="{npi}"/>
@@ -31,7 +31,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
             <start value="2004-04-21T11:57:00-05:00"/>
         </period>
         <assigner>
-            <display value="CMS"/>
+            <display value="Centers for Medicare and Medicaid Services"/>
         </assigner>
     </identifier>
 
@@ -39,7 +39,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
 
 	<type>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <system value="{prov_type_system}"/>
             <code value="{prov_type_code}"/>
             <display value="{prov_type_display}"/>
         </coding>
@@ -618,6 +618,7 @@ practitionerrole_template = '''
 			<code value="{type_code}"/>
 			<display value="{type_code_display}"/>
 		</coding>
+		{addl_snomed_code_coding}
 	</code>
 	<specialty>
 		<coding>
@@ -625,7 +626,7 @@ practitionerrole_template = '''
 			<code value="{specialty_code}"/>
 			<display value="{specialty_display}"/>
 		</coding>
-		{addl_snomed_coding}
+		{addl_snomed_specialty_coding}
 	</specialty>
 	{addl_specialty}
 	<location>
@@ -668,16 +669,137 @@ addl_specialty_template = '''<specialty>
 			<code value="{specialty_code}"/>
 			<display value="{specialty_display}"/>
 		</coding>
-		{addl_snomed_coding}
+		{addl_snomed_specialty_coding}
 	</specialty>'''
 	
-#***********************addl_specialty_coding_template******************************
+#***********************addl_snomed_coding_template******************************
 
 addl_snomed_coding_template = '''<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="{specialty_code}"/>
 			<display value="{specialty_display}"/>
 		</coding>'''
+
+#***********************Pract Role for network member******************************
+
+practitionerrole_network_template = '''
+<PractitionerRole xmlns="http://hl7.org/fhir">
+ <!-- synthetic practitionerrole for healthcare provider in network -->
+
+	<id value="{f_id}"/> 
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Network Provider ID"/>
+		</type>
+		<system value="{identifier_system}"/>
+		<value value="{identifier_value}"/>
+		<period>
+			<start value="2016-02-22"/>
+		</period>
+	    <assigner>
+	      <display value="{identifier_assigner_display}"/>
+	    </assigner>
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/>
+	</period>
+	
+	<practitioner>
+		<reference value="Practitioner/vhdir-practitioner-{pract_npi}"/>
+		<display value="{fname} {lname}"/>
+	</practitioner>
+
+	<organization>
+		<reference value="Organization/vhdir-organization-{org_npi}"/>
+		<display value="{org_name}"/>
+	</organization>
+
+	<code>
+	<text value="Provider Member"/>
+	</code>
+	<telecom>
+		<system value="phone"/>
+		<value value="{location_phone}"/>
+	</telecom>
+	
+	<endpoint>
+		<reference value="Endpoint/{f_id}-direct"/>
+	  <display value="Direct address for {fname} {lname} Network Member Role"/>
+	</endpoint>
+	
+</PractitionerRole>'''
+
+#****************
+
+organizationrole_template = '''
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <!--  describes the relationship between provider organization and network  -->
+  <id value="{f_id}"/>
+  
+  <identifier>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+    <use value="secondary"/>
+    <type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Network Provider ID"/>
+		</type>
+		<system value="{identifier_system}"/>
+		<value value="{identifier_value}"/>
+    <assigner>
+      <display value="{identifier_assigner_display}"/>
+    </assigner>
+  </identifier>
+  
+  <active value="true"/>
+  
+  <organization>
+		<reference value="Organization/vhdir-organization-{network_npi}"/>
+		<display value="{network_name}"/>
+	</organization>
+  
+  <participatingOrganization>
+    <reference value="Organization/vhdir-organization-{org_npi}"/>
+    <display value="{org_name}"/>
+  </participatingOrganization>
+  
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/organization-role"/>
+      <code value="member"/>
+      <display value="Member"/>
+    </coding>
+    <text value="Hospital Provider Member"/>
+  </code>
+  
+  <endpoint>
+		<reference value="Endpoint/{f_id}-direct"/>
+	  <display value="Direct address for {org_name} Network Member Role"/>
+	</endpoint>
+</OrganizationAffiliation>'''
 
 
 

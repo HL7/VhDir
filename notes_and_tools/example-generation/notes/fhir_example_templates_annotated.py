@@ -1063,6 +1063,108 @@ e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
 </PractitionerRole>
 '''
 
+#***********************Pract Role for network member******************************
+
+practitionerrole_network_template = '''
+<PractitionerRole xmlns="http://hl7.org/fhir">
+ <!-- synthetic practitionerrole for healthcare provider in network -->
+
+	<id value="{f_id}"/> 
+	
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
+	</meta>
+	
+	<identifier>
+		
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active"/>
+		</extension>
+		
+		<use value="secondary"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="PRN"/>
+				<display value="Provider number"/>
+			</coding>
+			<text value="Network Provider ID"/>
+		</type>
+		<system value="{identifier_system}"/>  # urlify
+		<value value="{identifier_value}"/> # get_prov_identifier randomly assigned numeric number
+		<period>
+			<start value="2016-02-22"/>
+		</period>
+	</identifier>
+	
+	<active value="true"/>
+	<period>
+		<start value="2016-02-22"/>
+	</period>
+	
+	<practitioner>
+		<reference value="Practitioner/vhdir-practitioner-{pract_npi}"/>
+		<display value="{fname} {lname}"/>
+	</practitioner>
+
+	<organization>
+		<reference value="Organization/vhdir-organization-{org_npi}"/>
+		<display value="{org_name}"/>
+	</organization>
+
+	<code>
+<!-- no code for now ?
+		<coding>
+			<system value="http://nucc.org/provider-taxonomy"/>
+			<code value="{type_code}"/>
+			<display value="{type_code_display}"/>
+		</coding>
+		{addl_snomed_code_coding}
+-->
+	<text value="Provider Member"/>
+	</code>
+<!--
+	<specialty>
+		<coding>
+			<system value="http://nucc.org/provider-taxonomy"/>
+			<code value="{specialty_code}"/>
+			<display value="{specialty_display}"/>
+		</coding>
+		{addl_snomed_specialty_coding}
+	</specialty>
+	{addl_specialty}
+	<location>
+		<reference value="Location/vhdir-location-{org_npi}"/>
+		<display value="{org_name}"/>
+	</location>
+	<healthcareService>
+		<reference value="HealthcareService/vhdir-{hcs_code}-healthcareservice-{org_npi}"/>
+		<display value="{org_name} {HCS_Name} Healthcare Service"/>
+	</healthcareService>
+-->
+	<telecom>
+
+		<system value="phone"/>
+		<value value="{location_phone}"/>
+	</telecom>
+<!--	
+	<availableTime>
+		<daysOfWeek value="mon"/>
+		<daysOfWeek value="tue"/>
+		<daysOfWeek value="wed"/>
+		<daysOfWeek value="thu"/>
+		<availableStartTime value="09:00:00"/>
+		<availableEndTime value="12:00:00"/>
+	</availableTime>
+-->
+	<endpoint>
+		<reference value="Endpoint/{f_id}-direct"/>
+	  <display value="Direct address for {fname} {lname} Network Member Role"/>
+	</endpoint>
+	
+</PractitionerRole>'''
+
+
 
 #***********************bundle_templates******************************
 

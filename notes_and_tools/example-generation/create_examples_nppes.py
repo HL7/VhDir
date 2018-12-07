@@ -1,3 +1,4 @@
+
 # ===================================
 # create VHDIR FHIR resources instances from the subset of the nppes data files:
 # run in python 3.5 or above
@@ -10,11 +11,11 @@ import rR_dict as rr
 import name_generator as names
 import taxonomy_codes as t
 from nucc_dict import nucc_dict
-from nucc_maps import nucc_healthcareservice_map, healthcareservice_list, nucc_role_map, nucc_sct_specialty_map
+from nucc_maps import nucc_healthcareservice_map, healthcareservice_list, nucc_role_map, nucc_sct_specialty_map, nucc_sct_role_map
 import csv
 import string
 import lxml.etree as etree
-from random import choice, choices, randint
+from random import choice, choices, randint, sample
 from pprint import pprint, pformat
 from datetime import datetime
 from stringcase import spinalcase, titlecase, snakecase
@@ -67,20 +68,26 @@ def get_csv(in_path,type):
     max = 2000
     in_file = 'sample-nppes-{type}_20181204-data.csv'.format(type=type)
     with open('{in_path}/{in_file}'.format(in_path=in_path,in_file=in_file)) as f:
-       logging.info('reading file = {in_file}'.format(in_file=in_file))
-       my_list = [j for i,j in enumerate(csv.DictReader(f,fieldnames=None, restkey='id', restval=None, dialect='excel')) if i < max]
-       # logging.info('content = {line}'.format(line= pformat(my_list)))
-       for i in my_list:  #update npis
-            i['NPI'] = make_new_npi(i['NPI'])
-            if type=='organization':  # Randomize names
-                random_name=make_new_name()
-                i['Authorized Official First Name']=random_name[0]
-                i['Authorized Official Last Name']=random_name[1]
-            if type=='practitioner':
-                random_name=make_new_name(i['Provider Gender Code'])
-                i['Provider First Name']=random_name[0]
-                i['Provider Last Name (Legal Name)']=random_name[1]
-            escape_xml(i)
+        logging.info('reading file = {in_file}'.format(in_file=in_file))
+        my_list = [j for i,j in enumerate(csv.DictReader(f,fieldnames=None, restkey='id', restval=None, dialect='excel')) if i < max]
+        # logging.info('content = {line}'.format(line= pformat(my_list)))
+        try:
+            for i in my_list:  #update npis
+                i['NPI'] = make_new_npi(i['NPI'])
+                if type=='organization':  # Randomize names
+                    random_name=make_new_name()
+                    i['Authorized Official First Name']=random_name[0]
+                    i['Authorized Official Last Name']=random_name[1]
+                if type=='practitioner':
+                    random_name=make_new_name(i['Provider Gender Code'])
+                    i['Provider First Name']=random_name[0]
+                    i['Provider Last Name (Legal Name)']=random_name[1]
+                escape_xml(i)
+        except :  # network
+            pass
+
+
+
        # logging.info('updated row = {i}'.format(i=pformat(i)))
             
     return(my_list)
@@ -89,6 +96,7 @@ def get_csv(in_path,type):
 
 org_list = get_csv(in_path,'organization') # organization data gleaned from NPPES
 pract_list = get_csv(in_path,'practitioner') # practitioner data gleaned from NPPES
+network_list= get_csv(in_path,'network') # made up network data
 
 #**********************************************
 
@@ -122,23 +130,12 @@ def get_f_id(type,npi,source=None):
 
 
 def urlify(s):
-
     for c in string.punctuation:
         s= s.replace(c,'')
     s = s.lower()
     s = spinalcase(s)
     return('https://{url_name}.com'.format(url_name=s))
 
-
-def get_partof_org():  # return either a randomly selected managing or empty string
-    mo = choices(list(hosp_systems.keys()),[25,25,25,25])[0]
-    if mo =="None":
-        return('')
-    else:
-        return(f_templ.partof_org_template.format(
-        partof_org_npi=hosp_systems[mo],
-        partof_org=mo
-        ))
 
 
 def get_phone1(item):
@@ -198,7 +195,7 @@ def write_resource_csv(type,data):
             writer.writerow(line)
 
 
-def get_prov_identifier(pract_id):
+def get_prov_identifier(pract_id=None):
     n = 7
     if pract_id:
         return(pract_id)
@@ -219,11 +216,20 @@ def get_org(state,postal_code):  # gert o rg based on state and closest zip
 
     distance_list.sort(key=lambda tup: tup[0]) #sort list by first item in tuple
             
-    logging.info('org_choices= {org_choices}'.format(org_choices=[i[0:2] for i in distance_list]))
+    # logging.info('org_choices= {org_choices}'.format(org_choices=[i[0:2] for i in distance_list]))
     # randomly assign to 1-3 orgs
     org_item = [i[3] for i in distance_list[0:choice([1,2,3])]]
-    logging.info('org_item = {org_item}'.format(org_item=org_item))
+    # logging.info('org_item = {org_item}'.format(org_item=org_item))
     return(org_item)  # return list of org items
+    
+    
+def get_network(state,all=False):  # get network based on state
+    network_item = [item for item in network_list if item['state'] == state]
+    if all:
+        return network_item
+    else:
+        return sample(network_item,k=choice([1,2,3]))  # return list of randomly assign to 1-3 networks network items
+
 
 
 def get_practrole_code(nucc):
@@ -262,7 +268,17 @@ def get_specialty_display(nucc):
     return(specialty_display)
 
 
-def get_addl_snomed_coding(nucc):
+def get_addl_snomed_code_coding(nucc):
+    try:
+        return(f_templ.addl_snomed_coding_template.format(
+        specialty_code=nucc_sct_role_map[nucc][0],
+        specialty_display=nucc_sct_role_map[nucc][1]
+        ))
+    except KeyError:
+        return('')
+
+
+def get_addl_snomed_specialty_coding(nucc):
     try:
         return(f_templ.addl_snomed_coding_template.format(
         specialty_code=nucc_sct_specialty_map[nucc][0],
@@ -277,7 +293,7 @@ def get_addl_specialty(nucc):
         return(f_templ.addl_specialty_template.format(
         specialty_code=nucc,
         specialty_display=get_specialty_display(nucc),
-        addl_snomed_coding=get_addl_snomed_coding(nucc),
+        addl_snomed_specialty_coding=get_addl_snomed_specialty_coding(nucc),
         ))
     else:
         return('')
@@ -296,12 +312,27 @@ def get_hcs_display(nucc):
         return('Miscellaneous')
 
 
-def practrole_example(pract_item,org_item,f_id,type,pract_npi,org_npi): # need to assign org before creating
+def orgrole_example(item,f_id,type,network_npi,network_name,managing_org_id,managing_org_name):
+        return(f_templ.organizationrole_template.format(
+        type=type,
+        f_id=f_id,
+        identifier_system=urlify(managing_org_id),
+        identifier_value=get_prov_identifier(),
+        identifier_assigner='identifier_assigner', #todo
+        identifier_assigner_display=managing_org_name,
+        network_npi=network_npi ,
+        network_name=network_name,
+        org_npi=item['NPI'],
+        org_name=item['Provider Organization Name (Legal Business Name)'],
+        ))
+
+
+def practrole_example(pract_item,f_id,type,pract_npi,org_npi,org_name): # need to assign org before creating
     return(f_templ.practitionerrole_template.format(
     type=type,
     f_id=f_id,
     pract_npi=pract_npi,
-    identifier_system=urlify(org_item['Provider Organization Name (Legal Business Name)']),
+    identifier_system=urlify(org_name),
     identifier_value=get_prov_identifier(pract_item['Other Provider Identifier_1']),
     identifier_assigner='identifier_assigner', #todo
     identifier_assigner_display='identifier_assigner_display',  #todo
@@ -309,18 +340,37 @@ def practrole_example(pract_item,org_item,f_id,type,pract_npi,org_npi): # need t
     lname=pract_item['Provider Last Name (Legal Name)'], # based on Gender
     sname=pract_item['Provider Credential Text'],
     org_npi=org_npi,
-    org_name=org_item['Provider Organization Name (Legal Business Name)'],
+    org_name=org_name,
     type_code=get_practrole_code(pract_item['Healthcare Provider Taxonomy Code_1']),
     type_code_display=get_practrole_display(pract_item['Healthcare Provider Taxonomy Code_1']),
     specialty_code=pract_item['Healthcare Provider Taxonomy Code_1'],
     specialty_display=get_specialty_display(pract_item['Healthcare Provider Taxonomy Code_1']),
-    addl_snomed_coding=get_addl_snomed_coding(pract_item['Healthcare Provider Taxonomy Code_1']),
+    addl_snomed_code_coding=get_addl_snomed_code_coding(pract_item['Healthcare Provider Taxonomy Code_1']),
+    addl_snomed_specialty_coding=get_addl_snomed_specialty_coding(pract_item['Healthcare Provider Taxonomy Code_1']),
     addl_specialty=get_addl_specialty(pract_item['Healthcare Provider Taxonomy Code_2']),
     hcs_code=get_hcs_code(pract_item['Healthcare Provider Taxonomy Code_1']),
     HCS_Name=get_hcs_display(pract_item['Healthcare Provider Taxonomy Code_1']),
     location_phone=pract_item['Provider Business Practice Location Address Telephone Number']
     ))
-    
+
+
+def practrole_network_example(pract_item,f_id,type,pract_npi,org_npi,org_name,managing_org_id,managing_org_name): # need to assign org before creating
+    return(f_templ.practitionerrole_network_template.format(
+    type=type,
+    f_id=f_id,
+    pract_npi=pract_npi,
+    identifier_system=urlify(managing_org_id),
+    identifier_value=get_prov_identifier(),
+    identifier_assigner='identifier_assigner', #todo
+    identifier_assigner_display=managing_org_name, 
+    fname=pract_item['Provider First Name'], # based on Gender
+    lname=pract_item['Provider Last Name (Legal Name)'], # based on Gender
+    sname=pract_item['Provider Credential Text'],
+    org_npi=org_npi,
+    org_name=org_name,
+    location_phone=pract_item['Provider Business Practice Location Address Telephone Number']
+    ))
+
 
 def hcs_example(item,f_id,type,npi,hcs): # hcs= healthcareservice
     return(f_templ.healthcareservice_template.format(
@@ -354,18 +404,18 @@ def get_specialty(hcs,return_type): # hcs= healthcareservice
 
     for k,v in nucc_healthcareservice_map.items():
         if v == hcs:
-            logging.info('hcs={hcs}, specialty={specialty} len(k) = {len}'.format(hcs=hcs,specialty=k,len=len(k)))
+            # logging.info('hcs={hcs}, specialty={specialty} len(k) = {len}'.format(hcs=hcs,specialty=k,len=len(k)))
             if len(k) == 3: # get all the codes that begin with k
                 specialties = specialties + [nucc for nucc in nucc_dict if nucc[0:3]==k]
             else:
                 specialties.append(k)
-    logging.info('specialties={specialties}'.format(specialties=specialties))
-    # specialties=choices(service_list,k=5) # list of five specialties
+    # logging.info('specialties={specialties}'.format(specialties=specialties))
+    # specialties=sample(service_list,k=5) # list of five specialties
     # logging.info(random_service_list)
     if return_type=='s_list':
         return(', '.join([get_specialty_display(specialty) for specialty in specialties]))
     for specialty in specialties:
-        logging.info('hcs={hcs}, specialty={specialty}'.format(hcs=hcs,specialty=specialty))
+        # logging.info('hcs={hcs}, specialty={specialty}'.format(hcs=hcs,specialty=specialty))
         
         specialty_xml=f_templ.hcs_specialty_template.format(
         specialty_code=specialty,
@@ -396,11 +446,64 @@ def loc_example(item,f_id,type,npi):
     )
 
 
+def get_partof_network(id,display):
+    return(f_templ.partof_org_template.format(
+    partof_org_npi=spinalcase(id.lower()),
+    partof_org=display
+    ))
+
+
+def network_example(item,f_id,type,hpid):
+    return(f_templ.organization_template.format(
+        type=type,
+        f_id=f_id,
+        npi=hpid,
+        identifier_type_code='NIIP',
+        identifier_type_display='National Insurance Payor Identifier (Payor)',
+        identifier_type_text='The Health Plan Identifier (HPID)',
+        identifier_system='https://www.qhpcertification.cms.gov/s/QHP',
+        name=item['name'],
+        phone=item['phone'],
+        address=item['address'], #todo add second line
+        city=item['city'],
+        state=item['state'],
+        zip=item['zip'],
+        LAT=ll.lat_long[get_zip(item['zip'])][0], # remove the  + 4 for looking up lat and long
+        LON=ll.lat_long[get_zip(item['zip'])][1],
+        prov_type_system='http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type',
+        prov_type_code=item['prov_type_code'],
+        prov_type_display=item['prov_type_display'],
+        prov_type_text=item['prov_type_text'],
+        contact_fname='Kathy',
+        contact_lname="Contact",
+        contactpoint_location_reference='todo',
+        contactpoint_location_reference_display='todo',
+        partof=get_partof_network(item['partof_id'],item['partof_display'])
+        )
+        )
+
+
+
+def get_partof_org():  # return either a randomly selected managing org or empty string
+    mo = choices(list(hosp_systems.keys()),[25,25,25,25])[0]
+    if mo =='None':
+        return('')
+    else:
+        return(f_templ.partof_org_template.format(
+        partof_org_npi=hosp_systems[mo],
+        partof_org=mo
+        ))
+
+
 def org_example(item,f_id,type,npi):
     return(f_templ.organization_template.format(
         type=type,
         f_id=f_id,
         npi=npi,
+        identifier_type_code='NPI',
+        identifier_type_display='Provider number',
+        identifier_type_text='NPI',
+        identifier_system='http://hl7.org/fhir/sid/us-npi',
         name=item['Provider Organization Name (Legal Business Name)'],
         phone=item['Provider Business Mailing Address Telephone Number'],
         address=item['Provider First Line Business Mailing Address'], #todo add second line
@@ -409,6 +512,7 @@ def org_example(item,f_id,type,npi):
         zip=item['Provider Business Mailing Address Postal Code'],
         LAT=ll.lat_long[get_zip(item['Provider Business Mailing Address Postal Code'])][0], # remove the  + 4 for looking up lat and long
         LON=ll.lat_long[get_zip(item['Provider Business Mailing Address Postal Code'])][1],
+        prov_type_system='http://terminology.hl7.org/CodeSystem/organization-type',
         prov_type_code='prov',
         prov_type_display='Healthcare Provider',
         prov_type_text='Healthcare Provider',
@@ -436,14 +540,14 @@ def pract_example(item,f_id,type,npi):
     #  create a second  qualification instance if data is present
     if item['Provider License Number_2']:
         qualification1 = f_templ.practitioner_qual_template.format(
-            license_state=item['Provider License Number State Code_1'],
-            license_state_display=usps_map[item['Provider License Number State Code_1']][0],
-            license_system=usps_map[item['Provider License Number State Code_1']][1],
-            license_assigner=usps_map[item['Provider License Number State Code_1']][2],
-            med_license=item['Provider License Number_1'],
-            qual_code=item['Healthcare Provider Taxonomy Code_1'],
+            license_state=item['Provider License Number State Code_2'],
+            license_state_display=usps_map[item['Provider License Number State Code_2']][0],
+            license_system=usps_map[item['Provider License Number State Code_2']][1],
+            license_assigner=usps_map[item['Provider License Number State Code_2']][2],
+            med_license=item['Provider License Number_2'],
+            qual_code=item['Healthcare Provider Taxonomy Code_2'],
             qual_code_system='http://nucc.org/provider-taxonomy',
-            qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_1'])
+            qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_2'])
             )
         qualification = qualification + qualification1
         
@@ -488,23 +592,17 @@ def create_batch_bundle(entries,type):
 #****************  Main  *************************
 
 def main(type,id_list,source=None):
-    '''
-    if source == None:
-        in_file = 'sample-nppes-{type}-data'.format(type=type)
-    else:
-        in_file = 'sample-nppes-{type}-data'.format(type=source)
-    '''
+
     try:
         os.mkdir('{out_path}/{type}'.format(out_path=out_path,type=type))
     except FileExistsError:
         pass
-    Type=rr.r_map[type]
-    
+    try:
+        Type=rr.r_map[type]
+    except KeyError:
+        Type='Organization'
+        
     entries = ''
-    
-    '''
-    for item in get_csv(in_path,in_file): 
-    ''' 
 
 
     if type == 'organization':
@@ -513,7 +611,16 @@ def main(type,id_list,source=None):
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             example = org_example(item,f_id,type,npi)
-            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
+            id_list[type].append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
+            entries = create_entry(entries,server_path,f_id,example,Type)
+
+    if type == 'network':
+        for item in network_list:
+            hpid = item['hpid']
+            f_id=get_f_id(type,hpid)
+            logging.info('create resource id = {f_id}'.format(f_id=f_id))
+            example = network_example(item,f_id,type,hpid)
+            id_list[type].append((hpid,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['name']))
             entries = create_entry(entries,server_path,f_id,example,Type)
 
     elif type == 'location':
@@ -522,7 +629,7 @@ def main(type,id_list,source=None):
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             example = loc_example(item,f_id,type,npi)
-            id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
+            id_list[type].append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),item['Provider Organization Name (Legal Business Name)']))
             entries = create_entry(entries,server_path,f_id,example,Type)
 
             #if source == 'organization':
@@ -538,40 +645,69 @@ def main(type,id_list,source=None):
                 f_id=get_f_id(hcs_type,npi)
                 logging.info('create resource id = {f_id}'.format(f_id=f_id))
                 example = hcs_example(item,f_id,type,npi,service)
-                id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{name} {Service} Service'.format(name=item['Provider Organization Name (Legal Business Name)'],Service=titlecase(service))))
+                id_list[type].append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{name} {Service} Service'.format(name=item['Provider Organization Name (Legal Business Name)'],Service=titlecase(service))))
                 entries = create_entry(entries,server_path,f_id,example,Type)
 
     elif type == 'practitioner':
+        skip_list=[]
         for item in pract_list:
             npi = item['NPI']
             f_id=get_f_id(type,npi)
             logging.info('create resource id = {f_id}'.format(f_id=f_id))
             try:
                 example = pract_example(item,f_id,type,npi)
-                id_list.append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
+                id_list[type].append((npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)'])))
                 entries = create_entry(entries,server_path,f_id,example,Type)
             except KeyError as e:
-                logging.error('practitioner {f_id} skipped because of {e}'.format(f_id=f_id,e=e))
+                logging.error('practitioner {npi} skipped because of {e}'.format(npi=npi,e=e))
+                skip_list.append(npi)
         
     elif type == 'practitionerrole': # one or more for each practitioner need to assign to org
         for item in pract_list:
             org_npi_list=[]
             pract_npi = item['NPI']
-            
+            # assign pract to org and network
             org_item_list=get_org(item['Provider Business Practice Location Address State Name'],item['Provider Business Practice Location Address Postal Code']) # get lst of org item jsut one for now
             #logging.info('org_item_list ={}',format(org_item_list))
-
-            for i,org_item in enumerate(org_item_list):
+            network_item_list=get_network(item['Provider Business Practice Location Address State Name'])
+            for i,org_item in enumerate(org_item_list + network_item_list):
                 f_id=get_f_id(type,'{pract_npi}-{i}'.format(pract_npi=pract_npi,i=i))
                 logging.info('create resource id = {f_id}'.format(f_id=f_id))
-                org_npi = org_item['NPI']
-                example = practrole_example(item,org_item,f_id,type,pract_npi,org_npi)
+                try:
+                    org_npi = org_item['NPI']
+                    org_name = org_item['Provider Organization Name (Legal Business Name)']
+                    example = practrole_example(item,f_id,type,pract_npi,org_npi,org_name)
+                except KeyError: #network
+                    org_npi = org_item['hpid']
+                    org_name = org_item['name']
+                    managing_org_id = org_item['partof_id']
+                    managing_org_name = org_item['partof_display']
+                    example = practrole_network_example(item,f_id,type,pract_npi,org_npi,org_name,managing_org_id,managing_org_name)
                 org_npi_list.append(org_npi)
-                id_list.append((pract_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)']),org_npi_list))
+                id_list[type].append((pract_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)']),org_npi))
                 entries = create_entry(entries,server_path,f_id,example,Type)
+
+    elif type == 'organizationrole': # one  for each org and network assigned to org assign all networks for now
+        for item in org_list:
+            network_npi_list=[]
+            org_npi = item['NPI']
+            # assign org to network
+            network_item_list=get_network(item['Provider Business Practice Location Address State Name'],True)
+            for i,network_item in enumerate(network_item_list):
+                f_id=get_f_id(type,'{org_npi}-{i}'.format(org_npi=org_npi,i=i))
+                logging.info('create resource id = {f_id}'.format(f_id=f_id))
+                network_npi = network_item['hpid']
+                network_name = network_item['name']
+                managing_org_id = network_item['partof_id']
+                managing_org_name = network_item['partof_display']
+                example = orgrole_example(item,f_id,type,network_npi,network_name,managing_org_id,managing_org_name)
+                network_npi_list.append(network_npi)
+                id_list[type].append((org_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{name} Network Member'.format(name=item['Provider Organization Name (Legal Business Name)']),network_npi))
+                entries = create_entry(entries,server_path,f_id,example,Type)
+
  
 
-    logging.info('create {type} example: \n{example}'.format(type=type,example=example))
+    logging.info('create {type} example: \n{example}'.format(type=type,example=f_id))  # change example to f_id for faster perfomance
         
         
     batch_bundle = create_batch_bundle(entries,type)
@@ -589,17 +725,21 @@ if __name__ == "__main__":
     resource_keys = dict(  # create a map of resource_ids to create a relational table
         practitioner=[],
         organization=[],
+        network=[],
         location=[],
         healthcareservice=[],
-        practitionerrole=[]
+        practitionerrole=[],
+        organizationrole=[]
         )
         
-    main('organization',resource_keys['organization'])
-    main('location',resource_keys['location'],'organization')
-    main('healthcareservice',resource_keys['healthcareservice'],'organization')
-
-    main('practitioner',resource_keys['practitioner'])
-    main('practitionerrole',resource_keys['practitionerrole'],'practitioner')
+    main('organization',resource_keys)
+    main('network',resource_keys)
+    main('location',resource_keys,'organization')
+    main('healthcareservice',resource_keys,'organization')
+    main('practitioner',resource_keys)
+    main('practitionerrole',resource_keys,'practitioner')
+    main('organizationrole',resource_keys,'organization')
+    
 
     #main('location',resource_keys['location'],'practitioner')
 
