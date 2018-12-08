@@ -5624,7 +5624,6 @@
         </name>
         <telecom>
           <system value="phone"/>
-          <value value=""/>
           <use value="work"/>
           <rank value="1"/>
         </telecom>

@@ -1434,7 +1434,6 @@
         <name value="QUINCY MEDICAL CENTER"/>
         <telecom>
           <system value="phone"/>
-          <value value=""/>
         </telecom>
         <address>
           <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
@@ -1497,7 +1496,6 @@
               </extension>
             </extension>
             <system value="phone"/>
-            <value value=""/>
             <use value="work"/>
           </telecom>
           <address>
