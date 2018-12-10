@@ -312,6 +312,9 @@ practitioner_qual_template = '''<qualification>
 			</coding>
 			<text value="{qual_code_display}"/>
 		</code>
+		<issuer>
+			<display value="{license_assigner}"/>
+		</issuer>
 	</qualification>'''
 
 #***********************location_templates******************************

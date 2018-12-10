@@ -51,7 +51,15 @@ org roles. TODO
 
 
 add text
-add narratives
+add narratives if Brian does not
+
+add verification results if Brian does not
+
+add in extension in future case
+
+
+
+
 
 
 
