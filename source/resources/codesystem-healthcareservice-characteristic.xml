@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="codesystem-healthcareservice-characteristic"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-healthcareservice-characteristic"/>
+	<name value="VhDirHealthcareService-characteristic"/>
+	<title value="VhDir Healthcare Service Characteristic"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This code system contains codes for documenting the attributes of a health care services."/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="limitedhrs"/>
+		<display value="Limited Hours"/>
+		<definition value="The hours of this service may be limited and subject to frequent variation. Please be sure to contact this location for current information."/>
+	</concept>
+</CodeSystem>

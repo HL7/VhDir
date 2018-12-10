@@ -147,4 +147,9 @@
 		<display value="Other"/>
 		<definition value="Other"/>
 	</concept>
+	<concept>
+		<code value="q1"/>
+		<display value="Cost Qualification"/>
+		<definition value="This is a sample cost qualification."/>
+	</concept>
 </CodeSystem>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-insuranceplancostqualifier"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostqualifier"/>
+	<name value="VhDirInsPlanQualifier"/>
+	<title value="VhDir Insurance Plan Cost Qualifier"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that further qualify the cost of a plan."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-insuranceplan"/>
+            <concept>
+                <code value="q1"/>
+            </concept>
+		</include>
+	</compose>
+</ValueSet>

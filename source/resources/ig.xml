@@ -415,6 +415,19 @@
   </resource>
   <resource>
     <reference>
+      <reference value="ValueSet/valueset-healthcareservice-characteristic" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="ValueSet/valueset-healthcareservice-eligibility" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+
+  <resource>
+    <reference>
       <reference value="CodeSystem/codesystem-accessibility" />
     </reference>
     <exampleBoolean value="false" />
@@ -1511,6 +1524,19 @@
     </reference>
     <exampleBoolean value="false" />
   </resource>
+
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-healthcareservice-characteristic" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-healthcareservice-eligibility" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
   <resource>
     <reference>
       <reference value="StructureDefinition/careteam-alias" />
@@ -1931,6 +1957,21 @@
       <page>
         <nameUrl value="ValueSet-valueset-accessibility.html"/>
         <title value="ValueSet Accessibility"/>
+        <generation value="generated"/>
+      </page>
+      <page>
+        <nameUrl value="ValueSet-healthcareservice-characteristic.html"/>
+        <title value="ValueSet Healthcare Service Characteristic"/>
+        <generation value="generated"/>
+      </page>
+      <page>
+        <nameUrl value="ValueSet-healthcareservice-eligibility.html"/>
+        <title value="ValueSet Healthcare Service Eligibility"/>
+        <generation value="generated"/>
+      </page>
+      <page>
+        <nameUrl value="ValueSet-insuranceplancostqualifier.html"/>
+        <title value="ValueSet Insurance Plan Cost Qualifier"/>
         <generation value="generated"/>
       </page>
       <!-- ============ End ValueSet   =============== -->
