@@ -338,7 +338,7 @@ def practrole_example(pract_item,f_id,type,pract_npi,org_npi,org_name): # need t
     identifier_assigner_display='identifier_assigner_display',  #todo
     fname=pract_item['Provider First Name'], # based on Gender
     lname=pract_item['Provider Last Name (Legal Name)'], # based on Gender
-    sname=pract_item['Provider Credential Text'],
+    sname=pract_item['Provider Credential Text'] if pract_item['Provider Credential Text'] else '5555555555',
     org_npi=org_npi,
     org_name=org_name,
     type_code=get_practrole_code(pract_item['Healthcare Provider Taxonomy Code_1']),
@@ -350,7 +350,7 @@ def practrole_example(pract_item,f_id,type,pract_npi,org_npi,org_name): # need t
     addl_specialty=get_addl_specialty(pract_item['Healthcare Provider Taxonomy Code_2']),
     hcs_code=get_hcs_code(pract_item['Healthcare Provider Taxonomy Code_1']),
     HCS_Name=get_hcs_display(pract_item['Healthcare Provider Taxonomy Code_1']),
-    location_phone=pract_item['Provider Business Practice Location Address Telephone Number']
+    location_phone=pract_item['Provider Business Practice Location Address Telephone Number'] if pract_item['Provider Business Practice Location Address Telephone Number'] else '5555555555'
     ))
 
 
@@ -365,10 +365,10 @@ def practrole_network_example(pract_item,f_id,type,pract_npi,org_npi,org_name,ma
     identifier_assigner_display=managing_org_name, 
     fname=pract_item['Provider First Name'], # based on Gender
     lname=pract_item['Provider Last Name (Legal Name)'], # based on Gender
-    sname=pract_item['Provider Credential Text'],
+    sname=pract_item['Provider Credential Text'] if pract_item['Provider Credential Text'] else '5555555555',
     org_npi=org_npi,
     org_name=org_name,
-    location_phone=pract_item['Provider Business Practice Location Address Telephone Number']
+    location_phone=pract_item['Provider Business Practice Location Address Telephone Number'] if pract_item['Provider Business Practice Location Address Telephone Number'] else '5555555555'
     ))
 
 
@@ -382,7 +382,7 @@ def hcs_example(item,f_id,type,npi,hcs): # hcs= healthcareservice
     HCS_Name=hcs.upper(),
     identifier_system=urlify(item['Provider Organization Name (Legal Business Name)']),
     identifier_value='{npi}-{hcs}'.format(npi=npi,hcs=spinalcase(hcs)),
-    phone=item['Provider Business Practice Location Address Telephone Number'],
+    phone=item['Provider Business Practice Location Address Telephone Number'] if item['Provider Business Practice Location Address Telephone Number'] else '5555555555',
     service_list=get_specialty(hcs,'s_list'),
     specialty=get_specialty(hcs,'s_xml')
     # hsc_type_code,
@@ -413,7 +413,8 @@ def get_specialty(hcs,return_type): # hcs= healthcareservice
     # specialties=sample(service_list,k=5) # list of five specialties
     # logging.info(random_service_list)
     if return_type=='s_list':
-        return(', '.join([get_specialty_display(specialty) for specialty in specialties]))
+        return('Specialties include: {}'.format(
+        ', '.join([get_specialty_display(specialty) for specialty in specialties])))
     for specialty in specialties:
         # logging.info('hcs={hcs}, specialty={specialty}'.format(hcs=hcs,specialty=specialty))
         
@@ -435,7 +436,7 @@ def loc_example(item,f_id,type,npi):
     name=item['Provider Organization Name (Legal Business Name)'],
     type_code=item['Healthcare Provider Taxonomy Code_1'],
     type_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_1']),
-    phone=item['Provider Business Practice Location Address Telephone Number'],
+    phone=item['Provider Business Practice Location Address Telephone Number'] if item['Provider Business Practice Location Address Telephone Number'] else '5555555555',
     address=item['Provider First Line Business Practice Location Address'], #todo add second line
     city=item['Provider Business Practice Location Address City Name'],
     state=item['Provider Business Practice Location Address State Name'],
@@ -463,7 +464,7 @@ def network_example(item,f_id,type,hpid):
         identifier_type_text='The Health Plan Identifier (HPID)',
         identifier_system='https://www.qhpcertification.cms.gov/s/QHP',
         name=item['name'],
-        phone=item['phone'],
+        phone=item['phone'] if item['phone'] else '5555555555',
         address=item['address'], #todo add second line
         city=item['city'],
         state=item['state'],
@@ -505,7 +506,7 @@ def org_example(item,f_id,type,npi):
         identifier_type_text='NPI',
         identifier_system='http://hl7.org/fhir/sid/us-npi',
         name=item['Provider Organization Name (Legal Business Name)'],
-        phone=item['Provider Business Mailing Address Telephone Number'],
+        phone=item['Provider Business Mailing Address Telephone Number'] if item['Provider Business Mailing Address Telephone Number'] else '5555555555',
         address=item['Provider First Line Business Mailing Address'], #todo add second line
         city=item['Provider Business Mailing Address City Name'],
         state=item['Provider Business Mailing Address State Name'],
@@ -560,8 +561,8 @@ def pract_example(item,f_id,type,npi):
         active='true', # randomize ?
         fname=item['Provider First Name'], # based on Gender
         lname=item['Provider Last Name (Legal Name)'], # based on Gender
-        sname=item['Provider Credential Text'],
-        phone0=item['Provider Business Mailing Address Telephone Number'],
+        sname=item['Provider Credential Text'] if item['Provider Credential Text'] else 'MD',
+        phone0=item['Provider Business Mailing Address Telephone Number'] if item['Provider Business Mailing Address Telephone Number'] else '5555555555',
         phone1=get_phone1(item),
         LAT=ll.lat_long[get_zip(item['Provider Business Mailing Address Postal Code'])][0], # remove the  + 4 for looking up lat and long
         LON=ll.lat_long[get_zip(item['Provider Business Mailing Address Postal Code'])][1],

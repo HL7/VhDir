@@ -326,7 +326,7 @@ location_template = '''
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
 				<code value="handiaccess"/>
 				<display value="handicap accessible"/>
 			</coding>
@@ -337,7 +337,7 @@ location_template = '''
 		<extension url="acceptingPatients">
 			<valueBoolean value="true"/>
 		</extension>
-		<extension url="acceptingPatients">
+		<extension url="network">
 			<valueReference>
 				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
 				<display value="Acme Insurance Co"/>
@@ -348,7 +348,7 @@ location_template = '''
 		<extension url="acceptingPatients">
 			<valueBoolean value="true"/>
 		</extension>
-		<extension url="acceptingPatients">
+		<extension url="network">
 			<valueReference>
 				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
 				<display value="Persona"/>
@@ -359,7 +359,7 @@ location_template = '''
 		<extension url="acceptingPatients">
 			<valueBoolean value="true"/>
 		</extension>
-		<extension url="acceptingPatients">
+		<extension url="network">
 			<valueReference>
 				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
 				<display value="Green Circle"/>
