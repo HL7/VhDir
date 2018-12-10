@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-healthcareservice-characteristic"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-characteristic"/>
+	<name value="VhDirHealthcareService-characteristic"/>
+	<title value="VhDir Healthcare Service Characteristic"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This value set defines a set of codes that indicate the characteristics of a healthcare service."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-healthcareservice-characteristic"/>
+		</include>
+	</compose>
+</ValueSet>

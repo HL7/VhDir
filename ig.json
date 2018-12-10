@@ -989,6 +989,17 @@
       "source": "codesystem-digitalcertificate.xml",
       "base": "CodeSystem-codesystem-digitalcertificate.html"
     },
+
+    "CodeSystem/codesystem-healthcareservice-characteristic": {
+      "source": "codesystem-healthcareservice-characteristic.xml",
+      "base": "CodeSystem-codesystem-healthcareservice-characteristic.html"
+    },
+    "CodeSystem/codesystem-healthcareservice-eligibility": {
+      "source": "codesystem-healthcareservice-eligibility.xml",
+      "base": "CodeSystem-codesystem-healthcareservice-eligibility.html"
+    },
+
+
     "SearchParameter/searchparameter-organization-name": {
       "source": "searchparameter-organization-name.json",
       "base": "SearchParameter-searchparameter-organization-name.html"
@@ -1051,9 +1062,20 @@
     "ValueSet/valueset-plan-type": {
       "source": "valueset-plan-type.xml",
       "base": "ValueSet-valueset-plan-type.html"
+    }, 
+    "ValueSet/valueset-healthcareservice-characteristic": {
+      "source": "valueset-healthcareservice-characteristic.xml",
+      "base": "ValueSet-valueset-healthcareservice-characteristic.html"
     },
-    
-    
+    "ValueSet/valueset-healthcareservice-eligibility": {
+      "source": "valueset-healthcareservice-eligibility.xml",
+      "base": "ValueSet-valueset-healthcareservice-eligibility.html"
+    },
+    "ValueSet/valueset-insuranceplancostqualifier": {
+      "source": "valueset-insuranceplancostqualifier.xml",
+      "base": "ValueSet-valueset-insuranceplancostqualifier.html"
+    },
+
     "Organization/monumentHIE": {
       "source": "organization-example-monumentHIE.xml",
       "base": "Organization-monumentHIE.html"
