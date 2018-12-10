@@ -474,7 +474,7 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
   <active value="true"/>
 	
   <providedBy>
-		<reference value="Organization/vhdir-org-{npi}"/>
+		<reference value="Organization/vhdir-organization-{npi}"/>
 		<display value="{name}"/>
   </providedBy>
 	
