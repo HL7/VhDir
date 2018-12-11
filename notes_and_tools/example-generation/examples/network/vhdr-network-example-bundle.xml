@@ -1,13 +1,13 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="vhdir-network-examples-bundle"/>
+  <id value="vhdir-organization-examples-bundle"/>
   <type value="batch"/>
   <timestamp value="2018-12-07T02:45:56.932618Z"/>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID010000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID010000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID010000"/>
+        <id value="vhdir-organization-HPID010000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -132,22 +132,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID010000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID010000-direct"/>
           <display value="MA Bronze Plan PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID010000"/>
+      <url value="Organization/vhdir-organization-HPID010000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID020000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID020000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID020000"/>
+        <id value="vhdir-organization-HPID020000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -272,22 +272,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID020000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID020000-direct"/>
           <display value="MA Bronze HSA HMO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID020000"/>
+      <url value="Organization/vhdir-organization-HPID020000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID030000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID030000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID030000"/>
+        <id value="vhdir-organization-HPID030000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -412,22 +412,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID030000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID030000-direct"/>
           <display value="MA Silver 70 PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID030000"/>
+      <url value="Organization/vhdir-organization-HPID030000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID040000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID040000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID040000"/>
+        <id value="vhdir-organization-HPID040000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -552,22 +552,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID040000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID040000-direct"/>
           <display value="CT Bronze Plan PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID040000"/>
+      <url value="Organization/vhdir-organization-HPID040000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID050000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID050000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID050000"/>
+        <id value="vhdir-organization-HPID050000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -692,22 +692,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID050000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID050000-direct"/>
           <display value="CT Bronze HSA HMO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID050000"/>
+      <url value="Organization/vhdir-organization-HPID050000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID060000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID060000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID060000"/>
+        <id value="vhdir-organization-HPID060000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -832,22 +832,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID060000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID060000-direct"/>
           <display value="CT Silver 70 PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID060000"/>
+      <url value="Organization/vhdir-organization-HPID060000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID070000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID070000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID070000"/>
+        <id value="vhdir-organization-HPID070000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -972,22 +972,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID070000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID070000-direct"/>
           <display value="RI Bronze Plan PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID070000"/>
+      <url value="Organization/vhdir-organization-HPID070000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID080000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID080000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID080000"/>
+        <id value="vhdir-organization-HPID080000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -1112,22 +1112,22 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID080000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID080000-direct"/>
           <display value="RI Bronze HSA HMO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID080000"/>
+      <url value="Organization/vhdir-organization-HPID080000"/>
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.org/r4/vhdir-network-HPID090000"/>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID090000"/>
     <resource>
       <Organization xmlns="http://hl7.org/fhir">
         <!-- synthetic organization -->
-        <id value="vhdir-network-HPID090000"/>
+        <id value="vhdir-organization-HPID090000"/>
         <meta>
           <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
         </meta>
@@ -1252,14 +1252,14 @@
           </address>
         </contact>
         <endpoint>
-          <reference value="Endpoint/vhdir-network-HPID090000-direct"/>
+          <reference value="Endpoint/vhdir-organization-HPID090000-direct"/>
           <display value="RI Silver 70 PPO Direct address"/>
         </endpoint>
       </Organization>
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-network-HPID090000"/>
+      <url value="Organization/vhdir-organization-HPID090000"/>
     </request>
   </entry>
 </Bundle>

@@ -26,7 +26,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992607537"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992607537"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -37,7 +37,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992607537"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992607537"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -48,7 +48,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992607537"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992607537"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -154,7 +154,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995131442"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995131442"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -165,7 +165,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995131442"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995131442"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -176,7 +176,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995131442"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995131442"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -282,7 +282,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990789741"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990789741"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -293,7 +293,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990789741"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990789741"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -304,7 +304,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990789741"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990789741"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -410,7 +410,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998062387"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998062387"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -421,7 +421,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998062387"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998062387"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -432,7 +432,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998062387"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998062387"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -538,7 +538,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990780047"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990780047"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -549,7 +549,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990780047"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990780047"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -560,7 +560,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990780047"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990780047"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -666,7 +666,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994427431"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994427431"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -677,7 +677,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994427431"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994427431"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -688,7 +688,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994427431"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994427431"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -794,7 +794,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991396014"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991396014"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -805,7 +805,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991396014"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991396014"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -816,7 +816,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991396014"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991396014"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -922,7 +922,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991790820"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991790820"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -933,7 +933,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991790820"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991790820"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -944,7 +944,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991790820"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991790820"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1050,7 +1050,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996245255"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996245255"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1061,7 +1061,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996245255"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996245255"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1072,7 +1072,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996245255"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996245255"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1178,7 +1178,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998962430"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998962430"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1189,7 +1189,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998962430"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998962430"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1200,7 +1200,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998962430"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998962430"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1306,7 +1306,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999972445"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999972445"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1317,7 +1317,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999972445"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999972445"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1328,7 +1328,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999972445"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999972445"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1434,7 +1434,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997659264"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997659264"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1445,7 +1445,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997659264"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997659264"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1456,7 +1456,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997659264"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997659264"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1562,7 +1562,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991892344"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991892344"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1573,7 +1573,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991892344"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991892344"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1584,7 +1584,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991892344"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991892344"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1690,7 +1690,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995630533"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995630533"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1701,7 +1701,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995630533"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995630533"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1712,7 +1712,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995630533"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995630533"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1818,7 +1818,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995731321"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995731321"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1829,7 +1829,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995731321"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995731321"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1840,7 +1840,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995731321"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995731321"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -1946,7 +1946,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992307530"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992307530"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -1957,7 +1957,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992307530"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992307530"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -1968,7 +1968,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992307530"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992307530"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2074,7 +2074,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999670259"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999670259"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2085,7 +2085,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999670259"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999670259"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2096,7 +2096,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999670259"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999670259"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2202,7 +2202,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998762106"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998762106"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2213,7 +2213,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998762106"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998762106"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2224,7 +2224,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998762106"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998762106"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2330,7 +2330,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998863986"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998863986"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2341,7 +2341,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998863986"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998863986"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2352,7 +2352,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998863986"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998863986"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2458,7 +2458,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995338232"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995338232"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2469,7 +2469,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995338232"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995338232"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2480,7 +2480,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995338232"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995338232"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2586,7 +2586,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996348148"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996348148"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2597,7 +2597,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996348148"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996348148"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2608,7 +2608,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996348148"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996348148"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2714,7 +2714,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990085657"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990085657"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2725,7 +2725,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990085657"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990085657"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2736,7 +2736,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990085657"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990085657"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2842,7 +2842,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991095779"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991095779"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2853,7 +2853,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991095779"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991095779"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2864,7 +2864,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991095779"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991095779"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -2970,7 +2970,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994126865"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994126865"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -2981,7 +2981,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994126865"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994126865"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -2992,7 +2992,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994126865"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994126865"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3098,7 +3098,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991692366"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991692366"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3109,7 +3109,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991692366"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991692366"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3120,7 +3120,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9991692366"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9991692366"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3226,7 +3226,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999278250"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999278250"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3237,7 +3237,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999278250"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999278250"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3248,7 +3248,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999278250"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999278250"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3354,7 +3354,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999177926"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999177926"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3365,7 +3365,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999177926"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999177926"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3376,7 +3376,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999177926"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999177926"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3482,7 +3482,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998864828"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998864828"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3493,7 +3493,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998864828"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998864828"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3504,7 +3504,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998864828"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998864828"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3610,7 +3610,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997955733"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997955733"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3621,7 +3621,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997955733"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997955733"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3632,7 +3632,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997955733"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997955733"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3738,7 +3738,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9993319368"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9993319368"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3749,7 +3749,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9993319368"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9993319368"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3760,7 +3760,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9993319368"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9993319368"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3866,7 +3866,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995935572"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995935572"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -3877,7 +3877,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995935572"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995935572"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -3888,7 +3888,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9995935572"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9995935572"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -3994,7 +3994,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994521488"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994521488"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4005,7 +4005,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994521488"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994521488"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4016,7 +4016,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994521488"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994521488"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4122,7 +4122,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994723478"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994723478"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4133,7 +4133,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994723478"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994723478"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4144,7 +4144,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9994723478"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9994723478"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4250,7 +4250,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992006923"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992006923"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4261,7 +4261,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992006923"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992006923"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4272,7 +4272,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9992006923"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9992006923"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4378,7 +4378,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990188327"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990188327"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4389,7 +4389,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990188327"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990188327"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4400,7 +4400,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9990188327"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9990188327"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4506,7 +4506,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996441719"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996441719"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4517,7 +4517,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996441719"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996441719"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4528,7 +4528,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996441719"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996441719"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4634,7 +4634,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997552602"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997552602"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4645,7 +4645,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997552602"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997552602"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4656,7 +4656,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9997552602"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9997552602"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4762,7 +4762,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999774646"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999774646"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4773,7 +4773,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999774646"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999774646"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4784,7 +4784,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9999774646"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9999774646"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -4890,7 +4890,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998269624"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998269624"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -4901,7 +4901,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998269624"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998269624"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -4912,7 +4912,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9998269624"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9998269624"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
@@ -5018,7 +5018,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996643294"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996643294"/>  eh: todo -->
 							<display value="Acme Insurance Co"/>
 						</valueReference>
 					</extension>
@@ -5029,7 +5029,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996643294"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996643294"/>  eh: todo -->
 							<display value="Persona"/>
 						</valueReference>
 					</extension>
@@ -5040,7 +5040,7 @@
 					</extension>
 					<extension url="network">
 						<valueReference>
-							<!-- <reference value="Organization/vhdir-network-9996643294"/>  eh: todo -->
+							<!-- <reference value="Organization/vhdir-organization-9996643294"/>  eh: todo -->
 							<display value="Green Circle"/>
 						</valueReference>
 					</extension>
