@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-target",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-target",
+  "url": "http://hl7.org/fhir/SearchParameter/VerificationResult-target",
   "version": "0.0.0",
   "name": "VHDir VerificationResult Target Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/VerificationResult-target",
@@ -19,13 +18,19 @@
       ]
     }
   ],
-  "code": "verificationresult-target",
-  "base": "VerificationResult",
-  "type": "string",
   "description": "Select validation information for the specified resource",
+  "code": "target",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "string",
   "expression": "VerificationResult.target",
-  "target": "Resource",
+  "target": [
+    "Resource"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type"
+  "modifier": [
+    "type"
+  ]
 }

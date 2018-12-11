@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-service",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-service",
+  "url": "http://hl7.org/fhir/SearchParameter/PractitionerRole-service",
   "version": "0.0.0",
   "name": "VHDir PractitionerRole Service Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-service",
@@ -19,15 +18,22 @@
       ]
     }
   ],
-  "code": "practitionerrole-service",
-  "base": "PractitionerRole",
-  "type": "reference",
   "description": "Select PractitionerRoles providing the specified service",
+  "code": "service",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
   "expression": "PractitionerRole.healthcareService",
-  "target": "HealthcareService",
+  "target": [
+    "HealthcareService"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "healthcareservice-identifier", "healthcareservice-category", "healthcareservice-organization", "healthcareservice-location"
+    "healthcareservice-identifier",
+    "healthcareservice-category",
+    "healthcareservice-organization",
+    "healthcareservice-location"
   ]
 }

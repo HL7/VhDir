@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-type",
+  "url": "http://hl7.org/fhir/SearchParameter/Organization-type",
   "version": "0.0.0",
   "name": "VHDir Organization Type Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-type",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "organization-type",
-  "base": "Organization",
-  "type": "token",
   "description": "Select Organizations of the specified type",
+  "code": "type",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
   "expression": "Organization.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

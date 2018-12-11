@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-status",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-status",
+  "url": "http://hl7.org/fhir/SearchParameter/Endpoint-status",
   "version": "0.0.0",
   "name": "VHDir Endpoint Status Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-status",
@@ -19,10 +18,12 @@
       ]
     }
   ],
-  "code": "endpoint-status",
-  "base": "Endpoint",
-  "type": "token",
   "description": "Select Endpoints with the specified status",
+  "code": "status",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "token",
   "expression": "Endpoint.status",
   "multipleOr": true,
   "multipleAnd": true

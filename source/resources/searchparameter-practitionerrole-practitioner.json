@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-practitioner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-practitioner",
+  "url": "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner",
   "version": "0.0.0",
   "name": "VHDir PractitionerRole Practitioner Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner",
@@ -19,15 +18,20 @@
       ]
     }
   ],
-  "code": "practitionerrole-practitioner",
-  "base": "PractitionerRole",
-  "type": "reference",
   "description": "Select roles filled by the specified practitioner",
+  "code": "practitioner",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
   "expression": "PractitionerRole.practitioner",
-  "target": "Practitioner",
+  "target": [
+    "Practitioner"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "practitioner-identifier", "practitioner-name"
+    "practitioner-identifier",
+    "practitioner-name"
   ]
 }

@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-identifier",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier",
+  "url": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
   "version": "0.0.0",
   "name": "VHDir Endpoint Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "endpoint-identifier",
-  "base": "Endpoint",
-  "type": "token",
   "description": "Select Endpoints with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "token",
   "expression": "Endpoint.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

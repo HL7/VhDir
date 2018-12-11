@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-type",
+  "url": "http://hl7.org/fhir/SearchParameter/Location-type",
   "version": "0.0.0",
   "name": "VHDir Location Type Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-type",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "type",
-  "base": "Location",
-  "type": "token",
   "description": "Select Locations of the specified type",
+  "code": "type",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
   "expression": "Location.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

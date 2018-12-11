@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address-state",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-state",
+  "url": "http://hl7.org/fhir/SearchParameter/Organization-address-state",
   "version": "0.0.0",
   "name": "VHDir Organization Address State Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-state",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "organization-address-state",
-  "base": "Organization",
-  "type": "string",
   "description": "Select organizations with an address in the specified state",
+  "code": "address-state",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
   "expression": "Organization.address.state",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "exact"
+  "modifier": [
+    "exact"
+  ]
 }

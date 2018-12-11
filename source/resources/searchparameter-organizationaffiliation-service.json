@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-service",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-service",
+  "url": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-service",
   "version": "0.0.0",
   "name": "VHDir OrganizationAffiliation Service Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-service",
@@ -19,15 +18,22 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-service",
-  "base": "OrganizationAffiliation",
-  "type": "reference",
   "description": "Select OrganizationAffiliations providing the specified service",
+  "code": "service",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
   "expression": "OrganizationAffiliation.healthcareService",
-  "target": "HealthcareService",
+  "target": [
+    "HealthcareService"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "healthcareservice-identifier", "healthcareservice-category", "healthcareservice-organization", "healthcareservice-location"
+    "healthcareservice-identifier",
+    "healthcareservice-category",
+    "healthcareservice-organization",
+    "healthcareservice-location"
   ]
 }

@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address",
+  "url": "http://hl7.org/fhir/SearchParameter/Organization-address",
   "version": "0.0.0",
   "name": "VHDir Organization Address Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "organization-address",
-  "base": "Organization",
-  "type": "string",
   "description": "Select organizations with the specified address (matches any of the string elements of an address)",
+  "code": "address",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
   "expression": "Organization.address",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

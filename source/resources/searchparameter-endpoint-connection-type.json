@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-connection-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-connection-type",
+  "url": "http://hl7.org/fhir/SearchParameter/Endpoint-connection-type",
   "version": "0.0.0",
   "name": "VHDir Endpoint Connection Type Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-connection-type",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "endpoint-connection-type",
-  "base": "Endpoint",
-  "type": "token",
   "description": "Select Endpoints that support the specified protocol/profile/standard",
+  "code": "connection-type",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "token",
   "expression": "Endpoint.connectionType",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

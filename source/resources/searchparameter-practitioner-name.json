@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-name",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-name",
+  "url": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
   "version": "0.0.0",
   "name": "VHDir Practitioner Name Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "practitioner-name",
-  "base": "Practitioner",
-  "type": "string",
   "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
+  "code": "name",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
   "expression": "Practitioner.name",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

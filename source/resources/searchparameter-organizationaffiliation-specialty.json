@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-specialty",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-specialty",
+  "url": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-specialty",
   "version": "0.0.0",
   "name": "VHDir OrganizationAffiliation Specialty Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-specialty",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-specialty",
-  "base": "OrganizationAffiliation",
-  "type": "token",
   "description": "Select OrganizationAffiliations associated with the specified specialty",
+  "code": "specialty",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "token",
   "expression": "OrganizationAffiliation.specialty",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-status",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-status",
+  "url": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
   "version": "0.0.0",
   "name": "VHDir InsurancePlan Status Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
@@ -19,10 +18,12 @@
       ]
     }
   ],
-  "code": "insuranceplan-status",
-  "base": "InsurancePlan",
-  "type": "token",
   "description": "Select health insurance products/plans with the specified status",
+  "code": "status",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
   "expression": "InsurancePlan.status",
   "multipleOr": true,
   "multipleAnd": true

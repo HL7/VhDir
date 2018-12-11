@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-identifier",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier",
+  "url": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
   "version": "0.0.0",
   "name": "VHDir Practitioner Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "practitioner-identifier",
-  "base": "Practitioner",
-  "type": "token",
   "description": "Select Practitioners with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "token",
   "expression": "Practitioner.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

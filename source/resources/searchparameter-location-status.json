@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-status",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-status",
+  "url": "http://hl7.org/fhir/SearchParameter/Location-status",
   "version": "0.0.0",
   "name": "VHDir Location Status Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-status",
@@ -19,10 +18,12 @@
       ]
     }
   ],
-  "code": "status",
-  "base": "Location",
-  "type": "token",
   "description": "Select Locations with the specified status",
+  "code": "status",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
   "expression": "Location.status",
   "multipleOr": true,
   "multipleAnd": true

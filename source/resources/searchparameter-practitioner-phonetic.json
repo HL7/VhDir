@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-phonetic",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-phonetic",
+  "url": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
   "version": "0.0.0",
   "name": "VHDir Practitioner Phonetic Name Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
@@ -19,10 +18,12 @@
       ]
     }
   ],
-  "code": "practitioner-phonetic",
-  "base": "Practitioner",
-  "type": "string",
   "description": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)",
+  "code": "name",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
   "expression": "Practitioner.name",
   "multipleOr": true,
   "multipleAnd": true

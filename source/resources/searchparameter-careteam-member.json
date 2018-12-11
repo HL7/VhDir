@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-member",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-member",
+  "url": "http://hl7.org/fhir/SearchParameter/CareTeam-participant",
   "version": "0.0.0",
   "name": "VHDir CareTeam Member Search Parameter",
   "status": "draft",
@@ -18,18 +17,35 @@
       ]
     }
   ],
-  "code": "careteam-member",
-  "base": "CareTeam",
-  "type": "reference",
   "description": "Select care teams that include the specified member",
+  "code": "participant",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "reference",
   "expression": "CareTeam.participant.member",
   "target": [
-    "PractitionerRole", "Organization", "CareTeam"
+    "PractitionerRole",
+    "Organization",
+    "CareTeam"
   ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type",
+  "modifier": [
+    "type"
+  ],
   "chain": [
-    "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-practitioner", "practitionerrole-organization", "practitionerrole-role", "organization-address", "organization-identifier", "organization-name", "organization-partof", "careteam-identifier", "careteam-location", "careteam-organization"
+    "practitionerrole-identifier",
+    "practitionerrole-location",
+    "practitionerrole-practitioner",
+    "practitionerrole-organization",
+    "practitionerrole-role",
+    "organization-address",
+    "organization-identifier",
+    "organization-name",
+    "organization-partof",
+    "careteam-identifier",
+    "careteam-location",
+    "careteam-organization"
   ]
 }

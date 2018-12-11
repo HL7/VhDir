@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-category",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-category",
+  "url": "http://hl7.org/fhir/SearchParameter/CareTeam-category",
   "version": "0.0.0",
   "name": "VHDir CareTeam Category Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-category",
@@ -19,12 +18,16 @@
       ]
     }
   ],
-  "code": "careteam-category",
-  "base": "CareTeam",
-  "type": "token",
   "description": "Select CareTeams of the specified type",
+  "code": "category",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "token",
   "expression": "CareTeam.category",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

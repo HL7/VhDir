@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-address",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-address",
+  "url": "http://hl7.org/fhir/SearchParameter/Location-address",
   "version": "0.0.0",
   "name": "VHDir Location Address Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "address",
-  "base": "Location",
-  "type": "string",
   "description": "Select Locations with the specified address",
+  "code": "address",
+  "base": [
+    "Location"
+  ],
+  "type": "string",
   "expression": "Location.address",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

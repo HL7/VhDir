@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-identifier",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-identifier",
+  "url": "http://hl7.org/fhir/SearchParameter/Location-identifier",
   "version": "0.0.0",
   "name": "VHDir Location Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-identifier",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "identifier",
-  "base": "Location",
-  "type": "token",
   "description": "Select Locations with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
   "expression": "Location.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-location",
+  "url": "http://hl7.org/fhir/SearchParameter/PractitionerRole-location",
   "version": "0.0.0",
   "name": "VHDir PractitionerRole Location Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-location",
@@ -19,18 +18,26 @@
       ]
     }
   ],
-  "code": "practitionerrole-location",
-  "base": "PractitionerRole",
-  "type": "reference",
   "description": "Select PractitionerRoles available at the specified location",
+  "code": "location",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
   "expression": "PractitionerRole.location",
-  "target": "Location",
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization", "location-type"
+    "location-identifier",
+    "location-address",
+    "location-organization",
+    "location-type"
   ]
 }

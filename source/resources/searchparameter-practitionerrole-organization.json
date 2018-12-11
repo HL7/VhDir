@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-organization",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-organization",
+  "url": "http://hl7.org/fhir/SearchParameter/PractitionerRole-organization",
   "version": "0.0.0",
   "name": "VHDir PractitionerRole Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-organization",
@@ -19,18 +18,27 @@
       ]
     }
   ],
-  "code": "practitionerrole-organization",
-  "base": "PractitionerRole",
-  "type": "reference",
   "description": "Select PractitionerRoles available at the specified organization",
+  "code": "organization",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
   "expression": "PractitionerRole.organization",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "organization-identifier",
+    "organization-name",
+    "organization-address",
+    "organization-partof",
+    "organization-type"
   ]
 }

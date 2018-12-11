@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-location",
+  "url": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-location",
   "version": "0.0.0",
   "name": "VHDir OrganizationAffiliation Location Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-location",
@@ -19,18 +18,26 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-location",
-  "base": "OrganizationAffiliation",
-  "type": "reference",
   "description": "Select OrganizationAffiliations available at the specified location",
+  "code": "location",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
   "expression": "OrganizationAffiliation.location",
-  "target": "Location",
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization", "location-type"
+    "location-identifier",
+    "location-address",
+    "location-organization",
+    "location-type"
   ]
 }

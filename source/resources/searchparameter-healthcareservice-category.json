@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-category",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-category",
+  "url": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",
   "version": "0.0.0",
   "name": "VHDir HealthcareService Category Search Parameter",
   "status": "draft",
@@ -18,12 +17,16 @@
       ]
     }
   ],
-  "code": "healthcareservice-category",
-  "base": "HealthcareService",
-  "type": "token",
   "description": "Select HealthcareServices providing the specified category of services",
+  "code": "service-category",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
   "expression": "HealthcareService.category",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

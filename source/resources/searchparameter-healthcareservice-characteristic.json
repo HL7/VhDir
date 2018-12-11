@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-characteristic",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic",
+  "url": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
   "version": "0.0.0",
   "name": "VHDir HealthcareService Characteristic Search Parameter",
   "status": "draft",
@@ -18,12 +17,16 @@
       ]
     }
   ],
-  "code": "healthcareservice-characteristic",
-  "base": "HealthcareService",
-  "type": "token",
   "description": "Select HealthcareServices with the specified characteristic",
+  "code": "characteristic",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
   "expression": "HealthcareService.characteristic",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

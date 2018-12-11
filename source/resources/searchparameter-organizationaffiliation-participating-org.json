@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-participating-org",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-participating-org",
+  "url": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-participating-organization",
   "version": "0.0.0",
   "name": "VHDir OrganizationAffiliation Participating Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-participating-org",
@@ -19,18 +18,27 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-participating-org",
-  "base": "OrganizationAffiliation",
-  "type": "reference",
   "description": "Select roles filled by the specified organization",
+  "code": "participating-organization",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
   "expression": "OrganizationAffiliation.participatingOrganization",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-type", "organization-address", "organization-name", "organization-partof"
+    "organization-identifier",
+    "organization-type",
+    "organization-address",
+    "organization-name",
+    "organization-partof"
   ]
 }

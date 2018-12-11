@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-organization",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-organization",
+  "url": "http://hl7.org/fhir/SearchParameter/Location-organization",
   "version": "0.0.0",
   "name": "VHDir Location Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-organization",
@@ -19,18 +18,27 @@
       ]
     }
   ],
-  "code": "organization",
-  "base": "Location",
-  "type": "reference",
   "description": "Select Locations managed by the specified organization",
+  "code": "organization",
+  "base": [
+    "Location"
+  ],
+  "type": "reference",
   "expression": "Location.managingOrganization",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "organization-identifier",
+    "organization-name",
+    "organization-address",
+    "organization-partof",
+    "organization-type"
   ]
 }
