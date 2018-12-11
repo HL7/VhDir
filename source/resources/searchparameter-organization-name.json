@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-name",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-name",
+  "url": "http://hl7.org/fhir/SearchParameter/Organization-name",
   "version": "0.0.0",
   "name": "VHDir Organization Name Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-name",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "organization-name",
-  "base": "Organization",
-  "type": "string",
   "description": "Select Organizations with the specified name",
+  "code": "name",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
   "expression": "Organization.name|Organization.alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

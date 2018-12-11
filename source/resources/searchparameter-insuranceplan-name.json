@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-name",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-name",
+  "url": "http://hl7.org/fhir/SearchParameter/InsurancePlan-name",
   "version": "0.0.0",
   "name": "VHDir InsurancePlan Name Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-name",
@@ -19,14 +18,17 @@
       ]
     }
   ],
-  "code": "insuranceplan-name",
-  "base": "InsurancePlan",
-  "type": "string",
   "description": "Select products with the specified name",
+  "code": "name",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "string",
   "expression": "InsurancePlan.name|InsurancePlan.alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

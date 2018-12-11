@@ -1,8 +1,7 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-organization",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-organization",
+  "url": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
   "version": "0.0.0",
   "name": "VHDir Endpoint Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
@@ -19,18 +18,27 @@
       ]
     }
   ],
-  "code": "endpoint-organization",
-  "base": "Endpoint",
-  "type": "reference",
   "description": "Select Endpoints managed by the specified organization",
+  "code": "organization",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "reference",
   "expression": "Endpoint.managingOrganization",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "organization-identifier",
+    "organization-name",
+    "organization-address",
+    "organization-partof",
+    "organization-type"
   ]
 }
