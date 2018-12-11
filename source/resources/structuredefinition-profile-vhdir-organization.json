@@ -39,7 +39,7 @@
                 "mustSupport": true,
                 "path": "Organization.extension",
                 "sliceName": "description",
-                "short": "Description of organization",
+                "short": "Description of the organization",
                 "definition": "An extension to provide a human-readable description of the organization",
                 "type": [
                     {
@@ -67,13 +67,13 @@
                 ]
             },
             {
-                "definition": "Qualifications obtained by training and certification",
+                "definition": "An extensions to represent qualifications obtained by the organization (e.g. accreditation)",
                 "id": "Organization.extension:qualification",
                 "max": "*",
                 "min": 0,
                 "mustSupport": true,
                 "path": "Organization.extension",
-                "short": "Qualification",
+                "short": "The organization's qualifications",
                 "sliceName": "qualification",
                 "type": [
                     {
@@ -109,7 +109,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Organization.extension",
-                "short": "insurancePlan",
+                "short": "Insurance plan(s) offered to the organization's employees",
                 "sliceName": "insurancePlan",
                 "type": [
                     {
@@ -122,7 +122,7 @@
             },
             {
                 "id": "Organization.identifier",
-                "short": "Identifies this network across multiple systems",
+                "short": "Identifies this organization across multiple systems",
                 "mustSupport": true,
                 "path": "Organization.identifier"
             },
@@ -196,7 +196,7 @@
             },
             {
                 "id": "Organization.active",
-                "short": "Whether the network's record is still in active use",
+                "short": "Whether the organization's record is still in active use",
                 "label": "status",
                 "mapping": [
                     {
@@ -210,21 +210,21 @@
             },
             {
                 "id": "Organization.type",
-                "short": "Kind of network",
+                "short": "Kind of organization",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Organization.type"
             },
             {
                 "id": "Organization.name",
-                "short": "Name used for the network",
+                "short": "Name used for the organization",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Organization.name"
             },
             {
                 "id": "Organization.alias",
-                "short": "A list of alternate names that the network is known as, or was known as in the past",
+                "short": "A list of alternate names that the organization is known as, or was known as in the past",
                 "mustSupport": true,
                 "path": "Organization.alias"
             },
@@ -361,7 +361,7 @@
             },
             {
                 "id": "Organization.address",
-                "short": "An address for the network",
+                "short": "An address for the organization",
                 "mustSupport": true,
                 "path": "Organization.address"
             },
@@ -447,7 +447,7 @@
             },
             {
                 "id": "Organization.partOf",
-                "short": "The organization of which this network forms a part",
+                "short": "The organization of which this organization forms a part",
                 "mustSupport": true,
                 "path": "Organization.partOf",
                 "type": [
@@ -461,7 +461,7 @@
             },
             {
                 "id": "Organization.contact",
-                "short": "Contact for the network for a certain purpose",
+                "short": "Contact for the organization for a certain purpose",
                 "mustSupport": true,
                 "path": "Organization.contact"
             },
@@ -676,7 +676,7 @@
             },
             {
                 "id": "Organization.endpoint",
-                "short": "Technical endpoints providing access to services operated for the network",
+                "short": "Technical endpoints providing access to services operated for the organization",
                 "mustSupport": true,
                 "path": "Organization.endpoint",
                 "type": [

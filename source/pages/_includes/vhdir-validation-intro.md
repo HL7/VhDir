@@ -6,13 +6,10 @@ This implementation guide was developed to support the need for validated provid
 
 This profile modifies the base VerificationResult resource in the following manner:
 
-*  Constrains the cardinality of `VerificationResult.target` (1..*), `verificationResult.need` (1..1), `verificationResult.statusDate` (1..1), `verificationResult.validationType` (1..1), `verificationResult.validationProcess` (1..*), `verificationResult.failureAction` (1..1), `verificationResult.primarySource.type` (1..*), `verificationResult.attestation.method` (1..1), `verificationResult.attestation.date` (1..1)
+*  Constrains the cardinality of `VerificationResult.target` (1..*), `verificationResult.need` (1..1), `verificationResult.statusDate` (1..1), `verificationResult.validationType` (1..1), `verificationResult.validationProcess` (1..*), `verificationResult.failureAction` (1..1), `verificationResult.primarySource.type` (1..*), `verificationResult.attestation.communicatonMethod` (1..1), `verificationResult.attestation.date` (1..1)
 
 *  All references SHALL conform to the appropriate Validated Healthcare Directory Implementation Guide profile
 
-*  Adds new value sets/updates value set bindings:
-
-TBD
 
 **Examples:**
 
@@ -35,7 +32,7 @@ Each VerificationResult resource must have:
 1.  A coded representation of what happens if validation of the target fails in `verificationResult.failureAction`
 1.  For each primary source described:
     1.  At least one coded/text representation of the type of primary source in `verificationResult.primarySource.type`
-1.  Information about the source of the attested information in `VerificationResult.attestation`, including a reference to a Practitioner or Organization resource representing the source of the information in `VerificationResult.attestation.source`
+1.  Information about the source of the attested information in `VerificationResult.attestation`, including a reference to a Practitioner, PractitionerRole, or Organization resource representing the source of the information in `VerificationResult.attestation.who`
 1.  For each validator described:
     1.  One reference to the Organization resource for the validator in `verificationResult.validator.organization`
 
@@ -55,19 +52,18 @@ The core of the verificationResult resource includes basic information about how
 The resource also provides information about entities involved in the validation process:
 
 `verificationResult.primarySource` provides information about the primary source(s) the target was validated against
-*  `organization` identifies the primary source, and `type` indicates what the primary source is
-*  `validationProcess` indicates how an entity can communicate with the primary source
+*  `who` identifies the primary source, and `type` indicates what the primary source is
+*  `communicationMethod` indicates how an entity can communicate with the primary source
 *  `validationStatus`, and `validationDate` describe the status of the validation of the target against the primary source
 *  `canPushUpdates` and `pushTypeAvailable` indicate whether a primary source can push updates or alerts (e.g. alerting the validated healthcare directory if a license board suspends a practitioner's license)
 
 `verificationResult.attestation` provides information about who attested to the information being validated
-*  `source` identifies the source of the attested information (a practitioner or organization), `organization` identifies an organization attesting to the target. If a value is present in `organization`, there should also be a value in `source` (because an individual typically attests on behalf of an organization).
-*  `method` indicates who is providing the attested information. Often, an individual will attest to their own information. However, another entity may submit attested information on an individual's behalf (e.g. a practice manager attests to information on behalf of all providers in a group practice). 
+*  `who` identifies the source of the attested information (a practitioner, practitionerRole, or organization), `onBehalfOf` identifies an entity the "who" is attesting on behalf of.
+*  `communicationMethod` indicates how attested information is submitted/retrieved
 *  `date` indicates when the information was attested to
 *  `sourceIdentityCertificate` and `proxyIdentityCertificate` assert the identity of the individual attesting to information and any proxy providing attested information on their behalf. 
-*  `signedSourceAttestation` and `signedProxyRight` assert that information was attested to/provided by the entity with the right to do so.-->
-
+*  `sourceSignature` and `proxySignature` assert that information was attested to/provided by the entity with the right to do so.
 `verificationResult.validator` provides information about the entity performing the validation of the target
 *  `organization` identifies the validating organization, and `identityCertificate` asserts their identity
-<!--*  `signedValidatorAttestation` asserts that the validator has validated the target -->
+*  `attestationSignature` asserts that the validator has validated the target
 

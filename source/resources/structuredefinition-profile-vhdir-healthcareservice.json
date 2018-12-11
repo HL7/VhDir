@@ -48,7 +48,7 @@
                 "id": "HealthcareService.extension:newpatients",
                 "mustSupport": true,
                 "path": "HealthcareService.extension",
-                "short": "New patients",
+                "short": "Whether the services is accepting new patients",
                 "sliceName": "newpatients",
                 "type": [
                     {

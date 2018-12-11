@@ -1994,7 +1994,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.qualification.extension",
-                "short": "Adds status, whereValid, history elements",
+                "short": "Status, whereValid, and history of a practitioner's qualification",
                 "sliceName": "practitioner-qualification",
                 "type": [
                     {

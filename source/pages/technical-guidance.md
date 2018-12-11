@@ -161,5 +161,10 @@ We envisioned VHDir as a public or semi-public utility. Stakeholders who agreed 
 
 We expect that a VHDir’s operational policies and legal agreements will clearly delineate which data stakeholders can access, and if necessary, require stakeholders to protect the privacy/confidentiality of sensitive information in downstream local environments. As such, we have included a Restriction profile based on the Consent resource to convey any restrictions associated with a data element, collection of elements, or resource obtained from a VHDir.
 
+## Redundancy & Ambiguity Across Resources
+
+Although FHIR resources define discrete business objects, related resources may have similar data elements. For example, the HealthcareService, PractitionerRole, and Location resources all include data elements describing availability. In some circumstances, values in these common data elements may not align across resources, potentially creating ambiguity. For example, in this IG, a Location resource might indicate that the location no longer accepts patients. However, a PractitionerRole resource for a provider working at the location might indicate that the provider is accepting patients (e.g., by referral only). In some cases, these inconsistencies are valid representations of the complexities of healthcare systems. In others, data might have been entered in error, outdated, or otherwise inaccurate.
+
+The FHIR specification does not provide guidance on managing common elements across resources to reduce redundancy or ambiguity. Likewise, this implementation guide does not provide additional guidance. Implementations should consider further constraining profiles, creating invariants, or requiring data sources (e.g. attesters) to contribute data in a consistent format. Some resources include elements for describing exceptions, such as the availabilityExceptions field on HealthcareService, Location, and PractitionerRole. Additionally, validation processes may help discover and address inconsistencies across resources.
 
 ------------------------------------------------------------------------

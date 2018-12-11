@@ -16,7 +16,7 @@
                 "definition": "A reference to the insurancePlan resource",
                 "id": "Extension",
                 "path": "Extension",
-                "short": "Endpoint reference"
+                "short": "InsurancePlan reference"
             },
             {
                 "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference",

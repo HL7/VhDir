@@ -1,0 +1,35 @@
+
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-verificationresult-attestation-who",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-who",
+  "version": "0.0.0",
+  "name": "VHDir VerificationResult Attestation Who Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "code": "verificationresult-attestation-who",
+  "base": "VerificationResult",
+  "type": "reference",
+  "description": "Select validation information for data that was attested to by the specified source",
+  "expression": "VerificationResult.attestation.who",
+  "target": [
+    "Practitioner", "Organization", "PractitionerRole"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": "type",
+  "chain": [
+    "organization-identifier", "organization-address", "organization-name", "organization-partof", "practitioner-name", "practitioner-identifier", "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-organization", "practitionerrole-practitioner"
+  ]
+}

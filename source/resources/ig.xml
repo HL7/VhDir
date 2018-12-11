@@ -524,7 +524,7 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-primarysource-organization" />
+      <reference value="SearchParameter/searchparameter-verificationresult-primarysource-who" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -536,7 +536,7 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-attestation-proxy" />
+      <reference value="SearchParameter/searchparameter-verificationresult-attestation-onbehalfof" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -548,7 +548,7 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-attestation-attester" />
+      <reference value="SearchParameter/searchparameter-verificationresult-attestation-who" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2085,8 +2085,8 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-organization.html"/>
-        <title value="SearchParameter Verificationresult Primarysource Organization"/>
+        <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-who.html"/>
+        <title value="SearchParameter Verificationresult Primarysource Who"/>
         <generation value="generated"/>
       </page>
       <page>
@@ -2095,8 +2095,8 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-proxy.html"/>
-        <title value="SearchParameter Verificationresult Attestation Proxy"/>
+        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html"/>
+        <title value="SearchParameter Verificationresult Attestation On Behalf Of"/>
         <generation value="generated"/>
       </page>
       <page>
@@ -2105,8 +2105,8 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-attester.html"/>
-        <title value="SearchParameter Verificationresult Attestation Attester"/>
+        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-who.html"/>
+        <title value="SearchParameter Verificationresult Attestation Who"/>
         <generation value="generated"/>
       </page>
       <page>

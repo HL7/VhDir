@@ -2,7 +2,9 @@ This profile sets minimum expectations for searching for and fetching informatio
 
 **Background & Scope**
 
-A network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
+A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
+
+In the VHDir IG, individuals and organizations are represented as participants in a Network through the practitionerRole and organizationAffiliation resources, respectively.
 
 Network is a profile on the Organization resource. This profile modifies the base Organization resource in the following manner:
 
@@ -27,6 +29,7 @@ Network is a profile on the Organization resource. This profile modifies the bas
 The following are example uses for the vhdir-network profile:
 
 -  [Patriot Preferred Provider Network](Organization-patriotppo.html)
+-  [Patriot Dental Provider Network](Organization-patriotdental.html)
 
 
 **Mandatory Data Elements**

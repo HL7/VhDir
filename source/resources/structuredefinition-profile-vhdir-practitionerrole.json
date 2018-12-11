@@ -90,13 +90,13 @@
                 ]
             },
             {
-                "definition": "Qualifications obtained by training and certification",
+                "definition": "An extension describing a practitioner's qualifications unique to their role at an organization (e.g. license to prescribe controlled substances)",
                 "id": "PractitionerRole.extension:qualification",
                 "max": "*",
                 "min": 0,
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
-                "short": "Qualification",
+                "short": "Practitioner's qualifications unique to this role",
                 "sliceName": "qualification",
                 "type": [
                     {

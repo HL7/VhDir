@@ -165,6 +165,9 @@
                 ],
                 "min": 1,
                 "mustSupport": true,
+                "short": "Whether the network's record is still in active use.",
+                "definition": "Whether the networks's record is still in active use",
+                "comment": "This element is labeled as a modifier because it may be used to mark that the resource was created in error.",
                 "path": "Organization.active"
             },
             {
@@ -176,7 +179,9 @@
                 "id": "Organization.type",
                 "mustSupport": true,
                 "path": "Organization.type",
-                "short": "Type"
+                "short": "Type of network",
+                "requirements": "Need to be able to track the kind of network this is.",
+                "comment": "Type of network"
             },
             {
                 "comment": "If the name of an network changes, consider putting the old name in the alias column so that it can still be located through searches.",
@@ -207,7 +212,11 @@
             {
                 "id": "Organization.address",
                 "mustSupport": true,
-                "path": "Organization.address"
+                "path": "Organization.address",
+                "short": "An address for the network",
+                "definition": "An address for the network.",
+                "requirements": "May need to keep track of the network's addresses for contacting, billing, or reporting requirements.",
+                "comment": "Networks may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used."
             },
             {
                 "definition": "The organization that \"owns\" this network (typically a payer)",
@@ -230,7 +239,10 @@
             {
                 "id": "Organization.contact",
                 "mustSupport": true,
-                "path": "Organization.contact"
+                "path": "Organization.contact",
+                "short": "Contact for the network for a certain purpose.",
+                "definition": "Contact for the network for a certain purpose.",
+                "requirements": "Need to keep track of assigned contact points for the network"
             },
             {
                 "id": "Organization.contact.purpose",
@@ -365,6 +377,9 @@
                 "id": "Organization.endpoint",
                 "mustSupport": true,
                 "path": "Organization.endpoint",
+                "short": "Technical endpoints providing access to services operated for the network",
+                "definition": "Technical endpoints providing access to services operated for the network",
+                "requirements": "Networks may have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.",
                 "type": [
                     {
                         "code": "Reference",
