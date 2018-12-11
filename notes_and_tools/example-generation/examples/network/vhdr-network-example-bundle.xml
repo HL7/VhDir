@@ -68,7 +68,7 @@
         </address>
         <partOf>
           <reference value="Organization/vhdir-organization-acme-insurance-co"/>
-          <display value="Acme Insurance Co of Masschusetts"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
         </partOf>
         <contact>
           <purpose>
@@ -208,7 +208,7 @@
         </address>
         <partOf>
           <reference value="Organization/vhdir-organization-green-circle-ins"/>
-          <display value="Green Circle of Masschusetts"/>
+          <display value="Green Circle of Massachusetts"/>
         </partOf>
         <contact>
           <purpose>
@@ -348,7 +348,7 @@
         </address>
         <partOf>
           <reference value="Organization/vhdir-organization-persona"/>
-          <display value="Persona of Masschusetts"/>
+          <display value="Persona of Massachusetts"/>
         </partOf>
         <contact>
           <purpose>

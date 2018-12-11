@@ -3,6 +3,6 @@ Acme Healthcare	9595555555	263 Farmington Avenue	Farmington	CT	06030
 Blue Hope	4015555555	45 Willard Ave	Providence	RI	02901	
 
 
-Masschusetts HIE	6075555555	4 Yawkey Way	Boston	MA	02215																				
+Massachusetts HIE	6075555555	4 Yawkey Way	Boston	MA	02215																				
 Connecticut HIE	9595555555	221 Trumbull Street	Hartford	CT	06101																				
 Rhode Island HIE	4015555555	0 Holden Street, Suite 300	Providence	RI	02901																																							
