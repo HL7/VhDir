@@ -1,0 +1,1265 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="vhdir-organization-examples-bundle"/>
+  <type value="batch"/>
+  <timestamp value="2018-12-07T02:45:56.932618Z"/>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID010000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID010000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID010000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="MA Bronze Plan PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="6075555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="42.370567"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.026964"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="120 St James Ave, Boston, MA 2101"/>
+          <line value="120 St James Ave"/>
+          <city value="Boston"/>
+          <state value="MA"/>
+          <postalCode value="2101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-acme-insurance-co"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="6075555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="42.370567"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.026964"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="120 St James Ave, Boston, MA 2101"/>
+            <line value="120 St James Ave"/>
+            <city value="Boston"/>
+            <state value="MA"/>
+            <postalCode value="2101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID010000-direct"/>
+          <display value="MA Bronze Plan PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID010000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID020000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID020000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID020000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="hmo"/>
+            <display value="HMO"/>
+          </coding>
+          <text value="Health Maintenance Organization (HMO)"/>
+        </type>
+        <name value="MA Bronze HSA HMO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="6075555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="42.370567"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.026964"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="800 Washington St, Boston, MA 2101"/>
+          <line value="800 Washington St"/>
+          <city value="Boston"/>
+          <state value="MA"/>
+          <postalCode value="2101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-green-circle-ins"/>
+          <display value="Green Circle of Massachusetts"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="6075555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="42.370567"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.026964"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="800 Washington St, Boston, MA 2101"/>
+            <line value="800 Washington St"/>
+            <city value="Boston"/>
+            <state value="MA"/>
+            <postalCode value="2101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID020000-direct"/>
+          <display value="MA Bronze HSA HMO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID020000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID030000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID030000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID030000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="MA Silver 70 PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="6075555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="42.370567"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.026964"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="120 Royall St, Boston, MA 2101"/>
+          <line value="120 Royall St"/>
+          <city value="Boston"/>
+          <state value="MA"/>
+          <postalCode value="2101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-persona"/>
+          <display value="Persona of Massachusetts"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="6075555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="42.370567"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.026964"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="120 Royall St, Boston, MA 2101"/>
+            <line value="120 Royall St"/>
+            <city value="Boston"/>
+            <state value="MA"/>
+            <postalCode value="2101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID030000-direct"/>
+          <display value="MA Silver 70 PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID030000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID040000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID040000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID040000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="CT Bronze Plan PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="9595555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.78007"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.677099"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="690 Asylum Avenue, Hartford, CT 6101"/>
+          <line value="690 Asylum Avenue"/>
+          <city value="Hartford"/>
+          <state value="CT"/>
+          <postalCode value="6101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-acme-insurance-co"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="9595555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.78007"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-72.677099"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="690 Asylum Avenue, Hartford, CT 6101"/>
+            <line value="690 Asylum Avenue"/>
+            <city value="Hartford"/>
+            <state value="CT"/>
+            <postalCode value="6101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID040000-direct"/>
+          <display value="CT Bronze Plan PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID040000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID050000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID050000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID050000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="hmo"/>
+            <display value="HMO"/>
+          </coding>
+          <text value="Health Maintenance Organization (HMO)"/>
+        </type>
+        <name value="CT Bronze HSA HMO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="9595555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.78007"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.677099"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="185 Asylum Street, Hartford, CT 6101"/>
+          <line value="185 Asylum Street"/>
+          <city value="Hartford"/>
+          <state value="CT"/>
+          <postalCode value="6101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-green-circle-ins"/>
+          <display value="Green Circle of Connecticut"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="9595555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.78007"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-72.677099"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="185 Asylum Street, Hartford, CT 6101"/>
+            <line value="185 Asylum Street"/>
+            <city value="Hartford"/>
+            <state value="CT"/>
+            <postalCode value="6101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID050000-direct"/>
+          <display value="CT Bronze HSA HMO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID050000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID060000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID060000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID060000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="CT Silver 70 PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="9595555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.78007"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-72.677099"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="27 Grove Street, Hartford, CT 6101"/>
+          <line value="27 Grove Street"/>
+          <city value="Hartford"/>
+          <state value="CT"/>
+          <postalCode value="6101"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-persona"/>
+          <display value="Persona of Connecticut"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="9595555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.78007"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-72.677099"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="27 Grove Street, Hartford, CT 6101"/>
+            <line value="27 Grove Street"/>
+            <city value="Hartford"/>
+            <state value="CT"/>
+            <postalCode value="6101"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID060000-direct"/>
+          <display value="CT Silver 70 PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID060000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID070000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID070000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID070000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="RI Bronze Plan PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="4015555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.82275"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.414451"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="111 Westminster Street, Providence, RI 2901"/>
+          <line value="111 Westminster Street"/>
+          <city value="Providence"/>
+          <state value="RI"/>
+          <postalCode value="2901"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-acme-insurance-co"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="4015555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.82275"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.414451"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="111 Westminster Street, Providence, RI 2901"/>
+            <line value="111 Westminster Street"/>
+            <city value="Providence"/>
+            <state value="RI"/>
+            <postalCode value="2901"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID070000-direct"/>
+          <display value="RI Bronze Plan PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID070000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID080000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID080000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID080000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="hmo"/>
+            <display value="HMO"/>
+          </coding>
+          <text value="Health Maintenance Organization (HMO)"/>
+        </type>
+        <name value="RI Bronze HSA HMO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="4015555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.82275"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.414451"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="One Financial Plaza, Providence, RI 2901"/>
+          <line value="One Financial Plaza"/>
+          <city value="Providence"/>
+          <state value="RI"/>
+          <postalCode value="2901"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-green-circle-ins"/>
+          <display value="Green Circle of Rhode Island"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="4015555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.82275"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.414451"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="One Financial Plaza, Providence, RI 2901"/>
+            <line value="One Financial Plaza"/>
+            <city value="Providence"/>
+            <state value="RI"/>
+            <postalCode value="2901"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID080000-direct"/>
+          <display value="RI Bronze HSA HMO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID080000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.org/r4/vhdir-organization-HPID090000"/>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <!-- synthetic organization -->
+        <id value="vhdir-organization-HPID090000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
+        </meta>
+        <identifier>
+          <!-- NPI  or NIPI-->
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+              <display value="National Insurance Payor Identifier (Payor)"/>
+            </coding>
+            <text value="The Health Plan Identifier (HPID)"/>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="HPID090000"/>
+          <period>
+            <start value="2004-04-21T11:57:00-05:00"/>
+          </period>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <code value="ppo"/>
+            <display value="PPO"/>
+          </coding>
+          <text value="Preferred Provider Organization (PPO)"/>
+        </type>
+        <name value="RI Silver 70 PPO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="4015555555"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+            <extension url="latitude">
+              <valueDecimal value="41.82275"/>
+            </extension>
+            <extension url="longitude">
+              <valueDecimal value="-71.414451"/>
+            </extension>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="500 Exchange Street, Providence, RI 2901"/>
+          <line value="500 Exchange Street"/>
+          <city value="Providence"/>
+          <state value="RI"/>
+          <postalCode value="2901"/>
+          <country value="USA"/>
+        </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-persona"/>
+          <display value="Persona of Rhode Island"/>
+        </partOf>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="ADMIN"/>
+              <display value="Administrative"/>
+            </coding>
+          </purpose>
+          <name>
+            <use value="official"/>
+            <text value="Kathy Contact"/>
+            <family value="Contact"/>
+            <given value="Kathy"/>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+              <extension url="daysOfWeek">
+                <valueCode value="mon"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="tue"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="wed"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="thu"/>
+              </extension>
+              <extension url="daysOfWeek">
+                <valueCode value="fri"/>
+              </extension>
+              <extension url="availableStartTime">
+                <valueTime value="07:00:00"/>
+              </extension>
+              <extension url="availableEndTime">
+                <valueTime value="18:00:00"/>
+              </extension>
+            </extension>
+            <system value="phone"/>
+            <value value="4015555555"/>
+            <use value="work"/>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+              <extension url="latitude">
+                <valueDecimal value="41.82275"/>
+              </extension>
+              <extension url="longitude">
+                <valueDecimal value="-71.414451"/>
+              </extension>
+            </extension>
+            <use value="work"/>
+            <type value="both"/>
+            <text value="500 Exchange Street, Providence, RI 2901"/>
+            <line value="500 Exchange Street"/>
+            <city value="Providence"/>
+            <state value="RI"/>
+            <postalCode value="2901"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/vhdir-organization-HPID090000-direct"/>
+          <display value="RI Silver 70 PPO Direct address"/>
+        </endpoint>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/vhdir-organization-HPID090000"/>
+    </request>
+  </entry>
+</Bundle>

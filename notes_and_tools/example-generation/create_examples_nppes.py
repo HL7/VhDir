@@ -313,7 +313,7 @@ def get_hcs_display(nucc):
 
 
 def orgrole_example(item,f_id,type,network_npi,network_name,managing_org_id,managing_org_name):
-        return(f_templ.organizationrole_template.format(
+        return(f_templ.organizationaffiliation_template.format(
         type=type,
         f_id=f_id,
         identifier_system=urlify(managing_org_id),
@@ -688,7 +688,7 @@ def main(type,id_list,source=None):
                 id_list[type].append((pract_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{fname} {lname}'.format(fname=item['Provider First Name'],lname=item['Provider Last Name (Legal Name)']),org_npi))
                 entries = create_entry(entries,server_path,f_id,example,Type)
 
-    elif type == 'organizationrole': # one  for each org and network assigned to org assign all networks for now
+    elif type == 'organizationaffiliation': # one  for each org and network assigned to org assign all networks for now
         for item in org_list:
             network_npi_list=[]
             org_npi = item['NPI']
@@ -730,7 +730,7 @@ if __name__ == "__main__":
         location=[],
         healthcareservice=[],
         practitionerrole=[],
-        organizationrole=[]
+        organizationaffiliation=[]
         )
         
     main('organization',resource_keys)
@@ -739,7 +739,7 @@ if __name__ == "__main__":
     main('healthcareservice',resource_keys,'organization')
     main('practitioner',resource_keys)
     main('practitionerrole',resource_keys,'practitioner')
-    main('organizationrole',resource_keys,'organization')
+    main('organizationaffiliation',resource_keys,'organization')
     
 
     #main('location',resource_keys['location'],'practitioner')

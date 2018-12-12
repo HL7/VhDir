@@ -342,7 +342,7 @@ location_template = '''
 		</extension>
 		<extension url="network">
 			<valueReference>
-				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<!-- <reference value="Organization/vhdir-organization-{npi}"/>  eh: todo -->
 				<display value="Acme Insurance Co"/>
 			</valueReference>
 		</extension>
@@ -353,7 +353,7 @@ location_template = '''
 		</extension>
 		<extension url="network">
 			<valueReference>
-				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<!-- <reference value="Organization/vhdir-organization-{npi}"/>  eh: todo -->
 				<display value="Persona"/>
 			</valueReference>
 		</extension>
@@ -364,7 +364,7 @@ location_template = '''
 		</extension>
 		<extension url="network">
 			<valueReference>
-				<!-- <reference value="Organization/vhdir-network-{npi}"/>  eh: todo -->
+				<!-- <reference value="Organization/vhdir-organization-{npi}"/>  eh: todo -->
 				<display value="Green Circle"/>
 			</valueReference>
 		</extension>
@@ -750,9 +750,9 @@ practitionerrole_network_template = '''
 	
 </PractitionerRole>'''
 
-#****************
+#****************organizationaffiliation_template******************
 
-organizationrole_template = '''
+organizationaffiliation_template = '''
 <OrganizationAffiliation xmlns="http://hl7.org/fhir">
   <!--  describes the relationship between provider organization and network  -->
   <id value="{f_id}"/>
