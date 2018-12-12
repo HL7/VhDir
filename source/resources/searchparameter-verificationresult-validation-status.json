@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-validation-status",
@@ -18,10 +17,12 @@
       ]
     }
   ],
-  "code": "verificationresult-validation-status",
-  "base": "VerificationResult",
-  "type": "token",
   "description": "Select validation information with the specified status",
+  "code": "validation-status",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "token",
   "expression": "VerificationResult.status",
   "multipleOr": true,
   "multipleAnd": true

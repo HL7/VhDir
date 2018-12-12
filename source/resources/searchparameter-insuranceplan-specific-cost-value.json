@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-specific-cost-value",
@@ -18,14 +17,22 @@
       ]
     }
   ],
-  "code": "insuranceplan-specific-cost-value",
-  "base": "InsurancePlan",
-  "type": "quantity",
   "description": "Select plans which include the specified cost",
+  "code": "specific-cost-value",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "quantity",
   "expression": "InsurancePlan.plan.specificCost.benefit.cost.value",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [
-    "eq", "gt", "lt", "ge", "le", "sa", "eb"
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
   ]
 }

@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-network",
@@ -18,15 +17,21 @@
       ]
     }
   ],
-  "code": "insuranceplan-coverage-network",
-  "base": "InsurancePlan",
-  "type": "reference",
   "description": "Select products offering covered benefits through the specified health insurance provider network",
+  "code": "coverage-network",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "reference",
   "expression": "InsurancePlan.coverage.network",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "organization-identifier", "organization-name", "organization-partof"
+    "organization-identifier",
+    "organization-name",
+    "organization-partof"
   ]
 }

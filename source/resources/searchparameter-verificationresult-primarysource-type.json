@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-primarysource-type",
@@ -18,12 +17,16 @@
       ]
     }
   ],
-  "code": "verificationresult-primarysource-type",
-  "base": "VerificationResult",
-  "type": "token",
   "description": "Select validation information for data that was validated against the specified type of primary source organization",
+  "code": "primarysource-type",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "token",
   "expression": "VerificationResult.primarySource.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

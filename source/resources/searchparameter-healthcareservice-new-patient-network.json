@@ -1,31 +1,37 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-healthcareservice-new-patient-network", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient-network", 
-  "version": "0.0.0", 
-  "name": "VHDir HealthcareService New Patient Network Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-healthcareservice-new-patient-network",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient-network",
+  "version": "0.0.0",
+  "name": "VHDir HealthcareService New Patient Network Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "healthcareservice-new-patient-network", 
-  "base": "HealthcareService", 
-  "type": "reference", 
-  "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients", 
+  ],
+  "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients",
+  "code": "new-patient-network",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "reference",
   "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "organization-identifier", "organization-name", "organization-partof"
+    "organization-identifier",
+    "organization-name",
+    "organization-partof"
   ]
 }

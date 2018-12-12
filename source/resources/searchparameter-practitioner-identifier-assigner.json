@@ -1,32 +1,39 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-practitioner-identifier-assigner", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier-assigner", 
-  "version": "0.0.0", 
-  "name": "VHDir Practitioner Identifier Assigner Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitioner-identifier-assigner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier-assigner",
+  "version": "0.0.0",
+  "name": "VHDir Practitioner Identifier Assigner Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "practitioner-identifier-assigner", 
-  "base": "Practitioner", 
-  "type": "reference", 
-  "description": "Select Practitioners with an identifier issued by the specified organization", 
+  ],
+  "description": "Select Practitioners with an identifier issued by the specified organization",
+  "code": "identifier-assigner",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "reference",
   "expression": "Practitioner.identifier.assigner",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": [
+    "below"
+  ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "organization-identifier",
+    "organization-name"
   ]
 }

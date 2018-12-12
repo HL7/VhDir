@@ -1,28 +1,32 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-practitioner-qualification-wherevalid-code", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-code", 
-  "version": "0.0.0", 
-  "name": "VHDir Practitioner Qualification Wherevalid Code Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitioner-qualification-wherevalid-code",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-code",
+  "version": "0.0.0",
+  "name": "VHDir Practitioner Qualification Wherevalid Code Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "practitioner-qualification-wherevalid-code", 
-  "base": "Practitioner", 
-  "type": "token", 
-  "description": "Select Practitioners with a qualification that is valid at the location indicated by the specified code", 
+  ],
+  "description": "Select Practitioners with a qualification that is valid at the location indicated by the specified code",
+  "code": "qualification-wherevalid-code",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "token",
   "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').as(CodeableConcept)",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

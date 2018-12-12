@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-status-date",
@@ -18,14 +17,22 @@
       ]
     }
   ],
-  "code": "verificationresult-status-date",
-  "base": "VerificationResult",
-  "type": "date",
   "description": "Select validation information with a validation status that occurred at the specified date/time",
+  "code": "status-date",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "date",
   "expression": "VerificationResult.statusDate",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [
-    "eq", "gt", "lt", "ge", "le", "sa", "eb"
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
   ]
 }

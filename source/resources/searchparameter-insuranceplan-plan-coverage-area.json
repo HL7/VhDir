@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-plan-coverage-area",
@@ -18,15 +17,20 @@
       ]
     }
   ],
-  "code": "insuranceplan-plan-coverage-area",
-  "base": "InsurancePlan",
-  "type": "reference",
   "description": "Select plans that are available in the specified location",
+  "code": "plan-coverage-area",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "reference",
   "expression": "InsurancePlan.plan.coverageArea",
-  "target": "Location",
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "location-identifier", "location-contains"
+    "location-identifier",
+    "location-contains"
   ]
 }

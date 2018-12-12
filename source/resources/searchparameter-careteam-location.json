@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-location",
@@ -18,18 +17,26 @@
       ]
     }
   ],
-  "code": "careteam-location",
-  "base": "CareTeam",
-  "type": "reference",
   "description": "Select care teams operating at the specified location",
+  "code": "location",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "reference",
   "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference')",
-  "target": "Location",
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization", "location-type"
+    "location-identifier",
+    "location-address",
+    "location-organization",
+    "location-type"
   ]
 }

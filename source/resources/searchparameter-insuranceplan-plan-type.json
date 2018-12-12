@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-plan-type",
@@ -18,12 +17,16 @@
       ]
     }
   ],
-  "code": "insuranceplan-plan-type",
-  "base": "InsurancePlan",
-  "type": "token",
   "description": "Select plans of the specified type",
+  "code": "plan-type",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
   "expression": "InsurancePlan.plan.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": [
+    "text"
+  ]
 }

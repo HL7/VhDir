@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-validator-organization",
@@ -18,18 +17,24 @@
       ]
     }
   ],
-  "code": "verificationresult-validator-organization",
-  "base": "VerificationResult",
-  "type": "reference",
   "description": "Select validation information for data that was validated by the specified organization",
+  "code": "validator-organization",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
   "expression": "VerificationResult.validator.organization",
-  "target": "Organization",
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "organization-identifier",
+    "organization-name"
   ]
 }
