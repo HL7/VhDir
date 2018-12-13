@@ -41,8 +41,6 @@
             },
             {
                 "id": "PractitionerRole.extension:newpatients",
-                "max": "1",
-                "min": 0,
                 "mustSupport": true,
                 "path": "PractitionerRole.extension",
                 "sliceName": "newpatients",

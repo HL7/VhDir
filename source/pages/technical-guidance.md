@@ -139,7 +139,8 @@ Any Validated Healthcare Directory IG conformant implementation:
 
 *  SHALL support profiles: organization, practitioner, location, practitionerRole, endpoint, validation
 *  SHOULD support profiles: healthcareService, careTeam, network, productPlan, restriction, organizationRole
-*  SHALL indicate which data elements they support within the profiles, and SHALL be capable of returning each supported data element in response to a query
+
+In profiles, the Must Support flag indicates if data exists for the specific property, then it must be represented as defined in the VHDir IG. If the property is not available from a system, this is not required, and may be ommitted
 
 Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.
 

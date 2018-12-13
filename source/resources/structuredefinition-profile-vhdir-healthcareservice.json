@@ -301,7 +301,11 @@
             {
                 "id": "HealthcareService.eligibility",
                 "mustSupport": true,
-                "path": "HealthcareService.eligibility"
+                "path": "HealthcareService.eligibility",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-eligibility"
+                }
             },
             {
                 "id": "HealthcareService.eligibility.code",
@@ -321,7 +325,11 @@
             {
                 "id": "HealthcareService.characteristic",
                 "mustSupport": true,
-                "path": "HealthcareService.characteristic"
+                "path": "HealthcareService.characteristic",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-characteristic"
+                }
             },
             {
                 "id": "HealthcareService.communication",
