@@ -1960,18 +1960,18 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-healthcareservice-characteristic.html"/>
+        <nameUrl value="ValueSet-valueset-healthcareservice-characteristic.html"/>
         <title value="ValueSet Healthcare Service Characteristic"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-healthcareservice-eligibility.html"/>
+        <nameUrl value="ValueSet-valueset-healthcareservice-eligibility.html"/>
         <title value="ValueSet Healthcare Service Eligibility"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-insuranceplancostqualifier.html"/>
-        <title value="ValueSet Insurance Plan Cost Qualifier"/>
+        <nameUrl value="ValueSet-valueset-insuranceplancosttype.html"/>
+        <title value="ValueSet Insurance Plan Cost Type"/>
         <generation value="generated"/>
       </page>
       <!-- ============ End ValueSet   =============== -->
