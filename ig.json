@@ -1116,22 +1116,13 @@
       "content": false,
       "script": false
     },
-    "CapabilityStatement": {
-      "template-base": "base.html"
-    },
     "Any": {
       "template-base": "base.html",
       "template-format": "format.html",
       "swagger": "true"
     },
-    "OperationDefinition": {
-      "template-base": "base.html"
-    },
     "Organization": {
       "template-base": "ex.html"
-    },
-    "ConceptMap": {
-      "template-base": "base.html"
     },
     "Practitioner": {
       "template-base": "ex.html"
@@ -1156,12 +1147,6 @@
     },
     "PractitionerRole": {
       "template-base": "ex.html"
-    },
-    "ValueSet": {
-      "template-base": "base.html"
-    },
-    "CodeSystem": {
-      "template-base": "base.html"
     },
     "CareTeam": {
       "template-base": "ex.html"
