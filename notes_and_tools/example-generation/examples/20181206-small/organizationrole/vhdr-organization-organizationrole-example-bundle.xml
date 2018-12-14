@@ -52,7 +52,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992607537-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992607537-0"/>
     </request>
   </entry>
   <entry>
@@ -105,7 +105,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992607537-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992607537-1"/>
     </request>
   </entry>
   <entry>
@@ -158,7 +158,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992607537-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992607537-2"/>
     </request>
   </entry>
   <entry>
@@ -211,7 +211,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995131442-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995131442-0"/>
     </request>
   </entry>
   <entry>
@@ -264,7 +264,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995131442-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995131442-1"/>
     </request>
   </entry>
   <entry>
@@ -317,7 +317,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995131442-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995131442-2"/>
     </request>
   </entry>
   <entry>
@@ -370,7 +370,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990789741-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990789741-0"/>
     </request>
   </entry>
   <entry>
@@ -423,7 +423,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990789741-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990789741-1"/>
     </request>
   </entry>
   <entry>
@@ -476,7 +476,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990789741-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990789741-2"/>
     </request>
   </entry>
   <entry>
@@ -529,7 +529,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998062387-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998062387-0"/>
     </request>
   </entry>
   <entry>
@@ -582,7 +582,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998062387-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998062387-1"/>
     </request>
   </entry>
   <entry>
@@ -635,7 +635,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998062387-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998062387-2"/>
     </request>
   </entry>
   <entry>
@@ -688,7 +688,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990780047-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990780047-0"/>
     </request>
   </entry>
   <entry>
@@ -741,7 +741,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990780047-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990780047-1"/>
     </request>
   </entry>
   <entry>
@@ -794,7 +794,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990780047-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990780047-2"/>
     </request>
   </entry>
   <entry>
@@ -847,7 +847,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994427431-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994427431-0"/>
     </request>
   </entry>
   <entry>
@@ -900,7 +900,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994427431-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994427431-1"/>
     </request>
   </entry>
   <entry>
@@ -953,7 +953,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994427431-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994427431-2"/>
     </request>
   </entry>
   <entry>
@@ -1006,7 +1006,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991396014-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991396014-0"/>
     </request>
   </entry>
   <entry>
@@ -1059,7 +1059,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991396014-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991396014-1"/>
     </request>
   </entry>
   <entry>
@@ -1112,7 +1112,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991396014-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991396014-2"/>
     </request>
   </entry>
   <entry>
@@ -1165,7 +1165,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991790820-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991790820-0"/>
     </request>
   </entry>
   <entry>
@@ -1218,7 +1218,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991790820-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991790820-1"/>
     </request>
   </entry>
   <entry>
@@ -1271,7 +1271,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991790820-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991790820-2"/>
     </request>
   </entry>
   <entry>
@@ -1324,7 +1324,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996245255-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996245255-0"/>
     </request>
   </entry>
   <entry>
@@ -1377,7 +1377,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996245255-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996245255-1"/>
     </request>
   </entry>
   <entry>
@@ -1430,7 +1430,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996245255-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996245255-2"/>
     </request>
   </entry>
   <entry>
@@ -1483,7 +1483,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998962430-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998962430-0"/>
     </request>
   </entry>
   <entry>
@@ -1536,7 +1536,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998962430-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998962430-1"/>
     </request>
   </entry>
   <entry>
@@ -1589,7 +1589,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998962430-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998962430-2"/>
     </request>
   </entry>
   <entry>
@@ -1642,7 +1642,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999972445-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999972445-0"/>
     </request>
   </entry>
   <entry>
@@ -1695,7 +1695,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999972445-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999972445-1"/>
     </request>
   </entry>
   <entry>
@@ -1748,7 +1748,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999972445-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999972445-2"/>
     </request>
   </entry>
   <entry>
@@ -1801,7 +1801,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997659264-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997659264-0"/>
     </request>
   </entry>
   <entry>
@@ -1854,7 +1854,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997659264-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997659264-1"/>
     </request>
   </entry>
   <entry>
@@ -1907,7 +1907,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997659264-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997659264-2"/>
     </request>
   </entry>
   <entry>
@@ -1960,7 +1960,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991892344-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991892344-0"/>
     </request>
   </entry>
   <entry>
@@ -2013,7 +2013,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991892344-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991892344-1"/>
     </request>
   </entry>
   <entry>
@@ -2066,7 +2066,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991892344-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991892344-2"/>
     </request>
   </entry>
   <entry>
@@ -2119,7 +2119,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995630533-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995630533-0"/>
     </request>
   </entry>
   <entry>
@@ -2172,7 +2172,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995630533-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995630533-1"/>
     </request>
   </entry>
   <entry>
@@ -2225,7 +2225,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995630533-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995630533-2"/>
     </request>
   </entry>
   <entry>
@@ -2278,7 +2278,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995731321-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995731321-0"/>
     </request>
   </entry>
   <entry>
@@ -2331,7 +2331,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995731321-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995731321-1"/>
     </request>
   </entry>
   <entry>
@@ -2384,7 +2384,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995731321-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995731321-2"/>
     </request>
   </entry>
   <entry>
@@ -2437,7 +2437,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992307530-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992307530-0"/>
     </request>
   </entry>
   <entry>
@@ -2490,7 +2490,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992307530-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992307530-1"/>
     </request>
   </entry>
   <entry>
@@ -2543,7 +2543,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992307530-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992307530-2"/>
     </request>
   </entry>
   <entry>
@@ -2596,7 +2596,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999670259-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999670259-0"/>
     </request>
   </entry>
   <entry>
@@ -2649,7 +2649,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999670259-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999670259-1"/>
     </request>
   </entry>
   <entry>
@@ -2702,7 +2702,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999670259-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999670259-2"/>
     </request>
   </entry>
   <entry>
@@ -2755,7 +2755,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998762106-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998762106-0"/>
     </request>
   </entry>
   <entry>
@@ -2808,7 +2808,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998762106-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998762106-1"/>
     </request>
   </entry>
   <entry>
@@ -2861,7 +2861,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998762106-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998762106-2"/>
     </request>
   </entry>
   <entry>
@@ -2914,7 +2914,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998863986-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998863986-0"/>
     </request>
   </entry>
   <entry>
@@ -2967,7 +2967,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998863986-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998863986-1"/>
     </request>
   </entry>
   <entry>
@@ -3020,7 +3020,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998863986-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998863986-2"/>
     </request>
   </entry>
   <entry>
@@ -3073,7 +3073,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995338232-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995338232-0"/>
     </request>
   </entry>
   <entry>
@@ -3126,7 +3126,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995338232-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995338232-1"/>
     </request>
   </entry>
   <entry>
@@ -3179,7 +3179,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995338232-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995338232-2"/>
     </request>
   </entry>
   <entry>
@@ -3232,7 +3232,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996348148-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996348148-0"/>
     </request>
   </entry>
   <entry>
@@ -3285,7 +3285,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996348148-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996348148-1"/>
     </request>
   </entry>
   <entry>
@@ -3338,7 +3338,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996348148-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996348148-2"/>
     </request>
   </entry>
   <entry>
@@ -3391,7 +3391,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990085657-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990085657-0"/>
     </request>
   </entry>
   <entry>
@@ -3444,7 +3444,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990085657-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990085657-1"/>
     </request>
   </entry>
   <entry>
@@ -3497,7 +3497,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990085657-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990085657-2"/>
     </request>
   </entry>
   <entry>
@@ -3550,7 +3550,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991095779-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991095779-0"/>
     </request>
   </entry>
   <entry>
@@ -3603,7 +3603,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991095779-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991095779-1"/>
     </request>
   </entry>
   <entry>
@@ -3656,7 +3656,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991095779-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991095779-2"/>
     </request>
   </entry>
   <entry>
@@ -3709,7 +3709,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994126865-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994126865-0"/>
     </request>
   </entry>
   <entry>
@@ -3762,7 +3762,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994126865-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994126865-1"/>
     </request>
   </entry>
   <entry>
@@ -3815,7 +3815,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994126865-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994126865-2"/>
     </request>
   </entry>
   <entry>
@@ -3868,7 +3868,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991692366-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991692366-0"/>
     </request>
   </entry>
   <entry>
@@ -3921,7 +3921,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991692366-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991692366-1"/>
     </request>
   </entry>
   <entry>
@@ -3974,7 +3974,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9991692366-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9991692366-2"/>
     </request>
   </entry>
   <entry>
@@ -4027,7 +4027,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999278250-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999278250-0"/>
     </request>
   </entry>
   <entry>
@@ -4080,7 +4080,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999278250-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999278250-1"/>
     </request>
   </entry>
   <entry>
@@ -4133,7 +4133,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999278250-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999278250-2"/>
     </request>
   </entry>
   <entry>
@@ -4186,7 +4186,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999177926-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999177926-0"/>
     </request>
   </entry>
   <entry>
@@ -4239,7 +4239,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999177926-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999177926-1"/>
     </request>
   </entry>
   <entry>
@@ -4292,7 +4292,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999177926-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999177926-2"/>
     </request>
   </entry>
   <entry>
@@ -4345,7 +4345,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998864828-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998864828-0"/>
     </request>
   </entry>
   <entry>
@@ -4398,7 +4398,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998864828-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998864828-1"/>
     </request>
   </entry>
   <entry>
@@ -4451,7 +4451,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998864828-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998864828-2"/>
     </request>
   </entry>
   <entry>
@@ -4504,7 +4504,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997955733-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997955733-0"/>
     </request>
   </entry>
   <entry>
@@ -4557,7 +4557,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997955733-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997955733-1"/>
     </request>
   </entry>
   <entry>
@@ -4610,7 +4610,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997955733-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997955733-2"/>
     </request>
   </entry>
   <entry>
@@ -4663,7 +4663,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9993319368-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9993319368-0"/>
     </request>
   </entry>
   <entry>
@@ -4716,7 +4716,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9993319368-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9993319368-1"/>
     </request>
   </entry>
   <entry>
@@ -4769,7 +4769,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9993319368-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9993319368-2"/>
     </request>
   </entry>
   <entry>
@@ -4822,7 +4822,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995935572-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995935572-0"/>
     </request>
   </entry>
   <entry>
@@ -4875,7 +4875,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995935572-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995935572-1"/>
     </request>
   </entry>
   <entry>
@@ -4928,7 +4928,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9995935572-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9995935572-2"/>
     </request>
   </entry>
   <entry>
@@ -4981,7 +4981,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994521488-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994521488-0"/>
     </request>
   </entry>
   <entry>
@@ -5034,7 +5034,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994521488-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994521488-1"/>
     </request>
   </entry>
   <entry>
@@ -5087,7 +5087,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994521488-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994521488-2"/>
     </request>
   </entry>
   <entry>
@@ -5140,7 +5140,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994723478-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994723478-0"/>
     </request>
   </entry>
   <entry>
@@ -5193,7 +5193,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994723478-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994723478-1"/>
     </request>
   </entry>
   <entry>
@@ -5246,7 +5246,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9994723478-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9994723478-2"/>
     </request>
   </entry>
   <entry>
@@ -5299,7 +5299,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992006923-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992006923-0"/>
     </request>
   </entry>
   <entry>
@@ -5352,7 +5352,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992006923-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992006923-1"/>
     </request>
   </entry>
   <entry>
@@ -5405,7 +5405,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9992006923-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9992006923-2"/>
     </request>
   </entry>
   <entry>
@@ -5458,7 +5458,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990188327-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990188327-0"/>
     </request>
   </entry>
   <entry>
@@ -5511,7 +5511,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990188327-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990188327-1"/>
     </request>
   </entry>
   <entry>
@@ -5564,7 +5564,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9990188327-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9990188327-2"/>
     </request>
   </entry>
   <entry>
@@ -5617,7 +5617,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996441719-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996441719-0"/>
     </request>
   </entry>
   <entry>
@@ -5670,7 +5670,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996441719-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996441719-1"/>
     </request>
   </entry>
   <entry>
@@ -5723,7 +5723,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996441719-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996441719-2"/>
     </request>
   </entry>
   <entry>
@@ -5776,7 +5776,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997552602-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997552602-0"/>
     </request>
   </entry>
   <entry>
@@ -5829,7 +5829,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997552602-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997552602-1"/>
     </request>
   </entry>
   <entry>
@@ -5882,7 +5882,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9997552602-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9997552602-2"/>
     </request>
   </entry>
   <entry>
@@ -5935,7 +5935,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999774646-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999774646-0"/>
     </request>
   </entry>
   <entry>
@@ -5988,7 +5988,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999774646-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999774646-1"/>
     </request>
   </entry>
   <entry>
@@ -6041,7 +6041,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9999774646-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9999774646-2"/>
     </request>
   </entry>
   <entry>
@@ -6094,7 +6094,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998269624-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998269624-0"/>
     </request>
   </entry>
   <entry>
@@ -6147,7 +6147,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998269624-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998269624-1"/>
     </request>
   </entry>
   <entry>
@@ -6200,7 +6200,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9998269624-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9998269624-2"/>
     </request>
   </entry>
   <entry>
@@ -6253,7 +6253,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996643294-0"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996643294-0"/>
     </request>
   </entry>
   <entry>
@@ -6306,7 +6306,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996643294-1"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996643294-1"/>
     </request>
   </entry>
   <entry>
@@ -6359,7 +6359,7 @@
     </resource>
     <request>
       <method value="PUT"/>
-      <url value="Organization/vhdir-organizationrole-9996643294-2"/>
+      <url value="OrganizationAffiliation/vhdir-organizationrole-9996643294-2"/>
     </request>
   </entry>
 </Bundle>

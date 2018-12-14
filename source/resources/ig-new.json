@@ -427,6 +427,18 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/valueset-healthcareservice-characteristic"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-healthcareservice-eligibility"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/codesystem-accessibility"
       },
       "exampleBoolean" : false
@@ -452,6 +464,12 @@
     {
       "reference" : {
         "reference" : "ValueSet/valueset-insuranceplancosttype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/valueset-insuranceplancostqualifier"
       },
       "exampleBoolean" : false
     },
@@ -523,7 +541,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-verificationresult-primarysource-organization"
+        "reference" : "SearchParameter/searchparameter-verificationresult-primarysource-who"
       },
       "exampleBoolean" : false
     },
@@ -535,7 +553,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-verificationresult-attestation-proxy"
+        "reference" : "SearchParameter/searchparameter-verificationresult-attestation-onbehalfof"
       },
       "exampleBoolean" : false
     },
@@ -547,7 +565,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/searchparameter-verificationresult-attestation-attester"
+        "reference" : "SearchParameter/searchparameter-verificationresult-attestation-who"
       },
       "exampleBoolean" : false
     },
@@ -1525,6 +1543,18 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/codesystem-healthcareservice-characteristic"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/codesystem-healthcareservice-eligibility"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/careteam-alias"
       },
       "exampleBoolean" : false
@@ -1921,6 +1951,21 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "ValueSet-valueset-healthcareservice-characteristic.html",
+          "title" : "ValueSet Healthcare Service Characteristic",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "ValueSet-valueset-healthcareservice-eligibility.html",
+          "title" : "ValueSet Healthcare Service Eligibility",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "ValueSet-valueset-insuranceplancosttype.html",
+          "title" : "ValueSet Insurance Plan Cost Type",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "CodeSystem-codesystem-validation.html",
           "title" : "CodeSystem Validation",
           "generation" : "generated"
@@ -2021,8 +2066,8 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "SearchParameter-searchparameter-verificationresult-primarysource-organization.html",
-          "title" : "SearchParameter Verificationresult Primarysource Organization",
+          "nameUrl" : "SearchParameter-searchparameter-verificationresult-primarysource-who.html",
+          "title" : "SearchParameter Verificationresult Primarysource Who",
           "generation" : "generated"
         },
         {
@@ -2031,8 +2076,8 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "SearchParameter-searchparameter-verificationresult-attestation-proxy.html",
-          "title" : "SearchParameter Verificationresult Attestation Proxy",
+          "nameUrl" : "SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html",
+          "title" : "SearchParameter Verificationresult Attestation On Behalf Of",
           "generation" : "generated"
         },
         {
@@ -2041,8 +2086,8 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "SearchParameter-searchparameter-verificationresult-attestation-attester.html",
-          "title" : "SearchParameter Verificationresult Attestation Attester",
+          "nameUrl" : "SearchParameter-searchparameter-verificationresult-attestation-who.html",
+          "title" : "SearchParameter Verificationresult Attestation Who",
           "generation" : "generated"
         },
         {

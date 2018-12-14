@@ -105,7 +105,8 @@
                         "code": "Reference",
                         "targetProfile": [
                             "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"
                         ]
                     }
                 ]
@@ -162,62 +163,47 @@
                 "path": "VerificationResult.attestation"
             },
             {
-                "alias": [
-                    "attester"
-                ],
-                "definition": "Source of the attested information",
                 "id": "VerificationResult.attestation.who",
-                "label": "attester",
                 "max": "1",
                 "min": 1,
                 "mustSupport": true,
                 "path": "VerificationResult.attestation.who",
-                "short": "Attestation source",
                 "type": [
                     {
                         "code": "Reference",
                         "targetProfile": [
                             "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"
                         ]
                     }
                 ]
             },
             {
-                "alias": [
-                    "proxy"
-                ],
-                "definition": "The individual attesting to information on behalf of an individual or organization",
                 "id": "VerificationResult.attestation.onBehalfOf",
-                "label": "proxy",
                 "mustSupport": true,
                 "path": "VerificationResult.attestation.onBehalfOf",
-                "short": "Proxy for attested information",
                 "type": [
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"
                         ]
                     }
                 ]
             },
             {
-                "alias": [
-                    "process"
-                ],
                 "binding": {
                     "strength": "example",
                     "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-communication-method"
                 },
-                "definition": "The process by which attested information was submitted",
                 "id": "VerificationResult.attestation.communicationMethod",
-                "label": "process",
                 "max": "1",
                 "min": 1,
                 "mustSupport": true,
                 "path": "VerificationResult.attestation.communicationMethod",
-                "short": "Attestation process",
                 "type": [
                     {
                         "code": "CodeableConcept"

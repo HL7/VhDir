@@ -604,7 +604,11 @@
             {
                 "id": "InsurancePlan.plan.specificCost.benefit.cost.qualifiers",
                 "mustSupport": true,
-                "path": "InsurancePlan.plan.specificCost.benefit.cost.qualifiers"
+                "path": "InsurancePlan.plan.specificCost.benefit.cost.qualifiers",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostqualifier"
+                }
             },
             {
                 "id": "InsurancePlan.plan.specificCost.benefit.cost.value",

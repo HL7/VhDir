@@ -18,9 +18,6 @@ This profile modifies the base HealthcareService resource in the following manne
 1.  [NewPatients](StructureDefinition-newpatients.html) (0..*) - indicates whether the service is accepting new patients
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a service is restricted
 
-*  Adds new value sets/updates value set bindings:
-
-TBD
 
 
 **Examples:**

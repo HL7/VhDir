@@ -80,7 +80,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="VerificationResult.verificationresult-attestation-attester">
+			<searchRevInclude value="VerificationResult.verificationresult-attestation-who">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -678,7 +678,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="VerificationResult.verificationresult-primarysource-organization">
+			<searchRevInclude value="VerificationResult.verificationresult-primarysource-who">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -688,7 +688,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="VerificationResult.verificationresult-attestation-attester">
+			<searchRevInclude value="VerificationResult.verificationresult-attestation-who">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2031,17 +2031,17 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="VerificationResult.verificationresult-attestation-attester">
+			<searchInclude value="VerificationResult.verificationresult-attestation-who">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="VerificationResult.verificationresult-attestation-proxy">
+			<searchInclude value="VerificationResult.verificationresult-attestation-onbehalfof">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="VerificationResult.verificationresult-primarysource-organization">
+			<searchInclude value="VerificationResult.verificationresult-primarysource-who">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2055,8 +2055,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="verificationresult-attestation-attester"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-attester"/>
+				<name value="verificationresult-attestation-who"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-who"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2071,8 +2071,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="verificationresult-attestation-proxy"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-proxy"/>
+				<name value="verificationresult-attestation-onbehalfof"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-onbehalfof"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2087,8 +2087,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="verificationresult-primarysource-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-organization"/>
+				<name value="verificationresult-primarysource-who"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-who"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>

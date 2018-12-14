@@ -159,9 +159,9 @@
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/StructureDefinition/Organization",
-                            "http://hl7.org/fhir/StructureDefinition/CareTeam",
-                            "http://hl7.org/fhir/StructureDefinition/Practitioner"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam",
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
                         ]
                     }
                 ]

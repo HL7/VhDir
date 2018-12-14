@@ -182,11 +182,11 @@
 
 **VerificationResult**
 
-- [verificationresult-attestation-attester](SearchParameter-searchparameter-verificationresult-attestation-attester.html)
+- [verificationresult-attestation-who](SearchParameter-searchparameter-verificationresult-attestation-who.html)
 - [verificationresult-attestation-method](SearchParameter-searchparameter-verificationresult-attestation-method.html)
-- [verificationresult-attestation-proxy](SearchParameter-searchparameter-verificationresult-attestation-proxy.html)
+- [verificationresult-attestation-onbehalfof](SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html)
 - [verificationresult-primarysource-date](SearchParameter-searchparameter-verificationresult-primarysource-date.html)
-- [verificationresult-primarysource-organization](SearchParameter-searchparameter-verificationresult-primarysource-organization.html)
+- [verificationresult-primarysource-who](SearchParameter-searchparameter-verificationresult-primarysource-who.html)
 - [verificationresult-primarysource-type](SearchParameter-searchparameter-verificationresult-primarysource-type.html)
 - [verificationresult-status-date](SearchParameter-searchparameter-verificationresult-status-date.html)
 - [verificationresult-target](SearchParameter-searchparameter-verificationresult-target.html)

@@ -44,11 +44,13 @@
 
     <alias value="DC Memorial Hospital"> <!-- This organization was previously known as DC Memorial Hospital, from 1975-2000 -->
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
-            <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
-                <code value="historical"/>
-                <display value="Historical"/>
-            </valueCoding>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+                    <code value="historical"/>
+                    <display value="Historical"/>
+                </coding>
+            </valueCodeableConcept>
         </extension>
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period">
             <valuePeriod>

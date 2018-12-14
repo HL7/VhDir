@@ -139,7 +139,8 @@ Any Validated Healthcare Directory IG conformant implementation:
 
 *  SHALL support profiles: organization, practitioner, location, practitionerRole, endpoint, validation
 *  SHOULD support profiles: healthcareService, careTeam, network, productPlan, restriction, organizationRole
-*  SHALL indicate which data elements they support within the profiles, and SHALL be capable of returning each supported data element in response to a query
+
+In profiles, the Must Support flag indicates if data exists for the specific property, then it must be represented as defined in the VHDir IG. If the property is not available from a system, this is not required, and may be ommitted
 
 Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.
 
@@ -161,5 +162,10 @@ We envisioned VHDir as a public or semi-public utility. Stakeholders who agreed 
 
 We expect that a VHDir’s operational policies and legal agreements will clearly delineate which data stakeholders can access, and if necessary, require stakeholders to protect the privacy/confidentiality of sensitive information in downstream local environments. As such, we have included a Restriction profile based on the Consent resource to convey any restrictions associated with a data element, collection of elements, or resource obtained from a VHDir.
 
+## Redundancy & Ambiguity Across Resources
+
+Although FHIR resources define discrete business objects, related resources may have similar data elements. For example, the HealthcareService, PractitionerRole, and Location resources all include data elements describing availability. In some circumstances, values in these common data elements may not align across resources, potentially creating ambiguity. For example, in this IG, a Location resource might indicate that the location no longer accepts patients. However, a PractitionerRole resource for a provider working at the location might indicate that the provider is accepting patients (e.g., by referral only). In some cases, these inconsistencies are valid representations of the complexities of healthcare systems. In others, data might have been entered in error, outdated, or otherwise inaccurate.
+
+The FHIR specification does not provide guidance on managing common elements across resources to reduce redundancy or ambiguity. Likewise, this implementation guide does not provide additional guidance. Implementations should consider further constraining profiles, creating invariants, or requiring data sources (e.g. attesters) to contribute data in a consistent format. Some resources include elements for describing exceptions, such as the availabilityExceptions field on HealthcareService, Location, and PractitionerRole. Additionally, validation processes may help discover and address inconsistencies across resources.
 
 ------------------------------------------------------------------------

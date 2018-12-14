@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="vhdir-organization-examples-bundle"/>
   <type value="batch"/>
-  <timestamp value="2018-12-07T02:45:56.899491Z"/>
+  <timestamp value="2018-12-12T01:16:51.598227Z"/>
   <entry>
     <fullUrl value="http://test.fhir.org/r4/vhdir-organization-9992607537"/>
     <resource>
@@ -80,9 +80,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Jeanene Metz"/>
-            <family value="Metz"/>
-            <given value="Jeanene"/>
+            <text value="Raleigh Leffler"/>
+            <family value="Leffler"/>
+            <given value="Raleigh"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -207,8 +207,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -220,9 +220,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Guillermo Cardona"/>
-            <family value="Cardona"/>
-            <given value="Guillermo"/>
+            <text value="Austin Nader"/>
+            <family value="Nader"/>
+            <given value="Austin"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -347,8 +347,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990030000"/>
-          <display value="Blue Hope"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -360,9 +360,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Pilar Cardenas"/>
-            <family value="Cardenas"/>
-            <given value="Pilar"/>
+            <text value="Elsa Peralta"/>
+            <family value="Peralta"/>
+            <given value="Elsa"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -486,6 +486,10 @@
           <postalCode value="021324034"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -496,9 +500,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Mayte Saavedra"/>
-            <family value="Saavedra"/>
-            <given value="Mayte"/>
+            <text value="Bryan Effertz"/>
+            <family value="Effertz"/>
+            <given value="Bryan"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -636,9 +640,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Victoria Valadez"/>
-            <family value="Valadez"/>
-            <given value="Victoria"/>
+            <text value="Gregorio Garibay"/>
+            <family value="Garibay"/>
+            <given value="Gregorio"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -762,10 +766,6 @@
           <postalCode value="014321168"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -776,9 +776,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Dusty Gaylord"/>
-            <family value="Gaylord"/>
-            <given value="Dusty"/>
+            <text value="Maricarmen Negrete"/>
+            <family value="Negrete"/>
+            <given value="Maricarmen"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -903,8 +903,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -916,9 +916,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Coleen Waters"/>
-            <family value="Waters"/>
-            <given value="Coleen"/>
+            <text value="Val Morar"/>
+            <family value="Morar"/>
+            <given value="Val"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1043,8 +1043,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -1056,9 +1056,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Alfredo Valent&#237;n"/>
-            <family value="Valent&#237;n"/>
-            <given value="Alfredo"/>
+            <text value="Cammy Quigley"/>
+            <family value="Quigley"/>
+            <given value="Cammy"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1182,10 +1182,6 @@
           <postalCode value="170554325"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -1196,9 +1192,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Elisa Sep&#250;lveda"/>
-            <family value="Sep&#250;lveda"/>
-            <given value="Elisa"/>
+            <text value="Sonia Calder&#243;n"/>
+            <family value="Calder&#243;n"/>
+            <given value="Sonia"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1323,8 +1319,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -1336,9 +1332,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Wilson Gislason"/>
-            <family value="Gislason"/>
-            <given value="Wilson"/>
+            <text value="Marcela Jaimes"/>
+            <family value="Jaimes"/>
+            <given value="Marcela"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1442,6 +1438,7 @@
         <name value="QUINCY MEDICAL CENTER"/>
         <telecom>
           <system value="phone"/>
+          <value value="5555555555"/>
         </telecom>
         <address>
           <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
@@ -1462,8 +1459,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -1475,9 +1472,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Maricela Kuhic"/>
-            <family value="Kuhic"/>
-            <given value="Maricela"/>
+            <text value="Antonia Rodriguez"/>
+            <family value="Rodriguez"/>
+            <given value="Antonia"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1504,6 +1501,7 @@
               </extension>
             </extension>
             <system value="phone"/>
+            <value value="5555555555"/>
             <use value="work"/>
           </telecom>
           <address>
@@ -1600,6 +1598,10 @@
           <postalCode value="011071610"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -1610,9 +1612,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Ricky Kertzmann"/>
-            <family value="Kertzmann"/>
-            <given value="Ricky"/>
+            <text value="Jacquiline Ernser"/>
+            <family value="Ernser"/>
+            <given value="Jacquiline"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1736,6 +1738,10 @@
           <postalCode value="019503867"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -1746,9 +1752,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Alvin Barrows"/>
-            <family value="Barrows"/>
-            <given value="Alvin"/>
+            <text value="Dannie Beer"/>
+            <family value="Beer"/>
+            <given value="Dannie"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -1872,10 +1878,6 @@
           <postalCode value="014201914"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -1886,9 +1888,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Gregorio Galarza"/>
-            <family value="Galarza"/>
-            <given value="Gregorio"/>
+            <text value="Ricardo Vanegas"/>
+            <family value="Vanegas"/>
+            <given value="Ricardo"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2012,6 +2014,10 @@
           <postalCode value="02910"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -2022,9 +2028,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Maile Roberts"/>
-            <family value="Roberts"/>
-            <given value="Maile"/>
+            <text value="Neil Ritchie"/>
+            <family value="Ritchie"/>
+            <given value="Neil"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2148,6 +2154,10 @@
           <postalCode value="018522103"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -2158,9 +2168,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Rosamaria Fisher"/>
-            <family value="Fisher"/>
-            <given value="Rosamaria"/>
+            <text value="Altha Trantow"/>
+            <family value="Trantow"/>
+            <given value="Altha"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2298,9 +2308,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Roxanne Moen"/>
-            <family value="Moen"/>
-            <given value="Roxanne"/>
+            <text value="Marvel Buckridge"/>
+            <family value="Buckridge"/>
+            <given value="Marvel"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2424,10 +2434,6 @@
           <postalCode value="028861617"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -2438,9 +2444,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Ardith Davis"/>
-            <family value="Davis"/>
-            <given value="Ardith"/>
+            <text value="Alfredo Esparza"/>
+            <family value="Esparza"/>
+            <given value="Alfredo"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2565,8 +2571,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990030000"/>
-          <display value="Blue Hope"/>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
         </partOf>
         <contact>
           <purpose>
@@ -2578,9 +2584,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Sylvester Gusikowski"/>
-            <family value="Gusikowski"/>
-            <given value="Sylvester"/>
+            <text value="Lucia Gracia"/>
+            <family value="Gracia"/>
+            <given value="Lucia"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2705,8 +2711,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990030000"/>
-          <display value="Blue Hope"/>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
         </partOf>
         <contact>
           <purpose>
@@ -2718,9 +2724,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Horace Koch"/>
-            <family value="Koch"/>
-            <given value="Horace"/>
+            <text value="Octavio Saldivar"/>
+            <family value="Saldivar"/>
+            <given value="Octavio"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2844,10 +2850,6 @@
           <postalCode value="060321970"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -2858,9 +2860,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Jacquie Labadie"/>
-            <family value="Labadie"/>
-            <given value="Jacquie"/>
+            <text value="Royal Hoppe"/>
+            <family value="Hoppe"/>
+            <given value="Royal"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -2984,6 +2986,10 @@
           <postalCode value="029053105"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -2994,9 +3000,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Cindi Vandervort"/>
-            <family value="Vandervort"/>
-            <given value="Cindi"/>
+            <text value="Valda Blick"/>
+            <family value="Blick"/>
+            <given value="Valda"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3120,10 +3126,6 @@
           <postalCode value="022151001"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -3134,9 +3136,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Federico Hamill"/>
-            <family value="Hamill"/>
-            <given value="Federico"/>
+            <text value="Elvira Godoy"/>
+            <family value="Godoy"/>
+            <given value="Elvira"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3274,9 +3276,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Ashley Skiles"/>
-            <family value="Skiles"/>
-            <given value="Ashley"/>
+            <text value="Tanner Spencer"/>
+            <family value="Spencer"/>
+            <given value="Tanner"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3400,10 +3402,6 @@
           <postalCode value="021262834"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -3414,9 +3412,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Maddie Altenwerth"/>
-            <family value="Altenwerth"/>
-            <given value="Maddie"/>
+            <text value="Talia Bartell"/>
+            <family value="Bartell"/>
+            <given value="Talia"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3541,8 +3539,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -3554,9 +3552,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Octavio Fl&#243;rez"/>
-            <family value="Fl&#243;rez"/>
-            <given value="Octavio"/>
+            <text value="Jesus Hirthe"/>
+            <family value="Hirthe"/>
+            <given value="Jesus"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3681,8 +3679,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
         </partOf>
         <contact>
           <purpose>
@@ -3694,9 +3692,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Renato Blanda"/>
-            <family value="Blanda"/>
-            <given value="Renato"/>
+            <text value="Glady Larson"/>
+            <family value="Larson"/>
+            <given value="Glady"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3821,8 +3819,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990020000"/>
-          <display value="Acme Healthcare"/>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
         </partOf>
         <contact>
           <purpose>
@@ -3834,9 +3832,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Mi Zulauf"/>
-            <family value="Zulauf"/>
-            <given value="Mi"/>
+            <text value="Manuela Carrera"/>
+            <family value="Carrera"/>
+            <given value="Manuela"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -3974,9 +3972,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Arturo Quintanilla"/>
-            <family value="Quintanilla"/>
-            <given value="Arturo"/>
+            <text value="Ryann Waters"/>
+            <family value="Waters"/>
+            <given value="Ryann"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4100,6 +4098,10 @@
           <postalCode value="029051522"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -4110,9 +4112,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Juan Carlos Amador"/>
-            <family value="Amador"/>
-            <given value="Juan Carlos"/>
+            <text value="Lida Pouros"/>
+            <family value="Pouros"/>
+            <given value="Lida"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4250,9 +4252,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Jenise Kozey"/>
-            <family value="Kozey"/>
-            <given value="Jenise"/>
+            <text value="Waldo Abernathy"/>
+            <family value="Abernathy"/>
+            <given value="Waldo"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4377,8 +4379,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -4390,9 +4392,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Jos&#233; Eduardo Ballesteros"/>
-            <family value="Ballesteros"/>
-            <given value="Jos&#233; Eduardo"/>
+            <text value="Nicki Wilderman"/>
+            <family value="Wilderman"/>
+            <given value="Nicki"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4516,10 +4518,6 @@
           <postalCode value="026550604"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -4530,9 +4528,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Mollie Schultz"/>
-            <family value="Schultz"/>
-            <given value="Mollie"/>
+            <text value="Emery Larkin"/>
+            <family value="Larkin"/>
+            <given value="Emery"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4670,9 +4668,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Lory Carroll"/>
-            <family value="Carroll"/>
-            <given value="Lory"/>
+            <text value="Barry Jacobson"/>
+            <family value="Jacobson"/>
+            <given value="Barry"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4796,10 +4794,6 @@
           <postalCode value="028913432"/>
           <country value="USA"/>
         </address>
-        <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
-        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -4810,9 +4804,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Emilia Rael"/>
-            <family value="Rael"/>
-            <given value="Emilia"/>
+            <text value="Jos&#233; Emilio Gollum"/>
+            <family value="Gollum"/>
+            <given value="Jos&#233; Emilio"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -4937,8 +4931,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -4950,9 +4944,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Janie Kunde"/>
-            <family value="Kunde"/>
-            <given value="Janie"/>
+            <text value="Santiago Huerta"/>
+            <family value="Huerta"/>
+            <given value="Santiago"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -5076,6 +5070,10 @@
           <postalCode value="018306798"/>
           <country value="USA"/>
         </address>
+        <partOf>
+          <reference value="Organization/vhdir-organization-9990010000"/>
+          <display value="King Hospital System"/>
+        </partOf>
         <contact>
           <purpose>
             <coding>
@@ -5086,9 +5084,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Rebeca Ju&#225;rez"/>
-            <family value="Ju&#225;rez"/>
-            <given value="Rebeca"/>
+            <text value="Theodore Waelchi"/>
+            <family value="Waelchi"/>
+            <given value="Theodore"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -5226,9 +5224,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Irving Cronin"/>
-            <family value="Cronin"/>
-            <given value="Irving"/>
+            <text value="Eloisa Qui&#241;&#243;nez"/>
+            <family value="Qui&#241;&#243;nez"/>
+            <given value="Eloisa"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -5353,8 +5351,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990030000"/>
+          <display value="Blue Hope"/>
         </partOf>
         <contact>
           <purpose>
@@ -5366,9 +5364,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Cristobal Candelaria"/>
-            <family value="Candelaria"/>
-            <given value="Cristobal"/>
+            <text value="In&#233;s Mayorga"/>
+            <family value="Mayorga"/>
+            <given value="In&#233;s"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
@@ -5493,8 +5491,8 @@
           <country value="USA"/>
         </address>
         <partOf>
-          <reference value="Organization/vhdir-organization-9990010000"/>
-          <display value="King Hospital System"/>
+          <reference value="Organization/vhdir-organization-9990020000"/>
+          <display value="Acme Healthcare"/>
         </partOf>
         <contact>
           <purpose>
@@ -5506,9 +5504,9 @@
           </purpose>
           <name>
             <use value="official"/>
-            <text value="Guillermo Sandoval"/>
-            <family value="Sandoval"/>
-            <given value="Guillermo"/>
+            <text value="Isabel Pe&#241;a"/>
+            <family value="Pe&#241;a"/>
+            <given value="Isabel"/>
           </name>
           <telecom>
             <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">

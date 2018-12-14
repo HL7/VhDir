@@ -1994,7 +1994,7 @@
                 "min": 0,
                 "mustSupport": true,
                 "path": "Practitioner.qualification.extension",
-                "short": "Adds status, whereValid, history elements",
+                "short": "Status, whereValid, and history of a practitioner's qualification",
                 "sliceName": "practitioner-qualification",
                 "type": [
                     {
@@ -2337,7 +2337,7 @@
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/StructureDefinition/Organization"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
                         ]
                     }
                 ]

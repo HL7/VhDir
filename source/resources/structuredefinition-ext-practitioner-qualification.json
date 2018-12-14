@@ -67,10 +67,6 @@
                 ]
             },
             {
-                "binding": {
-                    "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/us/core-r4/ValueSet/us-core-usps-state"
-                },
                 "definition": "Indicates where this qualification is valid",
                 "id": "Extension.extension:whereValid",
                 "label": "whereValid",
@@ -92,6 +88,10 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Where the qualification is valid",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/us/core-r4/ValueSet/us-core-usps-state"
+                },
                 "type": [
                     {
                         "code": "CodeableConcept"

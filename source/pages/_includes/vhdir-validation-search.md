@@ -1,34 +1,35 @@
 #### Supported Searches
 
-1. `GET [base]/VerificationResult?verificationresult-attestation-attester=[id]`
+1. `GET [base]/VerificationResult?verificationresult-attestation-who=[id]`
 
-      *Support:* SHALL support search by the [`verificationresult-attestation-attester`](SearchParameter-searchparameter-verificationresult-attestation-attester.html) parameter
-   - with a target type:  `Practitioner`, `Organization`
-   - including the modifiers:  `type`  
-   - including these search paramaters which may be chained:  `organization-identifier`, `organization-address`, `organization-name`, `organization-partof`, `practitioner-identifier`, `practitioner-name`
+      *Support:* SHALL support search by the [`verificationresult-attestation-who`](SearchParameter-searchparameter-verificationresult-attestation-who.html) parameter
+   - with a target type:  `Practitioner`, `Organization`, `PractitionerRole`
+   - including the modifiers:  `type`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-address`, `organization-name`, `organization-partof`, `practitioner-identifier`, `practitioner-name`, `practitionerrole-identifier`, `practitionerrole-location`, `practitionerrole-organization`, `practitionerrole-practitioner`
 <hr />
 1. `GET [base]/VerificationResult?verificationresult-attestation-method=[code]`
 
       *Support:* SHOULD support search by the [`verificationresult-attestation-method`](SearchParameter-searchparameter-verificationresult-attestation-method.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/VerificationResult?verificationresult-attestation-proxy=[id]`
+1. `GET [base]/VerificationResult?verificationresult-attestation-onbehalfof=[id]`
 
-      *Support:* SHALL support search by the [`verificationresult-attestation-proxy`](SearchParameter-searchparameter-verificationresult-attestation-proxy.html) parameter
-   - with a target type:  `Practitioner`   
-   - including these search paramaters which may be chained:  `practitioner-identifier`, `practitioner-name`
+      *Support:* SHALL support search by the [`verificationresult-attestation-onbehalfof`](SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html) parameter
+   - with a target type:  `Practitioner`, `Organization`, `PractitionerRole`
+   - including the modifiers:  `type`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-address`, `organization-name`, `organization-partof`, `practitioner-identifier`, `practitioner-name`, `practitionerrole-identifier`, `practitionerrole-location`, `practitionerrole-organization`, `practitionerrole-practitioner`
 <hr />
 1. `GET [base]/VerificationResult?verificationresult-primarysource-date=[dateTime]`
 
       *Support:* SHOULD support search by the [`verificationresult-primarysource-date`](SearchParameter-searchparameter-verificationresult-primarysource-date.html) parameter   
    - including the comparators:  `eq`, `gt`, `lt`, `ge`, `le`, `sa`, `eb`  
 <hr />
-1. `GET [base]/VerificationResult?verificationresult-primarysource-organization=[id]`
+1. `GET [base]/VerificationResult?verificationresult-primarysource-who=[id]`
 
-      *Support:* SHALL support search by the [`verificationresult-primarysource-organization`](SearchParameter-searchparameter-verificationresult-primarysource-organization.html) parameter
-   - with a target type:  `Organization`
-   - including the modifiers:  `above`, `below`  
-   - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`
+      *Support:* SHALL support search by the [`verificationresult-primarysource-who`](SearchParameter-searchparameter-verificationresult-primarysource-who.html) parameter
+   - with a target type:  `Practitioner`, `Organization`, `PractitionerRole`
+   - including the modifiers:  `type`
+   - including these search paramaters which may be chained:  `organization-identifier`, `organization-address`, `organization-name`, `organization-partof`, `practitioner-identifier`, `practitioner-name`, `practitionerrole-identifier`, `practitionerrole-location`, `practitionerrole-organization`, `practitionerrole-practitioner`
 <hr />
 1. `GET [base]/VerificationResult?verificationresult-primarysource-type=[code]`
 

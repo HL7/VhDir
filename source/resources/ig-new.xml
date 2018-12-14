@@ -423,6 +423,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/valueset-healthcareservice-characteristic"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-healthcareservice-eligibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/codesystem-accessibility"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -448,6 +460,12 @@
     <resource>
       <reference>
         <reference value="ValueSet/valueset-insuranceplancosttype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-insuranceplancostqualifier"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -519,7 +537,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-verificationresult-primarysource-organization"/>
+        <reference value="SearchParameter/searchparameter-verificationresult-primarysource-who"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -531,7 +549,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-verificationresult-attestation-proxy"/>
+        <reference value="SearchParameter/searchparameter-verificationresult-attestation-onbehalfof"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -543,7 +561,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/searchparameter-verificationresult-attestation-attester"/>
+        <reference value="SearchParameter/searchparameter-verificationresult-attestation-who"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -1521,6 +1539,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/codesystem-healthcareservice-characteristic"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/codesystem-healthcareservice-eligibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/careteam-alias"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -1917,6 +1947,21 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="ValueSet-valueset-healthcareservice-characteristic.html"/>
+          <title value="ValueSet Healthcare Service Characteristic"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-valueset-healthcareservice-eligibility.html"/>
+          <title value="ValueSet Healthcare Service Eligibility"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-valueset-insuranceplancosttype.html"/>
+          <title value="ValueSet Insurance Plan Cost Type"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="CodeSystem-codesystem-validation.html"/>
           <title value="CodeSystem Validation"/>
           <generation value="generated"/>
@@ -2017,8 +2062,8 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-organization.html"/>
-          <title value="SearchParameter Verificationresult Primarysource Organization"/>
+          <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-who.html"/>
+          <title value="SearchParameter Verificationresult Primarysource Who"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -2027,8 +2072,8 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-proxy.html"/>
-          <title value="SearchParameter Verificationresult Attestation Proxy"/>
+          <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html"/>
+          <title value="SearchParameter Verificationresult Attestation On Behalf Of"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -2037,8 +2082,8 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-attester.html"/>
-          <title value="SearchParameter Verificationresult Attestation Attester"/>
+          <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-who.html"/>
+          <title value="SearchParameter Verificationresult Attestation Who"/>
           <generation value="generated"/>
         </page>
         <page>
