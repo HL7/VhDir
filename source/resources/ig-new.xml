@@ -23,8 +23,8 @@
   <copyright value="Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License"/>
   <packageId value="hl7.core.uv.vhdir"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.6.0"/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>

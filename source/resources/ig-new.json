@@ -26,8 +26,8 @@
   "copyright" : "Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License",
   "packageId" : "hl7.core.uv.vhdir",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.6.0",
-  "3.6.0"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",

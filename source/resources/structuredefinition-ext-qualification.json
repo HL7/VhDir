@@ -337,7 +337,7 @@
             }
         ]
     },
-    "fhirVersion": "3.6.0",
+    "fhirVersion": "4.0.0",
     "id": "qualification",
     "kind": "complex-type",
     "name": "Qualification",

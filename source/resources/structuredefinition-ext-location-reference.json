@@ -43,7 +43,7 @@
             }
         ]
     },
-    "fhirVersion": "3.6.0",
+    "fhirVersion": "4.0.0",
     "id": "location-reference",
     "kind": "complex-type",
     "name": "LocationReference",
