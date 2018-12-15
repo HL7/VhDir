@@ -48,6 +48,7 @@ output
 archive
 sandbox
 capstmnt_markup
+foo
 # Altova files #
 ################
 *.spp
