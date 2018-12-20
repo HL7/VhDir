@@ -1,7 +1,7 @@
 {
   "canonicalBase": "http://hl7.org/fhir/uv/vhdir",
   "source": "ig.xml",
-  "version": "3.6.0",
+  "version": "4.0.0",
   "name": "ValidatedHealthcareDirectory",
   "paths": {
     "resources": [

@@ -673,7 +673,7 @@
             }
         ]
     },
-    "fhirVersion": "3.6.0",
+    "fhirVersion": "4.0.0",
     "id": "vhdir-organization",
     "kind": "resource",
     "name": "VhdirOrganization",
