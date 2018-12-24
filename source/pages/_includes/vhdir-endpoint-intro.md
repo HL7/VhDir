@@ -20,10 +20,9 @@ This profile modifies the base Endpoint resource in the following manner:
 1.  [DigitalCertificate](StructureDefinition-digitalcertificate.html) (0..*) - a digital certificate associated with the endpoint
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with an endpoint is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!-- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD -->
 
 **Examples:**
 
@@ -44,8 +43,6 @@ Each endpoint must have:
 1.  One technical address for connecting to the endpoint in `endpoint.address`
 
 
-**Profile specific implementation guidance:**
+<!--**Profile specific implementation guidance:**
 
-- TBD
-
-
+- TBD -->

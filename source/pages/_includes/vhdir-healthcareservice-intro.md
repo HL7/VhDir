@@ -34,8 +34,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  A boolean value in `healthcareService.active`
 
-
+<!--
 **Profile specific implementation guidance:**
 
-- TBD
-
+- TBD -->

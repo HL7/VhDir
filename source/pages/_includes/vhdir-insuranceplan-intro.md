@@ -19,10 +19,9 @@ This profile modifies the base InsurancePlan resource in the following manner:
 1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when the point of contact for an InsurancePlan is available
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a service is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!--- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD --->
 
 **Examples:**
 

@@ -23,10 +23,9 @@ This profile modifies the base Practitioner resource in the following manner:
 1.  [Qualification](StructureDefinition-practitioner-qualification.html) (0..1) - provides additional information about a practitioner's qualifications, including where they are valid and the current/historical status
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a practitioner is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!--- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD --->
 
 **Examples:**
 
@@ -47,6 +46,6 @@ Each practitioner must have:
     1.  At least one given name in `practitioner.name.given`
 
 
-**Profile specific implementation guidance:**
+<!--- **Profile specific implementation guidance:**
 
-- TBD
+- TBD --->
