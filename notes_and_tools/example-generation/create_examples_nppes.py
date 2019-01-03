@@ -1,7 +1,7 @@
 
 # ===================================
 # create VHDIR FHIR resources instances from the subset of the nppes data files:
-# run in python 3.5 or above
+# run in python 3.6 or above
 # see requirements.txt for modules
 # ====================================
 
