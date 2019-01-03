@@ -42052,5 +42052,6 @@ lat_long = {
 
 #This only happens when this module is called directly:
 if __name__ == "__main__":
-    
+
     print( 'for zip = "94555" the lattitude = {} and the longitude = {}'.format(lat_long['94555'][0],lat_long['94555'][1]))
+    print( 'type  = {}'.format(type(lat_long['94555'][0])))

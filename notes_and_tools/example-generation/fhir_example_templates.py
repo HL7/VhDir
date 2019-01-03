@@ -47,7 +47,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
 	</type>
 
 	<name value="{name}"/>
-	
+
 
 	<telecom>
         <system value="phone"/>
@@ -73,7 +73,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
         <country value="USA"/>
 	</address>
 	{partof}
-    <contact> 
+    <contact>
         <purpose>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
@@ -88,7 +88,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
             <given value="{contact_fname}"/>
         </name>
         <telecom>
-            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"> 
+            <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
                 <extension url="daysOfWeek">
                     <valueCode value="mon"/>
                 </extension>
@@ -112,10 +112,10 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
                 </extension>
             </extension>
             <system value="phone"/>
-            <value value="{phone}"/> 
+            <value value="{phone}"/>
             <use value="work"/>
         </telecom>
-        <address> 
+        <address>
 					    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
 				            <extension url="latitude">
 				                <valueDecimal value="{LAT}"/>
@@ -153,7 +153,7 @@ partof_org_template ='''
 
 practitioner_template ='''<Practitioner xmlns="http://hl7.org/fhir">
 	<!-- synthetic practitioner -->
-	
+
 	<id value="{f_id}"/>
 	<meta>
 		<versionId value="1"/>
@@ -175,15 +175,15 @@ practitioner_template ='''<Practitioner xmlns="http://hl7.org/fhir">
 		</type>
 		<system value="http://hl7.org/fhir/sid/us-npi"/>
 		<value value="{npi}"/>
-		<period> 
+		<period>
 			<start value="2005-07-16T09:00:00-05:00"/>
 		</period>
 		<assigner>
 			<display value="CMS"/>
 		</assigner>
 	</identifier>
-	
-	<active value="{active}"/> 
+
+	<active value="{active}"/>
 	<name>
 
 		<use value="official"/>
@@ -200,7 +200,7 @@ practitioner_template ='''<Practitioner xmlns="http://hl7.org/fhir">
 	</telecom>
 	<telecom>
 		<system value="phone"/>
-		<value value="{phone1}"/> 
+		<value value="{phone1}"/>
 		<use value="work"/>
 		<rank value="2"/>
 	</telecom>
@@ -223,9 +223,9 @@ practitioner_template ='''<Practitioner xmlns="http://hl7.org/fhir">
 		<country value="USA"/>
 	</address>
 	<gender value="{gender}"/>
-	<birthDate value="1964-06-19"/> 
-	
-	{qualification} 
+	<birthDate value="1964-06-19"/>
+
+	{qualification}
 	{communication}
 	</Practitioner>'''
 #*************************practitioner_communication_template*******************
@@ -236,7 +236,7 @@ practitioner_comm_template =[
 			<code value="en"/>
 			<display value="English"/>
 			<userSelected value="true"/>
-		</coding> 
+		</coding>
 		<text value="English"/>
 	</communication>''',
 	'''<communication>
@@ -245,7 +245,7 @@ practitioner_comm_template =[
 			<code value="es"/>
 			<display value="Spanish"/>
 			<userSelected value="true"/>
-		</coding> 
+		</coding>
 			<text value="English and Spanish"/>
 		</communication>
 		<communication>
@@ -254,24 +254,24 @@ practitioner_comm_template =[
 				<code value="{communication_code}"/>
 				<display value="{communication_display}"/>
 				<userSelected value="true"/>
-			</coding> 
+			</coding>
 			<text value="{communication_display}"/>
 		</communication>'''
 			]
 
-	
+
 #*************************practitioner_qual_template****************************
-	
-practitioner_qual_template = '''<qualification> 
+
+practitioner_qual_template = '''<qualification>
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification">
-			
+
 			<extension url="status">
 				<valueCoding>
 					<system value="http://hl7.org/fhir/resource-status"/>
 					<code value="active"/>
 					<display value="active"/>
 				</valueCoding>
-				
+
 			</extension>
 			<extension url="whereValid">
 				<valueCodeableConcept>
@@ -287,13 +287,13 @@ practitioner_qual_template = '''<qualification>
 		</extension>
 		<identifier>
 			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-				<valueCode value="active"/> 
+				<valueCode value="active"/>
 			</extension>
 			<use value="official"/>
 			<type>
 				<text value="Medical License number"/>
 			</type>
-			<system value="{license_system}"/> 
+			<system value="{license_system}"/>
 			<value value="{med_license}"/>
 			<period>
 				<start value="2018-06-19"/>
@@ -450,7 +450,7 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
   <meta>
     <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"/>
   </meta>
-	
+
   <identifier>
     <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
       <valueCode value="active"/>
@@ -470,14 +470,14 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
       <display value="{name}"/>
     </assigner>
   </identifier>
-	
+
   <active value="true"/>
-	
+
   <providedBy>
 		<reference value="Organization/vhdir-organization-{npi}"/>
 		<display value="{name}"/>
   </providedBy>
-	
+
 
   <type>
     <coding>
@@ -488,7 +488,7 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
 		<text value="{HCS_Name}"/>
   </type>
 
-{specialty} 
+{specialty}
 
   <location>
     <reference value="Location/vhdir-location-{npi}"/>
@@ -497,7 +497,7 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
 
   <name value="{name} {HCS_Name} Services"/>
 
-  <comment value="{service_list}"/> 
+  <comment value="{service_list}"/>
 
   <telecom>
 	<system value="phone"/>
@@ -505,7 +505,7 @@ healthcareservice_template ='''<HealthcareService xmlns="http://hl7.org/fhir">
 	<use value="work"/>
 	<rank value="1"/>
   </telecom>
-	
+
   <serviceProvisionCode>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
@@ -568,22 +568,22 @@ practitionerrole_template = '''
 <PractitionerRole xmlns="http://hl7.org/fhir">
  <!-- synthetic practitionerrole -->
 
-	<id value="{f_id}"/> 
-	
+	<id value="{f_id}"/>
+
 	<meta>
 		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
 	</meta>
-	
+
 
 
 
 
 	<identifier>
-		
+
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
 			<valueCode value="active"/>
 		</extension>
-		
+
 		<use value="secondary"/>
 		<type>
 			<coding>
@@ -599,22 +599,22 @@ practitionerrole_template = '''
 			<start value="2016-02-22"/>
 		</period>
 	</identifier>
-	
+
 	<active value="true"/>
 	<period>
 		<start value="2016-02-22"/>
 	</period>
-	
+
 	<practitioner>
 		<reference value="Practitioner/vhdir-practitioner-{pract_npi}"/>
 		<display value="{fname} {lname}"/>
 	</practitioner>
-	
+
 	<organization>
 		<reference value="Organization/vhdir-organization-{org_npi}"/>
 		<display value="{org_name}"/>
 	</organization>
-	
+
 	<code>
 		<coding>
 			<system value="http://nucc.org/provider-taxonomy"/>
@@ -645,7 +645,7 @@ practitionerrole_template = '''
 		<system value="phone"/>
 		<value value="{location_phone}"/>
 	</telecom>
-	
+
 	<availableTime>
 		<daysOfWeek value="mon"/>
 		<daysOfWeek value="tue"/>
@@ -654,12 +654,12 @@ practitionerrole_template = '''
 		<availableStartTime value="09:00:00"/>
 		<availableEndTime value="12:00:00"/>
 	</availableTime>
-	
+
 	<endpoint>
 		<reference value="Endpoint/{f_id}-direct"/>
 	  <display value="Direct address for {fname} {lname} {type_code_display} Role"/>
 	</endpoint>
-	
+
 </PractitionerRole>
 '''
 
@@ -674,7 +674,7 @@ addl_specialty_template = '''<specialty>
 		</coding>
 		{addl_snomed_specialty_coding}
 	</specialty>'''
-	
+
 #***********************addl_snomed_coding_template******************************
 
 addl_snomed_coding_template = '''<coding>
@@ -689,18 +689,18 @@ practitionerrole_network_template = '''
 <PractitionerRole xmlns="http://hl7.org/fhir">
  <!-- synthetic practitionerrole for healthcare provider in network -->
 
-	<id value="{f_id}"/> 
-	
+	<id value="{f_id}"/>
+
 	<meta>
 		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"/>
 	</meta>
-	
+
 	<identifier>
-		
+
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
 			<valueCode value="active"/>
 		</extension>
-		
+
 		<use value="secondary"/>
 		<type>
 			<coding>
@@ -719,12 +719,12 @@ practitionerrole_network_template = '''
 	      <display value="{identifier_assigner_display}"/>
 	    </assigner>
 	</identifier>
-	
+
 	<active value="true"/>
 	<period>
 		<start value="2016-02-22"/>
 	</period>
-	
+
 	<practitioner>
 		<reference value="Practitioner/vhdir-practitioner-{pract_npi}"/>
 		<display value="{fname} {lname}"/>
@@ -742,12 +742,12 @@ practitionerrole_network_template = '''
 		<system value="phone"/>
 		<value value="{location_phone}"/>
 	</telecom>
-	
+
 	<endpoint>
 		<reference value="Endpoint/{f_id}-direct"/>
 	  <display value="Direct address for {fname} {lname} Network Member Role"/>
 	</endpoint>
-	
+
 </PractitionerRole>'''
 
 #****************organizationaffiliation_template******************
@@ -756,7 +756,7 @@ organizationaffiliation_template = '''
 <OrganizationAffiliation xmlns="http://hl7.org/fhir">
   <!--  describes the relationship between provider organization and network  -->
   <id value="{f_id}"/>
-  
+
   <identifier>
     <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
       <valueCode value="active"/>
@@ -776,19 +776,19 @@ organizationaffiliation_template = '''
       <display value="{identifier_assigner_display}"/>
     </assigner>
   </identifier>
-  
+
   <active value="true"/>
-  
+
   <organization>
 		<reference value="Organization/vhdir-organization-{network_npi}"/>
 		<display value="{network_name}"/>
 	</organization>
-  
+
   <participatingOrganization>
     <reference value="Organization/vhdir-organization-{org_npi}"/>
     <display value="{org_name}"/>
   </participatingOrganization>
-  
+
   <code>
     <coding>
       <system value="http://hl7.org/fhir/organization-role"/>
@@ -797,7 +797,7 @@ organizationaffiliation_template = '''
     </coding>
     <text value="Hospital Provider Member"/>
   </code>
-  
+
   <endpoint>
 		<reference value="Endpoint/{f_id}-direct"/>
 	  <display value="Direct address for {org_name} Network Member Role"/>
@@ -818,7 +818,7 @@ batch_bundle_template = '''<Bundle xmlns="http://hl7.org/fhir">
 entries_templ='''<entry>
  <fullUrl value="{server_path}/{f_id}"/>
  <resource>{example}</resource>
- <request> 
+ <request>
   <method value="PUT"/>
   <url value="{Type}/{f_id}"/>
  </request>

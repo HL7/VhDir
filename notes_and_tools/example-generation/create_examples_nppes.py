@@ -27,9 +27,10 @@ logging.debug('Start of program')
 #***********Globals******************
 
 in_path ='/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/sample-nppes-data'
-out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
+out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-small'
+#out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
 server_path = 'http://test.fhir.org/r4'
-
+convert_server = 'http://wildfhir.aegis.net/fhir3-5-0'
 
 #***********Global modified NPPES ORG and PRACT extracts******************
 
@@ -37,9 +38,9 @@ def make_new_npi(old_npi):
         new_npi='999{}'.format(old_npi[3:])  ##rep;ace first 3 digits of npi with 999 TODO validate to validate with Luhn algorithm ... todo check for dupes
         logging.info('changing npi={old_npi} to new npi={new_npi}'.format(old_npi=old_npi,new_npi=new_npi))
         return(new_npi)
-        
-        
-def make_new_name(gender=None):        
+
+
+def make_new_name(gender=None):
         #todo scramble names using names lists
         random_name = names.get_random_name()[0] # fn returns a list of weighted choices
         logging.debug('random_name ={}'.format(random_name))
@@ -49,7 +50,7 @@ def make_new_name(gender=None):
         except KeyError:
             pass
         return(random_name)
-        
+
 def escape_xml(item): # check for xml characters and escape
     escape_map = {
     '&': '&amp;',
@@ -57,7 +58,7 @@ def escape_xml(item): # check for xml characters and escape
     '>': '&gt;',
     '<': '&lt;',
     '"': '&quot;'
-    }  
+    }
     for key in item:
         for k,v in escape_map.items():
             item[key] = item[key].replace(k,v)
@@ -89,7 +90,7 @@ def get_csv(in_path,type):
 
 
        # logging.info('updated row = {i}'.format(i=pformat(i)))
-            
+
     return(my_list)
 
 #**********************************************
@@ -97,6 +98,8 @@ def get_csv(in_path,type):
 org_list = get_csv(in_path,'organization') # organization data gleaned from NPPES
 pract_list = get_csv(in_path,'practitioner') # practitioner data gleaned from NPPES
 network_list= get_csv(in_path,'network') # made up network data
+for i in network_list:
+    logging.info(f'network = {i}')
 
 #**********************************************
 
@@ -179,14 +182,45 @@ def write_xml(out_path,type,file,source=None):
         r_type = '{source}-{type}'.format(source=source,type=type)
     else:
         r_type = type
-        
+
     with open('{out_path}/{type}/vhdr-{r_type}-example-bundle.xml'.format(out_path=out_path, type=type, r_type=r_type ), 'w') as fxml:
         logging.info('writing to file = {out_path}/{type}/vhdr-{type}-example-bundle.xml'.format(out_path=out_path, type=type ))
         # prettify before saving
         parser = etree.XMLParser(remove_blank_text=True)
         root = etree.fromstring(file, parser=parser)
         fxml.write(etree.tostring(root, pretty_print=True).decode())
-        
+
+
+def get_json(server, body, type):
+    from requests import put,get
+    from json import dumps
+
+    x_headers ={
+    'Content-Type':'application/fhir+xml',
+    'Accept':'application/fhir+xml'
+    }
+    j_headers ={
+    'Content-Type':'application/fhir+json',
+    'Accept':'application/fhir+json'
+    }
+    r = put(url=f'{server}/Bundle/vhdir-{type}-examples-bundle', data=body, headers=x_headers)
+    logging.info(f'put xml status_code = {r.status_code}')
+    r = get(url=f'{server}/Bundle/vhdir-{type}-examples-bundle', headers=j_headers)
+    logging.info(f'get json status_code = {r.status_code}')
+    return dumps(r.json(), indent =3)
+
+
+def write_json(out_path,type,file,source=None):
+    if source:
+        r_type = '{source}-{type}'.format(source=source,type=type)
+    else:
+        r_type = type
+
+    with open('{out_path}/{type}/vhdr-{r_type}-example-bundle.json'.format(out_path=out_path, type=type, r_type=r_type ), 'w') as fjson:
+        logging.info('writing to file = {out_path}/{type}/vhdr-{type}-example-bundle.json'.format(out_path=out_path, type=type ))
+        fjson.write(file)
+
+
 def write_resource_csv(type,data):
     with open('{out_path}/{type}/sample-nppes-{type}-data.csv'.format(out_path=out_path,type=type), mode='w', newline='') as csv_file:
         writer = csv.writer(csv_file, dialect='excel', quoting=csv.QUOTE_ALL)
@@ -208,21 +242,21 @@ def get_org(state,postal_code):  # gert o rg based on state and closest zip
     distance_list=[]
     pract_zip = get_zip(postal_code)  # normalize to 5 digit zip
     for item in org_list:
-        #create new list (distance, NPI) 
+        #create new list (distance, NPI)
         if state == item['Provider Business Practice Location Address State Name']:
             org_zip = get_zip(item['Provider Business Practice Location Address Postal Code'])
             # logging.info('pract_zips= {pract_zip} org_zip = {org_zip} diff = {diff}'.format(pract_zip=pract_zip,org_zip=org_zip,diff=abs(int(pract_zip) - int(org_zip))))
             distance_list.append((abs(int(pract_zip) - int(org_zip)),item['NPI'],item['Provider Business Practice Location Address State Name'],item))
 
     distance_list.sort(key=lambda tup: tup[0]) #sort list by first item in tuple
-            
+
     # logging.info('org_choices= {org_choices}'.format(org_choices=[i[0:2] for i in distance_list]))
     # randomly assign to 1-3 orgs
     org_item = [i[3] for i in distance_list[0:choice([1,2,3])]]
     # logging.info('org_item = {org_item}'.format(org_item=org_item))
     return(org_item)  # return list of org items
-    
-    
+
+
 def get_network(state,all=False):  # get network based on state
     network_item = [item for item in network_list if item['state'] == state]
     if all:
@@ -252,9 +286,9 @@ def get_practspecialty_code(nucc):
     except KeyError:
         return('Allopathic and Osteopathic Physicians')
 
-def get_specialty_display(nucc): 
+def get_specialty_display(nucc):
     d1=nucc_dict[nucc][2]
-        
+
     d2=nucc_dict[nucc][3]
     if d2:
         specialty_display = '{d1}/{d2}'.format(d1=d1,d2=d2)
@@ -362,7 +396,7 @@ def practrole_network_example(pract_item,f_id,type,pract_npi,org_npi,org_name,ma
     identifier_system=urlify(managing_org_id),
     identifier_value=get_prov_identifier(),
     identifier_assigner='identifier_assigner', #todo
-    identifier_assigner_display=managing_org_name, 
+    identifier_assigner_display=managing_org_name,
     fname=pract_item['Provider First Name'], # based on Gender
     lname=pract_item['Provider Last Name (Legal Name)'], # based on Gender
     sname=pract_item['Provider Credential Text'] if pract_item['Provider Credential Text'] else '5555555555',
@@ -395,11 +429,11 @@ def get_specialty(hcs,return_type): # hcs= healthcareservice
     specialties_xml=''
     if hcs == 'miscellaneous' and return_type=='s_list': # default value this
         return(hcs)
-        
+
     if hcs == 'miscellaneous' and return_type=='s_xml': # default value this
         return(f_templ.hcs_specialty_template.format(
         specialty_code=hcs,
-        specialty_display='Miscellaneous' 
+        specialty_display='Miscellaneous'
         ))
 
     for k,v in nucc_healthcareservice_map.items():
@@ -417,12 +451,12 @@ def get_specialty(hcs,return_type): # hcs= healthcareservice
         ', '.join([get_specialty_display(specialty) for specialty in specialties])))
     for specialty in specialties:
         # logging.info('hcs={hcs}, specialty={specialty}'.format(hcs=hcs,specialty=specialty))
-        
+
         specialty_xml=f_templ.hcs_specialty_template.format(
         specialty_code=specialty,
         specialty_display=get_specialty_display(specialty)
         )
-        
+
         specialties_xml = '{specialties_xml}{specialty_xml}'.format(specialties_xml=specialties_xml,specialty_xml=specialty_xml)
     return(specialties_xml)
 
@@ -524,9 +558,9 @@ def org_example(item,f_id,type,npi):
         partof=get_partof_org()
         )
         )
-        
+
 def pract_example(item,f_id,type,npi):
-    # use fhir xml template to create practitioner qualification instance 
+    # use fhir xml template to create practitioner qualification instance
     qualification = f_templ.practitioner_qual_template.format(
             license_state=item['Provider License Number State Code_1'],
             license_state_display=usps_map[item['Provider License Number State Code_1']][0],
@@ -537,7 +571,7 @@ def pract_example(item,f_id,type,npi):
             qual_code_system='http://nucc.org/provider-taxonomy',
             qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_1'])
             )
-            
+
     #  create a second  qualification instance if data is present
     if item['Provider License Number_2']:
         qualification1 = f_templ.practitioner_qual_template.format(
@@ -551,7 +585,7 @@ def pract_example(item,f_id,type,npi):
             qual_code_display=get_qual_code_display(item['Healthcare Provider Taxonomy Code_2'])
             )
         qualification = qualification + qualification1
-        
+
     # use fhir xml template to create practitioner instance
     example = f_templ.practitioner_template.format(
         type=type,
@@ -575,14 +609,14 @@ def pract_example(item,f_id,type,npi):
         communication=choices(f_templ.practitioner_comm_template,weights=[80,20])[0] # skewed random choice of en or en+es
     )
     return(example)
-    
+
 
 def create_entry(entries,server_path,f_id,example,Type):
     entry = f_templ.entries_templ.format(server_path=server_path, f_id=f_id, example=example, Type=Type)
     return('{entries}\n{entry}'.format(entries=entries, entry=entry))
 
-    
-    
+
+
 def create_batch_bundle(entries,type):
     timestamp = '{}Z'.format(datetime.utcnow().isoformat())
     return(f_templ.batch_bundle_template.format(
@@ -602,7 +636,7 @@ def main(type,id_list,source=None):
         Type=rr.r_map[type]
     except KeyError:
         Type='Organization'
-        
+
     entries = ''
 
 
@@ -637,7 +671,7 @@ def main(type,id_list,source=None):
             #    id_list.append((f_id,item['Provider Organization Name (Legal Business Name)']))
             #elif source == 'practitioner':
             #    id_list.append((f_id,'{} {}'.format(*random_name)))
-        
+
     elif type == 'healthcareservice':
         for item in org_list:
             npi = item['NPI']
@@ -662,7 +696,7 @@ def main(type,id_list,source=None):
             except KeyError as e:
                 logging.error('practitioner {npi} skipped because of {e}'.format(npi=npi,e=e))
                 skip_list.append(npi)
-        
+
     elif type == 'practitionerrole': # one or more for each practitioner need to assign to org
         for item in pract_list:
             org_npi_list=[]
@@ -706,19 +740,24 @@ def main(type,id_list,source=None):
                 id_list[type].append((org_npi,'{Type}/{f_id}'.format(Type=Type,f_id=f_id),'{name} Network Member'.format(name=item['Provider Organization Name (Legal Business Name)']),network_npi))
                 entries = create_entry(entries,server_path,f_id,example,Type)
 
- 
+
 
     logging.info('create {type} example: \n{example}'.format(type=type,example=f_id))  # change example to f_id for faster perfomance
-        
-        
+
+
     batch_bundle = create_batch_bundle(entries,type)
-    
+
 
 
     write_xml(out_path,type,batch_bundle,source)  #save to file
 
+    json_bundle = get_json(convert_server,batch_bundle,type)#use fhir server to convert bundle xml to json
+    write_json(out_path,type,json_bundle,source)  #save to file
+
+    write_resource_csv(spinalcase(type),resource_keys[snakecase(type)])
+
     return()
-    
+
 #********************* __name__ == "__main__" ********************
 
 #This only happens when this module is called directly:
@@ -732,23 +771,14 @@ if __name__ == "__main__":
         practitionerrole=[],
         organizationaffiliation=[]
         )
-        
-    main('organization',resource_keys)
+
+    #main('organization',resource_keys)
     main('network',resource_keys)
-    main('location',resource_keys,'organization')
-    main('healthcareservice',resource_keys,'organization')
-    main('practitioner',resource_keys)
-    main('practitionerrole',resource_keys,'practitioner')
-    main('organizationaffiliation',resource_keys,'organization')
-    
+    #main('location',resource_keys)
+    #main('healthcareservice',resource_keys)
+    #main('practitioner',resource_keys)
+    #main('practitionerrole',resource_keys)
+    #main('organizationaffiliation',resource_keys)
 
-    #main('location',resource_keys['location'],'practitioner')
-
-        
-    for k,v in resource_keys.items(): # convert to csv:
-        write_resource_csv(k,v)
-        #pairs = [str([*t]) for t in resource_keys[type]]
-        #print(pairs)
-        #logging.info('{} resource_keys:\n {}'.format(type.capitalize(),resource_keys[type]))
 
     logging.debug('end of program')

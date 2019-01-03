@@ -7,35 +7,35 @@ Location ( same as address for org and practitioner)
 
 HealthcareService
   ?
-  
+
 Endpoint
-  direct addresses
+  direct addresses - done whew!  (just small set)
 
 
 Practitioner
    from CMS data
-   remove all the comments
+   remove all the comments - done
 
 PractitionerRole
-    from CMs data
+    from CMs data  -done
 
 Network
   1-2 (PPO)
 
 
-todo get to validate.
+todo get to validate. - done?
 
 
 3 states
-   Mass, RI, Conn
-1-2k practitioners, PRs,
-10-20 organizations
+   Mass, RI, Conn  done
+1-2k practitioners, PRs  - done
+10-20 organizations  - 40  done
 
 hospitals
 clinics
 specialties
 
-3-4 Networks
+3-4 Networks  - done
 
 King Hospital System
 Acme Healthcare
@@ -45,24 +45,70 @@ Blue Hope
   Green Circle
   Persona
   HIE
-Direct addresses
+Direct addresses ...  done
+     removed identifier element - TODO need to discuss what is good for. is not the actual endpoint as in IG example...
+ payload types  - text?, images and mimetypes paired to this
 
-org roles. TODO
+org roles. done
 
 
-add text
-add narratives if Brian does not
 
-add verification results if Brian does not
+add narratives if Brian does not - done Brian's server does this
+
+add verification results if Brian does not  - Brian did this.
 
 add in extension in future case
 
 
+!!VhDir Care Team
+    Functionally empty: use roles and orgs
+    Use cases for .todo... used in womens' shelter Use Case - not supported by Brian's Server
+VhDir Endpoint
+    Direct addresses already defined Direct addresses OK for now
+* VhDir Insurance Plan  - created four  + 3 each bronze, silver and gold for each state
+    link Networks - one for each network
+     rename networks one for each state  - done
+VhDirCoverage Area - Location
+      state - done , more complicated - two boston and hartford
+* VhDir Restriction  2  handmade examples used in womens' shelter Use Case 
+
+
+Women's shelter example
 
 
 
+VhDir Healthcare Service
+VhDir Location
+VhDir Network
+  Networks - Healthcare Plans
+  * Make Networks for self-insured plans  add four more ... done
+  Make HIE for part of state  Western Mass, all RI, Concord area  -done
+  Update roles for orgs and providers for networks. -done ...whew...
 
+VhDir Organization
 
+* VhDir Organization (payer)
+  Contracted insurer to administer the insurance claims.  done
+* VhDir Organization (employer)
+   3 State of .... done
+   1 United Technologies  done
+VhDir Organization (partOf hospital system)  - done
 
+VhDir Organization Affiliation
+VhDir Practitioner
+VhDir Practitioner Role
+VhDir Validation
 
+Geocoded queries.
 
+download and setup local directory
+
+*** Document the subscription workflow:  ping directory to update change in status.
+
+review US Core constraints on  VHDIR and document.
+
+** instead of strings use dict + f_string - nuch more direct and easier to manage **
+
+can validate structure using dumps and python models.
+
+ can also scrub dicts or use ternaries to scrub data.

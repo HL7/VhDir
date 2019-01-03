@@ -1,0 +1,7 @@
+npi,partof_id,partof_display,name,phone,address,city,state,zip
+9990010000,,,King Hospital System,6075555555,50 Park Plaza,Boston,MA,2101
+9990020000,,,Acme Healthcare,9595555555,263 Farmington Avenue,Farmington,CT,6030
+9990030000,,,Blue Hope,4015555555,45 Willard Ave,Providence,RI,2901
+9990040000,,,Massachusetts HIE,6075555555,4 Yawkey Way,Boston,MA,2215
+9990050000,,,Connecticut HIE,9595555555,221 Trumbull Street,Hartford,CT,6101
+9990060000,,,Rhode Island HIE,4015555555,"0 Holden Street, Suite 300",Providence,RI,2901

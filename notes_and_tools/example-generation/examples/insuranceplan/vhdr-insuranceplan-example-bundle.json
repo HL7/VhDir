@@ -1,0 +1,4724 @@
+{
+   "resourceType": "Bundle",
+   "id": "vhdir-insuranceplan-examples-bundle",
+   "type": "batch",
+   "timestamp": "2019-01-03T00:50:36.317137Z",
+   "entry": [
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID200000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID200000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID200000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "GIC Silver Plus Plan",
+            "alias": [
+               "GIC PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990070000",
+               "display": "Group Insurance Commission"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6177272310"
+                     },
+                     {
+                        "system": "email",
+                        "value": "https://www.mass.gov/orgs/group-insurance-commission"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "GIC Silver Plus Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID100000",
+                  "display": "State of Massachusetts Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID100000",
+                        "display": "State of Massachusetts Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID200000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID210000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID210000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID210000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Expanded Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronzeexp",
+                        "display": "Expanded Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Connecticut Bronze PPO Plan",
+            "alias": [
+               "CT HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990080000",
+               "display": "Connecticut Office of the State Comptroller"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "8607023300"
+                     },
+                     {
+                        "system": "email",
+                        "value": "https://www.osc.ct.gov"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Connecticut Bronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID110000",
+                  "display": "State of Connecticut HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID110000",
+                        "display": "State of Connecticut HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID210000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID220000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID220000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID220000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Rhode Island Silver Plan",
+            "alias": [
+               "RI PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990090000",
+               "display": "Office of Employee Benefits"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015748530"
+                     },
+                     {
+                        "system": "email",
+                        "value": "http://www.employeebenefits.ri.gov/"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Rhode Island Silver Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID120000",
+                  "display": "State of Rhode Island Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID120000",
+                        "display": "State of Rhode Island Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID220000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID230000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID230000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID230000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "UTC Silver Plus Plan",
+            "alias": [
+               "UTC PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990110000",
+               "display": "United Technologies Health Insurance"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-hartford-area",
+                  "display": "Greater Hartford Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "8607287000"
+                     },
+                     {
+                        "system": "email",
+                        "value": " http://www.pw.utc.com/Human-Resources"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "UTC Silver Plus Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID130000",
+                  "display": "United Technologies Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID130000",
+                        "display": "United Technologies Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID230000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID240000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID240000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID240000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of MassachusettsBronze PPO Plan",
+            "alias": [
+               "Acme MA BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-boston-area",
+                  "display": "Greater Boston Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of MassachusettsBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID010000",
+                  "display": "Acme of Massechusetts Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID010000",
+                        "display": "Acme of Massechusetts Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID240000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID250000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID250000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID250000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of MassachusettsBronze HMO Plan",
+            "alias": [
+               "GC MA BRONZE HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of MassachusettsBronze HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID020000",
+                  "display": "Green Circle of Massachusetts HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID020000",
+                        "display": "Green Circle of Massachusetts HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID250000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID260000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID260000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID260000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of MassachusettsBronze PPO Plan",
+            "alias": [
+               "Persona MA BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of MassachusettsBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID030000",
+                  "display": "Massachusetts Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID030000",
+                        "display": "Massachusetts Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID260000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID270000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID270000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID270000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of ConnecticutBronze PPO Plan",
+            "alias": [
+               "Acme CT BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-hartford-area",
+                  "display": "Greater Hartford Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of ConnecticutBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID040000",
+                  "display": "Acme of Connecticut Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID040000",
+                        "display": "Acme of Connecticut Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID270000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID280000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID280000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID280000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of ConnecticutBronze HMO Plan",
+            "alias": [
+               "GC CT BRONZE HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of ConnecticutBronze HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID050000",
+                  "display": "Green Circle of Connecticut HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID050000",
+                        "display": "Green Circle of Connecticut HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID280000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID290000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID290000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID290000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of ConnecticutBronze PPO Plan",
+            "alias": [
+               "Persona CT BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of ConnecticutBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID060000",
+                  "display": "Connecticut Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID060000",
+                        "display": "Connecticut Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID290000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID300000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID300000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID300000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of Rhode IslandBronze PPO Plan",
+            "alias": [
+               "Acme RI BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of Rhode IslandBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID070000",
+                  "display": "Acme of Rhode Island Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID070000",
+                        "display": "Acme of Rhode Island Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID300000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID310000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID310000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID310000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of Rhode IslandBronze HMO Plan",
+            "alias": [
+               "GC RI BRONZE HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of Rhode IslandBronze HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID080000",
+                  "display": "Green Circle of Rhode Island HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID080000",
+                        "display": "Green Circle of Rhode Island HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID310000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID320000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID320000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID320000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Bronze",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "bronze",
+                        "display": "Bronze"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of Rhode IslandBronze PPO Plan",
+            "alias": [
+               "Persona RI BRONZE PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of Rhode IslandBronze PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID090000",
+                  "display": "Rhode Island Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID090000",
+                        "display": "Rhode Island Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID320000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID360000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID360000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID360000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of MassachusettsSilver PPO Plan",
+            "alias": [
+               "Acme MA SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-boston-area",
+                  "display": "Greater Boston Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of MassachusettsSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID010000",
+                  "display": "Acme of Massechusetts Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID010000",
+                        "display": "Acme of Massechusetts Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID360000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID370000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID370000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID370000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of MassachusettsSilver HMO Plan",
+            "alias": [
+               "GC MA SILVER HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of MassachusettsSilver HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID020000",
+                  "display": "Green Circle of Massachusetts HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID020000",
+                        "display": "Green Circle of Massachusetts HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID370000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID380000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID380000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID380000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of MassachusettsSilver PPO Plan",
+            "alias": [
+               "Persona MA SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of MassachusettsSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID030000",
+                  "display": "Massachusetts Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID030000",
+                        "display": "Massachusetts Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID380000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID390000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID390000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID390000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of ConnecticutSilver PPO Plan",
+            "alias": [
+               "Acme CT SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-hartford-area",
+                  "display": "Greater Hartford Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of ConnecticutSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID040000",
+                  "display": "Acme of Connecticut Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID040000",
+                        "display": "Acme of Connecticut Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID390000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID400000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID400000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID400000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of ConnecticutSilver HMO Plan",
+            "alias": [
+               "GC CT SILVER HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of ConnecticutSilver HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID050000",
+                  "display": "Green Circle of Connecticut HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID050000",
+                        "display": "Green Circle of Connecticut HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID400000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID410000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID410000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID410000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of ConnecticutSilver PPO Plan",
+            "alias": [
+               "Persona CT SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of ConnecticutSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID060000",
+                  "display": "Connecticut Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID060000",
+                        "display": "Connecticut Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID410000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID420000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID420000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID420000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of Rhode IslandSilver PPO Plan",
+            "alias": [
+               "Acme RI SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of Rhode IslandSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID070000",
+                  "display": "Acme of Rhode Island Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID070000",
+                        "display": "Acme of Rhode Island Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID420000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID430000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID430000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID430000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of Rhode IslandSilver HMO Plan",
+            "alias": [
+               "GC RI SILVER HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of Rhode IslandSilver HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID080000",
+                  "display": "Green Circle of Rhode Island HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID080000",
+                        "display": "Green Circle of Rhode Island HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID430000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID440000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID440000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID440000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Silver",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "silver",
+                        "display": "Silver"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of Rhode IslandSilver PPO Plan",
+            "alias": [
+               "Persona RI SILVER PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of Rhode IslandSilver PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID090000",
+                  "display": "Rhode Island Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID090000",
+                        "display": "Rhode Island Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID440000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID450000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID450000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID450000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of MassachusettsGold PPO Plan",
+            "alias": [
+               "Acme MA GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990120000",
+               "display": "Acme Insurance Co of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-boston-area",
+                  "display": "Greater Boston Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of MassachusettsGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID010000",
+                  "display": "Acme of Massechusetts Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID010000",
+                        "display": "Acme of Massechusetts Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID450000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID460000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID460000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID460000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of MassachusettsGold HMO Plan",
+            "alias": [
+               "GC MA GOLD HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990130000",
+               "display": "Green Circle of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of MassachusettsGold HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID020000",
+                  "display": "Green Circle of Massachusetts HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID020000",
+                        "display": "Green Circle of Massachusetts HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID460000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID470000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID470000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID470000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of MassachusettsGold PPO Plan",
+            "alias": [
+               "Persona MA GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990140000",
+               "display": "Persona of Massachusetts"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-massachusetts",
+                  "display": "Massachusetts"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "6075555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of MassachusettsGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID030000",
+                  "display": "Massachusetts Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID030000",
+                        "display": "Massachusetts Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID470000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID480000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID480000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID480000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of ConnecticutGold PPO Plan",
+            "alias": [
+               "Acme CT GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990150000",
+               "display": "Acme Insurance Co of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-greater-hartford-area",
+                  "display": "Greater Hartford Area"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of ConnecticutGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID040000",
+                  "display": "Acme of Connecticut Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID040000",
+                        "display": "Acme of Connecticut Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID480000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID490000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID490000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID490000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of ConnecticutGold HMO Plan",
+            "alias": [
+               "GC CT GOLD HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990160000",
+               "display": "Green Circle of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of ConnecticutGold HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID050000",
+                  "display": "Green Circle of Connecticut HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID050000",
+                        "display": "Green Circle of Connecticut HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID490000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID500000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID500000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID500000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of ConnecticutGold PPO Plan",
+            "alias": [
+               "Persona CT GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990170000",
+               "display": "Persona of Connecticut"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-connecticut",
+                  "display": "Connecticut"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "9595555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of ConnecticutGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID060000",
+                  "display": "Connecticut Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID060000",
+                        "display": "Connecticut Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID500000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID510000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID510000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID510000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Acme Insurance Co of Rhode IslandGold PPO Plan",
+            "alias": [
+               "Acme RI GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990180000",
+               "display": "Acme Insurance Co of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Acme Insurance Co of Rhode IslandGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID070000",
+                  "display": "Acme of Rhode Island Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID070000",
+                        "display": "Acme of Rhode Island Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID510000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID520000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID520000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID520000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Green Circle of Rhode IslandGold HMO Plan",
+            "alias": [
+               "GC RI GOLD HMO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990190000",
+               "display": "Green Circle of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Green Circle of Rhode IslandGold HMO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID080000",
+                  "display": "Green Circle of Rhode Island HMO"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID080000",
+                        "display": "Green Circle of Rhode Island HMO"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID520000"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID530000",
+         "resource": {
+            "resourceType": "InsurancePlan",
+            "id": "vhdir-insuranceplan-HPID530000",
+            "identifier": [
+               {
+                  "use": "official",
+                  "type": {
+                     "text": "HIOS product ID"
+                  },
+                  "system": "https://www.cms.gov/CCIIO/",
+                  "value": "HPID530000",
+                  "assigner": {
+                     "display": "Centers for Medicare and Medicaid Services"
+                  }
+               }
+            ],
+            "status": "active",
+            "type": [
+               {
+                  "text": "Gold",
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics",
+                        "code": "gold",
+                        "display": "Gold"
+                     }
+                  ]
+               }
+            ],
+            "name": "Persona of Rhode IslandGold PPO Plan",
+            "alias": [
+               "Persona RI GOLD PPO"
+            ],
+            "period": {
+               "start": "2019-01-01",
+               "end": "2020-01-01"
+            },
+            "ownedBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "administeredBy": {
+               "reference": "Organization/vhdir-managing-org-9990200000",
+               "display": "Persona of Rhode Island"
+            },
+            "coverageArea": [
+               {
+                  "reference": "vhdir-location-coverage-rhode-island",
+                  "display": "Rhode Island"
+               }
+            ],
+            "contact": [
+               {
+                  "purpose": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                           "code": "PATINF",
+                           "display": "Patient"
+                        }
+                     ],
+                     "text": "General information"
+                  },
+                  "telecom": [
+                     {
+                        "system": "phone",
+                        "value": "4015555555"
+                     },
+                     {
+                        "system": "email"
+                     }
+                  ]
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/item[\"plan_id\"]-direct",
+                  "display": "Persona of Rhode IslandGold PPO Plan Direct address"
+               }
+            ],
+            "network": [
+               {
+                  "reference": "Organization/vhdir-organization-HPID090000",
+                  "display": "Rhode Island Persona Preferred Provider Network"
+               }
+            ],
+            "coverage": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "code": "medical",
+                           "display": "Medical"
+                        }
+                     ],
+                     "text": "Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"
+                  },
+                  "network": [
+                     {
+                        "reference": "Organization/vhdir-organization-HPID090000",
+                        "display": "Rhode Island Persona Preferred Provider Network"
+                     }
+                  ],
+                  "benefit": [
+                     {
+                        "type": {
+                           "text": "Routine Wellness Exam (Adult) – Adult"
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "value": {
+                                 "value": 1,
+                                 "unit": "visit/yr",
+                                 "system": "http://unitsofmeasure.org",
+                                 "code": "{visit}/a"
+                              },
+                              "code": {
+                                 "text": "annually"
+                              }
+                           }
+                        ]
+                     },
+                     {
+                        "type": {
+                           "coding": [
+                              {
+                                 "code": "001",
+                                 "display": "Primary care visit to treat an injury or illness"
+                              }
+                           ]
+                        },
+                        "requirement": "N/A",
+                        "limit": [
+                           {
+                              "code": {
+                                 "text": "unlimited"
+                              }
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "InsurancePlan/vhdir-insuranceplan-HPID530000"
+         }
+      }
+   ]
+}

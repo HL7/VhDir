@@ -1,0 +1,3704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="vhdir-insuranceplan-examples-bundle"/>
+  <meta>
+    <versionId value="4"/>
+    <lastUpdated value="2019-01-02T19:50:44.584-05:00"/>
+  </meta>
+  <type value="batch"/>
+  <timestamp value="2019-01-03T00:50:36.317137Z"/>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID200000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID200000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID200000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="GIC Silver Plus Plan"/>
+        <alias value="GIC PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990070000"/>
+          <display value="Group Insurance Commission"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6177272310"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="https://www.mass.gov/orgs/group-insurance-commission"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="GIC Silver Plus Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID100000"/>
+          <display value="State of Massachusetts Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID100000"/>
+            <display value="State of Massachusetts Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID200000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID210000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID210000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID210000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronzeexp"/>
+            <display value="Expanded Bronze"/>
+          </coding>
+          <text value="Expanded Bronze"/>
+        </type>
+        <name value="Connecticut Bronze PPO Plan"/>
+        <alias value="CT HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990080000"/>
+          <display value="Connecticut Office of the State Comptroller"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="8607023300"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="https://www.osc.ct.gov"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Connecticut Bronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID110000"/>
+          <display value="State of Connecticut HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID110000"/>
+            <display value="State of Connecticut HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID210000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID220000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID220000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID220000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Rhode Island Silver Plan"/>
+        <alias value="RI PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990090000"/>
+          <display value="Office of Employee Benefits"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015748530"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="http://www.employeebenefits.ri.gov/"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Rhode Island Silver Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID120000"/>
+          <display value="State of Rhode Island Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID120000"/>
+            <display value="State of Rhode Island Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID220000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID230000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID230000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID230000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="UTC Silver Plus Plan"/>
+        <alias value="UTC PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990110000"/>
+          <display value="United Technologies Health Insurance"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-hartford-area"/>
+          <display value="Greater Hartford Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="8607287000"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value=" http://www.pw.utc.com/Human-Resources"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="UTC Silver Plus Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID130000"/>
+          <display value="United Technologies Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID130000"/>
+            <display value="United Technologies Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID230000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID240000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID240000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID240000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Acme Insurance Co of MassachusettsBronze PPO Plan"/>
+        <alias value="Acme MA BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-boston-area"/>
+          <display value="Greater Boston Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of MassachusettsBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID010000"/>
+          <display value="Acme of Massechusetts Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID010000"/>
+            <display value="Acme of Massechusetts Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID240000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID250000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID250000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID250000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Green Circle of MassachusettsBronze HMO Plan"/>
+        <alias value="GC MA BRONZE HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of MassachusettsBronze HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID020000"/>
+          <display value="Green Circle of Massachusetts HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID020000"/>
+            <display value="Green Circle of Massachusetts HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID250000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID260000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID260000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID260000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Persona of MassachusettsBronze PPO Plan"/>
+        <alias value="Persona MA BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of MassachusettsBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID030000"/>
+          <display value="Massachusetts Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID030000"/>
+            <display value="Massachusetts Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID260000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID270000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID270000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID270000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Acme Insurance Co of ConnecticutBronze PPO Plan"/>
+        <alias value="Acme CT BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-hartford-area"/>
+          <display value="Greater Hartford Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of ConnecticutBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID040000"/>
+          <display value="Acme of Connecticut Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID040000"/>
+            <display value="Acme of Connecticut Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID270000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID280000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID280000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID280000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Green Circle of ConnecticutBronze HMO Plan"/>
+        <alias value="GC CT BRONZE HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of ConnecticutBronze HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID050000"/>
+          <display value="Green Circle of Connecticut HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID050000"/>
+            <display value="Green Circle of Connecticut HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID280000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID290000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID290000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID290000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Persona of ConnecticutBronze PPO Plan"/>
+        <alias value="Persona CT BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of ConnecticutBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID060000"/>
+          <display value="Connecticut Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID060000"/>
+            <display value="Connecticut Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID290000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID300000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID300000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID300000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Acme Insurance Co of Rhode IslandBronze PPO Plan"/>
+        <alias value="Acme RI BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of Rhode IslandBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID070000"/>
+          <display value="Acme of Rhode Island Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID070000"/>
+            <display value="Acme of Rhode Island Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID300000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID310000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID310000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID310000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Green Circle of Rhode IslandBronze HMO Plan"/>
+        <alias value="GC RI BRONZE HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of Rhode IslandBronze HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID080000"/>
+          <display value="Green Circle of Rhode Island HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID080000"/>
+            <display value="Green Circle of Rhode Island HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID310000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID320000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID320000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID320000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="bronze"/>
+            <display value="Bronze"/>
+          </coding>
+          <text value="Bronze"/>
+        </type>
+        <name value="Persona of Rhode IslandBronze PPO Plan"/>
+        <alias value="Persona RI BRONZE PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of Rhode IslandBronze PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID090000"/>
+          <display value="Rhode Island Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID090000"/>
+            <display value="Rhode Island Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID320000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID360000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID360000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID360000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Acme Insurance Co of MassachusettsSilver PPO Plan"/>
+        <alias value="Acme MA SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-boston-area"/>
+          <display value="Greater Boston Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of MassachusettsSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID010000"/>
+          <display value="Acme of Massechusetts Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID010000"/>
+            <display value="Acme of Massechusetts Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID360000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID370000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID370000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID370000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Green Circle of MassachusettsSilver HMO Plan"/>
+        <alias value="GC MA SILVER HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of MassachusettsSilver HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID020000"/>
+          <display value="Green Circle of Massachusetts HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID020000"/>
+            <display value="Green Circle of Massachusetts HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID370000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID380000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID380000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID380000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Persona of MassachusettsSilver PPO Plan"/>
+        <alias value="Persona MA SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of MassachusettsSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID030000"/>
+          <display value="Massachusetts Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID030000"/>
+            <display value="Massachusetts Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID380000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID390000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID390000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID390000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Acme Insurance Co of ConnecticutSilver PPO Plan"/>
+        <alias value="Acme CT SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-hartford-area"/>
+          <display value="Greater Hartford Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of ConnecticutSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID040000"/>
+          <display value="Acme of Connecticut Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID040000"/>
+            <display value="Acme of Connecticut Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID390000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID400000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID400000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID400000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Green Circle of ConnecticutSilver HMO Plan"/>
+        <alias value="GC CT SILVER HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of ConnecticutSilver HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID050000"/>
+          <display value="Green Circle of Connecticut HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID050000"/>
+            <display value="Green Circle of Connecticut HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID400000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID410000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID410000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID410000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Persona of ConnecticutSilver PPO Plan"/>
+        <alias value="Persona CT SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of ConnecticutSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID060000"/>
+          <display value="Connecticut Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID060000"/>
+            <display value="Connecticut Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID410000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID420000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID420000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID420000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Acme Insurance Co of Rhode IslandSilver PPO Plan"/>
+        <alias value="Acme RI SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of Rhode IslandSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID070000"/>
+          <display value="Acme of Rhode Island Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID070000"/>
+            <display value="Acme of Rhode Island Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID420000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID430000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID430000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID430000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Green Circle of Rhode IslandSilver HMO Plan"/>
+        <alias value="GC RI SILVER HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of Rhode IslandSilver HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID080000"/>
+          <display value="Green Circle of Rhode Island HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID080000"/>
+            <display value="Green Circle of Rhode Island HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID430000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID440000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID440000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID440000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="silver"/>
+            <display value="Silver"/>
+          </coding>
+          <text value="Silver"/>
+        </type>
+        <name value="Persona of Rhode IslandSilver PPO Plan"/>
+        <alias value="Persona RI SILVER PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of Rhode IslandSilver PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID090000"/>
+          <display value="Rhode Island Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID090000"/>
+            <display value="Rhode Island Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID440000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID450000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID450000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID450000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Acme Insurance Co of MassachusettsGold PPO Plan"/>
+        <alias value="Acme MA GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990120000"/>
+          <display value="Acme Insurance Co of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-boston-area"/>
+          <display value="Greater Boston Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of MassachusettsGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID010000"/>
+          <display value="Acme of Massechusetts Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID010000"/>
+            <display value="Acme of Massechusetts Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID450000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID460000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID460000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID460000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Green Circle of MassachusettsGold HMO Plan"/>
+        <alias value="GC MA GOLD HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990130000"/>
+          <display value="Green Circle of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of MassachusettsGold HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID020000"/>
+          <display value="Green Circle of Massachusetts HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID020000"/>
+            <display value="Green Circle of Massachusetts HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID460000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID470000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID470000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID470000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Persona of MassachusettsGold PPO Plan"/>
+        <alias value="Persona MA GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990140000"/>
+          <display value="Persona of Massachusetts"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-massachusetts"/>
+          <display value="Massachusetts"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="6075555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of MassachusettsGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID030000"/>
+          <display value="Massachusetts Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID030000"/>
+            <display value="Massachusetts Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID470000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID480000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID480000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID480000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Acme Insurance Co of ConnecticutGold PPO Plan"/>
+        <alias value="Acme CT GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990150000"/>
+          <display value="Acme Insurance Co of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-greater-hartford-area"/>
+          <display value="Greater Hartford Area"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of ConnecticutGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID040000"/>
+          <display value="Acme of Connecticut Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID040000"/>
+            <display value="Acme of Connecticut Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID480000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID490000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID490000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID490000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Green Circle of ConnecticutGold HMO Plan"/>
+        <alias value="GC CT GOLD HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990160000"/>
+          <display value="Green Circle of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of ConnecticutGold HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID050000"/>
+          <display value="Green Circle of Connecticut HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID050000"/>
+            <display value="Green Circle of Connecticut HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID490000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID500000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID500000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID500000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Persona of ConnecticutGold PPO Plan"/>
+        <alias value="Persona CT GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990170000"/>
+          <display value="Persona of Connecticut"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-connecticut"/>
+          <display value="Connecticut"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="9595555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of ConnecticutGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID060000"/>
+          <display value="Connecticut Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID060000"/>
+            <display value="Connecticut Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID500000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID510000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID510000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID510000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Acme Insurance Co of Rhode IslandGold PPO Plan"/>
+        <alias value="Acme RI GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990180000"/>
+          <display value="Acme Insurance Co of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Acme Insurance Co of Rhode IslandGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID070000"/>
+          <display value="Acme of Rhode Island Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID070000"/>
+            <display value="Acme of Rhode Island Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID510000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID520000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID520000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID520000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Green Circle of Rhode IslandGold HMO Plan"/>
+        <alias value="GC RI GOLD HMO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990190000"/>
+          <display value="Green Circle of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Green Circle of Rhode IslandGold HMO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID080000"/>
+          <display value="Green Circle of Rhode Island HMO"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID080000"/>
+            <display value="Green Circle of Rhode Island HMO"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID520000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID530000"/>
+    <resource>
+      <InsurancePlan>
+        <id value="vhdir-insuranceplan-HPID530000"/>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="HIOS product ID"/>
+          </type>
+          <system value="https://www.cms.gov/CCIIO/"/>
+          <value value="HPID530000"/>
+          <assigner>
+            <display value="Centers for Medicare and Medicaid Services"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+            <code value="gold"/>
+            <display value="Gold"/>
+          </coding>
+          <text value="Gold"/>
+        </type>
+        <name value="Persona of Rhode IslandGold PPO Plan"/>
+        <alias value="Persona RI GOLD PPO"/>
+        <period>
+          <start value="2019-01-01"/>
+          <end value="2020-01-01"/>
+        </period>
+        <ownedBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </ownedBy>
+        <administeredBy>
+          <reference value="Organization/vhdir-managing-org-9990200000"/>
+          <display value="Persona of Rhode Island"/>
+        </administeredBy>
+        <coverageArea>
+          <reference value="vhdir-location-coverage-rhode-island"/>
+          <display value="Rhode Island"/>
+        </coverageArea>
+        <contact>
+          <purpose>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+              <code value="PATINF"/>
+              <display value="Patient"/>
+            </coding>
+            <text value="General information"/>
+          </purpose>
+          <telecom>
+            <system value="phone"/>
+            <value value="4015555555"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <endpoint>
+          <reference value="Endpoint/item[&quot;plan_id&quot;]-direct"/>
+          <display value="Persona of Rhode IslandGold PPO Plan Direct address"/>
+        </endpoint>
+        <network>
+          <reference value="Organization/vhdir-organization-HPID090000"/>
+          <display value="Rhode Island Persona Preferred Provider Network"/>
+        </network>
+        <coverage>
+          <type>
+            <coding>
+              <code value="medical"/>
+              <display value="Medical"/>
+            </coding>
+            <text value="Coverage related to medical inpatient, outpatient, diagnostic, and preventive care"/>
+          </type>
+          <network>
+            <reference value="Organization/vhdir-organization-HPID090000"/>
+            <display value="Rhode Island Persona Preferred Provider Network"/>
+          </network>
+          <benefit>
+            <type>
+              <text value="Routine Wellness Exam (Adult) &#x2013; Adult"/>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <value>
+                <value value="1"/>
+                <unit value="visit/yr"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{visit}/a"/>
+              </value>
+              <code>
+                <text value="annually"/>
+              </code>
+            </limit>
+          </benefit>
+          <benefit>
+            <type>
+              <coding>
+                <code value="001"/>
+                <display value="Primary care visit to treat an injury or illness"/>
+              </coding>
+            </type>
+            <requirement value="N/A"/>
+            <limit>
+              <code>
+                <text value="unlimited"/>
+              </code>
+            </limit>
+          </benefit>
+        </coverage>
+      </InsurancePlan>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="InsurancePlan/vhdir-insuranceplan-HPID530000"/>
+    </request>
+  </entry>
+</Bundle>
