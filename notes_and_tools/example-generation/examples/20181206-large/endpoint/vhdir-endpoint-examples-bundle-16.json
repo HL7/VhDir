@@ -1,0 +1,1671 @@
+{
+   "id": "vhdir-endpoint-examples-bundle-16",
+   "entry": [
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9995731321-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9995731321-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9995731321-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:codac-inc@direct.codac-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4014615056"
+               }
+            ],
+            "managingOrganization": {
+               "display": "CODAC INC",
+               "reference": "Organization/vhdir-organization-9995731321"
+            },
+            "name": "CODAC INC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9992307530-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9992307530-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9992307530-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:lowell-community-health-center-inc@direct.lowell-community-health-center-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "9783228590"
+               }
+            ],
+            "managingOrganization": {
+               "display": "LOWELL COMMUNITY HEALTH CENTER, INC.",
+               "reference": "Organization/vhdir-organization-9992307530"
+            },
+            "name": "LOWELL COMMUNITY HEALTH CENTER, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9999670259-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9999670259-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9999670259-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:mount-auburn-hospital@direct.mount-auburn-hospital.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "6174923500"
+               }
+            ],
+            "managingOrganization": {
+               "display": "MOUNT AUBURN HOSPITAL",
+               "reference": "Organization/vhdir-organization-9999670259"
+            },
+            "name": "MOUNT AUBURN HOSPITAL Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9998762106-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9998762106-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9998762106-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:tollgate-sleep-disorders-center-inc@direct.tollgate-sleep-disorders-center-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4017374115"
+               }
+            ],
+            "managingOrganization": {
+               "display": "TOLLGATE SLEEP DISORDERS CENTER, INC.",
+               "reference": "Organization/vhdir-organization-9998762106"
+            },
+            "name": "TOLLGATE SLEEP DISORDERS CENTER, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9998863986-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9998863986-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9998863986-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:cambridge-health-alliance-elder-service-plan@direct.cambridge-health-alliance-elder-service-plan.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "7813068666"
+               }
+            ],
+            "managingOrganization": {
+               "display": "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN",
+               "reference": "Organization/vhdir-organization-9998863986"
+            },
+            "name": "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9995338232-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9995338232-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9995338232-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:johnson-health-care-inc-dba-johnson-surgery-center@direct.johnson-health-care-inc-dba-johnson-surgery-center.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "8607637650"
+               }
+            ],
+            "managingOrganization": {
+               "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER",
+               "reference": "Organization/vhdir-organization-9995338232"
+            },
+            "name": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9996348148-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9996348148-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9996348148-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:farmington-surgery-center-llc@direct.farmington-surgery-center-llc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "8606796000"
+               }
+            ],
+            "managingOrganization": {
+               "display": "FARMINGTON SURGERY CENTER LLC",
+               "reference": "Organization/vhdir-organization-9996348148"
+            },
+            "name": "FARMINGTON SURGERY CENTER LLC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9990085657-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9990085657-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9990085657-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:bayside-endoscopy-llc@direct.bayside-endoscopy-llc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4012741810"
+               }
+            ],
+            "managingOrganization": {
+               "display": "BAYSIDE ENDOSCOPY, LLC",
+               "reference": "Organization/vhdir-organization-9990085657"
+            },
+            "name": "BAYSIDE ENDOSCOPY, LLC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9991095779-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9991095779-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9991095779-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:planned-parenthood-league-of-massachusetts-inc@direct.planned-parenthood-league-of-massachusetts-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "6176161600"
+               }
+            ],
+            "managingOrganization": {
+               "display": "PLANNED PARENTHOOD LEAGUE OF MASSACHUSETTS, INC.",
+               "reference": "Organization/vhdir-organization-9991095779"
+            },
+            "name": "PLANNED PARENTHOOD LEAGUE OF MASSACHUSETTS, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9994126865-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9994126865-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9994126865-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:bay-state-community-services-inc@direct.bay-state-community-services-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "6174718400"
+               }
+            ],
+            "managingOrganization": {
+               "display": "BAY STATE COMMUNITY SERVICES, INC.",
+               "reference": "Organization/vhdir-organization-9994126865"
+            },
+            "name": "BAY STATE COMMUNITY SERVICES, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9991692366-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9991692366-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9991692366-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:harbor-health-services-inc@direct.harbor-health-services-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "6172823200"
+               }
+            ],
+            "managingOrganization": {
+               "display": "HARBOR HEALTH SERVICES, INC.",
+               "reference": "Organization/vhdir-organization-9991692366"
+            },
+            "name": "HARBOR HEALTH SERVICES, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9999278250-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9999278250-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9999278250-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:roger-williams-medical-center@direct.roger-williams-medical-center.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4014562000"
+               }
+            ],
+            "managingOrganization": {
+               "display": "ROGER WILLIAMS MEDICAL CENTER",
+               "reference": "Organization/vhdir-organization-9999278250"
+            },
+            "name": "ROGER WILLIAMS MEDICAL CENTER Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9999177926-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9999177926-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9999177926-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:easter-seals-capital-region--eastern-connecticut-inc@direct.easter-seals-capital-region--eastern-connecticut-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "8607149500"
+               }
+            ],
+            "managingOrganization": {
+               "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC.",
+               "reference": "Organization/vhdir-organization-9999177926"
+            },
+            "name": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9998864828-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9998864828-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9998864828-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:family-medicine-associates-p-c@direct.family-medicine-associates-p-c.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "9789277727"
+               }
+            ],
+            "managingOrganization": {
+               "display": "FAMILY MEDICINE ASSOCIATES P. C.",
+               "reference": "Organization/vhdir-organization-9998864828"
+            },
+            "name": "FAMILY MEDICINE ASSOCIATES P. C. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9997955733-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9997955733-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9997955733-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:discovery-house-utah@direct.discovery-house-utah.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4018218866"
+               }
+            ],
+            "managingOrganization": {
+               "display": "DISCOVERY HOUSE UTAH",
+               "reference": "Organization/vhdir-organization-9997955733"
+            },
+            "name": "DISCOVERY HOUSE UTAH Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9993319368-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9993319368-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9993319368-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:rhode-island-substance-abuse-treatment-inc@direct.rhode-island-substance-abuse-treatment-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4017621511"
+               }
+            ],
+            "managingOrganization": {
+               "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC.",
+               "reference": "Organization/vhdir-organization-9993319368"
+            },
+            "name": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9995935572-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9995935572-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9995935572-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:john-c-breen-pc@direct.john-c-breen-pc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "7815857722"
+               }
+            ],
+            "managingOrganization": {
+               "display": "JOHN C BREEN PC",
+               "reference": "Organization/vhdir-organization-9995935572"
+            },
+            "name": "JOHN C BREEN PC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9994521488-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9994521488-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9994521488-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:rhode-island-substance-abuse-treatment-inc@direct.rhode-island-substance-abuse-treatment-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4014619110"
+               }
+            ],
+            "managingOrganization": {
+               "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC",
+               "reference": "Organization/vhdir-organization-9994521488"
+            },
+            "name": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9994723478-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9994723478-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9994723478-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:physical-therapy-center-inc@direct.physical-therapy-center-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "5084280300"
+               }
+            ],
+            "managingOrganization": {
+               "display": "PHYSICAL THERAPY CENTER, INC",
+               "reference": "Organization/vhdir-organization-9994723478"
+            },
+            "name": "PHYSICAL THERAPY CENTER, INC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9992006923-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9992006923-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9992006923-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:lifebridge-community-services-inc@direct.lifebridge-community-services-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "2033684291"
+               }
+            ],
+            "managingOrganization": {
+               "display": "LIFEBRIDGE COMMUNITY SERVICES, INC.",
+               "reference": "Organization/vhdir-organization-9992006923"
+            },
+            "name": "LIFEBRIDGE COMMUNITY SERVICES, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9990188327-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9990188327-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9990188327-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:soundview-orthopaedic-assoc-llp@direct.soundview-orthopaedic-assoc-llp.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4015960259"
+               }
+            ],
+            "managingOrganization": {
+               "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP",
+               "reference": "Organization/vhdir-organization-9990188327"
+            },
+            "name": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9996441719-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9996441719-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9996441719-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:comprehensive-community-action-inc@direct.comprehensive-community-action-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4019431981"
+               }
+            ],
+            "managingOrganization": {
+               "display": "COMPREHENSIVE COMMUNITY ACTION, INC.",
+               "reference": "Organization/vhdir-organization-9996441719"
+            },
+            "name": "COMPREHENSIVE COMMUNITY ACTION, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9997552602-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9997552602-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9997552602-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:essent-health-care-of-mass-inc@direct.essent-health-care-of-mass-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "9785218137"
+               }
+            ],
+            "managingOrganization": {
+               "display": "ESSENT HEALTH CARE OF MASS INC",
+               "reference": "Organization/vhdir-organization-9997552602"
+            },
+            "name": "ESSENT HEALTH CARE OF MASS INC Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9999774646-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9999774646-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9999774646-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:greater-lawrence-family-health-center-inc@direct.greater-lawrence-family-health-center-inc.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "9786896683"
+               }
+            ],
+            "managingOrganization": {
+               "display": "GREATER LAWRENCE FAMILY HEALTH CENTER, INC.",
+               "reference": "Organization/vhdir-organization-9999774646"
+            },
+            "name": "GREATER LAWRENCE FAMILY HEALTH CENTER, INC. Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9998269624-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9998269624-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9998269624-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:hospital-of-saint-raphael@direct.hospital-of-saint-raphael.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "2037893000"
+               }
+            ],
+            "managingOrganization": {
+               "display": "HOSPITAL OF SAINT RAPHAEL",
+               "reference": "Organization/vhdir-organization-9998269624"
+            },
+            "name": "HOSPITAL OF SAINT RAPHAEL Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/Endpoint/{'vhdir-location-9996643294-direct'}",
+         "request": {
+            "method": "PUT",
+            "url": "Endpoint/{'vhdir-location-9996643294-direct'}"
+         },
+         "resource": {
+            "id": "vhdir-location-9996643294-direct",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+               ]
+            },
+            "address": "mailto:kent-county-memorial-hospital@direct.kent-county-memorial-hospital.org",
+            "connectionType": {
+               "code": "direct-project",
+               "display": "Direct Project",
+               "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+            },
+            "contact": [
+               {
+                  "extension": [
+                     {
+                        "extension": [
+                           {
+                              "url": "allDay",
+                              "valueBoolean": true
+                           }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+                     }
+                  ],
+                  "rank": 1,
+                  "system": "phone",
+                  "use": "work",
+                  "value": "4017377010"
+               }
+            ],
+            "managingOrganization": {
+               "display": "KENT COUNTY MEMORIAL HOSPITAL",
+               "reference": "Organization/vhdir-organization-9996643294"
+            },
+            "name": "KENT COUNTY MEMORIAL HOSPITAL Direct address",
+            "payloadMimeType": [
+               "application/hl7-v3+xml"
+            ],
+            "payloadType": [
+               {
+                  "coding": [
+                     {
+                        "code": "urn:ihe:pcc:xphr:2007",
+                        "display": "HL7 CCD Document",
+                        "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3"
+                     }
+                  ]
+               }
+            ],
+            "period": {
+               "start": "2018-11-19"
+            },
+            "status": "active",
+            "resourceType": "Endpoint"
+         }
+      }
+   ],
+   "type": "batch",
+   "resourceType": "Bundle"
+}

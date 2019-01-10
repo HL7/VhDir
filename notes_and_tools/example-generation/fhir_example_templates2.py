@@ -314,14 +314,16 @@ def endpoint(r): # r = resource as python class
     Organization=(None,'name','name'),
     OrganizationAffiliation=('organization','organization.display','organization.display'),
     Location=('managingOrganization','name','managingOrganization.display'),
-    HealthcareService=('providedBy','name','providedBy.display')
+    HealthcareService=('providedBy','name','providedBy.display'),
+    InsurancePlan=('ownedBy','name','ownedBy.display')
     )
 
     try:
         mo=getattr(r,ep_map[r.resource_type][0])
     except TypeError:
         mo = None
-
+    except KeyError:  # no endpoint
+        return
 
     address1=attrgetter(ep_map[r.resource_type][1])(r)
     address2=attrgetter(ep_map[r.resource_type][2])(r)
@@ -753,7 +755,7 @@ def network_member_practrole(member, network, prefix):
           },
           'practitioner' : {
             'reference' : f'Practitioner/{member.id}',
-            'display' : f'{member.name[0].text}, {member.name[0].suffix[0]}'
+            'display' : f'{member.name[0].text}, {member.name[0].suffix[0] if member.name[0].suffix else None}'
           },
           'organization' : {
             'reference' : f'Organization/{network.id}',

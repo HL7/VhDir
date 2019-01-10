@@ -1,0 +1,1394 @@
+{
+   "resourceType": "Bundle",
+   "id": "vhdir-hie-orgaffiliation-examples-bundle",
+   "type": "batch",
+   "timestamp": "2019-01-09T22:24:00.014760Z",
+   "entry": [
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995131442'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9995131442",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "vassar-health-connecticut-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9995131442",
+               "display": "VASSAR HEALTH CONNECTICUT, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9995131442-direct",
+                  "display": "Direct address for VASSAR HEALTH CONNECTICUT, INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995131442'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9990780047'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9990780047",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "harrington-memorial-hospital-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9990780047",
+               "display": "HARRINGTON MEMORIAL HOSPITAL, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9990780047-direct",
+                  "display": "Direct address for HARRINGTON MEMORIAL HOSPITAL, INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9990780047'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9994427431'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9994427431",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "essent-healthcare--ayer-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9994427431",
+               "display": "ESSENT HEALTHCARE - AYER, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9994427431-direct",
+                  "display": "Direct address for ESSENT HEALTHCARE - AYER, INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9994427431'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9991396014'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9991396014",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "arc-worcester-center-lp-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9991396014",
+               "display": "ARC WORCESTER CENTER, L.P."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9991396014-direct",
+                  "display": "Direct address for ARC WORCESTER CENTER, L.P. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9991396014'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9997659264'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9997659264",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "springfield-rehabilitation-center-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9997659264",
+               "display": "SPRINGFIELD REHABILITATION CENTER INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9997659264-direct",
+                  "display": "Direct address for SPRINGFIELD REHABILITATION CENTER INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9997659264'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995630533'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9995630533",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "community-health-connections-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9995630533",
+               "display": "COMMUNITY HEALTH CONNECTIONS, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9995630533-direct",
+                  "display": "Direct address for COMMUNITY HEALTH CONNECTIONS, INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995630533'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9995731321'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9995731321",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "codac-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9995731321",
+               "display": "CODAC INC"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9995731321-direct",
+                  "display": "Direct address for CODAC INC Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9995731321'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9998762106'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9998762106",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "tollgate-sleep-disorders-center-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9998762106",
+               "display": "TOLLGATE SLEEP DISORDERS CENTER, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9998762106-direct",
+                  "display": "Direct address for TOLLGATE SLEEP DISORDERS CENTER, INC. Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9998762106'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995338232'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9995338232",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "johnson-health-care-inc-dba-johnson-surgery-center-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9995338232",
+               "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9995338232-direct",
+                  "display": "Direct address for JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9995338232'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9996348148'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9996348148",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "farmington-surgery-center-llc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9996348148",
+               "display": "FARMINGTON SURGERY CENTER LLC"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9996348148-direct",
+                  "display": "Direct address for FARMINGTON SURGERY CENTER LLC Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9996348148'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-hct-organizationrole-9996348148'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-hct-organizationrole-9996348148",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://hartford-connecticut-hie.com.com",
+                  "value": "farmington-surgery-center-llc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990050000",
+                     "display": "Hartford Connecticut HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990050000",
+               "display": "Hartford Connecticut HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9996348148",
+               "display": "FARMINGTON SURGERY CENTER LLC"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9996348148-direct",
+                  "display": "Direct address for FARMINGTON SURGERY CENTER LLC Hartford Connecticut HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-hct-organizationrole-9996348148'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9990085657'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9990085657",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "bayside-endoscopy-llc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9990085657",
+               "display": "BAYSIDE ENDOSCOPY, LLC"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9990085657-direct",
+                  "display": "Direct address for BAYSIDE ENDOSCOPY, LLC Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9990085657'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9999278250'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9999278250",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "roger-williams-medical-center-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9999278250",
+               "display": "ROGER WILLIAMS MEDICAL CENTER"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9999278250-direct",
+                  "display": "Direct address for ROGER WILLIAMS MEDICAL CENTER Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9999278250'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9999177926'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9999177926",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "easter-seals-capital-region--eastern-connecticut-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9999177926",
+               "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9999177926-direct",
+                  "display": "Direct address for EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC. Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9999177926'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-hct-organizationrole-9999177926'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-hct-organizationrole-9999177926",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://hartford-connecticut-hie.com.com",
+                  "value": "easter-seals-capital-region--eastern-connecticut-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990050000",
+                     "display": "Hartford Connecticut HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990050000",
+               "display": "Hartford Connecticut HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9999177926",
+               "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9999177926-direct",
+                  "display": "Direct address for EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC. Hartford Connecticut HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-hct-organizationrole-9999177926'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9997955733'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9997955733",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "discovery-house-utah-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9997955733",
+               "display": "DISCOVERY HOUSE UTAH"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9997955733-direct",
+                  "display": "Direct address for DISCOVERY HOUSE UTAH Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9997955733'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9993319368'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9993319368",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "rhode-island-substance-abuse-treatment-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9993319368",
+               "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9993319368-direct",
+                  "display": "Direct address for RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC. Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9993319368'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9994521488'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9994521488",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "rhode-island-substance-abuse-treatment-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9994521488",
+               "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9994521488-direct",
+                  "display": "Direct address for RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9994521488'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9990188327'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9990188327",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "soundview-orthopaedic-assoc-llp-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9990188327",
+               "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9990188327-direct",
+                  "display": "Direct address for SOUNDVIEW ORTHOPAEDIC ASSOC. LLP Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9990188327'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9996441719'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9996441719",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "comprehensive-community-action-inc-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9996441719",
+               "display": "COMPREHENSIVE COMMUNITY ACTION, INC."
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9996441719-direct",
+                  "display": "Direct address for COMPREHENSIVE COMMUNITY ACTION, INC. Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9996441719'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9998269624'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-wma-organizationrole-9998269624",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://western-massachusetts-hie.com.com",
+                  "value": "hospital-of-saint-raphael-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990040000",
+                     "display": "Western Massachusetts HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990040000",
+               "display": "Western Massachusetts HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9998269624",
+               "display": "HOSPITAL OF SAINT RAPHAEL"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9998269624-direct",
+                  "display": "Direct address for HOSPITAL OF SAINT RAPHAEL Western Massachusetts HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-wma-organizationrole-9998269624'}"
+         }
+      },
+      {
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9996643294'}",
+         "resource": {
+            "resourceType": "OrganizationAffiliation",
+            "id": "vhdir-hie-ri-organizationrole-9996643294",
+            "meta": {
+               "profile": [
+                  "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+               ]
+            },
+            "identifier": [
+               {
+                  "extension": [
+                     {
+                        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+                        "valueCode": "active"
+                     }
+                  ],
+                  "use": "secondary",
+                  "type": {
+                     "text": "member hospital"
+                  },
+                  "system": "http://example.org/www.https://rhode-island-hie.com.com",
+                  "value": "kent-county-memorial-hospital-999",
+                  "assigner": {
+                     "reference": "Organization/vhdir-managing-org-9990060000",
+                     "display": "Rhode Island HIE"
+                  }
+               }
+            ],
+            "active": true,
+            "organization": {
+               "reference": "Organization/vhdir-managing-org-9990060000",
+               "display": "Rhode Island HIE"
+            },
+            "participatingOrganization": {
+               "reference": "Organization/vhdir-organization-9996643294",
+               "display": "KENT COUNTY MEMORIAL HOSPITAL"
+            },
+            "code": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://hl7.org/fhir/organization-role",
+                        "code": "member",
+                        "display": "Member"
+                     }
+                  ],
+                  "text": "Hospital member"
+               }
+            ],
+            "endpoint": [
+               {
+                  "reference": "Endpoint/vhdir-hie-organizationaffiliation-9996643294-direct",
+                  "display": "Direct address for KENT COUNTY MEMORIAL HOSPITAL Rhode Island HIE Member Role"
+               }
+            ]
+         },
+         "request": {
+            "method": "PUT",
+            "url": "OrganizationAffiliation/{'vhdir-hie-ri-organizationrole-9996643294'}"
+         }
+      }
+   ]
+}

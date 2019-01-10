@@ -2,7 +2,7 @@
    "resourceType": "Bundle",
    "id": "vhdir-insuranceplan-examples-bundle",
    "type": "batch",
-   "timestamp": "2019-01-03T00:50:36.317137Z",
+   "timestamp": "2019-01-09T22:33:54.404622Z",
    "entry": [
       {
          "fullUrl": "http://vhdir-demo.fhir.org/fhir/InsurancePlan/vhdir-insuranceplan-HPID200000",

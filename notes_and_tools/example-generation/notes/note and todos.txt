@@ -63,18 +63,17 @@ add in extension in future case
 !!VhDir Care Team
     Functionally empty: use roles and orgs
     Use cases for .todo... used in womens' shelter Use Case - not supported by Brian's Server
+HOLD    create empty shell for blue team and red team to be filled later ( via an operation? )
 VhDir Endpoint
     Direct addresses already defined Direct addresses OK for now
 * VhDir Insurance Plan  - created four  + 3 each bronze, silver and gold for each state
     link Networks - one for each network
      rename networks one for each state  - done
+
 VhDirCoverage Area - Location
       state - done , more complicated - two boston and hartford
-* VhDir Restriction  2  handmade examples used in womens' shelter Use Case 
-
-
-Women's shelter example
-
+VhDir Restriction  2  handmade examples used in womens' shelter Use Case
+TODO  !more examples restrict access to providers in military deployment.
 
 
 VhDir Healthcare Service
@@ -103,7 +102,10 @@ Geocoded queries.
 
 download and setup local directory
 
-*** Document the subscription workflow:  ping directory to update change in status.
+!! Document the subscription workflow:  ping directory to update change in status.
+
+for general case initial load and periodic updates using _lastupdated
+for specific case use subscription to id expiring quals and validations
 
 review US Core constraints on  VHDIR and document.
 
@@ -111,4 +113,4 @@ review US Core constraints on  VHDIR and document.
 
 can validate structure using dumps and python models.
 
- can also scrub dicts or use ternaries to scrub data.
+can also scrub dicts or use ternaries to scrub data.

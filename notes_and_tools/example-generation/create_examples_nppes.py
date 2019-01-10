@@ -27,8 +27,8 @@ logging.debug('Start of program')
 #***********Globals******************
 
 in_path ='/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/sample-nppes-data'
-out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-small'
-#out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
+#out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-small'
+out_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples'
 server_path = 'http://test.fhir.org/r4'
 convert_server = 'http://wildfhir.aegis.net/fhir3-5-0'
 

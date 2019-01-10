@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="vhdir-hie-orgaffiliation-examples-bundle"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-01-09T17:24:06.487-05:00"/>
+  </meta>
+  <type value="batch"/>
+  <timestamp value="2019-01-09T22:24:00.014760Z"/>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995131442&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9995131442"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="vassar-health-connecticut-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9995131442"/>
+          <display value="VASSAR HEALTH CONNECTICUT, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9995131442-direct"/>
+          <display value="Direct address for VASSAR HEALTH CONNECTICUT, INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995131442&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9990780047&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9990780047"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="harrington-memorial-hospital-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9990780047"/>
+          <display value="HARRINGTON MEMORIAL HOSPITAL, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9990780047-direct"/>
+          <display value="Direct address for HARRINGTON MEMORIAL HOSPITAL, INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9990780047&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9994427431&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9994427431"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="essent-healthcare--ayer-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9994427431"/>
+          <display value="ESSENT HEALTHCARE - AYER, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9994427431-direct"/>
+          <display value="Direct address for ESSENT HEALTHCARE - AYER, INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9994427431&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9991396014&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9991396014"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="arc-worcester-center-lp-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9991396014"/>
+          <display value="ARC WORCESTER CENTER, L.P."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9991396014-direct"/>
+          <display value="Direct address for ARC WORCESTER CENTER, L.P. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9991396014&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9997659264&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9997659264"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="springfield-rehabilitation-center-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9997659264"/>
+          <display value="SPRINGFIELD REHABILITATION CENTER INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9997659264-direct"/>
+          <display value="Direct address for SPRINGFIELD REHABILITATION CENTER INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9997659264&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995630533&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9995630533"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="community-health-connections-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9995630533"/>
+          <display value="COMMUNITY HEALTH CONNECTIONS, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9995630533-direct"/>
+          <display value="Direct address for COMMUNITY HEALTH CONNECTIONS, INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995630533&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9995731321&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9995731321"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="codac-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9995731321"/>
+          <display value="CODAC INC"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9995731321-direct"/>
+          <display value="Direct address for CODAC INC Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9995731321&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9998762106&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9998762106"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="tollgate-sleep-disorders-center-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9998762106"/>
+          <display value="TOLLGATE SLEEP DISORDERS CENTER, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9998762106-direct"/>
+          <display value="Direct address for TOLLGATE SLEEP DISORDERS CENTER, INC. Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9998762106&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995338232&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9995338232"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="johnson-health-care-inc-dba-johnson-surgery-center-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9995338232"/>
+          <display value="JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9995338232-direct"/>
+          <display value="Direct address for JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9995338232&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9996348148&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9996348148"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="farmington-surgery-center-llc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9996348148"/>
+          <display value="FARMINGTON SURGERY CENTER LLC"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9996348148-direct"/>
+          <display value="Direct address for FARMINGTON SURGERY CENTER LLC Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9996348148&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-hct-organizationrole-9996348148&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-hct-organizationrole-9996348148"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://hartford-connecticut-hie.com.com"/>
+          <value value="farmington-surgery-center-llc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990050000"/>
+            <display value="Hartford Connecticut HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990050000"/>
+          <display value="Hartford Connecticut HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9996348148"/>
+          <display value="FARMINGTON SURGERY CENTER LLC"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9996348148-direct"/>
+          <display value="Direct address for FARMINGTON SURGERY CENTER LLC Hartford Connecticut HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-hct-organizationrole-9996348148&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9990085657&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9990085657"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="bayside-endoscopy-llc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9990085657"/>
+          <display value="BAYSIDE ENDOSCOPY, LLC"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9990085657-direct"/>
+          <display value="Direct address for BAYSIDE ENDOSCOPY, LLC Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9990085657&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9999278250&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9999278250"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="roger-williams-medical-center-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9999278250"/>
+          <display value="ROGER WILLIAMS MEDICAL CENTER"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9999278250-direct"/>
+          <display value="Direct address for ROGER WILLIAMS MEDICAL CENTER Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9999278250&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9999177926&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9999177926"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="easter-seals-capital-region--eastern-connecticut-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9999177926"/>
+          <display value="EASTER SEALS CAPITAL REGION &amp; EASTERN CONNECTICUT, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9999177926-direct"/>
+          <display value="Direct address for EASTER SEALS CAPITAL REGION &amp; EASTERN CONNECTICUT, INC. Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9999177926&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-hct-organizationrole-9999177926&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-hct-organizationrole-9999177926"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://hartford-connecticut-hie.com.com"/>
+          <value value="easter-seals-capital-region--eastern-connecticut-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990050000"/>
+            <display value="Hartford Connecticut HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990050000"/>
+          <display value="Hartford Connecticut HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9999177926"/>
+          <display value="EASTER SEALS CAPITAL REGION &amp; EASTERN CONNECTICUT, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9999177926-direct"/>
+          <display value="Direct address for EASTER SEALS CAPITAL REGION &amp; EASTERN CONNECTICUT, INC. Hartford Connecticut HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-hct-organizationrole-9999177926&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9997955733&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9997955733"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="discovery-house-utah-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9997955733"/>
+          <display value="DISCOVERY HOUSE UTAH"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9997955733-direct"/>
+          <display value="Direct address for DISCOVERY HOUSE UTAH Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9997955733&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9993319368&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9993319368"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="rhode-island-substance-abuse-treatment-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9993319368"/>
+          <display value="RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9993319368-direct"/>
+          <display value="Direct address for RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC. Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9993319368&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9994521488&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9994521488"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="rhode-island-substance-abuse-treatment-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9994521488"/>
+          <display value="RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9994521488-direct"/>
+          <display value="Direct address for RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9994521488&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9990188327&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9990188327"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="soundview-orthopaedic-assoc-llp-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9990188327"/>
+          <display value="SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9990188327-direct"/>
+          <display value="Direct address for SOUNDVIEW ORTHOPAEDIC ASSOC. LLP Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9990188327&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9996441719&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9996441719"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="comprehensive-community-action-inc-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9996441719"/>
+          <display value="COMPREHENSIVE COMMUNITY ACTION, INC."/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9996441719-direct"/>
+          <display value="Direct address for COMPREHENSIVE COMMUNITY ACTION, INC. Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9996441719&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9998269624&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-wma-organizationrole-9998269624"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://western-massachusetts-hie.com.com"/>
+          <value value="hospital-of-saint-raphael-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990040000"/>
+            <display value="Western Massachusetts HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990040000"/>
+          <display value="Western Massachusetts HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9998269624"/>
+          <display value="HOSPITAL OF SAINT RAPHAEL"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9998269624-direct"/>
+          <display value="Direct address for HOSPITAL OF SAINT RAPHAEL Western Massachusetts HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-wma-organizationrole-9998269624&#39;}"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9996643294&#39;}"/>
+    <resource>
+      <OrganizationAffiliation>
+        <id value="vhdir-hie-ri-organizationrole-9996643294"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+            <valueCode value="active"/>
+          </extension>
+          <use value="secondary"/>
+          <type>
+            <text value="member hospital"/>
+          </type>
+          <system value="http://example.org/www.https://rhode-island-hie.com.com"/>
+          <value value="kent-county-memorial-hospital-999"/>
+          <assigner>
+            <reference value="Organization/vhdir-managing-org-9990060000"/>
+            <display value="Rhode Island HIE"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <organization>
+          <reference value="Organization/vhdir-managing-org-9990060000"/>
+          <display value="Rhode Island HIE"/>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/vhdir-organization-9996643294"/>
+          <display value="KENT COUNTY MEMORIAL HOSPITAL"/>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/organization-role"/>
+            <code value="member"/>
+            <display value="Member"/>
+          </coding>
+          <text value="Hospital member"/>
+        </code>
+        <endpoint>
+          <reference value="Endpoint/vhdir-hie-organizationaffiliation-9996643294-direct"/>
+          <display value="Direct address for KENT COUNTY MEMORIAL HOSPITAL Rhode Island HIE Member Role"/>
+        </endpoint>
+      </OrganizationAffiliation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="OrganizationAffiliation/{&#39;vhdir-hie-ri-organizationrole-9996643294&#39;}"/>
+    </request>
+  </entry>
+</Bundle>
