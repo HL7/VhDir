@@ -114,3 +114,31 @@ review US Core constraints on  VHDIR and document.
 can validate structure using dumps and python models.
 
 can also scrub dicts or use ternaries to scrub data.
+
+VHDIR 2019-01-10
+Notes:
+
+
+Scenarios 7,8
+Location near not working on test server.
+
+Scenario 9 - Find all licenses that are expired or will expire in the next 90 days. (period on active qualification on practitioner, note: p
+eriod and status may be out of sync).
+
+  no search parameter defined for Qualification period in VHDIR
+
+period and status are two different axis.  inactive and active are not the same as expired.
+
+Scenario 10 - Certificates  and Validation that are expiring
+
+All practitioners that had their license verified in the last 60 days - (last performed date 60 days & the status is validated)
+
+GET [base]/VerificationResult?verificationresult-status-date=gt2019-11-10
+
+GET [base]/VerificationResult?verificationresult-status=validated
+
+search on cert parameter not available
+
+Searches not working
+
+Scenario 12  - search parameter on practitioner-qualification-status or verificationresult-status

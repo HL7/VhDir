@@ -28,9 +28,9 @@ logging.debug('Start of program')
 
 # *************** Globals *******************
 
-in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-large/endpoint'
+#in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-large/endpoint'
 #in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-large/verificationresult'
-# in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/20181206-large/practitioner'
+in_path = '/Users/ehaas/Documents/FHIR/VhDir/notes_and_tools/example-generation/examples/practitioner'
 server_path = 'http://vhdir-demo.fhir.org/fhir'
 convert_server = 'http://wildfhir.aegis.net/fhir3-5-0'
 fhir_test_server = 'http://wildfhir.aegis.net/fhir3-5-0'
@@ -52,9 +52,9 @@ def post_bundle(data):
     if r.status_code > 200:
         logging.info(f'server response =  {dumps(r.json(),indent=3)}')
 
-prefix = 'vhdr-endpoint-example-bundle'
+# prefix = 'vhdr-endpoint-example-bundle'
 # prefix = 'vhdir-vr-examples-bundle'
-# prefix = 'vhdir-p-examples-bundle'
+prefix = 'vhdir-p-examples-bundle'
 for filename in os.listdir(in_path):
     if filename.startswith(prefix) and filename.endswith('json'):
         file = get_bundle(filename)
