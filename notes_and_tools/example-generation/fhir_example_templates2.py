@@ -267,7 +267,7 @@ def hie_orgaffiliation(org, parent_org, prefix):
         'type' : {
           'text' : 'member hospital'
         },
-        'system' : f'http://example.org/www.{urlify(parent_org.name)}.com',
+        'system' : f'http://example.org/www.{urlify(parent_org.name)}',
         'value' : f'{slugify(org.name)}-999',
         'assigner' : {
           'reference' : f'Organization/{parent_org.id}',
@@ -743,7 +743,7 @@ def network_member_practrole(member, network, prefix):
               }],
               'text' : 'Network Provider ID'
             },
-            'system' : f'http://example.org/www.{urlify(network.name)}.com',
+            'system' : f'http://example.org/www.{urlify(network.name)}',
             'value' : f'{member.name[0].given[0][0].lower()}{member.name[0].family.lower()}{member.birthDate.as_json().replace("-","")}',
             'period' : {
               'start' : '2019-01-01'
@@ -766,10 +766,10 @@ def network_member_practrole(member, network, prefix):
           }],
           'telecom' : [{
             'system' : 'phone',
-            'value' : member.telecom[0].value
+            'value' : member.telecom[0].value if member.telecom[0].value else '5555555555'
           }],
           'endpoint' : [{
-            'reference': f'vhdir-{prefix}-practitionerrole-{network.identifier[0].value}-direct',
+            'reference': f'vhdir-{prefix}-practrole-{member.identifier[0].value}-direct',
             'display': f'Direct address for {member.name[0].text} {network.name} Member Role'
         }]
         }

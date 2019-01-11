@@ -7686,10 +7686,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992607537'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992607537",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992607537'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992607537"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9992607537",
@@ -7749,10 +7749,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990789741'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990789741",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990789741'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990789741"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9990789741",
@@ -7812,10 +7812,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998062387'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998062387",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998062387'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998062387"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998062387",
@@ -7875,10 +7875,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990780047'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990780047",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990780047'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990780047"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9990780047",
@@ -7938,10 +7938,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994427431'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994427431",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994427431'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994427431"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994427431",
@@ -8001,10 +8001,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991396014'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991396014",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991396014'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991396014"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991396014",
@@ -8064,10 +8064,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991790820'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991790820",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991790820'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991790820"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991790820",
@@ -8127,10 +8127,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999972445'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999972445",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999972445'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999972445"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999972445",
@@ -8190,10 +8190,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997659264'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997659264",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997659264'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997659264"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9997659264",
@@ -8253,10 +8253,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991892344'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991892344",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991892344'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991892344"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991892344",
@@ -8316,10 +8316,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995630533'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995630533",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995630533'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995630533"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9995630533",
@@ -8379,10 +8379,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992307530'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992307530",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992307530'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992307530"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9992307530",
@@ -8442,10 +8442,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999670259'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999670259",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999670259'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999670259"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999670259",
@@ -8505,10 +8505,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998863986'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998863986",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998863986'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998863986"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998863986",
@@ -8568,10 +8568,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991095779'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991095779",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991095779'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991095779"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991095779",
@@ -8631,10 +8631,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994126865'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994126865",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994126865'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994126865"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994126865",
@@ -8694,10 +8694,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991692366'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991692366",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991692366'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991692366"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991692366",
@@ -8757,10 +8757,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998864828'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998864828",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998864828'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998864828"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998864828",
@@ -8820,10 +8820,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995935572'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995935572",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995935572'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995935572"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9995935572",
@@ -8883,10 +8883,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994723478'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994723478",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994723478'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994723478"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994723478",
@@ -8946,10 +8946,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997552602'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997552602",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997552602'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997552602"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9997552602",
@@ -9009,10 +9009,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999774646'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999774646",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999774646'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999774646"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999774646",
@@ -9072,10 +9072,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995131442'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995131442",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995131442'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995131442"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9995131442",
@@ -9135,10 +9135,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995338232'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995338232",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995338232'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995338232"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9995338232",
@@ -9198,10 +9198,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9996348148'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9996348148",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9996348148'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9996348148"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9996348148",
@@ -9261,10 +9261,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9999177926'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9999177926",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9999177926'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9999177926"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9999177926",
@@ -9324,10 +9324,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9992006923'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9992006923",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9992006923'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9992006923"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9992006923",
@@ -9387,10 +9387,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9998269624'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9998269624",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9998269624'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9998269624"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9998269624",
@@ -9450,10 +9450,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9995731321'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9995731321",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9995731321'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9995731321"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9995731321",
@@ -9513,10 +9513,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9998762106'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9998762106",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9998762106'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9998762106"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9998762106",
@@ -9576,10 +9576,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990085657'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990085657",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990085657'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990085657"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9990085657",
@@ -9639,10 +9639,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9999278250'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9999278250",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9999278250'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9999278250"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9999278250",
@@ -9702,10 +9702,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9997955733'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9997955733",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9997955733'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9997955733"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9997955733",
@@ -9765,10 +9765,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9993319368'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9993319368",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9993319368'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9993319368"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9993319368",
@@ -9828,10 +9828,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9994521488'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9994521488",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9994521488'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9994521488"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9994521488",
@@ -9891,10 +9891,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990188327'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990188327",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990188327'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990188327"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9990188327",
@@ -9954,10 +9954,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996441719'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996441719",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996441719'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996441719"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9996441719",
@@ -10017,10 +10017,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996643294'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996643294",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996643294'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996643294"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9996643294",
@@ -10080,10 +10080,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9996348148'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9996348148",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9996348148'}"
+            "url": "OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9996348148"
          },
          "resource": {
             "id": "vhdir-ut-ppo-organizationrole-9996348148",
@@ -10143,10 +10143,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9999177926'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9999177926",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9999177926'}"
+            "url": "OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9999177926"
          },
          "resource": {
             "id": "vhdir-ut-ppo-organizationrole-9999177926",
@@ -10206,10 +10206,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992607537'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992607537",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992607537'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992607537"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9992607537",
@@ -10269,10 +10269,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990789741'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990789741",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990789741'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990789741"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9990789741",
@@ -10332,10 +10332,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998062387'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998062387",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998062387'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998062387"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998062387",
@@ -10395,10 +10395,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990780047'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990780047",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9990780047'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9990780047"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9990780047",
@@ -10458,10 +10458,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994427431'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994427431",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994427431'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994427431"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994427431",
@@ -10521,10 +10521,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991396014'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991396014",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991396014'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991396014"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991396014",
@@ -10584,10 +10584,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991790820'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991790820",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991790820'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991790820"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991790820",
@@ -10647,10 +10647,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999972445'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999972445",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999972445'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999972445"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999972445",
@@ -10710,10 +10710,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997659264'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997659264",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997659264'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997659264"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9997659264",
@@ -10773,10 +10773,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991892344'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991892344",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991892344'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991892344"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991892344",
@@ -10836,10 +10836,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995630533'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995630533",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995630533'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995630533"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9995630533",
@@ -10899,10 +10899,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992307530'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992307530",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9992307530'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9992307530"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9992307530",
@@ -10962,10 +10962,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999670259'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999670259",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999670259'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999670259"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999670259",
@@ -11025,10 +11025,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998863986'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998863986",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998863986'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998863986"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998863986",
@@ -11088,10 +11088,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991095779'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991095779",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991095779'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991095779"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991095779",
@@ -11151,10 +11151,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994126865'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994126865",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994126865'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994126865"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994126865",
@@ -11214,10 +11214,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991692366'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991692366",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9991692366'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9991692366"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9991692366",
@@ -11277,10 +11277,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998864828'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998864828",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9998864828'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9998864828"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9998864828",
@@ -11340,10 +11340,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995935572'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995935572",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9995935572'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9995935572"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9995935572",
@@ -11403,10 +11403,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994723478'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994723478",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9994723478'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9994723478"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9994723478",
@@ -11466,10 +11466,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997552602'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997552602",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9997552602'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9997552602"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9997552602",
@@ -11529,10 +11529,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999774646'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999774646",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ma-gic-ppo-organizationrole-9999774646'}"
+            "url": "OrganizationAffiliation/vhdir-ma-gic-ppo-organizationrole-9999774646"
          },
          "resource": {
             "id": "vhdir-ma-gic-ppo-organizationrole-9999774646",
@@ -11592,10 +11592,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995131442'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995131442",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995131442'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995131442"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9995131442",
@@ -11655,10 +11655,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995338232'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995338232",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9995338232'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9995338232"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9995338232",
@@ -11718,10 +11718,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9996348148'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9996348148",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9996348148'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9996348148"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9996348148",
@@ -11781,10 +11781,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9999177926'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9999177926",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9999177926'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9999177926"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9999177926",
@@ -11844,10 +11844,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9992006923'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9992006923",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9992006923'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9992006923"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9992006923",
@@ -11907,10 +11907,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9998269624'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9998269624",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ct-hmo-organizationrole-9998269624'}"
+            "url": "OrganizationAffiliation/vhdir-ct-hmo-organizationrole-9998269624"
          },
          "resource": {
             "id": "vhdir-ct-hmo-organizationrole-9998269624",
@@ -11970,10 +11970,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9995731321'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9995731321",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9995731321'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9995731321"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9995731321",
@@ -12033,10 +12033,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9998762106'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9998762106",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9998762106'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9998762106"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9998762106",
@@ -12096,10 +12096,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990085657'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990085657",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990085657'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990085657"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9990085657",
@@ -12159,10 +12159,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9999278250'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9999278250",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9999278250'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9999278250"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9999278250",
@@ -12222,10 +12222,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9997955733'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9997955733",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9997955733'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9997955733"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9997955733",
@@ -12285,10 +12285,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9993319368'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9993319368",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9993319368'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9993319368"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9993319368",
@@ -12348,10 +12348,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9994521488'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9994521488",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9994521488'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9994521488"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9994521488",
@@ -12411,10 +12411,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990188327'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990188327",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9990188327'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9990188327"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9990188327",
@@ -12474,10 +12474,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996441719'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996441719",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996441719'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996441719"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9996441719",
@@ -12537,10 +12537,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996643294'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996643294",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ri-ppo-organizationrole-9996643294'}"
+            "url": "OrganizationAffiliation/vhdir-ri-ppo-organizationrole-9996643294"
          },
          "resource": {
             "id": "vhdir-ri-ppo-organizationrole-9996643294",
@@ -12600,10 +12600,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9996348148'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9996348148",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9996348148'}"
+            "url": "OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9996348148"
          },
          "resource": {
             "id": "vhdir-ut-ppo-organizationrole-9996348148",
@@ -12663,10 +12663,10 @@
          }
       },
       {
-         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9999177926'}",
+         "fullUrl": "http://vhdir-demo.fhir.org/fhir/OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9999177926",
          "request": {
             "method": "PUT",
-            "url": "OrganizationAffiliation/{'vhdir-ut-ppo-organizationrole-9999177926'}"
+            "url": "OrganizationAffiliation/vhdir-ut-ppo-organizationrole-9999177926"
          },
          "resource": {
             "id": "vhdir-ut-ppo-organizationrole-9999177926",

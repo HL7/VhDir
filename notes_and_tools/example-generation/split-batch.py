@@ -48,6 +48,8 @@ def post_bundle(data):
     r = post(f'{server_path}', headers = headers, data = dumps(data.as_json()))
     logging.info(f'posting {data.id} to {server_path}')
     logging.info(f'server response =  {r.status_code}')
+    logging.info(f'server response =  {dumps(r.json(),indent=3)}')
+
     if r.status_code > 200:
         logging.info(f'server response =  {dumps(r.json(),indent=3)}')
 
