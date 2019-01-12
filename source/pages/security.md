@@ -18,7 +18,7 @@ The following are security conformance requirements for VhDir actors:
 * VhDir actors *SHALL* use the [SMART Backend Services Authorization Guide] to collect the necessary requestor information appropriate for making the VhDir data request. 
 * VhDir actors *SHALL* reference a single time source to establish a common time base for security auditing across the system.
 * VhDir actors *SHALL* use the [AuditEvent] resource to capture audit logs of the various transactions. VhDir actors *SHOULD* capture as many AuditEvent resource data elements as appropriate based on requirements of FHIR [Audit Logging] and local policies.
-* VhDir transactions *SHALL* use TLS version 1.2 or higher to secure transmission channel unless the transmission is taking place over a more secure network.(Using TLS even within a secured network environment is still encouraged to provide defense in depth.) US Federal systems implementing VhDir actors *SHOULD* conform with FIPS PUB 140-2.
+* VhDir transactions *SHALL* use TLS version 1.2 or higher to secure the transmission channel unless the transmission is taking place over a more secure network.(Using TLS even within a secured network environment is still encouraged to provide defense in depth.) US Federal systems implementing VhDir actors *SHOULD* conform with FIPS PUB 140-2.
 * VhDir actors *SHALL* conform to [FHIR Communications] requirements. 
 * VhDir actors *SHOULD* retain Provenance information using the [FHIR Provenance] resource. 
 

@@ -24,10 +24,9 @@ This profile modifies the base Organization resource in the following manner:
 1.  [InsurancePlan](StructureDefinition-insuranceplan-reference.html) (0..*) - indicates the health insurance products the organization offers to its employees
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with an organization is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!--- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD --->
 
 **Examples:**
 
@@ -47,6 +46,6 @@ Each organization must have:
 1.  A type in `organization.type`
 
 
-**Profile specific implementation guidance:**
+<!--- **Profile specific implementation guidance:**
 
-- TBD
+- TBD --->

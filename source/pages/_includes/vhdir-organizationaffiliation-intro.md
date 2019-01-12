@@ -31,10 +31,9 @@ This profile modifies the base OrganizationAffiliation resource in the following
 1.  [Available time](StructureDefinition-contactpoint-availabletime.html) (0..*) - indicates when the point of contact for this role is available
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with this role is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!--- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD --->
 **Examples:**
 
 The following are example uses for the vhdir-organizationaffiliation profile:
@@ -51,7 +50,6 @@ Each OrganizationAffiliation must have:
 
 1.  A boolean value in `OrganizationAffiliation.active`
 
+<!--- **Profile specific implementation guidance:**
 
-**Profile specific implementation guidance:**
-
-- TBD
+- TBD --->

@@ -108,7 +108,7 @@
             }
         ]
     },
-    "fhirVersion": "3.6.0",
+    "fhirVersion": "4.0.0",
     "id": "endpoint-usecase",
     "kind": "complex-type",
     "name": "EndpointUsecase",

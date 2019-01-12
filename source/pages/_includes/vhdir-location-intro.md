@@ -22,10 +22,9 @@ This profile modifies the base Lractitioner resource in the following manner:
 1.  [NewPatientProfile](StructureDefinition-newpatientprofile.html) (0..*) - a description of the type of patients the location accepts (e.g. pediatric only)
 1.  [Restriction](StructureDefinition-usage-restriction.html) (0..*) - indicates whether disclosure of any data associated with a location is restricted
 
-*  Adds new value sets/updates value set bindings:
+<!--- *  Adds new value sets/updates value set bindings:
 
-TBD
-
+TBD --->
 
 
 **Examples:**
@@ -43,8 +42,6 @@ Each Location must have:
 
 1.  One coded value in `location.status`
 
+<!--- **Profile specific implementation guidance:**
 
-**Profile specific implementation guidance:**
-
-- TBD
-
+- TBD --->

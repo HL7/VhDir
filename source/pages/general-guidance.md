@@ -51,15 +51,15 @@ For more information on the ONC and FHA effort see the [ONC Techlab Healthcare D
 
 ## Relation to US Core and other IGs
 
-This implementation guide was written for an international audience. We expect different jurisdictions considering implementating a VHDir will design their implementations in accordance with jurisdictional requirements, such as national profiles/IGs. In the United States, for example, we expect a VHDir would align with an R4 version of the US Core IG once it becomes available.
+This implementation guide was written for an international audience. We expect different jurisdictions considering implementing a VHDir will design their implementations in accordance with jurisdictional requirements, such as national profiles/IGs. In the United States, for example, we expect a VHDir would align with an R4 version of the US Core IG once it becomes available.
 
 ## The Validated Healthcare Directory Data Model
 
 To determine which resources to profile, extensions to create, etc. we reviewed a number of use cases supported by healthcare directories today:
 
 * Basic Information Exchange
-  * A1. Enable electronic exchange (e.g. discovery of electronic end points such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses
-  * A2. Find an individual and/or organization (even if no electronic end point is available) - enables users to find  contact and other identifying information about healthcare organizations and individual healthcare providers
+  * A1. Enable electronic exchange (e.g. discovery of electronic endpoints such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses
+  * A2. Find an individual and/or organization (even if no electronic endpoint is available) - enables users to find  contact and other identifying information about healthcare organizations and individual healthcare providers
 * Patient/Payer focused	
   * B1. Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations
   * B2. Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved
@@ -106,7 +106,7 @@ Similar to PractitionerRole, OrganizationAffiliation describes relationships bet
 A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Network / InsurancePlan </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 3: Network / Insurance Plan </strong></figcaption>
   <img src="assets/images/diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
 </figure>
 

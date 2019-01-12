@@ -1,0 +1,33 @@
+{
+   "package-id": "hl7.org.fhir.uv.vhdir",
+   "title": "Validated Healthcare Directory",
+   "canonical": "http://www.hl7.org/fhir/uv/vhdir",
+   "introduction": "The Validated Healthcare Directory (VHDir) Implementation Guide defines the minimum conformance requirements for accessing or exposing validated healthcare directory data. It provides a specification for the exchange of directory data between a source of validated provider data and local workflow environments (e.g. local directories). The specification is supports international stakeholders and also meet the specific needs of the US Realm.\n\nThis implementation guide is developed in cooperation with the Office of the National Coordinator for Health Information Technology (ONC) and the HL7 International Patient Administration Work Group, and the HL7 US Realm Steering Committee.",
+   "list": [
+      {
+         "version": "current",
+         "desc": "Continuous Integration Build (latest in version control)",
+         "path": "http://build.fhir.org/ig/HL7/VhDir",
+         "status": "ci-build",
+         "current": true
+      },
+      {
+         "version": "0.2.0",
+         "date": "2018-09-01",
+         "desc": "Ballot 2 - see Change Notes",
+         "changes": "change-notes.html",
+         "path": "http://hl7.org/fhir/uv/vhdir/2018Sep/",
+         "status": "ballot",
+         "sequence": "STU1"
+      },
+      {
+         "version": "0.1.0",
+         "date": "2018-01-01",
+         "desc": "First ballot (Draft for Comment)",
+         "changes": "n/a",
+         "path": "http://hl7.org/fhir/uv/vhdir/2018Jan/",
+         "status": "draft",
+         "sequence": "STU1"
+      }
+   ]
+}
