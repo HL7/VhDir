@@ -86,7 +86,6 @@
                     <display value="BAY STATE COMMUNITY SERVICES, INC." />
                 </location>
                 <name value="BAY STATE COMMUNITY SERVICES, INC. PLASTIC SURGERY Services" />
-                <comment value="" />
                 <telecom>
                     <system value="phone" />
                     <value value="6174718400" />
@@ -116,7 +115,6 @@
                 </referralMethod>
                 <appointmentRequired value="true" />
                 <availableTime>
-                    <daysOfWeek value="" />
                     <daysOfWeek value="tue" />
                     <daysOfWeek value="wed" />
                     <daysOfWeek value="thu" />
