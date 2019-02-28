@@ -18,7 +18,7 @@
         <a class="navbar-brand hidden" href="{{ site.data.fhir.path }}/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       {% capture my-include %}{% include menu.md %}{% endcapture %}{{ my-include | markdownify }}
+       {% capture my-include %}{% include menu.html %}{% endcapture %}{{ my-include | markdownify }}
 
              <!--        <ul class="nav navbar-nav">
           <li>

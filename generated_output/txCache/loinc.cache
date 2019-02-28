@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA27978-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Condition-focused care team",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA27978-8",
+  "display" : "Condition-focused care team"
+}, "valueSet" :null}####
+v: {
+  "display" : "Condition-focused care team",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
