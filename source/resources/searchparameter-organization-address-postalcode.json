@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address-postalcode",
@@ -20,11 +19,15 @@
     }
   ],
   "code": "address-postalcode",
-  "base": ["Organization"],
+  "base": [
+    "Organization"
+  ],
   "type": "string",
   "description": "Select organizations with an address with the specified postal code",
   "expression": "Organization.address.postalCode",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["exact"]
+  "modifier": [
+    "exact"
+  ]
 }

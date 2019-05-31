@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-characteristic",
@@ -19,11 +18,15 @@
     }
   ],
   "code": "characteristic",
-  "base": ["HealthcareService"],
+  "base": [
+    "HealthcareService"
+  ],
   "type": "token",
   "description": "Select HealthcareServices with the specified characteristic",
   "expression": "HealthcareService.characteristic",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

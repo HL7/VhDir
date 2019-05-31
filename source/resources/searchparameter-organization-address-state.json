@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-address-state",
@@ -20,11 +19,15 @@
     }
   ],
   "code": "address-state",
-  "base": ["Organization"],
+  "base": [
+    "Organization"
+  ],
   "type": "string",
   "description": "Select organizations with an address in the specified state",
   "expression": "Organization.address.state",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["exact"]
+  "modifier": [
+    "exact"
+  ]
 }

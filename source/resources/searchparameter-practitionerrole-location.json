@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-location",
@@ -20,17 +19,25 @@
     }
   ],
   "code": "location",
-  "base": ["PractitionerRole"],
+  "base": [
+    "PractitionerRole"
+  ],
   "type": "reference",
   "description": "Select PractitionerRoles available at the specified location",
   "expression": "PractitionerRole.location",
-  "target": ["Location"],
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization", "location-type"
+    "location-identifier",
+    "location-address",
+    "location-organization",
+    "location-type"
   ]
 }

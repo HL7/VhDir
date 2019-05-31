@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-primarysource-date",
@@ -19,13 +18,21 @@
     }
   ],
   "code": "primarysource-date",
-  "base": ["VerificationResult"],
+  "base": [
+    "VerificationResult"
+  ],
   "type": "date",
   "description": "Select validation information for data that was validated against a primary source on the specified date",
   "expression": "VerificationResult.primarySource.validationDate",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [
-    "eq", "gt", "lt", "ge", "le", "sa", "eb"
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
   ]
 }

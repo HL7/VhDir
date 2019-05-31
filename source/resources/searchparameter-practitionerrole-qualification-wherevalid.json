@@ -1,34 +1,41 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-practitionerrole-qualification-wherevalid", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid", 
-  "version": "0.0.0", 
-  "name": "VHDir PractitionerRole Qualification Wherevalid Location Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitionerrole-qualification-wherevalid",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid",
+  "version": "0.0.0",
+  "name": "VHDir PractitionerRole Qualification Wherevalid Location Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "qualification-wherevalid", 
-  "base": ["PractitionerRole"], 
-  "type": "reference", 
-  "description": "Select PractitionerRoles with a qualification that is valid at the specified location", 
+  ],
+  "code": "qualification-wherevalid",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "description": "Select PractitionerRoles with a qualification that is valid at the specified location",
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
-  "target": ["Location"],
+  "target": [
+    "Location"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "location-identifier", "location-address", "location-organization"
+    "location-identifier",
+    "location-address",
+    "location-organization"
   ]
 }

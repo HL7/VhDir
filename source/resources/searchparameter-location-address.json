@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-address",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "address",
-  "base": ["Location"],
+  "base": [
+    "Location"
+  ],
   "type": "string",
   "description": "Select Locations with the specified address",
   "expression": "Location.address",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

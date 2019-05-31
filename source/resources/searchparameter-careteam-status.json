@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-status",
@@ -20,7 +19,9 @@
     }
   ],
   "code": "status",
-  "base": ["CareTeam"],
+  "base": [
+    "CareTeam"
+  ],
   "type": "token",
   "description": "Select CareTeams with the specified status",
   "expression": "CareTeam.status",

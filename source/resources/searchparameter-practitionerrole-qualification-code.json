@@ -1,28 +1,32 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-practitionerrole-qualification-code", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code", 
-  "version": "0.0.0", 
-  "name": "VHDir PractitionerRole Qualification Code Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-practitionerrole-qualification-code",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code",
+  "version": "0.0.0",
+  "name": "VHDir PractitionerRole Qualification Code Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "qualification-code", 
-  "base": ["PractitionerRole"],
-  "type": "token", 
-  "description": "Select PractitionerRoles with a type of qualification matching the specified code", 
+  ],
+  "code": "qualification-code",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "description": "Select PractitionerRoles with a type of qualification matching the specified code",
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('code')",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

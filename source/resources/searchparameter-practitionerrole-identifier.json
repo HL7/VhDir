@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-identifier",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "identifier",
-  "base": ["PractitionerRole"],
+  "base": [
+    "PractitionerRole"
+  ],
   "type": "token",
   "description": "Select PractitionerRoles with the specified identifier",
   "expression": "PractitionerRole.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

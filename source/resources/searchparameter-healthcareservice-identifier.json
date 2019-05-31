@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-identifier",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "identifier",
-  "base": ["HealthcareService"],
+  "base": [
+    "HealthcareService"
+  ],
   "type": "token",
   "description": "Select HealthcareServices with the specified identifier",
   "expression": "HealthcareService.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

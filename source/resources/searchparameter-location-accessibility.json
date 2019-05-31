@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-accessibility",
@@ -19,12 +18,15 @@
     }
   ],
   "code": "accessibility",
-  "base": ["Location"],
+  "base": [
+    "Location"
+  ],
   "type": "token",
   "description": "Select locations that offer the specified accessibility options",
   "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility')",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }
-

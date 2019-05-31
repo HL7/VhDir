@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-eligibility",
@@ -19,11 +18,15 @@
     }
   ],
   "code": "eligibility",
-  "base": ["HealthcareService"],
+  "base": [
+    "HealthcareService"
+  ],
   "type": "token",
   "description": "Select services with the specified eligibility requirements",
   "expression": "HealthcareService.eligibility.code",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

@@ -1,31 +1,37 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-careteam-endpoint", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-endpoint", 
-  "version": "0.0.0", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-careteam-endpoint",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-endpoint",
+  "version": "0.0.0",
   "name": "VHDir CareTeam Endpoint Search Parameter",
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "endpoint", 
-  "base": ["CareTeam"], 
-  "type": "reference", 
-  "description": "Select CareTeams with the specified endpoint", 
+  ],
+  "code": "endpoint",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "reference",
+  "description": "Select CareTeams with the specified endpoint",
   "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference')",
-  "target": ["Endpoint"],
+  "target": [
+    "Endpoint"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "endpoint-identifier", "endpoint-connection-type", "endpoint-organization"
+    "endpoint-identifier",
+    "endpoint-connection-type",
+    "endpoint-organization"
   ]
 }

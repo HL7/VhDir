@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-identifier",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "identifier",
-  "base": ["OrganizationAffiliation"],
+  "base": [
+    "OrganizationAffiliation"
+  ],
   "type": "token",
   "description": "Select OrganizationAffiliations with the specified identifier",
   "expression": "OrganizationAffiliation.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

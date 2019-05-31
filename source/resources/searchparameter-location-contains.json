@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-contains",
@@ -19,7 +18,9 @@
     }
   ],
   "code": "contains",
-  "base": ["Location"],
+  "base": [
+    "Location"
+  ],
   "type": "special",
   "description": "Select locations that contain the specified co-ordinates",
   "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",

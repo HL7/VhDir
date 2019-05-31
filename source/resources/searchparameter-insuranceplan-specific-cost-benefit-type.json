@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-specific-cost-benefit-type",
@@ -19,12 +18,15 @@
     }
   ],
   "code": "specific-cost-benefit-type",
-  "base": ["InsurancePlan"],
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select plans which include costs for the specified type of benefit",
   "expression": "InsurancePlan.plan.specificCost.benefit.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }
-

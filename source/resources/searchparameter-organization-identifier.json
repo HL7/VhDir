@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-identifier",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "identifier",
-  "base": ["Organization"],
+  "base": [
+    "Organization"
+  ],
   "type": "token",
   "description": "Select Organizations with the specified identifier",
   "expression": "Organization.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

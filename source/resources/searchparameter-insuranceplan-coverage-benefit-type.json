@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-benefit-type",
@@ -19,11 +18,15 @@
     }
   ],
   "code": "coverage-benefit-type",
-  "base": ["InsurancePlan"],
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select health insurance products offering covered benefits of the specified type",
   "expression": "InsurancePlan.coverage.benefit.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

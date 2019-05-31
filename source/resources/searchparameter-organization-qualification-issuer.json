@@ -1,32 +1,39 @@
 {
-  "resourceType": "SearchParameter", 
-  "id": "searchparameter-organization-qualification-issuer", 
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-issuer", 
-  "version": "0.0.0", 
-  "name": "VHDir Organization Qualification Issuer Search Parameter", 
-  "status": "draft", 
-  "date": "2018-05-23", 
-  "publisher": "HL7 Patient Administration Committee", 
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-organization-qualification-issuer",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-issuer",
+  "version": "0.0.0",
+  "name": "VHDir Organization Qualification Issuer Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
       "telecom": [
         {
-          "system": "url", 
+          "system": "url",
           "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
         }
       ]
     }
-  ], 
-  "code": "qualification-issuer", 
-  "base": ["Organization"],
-  "type": "reference", 
-  "description": "Select Organizations with a qualification issued by the specified organization", 
+  ],
+  "code": "qualification-issuer",
+  "base": [
+    "Organization"
+  ],
+  "type": "reference",
+  "description": "Select Organizations with a qualification issued by the specified organization",
   "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
-  "target": ["Organization"],
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["below"],
+  "modifier": [
+    "below"
+  ],
   "chain": [
-    "organization-identifier", "organization-name"
+    "organization-identifier",
+    "organization-name"
   ]
 }

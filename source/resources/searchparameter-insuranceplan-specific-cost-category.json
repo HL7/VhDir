@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-specific-cost-category",
@@ -19,11 +18,15 @@
     }
   ],
   "code": "specific-cost-category",
-  "base": ["InsurancePlan"],
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select plans which include costs for the specified category of coverage",
   "expression": "InsurancePlan.plan.specificCost.category",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

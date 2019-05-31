@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-service",
@@ -19,14 +18,21 @@
     }
   ],
   "code": "service",
-  "base": ["CareTeam"],
+  "base": [
+    "CareTeam"
+  ],
   "type": "reference",
   "description": "Select care teams providing the specified service",
   "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/healthcareservice-reference')",
-  "target": ["HealthcareService"],
+  "target": [
+    "HealthcareService"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "healthcareservice-identifier", "healthcareservice-category", "healthcareservice-organization", "healthcareservice-location"
+    "healthcareservice-identifier",
+    "healthcareservice-category",
+    "healthcareservice-organization",
+    "healthcareservice-location"
   ]
 }

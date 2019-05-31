@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-general-cost-type",
@@ -19,12 +18,15 @@
     }
   ],
   "code": "general-cost-type",
-  "base": ["InsurancePlan"],
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "token",
   "description": "Select plans with the specified type of cost",
   "expression": "InsurancePlan.plan.generalCost.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }
-

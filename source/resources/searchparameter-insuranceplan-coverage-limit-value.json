@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-coverage-limit-value",
@@ -19,13 +18,21 @@
     }
   ],
   "code": "coverage-limit-value",
-  "base": ["InsurancePlan"],
+  "base": [
+    "InsurancePlan"
+  ],
   "type": "quantity",
   "description": "Select health insurance products with covered benefits limited in the specified manner",
   "expression": "InsurancePlan.coverage.benefit.limit.value",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [
-    "eq", "gt", "lt", "ge", "le", "sa", "eb"
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
   ]
 }

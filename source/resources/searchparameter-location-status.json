@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-status",
@@ -20,7 +19,9 @@
     }
   ],
   "code": "status",
-  "base": ["Location"],
+  "base": [
+    "Location"
+  ],
   "type": "token",
   "description": "Select Locations with the specified status",
   "expression": "Location.status",

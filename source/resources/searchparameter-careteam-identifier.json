@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-identifier",
@@ -19,13 +18,16 @@
     }
   ],
   "code": "identifier",
-  "base": ["CareTeam"],
+  "base": [
+    "CareTeam"
+  ],
   "type": "token",
   "description": "Select CareTeams with the specified identifier",
   "expression": "CareTeam.identifier",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text", "ofType"
+    "text",
+    "ofType"
   ]
 }

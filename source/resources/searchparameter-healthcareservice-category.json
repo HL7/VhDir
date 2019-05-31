@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-category",
@@ -19,11 +18,15 @@
     }
   ],
   "code": "category",
-  "base": ["HealthcareService"],
+  "base": [
+    "HealthcareService"
+  ],
   "type": "token",
   "description": "Select HealthcareServices providing the specified category of services",
   "expression": "HealthcareService.category",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": ["text"]
+  "modifier": [
+    "text"
+  ]
 }

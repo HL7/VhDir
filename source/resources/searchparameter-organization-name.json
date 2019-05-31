@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-name",
@@ -20,13 +19,16 @@
     }
   ],
   "code": "name",
-  "base": ["Organization"],
+  "base": [
+    "Organization"
+  ],
   "type": "string",
   "description": "Select Organizations with the specified name",
   "expression": "Organization.name|Organization.alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "exact", "contains"
+    "exact",
+    "contains"
   ]
 }

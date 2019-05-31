@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-service",
@@ -20,14 +19,21 @@
     }
   ],
   "code": "service",
-  "base": ["OrganizationAffiliation"],
+  "base": [
+    "OrganizationAffiliation"
+  ],
   "type": "reference",
   "description": "Select OrganizationAffiliations providing the specified service",
   "expression": "OrganizationAffiliation.healthcareService",
-  "target": ["HealthcareService"],
+  "target": [
+    "HealthcareService"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "healthcareservice-identifier", "healthcareservice-category", "healthcareservice-organization", "healthcareservice-location"
+    "healthcareservice-identifier",
+    "healthcareservice-category",
+    "healthcareservice-organization",
+    "healthcareservice-location"
   ]
 }

@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-organization",
@@ -20,17 +19,26 @@
     }
   ],
   "code": "organization",
-  "base": ["HealthcareService"],
+  "base": [
+    "HealthcareService"
+  ],
   "type": "reference",
   "description": "Select HealthcareServices provided by the specified organization",
   "expression": "HealthcareService.providedBy",
-  "target": ["Organization"],
+  "target": [
+    "Organization"
+  ],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "above", "below"
+    "above",
+    "below"
   ],
   "chain": [
-    "organization-identifier", "organization-name", "organization-address", "organization-partof", "organization-type"
+    "organization-identifier",
+    "organization-name",
+    "organization-address",
+    "organization-partof",
+    "organization-type"
   ]
 }
