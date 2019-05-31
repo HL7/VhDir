@@ -3,7 +3,7 @@
   "id": "searchparameter-insuranceplan-plan-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-type",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Plan Type Search Parameter",
+  "name": "VhDir_sp_insuranceplan_plan_type",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

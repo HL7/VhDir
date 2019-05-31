@@ -3,7 +3,7 @@
   "id": "searchparameter-insuranceplan-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-status",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Status Search Parameter",
+  "name": "VhDir_sp_insuranceplan_status",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
   "status": "draft",
   "date": "2018-05-23",

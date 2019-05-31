@@ -3,7 +3,7 @@
   "id": "searchparameter-verificationresult-attestation-onbehalfof",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-onbehalfof",
   "version": "0.0.0",
-  "name": "VHDir VerificationResult Attestation On Behalf Of Search Parameter",
+  "name": "VhDir_sp_verificationresult_attestation_onbehalfof",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

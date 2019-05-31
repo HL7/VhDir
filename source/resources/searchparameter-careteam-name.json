@@ -3,7 +3,7 @@
   "id": "searchparameter-careteam-name",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-name",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Name Search Parameter",
+  "name": "VhDir_sp_careteam_name",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

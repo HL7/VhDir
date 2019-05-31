@@ -3,7 +3,7 @@
   "id": "searchparameter-organizationaffiliation-specialty",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-specialty",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Specialty Search Parameter",
+  "name": "VhDir_sp_organizationaffiliation_specialty",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-specialty",
   "status": "draft",
   "date": "2018-05-23",

@@ -3,7 +3,7 @@
   "id": "searchparameter-practitionerrole-qualification-issuer",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-issuer",
   "version": "0.0.0",
-  "name": "VHDir PractitionerRole Qualification Issuer Search Parameter",
+  "name": "VhDir_sp_practitionerrole_qualification_issuer",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

@@ -3,7 +3,7 @@
   "id": "searchparameter-location-organization",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-organization",
   "version": "0.0.0",
-  "name": "VHDir Location Organization Search Parameter",
+  "name": "VhDir_sp_location_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-organization",
   "status": "draft",
   "date": "2018-05-23",

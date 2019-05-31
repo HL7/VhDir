@@ -3,7 +3,7 @@
   "id": "searchparameter-careteam-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-via-intermediary",
   "version": "0.0.0",
-  "name": "VHDir Via Intermediary CareTeam Search Parameter",
+  "name": "VhDir_sp_careteam_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

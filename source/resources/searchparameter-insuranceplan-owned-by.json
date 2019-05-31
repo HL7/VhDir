@@ -3,7 +3,7 @@
   "id": "searchparameter-insuranceplan-owned-by",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-owned-by",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Owned-by Search Parameter",
+  "name": "VhDir_sp_insuranceplan_owned_by",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-owned-by",
   "status": "draft",
   "date": "2018-05-23",

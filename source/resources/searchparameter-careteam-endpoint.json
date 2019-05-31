@@ -3,7 +3,7 @@
   "id": "searchparameter-careteam-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-endpoint",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Endpoint Search Parameter",
+  "name": "VhDir_sp_careteam_endpoint",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

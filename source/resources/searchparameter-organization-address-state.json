@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-address-state",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-state",
   "version": "0.0.0",
-  "name": "VHDir Organization Address State Search Parameter",
+  "name": "VhDir_sp_organization_address_state",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-state",
   "status": "draft",
   "date": "2018-05-23",

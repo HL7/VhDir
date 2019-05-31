@@ -3,7 +3,7 @@
   "id": "searchparameter-endpoint-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier",
   "version": "0.0.0",
-  "name": "VHDir Endpoint Identifier Search Parameter",
+  "name": "VhDir_sp_endpoint_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
   "status": "draft",
   "date": "2018-05-23",

@@ -3,7 +3,7 @@
   "id": "searchparameter-practitionerrole-new-patient",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient",
   "version": "0.0.0",
-  "name": "VHDir PractitionerRole New Patient Search Parameter",
+  "name": "VhDir_sp_practitionerrole_new_patient",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

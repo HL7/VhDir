@@ -3,7 +3,7 @@
   "id": "searchparameter-practitioner-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-via-intermediary",
   "version": "0.0.0",
-  "name": "VHDir Via Intermediary Practitioner Search Parameter",
+  "name": "VhDir_sp_practitioner_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

@@ -3,7 +3,7 @@
   "id": "searchparameter-organizationaffiliation-identifier-assigner",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Identifier Assigner Search Parameter",
+  "name": "VhDir_sp_organizationaffiliation_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

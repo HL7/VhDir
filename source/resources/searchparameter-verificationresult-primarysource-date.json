@@ -3,7 +3,7 @@
   "id": "searchparameter-verificationresult-primarysource-date",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-date",
   "version": "0.0.0",
-  "name": "VHDir VerificationResult Primary Source Date Search Parameter",
+  "name": "VhDir_sp_verificationresult_primarysource_date",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

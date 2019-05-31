@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-organization",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-organization",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Organization Search Parameter",
+  "name": "VhDir_sp_healthcareservice_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-organization",
   "status": "draft",
   "date": "2018-05-23",

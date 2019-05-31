@@ -3,7 +3,7 @@
   "id": "searchparameter-endpoint-payload-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-payload-type",
   "version": "0.0.0",
-  "name": "VHDir Endpoint Payload Type Search Parameter",
+  "name": "VhDir_sp_endpoint_payload_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-payload-type",
   "status": "draft",
   "date": "2018-05-23",

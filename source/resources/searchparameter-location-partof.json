@@ -3,7 +3,7 @@
   "id": "searchparameter-location-partof",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-partof",
   "version": "0.0.0",
-  "name": "VHDir Location Part Of Search Parameter",
+  "name": "VhDir_sp_location_partof",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-partof",
   "status": "draft",
   "date": "2018-05-23",

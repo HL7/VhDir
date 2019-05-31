@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-endpoint",
   "version": "0.0.0",
-  "name": "VHDir Organization Endpoint Search Parameter",
+  "name": "VhDir_sp_organization_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-endpoint",
   "status": "draft",
   "date": "2018-05-23",

@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-address-country",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-country",
   "version": "0.0.0",
-  "name": "VHDir Organization Address Country Search Parameter",
+  "name": "VhDir_sp_organization_address_country",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-country",
   "status": "draft",
   "date": "2018-05-23",

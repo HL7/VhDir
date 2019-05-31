@@ -3,7 +3,7 @@
   "id": "searchparameter-location-accessibility",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-accessibility",
   "version": "0.0.0",
-  "name": "VHDir Location Accessibility Search Parameter",
+  "name": "VhDir_sp_location_accessibility",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

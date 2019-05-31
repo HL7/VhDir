@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-type",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Type Search Parameter",
+  "name": "VhDir_sp_healthcareservice_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
   "status": "draft",
   "date": "2018-05-23",

@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-eligibility",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-eligibility",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Eligibility Search Parameter",
+  "name": "VhDir_sp_healthcareservice_eligibility",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

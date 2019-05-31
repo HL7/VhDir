@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-new-patient-network",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient-network",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService New Patient Network Search Parameter",
+  "name": "VhDir_sp_healthcareservice_new_patient_network",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

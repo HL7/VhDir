@@ -3,7 +3,7 @@
   "id": "searchparameter-organizationaffiliation-network",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-network",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Network Search Parameter",
+  "name": "VhDir_sp_organizationaffiliation_network",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-network",
   "status": "draft",
   "date": "2018-05-23",

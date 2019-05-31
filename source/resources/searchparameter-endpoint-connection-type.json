@@ -3,7 +3,7 @@
   "id": "searchparameter-endpoint-connection-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-connection-type",
   "version": "0.0.0",
-  "name": "VHDir Endpoint Connection Type Search Parameter",
+  "name": "VhDir_sp_endpoint_connection_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-connection-type",
   "status": "draft",
   "date": "2018-05-23",

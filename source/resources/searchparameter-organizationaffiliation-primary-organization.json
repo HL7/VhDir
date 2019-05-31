@@ -3,7 +3,7 @@
   "id": "searchparameter-organizationaffiliation-primary-organization",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-primary-organization",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Primary Organization Search Parameter",
+  "name": "VhDir_sp_organizationaffiliation_primary_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization",
   "status": "draft",
   "date": "2018-05-23",

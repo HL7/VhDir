@@ -3,7 +3,7 @@
   "id": "searchparameter-careteam-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-status",
   "version": "0.0.0",
-  "name": "VHDir CareTeam Status Search Parameter",
+  "name": "VhDir_sp_careteam_status",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-status",
   "status": "draft",
   "date": "2018-05-23",

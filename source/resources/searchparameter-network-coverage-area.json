@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-network-coverage-area",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-network-coverage-area",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-coverage-area",
   "version": "0.0.0",
-  "name": "VHDir Network Coverage Area Search Parameter",
+  "name": "VhDir_sp_network_coverage_area",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

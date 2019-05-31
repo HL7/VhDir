@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-qualification-code",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-code",
   "version": "0.0.0",
-  "name": "VHDir Organization Qualification Code Search Parameter",
+  "name": "VhDir_sp_organization_qualification_code",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

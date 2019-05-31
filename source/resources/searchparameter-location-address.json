@@ -3,7 +3,7 @@
   "id": "searchparameter-location-address",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-address",
   "version": "0.0.0",
-  "name": "VHDir Location Address Search Parameter",
+  "name": "VhDir_sp_location_address",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address",
   "status": "draft",
   "date": "2018-05-23",

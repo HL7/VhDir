@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-location",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-location",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Location Search Parameter",
+  "name": "VhDir_sp_healthcareservice_location",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-location",
   "status": "draft",
   "date": "2018-05-23",

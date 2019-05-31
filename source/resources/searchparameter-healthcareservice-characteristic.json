@@ -3,7 +3,7 @@
   "id": "searchparameter-healthcareservice-characteristic",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic",
   "version": "0.0.0",
-  "name": "VHDir HealthcareService Characteristic Search Parameter",
+  "name": "VhDir_sp_healthcareservice_characteristic",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
   "status": "draft",
   "date": "2018-05-23",

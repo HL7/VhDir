@@ -3,7 +3,7 @@
   "id": "searchparameter-practitioner-given-name",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-given-name",
   "version": "0.0.0",
-  "name": "VHDir Practitioner Given Name Search Parameter",
+  "name": "VhDir_sp_practitioner_given_name",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-given",
   "status": "draft",
   "date": "2018-05-23",

@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-address-postalcode",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-postalcode",
   "version": "0.0.0",
-  "name": "VHDir Organization Address Postal Code Search Parameter",
+  "name": "VhDir_sp_organization_address_postalcode",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-postalcode",
   "status": "draft",
   "date": "2018-05-23",

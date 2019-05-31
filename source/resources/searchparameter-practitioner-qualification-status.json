@@ -3,7 +3,7 @@
   "id": "searchparameter-practitioner-qualification-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-status",
   "version": "0.0.0",
-  "name": "VHDir Practitioner Qualification Status Search Parameter",
+  "name": "VhDir_sp_practitioner_qualification_status",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

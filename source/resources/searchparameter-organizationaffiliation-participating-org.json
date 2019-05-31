@@ -3,7 +3,7 @@
   "id": "searchparameter-organizationaffiliation-participating-org",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-participating-organization",
   "version": "0.0.0",
-  "name": "VHDir OrganizationAffiliation Participating Organization Search Parameter",
+  "name": "VhDir_sp_organizationaffiliation_participating_org",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-participating-organization",
   "status": "draft",
   "date": "2018-05-23",

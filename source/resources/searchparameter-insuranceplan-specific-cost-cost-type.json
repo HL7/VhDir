@@ -3,7 +3,7 @@
   "id": "searchparameter-insuranceplan-specific-cost-cost-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type",
   "version": "0.0.0",
-  "name": "VHDir InsurancePlan Specific Cost Cost Type Search Parameter",
+  "name": "VhDir_sp_insuranceplan_specific_cost_cost_type",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

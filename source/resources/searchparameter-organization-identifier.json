@@ -3,7 +3,7 @@
   "id": "searchparameter-organization-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-identifier",
   "version": "0.0.0",
-  "name": "VHDir Organization Identifier Search Parameter",
+  "name": "VhDir_sp_organization_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-identifier",
   "status": "draft",
   "date": "2018-05-23",
