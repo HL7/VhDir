@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select health insurance provider networks available in a region described by the specified location",
   "code": "coverage-area",
   "base": [
     "Organization"
   ],
   "type": "reference",
-  "description": "Select health insurance provider networks available in a region described by the specified location",
   "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference')",
   "target": [
     "Location"

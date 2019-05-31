@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "HealthcareService"
   ],
   "type": "reference",
-  "description": "Select HealthcareServices with an identifier issued by the specified organization",
   "expression": "HealthcareService.identifier.assigner",
   "target": [
     "Organization"

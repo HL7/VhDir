@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Practitioners with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "Practitioner"
   ],
   "type": "reference",
-  "description": "Select Practitioners with contact information available through the specified intermediary",
   "expression": "Practitioner.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Practitioners with the specified identifier",
   "code": "identifier",
   "base": [
     "Practitioner"
   ],
   "type": "token",
-  "description": "Select Practitioners with the specified identifier",
   "expression": "Practitioner.identifier",
   "multipleOr": true,
   "multipleAnd": true,

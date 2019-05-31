@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select products with the specified identifier",
   "code": "product-identifier",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select products with the specified identifier",
   "expression": "InsurancePlan.identifier",
   "multipleOr": true,
   "multipleAnd": true,

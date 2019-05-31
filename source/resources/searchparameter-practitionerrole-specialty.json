@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles associated with the specified specialty",
   "code": "specialty",
   "base": [
     "PractitionerRole"
   ],
   "type": "token",
-  "description": "Select PractitionerRoles associated with the specified specialty",
   "expression": "PractitionerRole.specialty",
   "multipleOr": true,
   "multipleAnd": true,

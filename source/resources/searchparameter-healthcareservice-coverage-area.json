@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select services available in a region described by the specified location",
   "code": "coverage-area",
   "base": [
     "HealthcareService"
   ],
   "type": "reference",
-  "description": "Select services available in a region described by the specified location",
   "expression": "HealthcareService.coverageArea",
   "target": [
     "Location"

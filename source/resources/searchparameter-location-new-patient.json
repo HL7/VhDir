@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select locations that are/are not accepting new patients",
   "code": "new-patient",
   "base": [
     "Location"
   ],
   "type": "token",
-  "description": "Select locations that are/are not accepting new patients",
   "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
   "multipleAnd": true
 }

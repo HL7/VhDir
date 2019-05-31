@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select validation information for the specified attribute of a resource",
   "code": "target-location",
   "base": [
     "VerificationResult"
   ],
   "type": "string",
-  "description": "Select validation information for the specified attribute of a resource",
   "expression": "VerificationResult.targetLocation",
   "multipleOr": true,
   "multipleAnd": true,

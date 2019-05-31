@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles that are/are not accepting new patients",
   "code": "new-patient",
   "base": [
     "PractitionerRole"
   ],
   "type": "token",
-  "description": "Select PractitionerRoles that are/are not accepting new patients",
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
   "multipleAnd": true
 }

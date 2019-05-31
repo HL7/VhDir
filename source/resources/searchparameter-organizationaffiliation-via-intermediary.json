@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select OrganizationAffiliations with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "reference",
-  "description": "Select OrganizationAffiliations with contact information available through the specified intermediary",
   "expression": "OrganizationAffiliation.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

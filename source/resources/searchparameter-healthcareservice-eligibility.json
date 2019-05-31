@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select services with the specified eligibility requirements",
   "code": "eligibility",
   "base": [
     "HealthcareService"
   ],
   "type": "token",
-  "description": "Select services with the specified eligibility requirements",
   "expression": "HealthcareService.eligibility.code",
   "multipleOr": true,
   "multipleAnd": true,

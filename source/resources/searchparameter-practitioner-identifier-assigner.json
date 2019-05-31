@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Practitioners with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "Practitioner"
   ],
   "type": "reference",
-  "description": "Select Practitioners with an identifier issued by the specified organization",
   "expression": "Practitioner.identifier.assigner",
   "target": [
     "Organization"

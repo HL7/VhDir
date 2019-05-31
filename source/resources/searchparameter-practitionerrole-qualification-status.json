@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with a qualification status matching the specified code",
   "code": "qualification-status",
   "base": [
     "PractitionerRole"
   ],
   "type": "token",
-  "description": "Select PractitionerRoles with a qualification status matching the specified code",
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('status')",
   "multipleOr": true,
   "multipleAnd": true

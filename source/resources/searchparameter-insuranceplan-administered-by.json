@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select products that are administered by the specified organization",
   "code": "administered-by",
   "base": [
     "InsurancePlan"
   ],
   "type": "reference",
-  "description": "Select products that are administered by the specified organization",
   "expression": "InsurancePlan.administeredBy",
   "target": [
     "Organization"

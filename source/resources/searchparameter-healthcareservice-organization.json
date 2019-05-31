@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices provided by the specified organization",
   "code": "organization",
   "base": [
     "HealthcareService"
   ],
   "type": "reference",
-  "description": "Select HealthcareServices provided by the specified organization",
   "expression": "HealthcareService.providedBy",
   "target": [
     "Organization"

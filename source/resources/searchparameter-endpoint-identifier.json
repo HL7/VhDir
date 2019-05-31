@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Endpoints with the specified identifier",
   "code": "identifier",
   "base": [
     "Endpoint"
   ],
   "type": "token",
-  "description": "Select Endpoints with the specified identifier",
   "expression": "Endpoint.identifier",
   "multipleOr": true,
   "multipleAnd": true,

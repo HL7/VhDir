@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices that are/are not accepting new patients",
   "code": "new-patient",
   "base": [
     "HealthcareService"
   ],
   "type": "token",
-  "description": "Select HealthcareServices that are/are not accepting new patients",
   "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
   "multipleAnd": true
 }

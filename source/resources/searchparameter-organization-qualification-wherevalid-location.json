@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Organizations with a qualification that is valid at the specified location",
   "code": "qualification-wherevalid-location",
   "base": [
     "Organization"
   ],
   "type": "reference",
-  "description": "Select Organizations with a qualification that is valid at the specified location",
   "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
   "target": [
     "Location"

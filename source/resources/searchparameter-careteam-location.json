@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select care teams operating at the specified location",
   "code": "location",
   "base": [
     "CareTeam"
   ],
   "type": "reference",
-  "description": "Select care teams operating at the specified location",
   "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference')",
   "target": [
     "Location"

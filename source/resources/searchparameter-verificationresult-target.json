@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select validation information for the specified resource",
   "code": "target",
   "base": [
     "VerificationResult"
   ],
   "type": "string",
-  "description": "Select validation information for the specified resource",
   "expression": "VerificationResult.target",
   "target": [
     "Resource"

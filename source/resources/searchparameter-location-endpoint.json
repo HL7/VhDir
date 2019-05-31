@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Locations with the specified endpoint",
   "code": "endpoint",
   "base": [
     "Location"
   ],
   "type": "reference",
-  "description": "Select Locations with the specified endpoint",
   "expression": "Location.endpoint",
   "target": [
     "Endpoint"

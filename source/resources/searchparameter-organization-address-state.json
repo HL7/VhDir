@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select organizations with an address in the specified state",
   "code": "address-state",
   "base": [
     "Organization"
   ],
   "type": "string",
-  "description": "Select organizations with an address in the specified state",
   "expression": "Organization.address.state",
   "multipleOr": true,
   "multipleAnd": true,

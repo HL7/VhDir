@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select endpoints that support the specified standard",
   "code": "usecase-standard",
   "base": [
     "Endpoint"
   ],
   "type": "uri",
-  "description": "Select endpoints that support the specified standard",
   "expression": "Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('standard')",
   "multipleOr": true,
   "multipleAnd": true,

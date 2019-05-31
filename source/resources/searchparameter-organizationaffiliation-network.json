@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select roles where the organization is a member of the specified health insurance provider network",
   "code": "network",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "reference",
-  "description": "Select roles where the organization is a member of the specified health insurance provider network",
   "expression": "OrganizationAffiliation.network",
   "target": [
     "Organization"

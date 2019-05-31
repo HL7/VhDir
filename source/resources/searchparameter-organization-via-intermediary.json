@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Organizations with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "Organization"
   ],
   "type": "reference",
-  "description": "Select Organizations with contact information available through the specified intermediary",
   "expression": "Organization.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')|Organization.contact.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with the specified endpoint",
   "code": "endpoint",
   "base": [
     "PractitionerRole"
   ],
   "type": "reference",
-  "description": "Select PractitionerRoles with the specified endpoint",
   "expression": "PractitionerRole.endpoint",
   "target": [
     "Endpoint"

@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Endpoints with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "Endpoint"
   ],
   "type": "reference",
-  "description": "Select Endpoints with contact information available through the specified intermediary",
   "expression": "Endpoint.contact.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

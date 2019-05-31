@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans associated with the specified health insurance provider network",
   "code": "plan-network",
   "base": [
     "InsurancePlan"
   ],
   "type": "reference",
-  "description": "Select plans associated with the specified health insurance provider network",
   "expression": "InsurancePlan.plan.network",
   "target": [
     "Organization"

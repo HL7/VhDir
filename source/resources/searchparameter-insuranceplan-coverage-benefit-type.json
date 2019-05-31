@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select health insurance products offering covered benefits of the specified type",
   "code": "coverage-benefit-type",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select health insurance products offering covered benefits of the specified type",
   "expression": "InsurancePlan.coverage.benefit.type",
   "multipleOr": true,
   "multipleAnd": true,

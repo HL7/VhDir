@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Organizations of the specified type",
   "code": "type",
   "base": [
     "Organization"
   ],
   "type": "token",
-  "description": "Select Organizations of the specified type",
   "expression": "Organization.type",
   "multipleOr": true,
   "multipleAnd": true,

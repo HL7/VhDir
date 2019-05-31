@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans with the specified identifier",
   "code": "plan-identifier",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select plans with the specified identifier",
   "expression": "InsurancePlan.plan.identifier",
   "multipleOr": true,
   "multipleAnd": true,

@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select validation information for data that was validated by the specified organization",
   "code": "validator-organization",
   "base": [
     "VerificationResult"
   ],
   "type": "reference",
-  "description": "Select validation information for data that was validated by the specified organization",
   "expression": "VerificationResult.validator.organization",
   "target": [
     "Organization"

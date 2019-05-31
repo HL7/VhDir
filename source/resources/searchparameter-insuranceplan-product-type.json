@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select products of the specified type",
   "code": "product-type",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select products of the specified type",
   "expression": "InsurancePlan.type",
   "multipleOr": true,
   "multipleAnd": true,

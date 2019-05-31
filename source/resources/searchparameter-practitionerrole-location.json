@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles available at the specified location",
   "code": "location",
   "base": [
     "PractitionerRole"
   ],
   "type": "reference",
-  "description": "Select PractitionerRoles available at the specified location",
   "expression": "PractitionerRole.location",
   "target": [
     "Location"

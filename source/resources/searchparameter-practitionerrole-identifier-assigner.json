@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "PractitionerRole"
   ],
   "type": "reference",
-  "description": "Select PractitionerRoles with an identifier issued by the specified organization",
   "expression": "PractitionerRole.identifier.assigner",
   "target": [
     "Organization"

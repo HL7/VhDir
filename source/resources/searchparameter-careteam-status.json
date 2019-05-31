@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select CareTeams with the specified status",
   "code": "status",
   "base": [
     "CareTeam"
   ],
   "type": "token",
-  "description": "Select CareTeams with the specified status",
   "expression": "CareTeam.status",
   "multipleOr": true,
   "multipleAnd": true

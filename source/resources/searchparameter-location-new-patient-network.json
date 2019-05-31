@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select locations that are part of the specified network and are/are not accepting new patients",
   "code": "new-patient-network",
   "base": [
     "Location"
   ],
   "type": "reference",
-  "description": "Select locations that are part of the specified network and are/are not accepting new patients",
   "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
   "target": [
     "Organization"

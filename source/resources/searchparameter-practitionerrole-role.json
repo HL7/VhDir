@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with the specified role",
   "code": "role",
   "base": [
     "PractitionerRole"
   ],
   "type": "token",
-  "description": "Select PractitionerRoles with the specified role",
   "expression": "PractitionerRole.code",
   "multipleOr": true,
   "multipleAnd": true,

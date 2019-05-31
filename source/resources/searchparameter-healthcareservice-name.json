@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices with the specified name",
   "code": "name",
   "base": [
     "HealthcareService"
   ],
   "type": "string",
-  "description": "Select HealthcareServices with the specified name",
   "expression": "HealthcareService.name",
   "multipleOr": true,
   "multipleAnd": true,

@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select locations that offer the specified accessibility options",
   "code": "accessibility",
   "base": [
     "Location"
   ],
   "type": "token",
-  "description": "Select locations that offer the specified accessibility options",
   "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility')",
   "multipleOr": true,
   "multipleAnd": true,

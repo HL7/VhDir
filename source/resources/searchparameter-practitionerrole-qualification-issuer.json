@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with a qualification issued by the specified organization",
   "code": "qualification-issuer",
   "base": [
     "PractitionerRole"
   ],
   "type": "reference",
-  "description": "Select PractitionerRoles with a qualification issued by the specified organization",
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
   "target": [
     "Organization"

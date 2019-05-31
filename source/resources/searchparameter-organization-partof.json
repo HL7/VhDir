@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Organizations that are part of the specified organization",
   "code": "partof",
   "base": [
     "Organization"
   ],
   "type": "reference",
-  "description": "Select Organizations that are part of the specified organization",
   "expression": "Organization.partOf",
   "target": [
     "Organization"

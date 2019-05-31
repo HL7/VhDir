@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select CareTeams with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "CareTeam"
   ],
   "type": "reference",
-  "description": "Select CareTeams with an identifier issued by the specified organization",
   "expression": "CareTeam.identifier.assigner",
   "target": [
     "Organization"

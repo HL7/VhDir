@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select OrganizationAffiliations with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "reference",
-  "description": "Select OrganizationAffiliations with an identifier issued by the specified organization",
   "expression": "OrganizationAffiliation.identifier.assigner",
   "target": [
     "Organization"

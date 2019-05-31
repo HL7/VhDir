@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select organizations with an address with the specified postal code",
   "code": "address-postalcode",
   "base": [
     "Organization"
   ],
   "type": "string",
-  "description": "Select organizations with an address with the specified postal code",
   "expression": "Organization.address.postalCode",
   "multipleOr": true,
   "multipleAnd": true,

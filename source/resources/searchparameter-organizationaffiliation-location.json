@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select OrganizationAffiliations available at the specified location",
   "code": "location",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "reference",
-  "description": "Select OrganizationAffiliations available at the specified location",
   "expression": "OrganizationAffiliation.location",
   "target": [
     "Location"

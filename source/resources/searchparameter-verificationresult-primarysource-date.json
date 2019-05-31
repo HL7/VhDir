@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select validation information for data that was validated against a primary source on the specified date",
   "code": "primarysource-date",
   "base": [
     "VerificationResult"
   ],
   "type": "date",
-  "description": "Select validation information for data that was validated against a primary source on the specified date",
   "expression": "VerificationResult.primarySource.validationDate",
   "multipleOr": true,
   "multipleAnd": true,

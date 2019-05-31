@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select organizations with an address in the specified country",
   "code": "address-country",
   "base": [
     "Organization"
   ],
   "type": "string",
-  "description": "Select organizations with an address in the specified country",
   "expression": "Organization.address.country",
   "multipleOr": true,
   "multipleAnd": true,

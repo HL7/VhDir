@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select locations that contain the specified co-ordinates",
   "code": "contains",
   "base": [
     "Location"
   ],
   "type": "special",
-  "description": "Select locations that contain the specified co-ordinates",
   "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,
   "multipleAnd": true

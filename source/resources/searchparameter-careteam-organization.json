@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select care teams managed by the specified organization",
   "code": "organization",
   "base": [
     "CareTeam"
   ],
   "type": "reference",
-  "description": "Select care teams managed by the specified organization",
   "expression": "CareTeam.managingOrganization",
   "target": [
     "Organization"

@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans that are available in the specified location",
   "code": "plan-coverage-area",
   "base": [
     "InsurancePlan"
   ],
   "type": "reference",
-  "description": "Select plans that are available in the specified location",
   "expression": "InsurancePlan.plan.coverageArea",
   "target": [
     "Location"

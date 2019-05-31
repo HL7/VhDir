@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles providing the specified service",
   "code": "service",
   "base": [
     "PractitionerRole"
   ],
   "type": "reference",
-  "description": "Select PractitionerRoles providing the specified service",
   "expression": "PractitionerRole.healthcareService",
   "target": [
     "HealthcareService"

@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Locations of the specified type",
   "code": "type",
   "base": [
     "Location"
   ],
   "type": "token",
-  "description": "Select Locations of the specified type",
   "expression": "Location.type",
   "multipleOr": true,
   "multipleAnd": true,

@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select products that are offered in the specified location",
   "code": "product-coverage-area",
   "base": [
     "InsurancePlan"
   ],
   "type": "reference",
-  "description": "Select products that are offered in the specified location",
   "expression": "InsurancePlan.coverageArea",
   "target": [
     "Location"

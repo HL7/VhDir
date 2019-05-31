@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans which include the specified cost",
   "code": "general-cost-value",
   "base": [
     "InsurancePlan"
   ],
   "type": "quantity",
-  "description": "Select plans which include the specified cost",
   "expression": "InsurancePlan.plan.generalCost.cost",
   "multipleOr": true,
   "multipleAnd": true,

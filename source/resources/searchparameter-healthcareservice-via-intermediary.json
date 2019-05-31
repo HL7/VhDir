@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "HealthcareService"
   ],
   "type": "reference",
-  "description": "Select HealthcareServices with contact information available through the specified intermediary",
   "expression": "HealthcareService.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

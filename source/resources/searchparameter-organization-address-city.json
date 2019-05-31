@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select organizations with an address in the specified city",
   "code": "address-city",
   "base": [
     "Organization"
   ],
   "type": "string",
-  "description": "Select organizations with an address in the specified city",
   "expression": "Organization.address.city",
   "multipleOr": true,
   "multipleAnd": true,

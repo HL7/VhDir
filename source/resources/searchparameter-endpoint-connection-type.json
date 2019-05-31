@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Endpoints that support the specified protocol/profile/standard",
   "code": "connection-type",
   "base": [
     "Endpoint"
   ],
   "type": "token",
-  "description": "Select Endpoints that support the specified protocol/profile/standard",
   "expression": "Endpoint.connectionType",
   "multipleOr": true,
   "multipleAnd": true,

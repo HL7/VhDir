@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select OrganizationAffiliations with the specified role",
   "code": "role",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "token",
-  "description": "Select OrganizationAffiliations with the specified role",
   "expression": "OrganizationAffiliation.code",
   "multipleOr": true,
   "multipleAnd": true,

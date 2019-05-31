@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select products with the specified name",
   "code": "name",
   "base": [
     "InsurancePlan"
   ],
   "type": "string",
-  "description": "Select products with the specified name",
   "expression": "InsurancePlan.name|InsurancePlan.alias",
   "multipleOr": true,
   "multipleAnd": true,

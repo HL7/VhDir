@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select CareTeams with the specified identifier",
   "code": "identifier",
   "base": [
     "CareTeam"
   ],
   "type": "token",
-  "description": "Select CareTeams with the specified identifier",
   "expression": "CareTeam.identifier",
   "multipleOr": true,
   "multipleAnd": true,

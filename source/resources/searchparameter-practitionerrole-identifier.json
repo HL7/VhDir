@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select PractitionerRoles with the specified identifier",
   "code": "identifier",
   "base": [
     "PractitionerRole"
   ],
   "type": "token",
-  "description": "Select PractitionerRoles with the specified identifier",
   "expression": "PractitionerRole.identifier",
   "multipleOr": true,
   "multipleAnd": true,

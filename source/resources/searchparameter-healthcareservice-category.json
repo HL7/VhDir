@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices providing the specified category of services",
   "code": "category",
   "base": [
     "HealthcareService"
   ],
   "type": "token",
-  "description": "Select HealthcareServices providing the specified category of services",
   "expression": "HealthcareService.category",
   "multipleOr": true,
   "multipleAnd": true,

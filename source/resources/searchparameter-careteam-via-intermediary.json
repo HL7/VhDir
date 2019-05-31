@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select CareTeams with contact information available through the specified intermediary",
   "code": "via-intermediary",
   "base": [
     "CareTeam"
   ],
   "type": "reference",
-  "description": "Select CareTeams with contact information available through the specified intermediary",
   "expression": "CareTeam.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
   "target": [
     "PractitionerRole",

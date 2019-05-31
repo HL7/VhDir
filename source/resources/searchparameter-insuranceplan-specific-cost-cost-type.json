@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans which include the specified type of cost",
   "code": "specific-cost-cost-type",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select plans which include the specified type of cost",
   "expression": "InsurancePlan.plan.specificCost.benefit.cost.type",
   "multipleOr": true,
   "multipleAnd": true,

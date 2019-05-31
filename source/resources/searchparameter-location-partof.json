@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Locations that are part of the specified location",
   "code": "partof",
   "base": [
     "Location"
   ],
   "type": "reference",
-  "description": "Select Locations that are part of the specified location",
   "expression": "Location.partOf",
   "target": [
     "Location"

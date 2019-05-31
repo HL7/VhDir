@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans which include the specified cost",
   "code": "specific-cost-value",
   "base": [
     "InsurancePlan"
   ],
   "type": "quantity",
-  "description": "Select plans which include the specified cost",
   "expression": "InsurancePlan.plan.specificCost.benefit.cost.value",
   "multipleOr": true,
   "multipleAnd": true,

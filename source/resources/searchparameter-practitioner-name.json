@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
   "code": "name",
   "base": [
     "Practitioner"
   ],
   "type": "string",
-  "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
   "expression": "Practitioner.name",
   "multipleOr": true,
   "multipleAnd": true,

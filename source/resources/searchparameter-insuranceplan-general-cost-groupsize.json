@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select plans with costs for the specified group size",
   "code": "general-cost-groupsize",
   "base": [
     "InsurancePlan"
   ],
   "type": "token",
-  "description": "Select plans with costs for the specified group size",
   "expression": "InsurancePlan.plan.generalCost.groupSize",
   "multipleOr": true,
   "multipleAnd": true,

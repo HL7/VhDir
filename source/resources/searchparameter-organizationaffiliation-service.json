@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select OrganizationAffiliations providing the specified service",
   "code": "service",
   "base": [
     "OrganizationAffiliation"
   ],
   "type": "reference",
-  "description": "Select OrganizationAffiliations providing the specified service",
   "expression": "OrganizationAffiliation.healthcareService",
   "target": [
     "HealthcareService"

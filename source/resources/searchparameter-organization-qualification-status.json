@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Organizations with a qualification status matching the specified code",
   "code": "qualification-status",
   "base": [
     "Organization"
   ],
   "type": "token",
-  "description": "Select Organizations with a qualification status matching the specified code",
   "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('status')",
   "multipleOr": true,
   "multipleAnd": true

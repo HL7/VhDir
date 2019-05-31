@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Endpoints with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "Endpoint"
   ],
   "type": "reference",
-  "description": "Select Endpoints with an identifier issued by the specified organization",
   "expression": "Endpoint.identifier.assigner",
   "target": [
     "Organization"

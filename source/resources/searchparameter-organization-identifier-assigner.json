@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Organizations with an identifier issued by the specified organization",
   "code": "identifier-assigner",
   "base": [
     "Organization"
   ],
   "type": "reference",
-  "description": "Select Organizations with an identifier issued by the specified organization",
   "expression": "Organization.identifier.assigner",
   "target": [
     "Organization"

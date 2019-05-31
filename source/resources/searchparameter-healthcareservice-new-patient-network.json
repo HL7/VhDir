@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients",
   "code": "new-patient-network",
   "base": [
     "HealthcareService"
   ],
   "type": "reference",
-  "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients",
   "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
   "target": [
     "Organization"

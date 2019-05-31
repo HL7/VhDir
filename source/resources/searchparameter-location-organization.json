@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Locations managed by the specified organization",
   "code": "organization",
   "base": [
     "Location"
   ],
   "type": "reference",
-  "description": "Select Locations managed by the specified organization",
   "expression": "Location.managingOrganization",
   "target": [
     "Organization"

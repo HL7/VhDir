@@ -17,12 +17,12 @@
       ]
     }
   ],
+  "description": "Select Practitioners with a type of qualification matching the specified code",
   "code": "qualification-code",
   "base": [
     "Practitioner"
   ],
   "type": "token",
-  "description": "Select Practitioners with a type of qualification matching the specified code",
   "expression": "Practitioner.qualification.code",
   "multipleOr": true,
   "multipleAnd": true,

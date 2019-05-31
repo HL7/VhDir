@@ -18,12 +18,12 @@
       ]
     }
   ],
+  "description": "Select Locations with the specified identifier",
   "code": "identifier",
   "base": [
     "Location"
   ],
   "type": "token",
-  "description": "Select Locations with the specified identifier",
   "expression": "Location.identifier",
   "multipleOr": true,
   "multipleAnd": true,
