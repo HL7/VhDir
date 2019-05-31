@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-primary-organization",
+  "code": "primary-organization",
   "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select roles offered by the specified organization",

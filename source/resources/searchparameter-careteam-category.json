@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "careteam-category",
+  "code": "category",
   "base": ["CareTeam"],
   "type": "token",
   "description": "Select CareTeams of the specified type",

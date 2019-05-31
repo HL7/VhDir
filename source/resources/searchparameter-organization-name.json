@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-name",
+  "code": "name",
   "base": ["Organization"],
   "type": "string",
   "description": "Select Organizations with the specified name",

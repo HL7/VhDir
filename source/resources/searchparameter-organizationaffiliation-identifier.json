@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-identifier",
+  "code": "identifier",
   "base": ["OrganizationAffiliation"],
   "type": "token",
   "description": "Select OrganizationAffiliations with the specified identifier",

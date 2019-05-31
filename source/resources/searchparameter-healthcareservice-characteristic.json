@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-characteristic",
+  "code": "characteristic",
   "base": ["HealthcareService"],
   "type": "token",
   "description": "Select HealthcareServices with the specified characteristic",

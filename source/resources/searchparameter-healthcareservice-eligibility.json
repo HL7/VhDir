@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-eligibility",
+  "code": "eligibility",
   "base": ["HealthcareService"],
   "type": "token",
   "description": "Select services with the specified eligibility requirements",

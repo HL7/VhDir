@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "careteam-identifier",
+  "code": "identifier",
   "base": ["CareTeam"],
   "type": "token",
   "description": "Select CareTeams with the specified identifier",

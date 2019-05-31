@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-attestation-who",
+  "code": "attestation-who",
   "base": [ "VerificationResult" ],
   "type": "reference",
   "description": "Select validation information for data that was attested to by the specified source",

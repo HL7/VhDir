@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-name",
+  "code": "name",
   "base": ["InsurancePlan"],
   "type": "string",
   "description": "Select products with the specified name",

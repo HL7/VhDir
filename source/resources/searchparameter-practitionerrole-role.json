@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "practitionerrole-role",
+  "code": "role",
   "base": ["PractitionerRole"],
   "type": "token",
   "description": "Select PractitionerRoles with the specified role",

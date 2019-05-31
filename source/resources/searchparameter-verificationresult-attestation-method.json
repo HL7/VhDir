@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-attestation-method",
+  "code": "attestation-method",
   "base": ["VerificationResult"],
   "type": "token",
   "description": "Select validation information for data that was attested to using the specified method",

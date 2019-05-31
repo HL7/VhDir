@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitionerrole-qualification-issuer", 
+  "code": "qualification-issuer", 
   "base": ["PractitionerRole"],
   "type": "reference", 
   "description": "Select PractitionerRoles with a qualification issued by the specified organization", 

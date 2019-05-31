@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-specific-cost-benefit-type",
+  "code": "specific-cost-benefit-type",
   "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select plans which include costs for the specified type of benefit",

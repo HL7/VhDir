@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "network-coverage-area",
+  "code": "coverage-area",
   "base": ["Organization"],
   "type": "reference",
   "description": "Select health insurance provider networks available in a region described by the specified location",

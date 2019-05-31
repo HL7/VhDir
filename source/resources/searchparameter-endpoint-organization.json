@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "endpoint-organization",
+  "code": "organization",
   "base": ["Endpoint"],
   "type": "reference",
   "description": "Select Endpoints managed by the specified organization",

@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-primarysource-type",
+  "code": "primarysource-type",
   "base": ["VerificationResult"],
   "type": "token",
   "description": "Select validation information for data that was validated against the specified type of primary source organization",

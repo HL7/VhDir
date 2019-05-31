@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-type",
+  "code": "type",
   "base": ["HealthcareService"],
   "type": "token",
   "description": "Select HealthcareServices of the specified type",

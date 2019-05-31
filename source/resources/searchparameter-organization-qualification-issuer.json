@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "organization-qualification-issuer", 
+  "code": "qualification-issuer", 
   "base": ["Organization"],
   "type": "reference", 
   "description": "Select Organizations with a qualification issued by the specified organization", 

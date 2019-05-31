@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "insuranceplan-product-network", 
+  "code": "product-network", 
   "base": ["InsurancePlan"], 
   "type": "reference", 
   "description": "Select products associated with the specified health insurance provider network", 

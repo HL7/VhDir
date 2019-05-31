@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-validator-organization",
+  "code": "validator-organization",
   "base": [ "VerificationResult" ],
   "type": "reference",
   "description": "Select validation information for data that was validated by the specified organization",

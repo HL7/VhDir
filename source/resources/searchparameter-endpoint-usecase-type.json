@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "endpoint-usecase-type",
+  "code": "usecase-type",
   "base": ["Endpoint"],
   "type": "token",
   "description": "Select endpoints that support the type of services indicated by the specified code",

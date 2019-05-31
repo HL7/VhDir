@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "healthcareservice-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": ["HealthcareService"], 
   "type": "reference", 
   "description": "Select HealthcareServices with an identifier issued by the specified organization", 

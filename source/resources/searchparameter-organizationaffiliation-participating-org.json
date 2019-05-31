@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-participating-org",
+  "code": "participating-org",
   "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select roles filled by the specified organization",

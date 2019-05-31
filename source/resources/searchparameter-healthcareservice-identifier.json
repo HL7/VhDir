@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-identifier",
+  "code": "identifier",
   "base": ["HealthcareService"],
   "type": "token",
   "description": "Select HealthcareServices with the specified identifier",

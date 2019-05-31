@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-product-type",
+  "code": "product-type",
   "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select products of the specified type",

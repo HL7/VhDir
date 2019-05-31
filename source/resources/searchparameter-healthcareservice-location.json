@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-location",
+  "code": "location",
   "base": ["HealthcareService"],
   "type": "reference",
   "description": "Select HealthcareServices available at the specified location",

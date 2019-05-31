@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-type",
+  "code": "type",
   "base": ["Organization"],
   "type": "token",
   "description": "Select Organizations of the specified type",

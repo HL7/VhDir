@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitionerrole-qualification-status", 
+  "code": "qualification-status", 
   "base": ["PractitionerRole"], 
   "type": "token", 
   "description": "Select PractitionerRoles with a qualification status matching the specified code", 

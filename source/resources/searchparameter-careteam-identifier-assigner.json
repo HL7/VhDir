@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "careteam-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": ["CareTeam"], 
   "type": "reference", 
   "description": "Select CareTeams with an identifier issued by the specified organization", 

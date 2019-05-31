@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-partof",
+  "code": "partof",
   "base": ["Organization"],
   "type": "reference",
   "description": "Select Organizations that are part of the specified organization",

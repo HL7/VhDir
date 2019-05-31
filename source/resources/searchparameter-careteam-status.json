@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "careteam-status",
+  "code": "status",
   "base": ["CareTeam"],
   "type": "token",
   "description": "Select CareTeams with the specified status",

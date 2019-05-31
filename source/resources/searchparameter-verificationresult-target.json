@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "verificationresult-target",
+  "code": "target",
   "base": ["VerificationResult"],
   "type": "string",
   "description": "Select validation information for the specified resource",

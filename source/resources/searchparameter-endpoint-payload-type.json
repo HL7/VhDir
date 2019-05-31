@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "endpoint-payload-type",
+  "code": "payload-type",
   "base": ["Endpoint"],
   "type": "token",
   "description": "Select Endpoints that support the specified type of content",

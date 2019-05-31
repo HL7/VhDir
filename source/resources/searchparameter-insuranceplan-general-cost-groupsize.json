@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-general-cost-groupsize",
+  "code": "general-cost-groupsize",
   "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select plans with costs for the specified group size",

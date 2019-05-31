@@ -18,7 +18,7 @@
       ]
     }          
   ], 
-  "code": "healthcareservice-via-intermediary", 
+  "code": "via-intermediary", 
   "base": ["HealthcareService"],
   "type": "reference", 
   "description": "Select HealthcareServices with contact information available through the specified intermediary", 

@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "endpoint-mime-type",
+  "code": "mime-type",
   "base": ["Endpoint"],
   "type": "token",
   "description": "Select endpoints that support the specified media type",

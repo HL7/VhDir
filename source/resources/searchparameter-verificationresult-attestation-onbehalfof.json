@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-attestation-onbehalfof",
+  "code": "attestation-onbehalfof",
   "base": ["VerificationResult"],
   "type": "reference",
   "description": "Select validation information for data that was attested to on behalf of the specified source",

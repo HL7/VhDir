@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-status",
+  "code": "status",
   "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select health insurance products/plans with the specified status",

@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitioner-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": ["Practitioner"], 
   "type": "reference", 
   "description": "Select Practitioners with an identifier issued by the specified organization", 

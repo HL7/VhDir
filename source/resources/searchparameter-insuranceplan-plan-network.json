@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-plan-network",
+  "code": "plan-network",
   "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select plans associated with the specified health insurance provider network",

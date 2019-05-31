@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "organization-qualification-status", 
+  "code": "qualification-status", 
   "base": ["Organization"],
   "type": "token", 
   "description": "Select Organizations with a qualification status matching the specified code", 

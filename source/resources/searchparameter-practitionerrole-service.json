@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "practitionerrole-service",
+  "code": "service",
   "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select PractitionerRoles providing the specified service",

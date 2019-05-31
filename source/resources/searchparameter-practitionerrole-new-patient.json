@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitionerrole-new-patient", 
+  "code": "new-patient", 
   "base": ["PractitionerRole"], 
   "type": "token", 
   "description": "Select PractitionerRoles that are/are not accepting new patients", 

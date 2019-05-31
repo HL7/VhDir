@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-coverage-network",
+  "code": "coverage-network",
   "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products offering covered benefits through the specified health insurance provider network",

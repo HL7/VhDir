@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-owned-by",
+  "code": "owned-by",
   "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products that are owned by the specified organization",

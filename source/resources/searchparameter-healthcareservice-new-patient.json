@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "healthcareservice-new-patient", 
+  "code": "new-patient", 
   "base": ["HealthcareService"], 
   "type": "token", 
   "description": "Select HealthcareServices that are/are not accepting new patients", 

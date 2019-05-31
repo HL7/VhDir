@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-address-state",
+  "code": "address-state",
   "base": ["Organization"],
   "type": "string",
   "description": "Select organizations with an address in the specified state",

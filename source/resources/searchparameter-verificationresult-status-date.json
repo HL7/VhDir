@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-status-date",
+  "code": "status-date",
   "base": ["VerificationResult"],
   "type": "date",
   "description": "Select validation information with a validation status that occurred at the specified date/time",

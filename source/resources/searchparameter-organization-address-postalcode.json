@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-address-postalcode",
+  "code": "address-postalcode",
   "base": ["Organization"],
   "type": "string",
   "description": "Select organizations with an address with the specified postal code",

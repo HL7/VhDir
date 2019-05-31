@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "careteam-endpoint", 
+  "code": "endpoint", 
   "base": ["CareTeam"], 
   "type": "reference", 
   "description": "Select CareTeams with the specified endpoint", 

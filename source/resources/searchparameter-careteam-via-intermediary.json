@@ -18,7 +18,7 @@
       ]
     }          
   ], 
-  "code": "careteam-via-intermediary", 
+  "code": "via-intermediary", 
   "base": ["CareTeam"],
   "type": "reference", 
   "description": "Select CareTeams with contact information available through the specified intermediary", 

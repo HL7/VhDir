@@ -18,7 +18,7 @@
       ]
     }
   ], 
-  "code": "insuranceplan-endpoint", 
+  "code": "endpoint", 
   "base": ["InsurancePlan"], 
   "type": "reference", 
   "description": "Select health insurance products/plans with the specified endpoint", 

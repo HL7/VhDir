@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-plan-type",
+  "code": "plan-type",
   "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select plans of the specified type",

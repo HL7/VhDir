@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "careteam-name",
+  "code": "name",
   "base": ["CareTeam"],
   "type": "string",
   "description": "Select care teams with the specified name",

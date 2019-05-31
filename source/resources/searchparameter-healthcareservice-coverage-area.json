@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-coverage-area",
+  "code": "coverage-area",
   "base": ["HealthcareService"],
   "type": "reference",
   "description": "Select services available in a region described by the specified location",

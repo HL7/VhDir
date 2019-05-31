@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-specialty",
+  "code": "specialty",
   "base": ["OrganizationAffiliation"],
   "type": "token",
   "description": "Select OrganizationAffiliations associated with the specified specialty",

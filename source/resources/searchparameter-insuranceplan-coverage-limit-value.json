@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-coverage-limit-value",
+  "code": "coverage-limit-value",
   "base": ["InsurancePlan"],
   "type": "quantity",
   "description": "Select health insurance products with covered benefits limited in the specified manner",

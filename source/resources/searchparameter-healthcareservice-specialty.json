@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "healthcareservice-specialty",
+  "code": "specialty",
   "base": ["HealthcareService"],
   "type": "token",
   "description": "Select services associated with the specified specialty",

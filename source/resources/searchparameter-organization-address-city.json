@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organization-address-city",
+  "code": "address-city",
   "base": ["Organization"],
   "type": "string",
   "description": "Select organizations with an address in the specified city",

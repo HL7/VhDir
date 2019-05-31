@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "practitioner-family-name",
+  "code": "family-name",
   "base": ["Practitioner"],
   "type": "string",
   "description": "Select Practitioners with the specified family name",

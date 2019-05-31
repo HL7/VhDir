@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "verificationresult-primarysource-who",
+  "code": "primarysource-who",
   "base": ["VerificationResult"],
   "type": "reference",
   "description": "Select validation information for data that was validated against the specified primary source",

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "practitioner-given-name",
+  "code": "given-name",
   "base": ["Practitioner"],
   "type": "string",
   "description": "Select Practitioners with the specified given name",

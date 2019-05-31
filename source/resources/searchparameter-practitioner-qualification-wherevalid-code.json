@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitioner-qualification-wherevalid-code", 
+  "code": "qualification-wherevalid-code", 
   "base": ["Practitioner"], 
   "type": "token", 
   "description": "Select Practitioners with a qualification that is valid at the location indicated by the specified code", 

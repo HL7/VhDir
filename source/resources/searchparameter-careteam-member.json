@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "careteam-member",
+  "code": "member",
   "base": ["CareTeam"],
   "type": "reference",
   "description": "Select care teams that include the specified member",

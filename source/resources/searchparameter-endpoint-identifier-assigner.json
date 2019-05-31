@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "endpoint-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": ["Endpoint"], 
   "type": "reference", 
   "description": "Select Endpoints with an identifier issued by the specified organization", 

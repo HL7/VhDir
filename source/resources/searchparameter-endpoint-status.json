@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "endpoint-status",
+  "code": "status",
   "base": ["Endpoint"],
   "type": "token",
   "description": "Select Endpoints with the specified status",

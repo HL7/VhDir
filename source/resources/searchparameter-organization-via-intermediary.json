@@ -18,7 +18,7 @@
       ]
     }          
   ], 
-  "code": "organization-via-intermediary", 
+  "code": "via-intermediary", 
   "base": ["Organization"], 
   "type": "reference", 
   "description": "Select Organizations with contact information available through the specified intermediary", 

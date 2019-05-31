@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "healthcareservice-new-patient-network", 
+  "code": "new-patient-network", 
   "base": ["HealthcareService"], 
   "type": "reference", 
   "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients", 

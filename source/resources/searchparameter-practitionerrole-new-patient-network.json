@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "practitionerrole-new-patient-network", 
+  "code": "new-patient-network", 
   "base": ["PractitionerRole"], 
   "type": "reference", 
   "description": "Select PractitionerRoles that are part of the specified network and are/are not accepting new patients", 

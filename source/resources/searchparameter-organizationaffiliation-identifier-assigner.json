@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "organizationaffiliation-identifier-assigner", 
+  "code": "identifier-assigner", 
   "base": ["OrganizationAffiliation"], 
   "type": "reference", 
   "description": "Select OrganizationAffiliations with an identifier issued by the specified organization", 

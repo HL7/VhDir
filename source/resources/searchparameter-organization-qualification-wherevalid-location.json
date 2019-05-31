@@ -17,7 +17,7 @@
       ]
     }
   ], 
-  "code": "organization-qualification-wherevalid-location", 
+  "code": "qualification-wherevalid-location", 
   "base": ["Organization"], 
   "type": "reference", 
   "description": "Select Organizations with a qualification that is valid at the specified location", 

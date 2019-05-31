@@ -18,7 +18,7 @@
       ]
     }
   ], 
-  "code": "healthcareservice-endpoint", 
+  "code": "endpoint", 
   "base": ["HealthcareService"], 
   "type": "reference", 
   "description": "Select HealthcareServices with the specified endpoint", 

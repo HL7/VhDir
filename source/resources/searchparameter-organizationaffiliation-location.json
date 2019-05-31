@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-location",
+  "code": "location",
   "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select OrganizationAffiliations available at the specified location",

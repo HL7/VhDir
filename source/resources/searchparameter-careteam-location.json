@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "code": "careteam-location",
+  "code": "location",
   "base": ["CareTeam"],
   "type": "reference",
   "description": "Select care teams operating at the specified location",

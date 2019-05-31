@@ -18,7 +18,7 @@
       ]
     }          
   ], 
-  "code": "organizationaffiliation-via-intermediary", 
+  "code": "via-intermediary", 
   "base": ["OrganizationAffiliation"],
   "type": "reference", 
   "description": "Select OrganizationAffiliations with contact information available through the specified intermediary", 

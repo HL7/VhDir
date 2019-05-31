@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "endpoint-connection-type",
+  "code": "connection-type",
   "base": ["Endpoint"],
   "type": "token",
   "description": "Select Endpoints that support the specified protocol/profile/standard",

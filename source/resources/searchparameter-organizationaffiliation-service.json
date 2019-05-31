@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-service",
+  "code": "service",
   "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select OrganizationAffiliations providing the specified service",

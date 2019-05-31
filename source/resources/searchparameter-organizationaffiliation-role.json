@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "organizationaffiliation-role",
+  "code": "role",
   "base": ["OrganizationAffiliation"],
   "type": "token",
   "description": "Select OrganizationAffiliations with the specified role",

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "practitionerrole-location",
+  "code": "location",
   "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select PractitionerRoles available at the specified location",

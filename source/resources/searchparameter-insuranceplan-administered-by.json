@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "code": "insuranceplan-administered-by",
+  "code": "administered-by",
   "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products that are administered by the specified organization",
