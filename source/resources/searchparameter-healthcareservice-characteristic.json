@@ -4,6 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic",
   "version": "0.0.0",
   "name": "VHDir HealthcareService Characteristic Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
