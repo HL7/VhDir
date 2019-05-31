@@ -12,6 +12,7 @@
       "framework",
       "source/pages"
     ],
+    "history": "http://hl7.org/fhir/uv/vhdir/history.cfml",
     "temp": "generated_output/temp",
     "qa": "generated_output/qa",
     "output": "output",

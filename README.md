@@ -5,7 +5,7 @@ A FHIR implementation guide enabling the exchange of validated healthcare direct
 Authors:  Alex Kontur, Dan Chaput, Brian Postlethwaite, Bob Dieterle, Eric Haas, Nagesh Bashyam, ONC Contributors
 
 -----
-FHIR STU3 Implementation Guide
+FHIR R4 Implementation Guide
 
 GitHub will automatically trigger a new build whenever you commit changes.
 > To manually trigger a build just `POST` to the Webhook URL yourself, for example via:
