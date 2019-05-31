@@ -19,11 +19,11 @@
     }
   ],
   "code": "insuranceplan-product-coverage-area",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products that are offered in the specified location",
   "expression": "InsurancePlan.coverageArea",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

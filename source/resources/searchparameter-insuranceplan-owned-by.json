@@ -20,11 +20,11 @@
     }
   ],
   "code": "insuranceplan-owned-by",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products that are owned by the specified organization",
   "expression": "InsurancePlan.ownedBy",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

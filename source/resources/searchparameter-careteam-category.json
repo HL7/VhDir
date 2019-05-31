@@ -20,11 +20,11 @@
     }
   ],
   "code": "careteam-category",
-  "base": "CareTeam",
+  "base": ["CareTeam"],
   "type": "token",
   "description": "Select CareTeams of the specified type",
   "expression": "CareTeam.category",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

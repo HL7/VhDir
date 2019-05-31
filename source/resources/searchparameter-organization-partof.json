@@ -20,11 +20,11 @@
     }
   ],
   "code": "organization-partof",
-  "base": "Organization",
+  "base": ["Organization"],
   "type": "reference",
   "description": "Select Organizations that are part of the specified organization",
   "expression": "Organization.partOf",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitioner-family-name",
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "string",
   "description": "Select Practitioners with the specified family name",
   "expression": "Practitioner.name.family",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "exact"
+  "modifier": ["exact"]
 }

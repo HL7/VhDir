@@ -18,14 +18,14 @@
     }
   ], 
   "code": "organization-identifier-assigner", 
-  "base": "Organization", 
+  "base": ["Organization"], 
   "type": "reference", 
   "description": "Select Organizations with an identifier issued by the specified organization", 
   "expression": "Organization.identifier.assigner",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]

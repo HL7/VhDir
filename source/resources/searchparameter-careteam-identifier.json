@@ -19,7 +19,7 @@
     }
   ],
   "code": "careteam-identifier",
-  "base": "CareTeam",
+  "base": ["CareTeam"],
   "type": "token",
   "description": "Select CareTeams with the specified identifier",
   "expression": "CareTeam.identifier",

@@ -20,12 +20,12 @@
     }
   ],
   "code": "verificationresult-target",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "string",
   "description": "Select validation information for the specified resource",
   "expression": "VerificationResult.target",
-  "target": "Resource",
+  "target": ["Resource"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type"
+  "modifier": ["type"]
 }

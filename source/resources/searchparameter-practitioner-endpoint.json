@@ -19,11 +19,11 @@
     }
   ], 
   "code": "practitioner-endpoint", 
-  "base": "Practitioner", 
+  "base": ["Practitioner"], 
   "type": "reference", 
   "description": "Select Practitioners with the specified endpoint", 
   "expression": "Practitioner.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference')",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

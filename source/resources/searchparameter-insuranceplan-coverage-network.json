@@ -19,11 +19,11 @@
     }
   ],
   "code": "insuranceplan-coverage-network",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products offering covered benefits through the specified health insurance provider network",
   "expression": "InsurancePlan.coverage.network",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

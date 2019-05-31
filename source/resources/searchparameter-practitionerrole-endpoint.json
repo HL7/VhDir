@@ -19,11 +19,11 @@
     }
   ], 
   "code": "practitionerrole-endpoint", 
-  "base": "PractitionerRole", 
+  "base": ["PractitionerRole"], 
   "type": "reference", 
   "description": "Select PractitionerRoles with the specified endpoint", 
   "expression": "PractitionerRole.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

@@ -18,11 +18,11 @@
     }
   ], 
   "code": "insuranceplan-product-network", 
-  "base": "InsurancePlan", 
+  "base": ["InsurancePlan"], 
   "type": "reference", 
   "description": "Select products associated with the specified health insurance provider network", 
   "expression": "InsurancePlan.network",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

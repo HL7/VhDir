@@ -18,14 +18,14 @@
     }
   ], 
   "code": "organizationaffiliation-identifier-assigner", 
-  "base": "OrganizationAffiliation", 
+  "base": ["OrganizationAffiliation"], 
   "type": "reference", 
   "description": "Select OrganizationAffiliations with an identifier issued by the specified organization", 
   "expression": "OrganizationAffiliation.identifier.assigner",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]

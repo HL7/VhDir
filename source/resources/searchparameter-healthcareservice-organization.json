@@ -20,11 +20,11 @@
     }
   ],
   "code": "healthcareservice-organization",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "reference",
   "description": "Select HealthcareServices provided by the specified organization",
   "expression": "HealthcareService.providedBy",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

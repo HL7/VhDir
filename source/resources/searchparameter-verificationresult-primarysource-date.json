@@ -19,7 +19,7 @@
     }
   ],
   "code": "verificationresult-primarysource-date",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "date",
   "description": "Select validation information for data that was validated against a primary source on the specified date",
   "expression": "VerificationResult.primarySource.validationDate",

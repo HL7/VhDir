@@ -20,11 +20,11 @@
     }
   ],
   "code": "organizationaffiliation-specialty",
-  "base": "OrganizationAffiliation",
+  "base": ["OrganizationAffiliation"],
   "type": "token",
   "description": "Select OrganizationAffiliations associated with the specified specialty",
   "expression": "OrganizationAffiliation.specialty",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

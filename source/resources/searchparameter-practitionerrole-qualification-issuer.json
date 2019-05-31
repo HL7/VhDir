@@ -18,14 +18,14 @@
     }
   ], 
   "code": "practitionerrole-qualification-issuer", 
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference", 
   "description": "Select PractitionerRoles with a qualification issued by the specified organization", 
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]

@@ -20,11 +20,11 @@
     }
   ],
   "code": "healthcareservice-type",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "token",
   "description": "Select HealthcareServices of the specified type",
   "expression": "HealthcareService.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

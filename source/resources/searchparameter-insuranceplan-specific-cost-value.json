@@ -19,7 +19,7 @@
     }
   ],
   "code": "insuranceplan-specific-cost-value",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "quantity",
   "description": "Select plans which include the specified cost",
   "expression": "InsurancePlan.plan.specificCost.benefit.cost.value",

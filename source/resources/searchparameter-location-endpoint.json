@@ -19,11 +19,11 @@
     }
   ], 
   "code": "endpoint", 
-  "base": "Location", 
+  "base": ["Location"], 
   "type": "reference", 
   "description": "Select Locations with the specified endpoint", 
   "expression": "Location.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

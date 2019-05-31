@@ -19,7 +19,7 @@
     }          
   ], 
   "code": "via-intermediary",
-  "base": "Location",
+  "base": ["Location"],
   "type": "reference",
   "description": "Select Locations with contact information available through the specified intermediary", 
   "expression": "Location.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",

@@ -20,11 +20,11 @@
     }
   ],
   "code": "healthcareservice-location",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "reference",
   "description": "Select HealthcareServices available at the specified location",
   "expression": "HealthcareService.location",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

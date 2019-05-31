@@ -19,11 +19,11 @@
     }
   ], 
   "code": "insuranceplan-endpoint", 
-  "base": "InsurancePlan", 
+  "base": ["InsurancePlan"], 
   "type": "reference", 
   "description": "Select health insurance products/plans with the specified endpoint", 
   "expression": "InsurancePlan.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

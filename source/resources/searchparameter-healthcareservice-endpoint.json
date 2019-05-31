@@ -19,11 +19,11 @@
     }
   ], 
   "code": "healthcareservice-endpoint", 
-  "base": "HealthcareService", 
+  "base": ["HealthcareService"], 
   "type": "reference", 
   "description": "Select HealthcareServices with the specified endpoint", 
   "expression": "HealthcareService.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

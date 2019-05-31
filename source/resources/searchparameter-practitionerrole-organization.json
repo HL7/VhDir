@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitionerrole-organization",
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select PractitionerRoles available at the specified organization",
   "expression": "PractitionerRole.organization",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

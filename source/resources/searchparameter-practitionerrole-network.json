@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitionerrole-network", 
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference", 
   "description": "Select roles where the practitioner is a member of the specified health insurance provider network", 
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

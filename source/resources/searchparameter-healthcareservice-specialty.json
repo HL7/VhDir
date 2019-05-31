@@ -19,11 +19,11 @@
     }
   ],
   "code": "healthcareservice-specialty",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "token",
   "description": "Select services associated with the specified specialty",
   "expression": "HealthcareService.specialty",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

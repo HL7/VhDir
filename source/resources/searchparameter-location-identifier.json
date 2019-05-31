@@ -20,7 +20,7 @@
     }
   ],
   "code": "identifier",
-  "base": "Location",
+  "base": ["Location"],
   "type": "token",
   "description": "Select Locations with the specified identifier",
   "expression": "Location.identifier",

@@ -19,7 +19,7 @@
     }          
   ], 
   "code": "practitionerrole-via-intermediary", 
-  "base": "PractitionerRole", 
+  "base": ["PractitionerRole"], 
   "type": "reference", 
   "description": "Select PractitionerRoles with contact information available through the specified intermediary", 
   "expression": "PractitionerRole.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",

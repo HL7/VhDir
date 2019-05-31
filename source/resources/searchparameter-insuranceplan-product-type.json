@@ -20,11 +20,11 @@
     }
   ],
   "code": "insuranceplan-product-type",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select products of the specified type",
   "expression": "InsurancePlan.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

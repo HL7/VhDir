@@ -20,11 +20,11 @@
     }
   ],
   "code": "partof",
-  "base": "Location",
+  "base": ["Location"],
   "type": "reference",
   "description": "Select Locations that are part of the specified location",
   "expression": "Location.partOf",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -19,11 +19,11 @@
     }
   ], 
   "code": "organizationaffiliation-network", 
-  "base": "OrganizationAffiliation",
+  "base": ["OrganizationAffiliation"],
   "type": "reference", 
   "description": "Select roles where the organization is a member of the specified health insurance provider network", 
   "expression": "OrganizationAffiliation.network",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitionerrole-service",
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select PractitionerRoles providing the specified service",
   "expression": "PractitionerRole.healthcareService",
-  "target": "HealthcareService",
+  "target": ["HealthcareService"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

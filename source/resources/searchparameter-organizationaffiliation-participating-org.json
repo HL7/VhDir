@@ -20,11 +20,11 @@
     }
   ],
   "code": "organizationaffiliation-participating-org",
-  "base": "OrganizationAffiliation",
+  "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select roles filled by the specified organization",
   "expression": "OrganizationAffiliation.participatingOrganization",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitionerrole-specialty",
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "token",
   "description": "Select PractitionerRoles associated with the specified specialty",
   "expression": "PractitionerRole.specialty",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

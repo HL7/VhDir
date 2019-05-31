@@ -20,11 +20,11 @@
     }
   ],
   "code": "endpoint-payload-type",
-  "base": "Endpoint",
+  "base": ["Endpoint"],
   "type": "token",
   "description": "Select Endpoints that support the specified type of content",
   "expression": "Endpoint.payloadType",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

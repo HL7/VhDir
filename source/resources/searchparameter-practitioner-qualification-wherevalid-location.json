@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitioner-qualification-wherevalid-location", 
-  "base": "Practitioner", 
+  "base": ["Practitioner"], 
   "type": "reference", 
   "description": "Select Practitioners with a qualification that is valid at the specified location", 
   "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').as(Reference)",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

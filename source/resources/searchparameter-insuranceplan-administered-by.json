@@ -20,11 +20,11 @@
     }
   ],
   "code": "insuranceplan-administered-by",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "reference",
   "description": "Select products that are administered by the specified organization",
   "expression": "InsurancePlan.administeredBy",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

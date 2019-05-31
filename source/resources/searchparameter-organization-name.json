@@ -20,7 +20,7 @@
     }
   ],
   "code": "organization-name",
-  "base": "Organization",
+  "base": ["Organization"],
   "type": "string",
   "description": "Select Organizations with the specified name",
   "expression": "Organization.name|Organization.alias",

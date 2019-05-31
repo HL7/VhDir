@@ -18,14 +18,14 @@
     }
   ], 
   "code": "careteam-identifier-assigner", 
-  "base": "CareTeam", 
+  "base": ["CareTeam"], 
   "type": "reference", 
   "description": "Select CareTeams with an identifier issued by the specified organization", 
   "expression": "CareTeam.identifier.assigner",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]

@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitionerrole-location",
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select PractitionerRoles available at the specified location",
   "expression": "PractitionerRole.location",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

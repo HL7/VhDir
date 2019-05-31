@@ -20,11 +20,11 @@
     }
   ],
   "code": "organization",
-  "base": "Location",
+  "base": ["Location"],
   "type": "reference",
   "description": "Select Locations managed by the specified organization",
   "expression": "Location.managingOrganization",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

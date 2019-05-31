@@ -19,11 +19,11 @@
     }
   ],
   "code": "verificationresult-attestation-method",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "token",
   "description": "Select validation information for data that was attested to using the specified method",
   "expression": "VerificationResult.attestation.method",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

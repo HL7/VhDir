@@ -19,11 +19,11 @@
     }
   ], 
   "code": "organizationaffiliation-endpoint", 
-  "base": "OrganizationAffiliation", 
+  "base": ["OrganizationAffiliation"], 
   "type": "reference", 
   "description": "Select OrganizationAffiliations with the specified endpoint", 
   "expression": "OrganizationAffiliation.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

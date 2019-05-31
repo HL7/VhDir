@@ -20,11 +20,11 @@
     }
   ],
   "code": "endpoint-organization",
-  "base": "Endpoint",
+  "base": ["Endpoint"],
   "type": "reference",
   "description": "Select Endpoints managed by the specified organization",
   "expression": "Endpoint.managingOrganization",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

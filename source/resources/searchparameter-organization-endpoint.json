@@ -19,11 +19,11 @@
     }
   ], 
   "code": "organization-endpoint", 
-  "base": "Organization", 
+  "base": ["Organization"], 
   "type": "reference", 
   "description": "Select Organizations with the specified endpoint", 
   "expression": "Organization.endpoint",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitionerrole-qualification-wherevalid-code", 
-  "base": "PractitionerRole", 
+  "base": ["PractitionerRole"], 
   "type": "token", 
   "description": "Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code", 
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

@@ -18,11 +18,11 @@
     }
   ], 
   "code": "careteam-endpoint", 
-  "base": "CareTeam", 
+  "base": ["CareTeam"], 
   "type": "reference", 
   "description": "Select CareTeams with the specified endpoint", 
   "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference')",
-  "target": "Endpoint",
+  "target": ["Endpoint"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

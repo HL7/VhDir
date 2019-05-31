@@ -19,11 +19,11 @@
     }
   ],
   "code": "healthcareservice-coverage-area",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "reference",
   "description": "Select services available in a region described by the specified location",
   "expression": "HealthcareService.coverageArea",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

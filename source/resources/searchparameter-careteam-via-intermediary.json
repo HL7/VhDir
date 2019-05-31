@@ -19,7 +19,7 @@
     }          
   ], 
   "code": "careteam-via-intermediary", 
-  "base": "CareTeam",
+  "base": ["CareTeam"],
   "type": "reference", 
   "description": "Select CareTeams with contact information available through the specified intermediary", 
   "expression": "CareTeam.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",

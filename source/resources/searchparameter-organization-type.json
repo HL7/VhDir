@@ -20,11 +20,11 @@
     }
   ],
   "code": "organization-type",
-  "base": "Organization",
+  "base": ["Organization"],
   "type": "token",
   "description": "Select Organizations of the specified type",
   "expression": "Organization.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

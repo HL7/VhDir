@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitionerrole-practitioner",
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "reference",
   "description": "Select roles filled by the specified practitioner",
   "expression": "PractitionerRole.practitioner",
-  "target": "Practitioner",
+  "target": ["Practitioner"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

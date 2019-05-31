@@ -20,11 +20,11 @@
     }
   ],
   "code": "type",
-  "base": "Location",
+  "base": ["Location"],
   "type": "token",
   "description": "Select Locations of the specified type",
   "expression": "Location.type",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

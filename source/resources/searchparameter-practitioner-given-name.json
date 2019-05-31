@@ -20,11 +20,11 @@
     }
   ],
   "code": "practitioner-given-name",
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "string",
   "description": "Select Practitioners with the specified given name",
   "expression": "Practitioner.name.given",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "exact"
+  "modifier": ["exact"]
 }

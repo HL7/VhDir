@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitionerrole-new-patient-network", 
-  "base": "PractitionerRole", 
+  "base": ["PractitionerRole"], 
   "type": "reference", 
   "description": "Select PractitionerRoles that are part of the specified network and are/are not accepting new patients", 
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

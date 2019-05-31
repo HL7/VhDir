@@ -19,7 +19,7 @@
     }
   ],
   "code": "insuranceplan-coverage-limit-value",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "quantity",
   "description": "Select health insurance products with covered benefits limited in the specified manner",
   "expression": "InsurancePlan.coverage.benefit.limit.value",

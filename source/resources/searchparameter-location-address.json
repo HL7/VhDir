@@ -20,7 +20,7 @@
     }
   ],
   "code": "address",
-  "base": "Location",
+  "base": ["Location"],
   "type": "string",
   "description": "Select Locations with the specified address",
   "expression": "Location.address",

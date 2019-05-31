@@ -19,7 +19,7 @@
     }
   ],
   "code": "verificationresult-validation-status",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "token",
   "description": "Select validation information with the specified status",
   "expression": "VerificationResult.status",

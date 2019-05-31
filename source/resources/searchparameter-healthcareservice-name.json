@@ -20,7 +20,7 @@
     }
   ],
   "code": "healthcareservice-name",
-  "base": "HealthcareService",
+  "base": ["HealthcareService"],
   "type": "string",
   "description": "Select HealthcareServices with the specified name",
   "expression": "HealthcareService.name",

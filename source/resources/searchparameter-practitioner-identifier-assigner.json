@@ -18,14 +18,14 @@
     }
   ], 
   "code": "practitioner-identifier-assigner", 
-  "base": "Practitioner", 
+  "base": ["Practitioner"], 
   "type": "reference", 
   "description": "Select Practitioners with an identifier issued by the specified organization", 
   "expression": "Practitioner.identifier.assigner",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]

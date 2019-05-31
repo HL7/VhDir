@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitionerrole-qualification-code", 
-  "base": "PractitionerRole",
+  "base": ["PractitionerRole"],
   "type": "token", 
   "description": "Select PractitionerRoles with a type of qualification matching the specified code", 
   "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('code')",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

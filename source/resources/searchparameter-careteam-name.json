@@ -19,7 +19,7 @@
     }
   ],
   "code": "careteam-name",
-  "base": "CareTeam",
+  "base": ["CareTeam"],
   "type": "string",
   "description": "Select care teams with the specified name",
   "expression": "CareTeam.name|CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias')",

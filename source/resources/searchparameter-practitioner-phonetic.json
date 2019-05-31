@@ -20,7 +20,7 @@
     }
   ],
   "code": "practitioner-phonetic",
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "string",
   "description": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)",
   "expression": "Practitioner.name",

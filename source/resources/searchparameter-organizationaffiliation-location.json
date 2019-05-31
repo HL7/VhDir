@@ -20,11 +20,11 @@
     }
   ],
   "code": "organizationaffiliation-location",
-  "base": "OrganizationAffiliation",
+  "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select OrganizationAffiliations available at the specified location",
   "expression": "OrganizationAffiliation.location",
-  "target": "Location",
+  "target": ["Location"],
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

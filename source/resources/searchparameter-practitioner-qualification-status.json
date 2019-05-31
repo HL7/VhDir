@@ -18,7 +18,7 @@
     }
   ], 
   "code": "practitioner-qualification-status", 
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "token", 
   "description": "Select Practitioners with a qualification status matching the specified code", 
   "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('status')",

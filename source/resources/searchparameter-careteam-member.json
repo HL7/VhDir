@@ -19,7 +19,7 @@
     }
   ],
   "code": "careteam-member",
-  "base": "CareTeam",
+  "base": ["CareTeam"],
   "type": "reference",
   "description": "Select care teams that include the specified member",
   "expression": "CareTeam.participant.member",
@@ -28,7 +28,7 @@
   ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type",
+  "modifier": ["type"],
   "chain": [
     "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-practitioner", "practitionerrole-organization", "practitionerrole-role", "organization-address", "organization-identifier", "organization-name", "organization-partof", "careteam-identifier", "careteam-location", "careteam-organization"
   ]

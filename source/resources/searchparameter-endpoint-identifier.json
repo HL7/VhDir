@@ -20,7 +20,7 @@
     }
   ],
   "code": "endpoint-identifier",
-  "base": "Endpoint",
+  "base": ["Endpoint"],
   "type": "token",
   "description": "Select Endpoints with the specified identifier",
   "expression": "Endpoint.identifier",

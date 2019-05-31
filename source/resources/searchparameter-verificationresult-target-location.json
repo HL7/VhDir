@@ -19,7 +19,7 @@
     }
   ],
   "code": "verificationresult-target-location",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "string",
   "description": "Select validation information for the specified attribute of a resource",
   "expression": "VerificationResult.targetLocation",

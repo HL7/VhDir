@@ -19,7 +19,7 @@
     }
   ],
   "code": "verificationresult-primarysource-who",
-  "base": "VerificationResult",
+  "base": ["VerificationResult"],
   "type": "reference",
   "description": "Select validation information for data that was validated against the specified primary source",
   "expression": "VerificationResult.primarySource.who",
@@ -28,7 +28,7 @@
   ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type",
+  "modifier": ["type"],
   "chain": [
     "organization-identifier", "organization-address", "organization-name", "organization-partof", "practitioner-name", "practitioner-identifier", "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-organization", "practitionerrole-practitioner"
   ]

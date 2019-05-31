@@ -20,7 +20,7 @@
     }
   ],
   "code": "organization-address",
-  "base": "Organization",
+  "base": ["Organization"],
   "type": "string",
   "description": "Select organizations with the specified address (matches any of the string elements of an address)",
   "expression": "Organization.address",

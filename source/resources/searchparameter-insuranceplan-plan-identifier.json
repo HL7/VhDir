@@ -19,7 +19,7 @@
     }
   ],
   "code": "insuranceplan-plan-identifier",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "token",
   "description": "Select plans with the specified identifier",
   "expression": "InsurancePlan.plan.identifier",

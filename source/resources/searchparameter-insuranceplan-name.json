@@ -20,7 +20,7 @@
     }
   ],
   "code": "insuranceplan-name",
-  "base": "InsurancePlan",
+  "base": ["InsurancePlan"],
   "type": "string",
   "description": "Select products with the specified name",
   "expression": "InsurancePlan.name|InsurancePlan.alias",

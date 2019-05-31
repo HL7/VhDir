@@ -18,11 +18,11 @@
     }
   ], 
   "code": "practitioner-qualification-code", 
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "token", 
   "description": "Select Practitioners with a type of qualification matching the specified code", 
   "expression": "Practitioner.qualification.code",
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "text"
+  "modifier": ["text"]
 }

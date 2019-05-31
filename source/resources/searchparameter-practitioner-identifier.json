@@ -20,7 +20,7 @@
     }
   ],
   "code": "practitioner-identifier",
-  "base": "Practitioner",
+  "base": ["Practitioner"],
   "type": "token",
   "description": "Select Practitioners with the specified identifier",
   "expression": "Practitioner.identifier",

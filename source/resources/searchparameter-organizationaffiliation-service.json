@@ -20,11 +20,11 @@
     }
   ],
   "code": "organizationaffiliation-service",
-  "base": "OrganizationAffiliation",
+  "base": ["OrganizationAffiliation"],
   "type": "reference",
   "description": "Select OrganizationAffiliations providing the specified service",
   "expression": "OrganizationAffiliation.healthcareService",
-  "target": "HealthcareService",
+  "target": ["HealthcareService"],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [

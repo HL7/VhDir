@@ -20,7 +20,7 @@
     }
   ],
   "code": "organization-identifier",
-  "base": "Organization",
+  "base": ["Organization"],
   "type": "token",
   "description": "Select Organizations with the specified identifier",
   "expression": "Organization.identifier",

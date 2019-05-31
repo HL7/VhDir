@@ -18,14 +18,14 @@
     }
   ], 
   "code": "practitionerrole-identifier-assigner", 
-  "base": "PractitionerRole", 
+  "base": ["PractitionerRole"], 
   "type": "reference", 
   "description": "Select PractitionerRoles with an identifier issued by the specified organization", 
   "expression": "PractitionerRole.identifier.assigner",
-  "target": "Organization",
+  "target": ["Organization"],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "below",
+  "modifier": ["below"],
   "chain": [
     "organization-identifier", "organization-name"
   ]
