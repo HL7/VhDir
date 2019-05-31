@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-status",
-  "url": "http://hl7.org/fhir/SearchParameter/CareTeam-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-status",
   "version": "0.0.0",
   "name": "VHDir CareTeam Status Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-status",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-organization",
-  "url": "http://hl7.org/fhir/SearchParameter/PractitionerRole-organization",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-organization",
   "version": "0.0.0",
   "name": "VHDir PractitionerRole Organization Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-organization",

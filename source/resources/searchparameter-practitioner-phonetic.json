@@ -1,10 +1,10 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-phonetic",
-  "url": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-name",
   "version": "0.0.0",
   "name": "VHDir Practitioner Phonetic Name Search Parameter",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

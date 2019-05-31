@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-product-identifier",
-  "url": "http://hl7.org/fhir/SearchParameter/InsurancePlan-identifier",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-identifier",
   "version": "0.0.0",
   "name": "VHDir Product Identifier Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-identifier",

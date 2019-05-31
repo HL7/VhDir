@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-endpoint",
-  "url": "http://hl7.org/fhir/SearchParameter/Organization-endpoint",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-endpoint",
   "version": "0.0.0",
   "name": "VHDir Organization Endpoint Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-endpoint",

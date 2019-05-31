@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-category",
-  "url": "http://hl7.org/fhir/SearchParameter/CareTeam-category",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-category",
   "version": "0.0.0",
   "name": "VHDir CareTeam Category Search Parameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-category",
