@@ -23,7 +23,7 @@
   "base": [
     "VerificationResult"
   ],
-  "type": "string",
+  "type": "reference",
   "expression": "VerificationResult.target",
   "target": [
     "Resource"
