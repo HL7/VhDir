@@ -167,23 +167,23 @@
     </reference>
     <exampleBoolean value="true" />
   </resource>
-	
-	
+
+
 	<resource>
     <reference>
       <reference value="CareTeam/cardiologycareteam1" />
     </reference>
     <exampleBoolean value="true" />
   </resource>
-	
+
 	<resource>
     <reference>
       <reference value="VerificationResult/example-license" />
     </reference>
     <exampleBoolean value="true" />
   </resource>
-	
-	
+
+
 
   <resource>
     <reference>
@@ -1561,7 +1561,7 @@
     </reference>
     <exampleBoolean value="false" />
   </resource>
-  
+
   <resource>
     <reference>
       <reference value="StructureDefinition/vhdir-validation" />
@@ -1585,6 +1585,10 @@
     <generation value="markdown"/>
     <!-- ============ Guidance Pages =============== -->
     <page>
+      <nameUrl value="guidance.html"/>
+      <title value="Guidance"/>
+      <generation value="markdown"/>
+    <page>
       <nameUrl value="general-guidance.html"/>
       <title value="General Guidance"/>
       <generation value="markdown"/>
@@ -1594,6 +1598,13 @@
       <title value="Technical Guidance"/>
       <generation value="markdown"/>
     </page>
+    <page>
+      <nameUrl value="bulk-data.html"/>
+      <title value="Bulk Data and Subscriptions"/>
+      <generation value="markdown"/>
+    </page>
+    </page>
+    <!-- ============End Guidance Pages =============== -->
     <!-- ============ Profiles Page =============== -->
     <page>
       <nameUrl value="profiles.html"/>

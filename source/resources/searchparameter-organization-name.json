@@ -24,7 +24,7 @@
     "Organization"
   ],
   "type": "string",
-  "expression": "Organization.name|Organization.alias",
+  "expression": "Organization.name | Organization.alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

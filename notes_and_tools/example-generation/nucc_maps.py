@@ -521,7 +521,7 @@ healthcareservice_list = [
  'surgery',
  'urology'
  ]
- 
+
 nucc_role_map ={
  '101Y00000X': ('101Y00000X', 'Behavioral Health and Social Service Providers'),
  '101YA0400X': ('101Y00000X', 'Behavioral Health and Social Service Providers'),
@@ -1378,9 +1378,9 @@ nucc_role_map ={
  '385HR2065X': ('385H00000X', 'Respite Care Facility'),
  '390200000X': ('390200000X', 'Student, Health Care'),
  '405300000X': ('405300000X', 'Other Service Providers')}
- 
- 
- 
+
+
+
 nucc_sct_specialty_map = {
     '231H00000X': ('94578005','Audiological medicine'),
     '208D00000X': ('394814009 ','General practice'),
@@ -1457,7 +1457,7 @@ if __name__ == "__main__":
             print(nucc_healthcareservice_map[code])
     except KeyError:
         print('not a code')
-        
+
     service_list=[]
     hsc='surgery'
     for k,v in nucc_healthcareservice_map.items():
@@ -1468,10 +1468,6 @@ if __name__ == "__main__":
 
     #create hcs list:
     pprint(sorted(list(set(nucc_healthcareservice_map.values()))))
-    
-    
-    
 
-    
-        
+
 print('end of program')

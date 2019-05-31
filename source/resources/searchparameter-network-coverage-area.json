@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-network-coverage-area",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-network-coverage-area",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-network-coverage-area",
   "version": "0.0.0",
   "name": "VHDir Network Coverage Area Search Parameter",
   "status": "draft",
@@ -18,7 +18,7 @@
     }
   ],
   "description": "Select health insurance provider networks available in a region described by the specified location",
-  "code": "network-coverage-area",
+  "code": "coverage-area",
   "base": [
     "Organization"
   ],

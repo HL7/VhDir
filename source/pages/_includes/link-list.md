@@ -25,3 +25,6 @@
 [FHIR API for Binary data]: ({{site.data.fhir.path}}/binary.html#rest) "FServing Binary Resources using the RESTful API"
 [Postman Collection]: :https://www.getpostman.com/collections/0a54cd0197a5f2fc98d4
 [contained]: ({{site.data.fhir.path}}/references#contained.html) "FHIR contained resource documentation"
+[General Guidance](general-guidance.html)
+[Technical Guidance](technical-guidance.html)
+[Bulk Data and Subscriptions]: bulk-data.html
