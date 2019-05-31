@@ -1,9 +1,10 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-member",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-member",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-participant",
   "version": "0.0.0",
   "name": "VHDir CareTeam Member Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-participant",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,7 +19,7 @@
     }
   ],
   "description": "Select care teams that include the specified member",
-  "code": "member",
+  "code": "participant",
   "base": [
     "CareTeam"
   ],

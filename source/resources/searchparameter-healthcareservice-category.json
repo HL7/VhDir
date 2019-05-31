@@ -1,9 +1,10 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-category",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-category",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-category",
   "version": "0.0.0",
   "name": "VHDir HealthcareService Category Search Parameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,7 +19,7 @@
     }
   ],
   "description": "Select HealthcareServices providing the specified category of services",
-  "code": "category",
+  "code": "service-category",
   "base": [
     "HealthcareService"
   ],
