@@ -1,4 +1,3 @@
-
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-attestation-onbehalfof",
@@ -18,18 +17,33 @@
       ]
     }
   ],
-  "code": "verificationresult-attestation-onbehalfof",
-  "base": "VerificationResult",
-  "type": "reference",
   "description": "Select validation information for data that was attested to on behalf of the specified source",
+  "code": "attestation-onbehalfof",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
   "expression": "VerificationResult.attestation.onBehalfOf",
   "target": [
-    "Practitioner", "Organization", "PractitionerRole"
+    "Practitioner",
+    "Organization",
+    "PractitionerRole"
   ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": "type",
+  "modifier": [
+    "type"
+  ],
   "chain": [
-    "organization-identifier", "organization-address", "organization-name", "organization-partof", "practitioner-name", "practitioner-identifier", "practitionerrole-identifier", "practitionerrole-location", "practitionerrole-organization", "practitionerrole-practitioner"
+    "organization-identifier",
+    "organization-address",
+    "organization-name",
+    "organization-partof",
+    "practitioner-name",
+    "practitioner-identifier",
+    "practitionerrole-identifier",
+    "practitionerrole-location",
+    "practitionerrole-organization",
+    "practitionerrole-practitioner"
   ]
 }
