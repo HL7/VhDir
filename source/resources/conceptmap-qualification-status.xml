@@ -8,7 +8,7 @@
 		</xhtml:div>
 	</text>
 --><url value="http://hl7.org/fhir/uv/vhdir/ConceptMap/conceptmap-qualification-status"/>
-	<name value="Qualification Status Value Set – Status Code Mapping"/>
+	<name value="QualificationStatusToResourceStatusCodeMapping"/>
 	<title value="VhDir Qualification Status Value Set – Status Code Mapping"/>
 	<status value="active"/>
 	<publisher value="VhDir"/><!-->

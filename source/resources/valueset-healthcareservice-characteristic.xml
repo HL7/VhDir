@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-healthcareservice-characteristic"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-characteristic"/>
-	<name value="VhDirHealthcareService-characteristic"/>
+	<name value="VhDirHealthcareServiceCharacteristic"/>
 	<title value="VhDir Healthcare Service Characteristic"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
