@@ -34,7 +34,7 @@
     "below"
   ],
   "chain": [
-    "location-identifier",
-    "location-organization"
+    "identifier",
+    "organization"
   ]
 }

@@ -36,17 +36,13 @@
     "type"
   ],
   "chain": [
-    "practitionerrole-identifier",
-    "practitionerrole-location",
-    "practitionerrole-practitioner",
-    "practitionerrole-organization",
-    "practitionerrole-role",
-    "organization-address",
-    "organization-identifier",
-    "organization-name",
-    "organization-partof",
-    "careteam-identifier",
-    "careteam-location",
-    "careteam-organization"
+    "identifier",
+    "location",
+    "practitioner",
+    "organization",
+    "role",
+    "address",
+    "name",
+    "partof"
   ]
 }

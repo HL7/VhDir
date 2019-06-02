@@ -31,7 +31,7 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "location-identifier",
-    "location-contains"
+    "identifier",
+    "contains"
   ]
 }

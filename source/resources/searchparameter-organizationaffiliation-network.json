@@ -31,8 +31,8 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "organization-identifier",
-    "organization-name",
-    "organization-partof"
+    "identifier",
+    "name",
+    "partof"
   ]
 }

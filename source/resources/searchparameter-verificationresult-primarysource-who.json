@@ -35,15 +35,12 @@
     "type"
   ],
   "chain": [
-    "organization-identifier",
-    "organization-address",
-    "organization-name",
-    "organization-partof",
-    "practitioner-name",
-    "practitioner-identifier",
-    "practitionerrole-identifier",
-    "practitionerrole-location",
-    "practitionerrole-organization",
-    "practitionerrole-practitioner"
+    "identifier",
+    "address",
+    "name",
+    "partof",
+    "location",
+    "organization",
+    "practitioner"
   ]
 }

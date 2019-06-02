@@ -31,7 +31,7 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "practitioner-identifier",
-    "practitioner-name"
+    "identifier",
+    "name"
   ]
 }

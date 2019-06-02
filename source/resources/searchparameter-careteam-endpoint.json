@@ -30,8 +30,8 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "endpoint-identifier",
-    "endpoint-connection-type",
-    "endpoint-organization"
+    "identifier",
+    "connection-type",
+    "organization"
   ]
 }

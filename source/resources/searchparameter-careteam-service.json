@@ -30,9 +30,9 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "healthcareservice-identifier",
-    "healthcareservice-category",
-    "healthcareservice-organization",
-    "healthcareservice-location"
+    "identifier",
+    "service-category",
+    "organization",
+    "location"
   ]
 }

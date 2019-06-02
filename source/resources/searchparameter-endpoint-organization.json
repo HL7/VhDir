@@ -35,10 +35,10 @@
     "below"
   ],
   "chain": [
-    "organization-identifier",
-    "organization-name",
-    "organization-address",
-    "organization-partof",
-    "organization-type"
+    "identifier",
+    "name",
+    "address",
+    "partof",
+    "type"
   ]
 }
