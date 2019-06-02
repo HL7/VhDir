@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-service-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-type",
+  "version": "0.0.0",
+  "name": "VhDir_sp_healthcareservice_type",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select HealthcareServices of the specified type",
+  "code": "service-type",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
+  "expression": "HealthcareService.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

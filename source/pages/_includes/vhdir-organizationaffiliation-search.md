@@ -35,9 +35,9 @@
    - with a target type:  `Organization`   
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-partof`
 <hr />
-1. `GET [base]/OrganizationAffiliation?organizationaffiliation-participating-org=[id]`
+1. `GET [base]/OrganizationAffiliation?organizationaffiliation-participating-organization=[id]`
 
-      *Support:* SHALL support search by the [`organizationaffiliation-participating-org`](SearchParameter-searchparameter-organizationaffiliation-participating-org.html) parameter
+      *Support:* SHALL support search by the [`organizationaffiliation-participating-organization`](SearchParameter-organizationaffiliation-participating-organization.html) parameter
    - with a target type:  `Organization`
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-address`, `organization-partof`, `organization-type`
@@ -58,7 +58,7 @@
 
       *Support:* SHOULD support search by the [`organizationaffiliation-service`](SearchParameter-searchparameter-organizationaffiliation-service.html) parameter
    - with a target type:  `HealthcareService`   
-   - including these search paramaters which may be chained:  `healthcareservice-identifier`, `healthcareservice-category`, `healthcareservice-organization`, `healthcareservice-location`
+   - including these search paramaters which may be chained:  `identifier`, `service-category`, `organization`, `location`
 <hr />
 1. `GET [base]/OrganizationAffiliation?organizationaffiliation-specialty=[code]`
 

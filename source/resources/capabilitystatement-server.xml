@@ -278,7 +278,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchRevInclude value="CareTeam.careteam-member">
+			<searchRevInclude value="CareTeam.participant">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -548,7 +548,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="Organization.organization-network-coverage-area">
+			<searchInclude value="Organization.organization-coverage-area">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -643,7 +643,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="OrganizationAffiliation-organizationaffiliation-participating-org">
+			<searchRevInclude value="OrganizationAffiliation-organizationaffiliation-participating-organization">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -693,7 +693,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="CareTeam.careteam-member">
+			<searchRevInclude value="CareTeam.participant">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -939,8 +939,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
-				<name value="network-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-coverage-area"/>
+				<name value="organization-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -1000,7 +1000,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="OrganizationAffiliation.organizationaffiliation-participating-org">
+			<searchInclude value="OrganizationAffiliation.organizationaffiliation-participating-organization">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -1110,7 +1110,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organizationaffiliation-participating-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-participating-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-participating-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1252,8 +1252,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="healthcareservice-category"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-category"/>
+				<name value="healthcareservice-service-category"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1356,8 +1356,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
-				<name value="healthcareservice-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-type"/>
+				<name value="healthcareservice-service-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1473,12 +1473,12 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="Organization.organization-network-coverage-area">
+			<searchRevInclude value="Organization.coverage-area">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="Organization.organization-qualification-wherevalid-location">
+			<searchRevInclude value="Organization.qualification-wherevalid-location">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -1719,12 +1719,12 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="CareTeam.careteam-member">
+			<searchInclude value="CareTeam.participant">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchRevInclude value="CareTeam.careteam-member">
+			<searchRevInclude value="CareTeam.participant">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -1813,8 +1813,8 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="careteam-member"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-participant"/>
+				<name value="participant"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-participant"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -2138,7 +2138,7 @@
 		</resource>
 		<resource>
 			<type value="InsurancePlan"/>
-			<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-productplan"/>
+			<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>

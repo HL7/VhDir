@@ -76,12 +76,12 @@
 <hr />
 1. `GET [base]/PractitionerRole?practitionerrole-qualification-wherevalid-code=[code]`
 
-      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid-code`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html) parameter  
+      *Support:* SHOULD support search by the [`qualification-wherevalid-code`](SearchParameter-practitionerrole-qualification-wherevalid-code.html) parameter  
    - including the modifiers:  `text`   
 <hr />
 1. `GET [base]/PractitionerRole?practitionerrole-qualification-wherevalid=[id]`
 
-      *Support:* SHOULD support search by the [`practitionerrole-qualification-wherevalid`](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html) parameter
+      *Support:* SHOULD support search by the [`qualification-wherevalid`](SearchParameter-practitionerrole-qualification-wherevalid-location.html) parameter
    - with a target type:  `Location`
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `location-identifier`, `location-address`, `location-organization`
@@ -95,7 +95,7 @@
 
       *Support:* SHOULD support search by the [`practitionerrole-service`](SearchParameter-searchparameter-practitionerrole-service.html) parameter
    - with a target type:  `HealthcareService`   
-   - including these search paramaters which may be chained:  `healthcareservice-identifier`, `healthcareservice-category`, `healthcareservice-organization`, `healthcareservice-location`
+   - including these search paramaters which may be chained:  `identifier`, `service-category`, `organization`, `location`
 <hr />
 1. `GET [base]/PractitionerRole?practitionerrole-specialty=[code]`
 

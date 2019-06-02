@@ -8,9 +8,9 @@
 
       *Support:* MAY support search by the `address-use` parameter: `http://hl7.org/fhir/SearchParameter/Organization-address-use`
 <hr />
-1. `GET [base]/Organization?network-coverage-area=[id]`
+1. `GET [base]/Organization?coverage-area=[id]`
 
-      *Support:* SHOULD support search by the [`network-coverage-area`](SearchParameter-searchparameter-network-coverage-area.html) parameter 
+      *Support:* SHOULD support search by the network's [`coverage-area`](SearchParameter-organization-coverage-area.html) parameter 
    - with a target type:  `Location`   
    - including these search paramaters which may be chained:  `location-identifier`, `location-contains` 
 <hr />

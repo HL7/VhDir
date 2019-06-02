@@ -1,0 +1,44 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organizationaffiliation-participating-organization",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-participating-organization",
+  "version": "0.0.0",
+  "name": "VhDir_sp_organizationaffiliation_participating_organization",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-participating-organization",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select roles filled by the specified organization",
+  "code": "participating-organization",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
+  "expression": "OrganizationAffiliation.participatingOrganization",
+  "target": [
+    "Organization"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "above",
+    "below"
+  ],
+  "chain": [
+    "identifier",
+    "type",
+    "address",
+    "name",
+    "partof"
+  ]
+}

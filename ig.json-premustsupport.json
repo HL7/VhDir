@@ -105,9 +105,9 @@
       "source": "searchparameter-insuranceplan-plan-identifier.json",
       "base": "SearchParameter-searchparameter-insuranceplan-plan-identifier.html"
     },
-    "SearchParameter/searchparameter-organization-qualification-wherevalid-location": {
+    "SearchParameter/organization-qualification-wherevalid-location": {
       "source": "searchparameter-organization-qualification-wherevalid-location.json",
-      "base": "SearchParameter-searchparameter-organization-qualification-wherevalid-location.html"
+      "base": "SearchParameter-organization-qualification-wherevalid-location.html"
     },
     "ValueSet/valueset-primarysourcevalidationprocess": {
       "source": "valueset-primarysourcevalidationprocess.xml",
@@ -164,7 +164,7 @@
     },
     "SearchParameter/searchparameter-practitioner-qualification-wherevalid-location": {
       "source": "searchparameter-practitioner-qualification-wherevalid-location.json",
-      "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"
+      "base": "SearchParameter-practitioner-qualification-wherevalid-location.html"
     },
     "StructureDefinition/accessibility": {
       "source": "accessibility.structuredefinition.xml",
@@ -203,9 +203,9 @@
       "source": "searchparameter-insuranceplan-name.json",
       "base": "SearchParameter-searchparameter-insuranceplan-name.html"
     },
-    "SearchParameter/searchparameter-practitioner-qualification-wherevalid-code": {
+    "SearchParameter/practitioner-qualification-wherevalid-code": {
       "source": "searchparameter-practitioner-qualification-wherevalid-code.json",
-      "base": "SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html"
+      "base": "SearchParameter-practitioner-qualification-wherevalid-code.html"
     },
     "SearchParameter/searchparameter-verificationresult-attestation-method": {
       "source": "searchparameter-verificationresult-attestation-method.json",
@@ -322,9 +322,9 @@
       "base": "StructureDefinition-vhdir-restriction.html",
       "defns": "StructureDefinition-vhdir-restriction-definitions.html"
     },
-    "SearchParameter/searchparameter-healthcareservice-category": {
-      "source": "searchparameter-healthcareservice-category.json",
-      "base": "SearchParameter-searchparameter-healthcareservice-category.html"
+    "SearchParameter/healthcareservice-service-category": {
+      "source": "searchparameter-healthcareservice-service-category.json",
+      "base": "SearchParameter-healthcareservice-service-category.html"
     },
     "OrganizationAffiliation/orgrole2": {
       "source": "orgrole-example-hie.xml",
@@ -440,13 +440,13 @@
       "base": "StructureDefinition-vhdir-location.html",
       "defns": "StructureDefinition-vhdir-location-definitions.html"
     },
-    "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code": {
+    "SearchParameter/practitionerrole-qualification-wherevalid-code": {
       "source": "searchparameter-practitionerrole-qualification-wherevalid-code.json",
-      "base": "SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html"
+      "base": "SearchParameter-practitionerrole-qualification-wherevalid-code.html"
     },
-    "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid": {
-      "source": "searchparameter-practitionerrole-qualification-wherevalid.json",
-      "base": "SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html"
+    "SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-location": {
+      "source": "searchparameter-practitionerrole-qualification-wherevalid0location.json",
+      "base": "SearchParameter-practitionerrole-qualification-wherevalid-location.html"
     },
     "HealthcareService/independencerehab1": {
       "source": "healthcareservice-example-independencerehab1.xml",
@@ -549,9 +549,9 @@
       "source": "searchparameter-practitionerrole-via-intermediary.json",
       "base": "SearchParameter-searchparameter-practitionerrole-via-intermediary.html"
     },
-    "SearchParameter/searchparameter-healthcareservice-type": {
-      "source": "searchparameter-healthcareservice-type.json",
-      "base": "SearchParameter-searchparameter-healthcareservice-type.html"
+    "SearchParameter/healthcareservice-service-type": {
+      "source": "searchparameter-healthcareservice-service-type.json",
+      "base": "SearchParameter-healthcareservice-service-type.html"
     },
     "SearchParameter/searchparameter-careteam-endpoint": {
       "source": "searchparameter-careteam-endpoint.json",
@@ -697,9 +697,9 @@
       "base": "StructureDefinition-vhdir-careteam.html",
       "defns": "StructureDefinition-vhdir-careteam-definitions.html"
     },
-    "SearchParameter/searchparameter-careteam-member": {
-      "source": "searchparameter-careteam-member.json",
-      "base": "SearchParameter-searchparameter-careteam-member.html"
+    "SearchParameter/careteam-participant": {
+      "source": "searchparameter-careteam-participant.json",
+      "base": "SearchParameter-careteam-participant.html"
     },
     "SearchParameter/searchparameter-healthcareservice-endpoint": {
       "source": "searchparameter-healthcareservice-endpoint.json",
@@ -801,13 +801,13 @@
       "source": "searchparameter-practitioner-qualification-code.json",
       "base": "SearchParameter-searchparameter-practitioner-qualification-code.html"
     },
-    "SearchParameter/searchparameter-organizationaffiliation-participating-org": {
-      "source": "searchparameter-organizationaffiliation-participating-org.json",
-      "base": "SearchParameter-searchparameter-organizationaffiliation-participating-org.html"
+    "SearchParameter/organizationaffiliation-participating-organization": {
+      "source": "searchparameter-organizationaffiliation-participating-organization.json",
+      "base": "SearchParameter-organizationaffiliation-participating-organization.html"
     },
-    "SearchParameter/searchparameter-organization-qualification-wherevalid-code": {
+    "SearchParameter/organization-qualification-wherevalid-code": {
       "source": "searchparameter-organization-qualification-wherevalid-code.json",
-      "base": "SearchParameter-searchparameter-organization-qualification-wherevalid-code.html"
+      "base": "SearchParameter-organization-qualification-wherevalid-code.html"
     },
     "ValueSet/valueset-insuranceplanbenefittype": {
       "source": "valueset-insuranceplanbenefittype.xml",
@@ -863,9 +863,9 @@
       "base": "StructureDefinition-vhdir-organization.html",
       "defns": "StructureDefinition-vhdir-organization-definitions.html"
     },
-    "SearchParameter/searchparameter-network-coverage-area": {
-      "source": "searchparameter-network-coverage-area.json",
-      "base": "SearchParameter-searchparameter-network-coverage-area.html"
+    "SearchParameter/organization-coverage-area": {
+      "source": "searchparameter-organization-coverage-area.json",
+      "base": "SearchParameter-organization-coverage-area.html"
     },
     "SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type": {
       "source": "searchparameter-insuranceplan-specific-cost-benefit-type.json",

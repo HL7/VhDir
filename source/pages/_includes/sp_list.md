@@ -11,7 +11,7 @@
 - [careteam-status](SearchParameter-searchparameter-careteam-status.html)
 - [careteam-via-intermediary](SearchParameter-searchparameter-careteam-via-intermediary.html)
 - [careteam-category](SearchParameter-searchparameter-careteam-category.html)
-- [careteam-member](SearchParameter-searchparameter-careteam-member.html)
+- [careteam-participant](SearchParameter-careteam-participant.html)
 
 **Endpoint**
 
@@ -29,7 +29,7 @@
 **HealthcareService**
 
 - active `http://hl7.org/fhir/SearchParameter/HealthcareService-active`
-- [healthcareservice-category](SearchParameter-searchparameter-healthcareservice-category.html)
+- [service-category](SearchParameter-healthcareservice-service-category.html)
 - [healthcareservice-characteristic](SearchParameter-searchparameter-healthcareservice-characteristic.html)
 - [healthcareservice-coverage-area](SearchParameter-searchparameter-healthcareservice-coverage-area.html)
 - [healthcareservice-eligibility](SearchParameter-searchparameter-healthcareservice-eligibility.html)
@@ -42,7 +42,7 @@
 - [healthcareservice-new-patient-network](SearchParameter-searchparameter-healthcareservice-new-patient-network.html)
 - [healthcareservice-organization](SearchParameter-searchparameter-healthcareservice-organization.html)
 - [healthcareservice-specialty](SearchParameter-searchparameter-healthcareservice-specialty.html)
-- [healthcareservice-type](SearchParameter-searchparameter-healthcareservice-type.html)
+- [healthcareservice-service-type](SearchParameter-healthcareservice-service-type.html)
 - [healthcareservice-via-intermediary](SearchParameter-searchparameter-healthcareservice-via-intermediary.html)
 
 **Location**
@@ -78,15 +78,15 @@
 - [organization-qualification-code](SearchParameter-searchparameter-organization-qualification-code.html)
 - [organization-qualification-issuer](SearchParameter-searchparameter-organization-qualification-issuer.html)
 - [organization-qualification-status](SearchParameter-searchparameter-organization-qualification-status.html)
-- [organization-qualification-wherevalid-code](SearchParameter-searchparameter-organization-qualification-wherevalid-code.html)
-- [organization-qualification-wherevalid-location](SearchParameter-searchparameter-organization-qualification-wherevalid-location.html)
+- [qualification-wherevalid-code](SearchParameter-organization-qualification-wherevalid-code.html)
+- [qualification-wherevalid-location](SearchParameter-organization-qualification-wherevalid-location.html)
 - [organization-via-intermediary](SearchParameter-searchparameter-organization-via-intermediary.html)
 
 **Network**
 
 - active `http://hl7.org/fhir/SearchParameter/Organization-active`
 - address-use `http://hl7.org/fhir/SearchParameter/Organization-address-use`
-- [network-coverage-area](SearchParameter-searchparameter-network-coverage-area.html)
+- [coverage-area](SearchParameter-organization-coverage-area.html)
 - [organization-address](SearchParameter-searchparameter-organization-address.html)
 - [organization-address-city](SearchParameter-searchparameter-organization-address-city.html)
 - [organization-address-country](SearchParameter-searchparameter-organization-address-country.html)
@@ -107,7 +107,7 @@
 - [organizationaffiliation-identifier-assigner](SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html)
 - [organizationaffiliation-location](SearchParameter-searchparameter-organizationaffiliation-location.html)
 - [organizationaffiliation-network](SearchParameter-searchparameter-organizationaffiliation-network.html)
-- [organizationaffiliation-participating-org](SearchParameter-searchparameter-organizationaffiliation-participating-org.html)
+- [organizationaffiliation-participating-organization](SearchParameter-organizationaffiliation-participating-organization.html)
 - [organizationaffiliation-primary-organization](SearchParameter-searchparameter-organizationaffiliation-primary-organization.html)
 - [organizationaffiliation-role](SearchParameter-searchparameter-organizationaffiliation-role.html)
 - [organizationaffiliation-service](SearchParameter-searchparameter-organizationaffiliation-service.html)
@@ -127,8 +127,8 @@
 - [practitioner-qualification-code](SearchParameter-searchparameter-practitioner-qualification-code.html)
 - [practitioner-qualification-issuer](SearchParameter-searchparameter-practitioner-qualification-issuer.html)
 - [practitioner-qualification-status](SearchParameter-searchparameter-practitioner-qualification-status.html)
-- [practitioner-qualification-wherevalid-code](SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html)
-- [practitioner-qualification-wherevalid-location](SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html)
+- [qualification-wherevalid-code](SearchParameter-practitioner-qualification-wherevalid-code.html)
+- [practitioner-qualification-wherevalid-location](SearchParameter-practitioner-qualification-wherevalid-location.html)
 - [practitioner-via-intermediary](SearchParameter-searchparameter-practitioner-via-intermediary.html)
 
 **PractitionerRole**
@@ -146,8 +146,8 @@
 - [practitionerrole-qualification-code](SearchParameter-searchparameter-practitionerrole-qualification-code.html)
 - [practitionerrole-qualification-issuer](SearchParameter-searchparameter-practitionerrole-qualification-issuer.html)
 - [practitionerrole-qualification-status](SearchParameter-searchparameter-practitionerrole-qualification-status.html)
-- [practitionerrole-qualification-wherevalid-code](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html)
-- [practitionerrole-qualification-wherevalid](SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html)
+- [qualification-wherevalid-code](SearchParameter-practitionerrole-qualification-wherevalid-code.html)
+- [qualification-wherevalid-location](SearchParameter-practitionerrole-qualification-wherevalid-location.html)
 - [practitionerrole-role](SearchParameter-searchparameter-practitionerrole-role.html)
 - [practitionerrole-service](SearchParameter-searchparameter-practitionerrole-service.html)
 - [practitionerrole-specialty](SearchParameter-searchparameter-practitionerrole-specialty.html)

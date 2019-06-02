@@ -30,9 +30,9 @@
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `location-identifier`, `location-type`, `location-address`, `location-organization`
 <hr />
-1. `GET [base]/CareTeam?careteam-member=[id]`
+1. `GET [base]/CareTeam?participant=[id]`
 
-      *Support:* SHALL support search by the [`careteam-member`](SearchParameter-searchparameter-careteam-member.html) parameter
+      *Support:* SHALL support search by the [`participant`](SearchParameter-careteam-participant.html) parameter
    - with a target type:  `PractitionerRole`, `Organization`, `CareTeam`
    - including the modifier:  `type`  
    - including these search paramaters which may be chained:  `practitionerrole-identifier`, `practitionerrole-location`, `practitionerrole-practitioner`, `practitionerrole-organization`, `practitionerrole-role`, `organization-address`, `organization-identifier`, `organization-name`, `organization-partof`, `careteam-identifier`, `careteam-location`, `careteam-organization`
@@ -53,7 +53,7 @@
 
       *Support:* SHOULD support search by the [`careteam-service`](SearchParameter-searchparameter-careteam-service.html) parameter
    - with a target type:  `HealthcareService`   
-   - including these search paramaters which may be chained:  `healthcareservice-identifier`, `healthcareservice-category`, `healthcareservice-organization`, `healthcareservice-location`
+   - including these search paramaters which may be chained:  `identifier`, `service-category`, `organization`, `location`
 <hr />
 1. `GET [base]/CareTeam?careteam-status=[code]`
 

@@ -4,9 +4,9 @@
 
       *Support:* SHALL support search by the `active` parameter: `http://hl7.org/fhir/SearchParameter/HealthcareService-active`
 <hr />
-1. `GET [base]/HealthcareService?healthcareservice-category=[code]`
+1. `GET [base]/HealthcareService?service-category=[code]`
 
-      *Support:* SHALL support search by the [`healthcareservice-category`](SearchParameter-searchparameter-healthcareservice-category.html) parameter  
+      *Support:* SHALL support search by the [`service-category`](SearchParameter-healthcareservice-service-category.html) parameter  
    - including the modifiers:  `text`   
 <hr />
 1. `GET [base]/HealthcareService?healthcareservice-characteristic=[code]`
@@ -77,9 +77,9 @@
       *Support:* SHOULD support search by the [`healthcareservice-specialty`](SearchParameter-searchparameter-healthcareservice-specialty.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/HealthcareService?healthcareservice-type=[code]`
+1. `GET [base]/HealthcareService?service-type=[code]`
 
-      *Support:* SHOULD support search by the [`healthcareservice-type`](SearchParameter-searchparameter-healthcareservice-type.html) parameter  
+      *Support:* SHOULD support search by the [`service-type`](SearchParameter-healthcareservice-service-type.html) parameter  
    - including the modifiers:  `text`   
 <hr />
 1. `GET [base]/HealthcareService?healthcareservice-via-intermediary=[id]`

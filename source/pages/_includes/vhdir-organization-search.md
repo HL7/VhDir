@@ -79,14 +79,14 @@
 
       *Support:* SHOULD support search by the [`organization-qualification-status`](SearchParameter-searchparameter-organization-qualification-status.html) parameter     
 <hr />
-1. `GET [base]/Organization?organization-qualification-wherevalid-code=[code]`
+1. `GET [base]/Organization?qualification-wherevalid-code=[code]`
 
-      *Support:* SHOULD support search by the [`organization-qualification-wherevalid-code`](SearchParameter-searchparameter-organization-qualification-wherevalid-code.html) parameter  
+      *Support:* SHOULD support search by the [`qualification-wherevalid-code`](SearchParameter-organization-qualification-wherevalid-code.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/Organization?organization-qualification-wherevalid-location=[id]`
+1. `GET [base]/Organization?qualification-wherevalid-location=[id]`
 
-      *Support:* SHOULD support search by the [`organization-qualification-wherevalid-location`](SearchParameter-searchparameter-organization-qualification-wherevalid-location.html) parameter 
+      *Support:* SHOULD support search by the [`qualification-wherevalid-location`](SearchParameter-organization-qualification-wherevalid-location.html) parameter 
    - with a target type:  `Location` 
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `location-identifier`, `location-organization` 
