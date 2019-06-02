@@ -2,7 +2,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
 	<id value="vhdir-server"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/CapabilityStatement/vhdir-server"/>
-	<name value="vhdir_server"/>
+	<name value="VhDir_server"/>
 	<title value="Validated Healthcare Directory Server Capability Statement"/>
 	<status value="draft"/>
 	<date value="2018"/>
