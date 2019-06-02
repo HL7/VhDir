@@ -15,7 +15,6 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes related to the business process of primary source validation durign the maintenance of a Healthcare Directory."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysource"/>
 	<content value="complete"/>
 	<concept>
 		<code value="licenseboard"/>

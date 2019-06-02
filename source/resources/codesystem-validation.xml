@@ -15,7 +15,6 @@
 	</contact>
 	<description value="This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationtype"/>
 	<content value="complete"/>
 	<concept>
 		<code value="noneneeded"/>

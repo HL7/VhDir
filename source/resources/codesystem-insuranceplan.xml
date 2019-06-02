@@ -15,7 +15,6 @@
 	</contact>
 	<description value="This code system contains codes for documenting the various attributes of an Insurance Plan"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/VhDir-insuranceplan"/>
 	<content value="complete"/>
 	<concept>
 		<code value="premium"/>
