@@ -167,7 +167,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitioner-qualification-wherevalid-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -429,7 +429,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-qualification-wherevalid-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -437,7 +437,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-qualification-wherevalid-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -892,7 +892,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-qualification-wherevalid-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -900,7 +900,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-qualification-wherevalid-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -940,7 +940,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="network-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-network-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -1253,7 +1253,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="healthcareservice-category"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-category"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-category"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1357,7 +1357,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-service-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1814,7 +1814,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="careteam-member"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-member"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-participant"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>

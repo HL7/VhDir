@@ -584,13 +584,13 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-qualification-wherevalid" />
+      <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-qualification-wherevalid-code" />
+      <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -674,13 +674,13 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-code" />
+      <reference value="SearchParameter/practitioner-qualification-wherevalid-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-qualification-wherevalid-location" />
+      <reference value="SearchParameter/practitioner-qualification-wherevalid-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -824,13 +824,13 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-qualification-wherevalid-location" />
+      <reference value="SearchParameter/organization-qualification-wherevalid-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-qualification-wherevalid-code" />
+      <reference value="SearchParameter/organization-qualification-wherevalid-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2147,12 +2147,12 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-qualification-wherevalid.html"/>
-        <title value="SearchParameter Practitionerrole Qualification Wherevalid"/>
+        <nameUrl value="SearchParameter-practitionerrole-qualification-wherevalid-location.html"/>
+        <title value="SearchParameter Practitionerrole Qualification Wherevalid Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-qualification-wherevalid-code.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-qualification-wherevalid-code.html"/>
         <title value="SearchParameter Practitionerrole Qualification Wherevalid Code"/>
         <generation value="generated"/>
       </page>
@@ -2222,12 +2222,12 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-qualification-wherevalid-location.html"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-wherevalid-location.html"/>
         <title value="SearchParameter Practitioner Qualification Wherevalid Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-qualification-wherevalid-code.html"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-wherevalid-code.html"/>
         <title value="SearchParameter Practitioner Qualification Wherevalid Code"/>
         <generation value="generated"/>
       </page>
@@ -2347,12 +2347,12 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-qualification-wherevalid-location.html"/>
+        <nameUrl value="SearchParameter-organization-qualification-wherevalid-location.html"/>
         <title value="SearchParameter Organization Qualification Wherevalid Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-qualification-wherevalid-code.html"/>
+        <nameUrl value="SearchParameter-organization-qualification-wherevalid-code.html"/>
         <title value="SearchParameter Organization Qualification Wherevalid Code"/>
         <generation value="generated"/>
       </page>

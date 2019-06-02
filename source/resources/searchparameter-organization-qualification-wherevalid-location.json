@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organization-qualification-wherevalid-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-wherevalid-location",
+  "id": "organization-qualification-wherevalid-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-location",
   "version": "0.0.0",
   "name": "VhDir_sp_organization_qualification_wherevalid_location",
   "status": "draft",
