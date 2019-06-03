@@ -46,7 +46,7 @@
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics"/>
                     <code value="historical"/>
                     <display value="Historical"/>
                 </coding>

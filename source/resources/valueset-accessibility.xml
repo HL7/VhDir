@@ -16,7 +16,7 @@
 	<description value="Codes for documenting general categories of accommodations available."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
 		</include>
 	</compose>
 </ValueSet>

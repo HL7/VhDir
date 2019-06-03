@@ -14,21 +14,21 @@
 		<!-- An x.509v3 digital identity certificate associated with Dr. Washington -->
 		<extension url="type">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="ind"/>
 				<display value="Individual"/>
 			</valueCoding>
 		</extension>
 		<extension url="use">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="signing"/>
 				<display value="Signing"/>
 			</valueCoding>
 		</extension>
 		<extension url="certificateStandard">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="x.509v3"/>
 				<display value="x.509v3"/>
 			</valueCoding>
@@ -42,7 +42,7 @@
 		<extension url="trustFramework">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 					<code value="direct"/>
 					<display value="DirectTrust"/>
 					<userSelected value="true"/>

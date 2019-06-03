@@ -16,7 +16,7 @@
 	<description value="Codes for documenting the status of an identifier."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus"/>
 		</include>
 	</compose>
 </ValueSet>

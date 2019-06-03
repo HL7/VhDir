@@ -7,7 +7,7 @@
 		<!-- Indicates that this location is handicap accessible and can provide assistance to persons with disabilities -->
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
 				<code value="handiaccess"/>
 				<display value="handicap accessible"/>
 			</coding>
@@ -27,7 +27,7 @@
 		</extension>
 		<extension url="certificationEdition">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
 				<code value="2014"/>
 				<display value="ONC 2014 Certification"/>
 			</valueCoding>
@@ -35,7 +35,7 @@
 		<extension url="patientAccess">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
 					<code value="portal"/>
 					<display value="patient portal"/>
 				</coding>

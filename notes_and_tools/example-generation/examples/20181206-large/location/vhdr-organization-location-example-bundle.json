@@ -24,7 +24,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -196,7 +196,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -368,7 +368,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -540,7 +540,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -712,7 +712,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -884,7 +884,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1056,7 +1056,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1228,7 +1228,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1400,7 +1400,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1572,7 +1572,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1744,7 +1744,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -1916,7 +1916,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2088,7 +2088,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2260,7 +2260,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2432,7 +2432,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2604,7 +2604,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2776,7 +2776,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -2948,7 +2948,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3120,7 +3120,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3292,7 +3292,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3464,7 +3464,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3636,7 +3636,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3808,7 +3808,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -3980,7 +3980,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -4152,7 +4152,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -4324,7 +4324,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -4496,7 +4496,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -4668,7 +4668,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -4840,7 +4840,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5012,7 +5012,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5184,7 +5184,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5356,7 +5356,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5528,7 +5528,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5700,7 +5700,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -5872,7 +5872,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -6044,7 +6044,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -6216,7 +6216,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -6388,7 +6388,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -6560,7 +6560,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }
@@ -6732,7 +6732,7 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility",
+                                    "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
                                     "code": "handiaccess",
                                     "display": "handicap accessible"
                                 }

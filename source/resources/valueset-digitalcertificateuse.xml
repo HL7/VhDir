@@ -16,7 +16,7 @@
 	<description value="This value set defines the purpose of the key contained in a public key certificate."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 			<concept>
 				<code value="signing"/>
 			</concept>

@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicate the characteristics of a healthcare service."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-healthcareservice-characteristic"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic"/>
 		</include>
 	</compose>
 </ValueSet>

@@ -16,7 +16,7 @@
 	<description value="Codes for documenting the reason behind the existence of an alias."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics"/>
 			<concept>
 				<code value="legalalternative"/>
 			</concept>

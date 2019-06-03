@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-healthcareservice-characteristic"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-healthcareservice-characteristic"/>
+	<id value="healthcareservice-characteristic"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic"/>
 	<name value="VhDir_cs_healthcareservice_characteristic"/>
 	<title value="VhDir Healthcare Service Characteristic"/>
 	<status value="active"/>

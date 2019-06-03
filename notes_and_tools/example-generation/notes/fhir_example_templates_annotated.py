@@ -52,7 +52,7 @@ organization_template = '''<Organization  xmlns="http://hl7.org/fhir"> <!-- synt
     <alias value="DC Memorial Hospital"> 
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-organizationdemographics"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics"/>
                 <code value="historical"/>
                 <display value="Historical"/>
             </valueCoding>
@@ -211,21 +211,21 @@ url = 'type' Describes the practitioner's digital certificate. In this case, an 
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
 		<extension url="type">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="ind"/>
 				<display value="Individual"/>
 			</valueCoding>
 		</extension>
 		<extension url="use">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="signing"/>
 				<display value="Signing"/>
 			</valueCoding>
 		</extension>
 		<extension url="certificateStandard">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="x.509v3"/>
 				<display value="x.509v3"/>
 			</valueCoding>
@@ -239,7 +239,7 @@ url = 'type' Describes the practitioner's digital certificate. In this case, an 
 		<extension url="trustFramework">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 					<code value="direct"/>
 					<display value="DirectTrust"/>
 					<userSelected value="true"/>
@@ -255,7 +255,7 @@ url = 'type' Describes the practitioner's digital certificate. In this case, an 
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
 				<code value="cultcomp"/>
 				<display value="Cultural competence"/>
 				<userSelected value="true"/>
@@ -507,7 +507,7 @@ location_template = '''
 		</extension>
 		<extension url="certificationEdition">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
 				<code value="2014"/>
 				<display value="ONC 2014 Certification"/>
 			</valueCoding>
@@ -515,7 +515,7 @@ location_template = '''
 		<extension url="patientAccess">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
 					<code value="portal"/>
 					<display value="patient portal"/>
 				</coding>
@@ -848,21 +848,21 @@ e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate">
 		<extension url="type">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="ind"/>
 				<display value="Individual"/>
 			</valueCoding>
 		</extension>
 		<extension url="use">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="signing"/>
 				<display value="Signing"/>
 			</valueCoding>
 		</extension>
 		<extension url="certificateStandard">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="x.509v3"/>
 				<display value="x.509v3"/>
 			</valueCoding>
@@ -876,7 +876,7 @@ e.g.,	An x.509v3 digital identity certificate associated with Dr. Washington
 		<extension url="trustFramework">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 					<code value="direct"/>
 					<display value="DirectTrust"/>
 					<userSelected value="true"/>

@@ -60,7 +60,7 @@ def get_certx():
             {
               'url' : 'type',
               'valueCoding' : {
-                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
                 'code' : 'ind',
                 'display' : 'Individual'
               }
@@ -68,7 +68,7 @@ def get_certx():
             {
               'url' : 'use',
               'valueCoding' : {
-                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
                 'code' : 'signing',
                 'display' : 'Signing'
               }
@@ -76,7 +76,7 @@ def get_certx():
             {
               'url' : 'certificateStandard',
               'valueCoding' : {
-                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
                 'code' : 'x.509v3',
                 'display' : 'x.509v3'
               }
@@ -94,7 +94,7 @@ def get_certx():
               'valueCodeableConcept' : {
                 'coding' : [
                   {
-                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
                     'code' : 'direct',
                     'display' : 'DirectTrust',
                     'userSelected' : True
@@ -126,7 +126,7 @@ for filename in os.listdir(in_path):
         #print(file)
 
         # fix code system error
-        'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus'
+        'http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus'
 
         # add cert extension with varying expirations
 
@@ -137,7 +137,7 @@ for filename in os.listdir(in_path):
 
             # fix code system error
             for qual in patient.qualification:
-                qual.extension[0].extension[0].valueCoding.system = 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus'
+                qual.extension[0].extension[0].valueCoding.system = 'http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus'
 
             # add cert extension with varying expirations
             patient.extension = []

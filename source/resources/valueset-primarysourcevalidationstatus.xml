@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicate various states in the validation process that a given that a resource or element may be in at a point in time."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
 			<concept>
 				<code value="successful"/>
 			</concept>

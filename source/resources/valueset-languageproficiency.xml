@@ -16,7 +16,7 @@
 	<description value="Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-languageproficiency"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/languageproficiency"/>
 		</include>
 	</compose>
 </ValueSet>

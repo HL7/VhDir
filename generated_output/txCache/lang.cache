@@ -2790,14 +2790,3 @@ v: {
   "error" : "The display \"English (United States)\" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of [\"English (Region=United States)\"]"
 }
 -------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "urn:ietf:bcp:47",
-  "code" : "en-US",
-  "display" : "English (United States)"
-}, "valueSet" :null}####
-v: {
-  "display" : "English (Region=United States)",
-  "severity" : "warning",
-  "error" : "The display \"English (United States)\" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of [\"English (Region=United States)\"]"
-}
--------------------------------------------------------------------------------------

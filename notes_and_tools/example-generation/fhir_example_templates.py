@@ -329,7 +329,7 @@ location_template = '''
 	<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
 				<code value="handiaccess"/>
 				<display value="handicap accessible"/>
 			</coding>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-insuranceplan"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-insuranceplan"/>
+	<id value="insuranceplan"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan"/>
 	<name value="VhDirinsuranceplan"/>
 	<title value="VhDir Insurance Plan Code System"/>
 	<status value="active"/>

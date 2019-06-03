@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-healthcareservice-eligibility"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-healthcareservice-eligibility"/>
+	<id value="healthcareservice-eligibility"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-eligibility"/>
 	<name value="VhDir_cs_healthcareservice_eligibility"/>
 	<title value="VhDir Healthcare Service Eligibility"/>
 	<status value="active"/>

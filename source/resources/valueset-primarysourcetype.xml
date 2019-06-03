@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that describes the entity that provides validatation of attested data."/>
 	<compose>
 		<include>
-		    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+		    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
              <concept>
                 <code value="licenseboard"/>
             </concept>

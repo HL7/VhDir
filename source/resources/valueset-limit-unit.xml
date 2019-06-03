@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicates the unit of any limit on a benefit in a product/plan."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics"/>
 			<concept>
 				<code value="days"/>
 			</concept>

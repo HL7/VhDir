@@ -16,7 +16,7 @@
 	<description value="Codes for documenting the certification edition of an electronic health record system."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-ehrcharacteristics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
 			<concept>
 				<code value="2011"/>
 			</concept>

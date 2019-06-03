@@ -52,7 +52,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -246,7 +246,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "hmo",
                         "display": "HMO"
                      }
@@ -440,7 +440,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -634,7 +634,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -828,7 +828,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "hmo",
                         "display": "HMO"
                      }
@@ -1022,7 +1022,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -1216,7 +1216,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -1410,7 +1410,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "hmo",
                         "display": "HMO"
                      }
@@ -1604,7 +1604,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -1798,7 +1798,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -1992,7 +1992,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "hmo",
                         "display": "HMO"
                      }
@@ -2186,7 +2186,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }
@@ -2380,7 +2380,7 @@
                {
                   "coding": [
                      {
-                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type",
+                        "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
                         "code": "ppo",
                         "display": "PPO"
                      }

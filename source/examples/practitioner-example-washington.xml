@@ -15,21 +15,21 @@
 		<!--Describes the practitioner's digital certificate. In this case, an identity certificate used for digitally signing, associated with the DirectTrust framework -->
 		<extension url="type">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="ind"/>
 				<display value="Individual"/>
 			</valueCoding>
 		</extension>
 		<extension url="use">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="signing"/>
 				<display value="Signing"/>
 			</valueCoding>
 		</extension>
 		<extension url="certificateStandard">
 			<valueCoding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 				<code value="x.509v3"/>
 				<display value="x.509v3"/>
 			</valueCoding>
@@ -43,7 +43,7 @@
 		<extension url="trustFramework">
 			<valueCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 					<code value="direct"/>
 					<display value="DirectTrust"/>
 					<userSelected value="true"/>
@@ -55,7 +55,7 @@
 		<!-- The practitioner provides culturally competent care for a local Native American tribe, the Piscataway People -->
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-accessibility"/>
+				<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
 				<code value="cultcomp"/>
 				<display value="Cultural competence"/>
 				<userSelected value="true"/>

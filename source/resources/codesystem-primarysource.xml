@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-primarysource"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-primarysource"/>
+	<id value="primarysource"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/primarysource"/>
 	<name value="VhDirPrimarySource"/>
 	<title value="VhDir Primary Source Code System"/>
 	<status value="active"/>

@@ -19,85 +19,85 @@
 <definition>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-accessibility" />
+      <reference value="CodeSystem/accessibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-validation" />
+      <reference value="CodeSystem/validation" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-usecase" />
+      <reference value="CodeSystem/usecase" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-primarysource" />
+      <reference value="CodeSystem/primarysource" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-payercharacteristics" />
+      <reference value="CodeSystem/payercharacteristics" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-organizationdemographics" />
+      <reference value="CodeSystem/organizationdemographics" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-network-type" />
+      <reference value="CodeSystem/network-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-languageproficiency" />
+      <reference value="CodeSystem/languageproficiency" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-ehrcharacteristics" />
+      <reference value="CodeSystem/ehrcharacteristics" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-digitalcertificate" />
+      <reference value="CodeSystem/digitalcertificate" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-credentialstatus" />
+      <reference value="CodeSystem/credentialstatus" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-insuranceplan" />
+      <reference value="CodeSystem/insuranceplan" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-healthcareservice-characteristic" />
+      <reference value="CodeSystem/healthcareservice-characteristic" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="CodeSystem/codesystem-healthcareservice-eligibility" />
+      <reference value="CodeSystem/healthcareservice-eligibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1994,62 +1994,62 @@
       <!-- ============ CodeSystems  =============== -->
       <!-- insert codesystems -->
       <page>
-        <nameUrl value="CodeSystem-codesystem-validation.html"/>
+        <nameUrl value="CodeSystem-validation.html"/>
         <title value="CodeSystem Validation"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-usecase.html"/>
+        <nameUrl value="CodeSystem-usecase.html"/>
         <title value="CodeSystem Usecase"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-primarysource.html"/>
+        <nameUrl value="CodeSystem-primarysource.html"/>
         <title value="CodeSystem Primarysource"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-payercharacteristics.html"/>
+        <nameUrl value="CodeSystem-payercharacteristics.html"/>
         <title value="CodeSystem Payercharacteristics"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-organizationdemographics.html"/>
+        <nameUrl value="CodeSystem-organizationdemographics.html"/>
         <title value="CodeSystem Organizationdemographics"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-network-type.html"/>
+        <nameUrl value="CodeSystem-network-type.html"/>
         <title value="CodeSystem Network Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-languageproficiency.html"/>
+        <nameUrl value="CodeSystem-languageproficiency.html"/>
         <title value="CodeSystem Languageproficiency"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-insuranceplan.html"/>
+        <nameUrl value="CodeSystem-insuranceplan.html"/>
         <title value="CodeSystem Insuranceplan"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-ehrcharacteristics.html"/>
+        <nameUrl value="CodeSystem-ehrcharacteristics.html"/>
         <title value="CodeSystem Ehrcharacteristics"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-digitalcertificate.html"/>
+        <nameUrl value="CodeSystem-digitalcertificate.html"/>
         <title value="CodeSystem Digitalcertificate"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-credentialstatus.html"/>
+        <nameUrl value="CodeSystem-credentialstatus.html"/>
         <title value="CodeSystem Credentialstatus"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="CodeSystem-codesystem-accessibility.html"/>
+        <nameUrl value="CodeSystem-accessibility.html"/>
         <title value="CodeSystem Accessibility"/>
         <generation value="generated"/>
       </page>

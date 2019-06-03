@@ -16,7 +16,7 @@
 	<description value="Codes for documenting business use case by a general grouping by business area."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-usecase"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase"/>
 		</include>
 	</compose>
 </ValueSet>

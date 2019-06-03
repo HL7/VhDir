@@ -16,7 +16,7 @@
 	<description value="Codes for documenting network type."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type"/>
 		</include>
 	</compose>
 </ValueSet>

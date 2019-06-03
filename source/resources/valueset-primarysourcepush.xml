@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicate if a primary source of validated data has the capacity to send validation details directly to a validated healthcare directory."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
 			<concept>
 				<code value="pushyes"/>
 			</concept>

@@ -43,7 +43,7 @@
 
 	<type> <!-- This network is a preferred provider network -->
         <coding>
-            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type"/>
+            <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type"/>
             <code value="ppo"/>
             <display value="PPO"/>
         </coding>

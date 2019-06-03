@@ -232,9 +232,9 @@
       "source": "searchparameter-insuranceplan-product-identifier.json",
       "base": "SearchParameter-searchparameter-insuranceplan-product-identifier.html"
     },
-    "CodeSystem/codesystem-credentialstatus": {
+    "CodeSystem/credentialstatus": {
       "source": "codesystem-credentialstatus.xml",
-      "base": "CodeSystem-codesystem-credentialstatus.html"
+      "base": "CodeSystem-credentialstatus.html"
     },
     "ValueSet/identifierstatus": {
       "source": "valueset-identifierstatus.xml",
@@ -371,9 +371,9 @@
       "source": "searchparameter-location-organization.json",
       "base": "SearchParameter-searchparameter-location-organization.html"
     },
-    "CodeSystem/codesystem-languageproficiency": {
+    "CodeSystem/languageproficiency": {
       "source": "codesystem-languageproficiency.xml",
-      "base": "CodeSystem-codesystem-languageproficiency.html"
+      "base": "CodeSystem-languageproficiency.html"
     },
     "SearchParameter/searchparameter-careteam-via-intermediary": {
       "source": "searchparameter-careteam-via-intermediary.json",
@@ -392,9 +392,9 @@
       "base": "StructureDefinition-org-description.html",
       "defns": "StructureDefinition-org-description-definitions.html"
     },
-    "CodeSystem/codesystem-primarysource": {
+    "CodeSystem/primarysource": {
       "source": "codesystem-primarysource.xml",
-      "base": "CodeSystem-codesystem-primarysource.html"
+      "base": "CodeSystem-primarysource.html"
     },
     "SearchParameter/searchparameter-verificationresult-attestation-proxy": {
       "source": "searchparameter-verificationresult-attestation-proxy.json",
@@ -465,9 +465,9 @@
       "source": "searchparameter-verificationresult-target-location.json",
       "base": "SearchParameter-searchparameter-verificationresult-target-location.html"
     },
-    "CodeSystem/codesystem-accessibility": {
+    "CodeSystem/accessibility": {
       "source": "codesystem-accessibility.xml",
-      "base": "CodeSystem-codesystem-accessibility.html"
+      "base": "CodeSystem-accessibility.html"
     },
     "SearchParameter/searchparameter-practitioner-identifier": {
       "source": "searchparameter-practitioner-identifier.json",
@@ -517,9 +517,9 @@
       "source": "valueset-insuranceplanbenefitcosttype.xml",
       "base": "ValueSet-valueset-insuranceplanbenefitcosttype.html"
     },
-    "CodeSystem/codesystem-network-type": {
+    "CodeSystem/network-type": {
       "source": "codesystem-network-type.xml",
-      "base": "CodeSystem-codesystem-network-type.html"
+      "base": "CodeSystem-network-type.html"
     },
     "SearchParameter/searchparameter-practitionerrole-location": {
       "source": "searchparameter-practitionerrole-location.json",
@@ -600,18 +600,18 @@
       "source": "insuranceplan-example-qhp.xml",
       "base": "InsurancePlan-insuranceplan1.html"
     },
-    "CodeSystem/codesystem-insuranceplan": {
+    "CodeSystem/insuranceplan": {
       "source": "codesystem-insuranceplan.xml",
-      "base": "CodeSystem-codesystem-insuranceplan.html"
+      "base": "CodeSystem-insuranceplan.html"
     },
     "StructureDefinition/org-alias-type": {
       "source": "structuredefinition-ext-org-alias-type.json",
       "base": "StructureDefinition-org-alias-type.html",
       "defns": "StructureDefinition-org-alias-type-definitions.html"
     },
-    "CodeSystem/codesystem-organizationdemographics": {
+    "CodeSystem/organizationdemographics": {
       "source": "codesystem-organizationdemographics.xml",
-      "base": "CodeSystem-codesystem-organizationdemographics.html"
+      "base": "CodeSystem-organizationdemographics.html"
     },
     "SearchParameter/searchparameter-practitionerrole-new-patient": {
       "source": "searchparameter-practitionerrole-new-patient.json",
@@ -677,9 +677,9 @@
       "source": "searchparameter-practitionerrole-qualification-code.json",
       "base": "SearchParameter-searchparameter-practitionerrole-qualification-code.html"
     },
-    "CodeSystem/codesystem-payercharacteristics": {
+    "CodeSystem/payercharacteristics": {
       "source": "codesystem-payercharacteristics.xml",
-      "base": "CodeSystem-codesystem-payercharacteristics.html"
+      "base": "CodeSystem-payercharacteristics.html"
     },
     "SearchParameter/searchparameter-endpoint-via-intermediary": {
       "source": "searchparameter-endpoint-via-intermediary.json",
@@ -706,9 +706,9 @@
       "source": "searchparameter-healthcareservice-endpoint.json",
       "base": "SearchParameter-searchparameter-healthcareservice-endpoint.html"
     },
-    "CodeSystem/codesystem-usecase": {
+    "CodeSystem/usecase": {
       "source": "codesystem-usecase.xml",
-      "base": "CodeSystem-codesystem-usecase.html"
+      "base": "CodeSystem-usecase.html"
     },
     "SearchParameter/searchparameter-insuranceplan-coverage-benefit-type": {
       "source": "searchparameter-insuranceplan-coverage-benefit-type.json",
@@ -921,9 +921,9 @@
       "source": "searchparameter-healthcareservice-via-intermediary.json",
       "base": "SearchParameter-searchparameter-healthcareservice-via-intermediary.html"
     },
-    "CodeSystem/codesystem-validation": {
+    "CodeSystem/validation": {
       "source": "codesystem-validation.xml",
-      "base": "CodeSystem-codesystem-validation.html"
+      "base": "CodeSystem-validation.html"
     },
     "SearchParameter/searchparameter-organization-address-state": {
       "source": "searchparameter-organization-address-state.json",
@@ -953,9 +953,9 @@
       "source": "searchparameter-verificationresult-attestation-attester.json",
       "base": "SearchParameter-searchparameter-verificationresult-attestation-attester.html"
     },
-    "CodeSystem/codesystem-ehrcharacteristics": {
+    "CodeSystem/ehrcharacteristics": {
       "source": "codesystem-ehrcharacteristics.xml",
-      "base": "CodeSystem-codesystem-ehrcharacteristics.html"
+      "base": "CodeSystem-ehrcharacteristics.html"
     },
     "ConceptMap/conceptmap-qualification-status": {
       "source": "conceptmap-qualification-status.xml",
@@ -986,18 +986,18 @@
       "source": "valueset-digitalcertificateuse.xml",
       "base": "ValueSet-valueset-digitalcertificateuse.html"
     },
-    "CodeSystem/codesystem-digitalcertificate": {
+    "CodeSystem/digitalcertificate": {
       "source": "codesystem-digitalcertificate.xml",
-      "base": "CodeSystem-codesystem-digitalcertificate.html"
+      "base": "CodeSystem-digitalcertificate.html"
     },
 
-    "CodeSystem/codesystem-healthcareservice-characteristic": {
+    "CodeSystem/healthcareservice-characteristic": {
       "source": "codesystem-healthcareservice-characteristic.xml",
-      "base": "CodeSystem-codesystem-healthcareservice-characteristic.html"
+      "base": "CodeSystem-healthcareservice-characteristic.html"
     },
-    "CodeSystem/codesystem-healthcareservice-eligibility": {
+    "CodeSystem/healthcareservice-eligibility": {
       "source": "codesystem-healthcareservice-eligibility.xml",
-      "base": "CodeSystem-codesystem-healthcareservice-eligibility.html"
+      "base": "CodeSystem-healthcareservice-eligibility.html"
     },
 
 

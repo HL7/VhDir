@@ -505,7 +505,7 @@ def network_example(item,f_id,type,hpid):
         zip=item['zip'],
         LAT=ll.lat_long[get_zip(item['zip'])][0], # remove the  + 4 for looking up lat and long
         LON=ll.lat_long[get_zip(item['zip'])][1],
-        prov_type_system='http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-network-type',
+        prov_type_system='http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type',
         prov_type_code=item['prov_type_code'],
         prov_type_display=item['prov_type_display'],
         prov_type_text=item['prov_type_text'],

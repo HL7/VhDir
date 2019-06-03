@@ -15,7 +15,7 @@
 	<description value="This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
             <concept>
                 <code value="fatal"/>
             </concept>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-validation"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+	<id value="validation"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
 	<name value="VhDirValidationType"/>
 	<title value="VhDir Validation Type Code System"/>
 	<status value="active"/>

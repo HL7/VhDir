@@ -346,7 +346,7 @@ def endpoint(r): # r = resource as python class
 #              'valueCodeableConcept' : {
 #                'coding' : [
 #                  {
-#                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-usecase',
+#                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase',
 #                    'code' : 'treatment',
 #                    'display' : 'treatment'
 #                  }
@@ -369,7 +369,7 @@ def endpoint(r): # r = resource as python class
 #            {
 #              'url' : 'type',
 #              'valueCoding' : {
-#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
 #                'code' : 'grp',
 #                'display' : 'Group'
 #              }
@@ -377,7 +377,7 @@ def endpoint(r): # r = resource as python class
 #            {
 #              'url' : 'use',
 #              'valueCoding' : {
-#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
 #                'code' : 'signing',
 #                'display' : 'Signing'
 #              }
@@ -385,7 +385,7 @@ def endpoint(r): # r = resource as python class
 #            {
 #              'url' : 'use',
 #              'valueCoding' : {
-#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
 #                'code' : 'encrypt',
 #                'display' : 'Encryption'
 #              }
@@ -393,7 +393,7 @@ def endpoint(r): # r = resource as python class
 #            {
 #              'url' : 'certificateStandard',
 #              'valueCoding' : {
-#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+#                'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
 #                'code' : 'x.509v3',
 #                'display' : 'x.509v3'
 #              }
@@ -411,7 +411,7 @@ def endpoint(r): # r = resource as python class
 #              'valueCodeableConcept' : {
 #                'coding' : [
 #                  {
-#                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate',
+#                    'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate',
 #                    'code' : 'direct',
 #                    'display' : 'DirectTrust'
 #                  }
@@ -550,7 +550,7 @@ def insuranceplan(item):
          'text' : plan_map[item['plan_type']],
           'coding' : [
             {
-              'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics',
+              'system' : 'http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics',
               'code' : item['plan_type'],
               'display' : plan_map[item['plan_type']]
             }

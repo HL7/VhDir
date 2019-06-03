@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that indicate the type of a plan."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-payercharacteristics"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics"/>
 			<concept>
 				<code value="cat"/>
 			</concept>

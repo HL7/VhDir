@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-languageproficiency"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-languageproficiency"/>
+	<id value="languageproficiency"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/languageproficiency"/>
 	<name value="VhDirSpokenLanguageProficiency"/>
 	<title value="VhDir Spoken Language Proficiency Code System"/>
 	<status value="active"/>

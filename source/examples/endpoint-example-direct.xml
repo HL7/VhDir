@@ -9,7 +9,7 @@
         <extension url="type">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-usecase"/>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase"/>
                     <code value="treatment"/>
                     <display value="treatment"/>
                 </coding>
@@ -27,28 +27,28 @@
     <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate"> <!-- Describes a digital certificate associated with this endpoint -->
         <extension url="type">
             <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
                 <code value="grp"/>
                 <display value="Group"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
                 <code value="signing"/>
                 <display value="Signing"/>
             </valueCoding>
         </extension>
         <extension url="use">
             <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
                 <code value="encrypt"/>
                 <display value="Encryption"/>
             </valueCoding>
         </extension>
         <extension url="certificateStandard">
             <valueCoding>
-                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
                 <code value="x.509v3"/>
                 <display value="x.509v3"/>
             </valueCoding>
@@ -62,7 +62,7 @@
         <extension url="trustFramework">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+                    <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
                     <code value="direct"/>
                     <display value="DirectTrust"/>
                 </coding>

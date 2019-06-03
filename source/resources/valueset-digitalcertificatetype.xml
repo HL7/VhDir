@@ -16,7 +16,7 @@
 	<description value="In a certificate-based public key cryptographic system, certificates are issued to subscribers, whose name appears as the subject in the certificate. This value set defines a set of terms describing the types of subscribers who may be issued digital certificates."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-digitalcertificate"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
 			<concept>
 				<code value="TLS/SSL"/>
 			</concept>

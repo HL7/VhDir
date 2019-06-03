@@ -16,7 +16,7 @@
 	<description value="This value set defines a set of codes that further qualify the cost of a plan."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-insuranceplan"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan"/>
             <concept>
                 <code value="q1"/>
             </concept>

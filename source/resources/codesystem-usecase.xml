@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-usecase"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-usecase"/>
+	<id value="usecase"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase"/>
 	<name value="VhDirUseCase"/>
 	<title value="VhDir Use Case Code System"/>
 	<status value="active"/>

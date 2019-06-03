@@ -16,7 +16,7 @@
 	<description value="This value set includes a codes that describe the relationship between the list of standards defining digital certificates."/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-validation"/>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
 			<concept>
 				<code value="owner"/>
 			</concept>
