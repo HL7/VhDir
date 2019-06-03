@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-practitioner-family-name",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-family-name",
+  "id": "practitioner-family-name",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-family-name",
   "name": "VhDir_sp_practitioner_family_name",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-family",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-coverage-area",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-coverage-area",
+  "id": "healthcareservice-coverage-area",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-coverage-area",
   "name": "VhDir_sp_healthcareservice_coverage_area",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-coverage-area",
   "status": "draft",

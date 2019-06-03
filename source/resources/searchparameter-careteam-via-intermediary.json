@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-careteam-via-intermediary",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-via-intermediary",
+  "id": "careteam-via-intermediary",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-via-intermediary",
   "name": "VhDir_sp_careteam_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",

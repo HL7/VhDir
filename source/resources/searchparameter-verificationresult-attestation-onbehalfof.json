@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-verificationresult-attestation-onbehalfof",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-onbehalfof",
+  "id": "verificationresult-attestation-onbehalfof",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-onbehalfof",
   "name": "VhDir_sp_verificationresult_attestation_onbehalfof",
   "status": "draft",
   "date": "2018-05-23",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-practitioner-identifier-assigner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier-assigner",
+  "id": "practitioner-identifier-assigner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier-assigner",
   "name": "VhDir_sp_practitioner_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",

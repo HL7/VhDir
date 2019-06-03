@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-new-patient",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-new-patient",
+  "id": "location-new-patient",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient",
   "name": "VhDir_sp_location_new_patient",
   "status": "draft",
   "date": "2018-05-23",

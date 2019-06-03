@@ -10,74 +10,74 @@
 <hr />
 1. `GET [base]/Organization?organization-address=[string]`
 
-      *Support:* SHALL support search by the [`organization-address`](SearchParameter-searchparameter-organization-address.html) parameter  
+      *Support:* SHALL support search by the [`organization-address`](SearchParameter-organization-address.html) parameter  
    - including the modifiers:  `contains`, `exact`   
 <hr />
 1. `GET [base]/Organization?organiztion-address-city=[string]`
 
-      *Support:* SHOULD support search by the [`organization-address-city`](SearchParameter-searchparameter-organization-address-city.html) parameter  
+      *Support:* SHOULD support search by the [`organization-address-city`](SearchParameter-organization-address-city.html) parameter  
    - including the modifiers:  `exact`   
 <hr />
 1. `GET [base]/Organization?organization-address-country=[string]`
 
-      *Support:* SHOULD support search by the [`organization-address-country`](SearchParameter-searchparameter-organization-address-country.html) parameter  
+      *Support:* SHOULD support search by the [`organization-address-country`](SearchParameter-organization-address-country.html) parameter  
    - including the modifiers:  `exact`   
 <hr />
 1. `GET [base]/Organization?organization-address-postalcode=[string]`
 
-      *Support:* SHOULD support search by the [`organization-address-postalcode`](SearchParameter-searchparameter-organization-address-postalcode.html) parameter
+      *Support:* SHOULD support search by the [`organization-address-postalcode`](SearchParameter-organization-address-postalcode.html) parameter
    - including the modifiers:  `exact`   
 <hr />
 1. `GET [base]/Organization?organization-address-state=[string]`
 
-      *Support:* SHOULD support search by the [`organization-address-state`](SearchParameter-searchparameter-organization-address-state.html) parameter  
+      *Support:* SHOULD support search by the [`organization-address-state`](SearchParameter-organization-address-state.html) parameter  
    - including the modifiers:  `exact`   
 <hr />
 1. `GET [base]/Organization?organization-endpoint=[id]`
 
-      *Support:* SHALL support search by the [`organization-endpoint`](SearchParameter-searchparameter-organization-endpoint.html) parameter 
+      *Support:* SHALL support search by the [`organization-endpoint`](SearchParameter-organization-endpoint.html) parameter 
    - with a target type:  `Endpoint`   
    - including these search paramaters which may be chained:  `endpoint-identifier`, `endpoint-connection-type`, `endpoint-organization` 
 <hr />
 1. `GET [base]/Organization?organization-identifier=[code]`
 
-      *Support:* SHALL support search by the [`organization-identifier`](SearchParameter-searchparameter-organization-identifier.html) parameter  
+      *Support:* SHALL support search by the [`organization-identifier`](SearchParameter-organization-identifier.html) parameter  
    - including the modifiers:  `text`, `ofType`   
 <hr />
 1. `GET [base]/Organization?organization-identifier-assigner=[id]`
 
-      *Support:* MAY support search by the [`organization-identifier-assigner`](SearchParameter-searchparameter-organization-identifier-assigner.html) parameter 
+      *Support:* MAY support search by the [`organization-identifier-assigner`](SearchParameter-organization-identifier-assigner.html) parameter 
    - with a target type:  `Organization` 
    - including the modifiers:  `below`  
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name` 
 <hr />
 1. `GET [base]/Organization?organization-name=[string]`
 
-      *Support:* SHALL support search by the [`organization-name`](SearchParameter-searchparameter-organization-name.html) parameter  
+      *Support:* SHALL support search by the [`organization-name`](SearchParameter-organization-name.html) parameter  
    - including the modifiers:  `exact`, `contains`   
 <hr />
 1. `GET [base]/Organization?organization-partof=[id]`
 
-      *Support:* SHALL support search by the [`organization-partof`](SearchParameter-searchparameter-organization-partof.html) parameter 
+      *Support:* SHALL support search by the [`organization-partof`](SearchParameter-organization-partof.html) parameter 
    - with a target type:  `Organization` 
    - including the modifiers:  `above`, `below`  
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name`, `organization-address`, `organization-type` 
 <hr />
 1. `GET [base]/Organization?organization-qualification-code=[code]`
 
-      *Support:* SHOULD support search by the [`organization-qualification-code`](SearchParameter-searchparameter-organization-qualification-code.html) parameter
+      *Support:* SHOULD support search by the [`organization-qualification-code`](SearchParameter-organization-qualification-code.html) parameter
    - including the modifiers:  `text`
 <hr />
 1. `GET [base]/Organization?organization-qualification-issuer=[id]`
 
-      *Support:* MAY support search by the [`organization-qualification-issuer`](SearchParameter-searchparameter-organization-qualification-issuer.html) parameter 
+      *Support:* MAY support search by the [`organization-qualification-issuer`](SearchParameter-organization-qualification-issuer.html) parameter 
    - with a target type:  `Organization` 
    - including the modifiers:  `below`  
    - including these search paramaters which may be chained:  `organization-identifier`, `organization-name` 
 <hr />
 1. `GET [base]/Organization?organization-qualification-status=[code]`
 
-      *Support:* SHOULD support search by the [`organization-qualification-status`](SearchParameter-searchparameter-organization-qualification-status.html) parameter     
+      *Support:* SHOULD support search by the [`organization-qualification-status`](SearchParameter-organization-qualification-status.html) parameter     
 <hr />
 1. `GET [base]/Organization?qualification-wherevalid-code=[code]`
 
@@ -93,11 +93,11 @@
 <hr />
 1. `GET [base]/Organization?organization-type=[code]`
 
-      *Support:* SHALL support search by the [`type`](SearchParameter-searchparameter-organization-type.html) parameter  
+      *Support:* SHALL support search by the [`type`](SearchParameter-organization-type.html) parameter  
    - including the modifiers:  `text`   
 <hr />
 1. `GET [base]/Organization?organization-via-intermediary=[id]`
 
-      *Support:* MAY support search by the [`organization-via-intermediary`](SearchParameter-searchparameter-organization-via-intermediary.html) parameter 
+      *Support:* MAY support search by the [`organization-via-intermediary`](SearchParameter-organization-via-intermediary.html) parameter 
    - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
 <hr />

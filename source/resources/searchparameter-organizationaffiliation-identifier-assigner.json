@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organizationaffiliation-identifier-assigner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner",
+  "id": "organizationaffiliation-identifier-assigner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier-assigner",
   "name": "VhDir_sp_organizationaffiliation_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",

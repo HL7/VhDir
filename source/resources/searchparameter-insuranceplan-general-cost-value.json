@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-insuranceplan-general-cost-value",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-value",
+  "id": "insuranceplan-general-cost-value",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-value",
   "name": "VhDir_sp_insuranceplan_general_cost_value",
   "status": "draft",
   "date": "2018-05-23",

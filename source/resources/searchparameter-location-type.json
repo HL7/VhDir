@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-type",
+  "id": "location-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-type",
   "name": "VhDir_sp_location_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-type",
   "status": "draft",

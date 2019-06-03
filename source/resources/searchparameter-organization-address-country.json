@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organization-address-country",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-country",
+  "id": "organization-address-country",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-country",
   "name": "VhDir_sp_organization_address_country",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-country",
   "status": "draft",

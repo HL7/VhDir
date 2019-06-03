@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-insuranceplan-product-coverage-area",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-coverage-area",
+  "id": "insuranceplan-product-coverage-area",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-coverage-area",
   "name": "VhDir_sp_insuranceplan_product_coverage_area",
   "status": "draft",
   "date": "2018-05-23",

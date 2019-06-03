@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-new-patient",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient",
+  "id": "healthcareservice-new-patient",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient",
   "name": "VhDir_sp_healthcareservice_new_patient",
   "status": "draft",
   "date": "2018-05-23",

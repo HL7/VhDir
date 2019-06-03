@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-address",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-address",
+  "id": "location-address",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-address",
   "name": "VhDir_sp_location_address",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address",
   "status": "draft",

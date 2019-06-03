@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-careteam-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-location",
+  "id": "careteam-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-location",
   "name": "VhDir_sp_careteam_location",
   "status": "draft",
   "date": "2018-05-23",

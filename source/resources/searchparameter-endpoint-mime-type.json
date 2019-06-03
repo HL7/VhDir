@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-endpoint-mime-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-mime-type",
+  "id": "endpoint-mime-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type",
   "name": "VhDir_sp_endpoint_mime_type",
   "status": "draft",
   "date": "2018-05-23",

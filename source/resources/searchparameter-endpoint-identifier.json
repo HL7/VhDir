@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-endpoint-identifier",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier",
+  "id": "endpoint-identifier",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier",
   "name": "VhDir_sp_endpoint_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
   "status": "draft",

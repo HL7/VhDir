@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organizationaffiliation-role",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-role",
+  "id": "organizationaffiliation-role",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-role",
   "name": "VhDir_sp_organizationaffiliation_role",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-role",
   "status": "draft",

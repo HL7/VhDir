@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organizationaffiliation-service",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-service",
+  "id": "organizationaffiliation-service",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-service",
   "name": "VhDir_sp_organizationaffiliation_service",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-service",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-insuranceplan-name",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-name",
+  "id": "insuranceplan-name",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-name",
   "name": "VhDir_sp_insuranceplan_name",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-name",
   "status": "draft",

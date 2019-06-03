@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-insuranceplan-plan-network",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-network",
+  "id": "insuranceplan-plan-network",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network",
   "name": "VhDir_sp_insuranceplan_plan_network",
   "status": "draft",
   "date": "2018-05-23",

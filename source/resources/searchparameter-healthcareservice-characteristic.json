@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-characteristic",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic",
+  "id": "healthcareservice-characteristic",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic",
   "name": "VhDir_sp_healthcareservice_characteristic",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
   "status": "draft",

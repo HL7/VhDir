@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-careteam-endpoint",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-endpoint",
+  "id": "careteam-endpoint",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-endpoint",
   "name": "VhDir_sp_careteam_endpoint",
   "status": "draft",
   "date": "2018-05-23",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-verificationresult-attestation-who",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-who",
+  "id": "verificationresult-attestation-who",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who",
   "name": "VhDir_sp_verificationresult_attestation_who",
   "status": "draft",
   "date": "2018-05-23",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-identifier-assigner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-identifier-assigner",
+  "id": "healthcareservice-identifier-assigner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier-assigner",
   "name": "VhDir_sp_healthcareservice_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",

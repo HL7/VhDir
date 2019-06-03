@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-organization",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-organization",
+  "id": "healthcareservice-organization",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-organization",
   "name": "VhDir_sp_healthcareservice_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-organization",
   "status": "draft",

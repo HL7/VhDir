@@ -578,91 +578,91 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-validator-organization" />
+      <reference value="SearchParameter/verificationresult-validator-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-validation-status" />
+      <reference value="SearchParameter/verificationresult-validation-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-target-location" />
+      <reference value="SearchParameter/verificationresult-target-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-target" />
+      <reference value="SearchParameter/verificationresult-target" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-status-date" />
+      <reference value="SearchParameter/verificationresult-status-date" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-primarysource-type" />
+      <reference value="SearchParameter/verificationresult-primarysource-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-primarysource-who" />
+      <reference value="SearchParameter/verificationresult-primarysource-who" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-primarysource-date" />
+      <reference value="SearchParameter/verificationresult-primarysource-date" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-attestation-onbehalfof" />
+      <reference value="SearchParameter/verificationresult-attestation-onbehalfof" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-attestation-method" />
+      <reference value="SearchParameter/verificationresult-attestation-method" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-verificationresult-attestation-who" />
+      <reference value="SearchParameter/verificationresult-attestation-who" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-via-intermediary" />
+      <reference value="SearchParameter/practitionerrole-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-specialty" />
+      <reference value="SearchParameter/practitionerrole-specialty" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-service" />
+      <reference value="SearchParameter/practitionerrole-service" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-role" />
+      <reference value="SearchParameter/practitionerrole-role" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -680,79 +680,79 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-qualification-status" />
+      <reference value="SearchParameter/practitionerrole-qualification-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-qualification-issuer" />
+      <reference value="SearchParameter/practitionerrole-qualification-issuer" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-qualification-code" />
+      <reference value="SearchParameter/practitionerrole-qualification-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-practitioner" />
+      <reference value="SearchParameter/practitionerrole-practitioner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-organization" />
+      <reference value="SearchParameter/practitionerrole-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-new-patient" />
+      <reference value="SearchParameter/practitionerrole-new-patient" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-new-patient-network" />
+      <reference value="SearchParameter/practitionerrole-new-patient-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-network" />
+      <reference value="SearchParameter/practitionerrole-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-location" />
+      <reference value="SearchParameter/practitionerrole-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-identifier" />
+      <reference value="SearchParameter/practitionerrole-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-identifier-assigner" />
+      <reference value="SearchParameter/practitionerrole-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitionerrole-endpoint" />
+      <reference value="SearchParameter/practitionerrole-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-via-intermediary" />
+      <reference value="SearchParameter/practitioner-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -770,91 +770,91 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-qualification-status" />
+      <reference value="SearchParameter/practitioner-qualification-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-qualification-issuer" />
+      <reference value="SearchParameter/practitioner-qualification-issuer" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-qualification-code" />
+      <reference value="SearchParameter/practitioner-qualification-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-name" />
+      <reference value="SearchParameter/practitioner-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-identifier" />
+      <reference value="SearchParameter/practitioner-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-identifier-assigner" />
+      <reference value="SearchParameter/practitioner-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-given-name" />
+      <reference value="SearchParameter/practitioner-given-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-family-name" />
+      <reference value="SearchParameter/practitioner-family-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-endpoint" />
+      <reference value="SearchParameter/practitioner-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-practitioner-phonetic" />
+      <reference value="SearchParameter/practitioner-phonetic" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-via-intermediary" />
+      <reference value="SearchParameter/organizationaffiliation-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-specialty" />
+      <reference value="SearchParameter/organizationaffiliation-specialty" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-service" />
+      <reference value="SearchParameter/organizationaffiliation-service" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-role" />
+      <reference value="SearchParameter/organizationaffiliation-role" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-primary-organization" />
+      <reference value="SearchParameter/organizationaffiliation-primary-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -866,43 +866,43 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-network" />
+      <reference value="SearchParameter/organizationaffiliation-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-location" />
+      <reference value="SearchParameter/organizationaffiliation-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-identifier" />
+      <reference value="SearchParameter/organizationaffiliation-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-identifier-assigner" />
+      <reference value="SearchParameter/organizationaffiliation-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organizationaffiliation-endpoint" />
+      <reference value="SearchParameter/organizationaffiliation-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-via-intermediary" />
+      <reference value="SearchParameter/organization-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-type" />
+      <reference value="SearchParameter/organization-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -920,79 +920,79 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-qualification-status" />
+      <reference value="SearchParameter/organization-qualification-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-qualification-issuer" />
+      <reference value="SearchParameter/organization-qualification-issuer" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-qualification-code" />
+      <reference value="SearchParameter/organization-qualification-code" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-partof" />
+      <reference value="SearchParameter/organization-partof" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-name" />
+      <reference value="SearchParameter/organization-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-identifier" />
+      <reference value="SearchParameter/organization-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-identifier-assigner" />
+      <reference value="SearchParameter/organization-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-endpoint" />
+      <reference value="SearchParameter/organization-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-address" />
+      <reference value="SearchParameter/organization-address" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-address-state" />
+      <reference value="SearchParameter/organization-address-state" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-address-postalcode" />
+      <reference value="SearchParameter/organization-address-postalcode" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-address-country" />
+      <reference value="SearchParameter/organization-address-country" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-organization-address-city" />
+      <reference value="SearchParameter/organization-address-city" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1004,229 +1004,229 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-via-intermediary" />
+      <reference value="SearchParameter/location-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-type" />
+      <reference value="SearchParameter/location-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-contains" />
+      <reference value="SearchParameter/location-contains" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-partof" />
+      <reference value="SearchParameter/location-partof" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-organization" />
+      <reference value="SearchParameter/location-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-new-patient" />
+      <reference value="SearchParameter/location-new-patient" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-new-patient-network" />
+      <reference value="SearchParameter/location-new-patient-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-identifier" />
+      <reference value="SearchParameter/location-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-identifier-assigner" />
+      <reference value="SearchParameter/location-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-endpoint" />
+      <reference value="SearchParameter/location-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-address" />
+      <reference value="SearchParameter/location-address" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-accessibility" />
+      <reference value="SearchParameter/location-accessibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-location-status" />
+      <reference value="SearchParameter/location-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-value" />
+      <reference value="SearchParameter/insuranceplan-specific-cost-value" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type" />
+      <reference value="SearchParameter/insuranceplan-specific-cost-cost-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-category" />
+      <reference value="SearchParameter/insuranceplan-specific-cost-category" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type" />
+      <reference value="SearchParameter/insuranceplan-specific-cost-benefit-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-product-type" />
+      <reference value="SearchParameter/insuranceplan-product-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-product-network" />
+      <reference value="SearchParameter/insuranceplan-product-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-product-identifier" />
+      <reference value="SearchParameter/insuranceplan-product-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-product-coverage-area" />
+      <reference value="SearchParameter/insuranceplan-product-coverage-area" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-plan-type" />
+      <reference value="SearchParameter/insuranceplan-plan-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-plan-network" />
+      <reference value="SearchParameter/insuranceplan-plan-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-plan-identifier" />
+      <reference value="SearchParameter/insuranceplan-plan-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-plan-coverage-area" />
+      <reference value="SearchParameter/insuranceplan-plan-coverage-area" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-owned-by" />
+      <reference value="SearchParameter/insuranceplan-owned-by" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-name" />
+      <reference value="SearchParameter/insuranceplan-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-general-cost-value" />
+      <reference value="SearchParameter/insuranceplan-general-cost-value" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-general-cost-type" />
+      <reference value="SearchParameter/insuranceplan-general-cost-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-general-cost-groupsize" />
+      <reference value="SearchParameter/insuranceplan-general-cost-groupsize" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-endpoint" />
+      <reference value="SearchParameter/insuranceplan-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-coverage-type" />
+      <reference value="SearchParameter/insuranceplan-coverage-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-coverage-network" />
+      <reference value="SearchParameter/insuranceplan-coverage-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-coverage-limit-value" />
+      <reference value="SearchParameter/insuranceplan-coverage-limit-value" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-coverage-benefit-type" />
+      <reference value="SearchParameter/insuranceplan-coverage-benefit-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-administered-by" />
+      <reference value="SearchParameter/insuranceplan-administered-by" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-insuranceplan-status" />
+      <reference value="SearchParameter/insuranceplan-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-via-intermediary" />
+      <reference value="SearchParameter/healthcareservice-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1238,73 +1238,73 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-specialty" />
+      <reference value="SearchParameter/healthcareservice-specialty" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-organization" />
+      <reference value="SearchParameter/healthcareservice-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-new-patient" />
+      <reference value="SearchParameter/healthcareservice-new-patient" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-new-patient-network" />
+      <reference value="SearchParameter/healthcareservice-new-patient-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-name" />
+      <reference value="SearchParameter/healthcareservice-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-location" />
+      <reference value="SearchParameter/healthcareservice-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-identifier" />
+      <reference value="SearchParameter/healthcareservice-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-identifier-assigner" />
+      <reference value="SearchParameter/healthcareservice-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-endpoint" />
+      <reference value="SearchParameter/healthcareservice-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-eligibility" />
+      <reference value="SearchParameter/healthcareservice-eligibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-coverage-area" />
+      <reference value="SearchParameter/healthcareservice-coverage-area" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-healthcareservice-characteristic" />
+      <reference value="SearchParameter/healthcareservice-characteristic" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1316,85 +1316,85 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-via-intermediary" />
+      <reference value="SearchParameter/endpoint-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-usecase-type" />
+      <reference value="SearchParameter/endpoint-usecase-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-usecase-standard" />
+      <reference value="SearchParameter/endpoint-usecase-standard" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-payload-type" />
+      <reference value="SearchParameter/endpoint-payload-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-organization" />
+      <reference value="SearchParameter/endpoint-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-mime-type" />
+      <reference value="SearchParameter/endpoint-mime-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-identifier" />
+      <reference value="SearchParameter/endpoint-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-identifier-assigner" />
+      <reference value="SearchParameter/endpoint-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-connection-type" />
+      <reference value="SearchParameter/endpoint-connection-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-endpoint-status" />
+      <reference value="SearchParameter/endpoint-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-via-intermediary" />
+      <reference value="SearchParameter/careteam-via-intermediary" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-service" />
+      <reference value="SearchParameter/careteam-service" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-organization" />
+      <reference value="SearchParameter/careteam-organization" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-name" />
+      <reference value="SearchParameter/careteam-name" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1406,37 +1406,37 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-location" />
+      <reference value="SearchParameter/careteam-location" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-identifier" />
+      <reference value="SearchParameter/careteam-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-identifier-assigner" />
+      <reference value="SearchParameter/careteam-identifier-assigner" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-endpoint" />
+      <reference value="SearchParameter/careteam-endpoint" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-category" />
+      <reference value="SearchParameter/careteam-category" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/searchparameter-careteam-status" />
+      <reference value="SearchParameter/careteam-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2071,77 +2071,77 @@
       <!-- ============ SearchParameters =============== -->
       <!-- insert searchparameters -->
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-validator-organization.html"/>
+        <nameUrl value="SearchParameter-verificationresult-validator-organization.html"/>
         <title value="SearchParameter Verificationresult Validator Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-validation-status.html"/>
+        <nameUrl value="SearchParameter-verificationresult-validation-status.html"/>
         <title value="SearchParameter Verificationresult Validation Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-target.html"/>
+        <nameUrl value="SearchParameter-verificationresult-target.html"/>
         <title value="SearchParameter Verificationresult Target"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-target-location.html"/>
+        <nameUrl value="SearchParameter-verificationresult-target-location.html"/>
         <title value="SearchParameter Verificationresult Target Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-status-date.html"/>
+        <nameUrl value="SearchParameter-verificationresult-status-date.html"/>
         <title value="SearchParameter Verificationresult Status Date"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-type.html"/>
+        <nameUrl value="SearchParameter-verificationresult-primarysource-type.html"/>
         <title value="SearchParameter Verificationresult Primarysource Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-who.html"/>
+        <nameUrl value="SearchParameter-verificationresult-primarysource-who.html"/>
         <title value="SearchParameter Verificationresult Primarysource Who"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-primarysource-date.html"/>
+        <nameUrl value="SearchParameter-verificationresult-primarysource-date.html"/>
         <title value="SearchParameter Verificationresult Primarysource Date"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-onbehalfof.html"/>
+        <nameUrl value="SearchParameter-verificationresult-attestation-onbehalfof.html"/>
         <title value="SearchParameter Verificationresult Attestation On Behalf Of"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-method.html"/>
+        <nameUrl value="SearchParameter-verificationresult-attestation-method.html"/>
         <title value="SearchParameter Verificationresult Attestation Method"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-verificationresult-attestation-who.html"/>
+        <nameUrl value="SearchParameter-verificationresult-attestation-who.html"/>
         <title value="SearchParameter Verificationresult Attestation Who"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-via-intermediary.html"/>
         <title value="SearchParameter Practitionerrole Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-specialty.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-specialty.html"/>
         <title value="SearchParameter Practitionerrole Specialty"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-service.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-service.html"/>
         <title value="SearchParameter Practitionerrole Service"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-role.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-role.html"/>
         <title value="SearchParameter Practitionerrole Role"/>
         <generation value="generated"/>
       </page>
@@ -2156,67 +2156,67 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-qualification-status.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-qualification-status.html"/>
         <title value="SearchParameter Practitionerrole Qualification Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-qualification-issuer.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-qualification-issuer.html"/>
         <title value="SearchParameter Practitionerrole Qualification Issuer"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-qualification-code.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-qualification-code.html"/>
         <title value="SearchParameter Practitionerrole Qualification Code"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-practitioner.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-practitioner.html"/>
         <title value="SearchParameter Practitionerrole Practitioner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-organization.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-organization.html"/>
         <title value="SearchParameter Practitionerrole Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-new-patient.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-new-patient.html"/>
         <title value="SearchParameter Practitionerrole New Patient"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-new-patient-network.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-new-patient-network.html"/>
         <title value="SearchParameter Practitionerrole New Patient Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-network.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-network.html"/>
         <title value="SearchParameter Practitionerrole Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-location.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-location.html"/>
         <title value="SearchParameter Practitionerrole Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-identifier.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-identifier.html"/>
         <title value="SearchParameter Practitionerrole Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-identifier-assigner.html"/>
         <title value="SearchParameter Practitionerrole Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitionerrole-endpoint.html"/>
+        <nameUrl value="SearchParameter-practitionerrole-endpoint.html"/>
         <title value="SearchParameter Practitionerrole Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-practitioner-via-intermediary.html"/>
         <title value="SearchParameter Practitioner Via Intermediary"/>
         <generation value="generated"/>
       </page>
@@ -2231,77 +2231,77 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-qualification-status.html"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-status.html"/>
         <title value="SearchParameter Practitioner Qualification Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-qualification-issuer.html"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-issuer.html"/>
         <title value="SearchParameter Practitioner Qualification Issuer"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-qualification-code.html"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-code.html"/>
         <title value="SearchParameter Practitioner Qualification Code"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-phonetic.html"/>
+        <nameUrl value="SearchParameter-practitioner-phonetic.html"/>
         <title value="SearchParameter Practitioner Phonetic"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-name.html"/>
+        <nameUrl value="SearchParameter-practitioner-name.html"/>
         <title value="SearchParameter Practitioner Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-identifier.html"/>
+        <nameUrl value="SearchParameter-practitioner-identifier.html"/>
         <title value="SearchParameter Practitioner Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-practitioner-identifier-assigner.html"/>
         <title value="SearchParameter Practitioner Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-given-name.html"/>
+        <nameUrl value="SearchParameter-practitioner-given-name.html"/>
         <title value="SearchParameter Practitioner Given Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-family-name.html"/>
+        <nameUrl value="SearchParameter-practitioner-family-name.html"/>
         <title value="SearchParameter Practitioner Family Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-practitioner-endpoint.html"/>
+        <nameUrl value="SearchParameter-practitioner-endpoint.html"/>
         <title value="SearchParameter Practitioner Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-via-intermediary.html"/>
         <title value="SearchParameter Organizationaffiliation Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-specialty.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-specialty.html"/>
         <title value="SearchParameter Organizationaffiliation Specialty"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-service.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-service.html"/>
         <title value="SearchParameter Organizationaffiliation Service"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-role.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-role.html"/>
         <title value="SearchParameter Organizationaffiliation Role"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-primary-organization.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-primary-organization.html"/>
         <title value="SearchParameter Organizationaffiliation Primary Organization"/>
         <generation value="generated"/>
       </page>
@@ -2311,37 +2311,37 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-network.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-network.html"/>
         <title value="SearchParameter Organizationaffiliation Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-location.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-location.html"/>
         <title value="SearchParameter Organizationaffiliation Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-identifier.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-identifier.html"/>
         <title value="SearchParameter Organizationaffiliation Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-identifier-assigner.html"/>
         <title value="SearchParameter Organizationaffiliation Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organizationaffiliation-endpoint.html"/>
+        <nameUrl value="SearchParameter-organizationaffiliation-endpoint.html"/>
         <title value="SearchParameter Organizationaffiliation Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-organization-via-intermediary.html"/>
         <title value="SearchParameter Organization Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-type.html"/>
+        <nameUrl value="SearchParameter-organization-type.html"/>
         <title value="SearchParameter Organization Type"/>
         <generation value="generated"/>
       </page>
@@ -2356,67 +2356,67 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-qualification-status.html"/>
+        <nameUrl value="SearchParameter-organization-qualification-status.html"/>
         <title value="SearchParameter Organization Qualification Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-qualification-issuer.html"/>
+        <nameUrl value="SearchParameter-organization-qualification-issuer.html"/>
         <title value="SearchParameter Organization Qualification Issuer"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-qualification-code.html"/>
+        <nameUrl value="SearchParameter-organization-qualification-code.html"/>
         <title value="SearchParameter Organization Qualification Code"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-partof.html"/>
+        <nameUrl value="SearchParameter-organization-partof.html"/>
         <title value="SearchParameter Organization Partof"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-name.html"/>
+        <nameUrl value="SearchParameter-organization-name.html"/>
         <title value="SearchParameter Organization Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-identifier.html"/>
+        <nameUrl value="SearchParameter-organization-identifier.html"/>
         <title value="SearchParameter Organization Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-organization-identifier-assigner.html"/>
         <title value="SearchParameter Organization Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-endpoint.html"/>
+        <nameUrl value="SearchParameter-organization-endpoint.html"/>
         <title value="SearchParameter Organization Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-address.html"/>
+        <nameUrl value="SearchParameter-organization-address.html"/>
         <title value="SearchParameter Organization Address"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-address-state.html"/>
+        <nameUrl value="SearchParameter-organization-address-state.html"/>
         <title value="SearchParameter Organization Address State"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-address-postalcode.html"/>
+        <nameUrl value="SearchParameter-organization-address-postalcode.html"/>
         <title value="SearchParameter Organization Address Postalcode"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-address-country.html"/>
+        <nameUrl value="SearchParameter-organization-address-country.html"/>
         <title value="SearchParameter Organization Address Country"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-organization-address-city.html"/>
+        <nameUrl value="SearchParameter-organization-address-city.html"/>
         <title value="SearchParameter Organization Address City"/>
         <generation value="generated"/>
       </page>
@@ -2426,192 +2426,192 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-location-via-intermediary.html"/>
         <title value="SearchParameter Location Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-type.html"/>
+        <nameUrl value="SearchParameter-location-type.html"/>
         <title value="SearchParameter Location Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-status.html"/>
+        <nameUrl value="SearchParameter-location-status.html"/>
         <title value="SearchParameter Location Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-partof.html"/>
+        <nameUrl value="SearchParameter-location-partof.html"/>
         <title value="SearchParameter Location Partof"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-organization.html"/>
+        <nameUrl value="SearchParameter-location-organization.html"/>
         <title value="SearchParameter Location Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-new-patient.html"/>
+        <nameUrl value="SearchParameter-location-new-patient.html"/>
         <title value="SearchParameter Location New Patient"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-new-patient-network.html"/>
+        <nameUrl value="SearchParameter-location-new-patient-network.html"/>
         <title value="SearchParameter Location New Patient Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-identifier.html"/>
+        <nameUrl value="SearchParameter-location-identifier.html"/>
         <title value="SearchParameter Location Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-location-identifier-assigner.html"/>
         <title value="SearchParameter Location Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-endpoint.html"/>
+        <nameUrl value="SearchParameter-location-endpoint.html"/>
         <title value="SearchParameter Location Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-contains.html"/>
+        <nameUrl value="SearchParameter-location-contains.html"/>
         <title value="SearchParameter Location Contains"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-address.html"/>
+        <nameUrl value="SearchParameter-location-address.html"/>
         <title value="SearchParameter Location Address"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-location-accessibility.html"/>
+        <nameUrl value="SearchParameter-location-accessibility.html"/>
         <title value="SearchParameter Location Accessibility"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-status.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-status.html"/>
         <title value="SearchParameter Insuranceplan Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-specific-cost-value.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-specific-cost-value.html"/>
         <title value="SearchParameter Insuranceplan Specific Cost Value"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-specific-cost-cost-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-specific-cost-cost-type.html"/>
         <title value="SearchParameter Insuranceplan Specific Cost Cost Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-specific-cost-category.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-specific-cost-category.html"/>
         <title value="SearchParameter Insuranceplan Specific Cost Category"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-specific-cost-benefit-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-specific-cost-benefit-type.html"/>
         <title value="SearchParameter Insuranceplan Specific Cost Benefit Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-product-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-product-type.html"/>
         <title value="SearchParameter Insuranceplan Product Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-product-network.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-product-network.html"/>
         <title value="SearchParameter Insuranceplan Product Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-product-identifier.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-product-identifier.html"/>
         <title value="SearchParameter Insuranceplan Product Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-product-coverage-area.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-product-coverage-area.html"/>
         <title value="SearchParameter Insuranceplan Product Coverage Area"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-plan-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-plan-type.html"/>
         <title value="SearchParameter Insuranceplan Plan Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-plan-network.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-plan-network.html"/>
         <title value="SearchParameter Insuranceplan Plan Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-plan-identifier.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-plan-identifier.html"/>
         <title value="SearchParameter Insuranceplan Plan Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-plan-coverage-area.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-plan-coverage-area.html"/>
         <title value="SearchParameter Insuranceplan Plan Coverage Area"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-owned-by.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-owned-by.html"/>
         <title value="SearchParameter Insuranceplan Owned By"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-name.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-name.html"/>
         <title value="SearchParameter Insuranceplan Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-general-cost-value.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-general-cost-value.html"/>
         <title value="SearchParameter Insuranceplan General Cost Value"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-general-cost-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-general-cost-type.html"/>
         <title value="SearchParameter Insuranceplan General Cost Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-general-cost-groupsize.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-general-cost-groupsize.html"/>
         <title value="SearchParameter Insuranceplan General Cost Groupsize"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-endpoint.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-endpoint.html"/>
         <title value="SearchParameter Insuranceplan Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-coverage-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-coverage-type.html"/>
         <title value="SearchParameter Insuranceplan Coverage Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-coverage-network.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-coverage-network.html"/>
         <title value="SearchParameter Insuranceplan Coverage Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-coverage-limit-value.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-coverage-limit-value.html"/>
         <title value="SearchParameter Insuranceplan Coverage Limit Value"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-coverage-benefit-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-coverage-benefit-type.html"/>
         <title value="SearchParameter Insuranceplan Coverage Benefit Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-insuranceplan-administered-by.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-administered-by.html"/>
         <title value="SearchParameter Insuranceplan Administered By"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-via-intermediary.html"/>
         <title value="SearchParameter Healthcareservice Via Intermediary"/>
         <generation value="generated"/>
       </page>
@@ -2621,62 +2621,62 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-specialty.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-specialty.html"/>
         <title value="SearchParameter Healthcareservice Specialty"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-organization.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-organization.html"/>
         <title value="SearchParameter Healthcareservice Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-new-patient.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-new-patient.html"/>
         <title value="SearchParameter Healthcareservice New Patient"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-new-patient-network.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-new-patient-network.html"/>
         <title value="SearchParameter Healthcareservice New Patient Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-name.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-name.html"/>
         <title value="SearchParameter Healthcareservice Name"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-location.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-location.html"/>
         <title value="SearchParameter Healthcareservice Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-identifier.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-identifier.html"/>
         <title value="SearchParameter Healthcareservice Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-identifier-assigner.html"/>
         <title value="SearchParameter Healthcareservice Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-endpoint.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-endpoint.html"/>
         <title value="SearchParameter Healthcareservice Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-eligibility.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-eligibility.html"/>
         <title value="SearchParameter Healthcareservice Eligibility"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-coverage-area.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-coverage-area.html"/>
         <title value="SearchParameter Healthcareservice Coverage Area"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-healthcareservice-characteristic.html"/>
+        <nameUrl value="SearchParameter-healthcareservice-characteristic.html"/>
         <title value="SearchParameter Healthcareservice Characteristic"/>
         <generation value="generated"/>
       </page>
@@ -2686,77 +2686,77 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-endpoint-via-intermediary.html"/>
         <title value="SearchParameter Endpoint Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-usecase-type.html"/>
+        <nameUrl value="SearchParameter-endpoint-usecase-type.html"/>
         <title value="SearchParameter Endpoint Usecase Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-usecase-standard.html"/>
+        <nameUrl value="SearchParameter-endpoint-usecase-standard.html"/>
         <title value="SearchParameter Endpoint Usecase Standard"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-status.html"/>
+        <nameUrl value="SearchParameter-endpoint-status.html"/>
         <title value="SearchParameter Endpoint Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-payload-type.html"/>
+        <nameUrl value="SearchParameter-endpoint-payload-type.html"/>
         <title value="SearchParameter Endpoint Payload Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-organization.html"/>
+        <nameUrl value="SearchParameter-endpoint-organization.html"/>
         <title value="SearchParameter Endpoint Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-mime-type.html"/>
+        <nameUrl value="SearchParameter-endpoint-mime-type.html"/>
         <title value="SearchParameter Endpoint Mime Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-identifier.html"/>
+        <nameUrl value="SearchParameter-endpoint-identifier.html"/>
         <title value="SearchParameter Endpoint Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-endpoint-identifier-assigner.html"/>
         <title value="SearchParameter Endpoint Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-endpoint-connection-type.html"/>
+        <nameUrl value="SearchParameter-endpoint-connection-type.html"/>
         <title value="SearchParameter Endpoint Connection Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-via-intermediary.html"/>
+        <nameUrl value="SearchParameter-careteam-via-intermediary.html"/>
         <title value="SearchParameter Careteam Via Intermediary"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-status.html"/>
+        <nameUrl value="SearchParameter-careteam-status.html"/>
         <title value="SearchParameter Careteam Status"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-service.html"/>
+        <nameUrl value="SearchParameter-careteam-service.html"/>
         <title value="SearchParameter Careteam Service"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-organization.html"/>
+        <nameUrl value="SearchParameter-careteam-organization.html"/>
         <title value="SearchParameter Careteam Organization"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-name.html"/>
+        <nameUrl value="SearchParameter-careteam-name.html"/>
         <title value="SearchParameter Careteam Name"/>
         <generation value="generated"/>
       </page>
@@ -2766,27 +2766,27 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-location.html"/>
+        <nameUrl value="SearchParameter-careteam-location.html"/>
         <title value="SearchParameter Careteam Location"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-identifier.html"/>
+        <nameUrl value="SearchParameter-careteam-identifier.html"/>
         <title value="SearchParameter Careteam Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-identifier-assigner.html"/>
+        <nameUrl value="SearchParameter-careteam-identifier-assigner.html"/>
         <title value="SearchParameter Careteam Identifier Assigner"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-endpoint.html"/>
+        <nameUrl value="SearchParameter-careteam-endpoint.html"/>
         <title value="SearchParameter Careteam Endpoint"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-searchparameter-careteam-category.html"/>
+        <nameUrl value="SearchParameter-careteam-category.html"/>
         <title value="SearchParameter Careteam Category"/>
         <generation value="generated"/>
       </page>

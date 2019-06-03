@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-verificationresult-primarysource-date",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-date",
+  "id": "verificationresult-primarysource-date",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-date",
   "name": "VhDir_sp_verificationresult_primarysource_date",
   "status": "draft",
   "date": "2018-05-23",

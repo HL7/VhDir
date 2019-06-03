@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-identifier-assigner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-identifier-assigner",
+  "id": "location-identifier-assigner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier-assigner",
   "name": "VhDir_sp_location_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",

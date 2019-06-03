@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-practitionerrole-network",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-network",
+  "id": "practitionerrole-network",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-network",
   "name": "VhDir_sp_practitionerrole_network",
   "status": "draft",
   "date": "2018-05-23",

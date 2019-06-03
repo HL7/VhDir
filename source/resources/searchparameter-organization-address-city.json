@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organization-address-city",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-city",
+  "id": "organization-address-city",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city",
   "name": "VhDir_sp_organization_address_city",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-city",
   "status": "draft",

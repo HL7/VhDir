@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-healthcareservice-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-location",
+  "id": "healthcareservice-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-location",
   "name": "VhDir_sp_healthcareservice_location",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-location",
   "status": "draft",

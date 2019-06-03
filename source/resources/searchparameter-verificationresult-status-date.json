@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-verificationresult-status-date",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-status-date",
+  "id": "verificationresult-status-date",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-status-date",
   "name": "VhDir_sp_verificationresult_status_date",
   "status": "draft",
   "date": "2018-05-23",

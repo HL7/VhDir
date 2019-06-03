@@ -95,7 +95,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitioner-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -103,7 +103,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitioner-family-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-family-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-family-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -111,7 +111,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitioner-given-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-given-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-given-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -119,7 +119,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitioner-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -127,7 +127,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitioner-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -135,7 +135,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitioner-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -143,7 +143,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitioner-qualification-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -151,7 +151,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitioner-qualification-issuer"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-issuer"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -159,7 +159,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitioner-qualification-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -175,7 +175,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitioner-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -333,7 +333,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -341,7 +341,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitionerrole-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -349,7 +349,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -357,7 +357,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -365,7 +365,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -373,7 +373,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-new-patient-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -381,7 +381,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-new-patient"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-new-patient"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -389,7 +389,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -397,7 +397,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-practitioner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-practitioner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-practitioner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -405,7 +405,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-qualification-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -413,7 +413,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitionerrole-qualification-issuer"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-issuer"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -421,7 +421,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-qualification-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -445,7 +445,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="practitionerrole-role"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-role"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-role"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -453,7 +453,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-service"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-service"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-service"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -461,7 +461,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="practitionerrole-specialty"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-specialty"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-specialty"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -469,7 +469,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="practitionerrole-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -796,7 +796,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-address-country"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-country"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-country"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -804,7 +804,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-address-postalcode"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-postalcode"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-postalcode"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -812,7 +812,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-address-state"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-state"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-state"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -820,7 +820,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-address"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -828,7 +828,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -836,7 +836,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="organization-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -844,7 +844,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -852,7 +852,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -860,7 +860,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-partof"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-partof"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -868,7 +868,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-qualification-code"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-code"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-code"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -876,7 +876,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="organization-qualification-issuer"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-issuer"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-issuer"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -884,7 +884,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-qualification-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -908,7 +908,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organization-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -916,7 +916,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -932,7 +932,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organization-address-city"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-address-city"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -1070,7 +1070,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organizationaffiliation-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1078,7 +1078,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="organizationaffiliation-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1086,7 +1086,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organizationaffiliation-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1094,7 +1094,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organizationaffiliation-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1102,7 +1102,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organizationaffiliation-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1118,7 +1118,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organizationaffiliation-primary-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-primary-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-primary-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1126,7 +1126,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="organizationaffiliation-role"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-role"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-role"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1134,7 +1134,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organizationaffiliation-service"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-service"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-service"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1142,7 +1142,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="organizationaffiliation-specialty"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-specialty"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-specialty"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1150,7 +1150,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="organizationaffiliation-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1261,7 +1261,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="healthcareservice-characteristic"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-characteristic"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1269,7 +1269,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1277,7 +1277,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-eligibility"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-eligibility"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-eligibility"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1285,7 +1285,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1293,7 +1293,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="healthcareservice-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1301,7 +1301,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="healthcareservice-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1309,7 +1309,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="healthcareservice-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1317,7 +1317,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -1325,7 +1325,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-new-patient-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1333,7 +1333,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-new-patient"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-new-patient"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1341,7 +1341,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="healthcareservice-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1349,7 +1349,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="healthcareservice-specialty"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-specialty"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-specialty"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1365,7 +1365,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="healthcareservice-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1553,7 +1553,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="location-accessibility"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-accessibility"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-accessibility"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1561,7 +1561,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-address"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-address"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-address"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -1569,7 +1569,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="location-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1577,7 +1577,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="location-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1585,7 +1585,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1593,7 +1593,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="location-new-patient-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-new-patient-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1601,7 +1601,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="location-new-patient"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-new-patient"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1609,7 +1609,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1617,7 +1617,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="location-partof"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-partof"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-partof"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1625,7 +1625,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="location-contains"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-contains"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains"/>
 				<type value="uri"/>
 			</searchParam>
 			<searchParam>
@@ -1633,7 +1633,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1641,7 +1641,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1649,7 +1649,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="location-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -1734,7 +1734,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="careteam-category"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-category"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-category"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1742,7 +1742,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="careteam-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1750,7 +1750,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="careteam-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1758,7 +1758,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="careteam-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1766,7 +1766,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="careteam-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-location"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1774,7 +1774,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="careteam-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -1782,7 +1782,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="careteam-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1790,7 +1790,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="careteam-service"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-service"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-service"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1798,7 +1798,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="careteam-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1806,7 +1806,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="careteam-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1914,7 +1914,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="endpoint-connection-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-connection-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-connection-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1922,7 +1922,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="endpoint-identifier-assigner"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier-assigner"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier-assigner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1930,7 +1930,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="endpoint-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1938,7 +1938,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="endpoint-mime-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-mime-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1946,7 +1946,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="endpoint-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-organization"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -1954,7 +1954,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="endpoint-payload-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-payload-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1962,7 +1962,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="endpoint-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1970,7 +1970,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="endpoint-usecase-standard"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-usecase-standard"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-standard"/>
 				<type value="uri"/>
 			</searchParam>
 			<searchParam>
@@ -1978,7 +1978,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="endpoint-usecase-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-usecase-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -1986,7 +1986,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="endpoint-via-intermediary"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-via-intermediary"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-via-intermediary"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -2056,7 +2056,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-attestation-who"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-who"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2064,7 +2064,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="verificationresult-attestation-method"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-method"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-method"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2072,7 +2072,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-attestation-onbehalfof"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-onbehalfof"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-onbehalfof"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2080,7 +2080,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="verificationresult-primarysource-date"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-date"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-date"/>
 				<type value="date"/>
 			</searchParam>
 			<searchParam>
@@ -2088,7 +2088,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-primarysource-who"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-who"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2096,7 +2096,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="verificationresult-primarysource-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-primarysource-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2104,7 +2104,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="verificationresult-status-date"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-status-date"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-status-date"/>
 				<type value="date"/>
 			</searchParam>
 			<searchParam>
@@ -2112,7 +2112,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-target-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-target-location"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target-location"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -2120,7 +2120,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-validation-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-validation-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validation-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2128,7 +2128,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="verificationresult-validator-organization"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-validator-organization"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validator-organization"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -2217,7 +2217,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-administered-by"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-administered-by"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-administered-by"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2225,7 +2225,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-coverage-benefit-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-benefit-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2233,7 +2233,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-coverage-limit-value"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-limit-value"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-limit-value"/>
 				<type value="quantity"/>
 			</searchParam>
 			<searchParam>
@@ -2241,7 +2241,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-coverage-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2249,7 +2249,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-coverage-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-coverage-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2257,7 +2257,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-endpoint"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-endpoint"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2265,7 +2265,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-general-cost-groupsize"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-groupsize"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-groupsize"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2273,7 +2273,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-general-cost-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2281,7 +2281,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-general-cost-value"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-value"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-value"/>
 				<type value="quantity"/>
 			</searchParam>
 			<searchParam>
@@ -2289,7 +2289,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-name"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-name"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-name"/>
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
@@ -2297,7 +2297,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-owned-by"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-owned-by"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-owned-by"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2305,7 +2305,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-plan-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2313,7 +2313,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-plan-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2321,7 +2321,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-plan-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2329,7 +2329,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-plan-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-plan-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2337,7 +2337,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-product-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2345,7 +2345,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-product-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2353,7 +2353,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-product-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -2361,7 +2361,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-product-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2369,7 +2369,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-specific-cost-benefit-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-benefit-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-benefit-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2377,7 +2377,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="insuranceplan-specific-cost-category"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-category"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-category"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2385,7 +2385,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-specific-cost-cost-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-cost-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-cost-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -2393,7 +2393,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="insuranceplan-specific-cost-value"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-value"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-value"/>
 				<type value="quantity"/>
 			</searchParam>
 			<searchParam>
@@ -2401,7 +2401,7 @@
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="insuranceplan-status"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-status"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status"/>
 				<type value="token"/>
 			</searchParam>
 		</resource>

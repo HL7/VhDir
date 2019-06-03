@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-practitioner-qualification-status",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-qualification-status",
+  "id": "practitioner-qualification-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-status",
   "name": "VhDir_sp_practitioner_qualification_status",
   "status": "draft",
   "date": "2018-05-23",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organizationaffiliation-via-intermediary",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-via-intermediary",
+  "id": "organizationaffiliation-via-intermediary",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-via-intermediary",
   "name": "VhDir_sp_organizationaffiliation_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",

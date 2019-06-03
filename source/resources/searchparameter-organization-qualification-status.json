@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-organization-qualification-status",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-qualification-status",
+  "id": "organization-qualification-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-status",
   "name": "VhDir_sp_organization_qualification_status",
   "status": "draft",
   "date": "2018-05-23",

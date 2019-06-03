@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-endpoint-usecase-type",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-usecase-type",
+  "id": "endpoint-usecase-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type",
   "name": "VhDir_sp_endpoint_usecase_type",
   "status": "draft",
   "date": "2018-05-23",

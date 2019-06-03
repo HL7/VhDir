@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-location-contains",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-contains",
+  "id": "location-contains",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains",
   "name": "VhDir_sp_location_contains",
   "status": "draft",
   "date": "2018-08-19",

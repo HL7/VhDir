@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-verificationresult-target-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-target-location",
+  "id": "verificationresult-target-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target-location",
   "name": "VhDir_sp_verificationresult_target_location",
   "status": "draft",
   "date": "2018-05-23",

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "searchparameter-practitionerrole-practitioner",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-practitioner",
+  "id": "practitionerrole-practitioner",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-practitioner",
   "name": "VhDir_sp_practitionerrole_practitioner",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner",
   "status": "draft",
