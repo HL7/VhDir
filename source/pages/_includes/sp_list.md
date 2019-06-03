@@ -118,12 +118,12 @@
 
 - active `http://hl7.org/fhir/SearchParameter/Practitioner-active`
 - [endpoint](SearchParameter-practitioner-endpoint.html)
-- [family-name](SearchParameter-practitioner-family-name.html)
-- [given-name](SearchParameter-practitioner-given-name.html)
+- [name](SearchParameter-practitioner-name.html)
+- [family](SearchParameter-practitioner-family-name.html)
+- [given](SearchParameter-practitioner-given-name.html)
+- [phonetic](SearchParameter-practitioner-phonetic.html)
 - [identifier](SearchParameter-practitioner-identifier.html)
 - [identifier-assigner](SearchParameter-practitioner-identifier-assigner.html)
-- [name](SearchParameter-practitioner-name.html)
-- [phonetic](SearchParameter-practitioner-phonetic.html)
 - [via-intermediary](SearchParameter-practitioner-via-intermediary.html)
 - [qualification-code](SearchParameter-practitioner-qualification-code.html)
 - [qualification-issuer](SearchParameter-practitioner-qualification-issuer.html)

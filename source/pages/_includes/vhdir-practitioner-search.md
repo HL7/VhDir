@@ -10,14 +10,14 @@
    - with a target type:  `Endpoint`
    - including these search paramaters which may be chained:  `endpoint.identifier`
 <hr />
-1. `GET [Base]/Practitioner?family-name=[string]`
+1. `GET [Base]/Practitioner?family=[string]`
 
-      *Support:* SHOULD support search by the [`family-name`](SearchParameter-practitioner-family-name.html) parameter  
+      *Support:* SHOULD support search by the [`family`](SearchParameter-practitioner-family-name.html) parameter  
    - including the modifiers:  `exact`
 <hr />
-1. `GET [Base]/Practitioner?given-name=[string]`
+1. `GET [Base]/Practitioner?given=[string]`
 
-      *Support:* SHOULD support search by the [`given-name`](SearchParameter-practitioner-given-name.html) parameter  
+      *Support:* SHOULD support search by the [`given`](SearchParameter-practitioner-given-name.html) parameter  
    - including the modifiers:  `exact`
 <hr />
 1. `GET [base]/Practitioner?identifier=[code]`
