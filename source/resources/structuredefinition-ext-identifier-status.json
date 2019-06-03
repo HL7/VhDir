@@ -26,7 +26,7 @@
             },
             {
                 "binding": {
-                    "strength": "example",
+                    "strength": "required",
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus"
                 },
                 "definition": "Describes the status of an identifier",
@@ -35,7 +35,7 @@
                 "min": 1,
                 "mustSupport": true,
                 "path": "Extension.valueCode",
-                "short": "active|inactive|issued in error|revoked|pending",
+                "short": "active|inactive|issued-in-error|revoked|pending",
                 "sliceName": "valueCode",
                 "type": [
                     {

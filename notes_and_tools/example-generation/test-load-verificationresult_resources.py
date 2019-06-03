@@ -69,8 +69,8 @@ verresults = '20181206-large/verificationresult/Bundle1'
 
 q_status_codes= [
     ('active', 'active'),
-    ('inctive', 'inactive'),
-    ('issuedinerror', 'issued in error'),
+    ('inactive', 'inactive'),
+    ('issued-in-error', 'issued in error'),
     ('revoked', 'revoked'),
     ('pending', 'pending'),
     ('unknown', 'unknown')
