@@ -74,3 +74,8 @@
       *Support:* MAY support search by the [`via-intermediary`](SearchParameter-practitioner-via-intermediary.html) parameter
    - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
 <hr />
+1. `GET [base]/Practitioner?qualification-period=[string]`
+
+      *Support:* SHALL support search by the [`qualification-period`](SearchParameter-practitioner-qualification-period.html) parameter  
+   - including the modifiers:  `exact`, `contains`   
+<hr />

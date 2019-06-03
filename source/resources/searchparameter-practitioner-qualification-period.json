@@ -1,8 +1,8 @@
 {
   "resourceType": "SearchParameter",
-  "id": "verificationresult-target-location",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target-location",
-  "name": "VhDir_sp_verificationresult_target_location",
+  "id": "practitioner-qualification-period",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period",
+  "name": "VhDir_sp_practitioner_qualification_period",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -16,13 +16,13 @@
       ]
     }
   ],
-  "description": "Select validation information for the specified attribute of a resource",
-  "code": "target-location",
+  "description": "Select Practitioners that have a qualification relevant to the date provided",
+  "code": "qualification-period",
   "base": [
-    "VerificationResult"
+    "Practitioner"
   ],
-  "type": "string",
-  "expression": "VerificationResult.targetLocation",
+  "type": "date",
+  "expression": "Practitioner.qualification.period",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

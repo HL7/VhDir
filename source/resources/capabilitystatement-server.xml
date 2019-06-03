@@ -162,7 +162,15 @@
 				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-status"/>
 				<type value="token"/>
 			</searchParam>
-			<searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="practitioner-qualification-period"/>
+        <definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2106,14 +2114,6 @@
 				<name value="verificationresult-status-date"/>
 				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-status-date"/>
 				<type value="date"/>
-			</searchParam>
-			<searchParam>
-				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-					<valueCode value="SHALL"/>
-				</extension>
-				<name value="verificationresult-target-location"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target-location"/>
-				<type value="string"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

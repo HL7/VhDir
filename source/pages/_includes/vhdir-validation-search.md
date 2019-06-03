@@ -47,11 +47,6 @@
    - with a target type:  `Any`
    - including the modifier: `type`
 <hr />
-1. `GET [base]/VerificationResult?target-location=[string]`
-
-      *Support:* SHALL support search by the [`target-location`](SearchParameter-verificationresult-target-location.html) parameter  
-   - including the modifiers:  `exact`, `contains`   
-<hr />
 1. `GET [base]/VerificationResult?status=[code]`
 
       *Support:* SHALL support search by the [`validation-status`](SearchParameter-verificationresult-validation-status.html) parameter     

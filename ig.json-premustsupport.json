@@ -460,9 +460,9 @@
       "source": "careteam-example-cardiology.xml",
       "base": "CareTeam-cardiologycareteam1.html"
     },
-    "SearchParameter/verificationresult-target-location": {
-      "source": "searchparameter-verificationresult-target-location.json",
-      "base": "SearchParameter-verificationresult-target-location.html"
+    "SearchParameter/practitioner-qualification-period": {
+      "source": "searchparameter-practitioner-qualification-period.json",
+      "base": "SearchParameter-practitioner-qualification-period.html"
     },
     "CodeSystem/accessibility": {
       "source": "codesystem-accessibility.xml",

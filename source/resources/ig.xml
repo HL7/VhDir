@@ -590,7 +590,7 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/verificationresult-target-location" />
+      <reference value="SearchParameter/practitioner-qualification-period" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2086,8 +2086,8 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-verificationresult-target-location.html"/>
-        <title value="SearchParameter Verificationresult Target Location"/>
+        <nameUrl value="SearchParameter-practitioner-qualification-period.html"/>
+        <title value="SearchParameter Practitioner Qualification Period"/>
         <generation value="generated"/>
       </page>
       <page>
