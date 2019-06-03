@@ -56,6 +56,7 @@
 - [new-patient-network](SearchParameter-location-new-patient-network.html)
 - [organization](SearchParameter-location-organization.html)
 - [partof](SearchParameter-location-partof.html)
+- [near](http://hl7.org/fhir/location.html#positional) `http://hl7.org/fhir/SearchParameter/Location-near`
 - [contains](SearchParameter-location-contains.html)
 - [status](SearchParameter-location-status.html)
 - [type](SearchParameter-location-type.html)

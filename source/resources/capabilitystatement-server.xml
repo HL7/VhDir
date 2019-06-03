@@ -1638,6 +1638,14 @@
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="location-near"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Location-near"/>
+				<type value="uri"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="location-status"/>

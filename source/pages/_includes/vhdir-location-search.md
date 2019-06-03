@@ -79,3 +79,8 @@ provided co-ordinates.
 
 *Support:* MAY support search by the [`via-intermediary`](SearchParameter-location-via-intermediary.html) parameter
    - with a target type:  `PractitionerRole`, `Organization`, `OrganizationAffiliation`, `Location`    
+
+<hr />
+`GET [base]/Location?near=-83.694810|42.256500|11.20|km`
+
+*Support:* MAY support search by the [`near`](http://hl7.org/fhir/location.html#positional) parameter
