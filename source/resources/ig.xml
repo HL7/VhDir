@@ -19,7 +19,103 @@
 <definition>
   <resource>
     <reference>
+      <reference value="CodeSystem/codesystem-accessibility" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-validation" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-usecase" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-primarysource" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-payercharacteristics" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-organizationdemographics" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-network-type" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-languageproficiency" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-ehrcharacteristics" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-digitalcertificate" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-credentialstatus" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-insuranceplan" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-healthcareservice-characteristic" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="CodeSystem/codesystem-healthcareservice-eligibility" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="ValueSet/identifierstatus" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
       <reference value="StructureDefinition/identifier-status" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="StructureDefinition/communication-proficiency" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -337,12 +433,6 @@
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-identifierstatus" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
       <reference value="ValueSet/valueset-identifier-type" />
     </reference>
     <exampleBoolean value="false" />
@@ -426,12 +516,6 @@
     <exampleBoolean value="false" />
   </resource>
 
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-accessibility" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
   <resource>
     <reference>
       <reference value="ValueSet/valueset-accessibility" />
@@ -1460,91 +1544,6 @@
   </resource>
   <resource>
     <reference>
-      <reference value="StructureDefinition/communication-proficiency" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-validation" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-usecase" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-primarysource" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-payercharacteristics" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-organizationdemographics" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-network-type" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-languageproficiency" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-ehrcharacteristics" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-digitalcertificate" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-credentialstatus" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-insuranceplan" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-healthcareservice-characteristic" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
-      <reference value="CodeSystem/codesystem-healthcareservice-eligibility" />
-    </reference>
-    <exampleBoolean value="false" />
-  </resource>
-  <resource>
-    <reference>
       <reference value="StructureDefinition/careteam-alias" />
     </reference>
     <exampleBoolean value="false" />
@@ -1907,8 +1906,8 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-identifierstatus.html"/>
-        <title value="ValueSet Identifierstatus"/>
+        <nameUrl value="ValueSet-identifierstatus.html"/>
+        <title value="ValueSet Identifier status"/>
         <generation value="generated"/>
       </page>
       <page>

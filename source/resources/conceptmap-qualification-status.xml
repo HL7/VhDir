@@ -15,10 +15,10 @@
 	<date value="2018-04-20"/>
 	--><description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/><!-->
 	<requirements value=""/>
-	--><sourceUri value="http://hl7.org/fhir/uv/vhdir/Valueset-valueset-qualificationstatus"/>
-	<targetUri value="http://hl7.org/fhir/ValueSet/resource-status"/>
+	--><sourceCanonical value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
+	<targetCanonical value="http://hl7.org/fhir/ValueSet/resource-status"/>
 	<group>
-		<source value="hhttp://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus"/>
+		<source value="http://hl7.org/fhir/uv/vhdir/CodeSystem/codesystem-credentialstatus"/>
 		<target value="http://hl7.org/fhir/ValueSet/resource-status"/>
 		<element>
 			<code value="active"/>

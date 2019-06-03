@@ -27,7 +27,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-identifierstatus"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus"
                 },
                 "definition": "Describes the status of an identifier",
                 "id": "Extension.valueCode:valueCode",

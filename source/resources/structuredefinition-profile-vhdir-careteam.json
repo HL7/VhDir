@@ -12,11 +12,6 @@
                 "path": "CareTeam"
             },
             {
-                "id": "CareTeam.context",
-                "max": "0",
-                "path": "CareTeam.context"
-            },
-            {
                 "id": "CareTeam.extension",
                 "mustSupport": false,
                 "path": "CareTeam.extension",
@@ -213,7 +208,7 @@
             },
             {
                 "id": "CareTeam.encounter",
-                "mustSupport": true,
+                "max": "0",
                 "path": "CareTeam.encounter"
             },
             {

@@ -232,9 +232,13 @@
       "source": "searchparameter-insuranceplan-product-identifier.json",
       "base": "SearchParameter-searchparameter-insuranceplan-product-identifier.html"
     },
-    "ValueSet/valueset-identifierstatus": {
+    "CodeSystem/codesystem-credentialstatus": {
+      "source": "codesystem-credentialstatus.xml",
+      "base": "CodeSystem-codesystem-credentialstatus.html"
+    },
+    "ValueSet/identifierstatus": {
       "source": "valueset-identifierstatus.xml",
-      "base": "ValueSet-valueset-identifierstatus.html"
+      "base": "ValueSet-identifierstatus.html"
     },
     "ValueSet/valueset-primarysourcepushtype": {
       "source": "valueset-primarysourcepushtype.xml",
@@ -346,10 +350,6 @@
     "ValueSet/valueset-validationprocess": {
       "source": "valueset-validationprocess.xml",
       "base": "ValueSet-valueset-validationprocess.html"
-    },
-    "CodeSystem/codesystem-credentialstatus": {
-      "source": "codesystem-credentialstatus.xml",
-      "base": "CodeSystem-codesystem-credentialstatus.html"
     },
     "SearchParameter/searchparameter-endpoint-payload-type": {
       "source": "searchparameter-endpoint-payload-type.json",
@@ -1063,7 +1063,7 @@
     "ValueSet/valueset-plan-type": {
       "source": "valueset-plan-type.xml",
       "base": "ValueSet-valueset-plan-type.html"
-    }, 
+    },
     "ValueSet/valueset-healthcareservice-characteristic": {
       "source": "valueset-healthcareservice-characteristic.xml",
       "base": "ValueSet-valueset-healthcareservice-characteristic.html"
@@ -1081,7 +1081,7 @@
       "source": "organization-example-monumentHIE.xml",
       "base": "Organization-monumentHIE.html"
     },
-    
+
     "VerificationResult/example-license": {
       "source": "verificationresult-example-license.xml",
       "base": "VerificationResult-example-license.html"
@@ -1099,9 +1099,10 @@
   },
   "dependencyList": [
     {
+      "package": "hl7.fhir.us.core.r4",
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core",
-      "version": "1.0.1"
+      "version": "current"
     }
   ],
   "status": "draft",
