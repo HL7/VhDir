@@ -771,7 +771,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="InsurancePlan.insuranceplan-product-network">
+			<searchRevInclude value="InsurancePlan.insuranceplan-network">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -1471,7 +1471,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchRevInclude>
-			<searchRevInclude value="InsurancePlan.insuranceplan-product-coverage-area">
+			<searchRevInclude value="InsurancePlan.insuranceplan-coverage-area">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2172,7 +2172,7 @@
 			<versioning value="versioned"/>
 			<referencePolicy value="literal"/>
 			<referencePolicy value="local"/>
-			<searchInclude value="InsurancePlan.insuranceplan-product-coverage-area">
+			<searchInclude value="InsurancePlan.insuranceplan-coverage-area">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2207,7 +2207,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 			</searchInclude>
-			<searchInclude value="InsurancePlan.insuranceplan-product-network">
+			<searchInclude value="InsurancePlan.insuranceplan-network">
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -2336,32 +2336,32 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
-				<name value="insuranceplan-product-coverage-area"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-coverage-area"/>
+				<name value="insuranceplan-coverage-area"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-area"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="insuranceplan-product-identifier"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-identifier"/>
+				<name value="insuranceplan-identifier"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-identifier"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="insuranceplan-product-network"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-network"/>
+				<name value="insuranceplan-network"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-network"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHALL"/>
 				</extension>
-				<name value="insuranceplan-product-type"/>
-				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-type"/>
+				<name value="insuranceplan-type"/>
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-type"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>

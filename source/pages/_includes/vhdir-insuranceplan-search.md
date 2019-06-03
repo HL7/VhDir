@@ -83,25 +83,25 @@
       *Support:* SHALL support search by the [`plan-type`](SearchParameter-insuranceplan-plan-type.html) parameter  
    - including the modifiers:  `text`   
 <hr />
-1. `GET [base]/InsurancePlan?product-coverage-area=[id]`
+1. `GET [base]/InsurancePlan?coverage-area=[id]`
 
-      *Support:* SHOULD support search by the [`product-coverage-area`](SearchParameter-insuranceplan-product-coverage-area.html) parameter
+      *Support:* SHOULD support search by the [`coverage-area`](SearchParameter-insuranceplan-coverage-area.html) parameter
    - with a target type:  `Location`   
-   - including these search paramaters which may be chained:  `product-coverage-area.identifier`, `product-coverage-area.contains`
+   - including these search paramaters which may be chained:  `coverage-area.identifier`, `coverage-area.contains`
 <hr />
-1. `GET [base]/InsurancePlan?product-identifier=[code]
+1. `GET [base]/InsurancePlan?identifier=[code]
 
-      *Support:* SHALL support search by the [`product-identifier`](SearchParameter-insuranceplan-product-identifier.html) parameter
+      *Support:* SHALL support search by the [`identifier`](SearchParameter-insuranceplan-identifier.html) parameter
 <hr />
-1. `GET [base]/InsurancePlan?product-network=[id]`
+1. `GET [base]/InsurancePlan?network=[id]`
 
-      *Support:* SHALL support search by the [`product-network`](SearchParameter-insuranceplan-product-network.html) parameter
+      *Support:* SHALL support search by the [`network`](SearchParameter-insuranceplan-network.html) parameter
    - with a target type:  `Organization`
-   - including these search paramaters which may be chained:  `product-network.identifier`, `product-network.name`, `product-network.partof`
+   - including these search paramaters which may be chained:  `network.identifier`, `network.name`, `network.partof`
 <hr />
-1. `GET [base]/InsurancePlan?product-type=[code]`
+1. `GET [base]/InsurancePlan?type=[code]`
 
-      *Support:* SHALL support search by the [`product-type`](SearchParameter-insuranceplan-product-type.html) parameter
+      *Support:* SHALL support search by the [`type`](SearchParameter-insuranceplan-type.html) parameter
    - including the modifiers:  `text`
 <hr />
 1. `GET [base]/InsurancePlan?specific-cost-benefit-type=[code]`

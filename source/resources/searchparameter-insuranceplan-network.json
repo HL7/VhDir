@@ -1,8 +1,8 @@
 {
   "resourceType": "SearchParameter",
-  "id": "insuranceplan-product-network",
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-product-network",
-  "name": "VhDir_sp_insuranceplan_product_network",
+  "id": "insuranceplan-network",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-network",
+  "name": "VhDir_sp_insuranceplan_network",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
@@ -17,7 +17,7 @@
     }
   ],
   "description": "Select products associated with the specified health insurance provider network",
-  "code": "product-network",
+  "code": "network",
   "base": [
     "InsurancePlan"
   ],

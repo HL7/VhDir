@@ -1106,25 +1106,25 @@
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/insuranceplan-product-type" />
+      <reference value="SearchParameter/insuranceplan-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/insuranceplan-product-network" />
+      <reference value="SearchParameter/insuranceplan-network" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/insuranceplan-product-identifier" />
+      <reference value="SearchParameter/insuranceplan-identifier" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="SearchParameter/insuranceplan-product-coverage-area" />
+      <reference value="SearchParameter/insuranceplan-coverage-area" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2516,22 +2516,22 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-insuranceplan-product-type.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-type.html"/>
         <title value="SearchParameter Insuranceplan Product Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-insuranceplan-product-network.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-network.html"/>
         <title value="SearchParameter Insuranceplan Product Network"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-insuranceplan-product-identifier.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-identifier.html"/>
         <title value="SearchParameter Insuranceplan Product Identifier"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="SearchParameter-insuranceplan-product-coverage-area.html"/>
+        <nameUrl value="SearchParameter-insuranceplan-coverage-area.html"/>
         <title value="SearchParameter Insuranceplan Product Coverage Area"/>
         <generation value="generated"/>
       </page>

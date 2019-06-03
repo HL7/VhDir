@@ -126,9 +126,9 @@
       "source": "valueset-usecasetype.xml",
       "base": "ValueSet-usecasetype.html"
     },
-    "SearchParameter/insuranceplan-product-network": {
-      "source": "searchparameter-insuranceplan-product-network.json",
-      "base": "SearchParameter-insuranceplan-product-network.html"
+    "SearchParameter/insuranceplan-network": {
+      "source": "searchparameter-insuranceplan-network.json",
+      "base": "SearchParameter-insuranceplan-network.html"
     },
     "SearchParameter/organization-qualification-code": {
       "source": "searchparameter-organization-qualification-code.json",
@@ -228,9 +228,9 @@
       "source": "searchparameter-location-status.json",
       "base": "SearchParameter-location-status.html"
     },
-    "SearchParameter/insuranceplan-product-identifier": {
-      "source": "searchparameter-insuranceplan-product-identifier.json",
-      "base": "SearchParameter-insuranceplan-product-identifier.html"
+    "SearchParameter/insuranceplan-identifier": {
+      "source": "searchparameter-insuranceplan-identifier.json",
+      "base": "SearchParameter-insuranceplan-identifier.html"
     },
     "CodeSystem/credentialstatus": {
       "source": "codesystem-credentialstatus.xml",
@@ -505,9 +505,9 @@
       "source": "searchparameter-endpoint-identifier-assigner.json",
       "base": "SearchParameter-endpoint-identifier-assigner.html"
     },
-    "SearchParameter/insuranceplan-product-type": {
-      "source": "searchparameter-insuranceplan-product-type.json",
-      "base": "SearchParameter-insuranceplan-product-type.html"
+    "SearchParameter/insuranceplan-type": {
+      "source": "searchparameter-insuranceplan-type.json",
+      "base": "SearchParameter-insuranceplan-type.html"
     },
     "SearchParameter/location-address": {
       "source": "searchparameter-location-address.json",
@@ -638,9 +638,9 @@
       "source": "searchparameter-organizationaffiliation-specialty.json",
       "base": "SearchParameter-organizationaffiliation-specialty.html"
     },
-    "SearchParameter/insuranceplan-product-coverage-area": {
-      "source": "searchparameter-insuranceplan-product-coverage-area.json",
-      "base": "SearchParameter-insuranceplan-product-coverage-area.html"
+    "SearchParameter/insuranceplan-coverage-area": {
+      "source": "searchparameter-insuranceplan-coverage-area.json",
+      "base": "SearchParameter-insuranceplan-coverage-area.html"
     },
     "Bundle/womens-shelter": {
       "source": "womens-shelter.xml",
