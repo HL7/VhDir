@@ -7,45 +7,35 @@ sectionnumbering: true
 F: http://build.fhir.org/
 ---
 
-<?xml version="1.0" encoding="UTF-8"?>
 <h2 style="margin-left: 0.0px;text-align: left;" id="BulkDataandDirectories-Background">Background</h2>
-<p style="margin-left: 0.0px;text-align: left;">Bulk data is a recent addition to the FHIR related specifications and has many uses. Primarily its for out of band data extraction for distribution.</p>
-<p style="margin-left: 0.0px;text-align: left;">It is very useful in extraction for processing into Bulk data systems for analytics purposes, performance measure reporting, or sharing content, or govt extracts etc.</p>
-<p style="margin-left: 0.0px;text-align: left;">There are several basic parts to FHIR's bulk data extract</p>
-<ul style="text-decoration: none;text-align: left;margin-left: 0.0px;">
-<li style="list-style-type: disc;">The scope of data selection</li>
-<li style="list-style-type: disc;">The format of the bulk data extract (nd-json) *</li>
-<li style="list-style-type: disc;">The async operation request and status tracking (as these processes may take significant processing time) *</li>
-<li style="list-style-type: disc;">Retrieval of the completed export</li>
-<li style="list-style-type: disc;">Closing/cleanup of the completed export *</li>
-</ul>
-<p style="list-style-type: disc;">
+
+> This page is <b>informative only</b> information, and was not a part of the ballotted material.
+> It provides basic guidance on applying the core async processing, along with 
+> the system wide $export operation defined in the bulk data implementation guide.
+> Along with some suggestions with extensions that may be considered.
+
+Bulk data is a recent addition to the FHIR related specifications and has many uses. Primarily its for out of band data extraction for distribution.
+
+There are several basic parts to FHIR's bulk data extract
+
+* The scope of data selection
+* The format of the bulk data extract (nd-json) *
+* The async operation request and status tracking (as these processes may take significant processing time) *
+* Retrieval of the completed export
+* Closing/cleanup of the completed export *
+
 <em>(The items marked with * can be considered quite mature, and unlikely to change from this point)</em>
-</p>
-<p style="margin-left: 0.0px;text-align: left;">The draft specification for this functionality can be found at:</p>
-<p style="margin-left: 30.0px;text-align: left;">
-<a rel="nofollow" class="external-link" style="text-decoration: none;" href="https://github.com/smart-on-fhir/fhir-bulk-data-docs">https://github.com/smart-on-fhir/fhir-bulk-data-docs</a>
-</p>
-<p style="margin-left: 30.0px;text-align: left;">
-<a href="https://github.com/smart-on-fhir/fhir-bulk-data-docs/blob/master/export.md" rel="nofollow" class="external-link" style="text-decoration: none;">https://github.com/smart-on-fhir/fhir-bulk-data-docs/blob/master/export.md</a>
-</p>
-<p style="text-align: left;">As this has matured through connectathon experience and essentially agreed upon, the formal HL7 artifacts are being produced, and can be found here:</p>
-<p style="margin-left: 30.0px;text-align: left;">
-<span style="color: rgb(0,0,0);">
-<a href="http://build.fhir.org/ig/HL7/bulk-data-export" class="external-link" rel="nofollow">
-<u>http://build.fhir.org/ig/HL7/bulk-data-export</u>
-</a>
-</span>
-</p>
-<p style="margin-left: 0.0px;text-align: left;">And the community discussions and questions around this draft specification are here:</p>
+
+The bulk data had been balloted and was still being reconciled and at the time of publication of this guide, the current development version can be found here:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://build.fhir.org/ig/HL7/bulk-data-export](http://build.fhir.org/ig/HL7/bulk-data-export)
+
+The community discussions and questions around this draft specification are here:
+
 <p style="margin-left: 30.0px;text-align: left;">
 <a class="external-link" rel="nofollow" href="https://chat.fhir.org/#narrow/stream/179250-bulk-data" style="text-decoration: none;">https://chat.fhir.org/#narrow/stream/179250-bulk-data</a>
 </p>
-<p style="margin-left: 0.0px;text-align: left;">This draft specification has been quite well exercised over the last 18 months since the <a href="http://wiki.hl7.org/index.php?title=201801_Bulk_Data" class="external-link" rel="nofollow">January 2018 FHIR Connectathon</a>, and has been implemented by Epic, Cerner, CDC (USA), SMART Health IT test program (Harvard Children's Hospital), Care Evolution, Health Intersections, HSPC/Intermountain Healthcare and likely others.</p>
-<p style="margin-left: 0.0px;text-align: left;">Josh Mandel and Dan Gottlieb created a presentation that walks through all this too:</p>
-<p style="margin-left: 30.0px;text-align: left;">
-<a rel="nofollow" style="text-decoration: none;" class="external-link" href="https://docs.google.com/presentation/d/14ZHmam9hwz6-SsCG1YqUIQnJ56bvSqEatebltgEVR6c/present?ueb=true&amp;slide=id.g45ba049ea1_0_140">https://docs.google.com/presentation/d/14ZHmam9hwz6-SsCG1YqUIQnJ56bvSqEatebltgEVR6c/present?ueb=true&amp;slide=id.g45ba049ea1_0_140</a>
-</p>
+
 <h2 style="margin-left: 0.0px;text-align: left;" id="BulkDataandDirectories-HealthcareDirectoryBulkDataSpecifics">Healthcare Directory Bulk Data Specifics</h2>
 <h3 id="BulkDataandDirectories-Thescopeofthedataselection">The scope of the data selection</h3>
 <p style="margin-left: 0.0px;text-align: left;">For the directory bulk data extraction, to request an entire copy of all content in the directory, the scope selection can be defined at the top level, and just specifying that we would like to retrieve all content for the specified resource types from the base of the FHIR server.</p>
