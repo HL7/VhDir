@@ -27,7 +27,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-aliastype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype"
                 },
                 "definition": "Type of alias (legal alternative | historical)",
                 "id": "Extension.valueCoding:valueCoding",

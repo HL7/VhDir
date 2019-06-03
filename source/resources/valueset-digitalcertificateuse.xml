@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalcertificateuse"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificateuse"/>
+	<id value="digitalcertificateuse"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse"/>
 	<name value="VhDirDigitalCertificateUse"/>
 	<title value="VhDir Digital Certificate Use Value Set"/>
 	<status value="active"/>

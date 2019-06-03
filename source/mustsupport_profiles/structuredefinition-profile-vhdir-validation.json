@@ -59,7 +59,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationprocess"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess"
                 },
                 "definition": "The process(es) by which the target is validated",
                 "id": "VerificationResult.validationProcess",

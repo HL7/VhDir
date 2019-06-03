@@ -46,7 +46,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-accessibility"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility"/>
 			</binding>
 		</element>
 	</differential>

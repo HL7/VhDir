@@ -15,7 +15,7 @@
 	</contact>
 	<description value="This code system contains codes for documenting network."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-network-type"/>
+	<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/network-type"/>
 	<content value="complete"/>
 	<concept>
 		<code value="ppo"/>

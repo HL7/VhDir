@@ -43,7 +43,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-languageproficiency"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency"/>
 			</binding>
 		</element>
 	</differential>

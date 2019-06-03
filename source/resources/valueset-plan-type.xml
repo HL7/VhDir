@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-plan-type"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-plan-type"/>
+	<id value="plan-type"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/plan-type"/>
 	<name value="VhDirPlanType"/>
 	<title value="VhDir Plan Type"/>
 	<status value="active"/>

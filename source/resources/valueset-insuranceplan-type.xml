@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-insuranceplan-type"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplan-type"/>
+	<id value="insuranceplan-type"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplan-type"/>
 	<name value="VhDirInsurancePlanType"/>
 	<title value="VhDir Insurance Plan Type"/>
 	<status value="active"/>

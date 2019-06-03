@@ -15,7 +15,7 @@
 	<date value="2018-04-20"/>
 	--><description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/><!-->
 	<requirements value=""/>
-	--><sourceCanonical value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
+	--><sourceCanonical value="http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"/>
 	<targetCanonical value="http://hl7.org/fhir/ValueSet/resource-status"/>
 	<group>
 		<source value="http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus"/>

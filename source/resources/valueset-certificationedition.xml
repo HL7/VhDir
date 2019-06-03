@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-certificationedition"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-certificationedition"/>
+	<id value="certificationedition"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition"/>
 	<name value="VhDirCertificationEdition"/>
 	<title value="VhDir Certification Edition Value Set"/>
 	<status value="active"/>

@@ -186,7 +186,7 @@
 			<path value="InsurancePlan.coverage.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-coverage-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/coverage-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.coverage.network">
@@ -203,7 +203,7 @@
 			<path value="InsurancePlan.coverage.benefit.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-benefit-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.coverage.benefit.limit">
@@ -213,7 +213,7 @@
 			<path value="InsurancePlan.coverage.benefit.limit.code"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-limit-unit"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/limit-unit"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan">
@@ -254,7 +254,7 @@
 			<path value="InsurancePlan.plan.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-plan-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/plan-type"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.coverageArea">
@@ -279,7 +279,7 @@
 			<path value="InsurancePlan.plan.generalCost.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancosttype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancosttype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost">
@@ -289,7 +289,7 @@
 			<path value="InsurancePlan.plan.specificCost.category"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostcategory"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancostcategory"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit">
@@ -299,7 +299,7 @@
 			<path value="InsurancePlan.plan.specificCost.benefit.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefittype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefittype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit.cost">
@@ -309,7 +309,7 @@
 			<path value="InsurancePlan.plan.specificCost.benefit.cost.type"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefitcosttype"/>
 			</binding>
 		</element>
 		<element id="InsurancePlan.plan.specificCost.benefit.cost.qualifiers">

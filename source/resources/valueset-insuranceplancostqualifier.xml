@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-insuranceplancostqualifier"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostqualifier"/>
+	<id value="insuranceplancostqualifier"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancostqualifier"/>
 	<name value="VhDirInsPlanQualifier"/>
 	<title value="VhDir Insurance Plan Cost Qualifier"/>
 	<status value="active"/>

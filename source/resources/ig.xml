@@ -349,224 +349,224 @@
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-validationneed" />
+      <reference value="ValueSet/validationneed" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-usecasetype" />
+      <reference value="ValueSet/usecasetype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-qualificationstatus" />
+      <reference value="ValueSet/qualificationstatus" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcevalidationstatus" />
+      <reference value="ValueSet/primarysourcevalidationstatus" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcevalidationprocess" />
+      <reference value="ValueSet/primarysourcevalidationprocess" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcepushtype" />
+      <reference value="ValueSet/primarysourcepushtype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcepush" />
+      <reference value="ValueSet/primarysourcepush" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcefailureaction" />
+      <reference value="ValueSet/primarysourcefailureaction" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-plan-type" />
+      <reference value="ValueSet/plan-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-patientaccess" />
+      <reference value="ValueSet/patientaccess" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-network-type" />
+      <reference value="ValueSet/network-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-limit-unit" />
+      <reference value="ValueSet/limit-unit" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-languageproficiency" />
+      <reference value="ValueSet/languageproficiency" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplan-type" />
+      <reference value="ValueSet/insuranceplan-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-identifier-type" />
+      <reference value="ValueSet/identifier-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-failureaction" />
+      <reference value="ValueSet/failureaction" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-externalvalidationtype" />
+      <reference value="ValueSet/externalvalidationtype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-digitalcertificateuse" />
+      <reference value="ValueSet/digitalcertificateuse" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-digitalcertificatetype" />
+      <reference value="ValueSet/digitalcertificatetype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-digitalcertificatetrustframework" />
+      <reference value="ValueSet/digitalcertificatetrustframework" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-digitalcertificatestandard" />
+      <reference value="ValueSet/digitalcertificatestandard" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-coverage-type" />
+      <reference value="ValueSet/coverage-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-certificationedition" />
+      <reference value="ValueSet/certificationedition" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-benefit-type" />
+      <reference value="ValueSet/benefit-type" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-attestationmethod" />
+      <reference value="ValueSet/attestationmethod" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-aliastype" />
+      <reference value="ValueSet/aliastype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-healthcareservice-characteristic" />
+      <reference value="ValueSet/healthcareservice-characteristic" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-healthcareservice-eligibility" />
+      <reference value="ValueSet/healthcareservice-eligibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
 
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-accessibility" />
+      <reference value="ValueSet/accessibility" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-validationprocess" />
+      <reference value="ValueSet/validationprocess" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-primarysourcetype" />
+      <reference value="ValueSet/primarysourcetype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplancosttype" />
+      <reference value="ValueSet/insuranceplancosttype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplancostqualifier"/>
+      <reference value="ValueSet/insuranceplancostqualifier"/>
     </reference>
     <exampleBoolean value="false"/>
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplangroupsize" />
+      <reference value="ValueSet/insuranceplangroupsize" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplancostcategory" />
+      <reference value="ValueSet/insuranceplancostcategory" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplanbenefittype" />
+      <reference value="ValueSet/insuranceplanbenefittype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
   <resource>
     <reference>
-      <reference value="ValueSet/valueset-insuranceplanbenefitcosttype" />
+      <reference value="ValueSet/insuranceplanbenefitcosttype" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -1801,107 +1801,107 @@
       <!-- ============ ValueSet   =============== -->
       <!-- insert valuesets -->
       <page>
-        <nameUrl value="ValueSet-valueset-validationprocess.html"/>
+        <nameUrl value="ValueSet-validationprocess.html"/>
         <title value="ValueSet Validationprocess"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-validationneed.html"/>
+        <nameUrl value="ValueSet-validationneed.html"/>
         <title value="ValueSet Validationneed"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-usecasetype.html"/>
+        <nameUrl value="ValueSet-usecasetype.html"/>
         <title value="ValueSet Usecasetype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-qualificationstatus.html"/>
+        <nameUrl value="ValueSet-qualificationstatus.html"/>
         <title value="ValueSet Qualificationstatus"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcevalidationstatus.html"/>
+        <nameUrl value="ValueSet-primarysourcevalidationstatus.html"/>
         <title value="ValueSet Primarysourcevalidationstatus"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcevalidationprocess.html"/>
+        <nameUrl value="ValueSet-primarysourcevalidationprocess.html"/>
         <title value="ValueSet Primarysourcevalidationprocess"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcetype.html"/>
+        <nameUrl value="ValueSet-primarysourcetype.html"/>
         <title value="ValueSet Primarysourcetype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcepushtype.html"/>
+        <nameUrl value="ValueSet-primarysourcepushtype.html"/>
         <title value="ValueSet Primarysourcepushtype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcepush.html"/>
+        <nameUrl value="ValueSet-primarysourcepush.html"/>
         <title value="ValueSet Primarysourcepush"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-primarysourcefailureaction.html"/>
+        <nameUrl value="ValueSet-primarysourcefailureaction.html"/>
         <title value="ValueSet Primarysourcefailureaction"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-plan-type.html"/>
+        <nameUrl value="ValueSet-plan-type.html"/>
         <title value="ValueSet Plan Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-patientaccess.html"/>
+        <nameUrl value="ValueSet-patientaccess.html"/>
         <title value="ValueSet Patientaccess"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-network-type.html"/>
+        <nameUrl value="ValueSet-network-type.html"/>
         <title value="ValueSet Network Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-limit-unit.html"/>
+        <nameUrl value="ValueSet-limit-unit.html"/>
         <title value="ValueSet Limit Unit"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-languageproficiency.html"/>
+        <nameUrl value="ValueSet-languageproficiency.html"/>
         <title value="ValueSet Languageproficiency"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplangroupsize.html"/>
+        <nameUrl value="ValueSet-insuranceplangroupsize.html"/>
         <title value="ValueSet Insuranceplangroupsize"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplancosttype.html"/>
+        <nameUrl value="ValueSet-insuranceplancosttype.html"/>
         <title value="ValueSet Insuranceplancosttype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplancostcategory.html"/>
+        <nameUrl value="ValueSet-insuranceplancostcategory.html"/>
         <title value="ValueSet Insuranceplancostcategory"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplanbenefittype.html"/>
+        <nameUrl value="ValueSet-insuranceplanbenefittype.html"/>
         <title value="ValueSet Insuranceplanbenefittype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplanbenefitcosttype.html"/>
+        <nameUrl value="ValueSet-insuranceplanbenefitcosttype.html"/>
         <title value="ValueSet Insuranceplanbenefitcosttype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplan-type.html"/>
+        <nameUrl value="ValueSet-insuranceplan-type.html"/>
         <title value="ValueSet Insuranceplan Type"/>
         <generation value="generated"/>
       </page>
@@ -1911,82 +1911,82 @@
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-identifier-type.html"/>
+        <nameUrl value="ValueSet-identifier-type.html"/>
         <title value="ValueSet Identifier Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-failureaction.html"/>
+        <nameUrl value="ValueSet-failureaction.html"/>
         <title value="ValueSet Failureaction"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-externalvalidationtype.html"/>
+        <nameUrl value="ValueSet-externalvalidationtype.html"/>
         <title value="ValueSet Externalvalidationtype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-digitalcertificateuse.html"/>
+        <nameUrl value="ValueSet-digitalcertificateuse.html"/>
         <title value="ValueSet Digitalcertificateuse"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-digitalcertificatetype.html"/>
+        <nameUrl value="ValueSet-digitalcertificatetype.html"/>
         <title value="ValueSet Digitalcertificatetype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-digitalcertificatetrustframework.html"/>
+        <nameUrl value="ValueSet-digitalcertificatetrustframework.html"/>
         <title value="ValueSet Digitalcertificatetrustframework"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-digitalcertificatestandard.html"/>
+        <nameUrl value="ValueSet-digitalcertificatestandard.html"/>
         <title value="ValueSet Digitalcertificatestandard"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-coverage-type.html"/>
+        <nameUrl value="ValueSet-coverage-type.html"/>
         <title value="ValueSet Coverage Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-certificationedition.html"/>
+        <nameUrl value="ValueSet-certificationedition.html"/>
         <title value="ValueSet Certificationedition"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-benefit-type.html"/>
+        <nameUrl value="ValueSet-benefit-type.html"/>
         <title value="ValueSet Benefit Type"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-attestationmethod.html"/>
+        <nameUrl value="ValueSet-attestationmethod.html"/>
         <title value="ValueSet Attestationmethod"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-aliastype.html"/>
+        <nameUrl value="ValueSet-aliastype.html"/>
         <title value="ValueSet Aliastype"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-accessibility.html"/>
+        <nameUrl value="ValueSet-accessibility.html"/>
         <title value="ValueSet Accessibility"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-healthcareservice-characteristic.html"/>
+        <nameUrl value="ValueSet-healthcareservice-characteristic.html"/>
         <title value="ValueSet Healthcare Service Characteristic"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-healthcareservice-eligibility.html"/>
+        <nameUrl value="ValueSet-healthcareservice-eligibility.html"/>
         <title value="ValueSet Healthcare Service Eligibility"/>
         <generation value="generated"/>
       </page>
       <page>
-        <nameUrl value="ValueSet-valueset-insuranceplancosttype.html"/>
+        <nameUrl value="ValueSet-insuranceplancosttype.html"/>
         <title value="ValueSet Insurance Plan Cost Type"/>
         <generation value="generated"/>
       </page>

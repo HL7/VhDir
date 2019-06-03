@@ -137,7 +137,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-certificationedition"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition"
                 },
                 "definition": "Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)",
                 "id": "Extension.extension:certificationEdition.valueCoding:valueCoding",
@@ -169,7 +169,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-patientaccess"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/patientaccess"
                 },
                 "definition": "Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it",
                 "id": "Extension.extension:patientAccess.valueCodeableConcept:valueCodeableConcept",

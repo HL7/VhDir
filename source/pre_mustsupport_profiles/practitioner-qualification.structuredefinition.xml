@@ -61,7 +61,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"/>
 			</binding>
 		</element>
 		
@@ -140,7 +140,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:history.extension:period">

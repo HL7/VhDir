@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-validationneed"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationneed"/>
+	<id value="validationneed"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/validationneed"/>
 	<name value="VhDirPrimarySourceValidationNeed"/>
 	<title value="VhDir Primary Source Validation Need"/>
 	<status value="active"/>

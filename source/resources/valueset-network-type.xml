@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-network-type"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-network-type"/>
+	<id value="network-type"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/network-type"/>
 	<name value="VhDirNetworkType"/>
 	<title value="VhDir Network Type Value Set"/>
 	<status value="active"/>

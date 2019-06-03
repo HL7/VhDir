@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-attestationmethod"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-attestationmethod"/>
+	<id value="attestationmethod"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/attestationmethod"/>
 	<name value="VhDirAttestationMethod"/>
 	<title value="VhDir Attestation Method"/>
 	<status value="active"/>

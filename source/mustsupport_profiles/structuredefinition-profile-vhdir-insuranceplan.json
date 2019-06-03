@@ -353,7 +353,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-coverage-type"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/coverage-type"
                 },
                 "id": "InsurancePlan.coverage.type",
                 "mustSupport": true,
@@ -380,7 +380,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-benefit-type"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type"
                 },
                 "id": "InsurancePlan.coverage.benefit.type",
                 "mustSupport": true,
@@ -404,7 +404,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-limit-unit"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/limit-unit"
                 },
                 "id": "InsurancePlan.coverage.benefit.limit.code",
                 "mustSupport": true,
@@ -492,7 +492,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-plan-type"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/plan-type"
                 },
                 "id": "InsurancePlan.plan.type",
                 "mustSupport": true,
@@ -533,7 +533,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancosttype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancosttype"
                 },
                 "id": "InsurancePlan.plan.generalCost.type",
                 "mustSupport": true,
@@ -562,7 +562,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplancostcategory"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancostcategory"
                 },
                 "id": "InsurancePlan.plan.specificCost.category",
                 "mustSupport": true,
@@ -576,7 +576,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefittype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefittype"
                 },
                 "id": "InsurancePlan.plan.specificCost.benefit.type",
                 "mustSupport": true,
@@ -590,7 +590,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-insuranceplanbenefitcosttype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefitcosttype"
                 },
                 "id": "InsurancePlan.plan.specificCost.benefit.cost.type",
                 "mustSupport": true,

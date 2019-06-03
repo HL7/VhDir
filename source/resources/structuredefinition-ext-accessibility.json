@@ -30,7 +30,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-accessibility"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility"
                 },
                 "definition": "Accessibility options offered to the patient/consumer",
                 "id": "Extension.valueCodeableConcept:valueCodeableConcept",

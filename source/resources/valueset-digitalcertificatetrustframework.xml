@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalcertificatetrustframework"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetrustframework"/>
+	<id value="digitalcertificatetrustframework"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework"/>
 	<name value="VhDirDigitalCertificateTrustFramework"/>
 	<title value="VhDir Digital Certificate Trust Framework Value Set"/>
 	<status value="active"/>

@@ -125,7 +125,7 @@
 			<definition value="Type of network"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-network-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/network-type"/>
 			</binding>
 		</element>
 		<element id="Organization.name">

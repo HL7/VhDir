@@ -63,7 +63,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype"
                 },
                 "definition": "Type of digital certificate (TLS/SSL; device; identity; group)",
                 "id": "Extension.extension:type.valueCoding:valueCoding",
@@ -95,7 +95,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificateuse"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse"
                 },
                 "definition": "Purpose of the digital certificate (digsig; keyEncipherment)",
                 "id": "Extension.extension:use.valueCoding:valueCoding",
@@ -128,7 +128,7 @@
             {
                 "binding": {
                     "strength": "required",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatestandard"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard"
                 },
                 "definition": "The standard associated with the digital certificate (x.509v3)",
                 "id": "Extension.extension:certificateStandard.valueCoding:valueCoding",
@@ -222,7 +222,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetrustframework"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework"
                 },
                 "definition": "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)",
                 "id": "Extension.extension:trustFramework.valueCodeableConcept:valueCodeableConcept",

@@ -304,7 +304,7 @@
                 "path": "HealthcareService.eligibility",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-eligibility"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility"
                 }
             },
             {
@@ -328,7 +328,7 @@
                 "path": "HealthcareService.characteristic",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-healthcareservice-characteristic"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic"
                 }
             },
             {

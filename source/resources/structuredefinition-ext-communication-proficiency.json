@@ -27,7 +27,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-languageproficiency"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency"
                 },
                 "definition": "Level of proficiency",
                 "id": "Extension.valueCodeableConcept:valueCodeableConcept",

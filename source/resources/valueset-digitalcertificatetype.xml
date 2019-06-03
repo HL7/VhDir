@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="valueset-digitalcertificatetype"/>
-	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-digitalcertificatetype"/>
+	<id value="digitalcertificatetype"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype"/>
 	<name value="VhDirDigitalCertificateType"/>
 	<title value="VhDir Digital Certificate Type Value Set"/>
 	<status value="active"/>

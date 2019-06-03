@@ -168,7 +168,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-network-type"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/network-type"
                 },
                 "definition": "Type of network",
                 "id": "Organization.type",

@@ -129,7 +129,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-certificationedition"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:patientAccess">
@@ -155,7 +155,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-patientaccess"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/patientaccess"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:certificationID">

@@ -51,7 +51,7 @@
             {
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/usecasetype"
                 },
                 "definition": "Type of services supported by this endpoint",
                 "id": "Extension.extension:type.valueCodeableConcept:valueCodeableConcept",

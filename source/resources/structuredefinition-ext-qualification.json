@@ -156,7 +156,7 @@
                 "sliceName": "valueCoding",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
                 },
                 "type": [
                     {
@@ -277,7 +277,7 @@
                 "sliceName": "valueCoding",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus"
+                    "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
                 },
                 "type": [
                     {

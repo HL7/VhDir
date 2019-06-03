@@ -66,7 +66,7 @@
 				<strength value="example"/>
 				
 				<!-- use the core binding or this one?
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-externalvalidationtype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/externalvalidationtype"/>
 			-->
 			<valueSet value="http://hl7.org/fhir/ValueSet/verificationresult-validation-type"/>
 			</binding>
@@ -80,7 +80,7 @@
 			<max value="*"/>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-validationprocess"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess"/>
 			</binding>
 		</element>
 		
@@ -112,7 +112,7 @@
 			
 			<binding>
 				<strength value="example"/>
-<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcetype"/>
+<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcetype"/>
 -->				<valueSet value="http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type"></valueSet>
 
 			</binding>
@@ -125,7 +125,7 @@
 			<max value="*"/>
 			<binding>
 				<strength value="example"/>
-<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcevalidationprocess"/>
 -->				<valueSet value="http://hl7.org/fhir/ValueSet/verificationresult-communication-method"/>
 			</binding>
 		</element>
@@ -194,7 +194,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+<!--				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcevalidationprocess"/>
 -->				<valueSet value="http://hl7.org/fhir/ValueSet/verificationresult-communication-method"/>
 			</binding>
 		</element>

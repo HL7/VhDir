@@ -61,7 +61,7 @@
 			</type>
 			<binding>
 				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/usecasetype"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:standard">
