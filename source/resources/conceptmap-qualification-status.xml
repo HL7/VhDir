@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConceptMap xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
-	<id value="conceptmap-qualification-status"/><!--	<text>
+	<id value="qualification-status"/><!--	<text>
 		<status value="generated"/>
 		<xhtml:div>
 			<xhtml:p>Unit of Use NDC codes (https://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp) mapping  to the CVX Vaccine codes (https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx).  Note: source = NDC and target = CVX</xhtml:p>
 			<xhtml:p>Based upon the 2015 Edition Certification Requirements, the NDC vaccine codes SHOULD be supported as translations to the CVX vaccine codes.</xhtml:p>
 		</xhtml:div>
 	</text>
---><url value="http://hl7.org/fhir/uv/vhdir/ConceptMap/conceptmap-qualification-status"/>
+--><url value="http://hl7.org/fhir/uv/vhdir/ConceptMap/qualification-status"/>
 	<name value="QualificationStatusToResourceStatusCodeMapping"/>
 	<title value="VhDir Qualification Status Value Set – Status Code Mapping"/>
 	<status value="active"/>

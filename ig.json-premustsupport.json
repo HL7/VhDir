@@ -956,9 +956,9 @@
       "source": "codesystem-ehrcharacteristics.xml",
       "base": "CodeSystem-ehrcharacteristics.html"
     },
-    "ConceptMap/conceptmap-qualification-status": {
+    "ConceptMap/qualification-status": {
       "source": "conceptmap-qualification-status.xml",
-      "base": "ConceptMap-conceptmap-qualification-status.html"
+      "base": "ConceptMap-qualification-status.html"
     },
     "SearchParameter/searchparameter-practitionerrole-qualification-status": {
       "source": "searchparameter-practitionerrole-qualification-status.json",

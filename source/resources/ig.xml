@@ -1538,7 +1538,7 @@
   </resource>
   <resource>
     <reference>
-      <reference value="ConceptMap/conceptmap-qualification-status" />
+      <reference value="ConceptMap/qualification-status" />
     </reference>
     <exampleBoolean value="false" />
   </resource>
@@ -2057,7 +2057,7 @@
       <!-- ============ ConceptMaps   =============== -->
       <!-- insert conceptmaps -->
       <page>
-        <nameUrl value="ConceptMap-conceptmap-qualification-status.html"/>
+        <nameUrl value="ConceptMap-qualification-status.html"/>
         <title value="ConceptMap Qualification Status"/>
         <generation value="generated"/>
       </page>
