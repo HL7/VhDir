@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-careteam-identifier-assigner",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-careteam-identifier-assigner",
-  "version": "0.0.0",
   "name": "VhDir_sp_careteam_identifier_assigner",
   "status": "draft",
   "date": "2018-05-23",

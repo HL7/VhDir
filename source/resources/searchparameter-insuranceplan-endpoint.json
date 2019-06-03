@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-endpoint",
-  "version": "0.0.0",
   "name": "VhDir_sp_insuranceplan_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-endpoint",
   "status": "draft",

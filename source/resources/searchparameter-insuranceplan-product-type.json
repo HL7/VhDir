@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-product-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-product-type",
-  "version": "0.0.0",
   "name": "VhDir_sp_insuranceplan_product_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-type",
   "status": "draft",

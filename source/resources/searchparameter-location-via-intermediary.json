@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-via-intermediary",
-  "version": "0.0.0",
   "name": "VhDir_sp_location_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",

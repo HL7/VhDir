@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-location-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-location-identifier",
-  "version": "0.0.0",
   "name": "VhDir_sp_location_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-identifier",
   "status": "draft",

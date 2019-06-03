@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-endpoint-organization",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-endpoint-organization",
-  "version": "0.0.0",
   "name": "VhDir_sp_endpoint_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
   "status": "draft",

@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-target",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-target",
-  "version": "0.0.0",
   "name": "VhDir_sp_verificationresult_target",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/VerificationResult-target",
   "status": "draft",

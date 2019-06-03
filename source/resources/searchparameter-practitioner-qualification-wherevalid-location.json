@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "practitioner-qualification-wherevalid-location",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitioner_qualification_wherevalid_location",
   "status": "draft",
   "date": "2018-05-23",

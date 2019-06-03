@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-organizationaffiliation-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organizationaffiliation-endpoint",
-  "version": "0.0.0",
   "name": "VhDir_sp_organizationaffiliation_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-endpoint",
   "status": "draft",

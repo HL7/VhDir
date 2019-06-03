@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-specialty",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-specialty",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitionerrole_specialty",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty",
   "status": "draft",

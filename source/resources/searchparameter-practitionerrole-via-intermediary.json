@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-via-intermediary",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitionerrole_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",

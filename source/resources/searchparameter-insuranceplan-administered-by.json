@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-administered-by",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-administered-by",
-  "version": "0.0.0",
   "name": "VhDir_sp_insuranceplan_administered_by",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-administered-by",
   "status": "draft",

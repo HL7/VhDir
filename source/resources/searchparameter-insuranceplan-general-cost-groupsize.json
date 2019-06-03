@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-general-cost-groupsize",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-general-cost-groupsize",
-  "version": "0.0.0",
   "name": "VhDir_sp_insuranceplan_general_cost_groupsize",
   "status": "draft",
   "date": "2018-05-23",

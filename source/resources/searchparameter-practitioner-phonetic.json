@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitioner-phonetic",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitioner-phonetic",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitioner_phonetic",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
   "status": "draft",

@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-organization-partof",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-organization-partof",
-  "version": "0.0.0",
   "name": "VhDir_sp_organization_partof",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-partof",
   "status": "draft",

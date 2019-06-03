@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-qualification-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-qualification-status",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitionerrole_qualification_status",
   "status": "draft",
   "date": "2018-05-23",

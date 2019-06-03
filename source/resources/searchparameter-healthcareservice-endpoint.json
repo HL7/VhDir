@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-healthcareservice-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-healthcareservice-endpoint",
-  "version": "0.0.0",
   "name": "VhDir_sp_healthcareservice_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-endpoint",
   "status": "draft",

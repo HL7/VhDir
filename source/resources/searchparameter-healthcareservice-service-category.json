@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "healthcareservice-service-category",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category",
-  "version": "0.0.0",
   "name": "VhDir_sp_healthcareservice_category",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",
   "status": "draft",

@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-practitionerrole-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-practitionerrole-endpoint",
-  "version": "0.0.0",
   "name": "VhDir_sp_practitionerrole_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-endpoint",
   "status": "draft",

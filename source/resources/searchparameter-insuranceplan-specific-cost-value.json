@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-insuranceplan-specific-cost-value",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-insuranceplan-specific-cost-value",
-  "version": "0.0.0",
   "name": "VhDir_sp_insuranceplan_specific_cost_value",
   "status": "draft",
   "date": "2018-05-23",

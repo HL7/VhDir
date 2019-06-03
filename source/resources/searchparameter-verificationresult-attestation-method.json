@@ -2,7 +2,6 @@
   "resourceType": "SearchParameter",
   "id": "searchparameter-verificationresult-attestation-method",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/searchparameter-verificationresult-attestation-method",
-  "version": "0.0.0",
   "name": "VhDir_sp_verificationresult_attestation_method",
   "status": "draft",
   "date": "2018-05-23",
