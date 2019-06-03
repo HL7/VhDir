@@ -8,6 +8,12 @@
 		<!-- internal business ID for Founding Fathers Memorial Hospital assigned by Monument HIE -->
 		<use value="secondary"/>
 		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="NIIP"/>
+				<display value="National Insurance Payor Identifier (Payor)"/>
+				<userSelected value="true"/>
+			</coding>
 			<text value="member hospital"/>
 		</type>
 		<system value="http://example.org/www.monumentHIE.com"/>

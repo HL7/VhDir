@@ -73,7 +73,7 @@
 	<primarySource>
 		<!-- Describes the primary source the license was validated against, the DC Board of Medicine -->
 		<who>
-			<reference value="Organization/dcbomed"/>
+			<!-- <reference value="Organization/dcbomed"/> -->
 			<display value="DC Board of Medicine"/>
 		</who>
 		<type>
@@ -111,7 +111,7 @@
 		<!-- the license was validated against the primary source on January 23, 2018  -->
 		<canPushUpdates>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/validation-status"/>
+				<system value="http://terminology.hl7.org/CodeSystem/can-push-updates"/>
 				<!-- 0..1 Identity of the terminology system -->
 				<code value="yes"/>
 				<!-- 0..1 Symbol in syntax defined by the system -->
@@ -124,14 +124,14 @@
 		<!-- The primary source (DC Board of Medicine) is able to push updates if the status of the license changes -->
 		<pushTypeAvailable>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/validation-status"/>
+				<system value="http://terminology.hl7.org/CodeSystem/push-type-available"/>
 				<!-- 0..1 Identity of the terminology system -->
 				<code value="source"/>
 				<!-- 0..1 Symbol in syntax defined by the system -->
-				<display value="Source"/>
+				<display value="As defined by source"/>
 				<!-- 0..1 Representation defined by the system -->
 			</coding>
-			<text value="Source"/>
+			<text value="Issuing source"/>
 		</pushTypeAvailable>
 		<!-- The primary source (DC Board of Medicine) defines the types of updates it can push -->
 	</primarySource>
@@ -157,7 +157,7 @@
 	<validator>
 		<!-- Describes the entity that validated the information. In this case, the validator is the same as the primary source, the DC Board of Medicine -->
 		<organization>
-			<reference value="Organization/dcbomed"/>
+			<!-- <reference value="Organization/dcbomed"/> -->
 			<display value="DC Board of Medicine"/>
 		</organization>
 		<identityCertificate value="VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"/>

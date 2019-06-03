@@ -3,6 +3,7 @@
 	<id value="failureaction"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/failureaction"/>
 	<name value="VhDirFailureAction"/>
+	<title value="VhDir Failure Action"/>
 	<status value="active"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
