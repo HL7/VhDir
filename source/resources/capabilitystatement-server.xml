@@ -178,6 +178,12 @@
 				<type value="token" />
 			</searchParam>
 			<searchParam>
+				<name value="qualification-wherevalid-location" />
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location" />
+				<type value="reference" />
+				<documentation value="Select Practitioners with a qualification that is valid at the specified location" />
+			</searchParam>
+			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="MAY" />
 				</extension>
@@ -192,6 +198,12 @@
 				<name value="active" />
 				<definition value="http://hl7.org/fhir/SearchParameter/Practitioner-active" />
 				<type value="token" />
+			</searchParam>
+			<searchParam>
+				<name value="phonetic" />
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-phonetic" />
+				<type value="string" />
+				<documentation value="Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)" />
 			</searchParam>
 		</resource>
 		<resource>
@@ -2137,6 +2149,12 @@
 				<name value="validator-organization" />
 				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validator-organization" />
 				<type value="reference" />
+			</searchParam>
+			<searchParam>
+				<name value="target" />
+				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target" />
+				<type value="reference" />
+				<documentation value="Select validation information for the specified resource" />
 			</searchParam>
 		</resource>
 		<resource>
