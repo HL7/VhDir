@@ -141,17 +141,17 @@
 			<reference value="Practitioner/practitioner1"/>
 			<display value="George Washington"/>
 		</who>
+		<!-- George Washington attested to the information manually -->
 		<communicationMethod>
-			<!-- George Washington attested to the information himself -->
 			<coding>
 				<system value="http://terminology.hl7.org/CodeSystem/verificationresult-communication-method"/>
-				<code value="owner"/>
-				<display value="Owner"/>
+				<code value="manual"/>
+				<display value="Manual"/>
 				<userSelected value="true"/>
 			</coding>
 		</communicationMethod>
-		<date value="2018-01-09"/>
 		<!-- George Washington attested to the information on January 9, 2018 -->
+		<date value="2018-01-09"/>
 		<sourceIdentityCertificate value="TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="/>
 	</attestation>
 	<validator>
