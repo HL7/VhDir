@@ -70,20 +70,6 @@
         </extension>
     </extension>
 
-    <identifier> <!-- An identifier for this endpoint, a direct address -->
-        <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
-            <valueCode value="active"/>
-        </extension>
-        <use value="usual"/>
-        <type>
-            <text value="Direct Address"/>
-        </type>
-        <value value="heart@direct.ffhospital.com"/>
-        <assigner>
-            <display value="Revolutionary Health Information Service Provider"/>
-        </assigner>
-    </identifier>
-
     <status value="active"/> <!-- This endpoint is active -->
 
     <connectionType> <!-- This endpoint is a Direct address -->
