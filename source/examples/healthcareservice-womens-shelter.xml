@@ -11,9 +11,19 @@
 			</meta>
 			<status value="active" />
 			<scope>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/consent"/>
+					<code value="protect" />
+					<display value="Protect" />
+				</coding>
 				<text value="Direct Referral use only" />
 			</scope>
 			<category>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="57016-8" />
+					<display value="Privacy policy acknowledgement Document" />
+				</coding>
 				<text value="conditional release (per DUA)" />
 			</category>
 			<dateTime value="2017-12-18" />

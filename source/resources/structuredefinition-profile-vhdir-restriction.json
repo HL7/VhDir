@@ -1,241 +1,246 @@
 {
-    "abstract": false,
-    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
-    "date": "2017-12-15T01:01:31.325+11:00",
-    "derivation": "constraint",
-    "description": "Restriction on use/release of exchanged information\r\n",
-    "differential": {
-        "element": [
-            {
-                "alias": [
-                    "Restriction"
-                ],
-                "id": "Consent",
-                "path": "Consent",
-                "short": "A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time"
-            },
-            {
-                "id": "Consent.identifier",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.identifier"
-            },
-            {
-                "comment": "This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid.",
-                "id": "Consent.status",
-                "mustSupport": true,
-                "path": "Consent.status",
-                "short": "Indicates the current state of this restriction"
-            },
-            {
-                "fixedCode": "privacy",
-                "id": "Consent.scope",
-                "mustSupport": true,
-                "path": "Consent.scope"
-            },
-            {
-                "definition": "Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))",
-                "id": "Consent.category",
-                "label": "Type",
-                "mustSupport": true,
-                "path": "Consent.category",
-                "short": "Type of restriction"
-            },
-            {
-                "id": "Consent.patient",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.patient"
-            },
-            {
-                "definition": "When this Restriction was issued / created / indexed.",
-                "id": "Consent.dateTime",
-                "label": "last updated",
-                "mustSupport": true,
-                "path": "Consent.dateTime",
-                "short": "date/time of last update for this restriction"
-            },
-            {
-                "id": "Consent.performer",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.performer"
-            },
-            {
-                "id": "Consent.organization",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.organization"
-            },
-            {
-                "id": "Consent.source[x]",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.source[x]"
-            },
-            {
-                "id": "Consent.policy",
-                "mustSupport": true,
-                "path": "Consent.policy"
-            },
-            {
-                "id": "Consent.policy.authority",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.policy.authority"
-            },
-            {
-                "id": "Consent.policy.uri",
-                "mustSupport": true,
-                "path": "Consent.policy.uri",
-                "short": "Specific policy covered by this restriction"
-            },
-            {
-                "id": "Consent.policyRule",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.policyRule"
-            },
-            {
-                "id": "Consent.verification",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.verification"
-            },
-            {
-                "id": "Consent.verification.verified",
-                "mustSupport": true,
-                "path": "Consent.verification.verified"
-            },
-            {
-                "id": "Consent.verification.verifiedWith",
-                "mustSupport": true,
-                "path": "Consent.verification.verifiedWith"
-            },
-            {
-                "id": "Consent.verification.verificationDate",
-                "mustSupport": true,
-                "path": "Consent.verification.verificationDate"
-            },
-            {
-                "id": "Consent.provision",
-                "mustSupport": true,
-                "path": "Consent.provision",
-                "short": "Access rights"
-            },
-            {
-                "fixedCode": "permit",
-                "id": "Consent.provision.type",
-                "mustSupport": true,
-                "path": "Consent.provision.type"
-            },
-            {
-                "id": "Consent.provision.period",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.period"
-            },
-            {
-                "id": "Consent.provision.actor",
-                "min": 1,
-                "mustSupport": true,
-                "path": "Consent.provision.actor"
-            },
-            {
-                "fixedCoding": {
-                    "code": "IRCP",
-                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
-                },
-                "id": "Consent.provision.actor.role",
-                "mustSupport": true,
-                "path": "Consent.provision.actor.role"
-            },
-            {
-                "id": "Consent.provision.actor.reference",
-                "mustSupport": true,
-                "path": "Consent.provision.actor.reference",
-                "short": "definedUserOrGroup",
-                "type": [
-                    {
-                        "code": "Reference",
-                        "targetProfile": [
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam",
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
-                        ]
-                    }
-                ]
-            },
-            {
-                "definition": "Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)",
-                "id": "Consent.provision.action",
-                "max": "1",
-                "mustSupport": true,
-                "path": "Consent.provision.action",
-                "short": "reasonType"
-            },
-            {
-                "id": "Consent.provision.securityLabel",
-                "mustSupport": true,
-                "path": "Consent.provision.securityLabel",
-                "short": "userType"
-            },
-            {
-                "definition": "Name assigned to the restriction condition",
-                "id": "Consent.provision.purpose",
-                "mustSupport": true,
-                "path": "Consent.provision.purpose",
-                "short": "reasonName"
-            },
-            {
-                "id": "Consent.provision.class",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.class"
-            },
-            {
-                "id": "Consent.provision.code",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.code"
-            },
-            {
-                "id": "Consent.provision.dataPeriod",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.dataPeriod"
-            },
-            {
-                "id": "Consent.provision.data",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.data"
-            },
-            {
-                "id": "Consent.provision.data.meaning",
-                "mustSupport": true,
-                "path": "Consent.provision.data.meaning"
-            },
-            {
-                "id": "Consent.provision.data.reference",
-                "mustSupport": true,
-                "path": "Consent.provision.data.reference"
-            },
-            {
-                "id": "Consent.provision.provision",
-                "max": "0",
-                "mustSupport": true,
-                "path": "Consent.provision.provision"
-            }
+  "resourceType": "StructureDefinition",
+  "id": "vhdir-restriction",
+  "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction",
+  "name": "VhdirRestriction",
+  "title": "VhDir Restriction",
+  "status": "active",
+  "date": "2017-12-15T01:01:31.325+11:00",
+  "description": "Restriction on use/release of exchanged information",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent",
+        "path": "Consent",
+        "short": "A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time",
+        "alias": [
+          "Restriction"
         ]
-    },
-    "fhirVersion": "4.0.0",
-    "id": "vhdir-restriction",
-    "kind": "resource",
-    "name": "VhdirRestriction",
-    "resourceType": "StructureDefinition",
-    "status": "active",
-    "title": "VhDir Restriction",
-    "type": "Consent",
-    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction"
+      },
+      {
+        "id": "Consent.identifier",
+        "path": "Consent.identifier",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.status",
+        "path": "Consent.status",
+        "short": "Indicates the current state of this restriction",
+        "comment": "This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid.",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.scope",
+        "path": "Consent.scope",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ConsentScope"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/consent"
+        }
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "label": "Type",
+        "short": "Type of restriction",
+        "definition": "Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.patient",
+        "path": "Consent.patient",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "label": "last updated",
+        "short": "date/time of last update for this restriction",
+        "definition": "When this Restriction was issued / created / indexed.",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.performer",
+        "path": "Consent.performer",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.organization",
+        "path": "Consent.organization",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.source[x]",
+        "path": "Consent.source[x]",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policy",
+        "path": "Consent.policy",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policy.authority",
+        "path": "Consent.policy.authority",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policy.uri",
+        "path": "Consent.policy.uri",
+        "short": "Specific policy covered by this restriction",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policyRule",
+        "path": "Consent.policyRule",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.verification",
+        "path": "Consent.verification",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.verification.verified",
+        "path": "Consent.verification.verified",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.verification.verifiedWith",
+        "path": "Consent.verification.verifiedWith",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.verification.verificationDate",
+        "path": "Consent.verification.verificationDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision",
+        "path": "Consent.provision",
+        "short": "Access rights",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.type",
+        "path": "Consent.provision.type",
+        "fixedCode": "permit",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.period",
+        "path": "Consent.provision.period",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.actor",
+        "path": "Consent.provision.actor",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.actor.role",
+        "path": "Consent.provision.actor.role",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.actor.reference",
+        "path": "Consent.provision.actor.reference",
+        "short": "definedUserOrGroup",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam",
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.action",
+        "path": "Consent.provision.action",
+        "short": "reasonType",
+        "definition": "Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.securityLabel",
+        "path": "Consent.provision.securityLabel",
+        "short": "userType",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.purpose",
+        "path": "Consent.provision.purpose",
+        "short": "reasonName",
+        "definition": "Name assigned to the restriction condition",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.class",
+        "path": "Consent.provision.class",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.code",
+        "path": "Consent.provision.code",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.dataPeriod",
+        "path": "Consent.provision.dataPeriod",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.data",
+        "path": "Consent.provision.data",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.data.meaning",
+        "path": "Consent.provision.data.meaning",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.data.reference",
+        "path": "Consent.provision.data.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision",
+        "path": "Consent.provision.provision",
+        "max": "0",
+        "mustSupport": true
+      }
+    ]
+  }
 }

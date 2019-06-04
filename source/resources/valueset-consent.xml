@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="consent"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/ValueSet/consent"/>
+	<name value="VhDirConsent"/>
+	<title value="VhDir Consent Value Set"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for use in defining access levels for sharing subsets of constrained content (as an example)"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/consent"/>
+		</include>
+		<include> 
+      		<system value="http://terminology.hl7.org/CodeSystem/consentscope"/> 
+	    </include> 
+	</compose>
+</ValueSet>

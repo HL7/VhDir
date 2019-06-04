@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="consent"/>
+	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/consent"/>
+	<name value="VhDirConsent"/>
+	<title value="VhDir Consent Code System"/>
+	<status value="active"/>
+	<date value="2018-02-21"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="Codes for use in defining access levels for sharing subsets of constrained content (as an example)"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="protect"/>
+		<display value="Protect"/>
+		<definition value="The data (or subset of data) provided should be only made available to the people, or types of people explicitly declared in the consent"/>
+	</concept>
+</CodeSystem>

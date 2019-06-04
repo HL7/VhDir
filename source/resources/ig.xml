@@ -25,6 +25,18 @@
   </resource>
   <resource>
     <reference>
+      <reference value="CodeSystem/consent" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
+      <reference value="ValueSet/consent" />
+    </reference>
+    <exampleBoolean value="false" />
+  </resource>
+  <resource>
+    <reference>
       <reference value="CodeSystem/validation" />
     </reference>
     <exampleBoolean value="false" />
@@ -515,7 +527,6 @@
     </reference>
     <exampleBoolean value="false" />
   </resource>
-
   <resource>
     <reference>
       <reference value="ValueSet/accessibility" />
@@ -1976,6 +1987,11 @@
         <generation value="generated"/>
       </page>
       <page>
+        <nameUrl value="ValueSet-consent.html"/>
+        <title value="ValueSet Consent"/>
+        <generation value="generated"/>
+      </page>
+      <page>
         <nameUrl value="ValueSet-healthcareservice-characteristic.html"/>
         <title value="ValueSet Healthcare Service Characteristic"/>
         <generation value="generated"/>
@@ -2051,6 +2067,11 @@
       <page>
         <nameUrl value="CodeSystem-accessibility.html"/>
         <title value="CodeSystem Accessibility"/>
+        <generation value="generated"/>
+      </page>
+      <page>
+        <nameUrl value="CodeSystem-consent.html"/>
+        <title value="CodeSystem Consent"/>
         <generation value="generated"/>
       </page>
       <!-- ============ End CodeSystems  =============== -->

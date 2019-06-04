@@ -31,6 +31,14 @@
       "source": "searchparameter-practitioner-name.json",
       "base": "SearchParameter-practitioner-name.html"
     },
+    "CodeSystem/consent": {
+      "source": "codesystem-consent.xml",
+      "base": "CodeSystem-consent.html"
+    },
+    "ValueSet/consent": {
+      "source": "valueset-consent.xml",
+      "base": "ValueSet-consent.html"
+    },
     "ValueSet/insuranceplancostcategory": {
       "source": "valueset-insuranceplancostcategory.xml",
       "base": "ValueSet-insuranceplancostcategory.html"
