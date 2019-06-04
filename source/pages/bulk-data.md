@@ -31,7 +31,7 @@ There are several basic parts to FHIR's bulk data extract
 
 The bulk data had been balloted and was still being reconciled and at the time of publication of this guide, the current development version can be found here:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://build.fhir.org/ig/HL7/bulk-data-export](http://build.fhir.org/ig/HL7/bulk-data-export)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://hl7.org/fhir/us/bulkdata/2019May/index.html](http://hl7.org/fhir/us/bulkdata/2019May/index.html)
 
 The community discussions and questions around this draft specification are here:
 
