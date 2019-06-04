@@ -167,7 +167,7 @@
 				</extension>
 				<name value="qualification-period" />
 				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period" />
-				<type value="string" />
+				<type value="date" />
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1633,7 +1633,7 @@
 				</extension>
 				<name value="contains" />
 				<definition value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains" />
-				<type value="uri" />
+				<type value="special" />
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1641,7 +1641,7 @@
 				</extension>
 				<name value="near" />
 				<definition value="http://hl7.org/fhir/SearchParameter/Location-near" />
-				<type value="uri" />
+				<type value="special" />
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
