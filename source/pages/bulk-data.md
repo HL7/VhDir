@@ -8,14 +8,14 @@ F: http://build.fhir.org/
 
 ---
 
----
+<p class="note-to-balloters">
+<b>Informative only:</b> was not a part of the September 2018 ballotted content.<br/>
+It will be updated based on the Bulk Data ballot outcome, and further implementation experience.
+</p>
+<br/>
 
 ## Background
 
-> This page is <b>informative only</b> information, and was not a part of the ballotted material.
-> It provides basic guidance on applying the core async processing, along with 
-> the system wide $export operation defined in the bulk data implementation guide.
-> Along with some suggestions with extensions that may be considered.
 
 Bulk data is a recent addition to the FHIR related specifications and has many uses. Primarily its for out of band data extraction for distribution.
 
