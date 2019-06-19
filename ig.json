@@ -17,7 +17,7 @@
     "qa": "generated_output/qa",
     "output": "output",
     "txCache": "generated_output/txCache",
-    "specification": "http://build.fhir.org/"
+    "specification": "http://hl7.org/fhir/R4/"
   },
   "swagger": [
     {
@@ -1107,7 +1107,7 @@
   },
   "dependencyList": [
     {
-      "package": "hl7.fhir.us.core.r4",
+      "package": "hl7.fhir.us.core",
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core",
       "version": "current"
@@ -1180,11 +1180,11 @@
   "special-urls": [
     "urn:oid:2.16.840.1.113883.6.238"
   ],
-  "sct-edition": "http://snomed.info/sct/731000124108",
+  "sct-edition": "http://snomed.info/sct/900000000000207008",
   "mappings": "true",
-  "publisher": "HL7 Patient Administration Committee",
+  "publisher": "HL7 International - Patient Admistration Working Group",
+  "pub_url": "http://www.hl7.org/Special/Committees/pafm/index.cfm",
   "fixed-business-version": "0.2.0",
-  "pub_url": "ehaas@healthedatainc.com",
   "allviews": "true",
   "no-inactive-codes": "false",
   "npm-name": "hl7.core.uv.vhdir",

@@ -1,8 +1,20 @@
+title: HL7 FHIR® Validated Healthcare Directory Implementation Guide STU 1
+copyrightyear: "2019" # copyright date for footer
 historypath : "http://hl7.org/fhir/uv/vhdir/history.html" # complete path to IG history file
+changelink: http://hl7.org/fhir-issues
 summaries: false #true if want custom profile summaries in summary tab
 diff2: false # true if want to show intermediate differentials
-build: ci  # choice of ci|ballot|version
-example_types:
+build: version  # choice of ci|ballot|version
+ballot: 1 #STU version of IG ( if needed for publishing HL7 guides)
+hl7_version: # not sure what this is for
+hl7_ig: true # 'true'  if HL7 ig
+showXML: true  #'true' if want xml tab'
+showTTL: #'true' if want ttl tab'
+showMappings:  # 'true' if want to display mappings tab'
+showDefs: true # 'true' if want to display Definitions tab'
+showExamples:  # 'true' if want to display Examples tab -currently no template for it'
+default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
+example_types:  # for matching type to Type
 - Account
 - ActivityDefinition
 - AdverseEvent
