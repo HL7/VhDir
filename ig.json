@@ -1181,7 +1181,6 @@
     "urn:oid:2.16.840.1.113883.6.238"
   ],
   "sct-edition": "http://snomed.info/sct/900000000000207008",
-  "mappings": "true",
   "publisher": "HL7 International - Patient Admistration Working Group",
   "pub_url": "http://www.hl7.org/Special/Committees/pafm/index.cfm",
   "fixed-business-version": "0.2.0",
