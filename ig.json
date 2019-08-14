@@ -1110,13 +1110,7 @@
       "package": "hl7.fhir.us.core",
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core",
-      "version": "current"
-    },
-    {
-      "package": "hl7.fhir.us.bulkdata",
-      "name": "bulkdata",
-      "location": "http://hl7.org/fhir/us/bulkdata/2019May",
-      "version": "0.1.0"
+      "version": "3.0.0"
     }
   ],
   "status": "draft",
