@@ -54,10 +54,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
                 },
                 "definition": "Current status of the qualification",
-                "id": "Extension.extension:status.valueCoding:valueCoding",
+                "id": "Extension.extension:status.value[x]:valueCoding",
                 "label": "status",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "Status",
                 "sliceName": "valueCoding",
                 "type": [
@@ -147,10 +147,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
                 },
                 "definition": "Previous status of the qualification",
-                "id": "Extension.extension:history.extension:status.valueCoding:valueCoding",
+                "id": "Extension.extension:history.extension:status.value[x]:valueCoding",
                 "label": "status",
                 "min": 1,
-                "path": "Extension.extension.extension.valueCoding",
+                "path": "Extension.extension.extension.value[x]",
                 "short": "Previous status",
                 "sliceName": "valueCoding",
                 "type": [
@@ -176,10 +176,10 @@
             },
             {
                 "definition": "Period during which the status applied",
-                "id": "Extension.extension:history.extension:period.valuePeriod:valuePeriod",
+                "id": "Extension.extension:history.extension:period.value[x]:valuePeriod",
                 "label": "period",
                 "min": 1,
-                "path": "Extension.extension.extension.valuePeriod",
+                "path": "Extension.extension.Extension.value[x]",
                 "short": "Period",
                 "sliceName": "valuePeriod",
                 "type": [

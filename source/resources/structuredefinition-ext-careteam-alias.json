@@ -25,11 +25,11 @@
             },
             {
                 "definition": "Alternate names by which the team is also known",
-                "id": "Extension.valueString:valueString",
+                "id": "Extension.value[x]:valueString",
                 "label": "alias",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueString",
+                "path": "Extension.value[x]",
                 "short": "Alias",
                 "sliceName": "valueString",
                 "type": [

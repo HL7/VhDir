@@ -30,13 +30,13 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency"
                 },
                 "definition": "Level of proficiency",
-                "id": "Extension.valueCodeableConcept:valueCodeableConcept",
+                "id": "Extension.value[x]:Proficiency",
                 "label": "proficiency",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueCodeableConcept",
+                "path": "Extension.value[x]",
                 "short": "Proficiency",
-                "sliceName": "valueCodeableConcept",
+                "sliceName": "Proficiency",
                 "type": [
                     {
                         "code": "CodeableConcept"

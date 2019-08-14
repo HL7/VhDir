@@ -52,10 +52,10 @@
             },
             {
                 "definition": "An identifier for this qualification",
-                "id": "Extension.extension:identifier.valueIdentifier:valueIdentifier",
+                "id": "Extension.extension:identifier.value[x]:valueIdentifier",
                 "label": "identifier",
                 "min": 1,
-                "path": "Extension.extension.valueIdentifier",
+                "path": "Extension.extension.value[x]",
                 "short": "Identifier",
                 "sliceName": "valueIdentifier",
                 "type": [
@@ -82,10 +82,10 @@
             },
             {
                 "definition": "Coded representation of the qualification",
-                "id": "Extension.extension:code.valueCodeableConcept:valueCodeableConcept",
+                "id": "Extension.extension:code.value[x]:valueCodeableConcept",
                 "label": "code",
                 "min": 1,
-                "path": "Extension.extension.valueCodeableConcept",
+                "path": "Extension.extension.value[x]",
                 "short": "Code",
                 "sliceName": "valueCodeableConcept",
                 "binding": {
@@ -116,10 +116,10 @@
             },
             {
                 "definition": "Organization that regulates and issues the qualification",
-                "id": "Extension.extension:issuer.valueReference:valueReference",
+                "id": "Extension.extension:issuer.value[x]:valueReference",
                 "label": "issuer",
                 "min": 1,
-                "path": "Extension.extension.valueReference",
+                "path": "Extension.extension.value[x]",
                 "short": "Issuer",
                 "sliceName": "valueReference",
                 "type": [
@@ -148,10 +148,10 @@
             },
             {
                 "definition": "Current status of the qualification",
-                "id": "Extension.extension:status.valueCoding:valueCoding",
+                "id": "Extension.extension:status.value[x]:valueCoding",
                 "label": "status",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "Status",
                 "sliceName": "valueCoding",
                 "binding": {
@@ -181,10 +181,10 @@
             },
             {
                 "definition": "Period during which the qualification is valid",
-                "id": "Extension.extension:period.valuePeriod:valuePeriod",
+                "id": "Extension.extension:period.value[x]:valuePeriod",
                 "label": "period",
                 "min": 1,
-                "path": "Extension.extension.valuePeriod",
+                "path": "Extension.Extension.value[x]",
                 "short": "Period",
                 "sliceName": "valuePeriod",
                 "type": [
@@ -269,10 +269,10 @@
             },
             {
                 "definition": "Previous status of the qualification",
-                "id": "Extension.extension:history.extension:status.valueCoding:valueCoding",
+                "id": "Extension.extension:history.extension:status.value[x]:valueCoding",
                 "label": "status",
                 "min": 1,
-                "path": "Extension.extension.extension.valueCoding",
+                "path": "Extension.extension.extension.value[x]",
                 "short": "Previous status",
                 "sliceName": "valueCoding",
                 "binding": {
@@ -302,10 +302,10 @@
             },
             {
                 "definition": "Period during which the status applied",
-                "id": "Extension.extension:history.extension:period.valuePeriod:valuePeriod",
+                "id": "Extension.extension:history.extension:period.value[x]:valuePeriod",
                 "label": "period",
                 "min": 1,
-                "path": "Extension.extension.extension.valuePeriod",
+                "path": "Extension.extension.Extension.value[x]",
                 "short": "Period",
                 "sliceName": "valuePeriod",
                 "type": [

@@ -25,10 +25,10 @@
             },
             {
                 "definition": "A reference to the insurance plan",
-                "id": "Extension.valueReference:valueReference",
+                "id": "Extension.value[x]:valueReference",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueReference",
+                "path": "Extension.value[x]",
                 "short": "A reference to the insurance plan",
                 "sliceName": "valueReference",
                 "type": [

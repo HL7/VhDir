@@ -30,11 +30,11 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus"
                 },
                 "definition": "Describes the status of an identifier",
-                "id": "Extension.valueCode:valueCode",
+                "id": "Extension.value[x]:valueCode",
                 "label": "status",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueCode",
+                "path": "Extension.value[x]",
                 "short": "active|inactive|issued-in-error|revoked|pending",
                 "sliceName": "valueCode",
                 "type": [

@@ -29,10 +29,10 @@
             },
             {
                 "definition": "A reference to the endpoint",
-                "id": "Extension.valueReference:valueReference",
+                "id": "Extension.value[x]:valueReference",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueReference",
+                "path": "Extension.value[x]",
                 "short": "Endpoint reference",
                 "sliceName": "valueReference",
                 "type": [

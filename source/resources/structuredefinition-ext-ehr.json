@@ -49,10 +49,10 @@
             },
             {
                 "definition": "The developer of the EHR product",
-                "id": "Extension.extension:developer.valueString:valueString",
+                "id": "Extension.extension:developer.value[x]:valueString",
                 "label": "developer",
                 "min": 1,
-                "path": "Extension.extension.valueString",
+                "path": "Extension.extension.value[x]",
                 "short": "Developer",
                 "sliceName": "valueString",
                 "type": [
@@ -78,10 +78,10 @@
             },
             {
                 "definition": "The name of the EHR product",
-                "id": "Extension.extension:product.valueString:valueString",
+                "id": "Extension.extension:product.value[x]:valueString",
                 "label": "product",
                 "min": 1,
-                "path": "Extension.extension.valueString",
+                "path": "Extension.extension.value[x]",
                 "short": "Product",
                 "sliceName": "valueString",
                 "type": [
@@ -107,10 +107,10 @@
             },
             {
                 "definition": "Version of the EHR product",
-                "id": "Extension.extension:version.valueString:valueString",
+                "id": "Extension.extension:version.value[x]:valueString",
                 "label": "version",
                 "min": 1,
-                "path": "Extension.extension.valueString",
+                "path": "Extension.extension.value[x]",
                 "short": "Version",
                 "sliceName": "valueString",
                 "type": [
@@ -140,10 +140,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition"
                 },
                 "definition": "Latest EHR certification criteria the EHR product has been certified against (2011, 2014, 2015)",
-                "id": "Extension.extension:certificationEdition.valueCoding:valueCoding",
+                "id": "Extension.extension:certificationEdition.value[x]:valueCoding",
                 "label": "certificationEdition",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "Certification edition",
                 "sliceName": "valueCoding",
                 "type": [
@@ -172,10 +172,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/patientaccess"
                 },
                 "definition": "Patient/consumer access options associated with the EHR product; a value indicates that the EHR has the capability and is actively using it",
-                "id": "Extension.extension:patientAccess.valueCodeableConcept:valueCodeableConcept",
+                "id": "Extension.extension:patientAccess.value[x]:valueCodeableConcept",
                 "label": "patientAccess",
                 "min": 1,
-                "path": "Extension.extension.valueCodeableConcept",
+                "path": "Extension.extension.value[x]",
                 "short": "Patient access",
                 "sliceName": "valueCodeableConcept",
                 "type": [
@@ -201,10 +201,10 @@
             },
             {
                 "definition": "Unique ID assigned by the ONC-authorized certification body (ONC-ACB) certifying this product",
-                "id": "Extension.extension:certificationID.valueString:valueString",
+                "id": "Extension.extension:certificationID.value[x]:valueString",
                 "label": "certificationID",
                 "min": 1,
-                "path": "Extension.extension.valueString",
+                "path": "Extension.extension.value[x]",
                 "short": "Certification ID",
                 "sliceName": "valueString",
                 "type": [

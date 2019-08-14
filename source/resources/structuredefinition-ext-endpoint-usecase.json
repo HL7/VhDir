@@ -54,10 +54,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/usecasetype"
                 },
                 "definition": "Type of services supported by this endpoint",
-                "id": "Extension.extension:type.valueCodeableConcept:valueCodeableConcept",
+                "id": "Extension.extension:type.value[x]:valueCodeableConcept",
                 "label": "type",
                 "min": 1,
-                "path": "Extension.extension.valueCodeableConcept",
+                "path": "Extension.extension.value[x]",
                 "short": "Type",
                 "sliceName": "valueCodeableConcept",
                 "type": [
@@ -83,10 +83,10 @@
             },
             {
                 "definition": "URI to the published standard (e.g. HL7 implementation guide)",
-                "id": "Extension.extension:standard.valueUri:valueUri",
+                "id": "Extension.extension:standard.value[x]:valueUri",
                 "label": "standard",
                 "min": 1,
-                "path": "Extension.extension.valueUri",
+                "path": "Extension.extension.value[x]",
                 "short": "Standard",
                 "sliceName": "valueUri",
                 "type": [

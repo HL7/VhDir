@@ -26,11 +26,11 @@
             },
             {
                 "definition": "The period during which the alias was used",
-                "id": "Extension.valuePeriod:valuePeriod",
+                "id": "Extension.value[x]:valuePeriod",
                 "label": "period",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valuePeriod",
+                "path": "Extension.value[x]",
                 "short": "Period",
                 "sliceName": "valuePeriod",
                 "type": [

@@ -66,10 +66,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype"
                 },
                 "definition": "Type of digital certificate (TLS/SSL; device; identity; group)",
-                "id": "Extension.extension:type.valueCoding:valueCoding",
+                "id": "Extension.extension:type.value[x]:valueCoding",
                 "label": "type",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "type",
                 "sliceName": "valueCoding",
                 "type": [
@@ -98,10 +98,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse"
                 },
                 "definition": "Purpose of the digital certificate (digsig; keyEncipherment)",
-                "id": "Extension.extension:use.valueCoding:valueCoding",
+                "id": "Extension.extension:use.value[x]:valueCoding",
                 "label": "use",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "use",
                 "sliceName": "valueCoding",
                 "type": [
@@ -131,10 +131,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard"
                 },
                 "definition": "The standard associated with the digital certificate (x.509v3)",
-                "id": "Extension.extension:certificateStandard.valueCoding:valueCoding",
+                "id": "Extension.extension:certificateStandard.value[x]:valueCoding",
                 "label": "certificateStandard",
                 "min": 1,
-                "path": "Extension.extension.valueCoding",
+                "path": "Extension.extension.value[x]",
                 "short": "Certificate standard",
                 "sliceName": "valueCoding",
                 "type": [
@@ -193,10 +193,10 @@
             },
             {
                 "definition": "Expiration date of the certificate",
-                "id": "Extension.extension:expirationDate.valueDate:valueDate",
+                "id": "Extension.extension:expirationDate.value[x]:valueDate",
                 "label": "expirationDate",
                 "min": 1,
-                "path": "Extension.extension.valueDate",
+                "path": "Extension.extension.value[x]",
                 "short": "Expiration date",
                 "sliceName": "valueDate",
                 "type": [
@@ -225,10 +225,10 @@
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework"
                 },
                 "definition": "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)",
-                "id": "Extension.extension:trustFramework.valueCodeableConcept:valueCodeableConcept",
+                "id": "Extension.extension:trustFramework.value[x]:valueCodeableConcept",
                 "label": "trustFramework",
                 "min": 1,
-                "path": "Extension.extension.valueCodeableConcept",
+                "path": "Extension.extension.value[x]",
                 "short": "Trust framework",
                 "sliceName": "valueCodeableConcept",
                 "type": [

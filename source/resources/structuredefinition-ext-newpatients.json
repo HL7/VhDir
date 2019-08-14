@@ -58,10 +58,10 @@
             },
             {
                 "definition": "Whether the practitioner/service/location is accepting new patients",
-                "id": "Extension.extension:acceptingPatients.valueBoolean:valueBoolean",
+                "id": "Extension.extension:acceptingPatients.value[x]:valueBoolean",
                 "label": "acceptingPatients",
                 "min": 1,
-                "path": "Extension.extension.valueBoolean",
+                "path": "Extension.extension.value[x]",
                 "short": "Accepting patients",
                 "sliceName": "valueBoolean",
                 "type": [
@@ -87,10 +87,10 @@
             },
             {
                 "definition": "The healthcare provider insurance network for which the practitioner/service/location is accepting new patients.",
-                "id": "Extension.extension:network.valueReference:valueReference",
+                "id": "Extension.extension:network.value[x]:valueReference",
                 "label": "network",
                 "min": 1,
-                "path": "Extension.extension.valueReference",
+                "path": "Extension.extension.value[x]",
                 "short": "network",
                 "sliceName": "valueReference",
                 "type": [

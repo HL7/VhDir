@@ -26,11 +26,11 @@
             },
             {
                 "definition": "Represents an external point of contact responsible for handling communications with this entity",
-                "id": "Extension.valueReference:valueReference",
+                "id": "Extension.value[x]:valueReference",
                 "label": "viaintermediary",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valueReference",
+                "path": "Extension.value[x]",
                 "short": "Via intermediary",
                 "sliceName": "valueReference",
                 "type": [

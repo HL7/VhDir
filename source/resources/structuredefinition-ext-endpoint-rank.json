@@ -26,11 +26,11 @@
             },
             {
                 "definition": "Order established by a Role, Organization... for Endpoints capable of transferring the same content (1 = highest)",
-                "id": "Extension.valuePositiveInt:valuePositiveInt",
+                "id": "Extension.value[x]:valuePositiveInt",
                 "label": "rank",
                 "min": 1,
                 "mustSupport": true,
-                "path": "Extension.valuePositiveInt",
+                "path": "Extension.value[x]",
                 "short": "Rank",
                 "sliceName": "valuePositiveInt",
                 "type": [

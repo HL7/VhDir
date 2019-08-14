@@ -52,10 +52,10 @@
                     "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week"
                 },
                 "definition": "Days of the week - mon|tue|wed|thu|fri|sat|sun",
-                "id": "Extension.extension:daysOfWeek.valueCode:valueCode",
+                "id": "Extension.extension:daysOfWeek.value[x]:valueCode",
                 "label": "daysOfWeek",
                 "min": 1,
-                "path": "Extension.extension.valueCode",
+                "path": "Extension.extension.value[x]",
                 "short": "Days of the week - mon|tue|wed|thu|fri|sat|sun",
                 "sliceName": "valueCode",
                 "type": [
@@ -81,10 +81,10 @@
             },
             {
                 "definition": "Always available? e.g. 24 hour service",
-                "id": "Extension.extension:allDay.valueBoolean:valueBoolean",
+                "id": "Extension.extension:allDay.value[x]:valueBoolean",
                 "label": "allDay",
                 "min": 1,
-                "path": "Extension.extension.valueBoolean",
+                "path": "Extension.extension.value[x]",
                 "short": "All day",
                 "sliceName": "valueBoolean",
                 "type": [
@@ -110,10 +110,10 @@
             },
             {
                 "definition": "Opening time of day (ignored if allDay = true)",
-                "id": "Extension.extension:availableStartTime.valueTime:valueTime",
+                "id": "Extension.extension:availableStartTime.value[x]:valueTime",
                 "label": "availableStartTime",
                 "min": 1,
-                "path": "Extension.extension.valueTime",
+                "path": "Extension.extension.value[x]",
                 "short": "Available start time",
                 "sliceName": "valueTime",
                 "type": [
@@ -139,10 +139,10 @@
             },
             {
                 "definition": "Closing time of day (ignored if allDay = true)",
-                "id": "Extension.extension:availableEndTime.valueTime:valueTime",
+                "id": "Extension.extension:availableEndTime.value[x]:valueTime",
                 "label": "availableEndTime",
                 "min": 1,
-                "path": "Extension.extension.valueTime",
+                "path": "Extension.extension.value[x]",
                 "short": "Available end time",
                 "sliceName": "valueTime",
                 "type": [
