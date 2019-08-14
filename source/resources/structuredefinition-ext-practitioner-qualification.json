@@ -179,7 +179,7 @@
                 "id": "Extension.extension:history.extension:period.value[x]:valuePeriod",
                 "label": "period",
                 "min": 1,
-                "path": "Extension.extension.Extension.value[x]",
+                "path": "Extension.extension.extension.value[x]",
                 "short": "Period",
                 "sliceName": "valuePeriod",
                 "type": [
