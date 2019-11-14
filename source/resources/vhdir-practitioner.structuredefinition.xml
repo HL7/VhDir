@@ -350,7 +350,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/identifier-type"/>
 			</binding>
 			<mapping>
 				<identity value="v2"/>
@@ -1825,7 +1825,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+				<valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/identifier-type"/>
 			</binding>
 			<mapping>
 				<identity value="v2"/>

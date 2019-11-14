@@ -6,7 +6,7 @@
    "list": [
       {
          "version": "current",
-         "fhir-version": "4.0.0",
+         "fhir-version": "4.0.1",
          "desc": "Continuous Integration Build (latest in version control)",
          "path": "http://build.fhir.org/ig/HL7/VhDir",
          "status": "ci-build",

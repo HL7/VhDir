@@ -27,4 +27,4 @@
 [contained]: ({{site.data.fhir.path}}/references#contained.html) "FHIR contained resource documentation"
 [General Guidance](general-guidance.html)
 [Technical Guidance](technical-guidance.html)
-[Bulk Data and Subscriptions]: bulk-data.html
+[Bulk Data and Subscriptions](bulk-data.html)

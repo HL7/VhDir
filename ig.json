@@ -1,7 +1,7 @@
 {
   "canonicalBase": "http://hl7.org/fhir/uv/vhdir",
   "source": "ig.xml",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "name": "ValidatedHealthcareDirectory",
   "paths": {
     "resources": [
@@ -1110,7 +1110,13 @@
       "package": "hl7.fhir.us.core",
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core",
-      "version": "3.0.0"
+      "version": "3.1.0"
+    },
+    {
+      "package": "hl7.fhir.uv.bulkdata",
+      "name": "bulkdata",
+      "location": "http://hl7.org/fhir/uv/bulkdata",
+      "version": "1.0.0"
     }
   ],
   "status": "draft",
