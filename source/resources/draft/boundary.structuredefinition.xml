@@ -72,7 +72,7 @@
 			<fixedUri value="localName"/>
 		</element>
 		<element id="Extension.extension:localName.value[x]:valueString">
-			<path value="Extension.extension.valueString"/>
+			<path value="Extension.extension.value[x]"/>
 			<sliceName value="valueString"/>
 			<label value="localName"/>
 			<short value="Description"/>

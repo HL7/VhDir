@@ -45,7 +45,7 @@
 			<fixedUri value="target"/>
 		</element>
 		<element id="Extension.extension:target.value[x]:valueReference">
-			<path value="Extension.extension.valueReference"/>
+			<path value="Extension.Extension.value[x]"/>
 			<sliceName value="valueReference"/>
 			<label value="target"/>
 			<short value="Target"/>
@@ -151,7 +151,7 @@
 			<fixedUri value="validationProcess"/>
 		</element>
 		<element id="Extension.extension:validationProcess.value[x]:valueCodeableConcept">
-			<path value="Extension.extension.valueCodeableConcept"/>
+			<path value="Extension.extension.value[x]"/>
 			<sliceName value="valueCodeableConcept"/>
 			<label value="validationProcess"/>
 			<short value="Validation process"/>
@@ -300,7 +300,7 @@
 			<fixedUri value="sourceOrg"/>
 		</element>
 		<element id="Extension.extension:primarySource.extension:sourceOrg.value[x]:valueReference">
-			<path value="Extension.extension.extension.valueReference"/>
+			<path value="Extension.extension.Extension.value[x]"/>
 			<sliceName value="valueReference"/>
 			<label value="sourceOrg"/>
 			<definition value="Reference to the primary source"/>
@@ -322,7 +322,7 @@
 			<fixedUri value="sourceType"/>
 		</element>
 		<element id="Extension.extension:primarySource.extension:sourceType.value[x]:valueCodeableConcept">
-			<path value="Extension.extension.extension.valueCodeableConcept"/>
+			<path value="Extension.extension.extension.value[x]"/>
 			<sliceName value="valueCodeableConcept"/>
 			<label value="sourceType"/>
 			<short value="Type of primary source"/>
@@ -344,7 +344,7 @@
 			<fixedUri value="sourceValidationProcess"/>
 		</element>
 		<element id="Extension.extension:primarySource.extension:sourceValidationProcess.value[x]:valueCodeableConcept">
-			<path value="Extension.extension.extension.valueCodeableConcept"/>
+			<path value="Extension.extension.extension.value[x]"/>
 			<sliceName value="valueCodeableConcept"/>
 			<label value="sourceValidationProcess"/>
 			<short value="Source validation process"/>
@@ -481,7 +481,7 @@
 			<fixedUri value="attestationSource"/>
 		</element>
 		<element id="Extension.extension:attestation.extension:attestationSource.value[x]:valueReference">
-			<path value="Extension.extension.extension.valueReference"/>
+			<path value="Extension.extension.Extension.value[x]"/>
 			<sliceName value="valueReference"/>
 			<label value="attestationSource"/>
 			<short value="Attestation source"/>
@@ -504,7 +504,7 @@
 			<fixedUri value="attestationOrg"/>
 		</element>
 		<element id="Extension.extension:attestation.extension:attestationOrg.value[x]:valueReference">
-			<path value="Extension.extension.extension.valueReference"/>
+			<path value="Extension.extension.Extension.value[x]"/>
 			<sliceName value="valueReference"/>
 			<label value="attestationOrg"/>
 			<short value="Attestation organization"/>
@@ -527,7 +527,7 @@
 			<fixedUri value="attestationMethod"/>
 		</element>
 		<element id="Extension.extension:attestation.extension:attestationMethod.value[x]:valueCodeableConcept">
-			<path value="Extension.extension.extension.valueCodeableConcept"/>
+			<path value="Extension.extension.extension.value[x]"/>
 			<sliceName value="valueCodeableConcept"/>
 			<label value="attestationMethod"/>
 			<short value="Attestation method"/>
@@ -685,7 +685,7 @@
 			<fixedUri value="validatorOrg"/>
 		</element>
 		<element id="Extension.extension:validator.extension:validatorOrg.value[x]:valueReference">
-			<path value="Extension.extension.extension.valueReference"/>
+			<path value="Extension.extension.Extension.value[x]"/>
 			<sliceName value="valueReference"/>
 			<label value="validatorOrg"/>
 			<short value="Validator organization"/>
