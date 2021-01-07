@@ -6,7 +6,7 @@ idna==2.7
 isodate==0.6.0
 jdcal==1.4
 Jinja2==2.10
-lxml==4.2.5
+lxml==4.6.2
 MarkupSafe==1.0
 mccabe==0.6.1
 numpy==1.15.3
