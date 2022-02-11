@@ -48,6 +48,7 @@ archive
 sandbox
 capstmnt_markup
 foo
+
 # Altova files #
 ################
 *.spp
@@ -78,3 +79,7 @@ source/resources/ig-new.json
 source/resources/ig-new.xml
 source/resources/ig-validation-parameters.json
 source/resources/ig-expansion-parameters.json
+
+# Editor Environments #
+#######################
+.vs/
