@@ -1170,6 +1170,7 @@
   "broken-links": "warning",
   "title": "Validated Healthcare Directory",
   "working-dir": "/Users/ehaas/Documents/FHIR/VhDir/",
+  "copyrightYear": "2018+",
   "topofpage": "true",
   "special-urls": [
     "urn:oid:2.16.840.1.113883.6.238"
