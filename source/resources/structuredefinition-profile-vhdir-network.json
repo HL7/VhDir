@@ -230,8 +230,7 @@
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
-                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"
+                            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
                         ]
                     }
                 ]
