@@ -23,7 +23,7 @@
     "InsurancePlan"
   ],
   "type": "string",
-  "expression": "InsurancePlan.name|InsurancePlan.alias",
+  "expression": "name|alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
