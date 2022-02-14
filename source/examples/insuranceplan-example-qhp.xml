@@ -87,6 +87,7 @@
 		<!-- describes medical benefits -->
 		<type>
 			<coding>
+				<system value="http://example.org/coverage-type"/>
 				<code value="medical"/>
 				<display value="Medical"/>
 			</coding>
@@ -100,6 +101,7 @@
 			<!-- basic primary care visit -->
 			<type>
 				<coding>
+					<system value="http://example.org/benefit-type"/>
 					<code value="001"/>
 					<display value="Primary care visit to treat an injury or illness"/>
 				</coding>
@@ -116,6 +118,7 @@
 		<!-- describes dental benefits -->
 		<type>
 			<coding>
+				<system value="http://example.org/coverage-type"/>
 				<code value="dental"/>
 				<display value="Dental"/>
 			</coding>
@@ -130,6 +133,7 @@
 			<!-- biannual oral checkup -->
 			<type>
 				<coding>
+					<system value="http://example.org/benefit-type"/>
 					<code value="052"/>
 					<display value="Basic Dental Care – Adult"/>
 				</coding>
@@ -170,6 +174,7 @@
 		</identifier>
 		<type>
 			<coding>
+				<system value="http://example.org/planlevel"/>
 				<code value="bronze"/>
 				<display value="Bronze"/>
 			</coding>
@@ -188,6 +193,7 @@
 			<!-- Describes the plan's deductible -->
 			<type>
 				<coding>
+					<system value="http://example.org/cost-type"/>
 					<code value="deductible"/>
 					<display value="Deductible"/>
 				</coding>
@@ -205,6 +211,7 @@
 			<!-- Describes the costs associated with the medical coverage options -->
 			<category>
 				<coding>
+					<system value="http://example.org/cost-category"/>
 					<code value="medical"/>
 					<display value="Medical"/>
 				</coding>
@@ -213,6 +220,7 @@
 				<!-- $50 copay for primary care visits with an in-network preferred provider -->
 				<type>
 					<coding>
+						<system value="http://example.org/benefit-type"/>
 						<code value="001"/>
 						<display value="Primary care visit to treat an injury or illness"/>
 					</coding>
@@ -220,6 +228,7 @@
 				<cost>
 					<type>
 						<coding>
+							<system value="http://example.org/cost-type"/>
 							<code value="copay"/>
 							<display value="Copay"/>
 						</coding>
@@ -247,6 +256,7 @@
 			<!-- describes the costs associated with dental coverage -->
 			<category>
 				<coding>
+					<system value="http://example.org/cost-category"/>
 					<code value="dental"/>
 					<display value="Dental"/>
 				</coding>
@@ -255,6 +265,7 @@
 				<!-- 10% coinsurance for routine oral checkup with an in-network dental provider -->
 				<type>
 					<coding>
+						<system value="http://example.org/cost-type"/>
 						<code value="052"/>
 						<display value="Basic Dental Care – Adult"/>
 					</coding>
@@ -262,6 +273,7 @@
 				<cost>
 					<type>
 						<coding>
+							<system value="http://example.org/costing"/>
 							<code value="coinsurance"/>
 							<display value="Coinsurance"/>
 						</coding>

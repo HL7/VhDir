@@ -1179,7 +1179,9 @@
   "publisher": "HL7 International - Patient Admistration Working Group",
   "pub_url": "http://www.hl7.org/Special/Committees/pafm/index.cfm",
   "fixed-business-version": "0.2.0",
+  "jurisdiction": "001",
   "allviews": "true",
+  "suppressedWarningFile": "suppressed-messages.txt",
   "no-inactive-codes": "false",
   "npm-name": "hl7.fhir.uv.vhdir",
   "extraTemplates": [

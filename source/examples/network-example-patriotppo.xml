@@ -12,13 +12,6 @@
         </valuePeriod>
     </extension>
 
-    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference"> <!-- This network is active in the DC metro area -->
-        <valueReference>
-            <reference value="Location/wash-dc-metro"/>
-            <display value="Washington, DC metro area"/>
-        </valueReference>
-    </extension>
-
     <identifier> <!-- An identifier for this network, assigned during the qualified health plan application process -->
         <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
             <valueCode value="active"/>

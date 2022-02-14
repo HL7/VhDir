@@ -215,6 +215,7 @@
 			<extension url="history">
 				<extension url="status">
 					<valueCoding>
+						<system value="http://example.org/org-qual-status"/>
 						<code value="active"/>
 						<display value="active"/>
 						<userSelected value="true"/>
@@ -298,6 +299,7 @@
 			<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency">
 			<valueCodeableConcept>
 				<coding>
+					<system value="http://example.org/comms-proficiency"/>
 					<code value="5"/>
 					<display value="Native or bilingual proficiency"/>
 					<userSelected value="true"/>
