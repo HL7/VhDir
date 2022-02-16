@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package-list>
+   <package version="current"
+            path="http://build.fhir.org/ig/HL7/vhdir"
+            status="ci-build"/>
+   <package version="0.2.0"
+            path="http://hl7.org/fhir/uv/vhdir/2018Sep/"
+            status="ballot"/>
+   <package version="0.1.0"
+            path="http://hl7.org/fhir/uv/vhdir/2018Jan/"
+            status="draft"/>
+</package-list>

@@ -1,0 +1,47 @@
+
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vhdir-practitionerrole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[193]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CareTeam/cardiologycareteam1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[235]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Endpoint/direct321.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[236]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/ffcardiology.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[237]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/independencerehab1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[238]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/independencerehab2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[239]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/hcs-ws.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[240]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource InsurancePlan/insuranceplan1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[241]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Location/wash-dc-metro.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[244]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Location/loc-ws.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[245]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/patriotppo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[246]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/foundingfathers.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[247]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/homeland.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[248]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/mtvernon.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[249]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/patriotdental.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[250]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/independencerehab.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[251]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Organization/monumentHIE.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[252]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource OrganizationAffiliation/orgrole2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[253]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource OrganizationAffiliation/orgrole1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[254]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/practitionerrole1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[255]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[256]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource VerificationResult/example-license.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[257]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/womens-shelter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[258]"]}
+,

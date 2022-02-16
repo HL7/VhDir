@@ -1,4 +1,4 @@
-{
+<json>{
    "package-id": "hl7.fhir.uv.vhdir",
    "title": "Validated Healthcare Directory",
    "canonical": "http://hl7.org/fhir/uv/vhdir",
@@ -33,3 +33,4 @@
    ],
    "category": "Administration"
 }
+</json>
