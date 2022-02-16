@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\insuranceplan1 - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.242"}
+    h3,h4,h5,h6{--heading-prefix:"6.242"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>insuranceplan1</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="InsurancePlan-insuranceplan1.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="InsurancePlan-insuranceplan1.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example InsurancePlan: insuranceplan1</h2>
+
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource &quot;insuranceplan1&quot; </p></div><p><b>identifier</b>: HIOS product ID: 1234567891 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: Bronze <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-payercharacteristics.html">VhDir Payer Characteristics Code System</a>#bronze)</span></p><p><b>name</b>: Patriot PPO Standard</p><p><b>alias</b>: Patriot Plus</p><p><b>period</b>: 2018-06-06 --&gt; 2019-01-01</p><p><b>ownedBy</b>: <a href="Organization-homeland.html">Organization/homeland: Homeland Health Insurance</a> &quot;Homeland Health Insurance&quot;</p><p><b>administeredBy</b>: <a href="Organization-homeland.html">Organization/homeland: Homeland Health Insurance</a> &quot;Homeland Health Insurance&quot;</p><p><b>coverageArea</b>: <a href="Location-wash-dc-metro.html">Location/wash-dc-metro: Washington, DC metro area</a> &quot;Washington, DC metro area&quot;</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Purpose</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>General information <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-contactentity-type.html">Contact entity type</a>#PATINF &quot;Patient&quot;)</span></td><td>ph: 202-123-5555, <a href="mailto:info@homelandinc.org">info@homelandinc.org</a></td></tr></table><p><b>endpoint</b>: <span>: patriot plan endpoint hub</span></p><p><b>network</b>: </p><ul><li><a href="Organization-patriotppo.html">Organization/patriotppo: Patriot Preferred Provider Network</a> &quot;Patriot Preferred Provider Network&quot;</li><li><a href="Organization-patriotdental.html">Organization/patriotdental: Patriot Dental Provider Network</a> &quot;Patriot Dental Provider Network&quot;</li></ul><blockquote><p><b>coverage</b></p><p><b>type</b>: Coverage related to medical inpatient, outpatient, diagnostic, and preventive care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (coverage-type#medical &quot;Medical&quot;)</span></p><p><b>network</b>: <a href="Organization-patriotppo.html">Organization/patriotppo: Patriot Preferred Provider Network</a> &quot;Patriot Preferred Provider Network&quot;</p><blockquote><p><b>benefit</b></p><p><b>type</b>: Primary care visit to treat an injury or illness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (benefit-type#001)</span></p><p><b>requirement</b>: N/A</p><h3>Limits</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>unlimited <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td></tr></table></blockquote></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: Coverage related to dental care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (coverage-type#dental &quot;Dental&quot;)</span></p><p><b>network</b>: <a href="Organization-patriotdental.html">Organization/patriotdental: Patriot Dental Provider Network</a> &quot;Patriot Dental Provider Network&quot;</p><blockquote><p><b>benefit</b></p><p><b>type</b>: Periodic oral checkup <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (benefit-type#052 &quot;Basic Dental Care – Adult&quot;)</span></p><p><b>requirement</b>: N/A</p><h3>Limits</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>2 visit/yr<span style="background: LightGoldenRodYellow"> (Details: UCUM code {visit}/a = '{visit}/a')</span></td><td>biannual oral checkup <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td></tr></table></blockquote></blockquote><blockquote><p><b>plan</b></p><p><b>identifier</b>: HIOS plan ID: 123456789101112 (OFFICIAL)</p><p><b>type</b>: Bronze <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (planlevel#bronze)</span></p><p><b>coverageArea</b>: <a href="Location-wash-dc-metro.html">Location/wash-dc-metro: Washington, DC metro area</a> &quot;Washington, DC metro area&quot;</p><p><b>network</b>: <a href="Organization-patriotdental.html">Organization/patriotdental: Patriot Dental Provider Network</a> &quot;Patriot Dental Provider Network&quot;</p><blockquote><p><b>generalCost</b></p><p><b>type</b>: Deductible <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cost-type#deductible)</span></p><p><b>groupSize</b>: 1</p><p><b>comment</b>: Includes all prescription and medical costs for in-network providers</p></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: Medical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cost-category#medical)</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: Primary care visit to treat an injury or illness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (benefit-type#001)</span></p><h3>Costs</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Applicability</b></td><td><b>Qualifiers</b></td><td><b>Value</b></td></tr><tr><td>*</td><td>Copay <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cost-type#copay)</span></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-applicability.html">Benefit cost applicability</a>#in-network)</span></td><td>in-network preferred provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>50 dollars<span style="background: LightGoldenRodYellow"> (Details: urn:iso:std:iso:4217 code USD = 'United States dollar')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: Dental <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cost-category#dental)</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: Basic Dental Care – Adult <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cost-type#052)</span></p><h3>Costs</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Applicability</b></td><td><b>Qualifiers</b></td><td><b>Value</b></td></tr><tr><td>*</td><td>Coinsurance <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (costing#coinsurance)</span></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-applicability.html">Benefit cost applicability</a>#in-network)</span></td><td>in-network provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>10 percent</td></tr></table></blockquote></blockquote></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

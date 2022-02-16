@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="digitalcertificate"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">TLS/SSL<a name="digitalcertificate-TLS.47SSL"> </a></td><td>TLS/SSL</td><td>A certificate for a device such as a server or router, used to authenticate the device and establish secure communications between the device and a client.</td></tr><tr><td style="white-space:nowrap">device<a name="digitalcertificate-device"> </a></td><td>Device</td><td>A certificate used to verify the identity of a device.</td></tr><tr><td style="white-space:nowrap">grp<a name="digitalcertificate-grp"> </a></td><td>Group</td><td>A certificate for a collection of individual subscribers acting in a shared capacity, such as an organization.</td></tr><tr><td style="white-space:nowrap">ind<a name="digitalcertificate-ind"> </a></td><td>Individual</td><td>A certificate for a single person.</td></tr><tr><td style="white-space:nowrap">role<a name="digitalcertificate-role"> </a></td><td>Role based</td><td>A certificate for a specific role on behalf of which a subscriber is authorized to act, such as a Chief Information Officer.</td></tr><tr><td style="white-space:nowrap">signing<a name="digitalcertificate-signing"> </a></td><td>Signing</td><td>A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash.</td></tr><tr><td style="white-space:nowrap">encrypt<a name="digitalcertificate-encrypt"> </a></td><td>Encryption</td><td>A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes.</td></tr><tr><td style="white-space:nowrap">auth<a name="digitalcertificate-auth"> </a></td><td>Authentication</td><td>A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity.</td></tr><tr><td style="white-space:nowrap">x.509v3<a name="digitalcertificate-x.46509v3"> </a></td><td>x.509v3</td><td>A standard published by the International Telecommunication Union’s Telecommunication Standardization Sector (ITU-T) that defines a framework for public-key certificates, including specification of data objects used to represent the certificates themselves.</td></tr><tr><td style="white-space:nowrap">direct<a name="digitalcertificate-direct"> </a></td><td>DirectTrust</td><td>DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange.</td></tr><tr><td style="white-space:nowrap">FPKI<a name="digitalcertificate-FPKI"> </a></td><td>Federal Public Key Infrastructure (FPKI)/Federal Trust Framework</td><td>The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue Personal Identity Verification (PIV) credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates.</td></tr><tr><td style="white-space:nowrap">SAFEBioP<a name="digitalcertificate-SAFEBioP"> </a></td><td>SAFE-BioPharma</td><td>The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements.</td></tr><tr><td style="white-space:nowrap">ONCTEF<a name="digitalcertificate-ONCTEF"> </a></td><td>ONC Trusted Exchange Framework (TEF)</td><td>The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs).</td></tr><tr><td style="white-space:nowrap">NATE<a name="digitalcertificate-NATE"> </a></td><td>National Association for Trusted Exchange (NATE)</td><td>NATE Blue Button for Consumers (NBB4C) Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols.</td></tr><tr><td style="white-space:nowrap">other<a name="digitalcertificate-other"> </a></td><td>other</td><td>A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
+  <version value="0.2.0"/>
+  <name value="VhDirDigitalCertificate"/>
+  <title value="VhDir Digital Certificate Code System"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Public key infrastructure (PKI) refers to the architecture, organizations, techniques, practices, and procedures that collectively support the implementation and operation of a certificate-based public key cryptographic system. A certificate is a set of data that uniquely identifies a key pair and an owner that is authorized to use the key pair. The certificate contains the owner’s public key and other information, and is digitally signed by a Certification Authority (i.e., a trusted party), thereby binding the public key to the owner. This code system includes terms describing various aspects of a certificate-based public key cryptographic system, such as applicable standards, types of certificates, uses of certificates, and associated trust frameworks."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="TLS/SSL"/>
+    <display value="TLS/SSL"/>
+    <definition value="A certificate for a device such as a server or router, used to authenticate the device and establish secure communications between the device and a client."/>
+  </concept>
+  <concept>
+    <code value="device"/>
+    <display value="Device"/>
+    <definition value="A certificate used to verify the identity of a device."/>
+  </concept>
+  <concept>
+    <code value="grp"/>
+    <display value="Group"/>
+    <definition value="A certificate for a collection of individual subscribers acting in a shared capacity, such as an organization."/>
+  </concept>
+  <concept>
+    <code value="ind"/>
+    <display value="Individual"/>
+    <definition value="A certificate for a single person."/>
+  </concept>
+  <concept>
+    <code value="role"/>
+    <display value="Role based"/>
+    <definition value="A certificate for a specific role on behalf of which a subscriber is authorized to act, such as a Chief Information Officer."/>
+  </concept>
+  <concept>
+    <code value="signing"/>
+    <display value="Signing"/>
+    <definition value="A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash."/>
+  </concept>
+  <concept>
+    <code value="encrypt"/>
+    <display value="Encryption"/>
+    <definition value="A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes."/>
+  </concept>
+  <concept>
+    <code value="auth"/>
+    <display value="Authentication"/>
+    <definition value="A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity."/>
+  </concept>
+  <concept>
+    <code value="x.509v3"/>
+    <display value="x.509v3"/>
+    <definition value="A standard published by the International Telecommunication Union’s Telecommunication Standardization Sector (ITU-T) that defines a framework for public-key certificates, including specification of data objects used to represent the certificates themselves."/>
+  </concept>
+  <concept>
+    <code value="direct"/>
+    <display value="DirectTrust"/>
+    <definition value="DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange."/>
+  </concept>
+  <concept>
+    <code value="FPKI"/>
+    <display value="Federal Public Key Infrastructure (FPKI)/Federal Trust Framework"/>
+    <definition value="The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue Personal Identity Verification (PIV) credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates."/>
+  </concept>
+  <concept>
+    <code value="SAFEBioP"/>
+    <display value="SAFE-BioPharma"/>
+    <definition value="The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements."/>
+  </concept>
+  <concept>
+    <code value="ONCTEF"/>
+    <display value="ONC Trusted Exchange Framework (TEF)"/>
+    <definition value="The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs)."/>
+  </concept>
+  <concept>
+    <code value="NATE"/>
+    <display value="National Association for Trusted Exchange (NATE)"/>
+    <definition value="NATE Blue Button for Consumers (NBB4C) Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+    <definition value="A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework."/>
+  </concept>
+</CodeSystem>

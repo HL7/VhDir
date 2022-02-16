@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="healthcareservice-eligibility"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-eligibility defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">adult<a name="healthcareservice-eligibility-adult"> </a></td><td>Adult</td><td>Eligibility for this service requires the patient to be of legal age.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-eligibility"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_cs_healthcareservice_eligibility"/>
+  <title value="VhDir Healthcare Service Eligibility"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes for documenting the attributes of eligibility for health care services."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="adult"/>
+    <display value="Adult"/>
+    <definition value="Eligibility for this service requires the patient to be of legal age."/>
+  </concept>
+</CodeSystem>

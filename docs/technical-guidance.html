@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7-FHIR-UV-VHDIR\Technical Guidance - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.2"}
+    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>Technical Guidance</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Technical Guidance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+  <!-- ---
+title: Technical Guidance for VHDir Implementations
+layout: default
+active: technical-guidance
+topofpage: true
+sectionnumbering: true
+F: http://build.fhir.org/
+
+--- -->
+
+  <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc' -->
+<p><strong>Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#validated-healthcare-directory-concept-diagram" id="markdown-toc-validated-healthcare-directory-concept-diagram">Validated Healthcare Directory Concept Diagram</a></li>
+  <li><a href="#attestation" id="markdown-toc-attestation">Attestation</a></li>
+  <li><a href="#validation" id="markdown-toc-validation">Validation</a></li>
+  <li><a href="#exchange" id="markdown-toc-exchange">Exchange</a></li>
+  <li><a href="#restricted-content" id="markdown-toc-restricted-content">Restricted Content</a></li>
+  <li><a href="#redundancy--ambiguity-across-resources" id="markdown-toc-redundancy--ambiguity-across-resources">Redundancy &amp; Ambiguity Across Resources</a></li>
+</ul>
+
+<hr/>
+
+  <!-- end TOC -->
+
+<h2 id="validated-healthcare-directory-concept-diagram">Validated Healthcare Directory Concept Diagram</h2>
+
+<p>This diagram depicts the high-level conceptual design of a central source of validated healthcare directory data.</p>
+
+<figure class="figure"><a name="l369">​</a>
+<figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
+  <img src="assets/images/diagram5.jpg" alt="conceptDiagram" class="figure-img img-responsive img-rounded center-block"/>
+</figure>
+
+<p>In this diagram, RESTful FHIR APIs facilitate the movement data into and out of a validated healthcare directory (VHDir) at different points, including:</p>
+<ul>
+  <li>Attestation: Individuals and organizations (via an authorized representative) attest to information about themselves for inclusion in the VHDir. See <a href="#attestation">below</a> for more information about attestation.</li>
+  <li>Validation: An implementer of a VHDir (not shown in the diagram) may validate attested data against primary sources, thereby verifying the truthfulness and accuracy of the attested data. For example, an implementer might validate a provider’s medical license against records maintained by a state licensure board. Validation may occur initially, when attested data is first submitted, and/or on a regular basis as determined by the VHDir implementer and/or applicable laws, regulations, or policies. See <a href="#validation">below</a> for more information about validation.</li>
+  <li>Exchange: A VHDir would make validated healthcare directory data available to local workflow environments to support various business needs. Local workflow environments include, but are not limited to, payer organizations, provider organizations, health information exchanges (HIEs), health information service providers (HISPs), government agencies, and any other entities that maintain a healthcare directory and/or have a need for validated provider data. See <a href="#exchange">below</a> for more information about exchange.</li>
+</ul>
+
+<h2 id="attestation">Attestation</h2>
+
+<p>Attestation describes the process by which authorized entities submit information about themselves, their roles, their relationships, etc. for inclusion in a healthcare directory.</p>
+
+<p>Guidance in this section is primarily intended to describe expectations for implementers using a FHIR API to manage attestation. An implementer’s unique implementation context, including local business needs, applicable laws/regulations/policies, usability considerations, etc. will determine an implementer’s approach to many of the attestation considerations described in this section. As we do not anticipate every implementer will use the same approach to attestation, we have not provided a set of attestation profiles or defined an attestation API. Implementers SHALL make any attestation requirements, including but not limited to profiles and/or API documentation, available to any stakeholders involved in the attestation process.</p>
+
+<p>We acknowledge that implementers may use processes other than a FHIR API, such as paper-based forms, to obtain attested data. Such processes are considered out of scope for this guide.</p>
+
+<p>This guide covers multiple attestation scenarios:</p>
+<ul>
+  <li>Individual provider attesting to their information</li>
+  <li>Authorized representative attesting to an individual provider’s information</li>
+  <li>Authorized representative attesting to an organization’s information</li>
+  <li>Authorized representative attesting to a payer organization’s information</li>
+  <li>Submission of attested data by an authorized intermediary (e.g. another system that maintains attested data)</li>
+</ul>
+
+<p>Each of these scenarios may encompass different sets of “permitted” data. For example, an individual provider attesting to her own information may not have the right to also attest to information about an organization she works for. These “rights” are assigned by each implementation of a validated healthcare directory, and can help prevent the submission of duplicate records. In general:</p>
+<ul>
+  <li>An individual practitioner (or authorized representative) may attest to their own demographic information (e.g. name, birthdate, gender, etc.) and information about their relationships with organizations, locations, services, care teams, and health insurance provider networks.
+    <ul>
+      <li>Information represented using the Practitioner, PractitionerRole, Endpoint, and CareTeam profiles</li>
+    </ul>
+  </li>
+  <li>A provider organization (through an authorized representative) may attest to its own demographic information (e.g. name, address, contact info, etc.), services, locations, care teams and other organizations it owns/manages, and its relationships with other organizations, providers, and health insurance provider networks
+    <ul>
+      <li>Information represented using the Organization, PractitionerRole, OrganizationAffiliation, HealthcareService, CareTeam, Location, and Endpoint profiles</li>
+      <li>In cases where individual practitioners operate as solo practitioners without a relationship to a legal organization, implementers should consider representing the individual using both a Practitioner and Organization resource and assigning the “organization” rights to the individual.</li>
+    </ul>
+  </li>
+  <li>A payer organization (through an authorized representative) may attest to its own demographic information (e.g. name, address, contact info, etc.), services, locations, care teams, other organizations, health insurance provider networks and plans it owns/manages, and its relationships with other organizations and providers.
+    <ul>
+      <li>Information represented as Organization, OrganizationAffiliation, HealthcareService, CareTeam, Location, Endpoint, Network, and InsurancePlan profiles</li>
+    </ul>
+  </li>
+  <li>An authorized intermediary may submit attested data on behalf of any of the previously described stakeholders. An intermediary should not submit data that has not been attested to, such as data that has been “scraped” from public sources. An example of an intermediary could be a state directory that collects information from providers in its jurisdiction, and then passes that information to a national directory.</li>
+</ul>
+
+<p>Additionally, implementers may set requirements for the minimum amount of data different groups of stakeholders must attest to. For example, a US implementation might require all licensed providers to attest to their National Provider Identifier (NPI). In general, implementers might specify different minimum attestation requirements across three classes of stakeholders:</p>
+<ul>
+  <li>Licensed billing providers (e.g. doctors, nurses)</li>
+  <li>Non-licensed billing providers (e.g. medical equipment suppliers)</li>
+  <li>Ancillary personnel (e.g. administrative staff)</li>
+</ul>
+
+<p>We expect stakeholders will typically use a <a href="https://smarthealthit.org/">SMART on FHIR application</a> to help attesters manage the attestation process (i.e. to submit attested data in the form of FHIR resources via a RESTful API). Such an application may be offered by an entity maintaining a validated healthcare directory or owned by the stakeholder(s) submitting attested data.</p>
+
+<p>Before accepting attested data, a validated healthcare directory should have policies to ensure:</p>
+<ul>
+  <li>Any attester application has successfully registered and integrated with the validated healthcare directory.</li>
+  <li>Attesters have successfully completed any identify proofing requirements.</li>
+  <li>Any credentials or digital certificates that must be exchanged have been exchanged, validated, and are functional.</li>
+  <li>The validated healthcare directory has set and made available any permissions/rights that govern the scope of data an attester may submit.</li>
+  <li>Any representatives/intermediaries submitting data on behalf of an individual/entity have been appropriately authorized.</li>
+</ul>
+
+<p>Once these preconditions have been met, a typical attestation workflow might involve:</p>
+<ul>
+  <li>An attester application is pre-populated with data about the individual making the attestation, such as any known demographic information.
+    <ul>
+      <li>For example, the attester application may be pre-populated with data from the attester’s EHR system.</li>
+      <li>The attester application may query the validated healthcare directory for existing resources about the attester, which can be updated or used to pre-populate data in the application.</li>
+    </ul>
+  </li>
+  <li>The application user enters the appropriate information and submits their attestation.
+    <ul>
+      <li>Submission of attested information may require some form of digital signature.</li>
+      <li>The attester application may perform a validation process to check the general structure, content, etc. of the submission.</li>
+    </ul>
+  </li>
+  <li>The attester application POSTs or PUTs the submitted data as FHIR resources to the validated healthcare directory’s attestation API.</li>
+  <li>The validated healthcare directory performs a validation process to check the general structure, content, etc. of the submission (e.g. checking consistency w/data type, required elements are present, references to existing resources are correct, codes are from appropriate value set etc.).
+    <ul>
+      <li>If there are no errors, the validated healthcare directory system assigns an ID to the posted resources and returns the appropriate HTTP status code as well as the url/id of each resource.</li>
+      <li>If there are errors, validated healthcare directory system rejects the operation and returns the appropriate HTTP status code and an OperationOutcome resource describing the error(s).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The FHIR specification <a href="http://build.fhir.org/http.html">describes multiple approaches</a> for managing interactions over an API, including:</p>
+<ul>
+  <li>Resources may be created, updated, patched, or deleted individually using the appropriate HTTP method (i.e. POST, PUT, PATCH, DELETE).</li>
+  <li>Resources may be created, updated, patched, or deleted as a collection using a Bundle. A Bundle can include a set of actions to perform on a server in a single HTTP request/response.
+    <ul>
+      <li>A Bundle of type “batch” requires that there “SHALL be no interdependencies between the different entries in the Bundle”, but failure of any one interaction does not cause the whole collection to fail.</li>
+      <li>A Bundle of type “transaction” is processed as a single atomic unit, and the whole collection will fail if any of the interactions defined in the Bundle fail.
+Additionally, the FHIR specification provides support for <a href="http://build.fhir.org/async.html">asynchronous interactions</a>, which may be necessary to facilitate processing of large amounts of data.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>This implementation guide is not prescriptive about which approach(es) a validated healthcare directory should use to manage attestation. However, as any attestation will likely involve the submission of multiple FHIR resources representing information about one or more attesters, transaction Bundles can alleviate the need for more complex logic to manage referential integrity in attested information.</p>
+
+<p>Implementations relying on individual API interactions or batch Bundles may have to specify an “order of operations” to ensure attested data can be successfully submitted to the validated healthcare directory server. For example, as a general guideline, resources may need to be submitted in the order of:</p>
+
+<ol>
+  <li>Organization</li>
+  <li>Endpoint</li>
+  <li>Practitioner</li>
+  <li>Location</li>
+  <li>Network</li>
+  <li>InsurancePlan</li>
+  <li>HealthcareService</li>
+  <li>OrganizationAffiliation</li>
+  <li>PractitionerRole</li>
+  <li>CareTeam</li>
+</ol>
+
+<p>Depending on the context of implementation, entities maintaining a validated healthcare directory may have to manage record collision or duplication (i.e. multiple attesters attempting to simultaneously submit updates to the same record, or multiple attesters attempting to attest about the same set of information).</p>
+
+<p>The FHIR specification provides some <a href="http://build.fhir.org/http.html#concurrency">guidance</a> on managing collisions using a combination of the ETag and If-Match header in an HTTP interaction. We recommend validated healthcare directory implementers use this approach.</p>
+
+<p>To manage duplicate records, we generally recommend that validated healthcare directory implementers define a robust validation process with policies for identifying and resolving duplicates. Any additional technical capabilities are beyond the scope of this implementation guide.</p>
+
+<h2 id="validation">Validation</h2>
+
+<p>Validation is critical for ensuring that users of a healthcare directory can rely upon the data in the directory. Validation can refer to separate but related processes: validation of FHIR resources (e.g. checking consistency w/data type, required elements are present, references to existing resources are correct, codes are from appropriate value set etc.), and validation of data against a primary source (e.g. verifying an address using Post Office records). This section describes the latter.</p>
+
+<p>Implementers will typically determine how primary source validation occurs operationally, based in part on the capabilities of the primary sources used for validation. For example, a primary source may already offer a mechanism like an API for validating content against its records. In other cases, an implementer may want to define an API that the primary source can access to push and/or pull content related to validation. Implementers may also consider less technical approaches, such as manual validation, or more stringent requirements, such as mailing a postcard to confirm an address.</p>
+
+<p>Certain types of data may have different validation requirements. For example, validating a relationship might require confirmation from each stakeholder participating in the relationship. Some data may have to be validated more frequently (e.g. license status), while other data can be validated once (e.g. education history) or not at all (e.g. a provider’s spoken language proficiency).</p>
+
+<p>As with attestation, we expect VHDir implementers may use different approaches to validation. Therefore, we have not defined specific validation requirements or a validation API. Implementers SHALL make any validation requirements, including but not limited to profiles and/or API documentation, available to any stakeholders involved in the validation process.</p>
+
+<p>This implementation guide includes a Validation profile for the VerificationResult resource for representing information about validation. The VerificationResult resource includes a number of data elements designed to record information pertaining to the validation processes defined by implementers, as well as the outcome of validation for a specific data element/set of elements/resource. The Validation profile includes data elements describing:</p>
+<ul>
+  <li>The validation process, including the frequency of validation/revalidation, validation status, validation date, and what it means if validation was unsuccessful</li>
+  <li>The primary source against which data was validated, including the identity of the primary source, how a validator communicates with the primary source, and whether the primary source can push updates about the data being validated</li>
+  <li>The source of the data being validated (i.e. the attester), including the identity of the attesting individual, organization, and/or authorized representative and when the information was attested</li>
+  <li>The entity conducting validation, including its identity and when it validated the data</li>
+  <li>The outcome of validation for the targeted data</li>
+</ul>
+
+<p>Validation may occur on the total contents of a resource, a collection of elements in a resource, or a single element. Any entity with access to a data element in a validated healthcare directory SHALL also have access to any validation information pertaining to that element.</p>
+
+<h2 id="exchange">Exchange</h2>
+
+<p>The primary focus of this implementation guide is a RESTful API for obtaining data from a Validated Healthcare Directory. The exchange API only supports a one-directional flow of information from a Validated Healthcare Directory into local environments (i.e. HTTP GETs).</p>
+
+<p>Any Validated Healthcare Directory IG conformant implementation:</p>
+
+<ul>
+  <li>SHALL support profiles: Organization, Practitioner, Location, PractitionerRole, Endpoint, Validation</li>
+  <li>SHOULD support profiles: HealthcareService, CareTeam, Network, ProductPlan, Restriction, OrganizationAffilliation</li>
+</ul>
+
+<p>In profiles, the “Must Support” flag indicates if data exists for the specific property, then it must be represented as defined in the VHDir IG. If the element is not available from a system, this is not required, and may be ommitted.</p>
+
+<p>Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.</p>
+
+<p>The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a Validated Healthcare Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant.</p>
+
+<p>We acknowledge that this decision has the potential to impact the interoperability of healthcare directory data and lead to variable implementations. However, we believe this risk is balanced by the potential for greater standardization of healthcare directory data enabled by this IG. We expect jurisdictions (e.g. countries) to further constrain this IG to meet their unique needs and publish the results openly and transparently.</p>
+
+<p>Especially with larger-scale implementations, healthcare directories may contain a large amount of data that will not be relevant to all use cases or local needs. Therefore, the exchange API defines a number of search parameters to enable users to express the scope of a subset of data they care to access. For example, implementations are required to support searches for Organizations based on address, endpoint, identifier, name/alias, and relationship to a parent organization. In general, parameters for selecting resources based on a business identifier, status, type, or relationship (i.e. reference) are required for all implementations. Most parameters may be used in combination with other parameters and support more “advanced” capabilities like modifiers and chains.</p>
+
+<p>The VHDir API currently supports one method for accessing directory data, a real-time pull. However, stakeholders may need other capabilities to support different business needs. For instance, stakeholders may need access to large amounts of VHDir data in a single session to either initially seed or refresh their local data repositories. Depending on the scope of data a stakeholder is trying to access, a real-time pull may not be the most effective method for acquiring large data sets. The FHIR specification provides support for <a href="http://build.fhir.org/async.html">asynchronous interactions</a>, which may be necessary for implementers to facilitate processing of large amounts of data.</p>
+
+<p>VHDir implementations should also consider providing capabilities for users to subscribe to receive updates about the data they care about. A subscribe/publish model can help alleviate the need for stakeholders to periodically query a VHDir for new data and/or changes to data they have already obtained.</p>
+
+<p>Likewise, implementers should consider supporting a mechanism to push urgent updates or changes to data that may impact business decisions or safety. For example, a VHDir might push updates about a practitioner’s record if their medical license is suspended or revoked.</p>
+
+<h2 id="restricted-content">Restricted Content</h2>
+
+<p>We envision VHDir as a public or semi-public utility. Stakeholders who agree to abide by the VHDir’s policies and procedures, signed a data use agreement, etc. would generally have access to VHDir data (note: we consider specific operational policies and legal agreements out of scope for this IG). However, in some implementations, a VHDir may include sensitive data that is not publicly accessible or accessible to every VHDir stakeholder. For example, an implementer might not want to make data about military personnel, emergency responders/volunteers, or domestic violence shelters available to everyone with access to a VHDir, or to users in a local environment who have access to data obtained from a VHDir.</p>
+
+<p>We expect that a VHDir’s operational policies and legal agreements will clearly delineate which data stakeholders can access, and if necessary, require stakeholders to protect the privacy/confidentiality of sensitive information in downstream local environments. As such, we have included a Restriction profile based on the Consent resource to convey any restrictions associated with a data element, collection of elements, or resource obtained from a VHDir.</p>
+
+<h2 id="redundancy--ambiguity-across-resources">Redundancy &amp; Ambiguity Across Resources</h2>
+
+<p>Although FHIR resources define discrete business objects, related resources may have similar data elements. For example, the HealthcareService, PractitionerRole, and Location resources all include data elements describing availability. In some circumstances, values in these common data elements may not align across resources, potentially creating ambiguity. For example, in this IG, a Location resource might indicate that the location no longer accepts patients. However, a PractitionerRole resource for a provider working at the location might indicate that the provider is accepting patients (e.g., by referral only). In some cases, these inconsistencies are valid representations of the complexities of healthcare systems. In others, data might have been entered in error, outdated, or otherwise inaccurate.</p>
+
+<p>The FHIR specification does not provide guidance on managing common elements across resources to reduce redundancy or ambiguity. Likewise, this implementation guide does not provide additional guidance. Implementations should consider further constraining profiles, creating invariants, or requiring data sources (e.g. attesters) to contribute data in a consistent format. Some resources include elements for describing exceptions, such as the availabilityExceptions field on HealthcareService, Location, and PractitionerRole. Additionally, validation processes may help discover and address inconsistencies across resources.</p>
+
+<hr/>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

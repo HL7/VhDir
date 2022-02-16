@@ -1,0 +1,159 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "example-license",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-license\" </p></div><p><b>target</b>: <a href=\"Practitioner-practitioner1.html\">Practitioner/practitioner1: George Washington</a> \" WASHINGTON\"</p><p><b>targetLocation</b>: Practitioner.qualification[0]</p><p><b>need</b>: periodic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-need.html\">Need</a>#periodic \"Periodic\")</span></p><p><b>status</b>: validated</p><p><b>statusDate</b>: 2018-01-23T10:45:00-05:00</p><p><b>validationType</b>: Primary Source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-type.html\">Validation-type</a>#primary)</span></p><p><b>validationProcess</b>: primary source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-process.html\">Validation-process</a>#primary)</span></p><p><b>frequency</b>: Do Once per 1 years</p><p><b>lastPerformed</b>: 2018-01-23T10:45:00-05:00</p><p><b>nextScheduled</b>: 2019-01-23</p><p><b>failureAction</b>: Fatal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-failure-action.html\">Failure-action</a>#fatal)</span></p><h3>PrimarySources</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>Type</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td><td><b>CanPushUpdates</b></td><td><b>PushTypeAvailable</b></td></tr><tr><td>*</td><td><span>: DC Board of Medicine</span></td><td>License Board <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-primary-source-type.html\">Primary-source-type</a>#lic-board)</span></td><td>via email <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\">VerificationResult Communication Method</a>#manual \"Manual\")</span></td><td>Successful <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-status.html\">Validation-status</a>#successful)</span></td><td>2018-01-23</td><td>Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-can-push-updates.html\">Can-push-updates</a>#yes)</span></td><td>Issuing source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-push-type-available.html\">Push-type-available</a>#source \"As defined by source\")</span></td></tr></table><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td><td><b>SourceIdentityCertificate</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-practitioner1.html\">Practitioner/practitioner1: George Washington</a> \" WASHINGTON\"</td><td>Manual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\">VerificationResult Communication Method</a>#manual)</span></td><td>2018-01-09</td><td>TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==</td></tr></table><h3>Validators</h3><table class=\"grid\"><tr><td>-</td><td><b>Organization</b></td><td><b>IdentityCertificate</b></td></tr><tr><td>*</td><td><span>: DC Board of Medicine</span></td><td>VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t</td></tr></table></div>"
+  },
+  "target": [
+    {
+      "reference": "Practitioner/practitioner1",
+      "display": "George Washington"
+    }
+  ],
+  "targetLocation": [
+    "Practitioner.qualification[0]"
+  ],
+  "need": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/need",
+        "code": "periodic",
+        "display": "Periodic"
+      }
+    ],
+    "text": "periodic"
+  },
+  "status": "validated",
+  "statusDate": "2018-01-23T10:45:00-05:00",
+  "validationType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/validation-type",
+        "code": "primary",
+        "display": "Primary Source"
+      }
+    ],
+    "text": "Primary Source"
+  },
+  "validationProcess": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/validation-process",
+          "code": "primary",
+          "display": "primary source"
+        }
+      ]
+    }
+  ],
+  "frequency": {
+    "repeat": {
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "a"
+    }
+  },
+  "lastPerformed": "2018-01-23T10:45:00-05:00",
+  "nextScheduled": "2019-01-23",
+  "failureAction": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/failure-action",
+        "code": "fatal",
+        "display": "Fatal"
+      }
+    ],
+    "text": "Fatal"
+  },
+  "primarySource": [
+    {
+      "who": {
+        "display": "DC Board of Medicine"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/primary-source-type",
+              "code": "lic-board",
+              "display": "License Board",
+              "userSelected": true
+            }
+          ]
+        }
+      ],
+      "communicationMethod": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+              "code": "manual",
+              "display": "Manual"
+            }
+          ],
+          "text": "via email"
+        }
+      ],
+      "validationStatus": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/validation-status",
+            "code": "successful",
+            "display": "Successful"
+          }
+        ],
+        "text": "Successful"
+      },
+      "validationDate": "2018-01-23",
+      "canPushUpdates": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/can-push-updates",
+            "code": "yes",
+            "display": "Yes"
+          }
+        ],
+        "text": "Yes"
+      },
+      "pushTypeAvailable": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/push-type-available",
+              "code": "source",
+              "display": "As defined by source"
+            }
+          ],
+          "text": "Issuing source"
+        }
+      ]
+    }
+  ],
+  "attestation": {
+    "who": {
+      "reference": "Practitioner/practitioner1",
+      "display": "George Washington"
+    },
+    "communicationMethod": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+          "code": "manual",
+          "display": "Manual",
+          "userSelected": true
+        }
+      ]
+    },
+    "date": "2018-01-09",
+    "sourceIdentityCertificate": "TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="
+  },
+  "validator": [
+    {
+      "organization": {
+        "display": "DC Board of Medicine"
+      },
+      "identityCertificate": "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"
+    }
+  ]
+}

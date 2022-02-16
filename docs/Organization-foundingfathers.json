@@ -1,0 +1,237 @@
+{
+  "resourceType": "Organization",
+  "id": "foundingfathers",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"foundingfathers\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vhdir-organization.html\">VhDir Organization</a></p></div><p><b>identifier</b>: NPI: 1345678910 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov \"Healthcare Provider\")</span></p><p><b>name</b>: Founding Fathers Memorial Hospital</p><p><b>alias</b>: DC Memorial Hospital</p><p><b>telecom</b>: ph: 202-101-0123</p><p><b>address</b>: 330 C Street SW, Washington, DC 20201, USA(WORK)</p><p><b>partOf</b>: <a href=\"Organization-mtvernon.html\">Organization/mtvernon: Mount Vernon Health System</a> \"Mount Vernon Health System\"</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>Administrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-contactentity-type.html\">Contact entity type</a>#ADMIN)</span></td><td>Abigail Adams(OFFICIAL)</td><td>ph: 202-444-5555(WORK)</td><td>330 C Street SW, Washington, DC 20201, USA(WORK)</td></tr></table><p><b>endpoint</b>: <a href=\"Endpoint-direct321.html\">Endpoint/direct321: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address</a> \"Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address\"</p></div>"
+  },
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ],
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1345678910",
+      "period": {
+        "start": "2004-04-21T11:57:00-05:00"
+      },
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        }
+      ],
+      "text": "Hospital"
+    }
+  ],
+  "name": "Founding Fathers Memorial Hospital",
+  "alias": [
+    "DC Memorial Hospital"
+  ],
+  "_alias": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics",
+                "code": "historical",
+                "display": "Historical"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period",
+          "valuePeriod": {
+            "start": "1975",
+            "end": "2000"
+          }
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary",
+          "valueReference": {
+            "reference": "Location/loc-ffmh",
+            "display": "Founding Fathers Memorial Hospital"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ],
+      "system": "phone",
+      "value": "202-101-0123"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 38.8859395
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -77.016469
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "330 C Street SW, Washington, DC 20201, USA",
+      "line": [
+        "330 C Street SW"
+      ],
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20201",
+      "country": "USA"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/mtvernon",
+    "display": "Mount Vernon Health System"
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Abigail Adams",
+        "family": "Adams",
+        "given": [
+          "Abigail"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ]
+            }
+          ],
+          "system": "phone",
+          "value": "202-444-5555",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+            "extension": [
+              {
+                "url": "latitude",
+                "valueDecimal": 38.8859395
+              },
+              {
+                "url": "longitude",
+                "valueDecimal": -77.016469
+              }
+            ]
+          }
+        ],
+        "use": "work",
+        "type": "both",
+        "text": "330 C Street SW, Washington, DC 20201, USA",
+        "line": [
+          "330 C Street SW"
+        ],
+        "city": "Washington",
+        "state": "DC",
+        "postalCode": "20201",
+        "country": "USA"
+      }
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/direct321",
+      "display": "Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address"
+    }
+  ]
+}

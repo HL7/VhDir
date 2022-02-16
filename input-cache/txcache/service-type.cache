@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "code" : "576",
+  "display" : "Rehabilitation"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Rehabilitation",
+  "code" : "576",
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "severity" : "warning",
+  "error" : "The system \"Rehabilitation\" http://terminology.hl7.org/CodeSystem/service-type was found but did not contain enough information to properly validate the code (mode = example) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "code" : "165",
+  "display" : "Cardiology"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Cardiology",
+  "code" : "165",
+  "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+  "severity" : "warning",
+  "error" : "The system \"Cardiology\" http://terminology.hl7.org/CodeSystem/service-type was found but did not contain enough information to properly validate the code (mode = example) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

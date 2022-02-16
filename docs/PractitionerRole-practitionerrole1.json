@@ -1,0 +1,264 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "practitionerrole1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"practitionerrole1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vhdir-practitionerrole.html\">VhDir Practitioner Role</a></p></div><p><b>VhDir Network Reference</b>: <a href=\"Organization-patriotppo.html\">Organization/patriotppo: Patriot Preferred Provider Network</a> \"Patriot Preferred Provider Network\"</p><blockquote><p><b>VhDir Digitalcertificate</b></p><p><b>value</b>: Individual (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code ind = 'Individual', stated as 'Individual')</p><p><b>value</b>: Signing (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code signing = 'Signing', stated as 'Signing')</p><p><b>value</b>: x.509v3 (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code x.509v3 = 'x.509v3', stated as 'x.509v3')</p><p><b>value</b>: TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==</p><p><b>value</b>: 1970-09-03</p><p><b>value</b>: DirectTrust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-digitalcertificate.html\">VhDir Digital Certificate Code System</a>#direct)</span></p></blockquote><blockquote><p><b>VhDir Newpatients</b></p><p><b>value</b>: true</p><p><b>value</b>: <a href=\"Organization-patriotppo.html\">Organization/patriotppo: Patriot Preferred Provider Network</a> \"Patriot Preferred Provider Network\"</p></blockquote><p><b>VhDir New Patient Profile</b>: New patients are accepted via referral from providers participating in Patriot PPO</p><blockquote><p><b>VhDir Qualification</b></p><p><b>value</b>: DEA Registration Number: CW1234563 (OFFICIAL)</p><p><b>value</b>: DEA Registration Number <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: <span>: US Drug Enforcement Administration (DEA)</span></p><p><b>value</b>: active (Details: http://hl7.org/fhir/resource-status code active = 'active', stated as 'active')</p><p><b>value</b>: 2016-02-26 --&gt; 2019-02-26</p></blockquote><p><b>identifier</b>: Hospital ID: provider276 (SECONDARY)</p><p><b>active</b>: true</p><p><b>period</b>: 2016-02-22 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner1.html\">Practitioner/practitioner1: Geroge Washington</a> \" WASHINGTON\"</p><p><b>organization</b>: <a href=\"Organization-foundingfathers.html\">Organization/foundingfathers: Founding Fathers Memorial Hospital</a> \"Founding Fathers Memorial Hospital\"</p><p><b>code</b>: Doctor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#doctor)</span></p><p><b>specialty</b>: Cardiology <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394579002)</span></p><p><b>location</b>: <a href=\"Location-loc-ffmh-hvi.html\">Location/loc-ffmh-hvi: Founding Fathers Memorial Hospital, Heart and Vascular Institute</a> \"Founding Fathers Memorial Hospital Heart and Vascular Institute\"</p><p><b>healthcareService</b>: <a href=\"HealthcareService-ffcardiology.html\">HealthcareService/ffcardiology: Founding Fathers Memorial Hospital cardiac services</a> \"Founding Fathers Memorial Hospital Heart and Vascular Services\"</p><p><b>telecom</b>: ph: 202-101-0123</p><h3>AvailableTimes</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu</td><td>09:00:00</td><td>12:00:00</td></tr></table><p><b>endpoint</b>: <a href=\"Endpoint-direct321.html\">Endpoint/direct321: Direct address for the Founding Fathers Heart and Vascular Institute</a> \"Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address\"</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/patriotppo",
+        "display": "Patriot Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate",
+      "extension": [
+        {
+          "url": "type",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "ind",
+            "display": "Individual"
+          }
+        },
+        {
+          "url": "use",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "signing",
+            "display": "Signing"
+          }
+        },
+        {
+          "url": "certificateStandard",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "x.509v3",
+            "display": "x.509v3"
+          }
+        },
+        {
+          "url": "certificate",
+          "valueString": "TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="
+        },
+        {
+          "url": "expirationDate",
+          "valueDate": "1970-09-03"
+        },
+        {
+          "url": "trustFramework",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+                "code": "direct",
+                "display": "DirectTrust",
+                "userSelected": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients",
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueBoolean": true
+        },
+        {
+          "url": "network",
+          "valueReference": {
+            "reference": "Organization/patriotppo",
+            "display": "Patriot Preferred Provider Network"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+      "valueString": "New patients are accepted via referral from providers participating in Patriot PPO"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification",
+      "extension": [
+        {
+          "url": "identifier",
+          "valueIdentifier": {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PRN",
+                  "display": "Provider number"
+                }
+              ],
+              "text": "DEA Registration Number"
+            },
+            "system": "https://www.deadiversion.usdoj.gov/",
+            "value": "CW1234563",
+            "period": {
+              "start": "2016-02-26",
+              "end": "2019-02-26"
+            },
+            "assigner": {
+              "identifier": {
+                "value": "US Drug Enforcement Administration (DEA)"
+              },
+              "display": "US Drug Enforcement Administration (DEA)"
+            }
+          }
+        },
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "text": "DEA Registration Number"
+          }
+        },
+        {
+          "url": "issuer",
+          "valueReference": {
+            "identifier": {
+              "value": "US Drug Enforcement Administration (DEA)"
+            },
+            "display": "US Drug Enforcement Administration (DEA)"
+          }
+        },
+        {
+          "url": "status",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/resource-status",
+            "code": "active",
+            "display": "active"
+          }
+        },
+        {
+          "url": "period",
+          "valuePeriod": {
+            "start": "2016-02-26",
+            "end": "2019-02-26"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ],
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "http://example.org/www.foundingfathersmemorial.com",
+      "value": "provider276",
+      "period": {
+        "start": "2016-02-22"
+      },
+      "assigner": {
+        "reference": "Organization/foundingfathers",
+        "display": "Founding Fathers Memorial Hospital"
+      }
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2016-02-22"
+  },
+  "practitioner": {
+    "reference": "Practitioner/practitioner1",
+    "display": "Geroge Washington"
+  },
+  "organization": {
+    "reference": "Organization/foundingfathers",
+    "display": "Founding Fathers Memorial Hospital"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+          "code": "doctor",
+          "display": "Doctor"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394579002",
+          "display": "Cardiology"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/loc-ffmh-hvi",
+      "display": "Founding Fathers Memorial Hospital, Heart and Vascular Institute"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/ffcardiology",
+      "display": "Founding Fathers Memorial Hospital cardiac services"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary",
+          "valueReference": {
+            "reference": "Location/loc-ffmh-hvi",
+            "display": "Founding Fathers Memorial Hospital, Heart and Vascular Institute"
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "202-101-0123"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/direct321",
+      "display": "Direct address for the Founding Fathers Heart and Vascular Institute"
+    }
+  ]
+}

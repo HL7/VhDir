@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="primarysourcepushtype"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-validation.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/validation</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-validation.html#validation-specific">specific</a></td><td>Specific requested changes</td><td>The sender will send specific changes to the healthcare directory as determined by agreement.</td></tr><tr><td><a href="CodeSystem-validation.html#validation-any">any</a></td><td>Any changes</td><td>The sender will send all changes to the healthcare directory.</td></tr><tr><td><a href="CodeSystem-validation.html#validation-sourcedef">sourcedef</a></td><td>As defined by the source/sender</td><td>The sender will only send changes they have determined to be significant.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcepushtype"/>
+  <version value="0.2.0"/>
+  <name value="VhDirPrimarySourcePushType"/>
+  <title value="VhDir Primary Source Push Type"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that indicate the scope of data sent from a primary source of validated data to a validated healthcare directory when there is a push model (from the sender) for sending data."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
+      <concept>
+        <code value="specific"/>
+      </concept>
+      <concept>
+        <code value="any"/>
+      </concept>
+      <concept>
+        <code value="sourcedef"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

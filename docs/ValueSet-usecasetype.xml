@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="usecasetype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-usecase.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/usecasetype"/>
+  <version value="0.2.0"/>
+  <name value="VhDirUseCaseType"/>
+  <title value="VhDir Use Case Type"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for documenting business use case by a general grouping by business area."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase"/>
+    </include>
+  </compose>
+</ValueSet>

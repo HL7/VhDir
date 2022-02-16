@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="loc-ffmh-hvi"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "loc-ffmh-hvi" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vhdir-location.html">VhDir Location</a></p></div><p><b>VhDir Accessibility</b>: Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-accessibility.html">VhDir Accessibility Code System</a>#handiaccess "handicap accessible")</span></p><blockquote><p><b>VhDir Ehr</b></p><p><b>value</b>: Revolutionary Health</p><p><b>value</b>: Revolutionary Professional EHR</p><p><b>value</b>: 10.4.3</p><p><b>value</b>: ONC 2014 Certification (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics code 2014 = 'ONC 2014 Certification', stated as 'ONC 2014 Certification')</p><p><b>value</b>: patient portal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ehrcharacteristics.html">VhDir Ehr Characteristics Code System</a>#portal)</span></p><p><b>value</b>: 04282014-1111-2</p></blockquote><p><b>identifier</b>: id: main campus (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Institute</p><p><b>description</b>: Heart and Vascular Institute Specialty Wing</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#HOSP)</span></p><p><b>telecom</b>: ph: 202-101-0123(WORK)</p><p><b>address</b>: 330 C Street SW, Washington, DC 20201, USA(WORK)</p><p><b>physicalType</b>: Site <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-location-physical-type.html">Location type</a>#si)</span></p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>38.8859395</td><td>-77.016469</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-foundingfathers.html">Organization/foundingfathers: Founding Fathers Memorial Hospital</a> "Founding Fathers Memorial Hospital"</p><p><b>partOf</b>: <a href="Location-loc-ffmh.html">Location/loc-ffmh: Founding Fathers Memorial Hospital</a> "Founding Fathers Memorial Hospital"</p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility">
+  <!--  Indicates that this location is handicap accessible and can provide assistance to persons with disabilities  -->
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
+        <code value="handiaccess"/>
+        <display value="handicap accessible"/>
+      </coding>
+      <text value="Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr">
+  <!--  This location uses the Revolutionary Professional EHR v10.4.3. The EHR product is certified to the 2014 Edition requirements. The product includes a patient portal.  -->
+    <extension url="developer">
+      <valueString value="Revolutionary Health"/>
+    </extension>
+    <extension url="product">
+      <valueString value="Revolutionary Professional EHR"/>
+    </extension>
+    <extension url="version">
+      <valueString value="10.4.3"/>
+    </extension>
+    <extension url="certificationEdition">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
+        <code value="2014"/>
+        <display value="ONC 2014 Certification"/>
+      </valueCoding>
+    </extension>
+    <extension url="patientAccess">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
+          <code value="portal"/>
+          <display value="patient portal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="certificationID">
+      <valueString value="04282014-1111-2"/>
+    </extension>
+  </extension>
+  <identifier>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+  <!--  This location is the main campus for Founding Fathers Memorial Hospital  -->
+    <use value="secondary"/>
+    <system value="http://example.org/www.foundingfathersmemorial.com"/>
+    <value value="main campus"/>
+    <assigner>
+      <reference value="Organization/foundingfathers"/>
+      <display value="Founding Fathers Memorial Hospital"/>
+    </assigner>
+  </identifier>
+  <status value="active"/>
+<!--  this record is active  -->
+  <name value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
+  <description value="Heart and Vascular Institute Specialty Wing"/>
+  <type>
+  <!--  This location is a hospital  -->
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+      <userSelected value="true"/>
+    </coding>
+  </type>
+  <telecom>
+  <!--  Contact this location at any time of day by phone at 202-101-0123  -->
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <system value="phone"/>
+    <value value="202-101-0123"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+  <!--  This location's address is 330 C Street SW, Washington, DC 20201, USA  -->
+    <use value="work"/>
+    <type value="both"/>
+    <text value="330 C Street SW, Washington, DC 20201, USA"/>
+    <line value="330 C Street SW"/>
+    <city value="Washington"/>
+    <state value="DC"/>
+    <postalCode value="20201"/>
+    <country value="USA"/>
+  </address>
+  <physicalType>
+  <!--  This location is a collection of buildings or other locations such as a site or a campus  -->
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="si"/>
+      <display value="Site"/>
+      <userSelected value="true"/>
+    </coding>
+  </physicalType>
+  <position>
+  <!--  Coordinates of this location  -->
+    <longitude value="38.8859395"/>
+    <latitude value="-77.016469"/>
+  </position>
+  <managingOrganization>
+  <!--  This location is managed by Founding Fathers Memorial Hospital  -->
+    <reference value="Organization/foundingfathers"/>
+    <display value="Founding Fathers Memorial Hospital"/>
+  </managingOrganization>
+  <partOf>
+    <reference value="Location/loc-ffmh"/>
+    <display value="Founding Fathers Memorial Hospital"/>
+  </partOf>
+  <hoursOfOperation>
+  <!--  This location is always open  -->
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+  </hoursOfOperation>
+  <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
+</Location>

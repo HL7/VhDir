@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="insuranceplanbenefitcosttype"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-insuranceplan.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-copay">copay</a></td><td>Copay</td><td>Copay</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-individualcap">individualcap</a></td><td>Individual cap</td><td>Individual cap</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-familycap">familycap</a></td><td>Family cap</td><td>Family cap</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-coinsurance">coinsurance</a></td><td>Coinsurance</td><td>Coinsurance</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-deductible">deductible</a></td><td>Deductible</td><td>Deductible</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-in-network">in-network</a></td><td>In-network</td><td>In-network</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-out-of-network">out-of-network</a></td><td>Out-of-network</td><td>Out-of-network</td></tr><tr><td><a href="CodeSystem-insuranceplan.html#insuranceplan-other">other</a></td><td>Other</td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefitcosttype"/>
+  <version value="0.2.0"/>
+  <name value="VhDirInsPlanBenefitCostType"/>
+  <title value="VhDir Insurance Plan Benefit Cost Type"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that indicate the cost for a particular benefit on a plan."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan"/>
+      <concept>
+        <code value="copay"/>
+      </concept>
+      <concept>
+        <code value="individualcap"/>
+      </concept>
+      <concept>
+        <code value="familycap"/>
+      </concept>
+      <concept>
+        <code value="coinsurance"/>
+      </concept>
+      <concept>
+        <code value="deductible"/>
+      </concept>
+      <concept>
+        <code value="in-network"/>
+      </concept>
+      <concept>
+        <code value="out-of-network"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

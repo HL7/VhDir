@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="limit-unit"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-payercharacteristics.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-days">days</a></td><td>Days</td><td>Measure of service covered by the plan benefit  expressed in a definite number of days.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visit">visit</a></td><td>Visits</td><td>Measure of service covered by the plan benefit  expressed in a definite number of visits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-procedure">procedure</a></td><td>Procedures</td><td>Measure of service covered by the plan benefit  expressed  in a set of actions covered.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-admission">admission</a></td><td>Admissions</td><td>Measure of services covered by the benefit plan  expressed in relation to patient's acceptance for medical and nursing care in a hospital or other health care institution.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visithrs">visithrs</a></td><td>Hours per visit</td><td>Measure expresses how many hours per visit are covered by the insurance benefit plan.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-weekhrs">weekhrs</a></td><td>Hours per week</td><td>Measure expresses how many hours per week are covered by the insurance benefit plan.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-mthhrs">mthhrs</a></td><td>Hours per month</td><td>Measure expressed how many hours per month are covered by the insurance benefit plan.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-yrhrs">yrhrs</a></td><td>Hours per year</td><td>Measure expreses how many hours per year are covered by the insurance benfit plan.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-daysperwk">daysperwk</a></td><td>Days per week</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a week.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dayspermth">dayspermth</a></td><td>Days per month</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a month.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-daysperyr">daysperyr</a></td><td>Days per year</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a year.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-mthsperyr">mthsperyr</a></td><td>Months per year</td><td>Measure of service covered by the plan benefit expressed in a how many month are covered in a year.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visitsperday">visitsperday</a></td><td>Visits per day</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per day.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visitsperweek">visitsperweek</a></td><td>Visits per week</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per week.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visitspermth">visitspermth</a></td><td>Visits per month</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per month.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-visitsperyr">visitsperyr</a></td><td>Visits per year</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per year.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-lifetimevisits">lifetimevisits</a></td><td>Lifetime visits</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered through lifetime.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-txperweek">txperweek</a></td><td>Treatments per week</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a week.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-txpermnth">txpermnth</a></td><td>Treatments per month</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a month.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-txlifetime">txlifetime</a></td><td>Lifetime treatments</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a lifetime.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-admitslifetime">admitslifetime</a></td><td>Lifetime admissions</td><td>Measure of service covered by the plan benefit expressed in a definite number admission actions covered through lifetime.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-procperwk">procperwk</a></td><td>Procedures per week</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per week.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-procpermnth">procpermnth</a></td><td>Procedures per month</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per month.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-procperyr">procperyr</a></td><td>Procedures per year</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per year.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-proclifetime">proclifetime</a></td><td>Lifetime procedures</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per lifetime.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-daysperadmission">daysperadmission</a></td><td>Days per admission</td><td>Measure of service covered by the plan benefit expressed in a definite number of days covered for each individual admission.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-procperepi">procperepi</a></td><td>Procedures per episode</td><td>Measure of service covered by the plan benefit expressed in a definite number of procedures  covered for each individual treatment episode.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/limit-unit"/>
+  <version value="0.2.0"/>
+  <name value="VhDirLimitUnit"/>
+  <title value="VhDir Limit Unit"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that indicates the unit of any limit on a benefit in a product/plan."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics"/>
+      <concept>
+        <code value="days"/>
+      </concept>
+      <concept>
+        <code value="visit"/>
+      </concept>
+      <concept>
+        <code value="procedure"/>
+      </concept>
+      <concept>
+        <code value="admission"/>
+      </concept>
+      <concept>
+        <code value="visithrs"/>
+      </concept>
+      <concept>
+        <code value="weekhrs"/>
+      </concept>
+      <concept>
+        <code value="mthhrs"/>
+      </concept>
+      <concept>
+        <code value="yrhrs"/>
+      </concept>
+      <concept>
+        <code value="daysperwk"/>
+      </concept>
+      <concept>
+        <code value="dayspermth"/>
+      </concept>
+      <concept>
+        <code value="daysperyr"/>
+      </concept>
+      <concept>
+        <code value="mthsperyr"/>
+      </concept>
+      <concept>
+        <code value="visitsperday"/>
+      </concept>
+      <concept>
+        <code value="visitsperweek"/>
+      </concept>
+      <concept>
+        <code value="visitspermth"/>
+      </concept>
+      <concept>
+        <code value="visitsperyr"/>
+      </concept>
+      <concept>
+        <code value="lifetimevisits"/>
+      </concept>
+      <concept>
+        <code value="txperweek"/>
+      </concept>
+      <concept>
+        <code value="txpermnth"/>
+      </concept>
+      <concept>
+        <code value="txlifetime"/>
+      </concept>
+      <concept>
+        <code value="admitslifetime"/>
+      </concept>
+      <concept>
+        <code value="procperwk"/>
+      </concept>
+      <concept>
+        <code value="procpermnth"/>
+      </concept>
+      <concept>
+        <code value="procperyr"/>
+      </concept>
+      <concept>
+        <code value="proclifetime"/>
+      </concept>
+      <concept>
+        <code value="daysperadmission"/>
+      </concept>
+      <concept>
+        <code value="procperepi"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

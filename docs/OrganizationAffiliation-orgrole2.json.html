@@ -1,0 +1,353 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\orgrole2 - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.254"}
+    h3,h4,h5,h6{--heading-prefix:"6.254"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>orgrole2</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="OrganizationAffiliation-orgrole2.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="OrganizationAffiliation-orgrole2.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: orgrole2 - JSON Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+<p><a href="OrganizationAffiliation-orgrole2.json" no-download="true">Raw json</a> | <a href="OrganizationAffiliation-orgrole2.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation">resourceType</a>" : "OrganizationAffiliation",
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.id">id</a>" : "orgrole2",
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;orgrole2\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: member hospital: hosp32 (SECONDARY)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;Organization-monumentHIE.html\&quot;&gt;Organization/monumentHIE: Monument Health Information Exchange&lt;/a&gt; \&quot;Monument Health Information Exchange\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;participatingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-foundingfathers.html\&quot;&gt;Organization/foundingfathers: Founding Fathers Memorial Hospital&lt;/a&gt; \&quot;Founding Fathers Memorial Hospital\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hospital member &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-organization-role.html\&quot;&gt;Organization Affiliation Role&lt;/a&gt;#member \&quot;Member\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: &lt;span&gt;: Founding Fathers Memorial Hospital HIE endpoint&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "active"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "secondary",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NIIP",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "National Insurance Payor Identifier (Payor)",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a>" : true
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "member hospital"
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/www.monumentHIE.com",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "hosp32",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/monumentHIE",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Monument Health Information Exchange"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.organization">organization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/monumentHIE",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Monument Health Information Exchange"
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.participatingOrganization">participatingOrganization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/foundingfathers",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Founding Fathers Memorial Hospital"
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.code">code</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/organization-role",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "member",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Member"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Hospital member"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.endpoint">endpoint</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Founding Fathers Memorial Hospital HIE endpoint"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

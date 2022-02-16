@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="practitioner-qualification-wherevalid-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "practitioner-qualification-wherevalid-code" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-code</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: VhDir_sp_practitioner_qualification_wherevalid_code</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 International - Patient Administration Work Group</p><p><b>contact</b>: HL7 International - Patient Administration Work Group: <a href="http://www.hl7.org/Special/committees/pafm">http://www.hl7.org/Special/committees/pafm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select Practitioners with a qualification that is valid at the location indicated by the specified code</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: qualification-wherevalid-code</p><p><b>base</b>: Practitioner</p><p><b>type</b>: token</p><p><b>expression</b>: Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').as(CodeableConcept)</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-code"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_practitioner_qualification_wherevalid_code"/>
+  <status value="draft"/>
+  <date value="2018-05-23"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Select Practitioners with a qualification that is valid at the location indicated by the specified code"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="qualification-wherevalid-code"/>
+  <base value="Practitioner"/>
+  <type value="token"/>
+  <expression value="Practitioner.qualification.extension(&#39;http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification&#39;).extension(&#39;whereValid&#39;).as(CodeableConcept)"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

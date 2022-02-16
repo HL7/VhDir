@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/ValueSet/consent> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "consent"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-consent.html\"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/consent</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-consentscope.html\"><code>http://terminology.hl7.org/CodeSystem/consentscope</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/ValueSet/consent"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "VhDirConsent"];
+  fhir:ValueSet.title [ fhir:value "VhDir Consent Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes for use in defining access levels for sharing subsets of constrained content (as an example)"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/consent" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/ValueSet/consent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/ValueSet/consent.ttl> .
+
+# -------------------------------------------------------------------------------------
+

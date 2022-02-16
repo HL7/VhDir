@@ -1,0 +1,161 @@
+{
+  "resourceType": "Organization",
+  "id": "patriotppo",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"patriotppo\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vhdir-network.html\">VhDir Network</a></p></div><p><b>Period</b>: 2012-03-11 --&gt; (ongoing)</p><p><b>identifier</b>: Healthcare.gov Network ID: DCN001 (SECONDARY)</p><p><b>active</b>: true</p><p><b>type</b>: PPO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-network-type.html\">VhDir Network Type Code System</a>#ppo)</span></p><p><b>name</b>: Patriot Preferred Provider Network</p><p><b>alias</b>: Patriot PPO</p><p><b>address</b>: 101 Independence Ave SE, Washington, DC 20540(WORK)</p><p><b>partOf</b>: <a href=\"Organization-homeland.html\">Organization/homeland: Homeland Health Insurance</a> \"Homeland Health Insurance\"</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>Administrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-contactentity-type.html\">Contact entity type</a>#ADMIN)</span></td><td>James Madison</td><td>ph: 202-010-1234(WORK)</td><td>101 Independence Ave SE, Washington, DC 20540(WORK)</td></tr></table><p><b>endpoint</b>: <span>: homelandinsurance.org/services/network</span></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/organization-period",
+      "valuePeriod": {
+        "start": "2012-03-11"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ],
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NIIP",
+            "display": "National Insurance Payor Identifier (Payor)"
+          }
+        ],
+        "text": "Healthcare.gov Network ID"
+      },
+      "system": "https://www.qhpcertification.cms.gov/s/QHP",
+      "value": "DCN001",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
+          "code": "ppo",
+          "display": "PPO"
+        }
+      ]
+    }
+  ],
+  "name": "Patriot Preferred Provider Network",
+  "alias": [
+    "Patriot PPO"
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "both",
+      "text": "101 Independence Ave SE, Washington, DC 20540",
+      "line": [
+        "101 Independence Ave SE"
+      ],
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20540",
+      "country": "USA"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/homeland",
+    "display": "Homeland Health Insurance"
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "usual",
+        "text": "James Madison",
+        "family": "Madison",
+        "given": [
+          "James"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "09:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "17:00:00"
+                }
+              ]
+            }
+          ],
+          "system": "phone",
+          "value": "202-010-1234",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": "101 Independence Ave SE, Washington, DC 20540",
+        "line": [
+          "101 Independence Ave SE"
+        ],
+        "city": "Washington",
+        "state": "DC",
+        "postalCode": "20540",
+        "country": "USA"
+      }
+    }
+  ],
+  "endpoint": [
+    {
+      "display": "homelandinsurance.org/services/network"
+    }
+  ]
+}

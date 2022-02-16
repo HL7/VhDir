@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="qualification-status"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>QualificationStatusToResourceStatusCodeMapping (http://hl7.org/fhir/uv/vhdir/ConceptMap/qualification-status)</h2><p>Mapping from <a href="ValueSet-qualificationstatus.html">http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus</a> to <a href="http://hl7.org/fhir/R4/valueset-resource-status.html">http://hl7.org/fhir/ValueSet/resource-status</a></p><p>ACTIVE. Published on Feb 15, 2022, 8:43:27 PM by HL7 International - Patient Administration Work Group (HL7 International - Patient Administration Work Group: <a href="http://www.hl7.org/Special/committees/pafm">http://www.hl7.org/Special/com...</a>, <a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a>). Used by permission of HL7 International all rights reserved Creative Commons License</p><div><p>Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;</p>
+</div><br/><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>active</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>inactive</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>inactive</td></tr><tr><td>issued-in-error</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>error</td></tr><tr><td>revoked</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>suspended</td></tr><tr><td>pending</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>draft</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ConceptMap/qualification-status"/>
+  <version value="0.2.0"/>
+  <name value="QualificationStatusToResourceStatusCodeMapping"/>
+  <title value="VhDir Qualification Status Value Set – Status Code Mapping"/>
+  <status value="active"/>
+  <date value="2022-02-15T20:43:27-08:00"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <sourceCanonical value="http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"/>
+  <targetCanonical value="http://hl7.org/fhir/ValueSet/resource-status"/>
+  <group>
+    <source value="http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus"/>
+    <target value="http://hl7.org/fhir/ValueSet/resource-status"/>
+    <element>
+      <code value="active"/>
+      <display value="active"/>
+      <target>
+        <code value="active"/>
+        <display value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="inactive"/>
+      <display value="inactive"/>
+      <target>
+        <code value="inactive"/>
+        <display value="inactive"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="issued-in-error"/>
+      <display value="issued-in-error"/>
+      <target>
+        <code value="error"/>
+        <display value="error"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="revoked"/>
+      <display value="revoked"/>
+      <target>
+        <code value="suspended"/>
+        <display value="suspended"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="pending"/>
+      <display value="pending"/>
+      <target>
+        <code value="draft"/>
+        <display value="draft"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

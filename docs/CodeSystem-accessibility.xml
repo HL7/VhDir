@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="accessibility"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">cultcomp<a name="accessibility-cultcomp"> </a></td><td>Cultural competence</td><td>Provides services that meet the social, cultural, and linguistic needs of persons.</td></tr><tr><td style="white-space:nowrap">handiaccess<a name="accessibility-handiaccess"> </a></td><td>handicap accessible</td><td>Provides access to persons with disabilities.</td></tr><tr><td style="white-space:nowrap">adacomp<a name="accessibility-adacomp"> </a></td><td>ADA compliant</td><td>Provides access which complies with the Americans with Disabilities Act and/or amendments.</td></tr><tr><td style="white-space:nowrap">pubtrans<a name="accessibility-pubtrans"> </a></td><td>public transit options</td><td>Provides access using public transportation modes.</td></tr><tr><td style="white-space:nowrap">anssrvc<a name="accessibility-anssrvc"> </a></td><td>answering service</td><td>Provides capability to communicate when intended recipient is not immediately available.</td></tr><tr><td style="white-space:nowrap">vision<a name="accessibility-vision"> </a></td><td>vision</td><td>Provides services for visually impaired persons.</td></tr><tr><td style="white-space:nowrap">cognitive<a name="accessibility-cognitive"> </a></td><td>cognitive</td><td>Provides services for cognitively impaired persons.</td></tr><tr><td style="white-space:nowrap">mobility<a name="accessibility-mobility"> </a></td><td>mobility</td><td>Provides services for mobility impaired persons.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"/>
+  <version value="0.2.0"/>
+  <name value="VhDirAccessibility"/>
+  <title value="VhDir Accessibility Code System"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes for documenting the attributes of accessibility"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility"/>
+  <content value="complete"/>
+  <concept>
+    <code value="cultcomp"/>
+    <display value="Cultural competence"/>
+    <definition value="Provides services that meet the social, cultural, and linguistic needs of persons."/>
+  </concept>
+  <concept>
+    <code value="handiaccess"/>
+    <display value="handicap accessible"/>
+    <definition value="Provides access to persons with disabilities."/>
+  </concept>
+  <concept>
+    <code value="adacomp"/>
+    <display value="ADA compliant"/>
+    <definition value="Provides access which complies with the Americans with Disabilities Act and/or amendments."/>
+  </concept>
+  <concept>
+    <code value="pubtrans"/>
+    <display value="public transit options"/>
+    <definition value="Provides access using public transportation modes."/>
+  </concept>
+  <concept>
+    <code value="anssrvc"/>
+    <display value="answering service"/>
+    <definition value="Provides capability to communicate when intended recipient is not immediately available."/>
+  </concept>
+  <concept>
+    <code value="vision"/>
+    <display value="vision"/>
+    <definition value="Provides services for visually impaired persons."/>
+  </concept>
+  <concept>
+    <code value="cognitive"/>
+    <display value="cognitive"/>
+    <definition value="Provides services for cognitively impaired persons."/>
+  </concept>
+  <concept>
+    <code value="mobility"/>
+    <display value="mobility"/>
+    <definition value="Provides services for mobility impaired persons."/>
+  </concept>
+</CodeSystem>

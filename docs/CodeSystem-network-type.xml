@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="network-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ppo<a name="network-type-ppo"> </a></td><td>PPO</td><td>A Preferred Provider Organization (PPO) is a type of health plan that contracts with medical providers, such as hospitals and doctors, to create a network of participating providers. You pay less if you use providers that belong to the plan’s network. You can use doctors, hospitals, and providers outside of the network for an additional cost.</td></tr><tr><td style="white-space:nowrap">hmo<a name="network-type-hmo"> </a></td><td>HMO</td><td>A Health Maintenance Organization (HMO) is a type of health insurance plan that usually limits coverage to care from doctors who work for or contract with the HMO. It generally won't cover out-of-network care except in an emergency. HMOs often provide integrated care and focus on prevention and wellness.</td></tr><tr><td style="white-space:nowrap">aco<a name="network-type-aco"> </a></td><td>ACO</td><td>An Accountable Care Organization (ACO) is a group of health care providers who give coordinated care, chronic disease management, and thereby improve the quality of care patients get. The organization's payment is tied to achieving health care quality goals and outcomes that result in cost savings.</td></tr><tr><td style="white-space:nowrap">specialty<a name="network-type-specialty"> </a></td><td>Specialty</td><td>Focuses on a specific area of medicine, such as endocrinology or rheumatology.</td></tr><tr><td style="white-space:nowrap">dental<a name="network-type-dental"> </a></td><td>Dental</td><td>Benefits that help pay for the cost of visits to a dentist for basic or preventive services, like teeth cleaning, X-rays, and fillings.</td></tr><tr><td style="white-space:nowrap">vision<a name="network-type-vision"> </a></td><td>Vision</td><td>A health benefit that at least partially covers vision care, like eye exams and glasses.</td></tr><tr><td style="white-space:nowrap">pharmacy<a name="network-type-pharmacy"> </a></td><td>Pharmacy</td><td>Health insurance or plan that helps pay for prescription drugs and medications.</td></tr><tr><td style="white-space:nowrap">national<a name="network-type-national"> </a></td><td>National</td><td>In-network providers may be found nationally.</td></tr><tr><td style="white-space:nowrap">regional<a name="network-type-regional"> </a></td><td>Regional</td><td>In-network providers are confined to a specific region.</td></tr><tr><td style="white-space:nowrap">state<a name="network-type-state"> </a></td><td>State</td><td>In-network providers are confined to a specific state.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type"/>
+  <version value="0.2.0"/>
+  <name value="VhDirNetworkType"/>
+  <title value="VhDir Network Type Code System"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes for documenting network."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/uv/vhdir/ValueSet/network-type"/>
+  <content value="complete"/>
+  <concept>
+    <code value="ppo"/>
+    <display value="PPO"/>
+    <definition value="A Preferred Provider Organization (PPO) is a type of health plan that contracts with medical providers, such as hospitals and doctors, to create a network of participating providers. You pay less if you use providers that belong to the plan’s network. You can use doctors, hospitals, and providers outside of the network for an additional cost."/>
+  </concept>
+  <concept>
+    <code value="hmo"/>
+    <display value="HMO"/>
+    <definition value="A Health Maintenance Organization (HMO) is a type of health insurance plan that usually limits coverage to care from doctors who work for or contract with the HMO. It generally won&#39;t cover out-of-network care except in an emergency. HMOs often provide integrated care and focus on prevention and wellness."/>
+  </concept>
+  <concept>
+    <code value="aco"/>
+    <display value="ACO"/>
+    <definition value="An Accountable Care Organization (ACO) is a group of health care providers who give coordinated care, chronic disease management, and thereby improve the quality of care patients get. The organization&#39;s payment is tied to achieving health care quality goals and outcomes that result in cost savings."/>
+  </concept>
+  <concept>
+    <code value="specialty"/>
+    <display value="Specialty"/>
+    <definition value="Focuses on a specific area of medicine, such as endocrinology or rheumatology."/>
+  </concept>
+  <concept>
+    <code value="dental"/>
+    <display value="Dental"/>
+    <definition value="Benefits that help pay for the cost of visits to a dentist for basic or preventive services, like teeth cleaning, X-rays, and fillings."/>
+  </concept>
+  <concept>
+    <code value="vision"/>
+    <display value="Vision"/>
+    <definition value="A health benefit that at least partially covers vision care, like eye exams and glasses."/>
+  </concept>
+  <concept>
+    <code value="pharmacy"/>
+    <display value="Pharmacy"/>
+    <definition value="Health insurance or plan that helps pay for prescription drugs and medications."/>
+  </concept>
+  <concept>
+    <code value="national"/>
+    <display value="National"/>
+    <definition value="In-network providers may be found nationally."/>
+  </concept>
+  <concept>
+    <code value="regional"/>
+    <display value="Regional"/>
+    <definition value="In-network providers are confined to a specific region."/>
+  </concept>
+  <concept>
+    <code value="state"/>
+    <display value="State"/>
+    <definition value="In-network providers are confined to a specific state."/>
+  </concept>
+</CodeSystem>

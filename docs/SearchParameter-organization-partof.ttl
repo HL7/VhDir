@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "organization-partof"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"organization-partof\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: VhDir_sp_organization_partof</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Organization-partof\">http://hl7.org/fhir/SearchParameter/Organization-partof</a></p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 International - Patient Administration Work Group</p><p><b>contact</b>: HL7 International - Patient Administration Work Group: <a href=\"http://www.hl7.org/Special/committees/pafm\">http://www.hl7.org/Special/committees/pafm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select Organizations that are part of the specified organization</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: partof</p><p><b>base</b>: Organization</p><p><b>type</b>: reference</p><p><b>expression</b>: Organization.partOf</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: above, below</p><p><b>chain</b>: identifier, name, address, type</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof"];
+  fhir:SearchParameter.version [ fhir:value "0.2.0"];
+  fhir:SearchParameter.name [ fhir:value "VhDir_sp_organization_partof"];
+  fhir:SearchParameter.derivedFrom [
+     fhir:value "http://hl7.org/fhir/SearchParameter/Organization-partof";
+     fhir:link <http://hl7.org/fhir/SearchParameter/Organization-partof>
+  ];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2018-05-23"^^xsd:date];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "Select Organizations that are part of the specified organization"];
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:SearchParameter.code [ fhir:value "partof"];
+  fhir:SearchParameter.base [
+     fhir:value "Organization";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "Organization.partOf"];
+  fhir:SearchParameter.target [
+     fhir:value "Organization";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.modifier [
+     fhir:value "above";
+     fhir:index 0
+  ], [
+     fhir:value "below";
+     fhir:index 1
+  ];
+  fhir:SearchParameter.chain [
+     fhir:value "identifier";
+     fhir:index 0
+  ], [
+     fhir:value "name";
+     fhir:index 1
+  ], [
+     fhir:value "address";
+     fhir:index 2
+  ], [
+     fhir:value "type";
+     fhir:index 3
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/SearchParameter/organization-partof.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,10 @@
+{
+  "url": "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7-fhir-uv-vhdir",
+  "name": "ValidatedHealthcareDirectory",
+  "package-id": "hl7-fhir-uv-vhdir",
+  "ig-ver": "0.2.0",
+  "date": "Tue, 15 Feb, 2022 20:43:27 -0800",
+  "exception": "-1",
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

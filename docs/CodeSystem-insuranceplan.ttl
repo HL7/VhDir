@@ -1,0 +1,191 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "insuranceplan"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">premium<a name=\"insuranceplan-premium\"> </a></td><td>Premium</td><td>Premium</td></tr><tr><td style=\"white-space:nowrap\">deductible<a name=\"insuranceplan-deductible\"> </a></td><td>Deductible</td><td>Deductible</td></tr><tr><td style=\"white-space:nowrap\">cap<a name=\"insuranceplan-cap\"> </a></td><td>Cap</td><td>Cap</td></tr><tr><td style=\"white-space:nowrap\">self<a name=\"insuranceplan-self\"> </a></td><td>Self</td><td>Self</td></tr><tr><td style=\"white-space:nowrap\">selfplusone<a name=\"insuranceplan-selfplusone\"> </a></td><td>Self plus one</td><td>Self plus one</td></tr><tr><td style=\"white-space:nowrap\">selfandfamily<a name=\"insuranceplan-selfandfamily\"> </a></td><td>Self and family</td><td>Self and family</td></tr><tr><td style=\"white-space:nowrap\">medical<a name=\"insuranceplan-medical\"> </a></td><td>Medical</td><td>Nedical</td></tr><tr><td style=\"white-space:nowrap\">dental<a name=\"insuranceplan-dental\"> </a></td><td>Dental</td><td>Dental</td></tr><tr><td style=\"white-space:nowrap\">vision<a name=\"insuranceplan-vision\"> </a></td><td>Vision</td><td>Vision</td></tr><tr><td style=\"white-space:nowrap\">drug<a name=\"insuranceplan-drug\"> </a></td><td>Drug</td><td>Drug</td></tr><tr><td style=\"white-space:nowrap\">mentalhealth<a name=\"insuranceplan-mentalhealth\"> </a></td><td>Mental health</td><td>Mental health</td></tr><tr><td style=\"white-space:nowrap\">substanceabuse<a name=\"insuranceplan-substanceabuse\"> </a></td><td>Substance abuse</td><td>Substance abuse</td></tr><tr><td style=\"white-space:nowrap\">hospicehomehealth<a name=\"insuranceplan-hospicehomehealth\"> </a></td><td>Hospice and home health</td><td>Hospice and home health</td></tr><tr><td style=\"white-space:nowrap\">preventative<a name=\"insuranceplan-preventative\"> </a></td><td>Preventative</td><td>Preventative</td></tr><tr><td style=\"white-space:nowrap\">primarycareov<a name=\"insuranceplan-primarycareov\"> </a></td><td>Primary care office visit</td><td>Primary care office visit</td></tr><tr><td style=\"white-space:nowrap\">specialityov<a name=\"insuranceplan-specialityov\"> </a></td><td>Speciality care office visit</td><td>Speciality care office visit</td></tr><tr><td style=\"white-space:nowrap\">hospitalization<a name=\"insuranceplan-hospitalization\"> </a></td><td>Hospitalization</td><td>Hospitalization</td></tr><tr><td style=\"white-space:nowrap\">emergencyroom<a name=\"insuranceplan-emergencyroom\"> </a></td><td>Emergency room</td><td>Emergency room</td></tr><tr><td style=\"white-space:nowrap\">urgentcare<a name=\"insuranceplan-urgentcare\"> </a></td><td>Urgent care</td><td>Urgent care</td></tr><tr><td style=\"white-space:nowrap\">copay<a name=\"insuranceplan-copay\"> </a></td><td>Copay</td><td>Copay</td></tr><tr><td style=\"white-space:nowrap\">individualcap<a name=\"insuranceplan-individualcap\"> </a></td><td>Individual cap</td><td>Individual cap</td></tr><tr><td style=\"white-space:nowrap\">familycap<a name=\"insuranceplan-familycap\"> </a></td><td>Family cap</td><td>Family cap</td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"insuranceplan-coinsurance\"> </a></td><td>Coinsurance</td><td>Coinsurance</td></tr><tr><td style=\"white-space:nowrap\">in-network<a name=\"insuranceplan-in-network\"> </a></td><td>In-network</td><td>In-network</td></tr><tr><td style=\"white-space:nowrap\">out-of-network<a name=\"insuranceplan-out-of-network\"> </a></td><td>Out-of-network</td><td>Out-of-network</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"insuranceplan-other\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">q1<a name=\"insuranceplan-q1\"> </a></td><td>Cost Qualification</td><td>This is a sample cost qualification.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirinsuranceplan"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Insurance Plan Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This code system contains codes for documenting the various attributes of an Insurance Plan"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "premium" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Premium" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Premium" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "deductible" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Deductible" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Deductible" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "cap" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cap" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cap" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "self" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "selfplusone" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self plus one" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self plus one" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "selfandfamily" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self and family" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self and family" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "medical" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nedical" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "dental" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "vision" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vision" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Vision" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "drug" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "mentalhealth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mental health" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mental health" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "substanceabuse" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance abuse" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Substance abuse" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "hospicehomehealth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospice and home health" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospice and home health" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "preventative" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preventative" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Preventative" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "primarycareov" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Primary care office visit" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary care office visit" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "specialityov" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Speciality care office visit" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Speciality care office visit" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "hospitalization" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospitalization" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospitalization" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "emergencyroom" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency room" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Emergency room" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "urgentcare" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urgent care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Urgent care" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "copay" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Copay" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Copay" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "individualcap" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Individual cap" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Individual cap" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "familycap" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Family cap" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Family cap" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "coinsurance" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coinsurance" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Coinsurance" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "in-network" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In-network" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "In-network" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "out-of-network" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Out-of-network" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Out-of-network" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "q1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cost Qualification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This is a sample cost qualification." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/insuranceplan.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organizationdemographics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">legalalternative<a name=\"organizationdemographics-legalalternative\"> </a></td><td>legal alternative</td><td>A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.).</td></tr><tr><td style=\"white-space:nowrap\">historical<a name=\"organizationdemographics-historical\"> </a></td><td>Historical</td><td>Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics",
+  "version": "0.2.0",
+  "name": "VhDirOrganizationDemographics",
+  "title": "VhDir Organization Demographics Code System",
+  "status": "active",
+  "date": "2018-02-21",
+  "publisher": "HL7 International - Patient Administration Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Patient Administration Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm"
+        },
+        {
+          "system": "email",
+          "value": "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This code system contains codes for documenting the attributes of an Organization.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International all rights reserved Creative Commons License",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "legalalternative",
+      "display": "legal alternative",
+      "definition": "A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."
+    },
+    {
+      "code": "historical",
+      "display": "Historical",
+      "definition": "Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization."
+    }
+  ]
+}

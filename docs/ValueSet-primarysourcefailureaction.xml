@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="primarysourcefailureaction"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-validation.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/validation</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-validation.html#validation-fatal">fatal</a></td><td>Fatal</td><td>A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken.</td></tr><tr><td><a href="CodeSystem-validation.html#validation-warning">warning</a></td><td>Warning</td><td>A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization.</td></tr><tr><td><a href="CodeSystem-validation.html#validation-recordonly">recordonly</a></td><td>Record only</td><td>A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcefailureaction"/>
+  <version value="0.2.0"/>
+  <name value="VhDirPrimarySourceFailureAction"/>
+  <title value="VhDir Primary Source Failure Action"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
+      <concept>
+        <code value="fatal"/>
+      </concept>
+      <concept>
+        <code value="warning"/>
+      </concept>
+      <concept>
+        <code value="recordonly"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

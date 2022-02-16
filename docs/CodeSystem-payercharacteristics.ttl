@@ -1,0 +1,626 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "payercharacteristics"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">medical<a name=\"payercharacteristics-medical\"> </a></td><td>Medical</td><td>Medical insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">dental<a name=\"payercharacteristics-dental\"> </a></td><td>Dental</td><td>Dental insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">menthlth<a name=\"payercharacteristics-menthlth\"> </a></td><td>Mental Health</td><td>Mental health insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">substanceabuse<a name=\"payercharacteristics-substanceabuse\"> </a></td><td>Substance Abuse</td><td>Substance abuse services insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">vision<a name=\"payercharacteristics-vision\"> </a></td><td>Vision</td><td>Vision insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">drug<a name=\"payercharacteristics-drug\"> </a></td><td>Drug</td><td>Prescription drug coverage.</td></tr><tr><td style=\"white-space:nowrap\">stc<a name=\"payercharacteristics-stc\"> </a></td><td>Short Term Care</td><td>Short term care.</td></tr><tr><td style=\"white-space:nowrap\">ltc<a name=\"payercharacteristics-ltc\"> </a></td><td>Long Term Care</td><td>Long term care.</td></tr><tr><td style=\"white-space:nowrap\">hospice<a name=\"payercharacteristics-hospice\"> </a></td><td>Hospice</td><td>Hospice insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">homehealth<a name=\"payercharacteristics-homehealth\"> </a></td><td>Home Health</td><td>Home health services insurance coverage.</td></tr><tr><td style=\"white-space:nowrap\">dmepos<a name=\"payercharacteristics-dmepos\"> </a></td><td>DMEPOS</td><td>Durable Medical Equipment, Prosthetics/Orthotics and Supplies.</td></tr><tr><td style=\"white-space:nowrap\">imagingadv<a name=\"payercharacteristics-imagingadv\"> </a></td><td>Advanced Imaging (CT/PET Scans, MRIs)</td><td>Advances imaging techniques services (CT/PET Scans, MRIs) coverage.</td></tr><tr><td style=\"white-space:nowrap\">rehab<a name=\"payercharacteristics-rehab\"> </a></td><td>Rehabilitation</td><td>Rehabilitation.</td></tr><tr><td style=\"white-space:nowrap\">pcpov<a name=\"payercharacteristics-pcpov\"> </a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Benefit plan covers services rendered by a primary care physician during an office visit with the purpose to treat injury or illness, except for preventive care services.</td></tr><tr><td style=\"white-space:nowrap\">specialistov<a name=\"payercharacteristics-specialistov\"> </a></td><td>Specialist Office Visit</td><td>Covered healthcare service rendered to a patient by a specialty provider.</td></tr><tr><td style=\"white-space:nowrap\">mlpov<a name=\"payercharacteristics-mlpov\"> </a></td><td>Other Practitioner Office Visit (Nurse, Physician Assistant) - Mid Level Professional</td><td>Benefit plan covers covered health related services rendered by a practioner other than MD or DO and referred to as other practitioner.</td></tr><tr><td style=\"white-space:nowrap\">outpatient<a name=\"payercharacteristics-outpatient\"> </a></td><td>Outpatient Facility Fee (e.g.,  Ambulatory Surgery Center)</td><td>Benefit plan covers health related services rendered to patient at an outpatient facility, outside of a facility that requires a patient admission.</td></tr><tr><td style=\"white-space:nowrap\">outpatstx<a name=\"payercharacteristics-outpatstx\"> </a></td><td>Outpatient Surgery Physician/Surgical Services</td><td>Benefit plan covers surgical services rendered to patient outside of a facility admission, referred to as outpatient.</td></tr><tr><td style=\"white-space:nowrap\">hospserv<a name=\"payercharacteristics-hospserv\"> </a></td><td>Hospice Services</td><td>Benefit plan covers hospice services.</td></tr><tr><td style=\"white-space:nowrap\">routinedental<a name=\"payercharacteristics-routinedental\"> </a></td><td>Routine Dental Services (Adult)</td><td>Benefit plan covers routine dental services.</td></tr><tr><td style=\"white-space:nowrap\">infertilitytx<a name=\"payercharacteristics-infertilitytx\"> </a></td><td>Infertility Treatment</td><td>Benefit plan covers eligible infertility treatment services.</td></tr><tr><td style=\"white-space:nowrap\">ltnhc<a name=\"payercharacteristics-ltnhc\"> </a></td><td>Long-Term/Custodial Nursing Home Care</td><td>Long-Term/Custodial Nursing Home Care.</td></tr><tr><td style=\"white-space:nowrap\">privatenurse<a name=\"payercharacteristics-privatenurse\"> </a></td><td>Private-Duty Nursing</td><td>Private-Duty Nursing.</td></tr><tr><td style=\"white-space:nowrap\">routineeye<a name=\"payercharacteristics-routineeye\"> </a></td><td>Routine Eye Exam (Adult)</td><td>Routine Eye Exam (Adult).</td></tr><tr><td style=\"white-space:nowrap\">ucservice<a name=\"payercharacteristics-ucservice\"> </a></td><td>Urgent Care Centers or Facilities</td><td>Urgent Care Centers or Facilities.</td></tr><tr><td style=\"white-space:nowrap\">erservice<a name=\"payercharacteristics-erservice\"> </a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td style=\"white-space:nowrap\">ambulance<a name=\"payercharacteristics-ambulance\"> </a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td style=\"white-space:nowrap\">inpatienthospital<a name=\"payercharacteristics-inpatienthospital\"> </a></td><td>Inpatient Hospital Services (e.g., Hospital Stay)</td><td>A person who is hospitalized for at least one night to receive treatment or participate in a study.</td></tr><tr><td style=\"white-space:nowrap\">inpatientprovider<a name=\"payercharacteristics-inpatientprovider\"> </a></td><td>Inpatient Physician and Surgical Services</td><td>A healthcare provider who is delivering healthcare services in a hospital environment.</td></tr><tr><td style=\"white-space:nowrap\">bariatricsurg<a name=\"payercharacteristics-bariatricsurg\"> </a></td><td>Bariatric Surgery</td><td>Bariatric surgery service Skilled nursing service (qualifier value).</td></tr><tr><td style=\"white-space:nowrap\">cosmeticsurg<a name=\"payercharacteristics-cosmeticsurg\"> </a></td><td>Cosmetic Surgery</td><td>Cosmetic surgery service  Skilled nursing service (qualifier value).</td></tr><tr><td style=\"white-space:nowrap\">skillednursing<a name=\"payercharacteristics-skillednursing\"> </a></td><td>Skilled Nursing Facility</td><td>Skilled nursing service (qualifier value).</td></tr><tr><td style=\"white-space:nowrap\">ppnatalcare<a name=\"payercharacteristics-ppnatalcare\"> </a></td><td>Prenatal and Postnatal Care</td><td>Prenatal and Postnatal services.</td></tr><tr><td style=\"white-space:nowrap\">maternitycare<a name=\"payercharacteristics-maternitycare\"> </a></td><td>Delivery and All Inpatient Services for Maternity Care</td><td>All maternity care services.</td></tr><tr><td style=\"white-space:nowrap\">menthlthoutp<a name=\"payercharacteristics-menthlthoutp\"> </a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Mental health service delivered in an outpatient setting.</td></tr><tr><td style=\"white-space:nowrap\">menthlthinp<a name=\"payercharacteristics-menthlthinp\"> </a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Mental health service delivered in an hospital or inpatient facility setting.</td></tr><tr><td style=\"white-space:nowrap\">sadoutp<a name=\"payercharacteristics-sadoutp\"> </a></td><td>Substance Abuse Disorder Outpatient Services</td><td>Substance abuse related services delivered in a outpatient setting.</td></tr><tr><td style=\"white-space:nowrap\">sadinp<a name=\"payercharacteristics-sadinp\"> </a></td><td>Substance Abuse Disorder Inpatient Services</td><td>Substance abuse related services delivered in a inpatient setting.</td></tr><tr><td style=\"white-space:nowrap\">drggenric<a name=\"payercharacteristics-drggenric\"> </a></td><td>Generic Drugs</td><td>Generic drugs eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">drgbrand<a name=\"payercharacteristics-drgbrand\"> </a></td><td>Preferred Brand Drugs</td><td>Preferred brand drugs eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">drgnonpreferred<a name=\"payercharacteristics-drgnonpreferred\"> </a></td><td>Non-Preferred Brand Drugs</td><td>Non-Preferred drugs brands eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">drgspecialty<a name=\"payercharacteristics-drgspecialty\"> </a></td><td>Specialty Drugs</td><td>Benefit plan covers specialty drugs.</td></tr><tr><td style=\"white-space:nowrap\">rehaboutp<a name=\"payercharacteristics-rehaboutp\"> </a></td><td>Outpatient Rehabilitation Services</td><td>Benefit plan covers outpatient rehabilitation services.</td></tr><tr><td style=\"white-space:nowrap\">servicehablitation<a name=\"payercharacteristics-servicehablitation\"> </a></td><td>Habilitation Services</td><td>Habilitation Services.</td></tr><tr><td style=\"white-space:nowrap\">chiro<a name=\"payercharacteristics-chiro\"> </a></td><td>Chiropractic Care</td><td>Benefit plan covers chiropractor eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">dme<a name=\"payercharacteristics-dme\"> </a></td><td>Durable Medical Equipment</td><td>Benefit plan covers Durable medical equipment eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">hearingaids<a name=\"payercharacteristics-hearingaids\"> </a></td><td>Hearing Aids</td><td>Benefit plan covers hearing aids.</td></tr><tr><td style=\"white-space:nowrap\">imgctpetmri<a name=\"payercharacteristics-imgctpetmri\"> </a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Benefit plan covers advances imaging techniques services (CT/PET Scans, MRIs) eligible services.</td></tr><tr><td style=\"white-space:nowrap\">prev<a name=\"payercharacteristics-prev\"> </a></td><td>Preventive Care/Screening/Immunization</td><td>Routine healthcare services to prevent health related problems eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">rtnpod<a name=\"payercharacteristics-rtnpod\"> </a></td><td>Routine Foot Care</td><td>Routine Foot Care.</td></tr><tr><td style=\"white-space:nowrap\">acupuncture<a name=\"payercharacteristics-acupuncture\"> </a></td><td>Acupuncture</td><td>Benefit plan covers acupuncture treatment.</td></tr><tr><td style=\"white-space:nowrap\">weightloss<a name=\"payercharacteristics-weightloss\"> </a></td><td>Weight Loss Programs</td><td>Benefit plan covers weight loss services eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">rtneyechld<a name=\"payercharacteristics-rtneyechld\"> </a></td><td>Routine Eye Exam for Children</td><td>Routine eye exam for children eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">glasseschld<a name=\"payercharacteristics-glasseschld\"> </a></td><td>Eye Glasses for Children</td><td>Eye glasses children eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">rtndntlchld<a name=\"payercharacteristics-rtndntlchld\"> </a></td><td>Dental Check-Up for Children</td><td>Dental Check-Up for Children.</td></tr><tr><td style=\"white-space:nowrap\">speachthpy<a name=\"payercharacteristics-speachthpy\"> </a></td><td>Rehabilitative Speech Therapy</td><td>Benefit plan covers rehabilitative speech therapy eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">rehaboccandpt<a name=\"payercharacteristics-rehaboccandpt\"> </a></td><td>Rehabilitative Occupational and Rehabilitative Physical Therapy</td><td>Benefit plan covers rehabilitative occupational and rehabilitative physical  eligible benefits.</td></tr><tr><td style=\"white-space:nowrap\">wellbaby<a name=\"payercharacteristics-wellbaby\"> </a></td><td>Well Baby Visits and Care</td><td>Regularly scheduled, preventive care services, including immunizations, provided to children up to an age as specified by a health insurance company or mandated by a government agency.</td></tr><tr><td style=\"white-space:nowrap\">laboutp<a name=\"payercharacteristics-laboutp\"> </a></td><td>Laboratory Outpatient and Professional Services</td><td>Benefit plan covers laboratory testing and related professional services received as outpatient.</td></tr><tr><td style=\"white-space:nowrap\">imagingdx<a name=\"payercharacteristics-imagingdx\"> </a></td><td>X-rays and Diagnostic Imaging</td><td>Benefit plan covers diagnostic imaging procedures that produce images of internal structures of the human body and uses radiation to diagnose and treat diseases.</td></tr><tr><td style=\"white-space:nowrap\">dntlbaschld<a name=\"payercharacteristics-dntlbaschld\"> </a></td><td>Basic Dental Care – Child</td><td>Benefit plan covers diagnostic basic dental care.</td></tr><tr><td style=\"white-space:nowrap\">orthochld<a name=\"payercharacteristics-orthochld\"> </a></td><td>Orthodontia – Child</td><td>Benefit plan covers orthodontia for children.</td></tr><tr><td style=\"white-space:nowrap\">dntlmajchld<a name=\"payercharacteristics-dntlmajchld\"> </a></td><td>Major Dental Care – Child</td><td>Benefit plan covers major dental care for children.</td></tr><tr><td style=\"white-space:nowrap\">dntlbasadlt<a name=\"payercharacteristics-dntlbasadlt\"> </a></td><td>Basic Dental Care – Adult</td><td>Benefit plan covers basic dental care for adults.</td></tr><tr><td style=\"white-space:nowrap\">orthodadlt<a name=\"payercharacteristics-orthodadlt\"> </a></td><td>Orthodontia – Adult</td><td>Benefits plan covers services provided that are required for orthodontic purposes for an adult.</td></tr><tr><td style=\"white-space:nowrap\">dntlmajadlt<a name=\"payercharacteristics-dntlmajadlt\"> </a></td><td>Major Dental Care – Adult</td><td>Benefit plan covers major dental care for adult.</td></tr><tr><td style=\"white-space:nowrap\">abortion<a name=\"payercharacteristics-abortion\"> </a></td><td>Abortion for Which Public Funding is Prohibited</td><td>Benefit plan covers services for abortion for which public funding is prohibited.</td></tr><tr><td style=\"white-space:nowrap\">transplant<a name=\"payercharacteristics-transplant\"> </a></td><td>Transplant</td><td>Benefit plan covers transplant related services.</td></tr><tr><td style=\"white-space:nowrap\">accdntl<a name=\"payercharacteristics-accdntl\"> </a></td><td>Accidental Dental</td><td>Benefit plan covers dental care services related to an accident.</td></tr><tr><td style=\"white-space:nowrap\">dialysis<a name=\"payercharacteristics-dialysis\"> </a></td><td>Dialysis</td><td>The plan benefit  covers services used to treat end stage renal disease.</td></tr><tr><td style=\"white-space:nowrap\">testallrgy<a name=\"payercharacteristics-testallrgy\"> </a></td><td>Allergy Testing</td><td>The plan benefits covers services for diagnostic procedures ordered or performed to evaluate whether a sensitivity to a substance is present. This test may be associated with specimen collection and/or substance administration challenge activities.</td></tr><tr><td style=\"white-space:nowrap\">chemotherapy<a name=\"payercharacteristics-chemotherapy\"> </a></td><td>Chemotherapy</td><td>The plan benefits cover services the use of drugs and approved chemicals to treat disease.</td></tr><tr><td style=\"white-space:nowrap\">radiation<a name=\"payercharacteristics-radiation\"> </a></td><td>Radiation</td><td>The plan benefits cover services the use radiation to treat disease.</td></tr><tr><td style=\"white-space:nowrap\">edudiab<a name=\"payercharacteristics-edudiab\"> </a></td><td>Diabetes Education</td><td>The plan benefits cover services related to instruction or training that encourages behaviors most likely to optimize health potentials through information about diabetes; facilitates the prevention of diabetes.</td></tr><tr><td style=\"white-space:nowrap\">prosthetic<a name=\"payercharacteristics-prosthetic\"> </a></td><td>Prosthetic Devices</td><td>Plan benefit covers services related to  prosthesis devices.</td></tr><tr><td style=\"white-space:nowrap\">infusiontx<a name=\"payercharacteristics-infusiontx\"> </a></td><td>Infusion Therapy</td><td>Plan benefit covers services related to infusion therapy.</td></tr><tr><td style=\"white-space:nowrap\">tmjtx<a name=\"payercharacteristics-tmjtx\"> </a></td><td>Treatment for Temporomandibular Joint Disorders</td><td>Plan benefit covers services related to treatment of Temporomandibular Joint disorder.</td></tr><tr><td style=\"white-space:nowrap\">nutrition<a name=\"payercharacteristics-nutrition\"> </a></td><td>Nutritional Counseling</td><td>Nutritional Counseling.</td></tr><tr><td style=\"white-space:nowrap\">reconsurg<a name=\"payercharacteristics-reconsurg\"> </a></td><td>Reconstructive Surgery</td><td>Plan benefit covers services related to reconstructive surgery.</td></tr><tr><td style=\"white-space:nowrap\">days<a name=\"payercharacteristics-days\"> </a></td><td>Days</td><td>Measure of service covered by the plan benefit  expressed in a definite number of days.</td></tr><tr><td style=\"white-space:nowrap\">visit<a name=\"payercharacteristics-visit\"> </a></td><td>Visits</td><td>Measure of service covered by the plan benefit  expressed in a definite number of visits.</td></tr><tr><td style=\"white-space:nowrap\">procedure<a name=\"payercharacteristics-procedure\"> </a></td><td>Procedures</td><td>Measure of service covered by the plan benefit  expressed  in a set of actions covered.</td></tr><tr><td style=\"white-space:nowrap\">admission<a name=\"payercharacteristics-admission\"> </a></td><td>Admissions</td><td>Measure of services covered by the benefit plan  expressed in relation to patient's acceptance for medical and nursing care in a hospital or other health care institution.</td></tr><tr><td style=\"white-space:nowrap\">visithrs<a name=\"payercharacteristics-visithrs\"> </a></td><td>Hours per visit</td><td>Measure expresses how many hours per visit are covered by the insurance benefit plan.</td></tr><tr><td style=\"white-space:nowrap\">weekhrs<a name=\"payercharacteristics-weekhrs\"> </a></td><td>Hours per week</td><td>Measure expresses how many hours per week are covered by the insurance benefit plan.</td></tr><tr><td style=\"white-space:nowrap\">mthhrs<a name=\"payercharacteristics-mthhrs\"> </a></td><td>Hours per month</td><td>Measure expressed how many hours per month are covered by the insurance benefit plan.</td></tr><tr><td style=\"white-space:nowrap\">yrhrs<a name=\"payercharacteristics-yrhrs\"> </a></td><td>Hours per year</td><td>Measure expreses how many hours per year are covered by the insurance benfit plan.</td></tr><tr><td style=\"white-space:nowrap\">daysperwk<a name=\"payercharacteristics-daysperwk\"> </a></td><td>Days per week</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a week.</td></tr><tr><td style=\"white-space:nowrap\">dayspermth<a name=\"payercharacteristics-dayspermth\"> </a></td><td>Days per month</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a month.</td></tr><tr><td style=\"white-space:nowrap\">daysperyr<a name=\"payercharacteristics-daysperyr\"> </a></td><td>Days per year</td><td>Measure of service covered by the plan benefit expressed in a how many days are covered in a year.</td></tr><tr><td style=\"white-space:nowrap\">mthsperyr<a name=\"payercharacteristics-mthsperyr\"> </a></td><td>Months per year</td><td>Measure of service covered by the plan benefit expressed in a how many month are covered in a year.</td></tr><tr><td style=\"white-space:nowrap\">visitsperday<a name=\"payercharacteristics-visitsperday\"> </a></td><td>Visits per day</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per day.</td></tr><tr><td style=\"white-space:nowrap\">visitsperweek<a name=\"payercharacteristics-visitsperweek\"> </a></td><td>Visits per week</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per week.</td></tr><tr><td style=\"white-space:nowrap\">visitspermth<a name=\"payercharacteristics-visitspermth\"> </a></td><td>Visits per month</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per month.</td></tr><tr><td style=\"white-space:nowrap\">visitsperyr<a name=\"payercharacteristics-visitsperyr\"> </a></td><td>Visits per year</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered per year.</td></tr><tr><td style=\"white-space:nowrap\">lifetimevisits<a name=\"payercharacteristics-lifetimevisits\"> </a></td><td>Lifetime visits</td><td>Measure of service covered by the plan benefit expressed in a definite number of visits covered through lifetime.</td></tr><tr><td style=\"white-space:nowrap\">txperweek<a name=\"payercharacteristics-txperweek\"> </a></td><td>Treatments per week</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a week.</td></tr><tr><td style=\"white-space:nowrap\">txpermnth<a name=\"payercharacteristics-txpermnth\"> </a></td><td>Treatments per month</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a month.</td></tr><tr><td style=\"white-space:nowrap\">txlifetime<a name=\"payercharacteristics-txlifetime\"> </a></td><td>Lifetime treatments</td><td>Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a lifetime.</td></tr><tr><td style=\"white-space:nowrap\">admitslifetime<a name=\"payercharacteristics-admitslifetime\"> </a></td><td>Lifetime admissions</td><td>Measure of service covered by the plan benefit expressed in a definite number admission actions covered through lifetime.</td></tr><tr><td style=\"white-space:nowrap\">procperwk<a name=\"payercharacteristics-procperwk\"> </a></td><td>Procedures per week</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per week.</td></tr><tr><td style=\"white-space:nowrap\">procpermnth<a name=\"payercharacteristics-procpermnth\"> </a></td><td>Procedures per month</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per month.</td></tr><tr><td style=\"white-space:nowrap\">procperyr<a name=\"payercharacteristics-procperyr\"> </a></td><td>Procedures per year</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per year.</td></tr><tr><td style=\"white-space:nowrap\">proclifetime<a name=\"payercharacteristics-proclifetime\"> </a></td><td>Lifetime procedures</td><td>Measure of service covered by the plan benefit expressed in a definite number procedure covered per lifetime.</td></tr><tr><td style=\"white-space:nowrap\">daysperadmission<a name=\"payercharacteristics-daysperadmission\"> </a></td><td>Days per admission</td><td>Measure of service covered by the plan benefit expressed in a definite number of days covered for each individual admission.</td></tr><tr><td style=\"white-space:nowrap\">procperepi<a name=\"payercharacteristics-procperepi\"> </a></td><td>Procedures per episode</td><td>Measure of service covered by the plan benefit expressed in a definite number of procedures  covered for each individual treatment episode.</td></tr><tr><td style=\"white-space:nowrap\">cat<a name=\"payercharacteristics-cat\"> </a></td><td>Catastrophic</td><td>'Catastrophic' health insurance plans have low monthly premiums and very high deductibles. They may cover worst-case scenarios, like getting seriously sick or injured. Patient pays most routine medical expenses.</td></tr><tr><td style=\"white-space:nowrap\">bronze<a name=\"payercharacteristics-bronze\"> </a></td><td>Bronze</td><td>'Bronze' type plan defines the estimated split costs of the plan, where patient is responsible for 40% of their healthcare cost while 60% is covered by the plan.</td></tr><tr><td style=\"white-space:nowrap\">bronzeexp<a name=\"payercharacteristics-bronzeexp\"> </a></td><td>Expanded Bronze</td><td>The 'extended bronze' plan is an addition to the bronze metal level which establishes the de minimis variation range for the actuarial value (AV) level of coverage to allow variation in the AV to -4/+2 percentage points.</td></tr><tr><td style=\"white-space:nowrap\">silver<a name=\"payercharacteristics-silver\"> </a></td><td>Silver</td><td>'Silver' type plan defines the estimated split costs of the plan, where patient is responsible for 30% of their healthcare cost while 70% is covered by the plan.</td></tr><tr><td style=\"white-space:nowrap\">gold<a name=\"payercharacteristics-gold\"> </a></td><td>Gold</td><td>'Gold' type plan defines the estimated split costs of the plan, where patient is responsible for 20% of their healthcare cost while 80% is covered by the plan.</td></tr><tr><td style=\"white-space:nowrap\">platinum<a name=\"payercharacteristics-platinum\"> </a></td><td>Platinum</td><td>'Platinum' type plan defines the estimated  split costs of the plan, where patient is responsible for 10% of their healthcare cost while 90% is covered by the plan.</td></tr><tr><td style=\"white-space:nowrap\">lowded<a name=\"payercharacteristics-lowded\"> </a></td><td>Low deductible</td><td>A health insurance plan with higher premiums and lower out of pocket cost than a traditional health plan.</td></tr><tr><td style=\"white-space:nowrap\">highded<a name=\"payercharacteristics-highded\"> </a></td><td>High deductible</td><td>A health insurance plan with lower premiums and higher out of pocket cost than a traditional health plan.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirPayerCharacteristics"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Payer Characteristics Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This code system contains codes for documenting attributes of a Payor related resources."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "medical" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Medical insurance coverage." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "dental" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental insurance coverage." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "menthlth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mental Health" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mental health insurance coverage." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "substanceabuse" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance Abuse" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Substance abuse services insurance coverage." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "vision" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vision" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Vision insurance coverage." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "drug" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prescription drug coverage." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "stc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Short Term Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Short term care." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "ltc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long Term Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Long term care." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "hospice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospice" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospice insurance coverage." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "homehealth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Home Health" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Home health services insurance coverage." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "dmepos" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DMEPOS" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Durable Medical Equipment, Prosthetics/Orthotics and Supplies." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "imagingadv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Advanced Imaging (CT/PET Scans, MRIs)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Advances imaging techniques services (CT/PET Scans, MRIs) coverage." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "rehab" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rehabilitation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Rehabilitation." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "pcpov" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Primary Care Visit to Treat an Injury or Illness" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers services rendered by a primary care physician during an office visit with the purpose to treat injury or illness, except for preventive care services." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "specialistov" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Specialist Office Visit" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Covered healthcare service rendered to a patient by a specialty provider." ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "mlpov" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Practitioner Office Visit (Nurse, Physician Assistant) - Mid Level Professional" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers covered health related services rendered by a practioner other than MD or DO and referred to as other practitioner." ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "outpatient" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outpatient Facility Fee (e.g.,  Ambulatory Surgery Center)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers health related services rendered to patient at an outpatient facility, outside of a facility that requires a patient admission." ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "outpatstx" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outpatient Surgery Physician/Surgical Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers surgical services rendered to patient outside of a facility admission, referred to as outpatient." ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "hospserv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospice Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers hospice services." ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "routinedental" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine Dental Services (Adult)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers routine dental services." ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "infertilitytx" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infertility Treatment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers eligible infertility treatment services." ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "ltnhc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long-Term/Custodial Nursing Home Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Long-Term/Custodial Nursing Home Care." ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "privatenurse" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Private-Duty Nursing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Private-Duty Nursing." ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "routineeye" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine Eye Exam (Adult)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine Eye Exam (Adult)." ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "ucservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urgent Care Centers or Facilities" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Urgent Care Centers or Facilities." ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "erservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Room Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Emergency Room Services." ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "ambulance" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Room Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Emergency Room Services." ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "inpatienthospital" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inpatient Hospital Services (e.g., Hospital Stay)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A person who is hospitalized for at least one night to receive treatment or participate in a study." ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "inpatientprovider" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inpatient Physician and Surgical Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A healthcare provider who is delivering healthcare services in a hospital environment." ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "bariatricsurg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bariatric Surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bariatric surgery service Skilled nursing service (qualifier value)." ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "cosmeticsurg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cosmetic Surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cosmetic surgery service  Skilled nursing service (qualifier value)." ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "skillednursing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Skilled Nursing Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Skilled nursing service (qualifier value)." ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "ppnatalcare" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prenatal and Postnatal Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prenatal and Postnatal services." ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "maternitycare" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Delivery and All Inpatient Services for Maternity Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "All maternity care services." ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "menthlthoutp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mental/Behavioral Health Outpatient Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mental health service delivered in an outpatient setting." ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "menthlthinp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mental/Behavioral Health Inpatient Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mental health service delivered in an hospital or inpatient facility setting." ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "sadoutp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance Abuse Disorder Outpatient Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Substance abuse related services delivered in a outpatient setting." ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "sadinp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance Abuse Disorder Inpatient Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Substance abuse related services delivered in a inpatient setting." ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "drggenric" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Generic Drugs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Generic drugs eligible benefits." ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "drgbrand" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preferred Brand Drugs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Preferred brand drugs eligible benefits." ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "drgnonpreferred" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Preferred Brand Drugs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non-Preferred drugs brands eligible benefits." ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "drgspecialty" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Specialty Drugs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers specialty drugs." ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "rehaboutp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outpatient Rehabilitation Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers outpatient rehabilitation services." ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "servicehablitation" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Habilitation Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Habilitation Services." ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "chiro" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chiropractic Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers chiropractor eligible benefits." ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "dme" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Durable Medical Equipment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers Durable medical equipment eligible benefits." ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "hearingaids" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hearing Aids" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers hearing aids." ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "imgctpetmri" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Imaging (CT/PET Scans, MRIs)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers advances imaging techniques services (CT/PET Scans, MRIs) eligible services." ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "prev" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preventive Care/Screening/Immunization" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine healthcare services to prevent health related problems eligible benefits." ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "rtnpod" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine Foot Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine Foot Care." ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "acupuncture" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acupuncture" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers acupuncture treatment." ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "weightloss" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Weight Loss Programs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers weight loss services eligible benefits." ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "rtneyechld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine Eye Exam for Children" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine eye exam for children eligible benefits." ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "glasseschld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye Glasses for Children" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Eye glasses children eligible benefits." ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "rtndntlchld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental Check-Up for Children" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental Check-Up for Children." ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "speachthpy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rehabilitative Speech Therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers rehabilitative speech therapy eligible benefits." ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "rehaboccandpt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rehabilitative Occupational and Rehabilitative Physical Therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers rehabilitative occupational and rehabilitative physical  eligible benefits." ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "wellbaby" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Well Baby Visits and Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Regularly scheduled, preventive care services, including immunizations, provided to children up to an age as specified by a health insurance company or mandated by a government agency." ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "laboutp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laboratory Outpatient and Professional Services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers laboratory testing and related professional services received as outpatient." ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "imagingdx" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-rays and Diagnostic Imaging" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers diagnostic imaging procedures that produce images of internal structures of the human body and uses radiation to diagnose and treat diseases." ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "dntlbaschld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Basic Dental Care – Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers diagnostic basic dental care." ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "orthochld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Orthodontia – Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers orthodontia for children." ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "dntlmajchld" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major Dental Care – Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers major dental care for children." ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "dntlbasadlt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Basic Dental Care – Adult" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers basic dental care for adults." ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "orthodadlt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Orthodontia – Adult" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefits plan covers services provided that are required for orthodontic purposes for an adult." ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "dntlmajadlt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major Dental Care – Adult" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers major dental care for adult." ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "abortion" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Abortion for Which Public Funding is Prohibited" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers services for abortion for which public funding is prohibited." ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "transplant" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transplant" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers transplant related services." ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "accdntl" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Accidental Dental" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Benefit plan covers dental care services related to an accident." ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "dialysis" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dialysis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The plan benefit  covers services used to treat end stage renal disease." ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "testallrgy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy Testing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The plan benefits covers services for diagnostic procedures ordered or performed to evaluate whether a sensitivity to a substance is present. This test may be associated with specimen collection and/or substance administration challenge activities." ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "chemotherapy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chemotherapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The plan benefits cover services the use of drugs and approved chemicals to treat disease." ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "radiation" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The plan benefits cover services the use radiation to treat disease." ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "edudiab" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes Education" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The plan benefits cover services related to instruction or training that encourages behaviors most likely to optimize health potentials through information about diabetes; facilitates the prevention of diabetes." ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "prosthetic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prosthetic Devices" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Plan benefit covers services related to  prosthesis devices." ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "infusiontx" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infusion Therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Plan benefit covers services related to infusion therapy." ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "tmjtx" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment for Temporomandibular Joint Disorders" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Plan benefit covers services related to treatment of Temporomandibular Joint disorder." ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "nutrition" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nutritional Counseling" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nutritional Counseling." ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "reconsurg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Reconstructive Surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Plan benefit covers services related to reconstructive surgery." ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "days" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit  expressed in a definite number of days." ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "visit" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit  expressed in a definite number of visits." ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "procedure" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit  expressed  in a set of actions covered." ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "admission" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admissions" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of services covered by the benefit plan  expressed in relation to patient's acceptance for medical and nursing care in a hospital or other health care institution." ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "visithrs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hours per visit" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure expresses how many hours per visit are covered by the insurance benefit plan." ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "weekhrs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hours per week" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure expresses how many hours per week are covered by the insurance benefit plan." ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "mthhrs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hours per month" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure expressed how many hours per month are covered by the insurance benefit plan." ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "yrhrs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hours per year" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure expreses how many hours per year are covered by the insurance benfit plan." ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "daysperwk" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days per week" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a how many days are covered in a week." ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "dayspermth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days per month" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a how many days are covered in a month." ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "daysperyr" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days per year" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a how many days are covered in a year." ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "mthsperyr" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Months per year" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a how many month are covered in a year." ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "visitsperday" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visits per day" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of visits covered per day." ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "visitsperweek" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visits per week" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of visits covered per week." ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "visitspermth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visits per month" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of visits covered per month." ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "visitsperyr" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visits per year" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of visits covered per year." ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "lifetimevisits" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lifetime visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of visits covered through lifetime." ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "txperweek" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatments per week" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a week." ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "txpermnth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatments per month" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a month." ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "txlifetime" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lifetime treatments" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of treatment actions covered in a lifetime." ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "admitslifetime" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lifetime admissions" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number admission actions covered through lifetime." ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "procperwk" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Procedures per week" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number procedure covered per week." ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "procpermnth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Procedures per month" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number procedure covered per month." ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "procperyr" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Procedures per year" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number procedure covered per year." ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "proclifetime" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lifetime procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number procedure covered per lifetime." ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "daysperadmission" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days per admission" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of days covered for each individual admission." ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "procperepi" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Procedures per episode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Measure of service covered by the plan benefit expressed in a definite number of procedures  covered for each individual treatment episode." ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "cat" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Catastrophic" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "'Catastrophic' health insurance plans have low monthly premiums and very high deductibles. They may cover worst-case scenarios, like getting seriously sick or injured. Patient pays most routine medical expenses." ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "bronze" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bronze" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "'Bronze' type plan defines the estimated split costs of the plan, where patient is responsible for 40% of their healthcare cost while 60% is covered by the plan." ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "bronzeexp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Expanded Bronze" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The 'extended bronze' plan is an addition to the bronze metal level which establishes the de minimis variation range for the actuarial value (AV) level of coverage to allow variation in the AV to -4/+2 percentage points." ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "silver" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Silver" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "'Silver' type plan defines the estimated split costs of the plan, where patient is responsible for 30% of their healthcare cost while 70% is covered by the plan." ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "gold" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gold" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "'Gold' type plan defines the estimated split costs of the plan, where patient is responsible for 20% of their healthcare cost while 80% is covered by the plan." ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "platinum" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Platinum" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "'Platinum' type plan defines the estimated  split costs of the plan, where patient is responsible for 10% of their healthcare cost while 90% is covered by the plan." ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "lowded" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low deductible" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A health insurance plan with higher premiums and lower out of pocket cost than a traditional health plan." ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "highded" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High deductible" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A health insurance plan with lower premiums and higher out of pocket cost than a traditional health plan." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/payercharacteristics.ttl> .
+
+# -------------------------------------------------------------------------------------
+

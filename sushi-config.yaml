@@ -1,0 +1,101 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭──────────────────ImplementationGuide-hl7.fhir.us.subscriptions-backport.json───────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7-fhir-uv-vhdir
+canonical: "http://hl7.org/fhir/uv/vhdir"
+version: 0.2.0
+name: ValidatedHealthcareDirectory
+title: Validated Healthcare Directory
+status: active
+publisher:
+  name: HL7 International - Patient Administration Work Group
+  url: 'http://www.hl7.org/Special/committees/pafm'
+  email: pafm@lists.HL7.org
+
+jurisdiction: 'urn:iso:std:iso:3166#US'
+copyright: >-
+  Used by permission of HL7 International all rights reserved Creative Commons License
+
+description: This is a Healthedata1 sandbox for creation of resources and examples
+license: CC0-1.0
+date: '2022-02-15'
+fhirVersion: 4.0.1
+
+dependencies:
+  hl7.fhir.us.core:
+    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
+    version: 3.1.1
+    id: uscore
+  hl7.fhir.uv.bulkdata: 2.0.0
+  hl7.fhir.uv.smart-app-launch: 2.0.0
+
+pages:
+  index.md:
+    title: Home
+  guidance.md:
+    general-guidance.md:
+    technical-guidance.md:
+    bulk-data.md:
+      title: Bulk Data and Subscriptions
+  security.md:
+  downloads.md:
+  change-notes.md:
+
+parameters:
+  path-output: docs #output #docs
+  path-resource:
+    - input/resources
+    - input/examples
+    - fsh-generated/resources
+  path-pages:
+    - input/pages
+    - input/includes
+    - fsh-generated/includes
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: false
+  usage-stats-opt-out: 'true'
+  excludexml: 'false'
+  excludejsn: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+  excludeexample: 'true'
+  generate:
+    - xml
+    - json
+copyrightyear: '2022+'
+releaseLabel: CI Build
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Guidance:
+    General Guidance: general-guidance.html
+    Technical Guidance: technical-guidance.html
+    Bulk Data and Subscriptions: bulk-data.html
+  FHIR Artifacts:
+      CapabilityStatements: artifacts.html#1
+      Operations: artifacts.html#2
+      SearchParameters: artifacts.html#3
+      Profiles: artifacts.html#4
+      Extensions: artifacts.html#5
+      Value Sets: artifacts.html#6
+      Code Systems: artifacts.html#7
+      Examples: artifacts.html#8
+  Downloads: downloads.html
+  Change Notes: change-notes.html

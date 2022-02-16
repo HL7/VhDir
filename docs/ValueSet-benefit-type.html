@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\VhDir Benefit Type - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.184"}
+    h3,h4,h5,h6{--heading-prefix:"6.184"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>VhDir Benefit Type</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-benefit-type.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-benefit-type.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: VhDir Benefit Type
+
+  </h2>
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2018-02-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">VhDirBenefitType</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-vhdir-insuranceplan.html">VhDir Insurance Plan</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-payercharacteristics.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-pcpov">pcpov</a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Benefit plan covers services rendered by a primary care physician during an office visit with the purpose to treat injury or illness, except for preventive care services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-specialistov">specialistov</a></td><td>Specialist Office Visit</td><td>Covered healthcare service rendered to a patient by a specialty provider.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-mlpov">mlpov</a></td><td>Other Practitioner Office Visit (Nurse, Physician Assistant) - Mid Level Professional</td><td>Benefit plan covers covered health related services rendered by a practioner other than MD or DO and referred to as other practitioner.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-outpatient">outpatient</a></td><td>Outpatient Facility Fee (e.g.,  Ambulatory Surgery Center)</td><td>Benefit plan covers health related services rendered to patient at an outpatient facility, outside of a facility that requires a patient admission.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-outpatstx">outpatstx</a></td><td>Outpatient Surgery Physician/Surgical Services</td><td>Benefit plan covers surgical services rendered to patient outside of a facility admission, referred to as outpatient.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-hospserv">hospserv</a></td><td>Hospice Services</td><td>Benefit plan covers hospice services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-routinedental">routinedental</a></td><td>Routine Dental Services (Adult)</td><td>Benefit plan covers routine dental services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-infertilitytx">infertilitytx</a></td><td>Infertility Treatment</td><td>Benefit plan covers eligible infertility treatment services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ltnhc">ltnhc</a></td><td>Long-Term/Custodial Nursing Home Care</td><td>Long-Term/Custodial Nursing Home Care.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-privatenurse">privatenurse</a></td><td>Private-Duty Nursing</td><td>Private-Duty Nursing.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-routineeye">routineeye</a></td><td>Routine Eye Exam (Adult)</td><td>Routine Eye Exam (Adult).</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ucservice">ucservice</a></td><td>Urgent Care Centers or Facilities</td><td>Urgent Care Centers or Facilities.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-homehealth">homehealth</a></td><td>Home Health</td><td>Home health services insurance coverage.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-erservice">erservice</a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ambulance">ambulance</a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-inpatienthospital">inpatienthospital</a></td><td>Inpatient Hospital Services (e.g., Hospital Stay)</td><td>A person who is hospitalized for at least one night to receive treatment or participate in a study.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-inpatientprovider">inpatientprovider</a></td><td>Inpatient Physician and Surgical Services</td><td>A healthcare provider who is delivering healthcare services in a hospital environment.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-bariatricsurg">bariatricsurg</a></td><td>Bariatric Surgery</td><td>Bariatric surgery service Skilled nursing service (qualifier value).</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-cosmeticsurg">cosmeticsurg</a></td><td>Cosmetic Surgery</td><td>Cosmetic surgery service  Skilled nursing service (qualifier value).</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-skillednursing">skillednursing</a></td><td>Skilled Nursing Facility</td><td>Skilled nursing service (qualifier value).</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ppnatalcare">ppnatalcare</a></td><td>Prenatal and Postnatal Care</td><td>Prenatal and Postnatal services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-maternitycare">maternitycare</a></td><td>Delivery and All Inpatient Services for Maternity Care</td><td>All maternity care services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-menthlthoutp">menthlthoutp</a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Mental health service delivered in an outpatient setting.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-menthlthinp">menthlthinp</a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Mental health service delivered in an hospital or inpatient facility setting.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-sadoutp">sadoutp</a></td><td>Substance Abuse Disorder Outpatient Services</td><td>Substance abuse related services delivered in a outpatient setting.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-sadinp">sadinp</a></td><td>Substance Abuse Disorder Inpatient Services</td><td>Substance abuse related services delivered in a inpatient setting.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drggenric">drggenric</a></td><td>Generic Drugs</td><td>Generic drugs eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgbrand">drgbrand</a></td><td>Preferred Brand Drugs</td><td>Preferred brand drugs eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgnonpreferred">drgnonpreferred</a></td><td>Non-Preferred Brand Drugs</td><td>Non-Preferred drugs brands eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgspecialty">drgspecialty</a></td><td>Specialty Drugs</td><td>Benefit plan covers specialty drugs.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rehaboutp">rehaboutp</a></td><td>Outpatient Rehabilitation Services</td><td>Benefit plan covers outpatient rehabilitation services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-servicehablitation">servicehablitation</a></td><td>Habilitation Services</td><td>Habilitation Services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-chiro">chiro</a></td><td>Chiropractic Care</td><td>Benefit plan covers chiropractor eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dme">dme</a></td><td>Durable Medical Equipment</td><td>Benefit plan covers Durable medical equipment eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-hearingaids">hearingaids</a></td><td>Hearing Aids</td><td>Benefit plan covers hearing aids.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-imgctpetmri">imgctpetmri</a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Benefit plan covers advances imaging techniques services (CT/PET Scans, MRIs) eligible services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-prev">prev</a></td><td>Preventive Care/Screening/Immunization</td><td>Routine healthcare services to prevent health related problems eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtnpod">rtnpod</a></td><td>Routine Foot Care</td><td>Routine Foot Care.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-acupuncture">acupuncture</a></td><td>Acupuncture</td><td>Benefit plan covers acupuncture treatment.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-weightloss">weightloss</a></td><td>Weight Loss Programs</td><td>Benefit plan covers weight loss services eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtneyechld">rtneyechld</a></td><td>Routine Eye Exam for Children</td><td>Routine eye exam for children eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-glasseschld">glasseschld</a></td><td>Eye Glasses for Children</td><td>Eye glasses children eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtndntlchld">rtndntlchld</a></td><td>Dental Check-Up for Children</td><td>Dental Check-Up for Children.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-speachthpy">speachthpy</a></td><td>Rehabilitative Speech Therapy</td><td>Benefit plan covers rehabilitative speech therapy eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rehaboccandpt">rehaboccandpt</a></td><td>Rehabilitative Occupational and Rehabilitative Physical Therapy</td><td>Benefit plan covers rehabilitative occupational and rehabilitative physical  eligible benefits.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-wellbaby">wellbaby</a></td><td>Well Baby Visits and Care</td><td>Regularly scheduled, preventive care services, including immunizations, provided to children up to an age as specified by a health insurance company or mandated by a government agency.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-laboutp">laboutp</a></td><td>Laboratory Outpatient and Professional Services</td><td>Benefit plan covers laboratory testing and related professional services received as outpatient.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-imagingdx">imagingdx</a></td><td>X-rays and Diagnostic Imaging</td><td>Benefit plan covers diagnostic imaging procedures that produce images of internal structures of the human body and uses radiation to diagnose and treat diseases.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlbaschld">dntlbaschld</a></td><td>Basic Dental Care – Child</td><td>Benefit plan covers diagnostic basic dental care.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-orthochld">orthochld</a></td><td>Orthodontia – Child</td><td>Benefit plan covers orthodontia for children.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlmajchld">dntlmajchld</a></td><td>Major Dental Care – Child</td><td>Benefit plan covers major dental care for children.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlbasadlt">dntlbasadlt</a></td><td>Basic Dental Care – Adult</td><td>Benefit plan covers basic dental care for adults.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-orthodadlt">orthodadlt</a></td><td>Orthodontia – Adult</td><td>Benefits plan covers services provided that are required for orthodontic purposes for an adult.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlmajadlt">dntlmajadlt</a></td><td>Major Dental Care – Adult</td><td>Benefit plan covers major dental care for adult.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-abortion">abortion</a></td><td>Abortion for Which Public Funding is Prohibited</td><td>Benefit plan covers services for abortion for which public funding is prohibited.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-transplant">transplant</a></td><td>Transplant</td><td>Benefit plan covers transplant related services.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-accdntl">accdntl</a></td><td>Accidental Dental</td><td>Benefit plan covers dental care services related to an accident.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dialysis">dialysis</a></td><td>Dialysis</td><td>The plan benefit  covers services used to treat end stage renal disease.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-testallrgy">testallrgy</a></td><td>Allergy Testing</td><td>The plan benefits covers services for diagnostic procedures ordered or performed to evaluate whether a sensitivity to a substance is present. This test may be associated with specimen collection and/or substance administration challenge activities.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-chemotherapy">chemotherapy</a></td><td>Chemotherapy</td><td>The plan benefits cover services the use of drugs and approved chemicals to treat disease.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-radiation">radiation</a></td><td>Radiation</td><td>The plan benefits cover services the use radiation to treat disease.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-edudiab">edudiab</a></td><td>Diabetes Education</td><td>The plan benefits cover services related to instruction or training that encourages behaviors most likely to optimize health potentials through information about diabetes; facilitates the prevention of diabetes.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-prosthetic">prosthetic</a></td><td>Prosthetic Devices</td><td>Plan benefit covers services related to  prosthesis devices.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-infusiontx">infusiontx</a></td><td>Infusion Therapy</td><td>Plan benefit covers services related to infusion therapy.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-tmjtx">tmjtx</a></td><td>Treatment for Temporomandibular Joint Disorders</td><td>Plan benefit covers services related to treatment of Temporomandibular Joint disorder.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-nutrition">nutrition</a></td><td>Nutritional Counseling</td><td>Nutritional Counseling.</td></tr><tr><td><a href="CodeSystem-payercharacteristics.html#payercharacteristics-reconsurg">reconsurg</a></td><td>Reconstructive Surgery</td><td>Plan benefit covers services related to reconstructive surgery.</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 67 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-payercharacteristics.html">VhDir Payer Characteristics Code System v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-payercharacteristics.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-pcpov"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-pcpov">pcpov</a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Benefit plan covers services rendered by a primary care physician during an office visit with the purpose to treat injury or illness, except for preventive care services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-specialistov"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-specialistov">specialistov</a></td><td>Specialist Office Visit</td><td>Covered healthcare service rendered to a patient by a specialty provider.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-mlpov"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-mlpov">mlpov</a></td><td>Other Practitioner Office Visit (Nurse, Physician Assistant) - Mid Level Professional</td><td>Benefit plan covers covered health related services rendered by a practioner other than MD or DO and referred to as other practitioner.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-outpatient"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-outpatient">outpatient</a></td><td>Outpatient Facility Fee (e.g.,  Ambulatory Surgery Center)</td><td>Benefit plan covers health related services rendered to patient at an outpatient facility, outside of a facility that requires a patient admission.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-outpatstx"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-outpatstx">outpatstx</a></td><td>Outpatient Surgery Physician/Surgical Services</td><td>Benefit plan covers surgical services rendered to patient outside of a facility admission, referred to as outpatient.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-hospserv"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-hospserv">hospserv</a></td><td>Hospice Services</td><td>Benefit plan covers hospice services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-routinedental"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-routinedental">routinedental</a></td><td>Routine Dental Services (Adult)</td><td>Benefit plan covers routine dental services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-infertilitytx"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-infertilitytx">infertilitytx</a></td><td>Infertility Treatment</td><td>Benefit plan covers eligible infertility treatment services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-ltnhc"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ltnhc">ltnhc</a></td><td>Long-Term/Custodial Nursing Home Care</td><td>Long-Term/Custodial Nursing Home Care.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-privatenurse"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-privatenurse">privatenurse</a></td><td>Private-Duty Nursing</td><td>Private-Duty Nursing.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-routineeye"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-routineeye">routineeye</a></td><td>Routine Eye Exam (Adult)</td><td>Routine Eye Exam (Adult).</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-ucservice"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ucservice">ucservice</a></td><td>Urgent Care Centers or Facilities</td><td>Urgent Care Centers or Facilities.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-homehealth"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-homehealth">homehealth</a></td><td>Home Health</td><td>Home health services insurance coverage.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-erservice"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-erservice">erservice</a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-ambulance"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ambulance">ambulance</a></td><td>Emergency Room Services</td><td>Emergency Room Services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-inpatienthospital"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-inpatienthospital">inpatienthospital</a></td><td>Inpatient Hospital Services (e.g., Hospital Stay)</td><td>A person who is hospitalized for at least one night to receive treatment or participate in a study.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-inpatientprovider"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-inpatientprovider">inpatientprovider</a></td><td>Inpatient Physician and Surgical Services</td><td>A healthcare provider who is delivering healthcare services in a hospital environment.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-bariatricsurg"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-bariatricsurg">bariatricsurg</a></td><td>Bariatric Surgery</td><td>Bariatric surgery service Skilled nursing service (qualifier value).</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-cosmeticsurg"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-cosmeticsurg">cosmeticsurg</a></td><td>Cosmetic Surgery</td><td>Cosmetic surgery service  Skilled nursing service (qualifier value).</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-skillednursing"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-skillednursing">skillednursing</a></td><td>Skilled Nursing Facility</td><td>Skilled nursing service (qualifier value).</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-ppnatalcare"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-ppnatalcare">ppnatalcare</a></td><td>Prenatal and Postnatal Care</td><td>Prenatal and Postnatal services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-maternitycare"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-maternitycare">maternitycare</a></td><td>Delivery and All Inpatient Services for Maternity Care</td><td>All maternity care services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-menthlthoutp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-menthlthoutp">menthlthoutp</a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Mental health service delivered in an outpatient setting.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-menthlthinp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-menthlthinp">menthlthinp</a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Mental health service delivered in an hospital or inpatient facility setting.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-sadoutp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-sadoutp">sadoutp</a></td><td>Substance Abuse Disorder Outpatient Services</td><td>Substance abuse related services delivered in a outpatient setting.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-sadinp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-sadinp">sadinp</a></td><td>Substance Abuse Disorder Inpatient Services</td><td>Substance abuse related services delivered in a inpatient setting.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-drggenric"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drggenric">drggenric</a></td><td>Generic Drugs</td><td>Generic drugs eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-drgbrand"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgbrand">drgbrand</a></td><td>Preferred Brand Drugs</td><td>Preferred brand drugs eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-drgnonpreferred"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgnonpreferred">drgnonpreferred</a></td><td>Non-Preferred Brand Drugs</td><td>Non-Preferred drugs brands eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-drgspecialty"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-drgspecialty">drgspecialty</a></td><td>Specialty Drugs</td><td>Benefit plan covers specialty drugs.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-rehaboutp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rehaboutp">rehaboutp</a></td><td>Outpatient Rehabilitation Services</td><td>Benefit plan covers outpatient rehabilitation services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-servicehablitation"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-servicehablitation">servicehablitation</a></td><td>Habilitation Services</td><td>Habilitation Services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-chiro"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-chiro">chiro</a></td><td>Chiropractic Care</td><td>Benefit plan covers chiropractor eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dme"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dme">dme</a></td><td>Durable Medical Equipment</td><td>Benefit plan covers Durable medical equipment eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-hearingaids"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-hearingaids">hearingaids</a></td><td>Hearing Aids</td><td>Benefit plan covers hearing aids.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-imgctpetmri"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-imgctpetmri">imgctpetmri</a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Benefit plan covers advances imaging techniques services (CT/PET Scans, MRIs) eligible services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-prev"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-prev">prev</a></td><td>Preventive Care/Screening/Immunization</td><td>Routine healthcare services to prevent health related problems eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-rtnpod"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtnpod">rtnpod</a></td><td>Routine Foot Care</td><td>Routine Foot Care.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-acupuncture"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-acupuncture">acupuncture</a></td><td>Acupuncture</td><td>Benefit plan covers acupuncture treatment.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-weightloss"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-weightloss">weightloss</a></td><td>Weight Loss Programs</td><td>Benefit plan covers weight loss services eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-rtneyechld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtneyechld">rtneyechld</a></td><td>Routine Eye Exam for Children</td><td>Routine eye exam for children eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-glasseschld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-glasseschld">glasseschld</a></td><td>Eye Glasses for Children</td><td>Eye glasses children eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-rtndntlchld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rtndntlchld">rtndntlchld</a></td><td>Dental Check-Up for Children</td><td>Dental Check-Up for Children.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-speachthpy"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-speachthpy">speachthpy</a></td><td>Rehabilitative Speech Therapy</td><td>Benefit plan covers rehabilitative speech therapy eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-rehaboccandpt"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-rehaboccandpt">rehaboccandpt</a></td><td>Rehabilitative Occupational and Rehabilitative Physical Therapy</td><td>Benefit plan covers rehabilitative occupational and rehabilitative physical  eligible benefits.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-wellbaby"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-wellbaby">wellbaby</a></td><td>Well Baby Visits and Care</td><td>Regularly scheduled, preventive care services, including immunizations, provided to children up to an age as specified by a health insurance company or mandated by a government agency.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-laboutp"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-laboutp">laboutp</a></td><td>Laboratory Outpatient and Professional Services</td><td>Benefit plan covers laboratory testing and related professional services received as outpatient.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-imagingdx"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-imagingdx">imagingdx</a></td><td>X-rays and Diagnostic Imaging</td><td>Benefit plan covers diagnostic imaging procedures that produce images of internal structures of the human body and uses radiation to diagnose and treat diseases.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dntlbaschld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlbaschld">dntlbaschld</a></td><td>Basic Dental Care – Child</td><td>Benefit plan covers diagnostic basic dental care.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-orthochld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-orthochld">orthochld</a></td><td>Orthodontia – Child</td><td>Benefit plan covers orthodontia for children.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dntlmajchld"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlmajchld">dntlmajchld</a></td><td>Major Dental Care – Child</td><td>Benefit plan covers major dental care for children.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dntlbasadlt"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlbasadlt">dntlbasadlt</a></td><td>Basic Dental Care – Adult</td><td>Benefit plan covers basic dental care for adults.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-orthodadlt"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-orthodadlt">orthodadlt</a></td><td>Orthodontia – Adult</td><td>Benefits plan covers services provided that are required for orthodontic purposes for an adult.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dntlmajadlt"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dntlmajadlt">dntlmajadlt</a></td><td>Major Dental Care – Adult</td><td>Benefit plan covers major dental care for adult.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-abortion"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-abortion">abortion</a></td><td>Abortion for Which Public Funding is Prohibited</td><td>Benefit plan covers services for abortion for which public funding is prohibited.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-transplant"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-transplant">transplant</a></td><td>Transplant</td><td>Benefit plan covers transplant related services.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-accdntl"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-accdntl">accdntl</a></td><td>Accidental Dental</td><td>Benefit plan covers dental care services related to an accident.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-dialysis"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-dialysis">dialysis</a></td><td>Dialysis</td><td>The plan benefit  covers services used to treat end stage renal disease.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-testallrgy"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-testallrgy">testallrgy</a></td><td>Allergy Testing</td><td>The plan benefits covers services for diagnostic procedures ordered or performed to evaluate whether a sensitivity to a substance is present. This test may be associated with specimen collection and/or substance administration challenge activities.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-chemotherapy"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-chemotherapy">chemotherapy</a></td><td>Chemotherapy</td><td>The plan benefits cover services the use of drugs and approved chemicals to treat disease.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-radiation"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-radiation">radiation</a></td><td>Radiation</td><td>The plan benefits cover services the use radiation to treat disease.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-edudiab"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-edudiab">edudiab</a></td><td>Diabetes Education</td><td>The plan benefits cover services related to instruction or training that encourages behaviors most likely to optimize health potentials through information about diabetes; facilitates the prevention of diabetes.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-prosthetic"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-prosthetic">prosthetic</a></td><td>Prosthetic Devices</td><td>Plan benefit covers services related to  prosthesis devices.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-infusiontx"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-infusiontx">infusiontx</a></td><td>Infusion Therapy</td><td>Plan benefit covers services related to infusion therapy.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-tmjtx"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-tmjtx">tmjtx</a></td><td>Treatment for Temporomandibular Joint Disorders</td><td>Plan benefit covers services related to treatment of Temporomandibular Joint disorder.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-nutrition"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-nutrition">nutrition</a></td><td>Nutritional Counseling</td><td>Nutritional Counseling.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-uv-vhdir-CodeSystem-payercharacteristics-reconsurg"> </a><a href="CodeSystem-payercharacteristics.html#payercharacteristics-reconsurg">reconsurg</a></td><td>Reconstructive Surgery</td><td>Plan benefit covers services related to reconstructive surgery.</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

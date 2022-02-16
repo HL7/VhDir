@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="certificationedition"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ehrcharacteristics.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ehrcharacteristics.html#ehrcharacteristics-2011">2011</a></td><td>ONC 2011 Certification</td><td>The ONC 2011 Certification Edition</td></tr><tr><td><a href="CodeSystem-ehrcharacteristics.html#ehrcharacteristics-2014">2014</a></td><td>ONC 2014 Certification</td><td>The ONC 2014 Certification Edition</td></tr><tr><td><a href="CodeSystem-ehrcharacteristics.html#ehrcharacteristics-2015">2015</a></td><td>ONC 2015 Certification</td><td>The ONC 2015 Certification Edition</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition"/>
+  <version value="0.2.0"/>
+  <name value="VhDirCertificationEdition"/>
+  <title value="VhDir Certification Edition Value Set"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for documenting the certification edition of an electronic health record system."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"/>
+      <concept>
+        <code value="2011"/>
+      </concept>
+      <concept>
+        <code value="2014"/>
+      </concept>
+      <concept>
+        <code value="2015"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

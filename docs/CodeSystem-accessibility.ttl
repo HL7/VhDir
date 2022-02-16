@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "accessibility"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cultcomp<a name=\"accessibility-cultcomp\"> </a></td><td>Cultural competence</td><td>Provides services that meet the social, cultural, and linguistic needs of persons.</td></tr><tr><td style=\"white-space:nowrap\">handiaccess<a name=\"accessibility-handiaccess\"> </a></td><td>handicap accessible</td><td>Provides access to persons with disabilities.</td></tr><tr><td style=\"white-space:nowrap\">adacomp<a name=\"accessibility-adacomp\"> </a></td><td>ADA compliant</td><td>Provides access which complies with the Americans with Disabilities Act and/or amendments.</td></tr><tr><td style=\"white-space:nowrap\">pubtrans<a name=\"accessibility-pubtrans\"> </a></td><td>public transit options</td><td>Provides access using public transportation modes.</td></tr><tr><td style=\"white-space:nowrap\">anssrvc<a name=\"accessibility-anssrvc\"> </a></td><td>answering service</td><td>Provides capability to communicate when intended recipient is not immediately available.</td></tr><tr><td style=\"white-space:nowrap\">vision<a name=\"accessibility-vision\"> </a></td><td>vision</td><td>Provides services for visually impaired persons.</td></tr><tr><td style=\"white-space:nowrap\">cognitive<a name=\"accessibility-cognitive\"> </a></td><td>cognitive</td><td>Provides services for cognitively impaired persons.</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"accessibility-mobility\"> </a></td><td>mobility</td><td>Provides services for mobility impaired persons.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirAccessibility"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Accessibility Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This code system contains codes for documenting the attributes of accessibility"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility";
+     fhir:link <http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "cultcomp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cultural competence" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides services that meet the social, cultural, and linguistic needs of persons." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "handiaccess" ];
+     fhir:CodeSystem.concept.display [ fhir:value "handicap accessible" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides access to persons with disabilities." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "adacomp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ADA compliant" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides access which complies with the Americans with Disabilities Act and/or amendments." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "pubtrans" ];
+     fhir:CodeSystem.concept.display [ fhir:value "public transit options" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides access using public transportation modes." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "anssrvc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "answering service" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides capability to communicate when intended recipient is not immediately available." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "vision" ];
+     fhir:CodeSystem.concept.display [ fhir:value "vision" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides services for visually impaired persons." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "cognitive" ];
+     fhir:CodeSystem.concept.display [ fhir:value "cognitive" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides services for cognitively impaired persons." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "mobility" ];
+     fhir:CodeSystem.concept.display [ fhir:value "mobility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provides services for mobility impaired persons." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/accessibility.ttl> .
+
+# -------------------------------------------------------------------------------------
+

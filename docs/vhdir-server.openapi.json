@@ -1,0 +1,5094 @@
+﻿{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Validated Healthcare Directory Server Capability Statement",
+    "description": "This Capability Statement defines the expected capabilities of a validated healthcare directory FHIR server conforming to the Validated Healthcare Directory Implementation Guide.",
+    "license": {
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "http://spdx.org/licenses/CC0-1.0.html"
+    },
+    "version": "0.2.0",
+    "contact": {
+      "name": "HL7 International - Patient Administration Work Group",
+      "email": "pafm@lists.HL7.org",
+      "url": "http://www.hl7.org/Special/committees/pafm"
+    }
+  },
+  "externalDocs": {
+    "url": "http://hl7.org/fhir/uv/vhdir/CapabilityStatement/vhdir-server",
+    "description": "FHIR CapabilityStatement"
+  },
+  "paths": {
+    "/metadata": {
+      "summary": "Access to the Server\u0027s Capability Statement",
+      "description": "All FHIR Servers return a CapabilityStatement that describes what services they perform",
+      "get": {
+        "summary": "Return the server\u0027s capability statement",
+        "operationId": "metadata",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the capbility statement",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CapabilityStatement"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/CapabilityStatement.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Practitioner": {
+      "summary": "manage the collection of resources of type Practitioner",
+      "description": "Access to services to manage the collection of all resources of type Practitioner",
+      "get": {
+        "summary": "Search all resources of type Practitioner based on a set of criteria",
+        "operationId": "searchPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with the specified endpoint"
+          },
+          {
+            "name": "family",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with the specified family name"
+          },
+          {
+            "name": "given",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with the specified given name"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with the specified identifier"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)"
+          },
+          {
+            "name": "qualification-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with a type of qualification matching the specified code"
+          },
+          {
+            "name": "qualification-issuer",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with a qualification issued by the specified organization"
+          },
+          {
+            "name": "qualification-status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with a qualification status matching the specified code"
+          },
+          {
+            "name": "qualification-period",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "Select Practitioners that have a qualification relevant to the date provided"
+          },
+          {
+            "name": "qualification-wherevalid-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with a qualification that is valid at the location indicated by the specified code"
+          },
+          {
+            "name": "qualification-wherevalid-location",
+            "in": "query",
+            "description": "Select Practitioners with a qualification that is valid at the specified location",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Practitioners with contact information available through the specified intermediary"
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Whether the practitioner record is active"
+          },
+          {
+            "name": "phonetic",
+            "in": "query",
+            "description": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Practitioner/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Practitioner",
+      "description": "Access to services to manage the state of a single resource of type Practitioner",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Practitioner"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Practitioner.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Practitioner/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type Practitioner",
+      "description": "Access to previous versions of a single resource of type Practitioner",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Practitioner/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type Practitioner",
+      "description": "Access a to specified previous version of a single resource of type Practitioner",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Practitioner"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Practitioner.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Practitioner/_history": {
+      "summary": "Read past versions of resources of type Practitioner",
+      "description": "Access to previous versions of resourcez of type Practitioner",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypePractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/PractitionerRole": {
+      "summary": "manage the collection of resources of type PractitionerRole",
+      "description": "Access to services to manage the collection of all resources of type PractitionerRole",
+      "get": {
+        "summary": "Search all resources of type PractitionerRole based on a set of criteria",
+        "operationId": "searchPractitionerRole",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with the specified identifier"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles available at the specified location"
+          },
+          {
+            "name": "network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select roles where the practitioner is a member of the specified health insurance provider network"
+          },
+          {
+            "name": "new-patient-network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles that are part of the specified network and are/are not accepting new patients"
+          },
+          {
+            "name": "new-patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles that are/are not accepting new patients"
+          },
+          {
+            "name": "organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles available at the specified organization"
+          },
+          {
+            "name": "practitioner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select roles filled by the specified practitioner"
+          },
+          {
+            "name": "qualification-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with a type of qualification matching the specified code"
+          },
+          {
+            "name": "qualification-issuer",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with a qualification issued by the specified organization"
+          },
+          {
+            "name": "qualification-status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with a qualification status matching the specified code"
+          },
+          {
+            "name": "qualification-wherevalid-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code"
+          },
+          {
+            "name": "qualification-wherevalid-location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with a qualification that is valid at the specified location"
+          },
+          {
+            "name": "role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with the specified role"
+          },
+          {
+            "name": "service",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles providing the specified service"
+          },
+          {
+            "name": "specialty",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles associated with the specified specialty"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select PractitionerRoles with contact information available through the specified intermediary"
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Whether this practitioner role record is in active use"
+          }
+        ]
+      }
+    },
+    "/PractitionerRole/{rid}": {
+      "summary": "Read/Write/etc resource instance of type PractitionerRole",
+      "description": "Access to services to manage the state of a single resource of type PractitionerRole",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readPractitionerRole",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/PractitionerRole"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/PractitionerRole.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/PractitionerRole/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type PractitionerRole",
+      "description": "Access to previous versions of a single resource of type PractitionerRole",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstPractitionerRole",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/PractitionerRole/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type PractitionerRole",
+      "description": "Access a to specified previous version of a single resource of type PractitionerRole",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadPractitionerRole",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/PractitionerRole"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/PractitionerRole.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/PractitionerRole/_history": {
+      "summary": "Read past versions of resources of type PractitionerRole",
+      "description": "Access to previous versions of resourcez of type PractitionerRole",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypePractitionerRole",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Organization": {
+      "summary": "manage the collection of resources of type Organization",
+      "description": "Access to services to manage the collection of all resources of type Organization",
+      "get": {
+        "summary": "Search all resources of type Organization based on a set of criteria",
+        "operationId": "searchOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Is the Organization record active"
+          },
+          {
+            "name": "address-country",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select organizations with an address in the specified country"
+          },
+          {
+            "name": "address-postalcode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select organizations with an address with the specified postal code"
+          },
+          {
+            "name": "address-state",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select organizations with an address in the specified state"
+          },
+          {
+            "name": "address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select organizations with the specified address (matches any of the string elements of an address)"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with the specified identifier"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with the specified name"
+          },
+          {
+            "name": "partof",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations that are part of the specified organization"
+          },
+          {
+            "name": "qualification-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with a type of qualification matching the specified code"
+          },
+          {
+            "name": "qualification-issuer",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with a qualification issued by the specified organization"
+          },
+          {
+            "name": "qualification-status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with a qualification status matching the specified code"
+          },
+          {
+            "name": "qualification-wherevalid-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with a qualification that is valid at the location indicated by the specified code"
+          },
+          {
+            "name": "qualification-wherevalid-location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with a qualification that is valid at the specified location"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations of the specified type"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Organizations with contact information available through the specified intermediary"
+          },
+          {
+            "name": "address-use",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "A use code specified in an address"
+          },
+          {
+            "name": "address-city",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select organizations with an address in the specified city"
+          },
+          {
+            "name": "coverage-area",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select health insurance provider networks available in a region described by the specified location"
+          }
+        ]
+      }
+    },
+    "/Organization/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Organization",
+      "description": "Access to services to manage the state of a single resource of type Organization",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Organization"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Organization.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Organization/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type Organization",
+      "description": "Access to previous versions of a single resource of type Organization",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Organization/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type Organization",
+      "description": "Access a to specified previous version of a single resource of type Organization",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Organization"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Organization.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Organization/_history": {
+      "summary": "Read past versions of resources of type Organization",
+      "description": "Access to previous versions of resourcez of type Organization",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/OrganizationAffiliation": {
+      "summary": "manage the collection of resources of type OrganizationAffiliation",
+      "description": "Access to services to manage the collection of all resources of type OrganizationAffiliation",
+      "get": {
+        "summary": "Search all resources of type OrganizationAffiliation based on a set of criteria",
+        "operationId": "searchOrganizationAffiliation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations with the specified identifier"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations available at the specified location"
+          },
+          {
+            "name": "network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select roles where the organization is a member of the specified health insurance provider network"
+          },
+          {
+            "name": "participating-organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select roles filled by the specified organization"
+          },
+          {
+            "name": "primary-organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select roles offered by the specified organization"
+          },
+          {
+            "name": "role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations with the specified role"
+          },
+          {
+            "name": "service",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations providing the specified service"
+          },
+          {
+            "name": "specialty",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations associated with the specified specialty"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select OrganizationAffiliations with contact information available through the specified intermediary"
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Whether this organization affiliation record is in active use"
+          }
+        ]
+      }
+    },
+    "/OrganizationAffiliation/{rid}": {
+      "summary": "Read/Write/etc resource instance of type OrganizationAffiliation",
+      "description": "Access to services to manage the state of a single resource of type OrganizationAffiliation",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readOrganizationAffiliation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OrganizationAffiliation"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OrganizationAffiliation.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/OrganizationAffiliation/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type OrganizationAffiliation",
+      "description": "Access to previous versions of a single resource of type OrganizationAffiliation",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstOrganizationAffiliation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/OrganizationAffiliation/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type OrganizationAffiliation",
+      "description": "Access a to specified previous version of a single resource of type OrganizationAffiliation",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadOrganizationAffiliation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OrganizationAffiliation"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OrganizationAffiliation.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/OrganizationAffiliation/_history": {
+      "summary": "Read past versions of resources of type OrganizationAffiliation",
+      "description": "Access to previous versions of resourcez of type OrganizationAffiliation",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeOrganizationAffiliation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/HealthcareService": {
+      "summary": "manage the collection of resources of type HealthcareService",
+      "description": "Access to services to manage the collection of all resources of type HealthcareService",
+      "get": {
+        "summary": "Search all resources of type HealthcareService based on a set of criteria",
+        "operationId": "searchHealthcareService",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "service-category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices providing the specified category of services"
+          },
+          {
+            "name": "characteristic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with the specified characteristic"
+          },
+          {
+            "name": "coverage-area",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select services available in a region described by the specified location"
+          },
+          {
+            "name": "eligibility",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select services with the specified eligibility requirements"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with the specified identifier"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices available at the specified location"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with the specified name"
+          },
+          {
+            "name": "new-patient-network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices that are part of the specified network and are/are not accepting new patients"
+          },
+          {
+            "name": "new-patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices that are/are not accepting new patients"
+          },
+          {
+            "name": "organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices provided by the specified organization"
+          },
+          {
+            "name": "specialty",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select services associated with the specified specialty"
+          },
+          {
+            "name": "service-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices of the specified type"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select HealthcareServices with contact information available through the specified intermediary"
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The Healthcare Service is currently marked as active"
+          }
+        ]
+      }
+    },
+    "/HealthcareService/{rid}": {
+      "summary": "Read/Write/etc resource instance of type HealthcareService",
+      "description": "Access to services to manage the state of a single resource of type HealthcareService",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readHealthcareService",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/HealthcareService"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/HealthcareService.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/HealthcareService/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type HealthcareService",
+      "description": "Access to previous versions of a single resource of type HealthcareService",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstHealthcareService",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/HealthcareService/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type HealthcareService",
+      "description": "Access a to specified previous version of a single resource of type HealthcareService",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadHealthcareService",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/HealthcareService"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/HealthcareService.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/HealthcareService/_history": {
+      "summary": "Read past versions of resources of type HealthcareService",
+      "description": "Access to previous versions of resourcez of type HealthcareService",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeHealthcareService",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Location": {
+      "summary": "manage the collection of resources of type Location",
+      "description": "Access to services to manage the collection of all resources of type Location",
+      "get": {
+        "summary": "Search all resources of type Location based on a set of criteria",
+        "operationId": "searchLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "accessibility",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select locations that offer the specified accessibility options"
+          },
+          {
+            "name": "address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with the specified address"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with the specified identifier"
+          },
+          {
+            "name": "new-patient-network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select locations that are part of the specified network and are/are not accepting new patients"
+          },
+          {
+            "name": "new-patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select locations that are/are not accepting new patients"
+          },
+          {
+            "name": "organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations managed by the specified organization"
+          },
+          {
+            "name": "partof",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations that are part of the specified location"
+          },
+          {
+            "name": "contains",
+            "in": "query",
+            "schema": {},
+            "description": "Select locations that contain the specified co-ordinates"
+          },
+          {
+            "name": "near",
+            "in": "query",
+            "schema": {},
+            "description": "Search for locations where the location.position is near to, or within a specified distance of, the provided coordinates expressed as [latitude]|[longitude]|[distance]|[units] (using the WGS84 datum, see notes).\nIf the units are omitted, then kms should be assumed. If the distance is omitted, then the server can use its own discretion as to what distances should be considered near (and units are irrelevant)\n\nServers may search using various techniques that might have differing accuracies, depending on implementation efficiency.\n\nRequires the near-distance parameter to be provided also"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with the specified status"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations of the specified type"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Locations with contact information available through the specified intermediary"
+          }
+        ]
+      }
+    },
+    "/Location/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Location",
+      "description": "Access to services to manage the state of a single resource of type Location",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Location"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Location.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Location/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type Location",
+      "description": "Access to previous versions of a single resource of type Location",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Location/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type Location",
+      "description": "Access a to specified previous version of a single resource of type Location",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Location"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Location.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Location/_history": {
+      "summary": "Read past versions of resources of type Location",
+      "description": "Access to previous versions of resourcez of type Location",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/CareTeam": {
+      "summary": "manage the collection of resources of type CareTeam",
+      "description": "Access to services to manage the collection of all resources of type CareTeam",
+      "get": {
+        "summary": "Search all resources of type CareTeam based on a set of criteria",
+        "operationId": "searchCareTeam",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams of the specified type"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams with the specified endpoint"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams with the specified identifier"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select care teams operating at the specified location"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select care teams with the specified name"
+          },
+          {
+            "name": "organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select care teams managed by the specified organization"
+          },
+          {
+            "name": "service",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select care teams providing the specified service"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams with the specified status"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select CareTeams with contact information available through the specified intermediary"
+          },
+          {
+            "name": "participant",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select care teams that include the specified member"
+          }
+        ]
+      }
+    },
+    "/CareTeam/{rid}": {
+      "summary": "Read/Write/etc resource instance of type CareTeam",
+      "description": "Access to services to manage the state of a single resource of type CareTeam",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readCareTeam",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CareTeam"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/CareTeam.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/CareTeam/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type CareTeam",
+      "description": "Access to previous versions of a single resource of type CareTeam",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstCareTeam",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/CareTeam/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type CareTeam",
+      "description": "Access a to specified previous version of a single resource of type CareTeam",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadCareTeam",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CareTeam"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/CareTeam.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/CareTeam/_history": {
+      "summary": "Read past versions of resources of type CareTeam",
+      "description": "Access to previous versions of resourcez of type CareTeam",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeCareTeam",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Endpoint": {
+      "summary": "manage the collection of resources of type Endpoint",
+      "description": "Access to services to manage the collection of all resources of type Endpoint",
+      "get": {
+        "summary": "Search all resources of type Endpoint based on a set of criteria",
+        "operationId": "searchEndpoint",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "connection-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints that support the specified protocol/profile/standard"
+          },
+          {
+            "name": "identifier-assigner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints with an identifier issued by the specified organization"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints with the specified identifier"
+          },
+          {
+            "name": "mime-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select endpoints that support the specified media type"
+          },
+          {
+            "name": "organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints managed by the specified organization"
+          },
+          {
+            "name": "payload-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints that support the specified type of content"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints with the specified status"
+          },
+          {
+            "name": "usecase-standard",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select endpoints that support the specified standard"
+          },
+          {
+            "name": "usecase-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select endpoints that support the type of services indicated by the specified code"
+          },
+          {
+            "name": "via-intermediary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select Endpoints with contact information available through the specified intermediary"
+          }
+        ]
+      }
+    },
+    "/Endpoint/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Endpoint",
+      "description": "Access to services to manage the state of a single resource of type Endpoint",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readEndpoint",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Endpoint"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Endpoint.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Endpoint/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type Endpoint",
+      "description": "Access to previous versions of a single resource of type Endpoint",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstEndpoint",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Endpoint/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type Endpoint",
+      "description": "Access a to specified previous version of a single resource of type Endpoint",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadEndpoint",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Endpoint"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Endpoint.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Endpoint/_history": {
+      "summary": "Read past versions of resources of type Endpoint",
+      "description": "Access to previous versions of resourcez of type Endpoint",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeEndpoint",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/VerificationResult": {
+      "summary": "manage the collection of resources of type VerificationResult",
+      "description": "Access to services to manage the collection of all resources of type VerificationResult",
+      "get": {
+        "summary": "Search all resources of type VerificationResult based on a set of criteria",
+        "operationId": "searchVerificationResult",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "attestation-who",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was attested to by the specified source"
+          },
+          {
+            "name": "attestation-method",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was attested to using the specified method"
+          },
+          {
+            "name": "attestation-onbehalfof",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was attested to on behalf of the specified source"
+          },
+          {
+            "name": "primarysource-date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "Select validation information for data that was validated against a primary source on the specified date"
+          },
+          {
+            "name": "primarysource-who",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was validated against the specified primary source"
+          },
+          {
+            "name": "primarysource-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was validated against the specified type of primary source organization"
+          },
+          {
+            "name": "status-date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "Select validation information with a validation status that occurred at the specified date/time"
+          },
+          {
+            "name": "validation-status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information with the specified status"
+          },
+          {
+            "name": "validator-organization",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select validation information for data that was validated by the specified organization"
+          },
+          {
+            "name": "target",
+            "in": "query",
+            "description": "Select validation information for the specified resource",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/VerificationResult/{rid}": {
+      "summary": "Read/Write/etc resource instance of type VerificationResult",
+      "description": "Access to services to manage the state of a single resource of type VerificationResult",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readVerificationResult",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/VerificationResult"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/VerificationResult.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/VerificationResult/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type VerificationResult",
+      "description": "Access to previous versions of a single resource of type VerificationResult",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstVerificationResult",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/VerificationResult/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type VerificationResult",
+      "description": "Access a to specified previous version of a single resource of type VerificationResult",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadVerificationResult",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/VerificationResult"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/VerificationResult.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/VerificationResult/_history": {
+      "summary": "Read past versions of resources of type VerificationResult",
+      "description": "Access to previous versions of resourcez of type VerificationResult",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeVerificationResult",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/InsurancePlan": {
+      "summary": "manage the collection of resources of type InsurancePlan",
+      "description": "Access to services to manage the collection of all resources of type InsurancePlan",
+      "get": {
+        "summary": "Search all resources of type InsurancePlan based on a set of criteria",
+        "operationId": "searchInsurancePlan",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "administered-by",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products that are administered by the specified organization"
+          },
+          {
+            "name": "coverage-benefit-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select health insurance products offering covered benefits of the specified type"
+          },
+          {
+            "name": "coverage-limit-value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select health insurance products with covered benefits limited in the specified manner"
+          },
+          {
+            "name": "coverage-network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products offering covered benefits through the specified health insurance provider network"
+          },
+          {
+            "name": "coverage-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products offering the specified type of coverage"
+          },
+          {
+            "name": "endpoint",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select health insurance products/plans with the specified endpoint"
+          },
+          {
+            "name": "general-cost-groupsize",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans with costs for the specified group size"
+          },
+          {
+            "name": "general-cost-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans with the specified type of cost"
+          },
+          {
+            "name": "general-cost-value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans which include the specified cost"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products with the specified name"
+          },
+          {
+            "name": "owned-by",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products that are owned by the specified organization"
+          },
+          {
+            "name": "plan-coverage-area",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans that are available in the specified location"
+          },
+          {
+            "name": "plan-identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans with the specified identifier"
+          },
+          {
+            "name": "plan-network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans associated with the specified health insurance provider network"
+          },
+          {
+            "name": "plan-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans of the specified type"
+          },
+          {
+            "name": "coverage-area",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products that are offered in the specified location"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products with the specified identifier"
+          },
+          {
+            "name": "network",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select products associated with the specified health insurance provider network"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select insurance plans of the specified type"
+          },
+          {
+            "name": "specific-cost-benefit-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans which include costs for the specified type of benefit"
+          },
+          {
+            "name": "specific-cost-category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans which include costs for the specified category of coverage"
+          },
+          {
+            "name": "specific-cost-cost-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans which include the specified type of cost"
+          },
+          {
+            "name": "specific-cost-value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select plans which include the specified cost"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Select health insurance products/plans with the specified status"
+          }
+        ]
+      }
+    },
+    "/InsurancePlan/{rid}": {
+      "summary": "Read/Write/etc resource instance of type InsurancePlan",
+      "description": "Access to services to manage the state of a single resource of type InsurancePlan",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readInsurancePlan",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/InsurancePlan"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/InsurancePlan.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/InsurancePlan/{rid}/_history": {
+      "summary": "Read past versions of resource instance of type InsurancePlan",
+      "description": "Access to previous versions of a single resource of type InsurancePlan",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histinstInsurancePlan",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/InsurancePlan/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type InsurancePlan",
+      "description": "Access a to specified previous version of a single resource of type InsurancePlan",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadInsurancePlan",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/InsurancePlan"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/InsurancePlan.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/InsurancePlan/_history": {
+      "summary": "Read past versions of resources of type InsurancePlan",
+      "description": "Access to previous versions of resourcez of type InsurancePlan",
+      "get": {
+        "summary": "Read the past states of the resource",
+        "operationId": "histtypeInsurancePlan",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resources being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "$ref": "#/components/parameters/count"
+          },
+          {
+            "name": "_since",
+            "in": "query",
+            "description": "Only include resource versions that were created at or after the given instant in time",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_at",
+            "in": "query",
+            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "_list",
+            "in": "query",
+            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/": {
+      "summary": "System level operations",
+      "description": "System level operations",
+      "get": {
+        "summary": "Search all resources of all types based on a set of criteria",
+        "operationId": "searchAll",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "_content",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Search on the entire content of the resource"
+          },
+          {
+            "name": "_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Logical id of this artifact"
+          },
+          {
+            "name": "_lastUpdated",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "When the resource version last changed"
+          },
+          {
+            "name": "_security",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Security Labels applied to this resource"
+          },
+          {
+            "name": "_text",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Search on the narrative of the resource"
+          },
+          {
+            "name": "_query",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "A custom search profile that describes a specific defined query operation"
+          }
+        ]
+      },
+      "put": {
+        "summary": "Batch or Transaction",
+        "operationId": "transaction",
+        "requestBody": {
+          "description": "The batch or transaction",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Batch or Transaction response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "rid": {
+        "name": "rid",
+        "in": "path",
+        "description": "id of the resource (\u003dResource.id)",
+        "required": true,
+        "allowEmptyValue": false,
+        "style": "simple",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "hid": {
+        "name": "hid",
+        "in": "path",
+        "description": "id of the history entry (\u003dResource.meta.versionId)",
+        "required": true,
+        "allowEmptyValue": false,
+        "style": "simple",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "summary": {
+        "name": "_summary",
+        "in": "query",
+        "description": "Requests the server to return a designated subset of the resource",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "true",
+            "text",
+            "data",
+            "count",
+            "false"
+          ]
+        }
+      },
+      "format": {
+        "name": "_format",
+        "in": "query",
+        "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "string",
+          "format": "mime-type"
+        }
+      },
+      "pretty": {
+        "name": "_pretty",
+        "in": "query",
+        "description": "Ask for a pretty printed response for human convenience",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "elements": {
+        "name": "_elements",
+        "in": "query",
+        "description": "Requests the server to return a collection of elements from the resource",
+        "allowEmptyValue": true,
+        "style": "form",
+        "explode": false,
+        "schema": {
+          "type": "array",
+          "format": "string",
+          "items": {
+            "format": "string"
+          }
+        }
+      },
+      "count": {
+        "name": "_count",
+        "in": "query",
+        "description": "The maximum number of search results on a page. The server is not bound to return the number requested, but cannot return more",
+        "schema": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

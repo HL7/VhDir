@@ -1,0 +1,599 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\insuranceplan1 - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.242"}
+    h3,h4,h5,h6{--heading-prefix:"6.242"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>insuranceplan1</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="InsurancePlan-insuranceplan1.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="InsurancePlan-insuranceplan1.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: insuranceplan1 - XML Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+<p><a href="InsurancePlan-insuranceplan1.xml" no-download="true">Raw xml</a> | <a href="InsurancePlan-insuranceplan1.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan">InsurancePlan</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+&lt;!--  describes a fictional Qualified Health Plan (QHP) in the Washington, DC metro area  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;insuranceplan1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;insuranceplan1&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: HIOS product ID: 1234567891 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Bronze &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-payercharacteristics.html&quot;&gt;VhDir Payer Characteristics Code System&lt;/a&gt;#bronze)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Patriot PPO Standard&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: Patriot Plus&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2018-06-06 --&amp;gt; 2019-01-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;ownedBy&lt;/b&gt;: &lt;a href=&quot;Organization-homeland.html&quot;&gt;Organization/homeland: Homeland Health Insurance&lt;/a&gt; &quot;Homeland Health Insurance&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administeredBy&lt;/b&gt;: &lt;a href=&quot;Organization-homeland.html&quot;&gt;Organization/homeland: Homeland Health Insurance&lt;/a&gt; &quot;Homeland Health Insurance&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;coverageArea&lt;/b&gt;: &lt;a href=&quot;Location-wash-dc-metro.html&quot;&gt;Location/wash-dc-metro: Washington, DC metro area&lt;/a&gt; &quot;Washington, DC metro area&quot;&lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Telecom&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;General information &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-contactentity-type.html&quot;&gt;Contact entity type&lt;/a&gt;#PATINF &quot;Patient&quot;)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;ph: 202-123-5555, &lt;a href=&quot;mailto:info@homelandinc.org&quot;&gt;info@homelandinc.org&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: &lt;span&gt;: patriot plan endpoint hub&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;network&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;Organization-patriotppo.html&quot;&gt;Organization/patriotppo: Patriot Preferred Provider Network&lt;/a&gt; &quot;Patriot Preferred Provider Network&quot;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Organization-patriotdental.html&quot;&gt;Organization/patriotdental: Patriot Dental Provider Network&lt;/a&gt; &quot;Patriot Dental Provider Network&quot;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;coverage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Coverage related to medical inpatient, outpatient, diagnostic, and preventive care &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (coverage-type#medical &quot;Medical&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;network&lt;/b&gt;: &lt;a href=&quot;Organization-patriotppo.html&quot;&gt;Organization/patriotppo: Patriot Preferred Provider Network&lt;/a&gt; &quot;Patriot Preferred Provider Network&quot;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;benefit&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Primary care visit to treat an injury or illness &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (benefit-type#001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;requirement&lt;/b&gt;: N/A&lt;/p&gt;&lt;h3&gt;Limits&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;unlimited &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;coverage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Coverage related to dental care &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (coverage-type#dental &quot;Dental&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;network&lt;/b&gt;: &lt;a href=&quot;Organization-patriotdental.html&quot;&gt;Organization/patriotdental: Patriot Dental Provider Network&lt;/a&gt; &quot;Patriot Dental Provider Network&quot;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;benefit&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Periodic oral checkup &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (benefit-type#052 &quot;Basic Dental Care – Adult&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;requirement&lt;/b&gt;: N/A&lt;/p&gt;&lt;h3&gt;Limits&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2 visit/yr&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code {visit}/a = '{visit}/a')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;biannual oral checkup &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;plan&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: HIOS plan ID: 123456789101112 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Bronze &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (planlevel#bronze)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;coverageArea&lt;/b&gt;: &lt;a href=&quot;Location-wash-dc-metro.html&quot;&gt;Location/wash-dc-metro: Washington, DC metro area&lt;/a&gt; &quot;Washington, DC metro area&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;network&lt;/b&gt;: &lt;a href=&quot;Organization-patriotdental.html&quot;&gt;Organization/patriotdental: Patriot Dental Provider Network&lt;/a&gt; &quot;Patriot Dental Provider Network&quot;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;generalCost&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Deductible &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (cost-type#deductible)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;groupSize&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;comment&lt;/b&gt;: Includes all prescription and medical costs for in-network providers&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;specificCost&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Medical &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (cost-category#medical)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;benefit&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Primary care visit to treat an injury or illness &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (benefit-type#001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Costs&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Applicability&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Qualifiers&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Copay &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (cost-type#copay)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;In Network &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-applicability.html&quot;&gt;Benefit cost applicability&lt;/a&gt;#in-network)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-network preferred provider &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;td&gt;50 dollars&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: urn:iso:std:iso:4217 code USD = 'United States dollar')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;specificCost&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Dental &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (cost-category#dental)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;benefit&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Basic Dental Care – Adult &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (cost-type#052)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Costs&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Applicability&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Qualifiers&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Coinsurance &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (costing#coinsurance)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;In Network &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-applicability.html&quot;&gt;Benefit cost applicability&lt;/a&gt;#in-network)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-network provider &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;td&gt;10 percent&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.identifier">identifier</a>&gt;
+  &lt;!--  Official HIOS product ID assigned by CMS  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NIIP&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;National Insurance Payor Identifier (Payor)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIOS product ID&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.cms.gov/CCIIO/&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1234567891&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Centers for Medicare and Medicaid Services&quot;/&gt;
+    &lt;/assigner&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+&lt;!--  This record is active  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bronze&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronze&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot PPO Standard&quot;/&gt;
+&lt;!--  Name of the product is Patriot PPO Standard  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Plus&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.period">period</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-06-06&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-01-01&quot;/&gt;
+  &lt;/period&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.ownedBy">ownedBy</a>&gt;
+  &lt;!--  Reference to the owner of the product, Homeland Health Insurance  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/homeland&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Homeland Health Insurance&quot;/&gt;
+  &lt;/ownedBy&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.administeredBy">administeredBy</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/homeland&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Homeland Health Insurance&quot;/&gt;
+  &lt;/administeredBy&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverageArea">coverageArea</a>&gt;
+  &lt;!--  Reference to the product's coverage area, the Washington, DC metro area  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/wash-dc-metro&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Washington, DC metro area&quot;/&gt;
+  &lt;/coverageArea&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.contact">contact</a>&gt;
+  &lt;!--  Contact information for consumers  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.contact.purpose">purpose</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/contactentity-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PATINF&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;General information&quot;/&gt;
+    &lt;/purpose&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.contact.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;202-123-5555&quot;/&gt;
+    &lt;/telecom&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.contact.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;info@homelandinc.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.endpoint">endpoint</a>&gt;
+  &lt;!--  A reference to the technical endpoints providing access to services operated for the health insurance product.
+		&lt;reference value=&quot;&quot;/&gt;  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patriot plan endpoint hub&quot;/&gt;
+  &lt;/endpoint&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.network">network</a>&gt;
+  &lt;!--  A reference to the medical provider network associated with this product  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/patriotppo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Preferred Provider Network&quot;/&gt;
+  &lt;/network&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.network">network</a>&gt;
+  &lt;!--  A reference to the dental provider network associated with this product  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/patriotdental&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Dental Provider Network&quot;/&gt;
+  &lt;/network&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage">coverage</a>&gt;
+  &lt;!--  describes medical benefits  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/coverage-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;medical&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medical&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Coverage related to medical inpatient, outpatient, diagnostic, and preventive care&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.network">network</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/patriotppo&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Preferred Provider Network&quot;/&gt;
+    &lt;/network&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit">benefit</a>&gt;
+    &lt;!--  basic primary care visit  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/benefit-type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Primary care visit to treat an injury or illness&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.requirement">requirement</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.limit">limit</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.limit.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;unlimited&quot;/&gt;
+        &lt;/code&gt;
+      &lt;/limit&gt;
+    &lt;/benefit&gt;
+  &lt;/coverage&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage">coverage</a>&gt;
+  &lt;!--  describes dental benefits  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/coverage-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dental&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dental&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Coverage related to dental care&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.network">network</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/patriotdental&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Dental Provider Network&quot;/&gt;
+    &lt;/network&gt;
+  &lt;!-- Specific benefits under this type of coverage. --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit">benefit</a>&gt;
+    &lt;!--  biannual oral checkup  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/benefit-type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;052&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Basic Dental Care – Adult&quot;/&gt;
+        &lt;/coding&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Periodic oral checkup&quot;/&gt;
+      &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.requirement">requirement</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.limit">limit</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.limit.value">value</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;visit/yr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;{visit}/a&quot;/&gt;
+        &lt;/value&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.coverage.benefit.limit.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;biannual oral checkup&quot;/&gt;
+        &lt;/code&gt;
+      &lt;/limit&gt;
+    &lt;/benefit&gt;
+  &lt;/coverage&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan">plan</a>&gt;
+  &lt;!--  Information about the cost sharing features of the product  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.identifier">identifier</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NIIP&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;National Insurance Payor Identifier (Payor)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;/coding&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIOS plan ID&quot;/&gt;
+      &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.cms.gov/CCIIO/&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;123456789101112&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Centers for Medicare and Medicaid Services&quot;/&gt;
+      &lt;/assigner&gt;
+    &lt;/identifier&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/planlevel&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bronze&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronze&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronze&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.coverageArea">coverageArea</a>&gt;
+    &lt;!--  Reference to the product's coverage area, the Washington, DC metro area  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/wash-dc-metro&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Washington, DC metro area&quot;/&gt;
+    &lt;/coverageArea&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.network">network</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/patriotdental&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patriot Dental Provider Network&quot;/&gt;
+    &lt;/network&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.generalCost">generalCost</a>&gt;
+    &lt;!--  Describes the plan's deductible  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.generalCost.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/cost-type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;deductible&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Deductible&quot;/&gt;
+        &lt;/coding&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Deductible&quot;/&gt;
+      &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.generalCost.groupSize">groupSize</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.generalCost.cost">cost</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;6200&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;USD&quot;/&gt;
+      &lt;/cost&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.generalCost.comment">comment</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Includes all prescription and medical costs for in-network providers&quot;/&gt;
+    &lt;/generalCost&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost">specificCost</a>&gt;
+    &lt;!--  Describes the costs associated with the medical coverage options  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.category">category</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/cost-category&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;medical&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medical&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/category&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit">benefit</a>&gt;
+      &lt;!--  $50 copay for primary care visits with an in-network preferred provider  --&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/benefit-type&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Primary care visit to treat an injury or illness&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost">cost</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/cost-type&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;copay&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Copay&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.applicability">applicability</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/applicability&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in-network&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;In Network&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/applicability&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.qualifiers">qualifiers</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;in-network preferred provider&quot;/&gt;
+          &lt;/qualifiers&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.value">value</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;50&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dollars&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:4217&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;USD&quot;/&gt;
+          &lt;/value&gt;
+        &lt;/cost&gt;
+      &lt;/benefit&gt;
+    &lt;/specificCost&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost">specificCost</a>&gt;
+    &lt;!--  describes the costs associated with dental coverage  --&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.category">category</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/cost-category&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dental&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dental&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/category&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit">benefit</a>&gt;
+      &lt;!--  10% coinsurance for routine oral checkup with an in-network dental provider  --&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/cost-type&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;052&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Basic Dental Care – Adult&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost">cost</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/costing&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;coinsurance&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Coinsurance&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.applicability">applicability</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/applicability&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in-network&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;In Network&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/applicability&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.qualifiers">qualifiers</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;in-network provider&quot;/&gt;
+          &lt;/qualifiers&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/insuranceplan.html#InsurancePlan.plan.specificCost.benefit.cost.value">value</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;percent&quot;/&gt;
+          &lt;/value&gt;
+        &lt;/cost&gt;
+      &lt;/benefit&gt;
+    &lt;/specificCost&gt;
+  &lt;/plan&gt;
+&lt;/InsurancePlan&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

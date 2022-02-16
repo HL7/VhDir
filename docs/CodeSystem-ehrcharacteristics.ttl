@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ehrcharacteristics"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2011<a name=\"ehrcharacteristics-2011\"> </a></td><td>ONC 2011 Certification</td><td>The ONC 2011 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">2014<a name=\"ehrcharacteristics-2014\"> </a></td><td>ONC 2014 Certification</td><td>The ONC 2014 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">2015<a name=\"ehrcharacteristics-2015\"> </a></td><td>ONC 2015 Certification</td><td>The ONC 2015 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">portal<a name=\"ehrcharacteristics-portal\"> </a></td><td>patient portal</td><td>A patient portal is a secure online website that gives patients convenient, 24-hour access to personal health information from anywhere with an Internet connection</td></tr><tr><td style=\"white-space:nowrap\">messaging<a name=\"ehrcharacteristics-messaging\"> </a></td><td>secure messaging</td><td>EHR functionality that enables a user to send messages to, and receive messages from, a patient in a secure manner</td></tr><tr><td style=\"white-space:nowrap\">VDT<a name=\"ehrcharacteristics-VDT\"> </a></td><td>view/download/transmit (VDT)</td><td>EHR functionality that enables patients (and their authorized representatives) to use internet-based technology to view, download, and transmit their health information to a 3rd party.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirEHRCharacteristics"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Ehr Characteristics Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This code system contains codes for describing attributes of an electronic health record (EHR) product."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "2011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ONC 2011 Certification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The ONC 2011 Certification Edition" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2014" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ONC 2014 Certification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The ONC 2014 Certification Edition" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "2015" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ONC 2015 Certification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The ONC 2015 Certification Edition" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "portal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "patient portal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A patient portal is a secure online website that gives patients convenient, 24-hour access to personal health information from anywhere with an Internet connection" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "messaging" ];
+     fhir:CodeSystem.concept.display [ fhir:value "secure messaging" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "EHR functionality that enables a user to send messages to, and receive messages from, a patient in a secure manner" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "VDT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "view/download/transmit (VDT)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "EHR functionality that enables patients (and their authorized representatives) to use internet-based technology to view, download, and transmit their health information to a 3rd party." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/ehrcharacteristics.ttl> .
+
+# -------------------------------------------------------------------------------------
+

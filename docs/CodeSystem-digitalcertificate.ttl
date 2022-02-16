@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "digitalcertificate"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">TLS/SSL<a name=\"digitalcertificate-TLS.47SSL\"> </a></td><td>TLS/SSL</td><td>A certificate for a device such as a server or router, used to authenticate the device and establish secure communications between the device and a client.</td></tr><tr><td style=\"white-space:nowrap\">device<a name=\"digitalcertificate-device\"> </a></td><td>Device</td><td>A certificate used to verify the identity of a device.</td></tr><tr><td style=\"white-space:nowrap\">grp<a name=\"digitalcertificate-grp\"> </a></td><td>Group</td><td>A certificate for a collection of individual subscribers acting in a shared capacity, such as an organization.</td></tr><tr><td style=\"white-space:nowrap\">ind<a name=\"digitalcertificate-ind\"> </a></td><td>Individual</td><td>A certificate for a single person.</td></tr><tr><td style=\"white-space:nowrap\">role<a name=\"digitalcertificate-role\"> </a></td><td>Role based</td><td>A certificate for a specific role on behalf of which a subscriber is authorized to act, such as a Chief Information Officer.</td></tr><tr><td style=\"white-space:nowrap\">signing<a name=\"digitalcertificate-signing\"> </a></td><td>Signing</td><td>A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash.</td></tr><tr><td style=\"white-space:nowrap\">encrypt<a name=\"digitalcertificate-encrypt\"> </a></td><td>Encryption</td><td>A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes.</td></tr><tr><td style=\"white-space:nowrap\">auth<a name=\"digitalcertificate-auth\"> </a></td><td>Authentication</td><td>A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity.</td></tr><tr><td style=\"white-space:nowrap\">x.509v3<a name=\"digitalcertificate-x.46509v3\"> </a></td><td>x.509v3</td><td>A standard published by the International Telecommunication Union’s Telecommunication Standardization Sector (ITU-T) that defines a framework for public-key certificates, including specification of data objects used to represent the certificates themselves.</td></tr><tr><td style=\"white-space:nowrap\">direct<a name=\"digitalcertificate-direct\"> </a></td><td>DirectTrust</td><td>DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange.</td></tr><tr><td style=\"white-space:nowrap\">FPKI<a name=\"digitalcertificate-FPKI\"> </a></td><td>Federal Public Key Infrastructure (FPKI)/Federal Trust Framework</td><td>The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue Personal Identity Verification (PIV) credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates.</td></tr><tr><td style=\"white-space:nowrap\">SAFEBioP<a name=\"digitalcertificate-SAFEBioP\"> </a></td><td>SAFE-BioPharma</td><td>The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements.</td></tr><tr><td style=\"white-space:nowrap\">ONCTEF<a name=\"digitalcertificate-ONCTEF\"> </a></td><td>ONC Trusted Exchange Framework (TEF)</td><td>The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs).</td></tr><tr><td style=\"white-space:nowrap\">NATE<a name=\"digitalcertificate-NATE\"> </a></td><td>National Association for Trusted Exchange (NATE)</td><td>NATE Blue Button for Consumers (NBB4C) Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"digitalcertificate-other\"> </a></td><td>other</td><td>A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirDigitalCertificate"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Digital Certificate Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Public key infrastructure (PKI) refers to the architecture, organizations, techniques, practices, and procedures that collectively support the implementation and operation of a certificate-based public key cryptographic system. A certificate is a set of data that uniquely identifies a key pair and an owner that is authorized to use the key pair. The certificate contains the owner’s public key and other information, and is digitally signed by a Certification Authority (i.e., a trusted party), thereby binding the public key to the owner. This code system includes terms describing various aspects of a certificate-based public key cryptographic system, such as applicable standards, types of certificates, uses of certificates, and associated trust frameworks."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "TLS/SSL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TLS/SSL" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate for a device such as a server or router, used to authenticate the device and establish secure communications between the device and a client." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "device" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Device" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate used to verify the identity of a device." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "grp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Group" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate for a collection of individual subscribers acting in a shared capacity, such as an organization." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "ind" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Individual" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate for a single person." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "role" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Role based" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate for a specific role on behalf of which a subscriber is authorized to act, such as a Chief Information Officer." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "signing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Signing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "encrypt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Encryption" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "auth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Authentication" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "x.509v3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "x.509v3" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A standard published by the International Telecommunication Union’s Telecommunication Standardization Sector (ITU-T) that defines a framework for public-key certificates, including specification of data objects used to represent the certificates themselves." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "direct" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DirectTrust" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "FPKI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Federal Public Key Infrastructure (FPKI)/Federal Trust Framework" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue Personal Identity Verification (PIV) credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "SAFEBioP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SAFE-BioPharma" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "ONCTEF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ONC Trusted Exchange Framework (TEF)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs)." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "NATE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "National Association for Trusted Exchange (NATE)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NATE Blue Button for Consumers (NBB4C) Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/digitalcertificate.ttl> .
+
+# -------------------------------------------------------------------------------------
+

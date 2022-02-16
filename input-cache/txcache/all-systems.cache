@@ -1,0 +1,181 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "xml"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "xml",
+  "code" : "xml",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "json"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "json",
+  "code" : "json",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/hl7-v3+xml"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "application/hl7-v3+xml",
+  "code" : "application/hl7-v3+xml",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "USD"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:4217"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "United States dollar",
+  "code" : "USD",
+  "system" : "urn:iso:std:iso:4217"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "a"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "second"
+        }],
+        "code" : "s",
+        "display" : "second",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "秒"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "minute"
+        }],
+        "code" : "min",
+        "display" : "minute",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "分钟"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "hour"
+        }],
+        "code" : "h",
+        "display" : "hour",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "小时"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "day"
+        }],
+        "code" : "d",
+        "display" : "day",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "天"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "week"
+        }],
+        "code" : "wk",
+        "display" : "week",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "星期"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "month"
+        }],
+        "code" : "mo",
+        "display" : "month",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "月"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+          "valueString" : "year"
+        }],
+        "code" : "a",
+        "display" : "year",
+        "designation" : [{
+          "language" : "zh",
+          "value" : "年"
+        }]
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "年",
+  "code" : "a",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/geo+json"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "application/geo+json",
+  "code" : "application/geo+json",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------

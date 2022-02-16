@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "insuranceplan-plan-network"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"insuranceplan-plan-network\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: VhDir_sp_insuranceplan_plan_network</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 International - Patient Administration Work Group</p><p><b>contact</b>: HL7 International - Patient Administration Work Group: <a href=\"http://www.hl7.org/Special/committees/pafm\">http://www.hl7.org/Special/committees/pafm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select plans associated with the specified health insurance provider network</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: plan-network</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: reference</p><p><b>expression</b>: InsurancePlan.plan.network</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: identifier, name, partof</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network"];
+  fhir:SearchParameter.version [ fhir:value "0.2.0"];
+  fhir:SearchParameter.name [ fhir:value "VhDir_sp_insuranceplan_plan_network"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2018-05-23"^^xsd:date];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "Select plans associated with the specified health insurance provider network"];
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:SearchParameter.code [ fhir:value "plan-network"];
+  fhir:SearchParameter.base [
+     fhir:value "InsurancePlan";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "InsurancePlan.plan.network"];
+  fhir:SearchParameter.target [
+     fhir:value "Organization";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.chain [
+     fhir:value "identifier";
+     fhir:index 0
+  ], [
+     fhir:value "name";
+     fhir:index 1
+  ], [
+     fhir:value "partof";
+     fhir:index 2
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/SearchParameter/insuranceplan-plan-network.ttl> .
+
+# -------------------------------------------------------------------------------------
+

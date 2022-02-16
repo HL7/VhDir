@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="validation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/validation defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">noneneeded<a name="validation-noneneeded"> </a></td><td>None needed</td><td>No validation needed/planned for this resource or element.</td></tr><tr><td style="white-space:nowrap">initial<a name="validation-initial"> </a></td><td>Initial</td><td>Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'.</td></tr><tr><td style="white-space:nowrap">periodic<a name="validation-periodic"> </a></td><td>Periodic</td><td>Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure.</td></tr><tr><td style="white-space:nowrap">attested<a name="validation-attested"> </a></td><td>Attested</td><td>Indicates the element or resource has only been attested.</td></tr><tr><td style="white-space:nowrap">validated<a name="validation-validated"> </a></td><td>Validated</td><td>Indicates the element or resource has been successfully validated.</td></tr><tr><td style="white-space:nowrap">inprocess<a name="validation-inprocess"> </a></td><td>Inprocess</td><td>Indicates the element or resource is currently being validated.</td></tr><tr><td style="white-space:nowrap">reqreval<a name="validation-reqreval"> </a></td><td>Required revalidation</td><td>Indicates the element or resource has passed an expiration date and requires revalidation.</td></tr><tr><td style="white-space:nowrap">valfailed<a name="validation-valfailed"> </a></td><td>Valiation failed</td><td>Indicates validation was attepted on an element or resource and that validation failed.</td></tr><tr><td style="white-space:nowrap">nothing<a name="validation-nothing"> </a></td><td>Nothing</td><td>No external validation is required.</td></tr><tr><td style="white-space:nowrap">single<a name="validation-single"> </a></td><td>Single</td><td>Indicates the element or resource is validated against a single source.</td></tr><tr><td style="white-space:nowrap">multiple<a name="validation-multiple"> </a></td><td>Multiple</td><td>Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network.</td></tr><tr><td style="white-space:nowrap">editcheck<a name="validation-editcheck"> </a></td><td>Edit check</td><td>Indicates the element or resource is validated for format, range, presence, or other similar properties.</td></tr><tr><td style="white-space:nowrap">valueset<a name="validation-valueset"> </a></td><td>Valueset</td><td>Indicates the element or resource is validated against a value set.</td></tr><tr><td style="white-space:nowrap">extsource<a name="validation-extsource"> </a></td><td>External source</td><td>Indicates the element or resource is validated against an external source.</td></tr><tr><td style="white-space:nowrap">standalone<a name="validation-standalone"> </a></td><td>Stand alone</td><td>Indicates the element or resource is validated by itself and is unrelated to other elements or resources.</td></tr><tr><td style="white-space:nowrap">incontext<a name="validation-incontext"> </a></td><td>In context</td><td>Indicates the element or resource is validated by the existence or value of another related element or resource.</td></tr><tr><td style="white-space:nowrap">fatal<a name="validation-fatal"> </a></td><td>Fatal</td><td>A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken.</td></tr><tr><td style="white-space:nowrap">warning<a name="validation-warning"> </a></td><td>Warning</td><td>A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization.</td></tr><tr><td style="white-space:nowrap">recordonly<a name="validation-recordonly"> </a></td><td>Record only</td><td>A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error.</td></tr><tr><td style="white-space:nowrap">noaction<a name="validation-noaction"> </a></td><td>No action</td><td>A failure that is unlikely to be relevant to any local workflow environment.</td></tr><tr><td style="white-space:nowrap">manual<a name="validation-manual"> </a></td><td>Manual</td><td>The resource or element is validated manually.</td></tr><tr><td style="white-space:nowrap">portal<a name="validation-portal"> </a></td><td>Portal</td><td>The resource or element is validated via a portal into a source of valid data.</td></tr><tr><td style="white-space:nowrap">push<a name="validation-push"> </a></td><td>Push</td><td>Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory</td></tr><tr><td style="white-space:nowrap">pull<a name="validation-pull"> </a></td><td>Pull</td><td>Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory</td></tr><tr><td style="white-space:nowrap">successful<a name="validation-successful"> </a></td><td>Successful</td><td>The validation process is complete and a determination made that the the attested data is true and accurate.</td></tr><tr><td style="white-space:nowrap">failed<a name="validation-failed"> </a></td><td>Failed</td><td>The validation process is complete and a determination made that the the attested data is not true or accurate.</td></tr><tr><td style="white-space:nowrap">undetermined<a name="validation-undetermined"> </a></td><td>Undetermined</td><td>The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate.</td></tr><tr><td style="white-space:nowrap">pushyes<a name="validation-pushyes"> </a></td><td>Yes</td><td>The primary source validation can be achieved via a push of data from the source of that information.</td></tr><tr><td style="white-space:nowrap">pushno<a name="validation-pushno"> </a></td><td>No</td><td>The primary source validation cannot be achieved via a push of data from the source of that information.</td></tr><tr><td style="white-space:nowrap">pushundetermined<a name="validation-pushundetermined"> </a></td><td>Undetermined</td><td>It is if undetermined if primary source validation can be achieved via a push of data from the source of that information.</td></tr><tr><td style="white-space:nowrap">specific<a name="validation-specific"> </a></td><td>Specific requested changes</td><td>The sender will send specific changes to the healthcare directory as determined by agreement.</td></tr><tr><td style="white-space:nowrap">any<a name="validation-any"> </a></td><td>Any changes</td><td>The sender will send all changes to the healthcare directory.</td></tr><tr><td style="white-space:nowrap">sourcedef<a name="validation-sourcedef"> </a></td><td>As defined by the source/sender</td><td>The sender will only send changes they have determined to be significant.</td></tr><tr><td style="white-space:nowrap">owner<a name="validation-owner"> </a></td><td>Owner</td><td>Indicates the element or resource was attested to by the individual who owned the data.</td></tr><tr><td style="white-space:nowrap">authrep<a name="validation-authrep"> </a></td><td>Authorized representative</td><td>Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data.</td></tr><tr><td style="white-space:nowrap">authint<a name="validation-authint"> </a></td><td>Authorized intermediary</td><td>Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data.</td></tr><tr><td style="white-space:nowrap">non-auth-src<a name="validation-non-auth-src"> </a></td><td>Non-authorized source</td><td>Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data.</td></tr><tr><td style="white-space:nowrap">licenseboard<a name="validation-licenseboard"> </a></td><td>License Board</td><td>License Board</td></tr><tr><td style="white-space:nowrap">primaryed<a name="validation-primaryed"> </a></td><td>Primary Education</td><td>Primary Education</td></tr><tr><td style="white-space:nowrap">continuinged<a name="validation-continuinged"> </a></td><td>Continuing Education</td><td>Continuing Education</td></tr><tr><td style="white-space:nowrap">postalservice<a name="validation-postalservice"> </a></td><td>Postal Service</td><td>Postal Service</td></tr><tr><td style="white-space:nowrap">relowner<a name="validation-relowner"> </a></td><td>Relationship owner</td><td>Relationship owner</td></tr><tr><td style="white-space:nowrap">regauth<a name="validation-regauth"> </a></td><td>Registration Authority</td><td>Registration Authority</td></tr><tr><td style="white-space:nowrap">legalsource<a name="validation-legalsource"> </a></td><td>Legal source</td><td>Legal source</td></tr><tr><td style="white-space:nowrap">issuingsource<a name="validation-issuingsource"> </a></td><td>Issuing source</td><td>Issuing source</td></tr><tr><td style="white-space:nowrap">attester<a name="validation-attester"> </a></td><td>Attester</td><td>Attester</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"/>
+  <version value="0.2.0"/>
+  <name value="VhDirValidationType"/>
+  <title value="VhDir Validation Type Code System"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="noneneeded"/>
+    <display value="None needed"/>
+    <definition value="No validation needed/planned for this resource or element."/>
+  </concept>
+  <concept>
+    <code value="initial"/>
+    <display value="Initial"/>
+    <definition value="Validation is only needed after initial attestation. For elements that typically do not change such as &#39;medical school attended and graduation date&#39;."/>
+  </concept>
+  <concept>
+    <code value="periodic"/>
+    <display value="Periodic"/>
+    <definition value="Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."/>
+  </concept>
+  <concept>
+    <code value="attested"/>
+    <display value="Attested"/>
+    <definition value="Indicates the element or resource has only been attested."/>
+  </concept>
+  <concept>
+    <code value="validated"/>
+    <display value="Validated"/>
+    <definition value="Indicates the element or resource has been successfully validated."/>
+  </concept>
+  <concept>
+    <code value="inprocess"/>
+    <display value="Inprocess"/>
+    <definition value="Indicates the element or resource is currently being validated."/>
+  </concept>
+  <concept>
+    <code value="reqreval"/>
+    <display value="Required revalidation"/>
+    <definition value="Indicates the element or resource has passed an expiration date and requires revalidation."/>
+  </concept>
+  <concept>
+    <code value="valfailed"/>
+    <display value="Valiation failed"/>
+    <definition value="Indicates validation was attepted on an element or resource and that validation failed."/>
+  </concept>
+  <concept>
+    <code value="nothing"/>
+    <display value="Nothing"/>
+    <definition value="No external validation is required."/>
+  </concept>
+  <concept>
+    <code value="single"/>
+    <display value="Single"/>
+    <definition value="Indicates the element or resource is validated against a single source."/>
+  </concept>
+  <concept>
+    <code value="multiple"/>
+    <display value="Multiple"/>
+    <definition value="Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."/>
+  </concept>
+  <concept>
+    <code value="editcheck"/>
+    <display value="Edit check"/>
+    <definition value="Indicates the element or resource is validated for format, range, presence, or other similar properties."/>
+  </concept>
+  <concept>
+    <code value="valueset"/>
+    <display value="Valueset"/>
+    <definition value="Indicates the element or resource is validated against a value set."/>
+  </concept>
+  <concept>
+    <code value="extsource"/>
+    <display value="External source"/>
+    <definition value="Indicates the element or resource is validated against an external source."/>
+  </concept>
+  <concept>
+    <code value="standalone"/>
+    <display value="Stand alone"/>
+    <definition value="Indicates the element or resource is validated by itself and is unrelated to other elements or resources."/>
+  </concept>
+  <concept>
+    <code value="incontext"/>
+    <display value="In context"/>
+    <definition value="Indicates the element or resource is validated by the existence or value of another related element or resource."/>
+  </concept>
+  <concept>
+    <code value="fatal"/>
+    <display value="Fatal"/>
+    <definition value="A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken."/>
+  </concept>
+  <concept>
+    <code value="warning"/>
+    <display value="Warning"/>
+    <definition value="A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization."/>
+  </concept>
+  <concept>
+    <code value="recordonly"/>
+    <display value="Record only"/>
+    <definition value="A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."/>
+  </concept>
+  <concept>
+    <code value="noaction"/>
+    <display value="No action"/>
+    <definition value="A failure that is unlikely to be relevant to any local workflow environment."/>
+  </concept>
+  <concept>
+    <code value="manual"/>
+    <display value="Manual"/>
+    <definition value="The resource or element is validated manually."/>
+  </concept>
+  <concept>
+    <code value="portal"/>
+    <display value="Portal"/>
+    <definition value="The resource or element is validated via a portal into a source of valid data."/>
+  </concept>
+  <concept>
+    <code value="push"/>
+    <display value="Push"/>
+    <definition value="Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory"/>
+  </concept>
+  <concept>
+    <code value="pull"/>
+    <display value="Pull"/>
+    <definition value="Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory"/>
+  </concept>
+  <concept>
+    <code value="successful"/>
+    <display value="Successful"/>
+    <definition value="The validation process is complete and a determination made that the the attested data is true and accurate."/>
+  </concept>
+  <concept>
+    <code value="failed"/>
+    <display value="Failed"/>
+    <definition value="The validation process is complete and a determination made that the the attested data is not true or accurate."/>
+  </concept>
+  <concept>
+    <code value="undetermined"/>
+    <display value="Undetermined"/>
+    <definition value="The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate."/>
+  </concept>
+  <concept>
+    <code value="pushyes"/>
+    <display value="Yes"/>
+    <definition value="The primary source validation can be achieved via a push of data from the source of that information."/>
+  </concept>
+  <concept>
+    <code value="pushno"/>
+    <display value="No"/>
+    <definition value="The primary source validation cannot be achieved via a push of data from the source of that information."/>
+  </concept>
+  <concept>
+    <code value="pushundetermined"/>
+    <display value="Undetermined"/>
+    <definition value="It is if undetermined if primary source validation can be achieved via a push of data from the source of that information."/>
+  </concept>
+  <concept>
+    <code value="specific"/>
+    <display value="Specific requested changes"/>
+    <definition value="The sender will send specific changes to the healthcare directory as determined by agreement."/>
+  </concept>
+  <concept>
+    <code value="any"/>
+    <display value="Any changes"/>
+    <definition value="The sender will send all changes to the healthcare directory."/>
+  </concept>
+  <concept>
+    <code value="sourcedef"/>
+    <display value="As defined by the source/sender"/>
+    <definition value="The sender will only send changes they have determined to be significant."/>
+  </concept>
+  <concept>
+    <code value="owner"/>
+    <display value="Owner"/>
+    <definition value="Indicates the element or resource was attested to by the individual who owned the data."/>
+  </concept>
+  <concept>
+    <code value="authrep"/>
+    <display value="Authorized representative"/>
+    <definition value="Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data."/>
+  </concept>
+  <concept>
+    <code value="authint"/>
+    <display value="Authorized intermediary"/>
+    <definition value="Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data."/>
+  </concept>
+  <concept>
+    <code value="non-auth-src"/>
+    <display value="Non-authorized source"/>
+    <definition value="Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data."/>
+  </concept>
+  <concept>
+    <code value="licenseboard"/>
+    <display value="License Board"/>
+    <definition value="License Board"/>
+  </concept>
+  <concept>
+    <code value="primaryed"/>
+    <display value="Primary Education"/>
+    <definition value="Primary Education"/>
+  </concept>
+  <concept>
+    <code value="continuinged"/>
+    <display value="Continuing Education"/>
+    <definition value="Continuing Education"/>
+  </concept>
+  <concept>
+    <code value="postalservice"/>
+    <display value="Postal Service"/>
+    <definition value="Postal Service"/>
+  </concept>
+  <concept>
+    <code value="relowner"/>
+    <display value="Relationship owner"/>
+    <definition value="Relationship owner"/>
+  </concept>
+  <concept>
+    <code value="regauth"/>
+    <display value="Registration Authority"/>
+    <definition value="Registration Authority"/>
+  </concept>
+  <concept>
+    <code value="legalsource"/>
+    <display value="Legal source"/>
+    <definition value="Legal source"/>
+  </concept>
+  <concept>
+    <code value="issuingsource"/>
+    <display value="Issuing source"/>
+    <definition value="Issuing source"/>
+  </concept>
+  <concept>
+    <code value="attester"/>
+    <display value="Attester"/>
+    <definition value="Attester"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,133 @@
+{
+  "resourceType": "Endpoint",
+  "id": "direct321",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"direct321\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vhdir-endpoint.html\">VhDir Endpoint</a></p></div><blockquote><p><b>VhDir Endpoint Usecase</b></p><p><b>value</b>: treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-usecase.html\">VhDir Use Case Code System</a>#treatment)</span></p><p><b>value</b>: <a href=\"http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf\">http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf</a></p></blockquote><p><b>VhDir Endpoint Rank</b>: 1</p><blockquote><p><b>VhDir Digitalcertificate</b></p><p><b>value</b>: Group (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code grp = 'Group', stated as 'Group')</p><p><b>value</b>: Signing (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code signing = 'Signing', stated as 'Signing')</p><p><b>value</b>: Encryption (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code encrypt = 'Encryption', stated as 'Encryption')</p><p><b>value</b>: x.509v3 (Details: http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate code x.509v3 = 'x.509v3', stated as 'x.509v3')</p><p><b>value</b>: VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBhc3NvY2lhdGVkIHdpdGggdGhlIEZvdW5kaW5nIEZhdGhlcnMgSGVhcnQgYW5kIFZhc2N1bGFyIEluc3RpdHV0ZeKAmXMgRGlyZWN0IGFkZHJlc3MNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQysrM3RvczN4cTVhSWFKLzZSREd6REZKK2YNCjJNWkxHdHEyZXM5T1NRdEpzYU9YNjd6VlI5QnpMZWgwa2pMZ3ZOMC85Q0NxNDdQS3dvQWV4b2R2MXVhanF3YWcNCnBHYlV0NkF5ZHEzeE9LMllhRnkzTDVMMXBHc2NySzJPMXJSd0ExYUpndXdRVjArM0xYNmVwOExBVitkZFVaS3cNCjB4MlRyUkRZUUJFZE52YkFVd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tDQo=</p><p><b>value</b>: 2019-04-07</p><p><b>value</b>: DirectTrust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-digitalcertificate.html\">VhDir Digital Certificate Code System</a>#direct)</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: Direct Project (Details: http://terminology.hl7.org/CodeSystem/endpoint-connection-type code direct-project = 'Direct Project', stated as 'Direct Project')</p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address</p><p><b>managingOrganization</b>: <a href=\"Organization-foundingfathers.html\">Organization/foundingfathers: Founding Fathers Memorial Hospital</a> \"Founding Fathers Memorial Hospital\"</p><p><b>contact</b>: ph: 202-101-0123(WORK)</p><p><b>period</b>: 2014-11-19 --&gt; (ongoing)</p><p><b>payloadType</b>: HL7 CCD Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#urn:ihe:pcc:xphr:2007)</span></p><p><b>payloadMimeType</b>: application/hl7-v3+xml</p><p><b>address</b>: <a href=\"mailto:heart@direct.ffhospital.com\">heart@direct.ffhospital.com</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase",
+                "code": "treatment",
+                "display": "treatment"
+              }
+            ]
+          }
+        },
+        {
+          "url": "standard",
+          "valueUri": "http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank",
+      "valuePositiveInt": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate",
+      "extension": [
+        {
+          "url": "type",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "grp",
+            "display": "Group"
+          }
+        },
+        {
+          "url": "use",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "signing",
+            "display": "Signing"
+          }
+        },
+        {
+          "url": "use",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "encrypt",
+            "display": "Encryption"
+          }
+        },
+        {
+          "url": "certificateStandard",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+            "code": "x.509v3",
+            "display": "x.509v3"
+          }
+        },
+        {
+          "url": "certificate",
+          "valueString": "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBhc3NvY2lhdGVkIHdpdGggdGhlIEZvdW5kaW5nIEZhdGhlcnMgSGVhcnQgYW5kIFZhc2N1bGFyIEluc3RpdHV0ZeKAmXMgRGlyZWN0IGFkZHJlc3MNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQysrM3RvczN4cTVhSWFKLzZSREd6REZKK2YNCjJNWkxHdHEyZXM5T1NRdEpzYU9YNjd6VlI5QnpMZWgwa2pMZ3ZOMC85Q0NxNDdQS3dvQWV4b2R2MXVhanF3YWcNCnBHYlV0NkF5ZHEzeE9LMllhRnkzTDVMMXBHc2NySzJPMXJSd0ExYUpndXdRVjArM0xYNmVwOExBVitkZFVaS3cNCjB4MlRyUkRZUUJFZE52YkFVd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tDQo="
+        },
+        {
+          "url": "expirationDate",
+          "valueDate": "2019-04-07"
+        },
+        {
+          "url": "trustFramework",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+                "code": "direct",
+                "display": "DirectTrust"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "connectionType": {
+    "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+    "code": "direct-project",
+    "display": "Direct Project"
+  },
+  "name": "Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address",
+  "managingOrganization": {
+    "reference": "Organization/foundingfathers",
+    "display": "Founding Fathers Memorial Hospital"
+  },
+  "contact": [
+    {
+      "system": "phone",
+      "value": "202-101-0123",
+      "use": "work"
+    }
+  ],
+  "period": {
+    "start": "2014-11-19"
+  },
+  "payloadType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3",
+          "code": "urn:ihe:pcc:xphr:2007",
+          "display": "HL7 CCD Document"
+        }
+      ]
+    }
+  ],
+  "payloadMimeType": [
+    "application/hl7-v3+xml"
+  ],
+  "address": "mailto:heart@direct.ffhospital.com"
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehrcharacteristics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2011<a name=\"ehrcharacteristics-2011\"> </a></td><td>ONC 2011 Certification</td><td>The ONC 2011 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">2014<a name=\"ehrcharacteristics-2014\"> </a></td><td>ONC 2014 Certification</td><td>The ONC 2014 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">2015<a name=\"ehrcharacteristics-2015\"> </a></td><td>ONC 2015 Certification</td><td>The ONC 2015 Certification Edition</td></tr><tr><td style=\"white-space:nowrap\">portal<a name=\"ehrcharacteristics-portal\"> </a></td><td>patient portal</td><td>A patient portal is a secure online website that gives patients convenient, 24-hour access to personal health information from anywhere with an Internet connection</td></tr><tr><td style=\"white-space:nowrap\">messaging<a name=\"ehrcharacteristics-messaging\"> </a></td><td>secure messaging</td><td>EHR functionality that enables a user to send messages to, and receive messages from, a patient in a secure manner</td></tr><tr><td style=\"white-space:nowrap\">VDT<a name=\"ehrcharacteristics-VDT\"> </a></td><td>view/download/transmit (VDT)</td><td>EHR functionality that enables patients (and their authorized representatives) to use internet-based technology to view, download, and transmit their health information to a 3rd party.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics",
+  "version": "0.2.0",
+  "name": "VhDirEHRCharacteristics",
+  "title": "VhDir Ehr Characteristics Code System",
+  "status": "active",
+  "date": "2018-02-21",
+  "publisher": "HL7 International - Patient Administration Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Patient Administration Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm"
+        },
+        {
+          "system": "email",
+          "value": "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This code system contains codes for describing attributes of an electronic health record (EHR) product.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International all rights reserved Creative Commons License",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "2011",
+      "display": "ONC 2011 Certification",
+      "definition": "The ONC 2011 Certification Edition"
+    },
+    {
+      "code": "2014",
+      "display": "ONC 2014 Certification",
+      "definition": "The ONC 2014 Certification Edition"
+    },
+    {
+      "code": "2015",
+      "display": "ONC 2015 Certification",
+      "definition": "The ONC 2015 Certification Edition"
+    },
+    {
+      "code": "portal",
+      "display": "patient portal",
+      "definition": "A patient portal is a secure online website that gives patients convenient, 24-hour access to personal health information from anywhere with an Internet connection"
+    },
+    {
+      "code": "messaging",
+      "display": "secure messaging",
+      "definition": "EHR functionality that enables a user to send messages to, and receive messages from, a patient in a secure manner"
+    },
+    {
+      "code": "VDT",
+      "display": "view/download/transmit (VDT)",
+      "definition": "EHR functionality that enables patients (and their authorized representatives) to use internet-based technology to view, download, and transmit their health information to a 3rd party."
+    }
+  ]
+}

@@ -1,0 +1,1661 @@
+[
+  {
+    "id": "vhdir-server",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/vhdir/CapabilityStatement/vhdir-server",
+    "version": "0.2.0",
+    "name": "VhDir_server"
+  },
+  {
+    "id": "accessibility",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
+    "version": "0.2.0",
+    "name": "VhDirAccessibility"
+  },
+  {
+    "id": "consent",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/consent",
+    "version": "0.2.0",
+    "name": "VhDirConsent"
+  },
+  {
+    "id": "credentialstatus",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus",
+    "version": "0.2.0",
+    "name": "VhDirCredentialStatus"
+  },
+  {
+    "id": "digitalcertificate",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
+    "version": "0.2.0",
+    "name": "VhDirDigitalCertificate"
+  },
+  {
+    "id": "ehrcharacteristics",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics",
+    "version": "0.2.0",
+    "name": "VhDirEHRCharacteristics"
+  },
+  {
+    "id": "healthcareservice-characteristic",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic",
+    "version": "0.2.0",
+    "name": "VhDir_cs_healthcareservice_characteristic"
+  },
+  {
+    "id": "healthcareservice-eligibility",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-eligibility",
+    "version": "0.2.0",
+    "name": "VhDir_cs_healthcareservice_eligibility"
+  },
+  {
+    "id": "insuranceplan",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/insuranceplan",
+    "version": "0.2.0",
+    "name": "VhDirinsuranceplan"
+  },
+  {
+    "id": "languageproficiency",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/languageproficiency",
+    "version": "0.2.0",
+    "name": "VhDirSpokenLanguageProficiency"
+  },
+  {
+    "id": "network-type",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
+    "version": "0.2.0",
+    "name": "VhDirNetworkType"
+  },
+  {
+    "id": "organizationdemographics",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics",
+    "version": "0.2.0",
+    "name": "VhDirOrganizationDemographics"
+  },
+  {
+    "id": "payercharacteristics",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics",
+    "version": "0.2.0",
+    "name": "VhDirPayerCharacteristics"
+  },
+  {
+    "id": "primarysource",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/primarysource",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySource"
+  },
+  {
+    "id": "usecase",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase",
+    "version": "0.2.0",
+    "name": "VhDirUseCase"
+  },
+  {
+    "id": "validation",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/vhdir/CodeSystem/validation",
+    "version": "0.2.0",
+    "name": "VhDirValidationType"
+  },
+  {
+    "id": "qualification-status",
+    "type": "ConceptMap",
+    "url": "http://hl7.org/fhir/uv/vhdir/ConceptMap/qualification-status",
+    "version": "0.2.0",
+    "name": "QualificationStatusToResourceStatusCodeMapping"
+  },
+  {
+    "id": "hl7-fhir-uv-vhdir",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7-fhir-uv-vhdir",
+    "version": "0.2.0",
+    "name": "ValidatedHealthcareDirectory"
+  },
+  {
+    "id": "ig",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig",
+    "version": "0.2.0",
+    "name": "VhDir"
+  },
+  {
+    "id": "careteam-category",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-category",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_category"
+  },
+  {
+    "id": "careteam-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_endpoint"
+  },
+  {
+    "id": "careteam-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_identifier"
+  },
+  {
+    "id": "careteam-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_identifier_assigner"
+  },
+  {
+    "id": "careteam-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_location"
+  },
+  {
+    "id": "careteam-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_name"
+  },
+  {
+    "id": "careteam-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_organization"
+  },
+  {
+    "id": "careteam-participant",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-participant",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_member"
+  },
+  {
+    "id": "careteam-service",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-service",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_service"
+  },
+  {
+    "id": "careteam-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_status"
+  },
+  {
+    "id": "careteam-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_careteam_via_intermediary"
+  },
+  {
+    "id": "endpoint-connection-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-connection-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_connection_type"
+  },
+  {
+    "id": "endpoint-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_identifier"
+  },
+  {
+    "id": "endpoint-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_identifier_assigner"
+  },
+  {
+    "id": "endpoint-mime-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_mime_type"
+  },
+  {
+    "id": "endpoint-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_organization"
+  },
+  {
+    "id": "endpoint-payload-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_payload_type"
+  },
+  {
+    "id": "endpoint-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_status"
+  },
+  {
+    "id": "endpoint-usecase-standard",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-standard",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_usecase_standard"
+  },
+  {
+    "id": "endpoint-usecase-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_usecase_type"
+  },
+  {
+    "id": "endpoint-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_endpoint_via_intermediary"
+  },
+  {
+    "id": "healthcareservice-characteristic",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_characteristic"
+  },
+  {
+    "id": "healthcareservice-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-coverage-area",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_coverage_area"
+  },
+  {
+    "id": "healthcareservice-eligibility",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-eligibility",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_eligibility"
+  },
+  {
+    "id": "healthcareservice-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_endpoint"
+  },
+  {
+    "id": "healthcareservice-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_identifier"
+  },
+  {
+    "id": "healthcareservice-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_identifier_assigner"
+  },
+  {
+    "id": "healthcareservice-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_location"
+  },
+  {
+    "id": "healthcareservice-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_name"
+  },
+  {
+    "id": "healthcareservice-new-patient",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_new_patient"
+  },
+  {
+    "id": "healthcareservice-new-patient-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_new_patient_network"
+  },
+  {
+    "id": "healthcareservice-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_organization"
+  },
+  {
+    "id": "healthcareservice-service-category",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_category"
+  },
+  {
+    "id": "healthcareservice-service-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_type"
+  },
+  {
+    "id": "healthcareservice-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-specialty",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_specialty"
+  },
+  {
+    "id": "healthcareservice-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_healthcareservice_via_intermediary"
+  },
+  {
+    "id": "insuranceplan-administered-by",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-administered-by",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_administered_by"
+  },
+  {
+    "id": "insuranceplan-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-area",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_coverage_area"
+  },
+  {
+    "id": "insuranceplan-coverage-benefit-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_coverage_benefit_type"
+  },
+  {
+    "id": "insuranceplan-coverage-limit-value",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-limit-value",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_coverage_limit_value"
+  },
+  {
+    "id": "insuranceplan-coverage-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_coverage_network"
+  },
+  {
+    "id": "insuranceplan-coverage-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_coverage_type"
+  },
+  {
+    "id": "insuranceplan-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_endpoint"
+  },
+  {
+    "id": "insuranceplan-general-cost-groupsize",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-groupsize",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_general_cost_groupsize"
+  },
+  {
+    "id": "insuranceplan-general-cost-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_general_cost_type"
+  },
+  {
+    "id": "insuranceplan-general-cost-value",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-value",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_general_cost_value"
+  },
+  {
+    "id": "insuranceplan-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_identifier"
+  },
+  {
+    "id": "insuranceplan-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_name"
+  },
+  {
+    "id": "insuranceplan-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_network"
+  },
+  {
+    "id": "insuranceplan-owned-by",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-owned-by",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_owned_by"
+  },
+  {
+    "id": "insuranceplan-plan-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-coverage-area",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_plan_coverage_area"
+  },
+  {
+    "id": "insuranceplan-plan-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_plan_identifier"
+  },
+  {
+    "id": "insuranceplan-plan-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_plan_network"
+  },
+  {
+    "id": "insuranceplan-plan-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_plan_type"
+  },
+  {
+    "id": "insuranceplan-specific-cost-benefit-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-benefit-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_specific_cost_benefit_type"
+  },
+  {
+    "id": "insuranceplan-specific-cost-category",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-category",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_specific_cost_category"
+  },
+  {
+    "id": "insuranceplan-specific-cost-cost-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-cost-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_specific_cost_cost_type"
+  },
+  {
+    "id": "insuranceplan-specific-cost-value",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-value",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_specific_cost_value"
+  },
+  {
+    "id": "insuranceplan-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_status"
+  },
+  {
+    "id": "insuranceplan-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_insuranceplan_type"
+  },
+  {
+    "id": "location-accessibility",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-accessibility",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_accessibility"
+  },
+  {
+    "id": "location-address",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-address",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_address"
+  },
+  {
+    "id": "location-contains",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_contains"
+  },
+  {
+    "id": "location-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_endpoint"
+  },
+  {
+    "id": "location-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_identifier"
+  },
+  {
+    "id": "location-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_identifier_assigner"
+  },
+  {
+    "id": "location-new-patient",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_new_patient"
+  },
+  {
+    "id": "location-new-patient-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_new_patient_network"
+  },
+  {
+    "id": "location-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_organization"
+  },
+  {
+    "id": "location-partof",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-partof",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_partof"
+  },
+  {
+    "id": "location-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_status"
+  },
+  {
+    "id": "location-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_type"
+  },
+  {
+    "id": "location-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_location_via_intermediary"
+  },
+  {
+    "id": "organization-address",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_address"
+  },
+  {
+    "id": "organization-address-city",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_address_city"
+  },
+  {
+    "id": "organization-address-country",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-country",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_address_country"
+  },
+  {
+    "id": "organization-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-postalcode",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_address_postalcode"
+  },
+  {
+    "id": "organization-address-state",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-state",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_address_state"
+  },
+  {
+    "id": "organization-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-coverage-area",
+    "version": "0.2.0",
+    "name": "VhDir_sp_network_coverage_area"
+  },
+  {
+    "id": "organization-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_endpoint"
+  },
+  {
+    "id": "organization-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_identifier"
+  },
+  {
+    "id": "organization-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_identifier_assigner"
+  },
+  {
+    "id": "organization-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_name"
+  },
+  {
+    "id": "organization-partof",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_partof"
+  },
+  {
+    "id": "organization-qualification-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_qualification_code"
+  },
+  {
+    "id": "organization-qualification-issuer",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-issuer",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_qualification_issuer"
+  },
+  {
+    "id": "organization-qualification-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_qualification_status"
+  },
+  {
+    "id": "organization-qualification-wherevalid-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_qualification_wherevalid_code"
+  },
+  {
+    "id": "organization-qualification-wherevalid-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_qualification_wherevalid_location"
+  },
+  {
+    "id": "organization-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_type"
+  },
+  {
+    "id": "organization-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organization_via_intermediary"
+  },
+  {
+    "id": "organizationaffiliation-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_endpoint"
+  },
+  {
+    "id": "organizationaffiliation-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_identifier"
+  },
+  {
+    "id": "organizationaffiliation-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_identifier_assigner"
+  },
+  {
+    "id": "organizationaffiliation-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_location"
+  },
+  {
+    "id": "organizationaffiliation-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_network"
+  },
+  {
+    "id": "organizationaffiliation-participating-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-participating-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_participating_organization"
+  },
+  {
+    "id": "organizationaffiliation-primary-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-primary-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_primary_organization"
+  },
+  {
+    "id": "organizationaffiliation-role",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-role",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_role"
+  },
+  {
+    "id": "organizationaffiliation-service",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-service",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_service"
+  },
+  {
+    "id": "organizationaffiliation-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-specialty",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_specialty"
+  },
+  {
+    "id": "organizationaffiliation-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_organizationaffiliation_via_intermediary"
+  },
+  {
+    "id": "practitioner-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_endpoint"
+  },
+  {
+    "id": "practitioner-family-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-family-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_family_name"
+  },
+  {
+    "id": "practitioner-given-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-given-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_given_name"
+  },
+  {
+    "id": "practitioner-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_identifier"
+  },
+  {
+    "id": "practitioner-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_identifier_assigner"
+  },
+  {
+    "id": "practitioner-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-name",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_name"
+  },
+  {
+    "id": "practitioner-phonetic",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-phonetic",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_phonetic"
+  },
+  {
+    "id": "practitioner-qualification-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_code"
+  },
+  {
+    "id": "practitioner-qualification-issuer",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-issuer",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_issuer"
+  },
+  {
+    "id": "practitioner-qualification-period",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_period"
+  },
+  {
+    "id": "practitioner-qualification-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_status"
+  },
+  {
+    "id": "practitioner-qualification-wherevalid-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_wherevalid_code"
+  },
+  {
+    "id": "practitioner-qualification-wherevalid-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_qualification_wherevalid_location"
+  },
+  {
+    "id": "practitioner-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitioner_via_intermediary"
+  },
+  {
+    "id": "practitionerrole-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-endpoint",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_endpoint"
+  },
+  {
+    "id": "practitionerrole-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_identifier"
+  },
+  {
+    "id": "practitionerrole-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier-assigner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_identifier_assigner"
+  },
+  {
+    "id": "practitionerrole-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_location"
+  },
+  {
+    "id": "practitionerrole-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_network"
+  },
+  {
+    "id": "practitionerrole-new-patient",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_new_patient"
+  },
+  {
+    "id": "practitionerrole-new-patient-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient-network",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_new_patient_network"
+  },
+  {
+    "id": "practitionerrole-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_organization"
+  },
+  {
+    "id": "practitionerrole-practitioner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-practitioner",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_practitioner"
+  },
+  {
+    "id": "practitionerrole-qualification-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_qualification_code"
+  },
+  {
+    "id": "practitionerrole-qualification-issuer",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-issuer",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_qualification_issuer"
+  },
+  {
+    "id": "practitionerrole-qualification-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_qualification_status"
+  },
+  {
+    "id": "practitionerrole-qualification-wherevalid-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-code",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_qualification_wherevalid_code"
+  },
+  {
+    "id": "practitionerrole-qualification-wherevalid-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-location",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_qualification_wherevalid_location"
+  },
+  {
+    "id": "practitionerrole-role",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-role",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_role"
+  },
+  {
+    "id": "practitionerrole-service",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-service",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_service"
+  },
+  {
+    "id": "practitionerrole-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-specialty",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_specialty"
+  },
+  {
+    "id": "practitionerrole-via-intermediary",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-via-intermediary",
+    "version": "0.2.0",
+    "name": "VhDir_sp_practitionerrole_via_intermediary"
+  },
+  {
+    "id": "verificationresult-attestation-method",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-method",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_attestation_method"
+  },
+  {
+    "id": "verificationresult-attestation-onbehalfof",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-onbehalfof",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_attestation_onbehalfof"
+  },
+  {
+    "id": "verificationresult-attestation-who",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_attestation_who"
+  },
+  {
+    "id": "verificationresult-primarysource-date",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-date",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_primarysource_date"
+  },
+  {
+    "id": "verificationresult-primarysource-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-type",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_primarysource_type"
+  },
+  {
+    "id": "verificationresult-primarysource-who",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_primarysource_who"
+  },
+  {
+    "id": "verificationresult-status-date",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-status-date",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_status_date"
+  },
+  {
+    "id": "verificationresult-target",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_target"
+  },
+  {
+    "id": "verificationresult-validation-status",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validation-status",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_validation_status"
+  },
+  {
+    "id": "verificationresult-validator-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validator-organization",
+    "version": "0.2.0",
+    "name": "VhDir_sp_verificationresult_validator_organization"
+  },
+  {
+    "id": "accessibility",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+    "version": "0.2.0",
+    "name": "Accessibility"
+  },
+  {
+    "id": "careteam-alias",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias",
+    "version": "0.2.0",
+    "name": "CareteamAlias"
+  },
+  {
+    "id": "communication-proficiency",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency",
+    "version": "0.2.0",
+    "name": "CommunicationProficiency"
+  },
+  {
+    "id": "contactpoint-availabletime",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+    "version": "0.2.0",
+    "name": "ContactPointAvailableTime"
+  },
+  {
+    "id": "contactpoint-viaintermediary",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary",
+    "version": "0.2.0",
+    "name": "ContactPointViaIntermediary"
+  },
+  {
+    "id": "digitalcertificate",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate",
+    "version": "0.2.0",
+    "name": "DigitalCertificate"
+  },
+  {
+    "id": "ehr",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr",
+    "version": "0.2.0",
+    "name": "EHR"
+  },
+  {
+    "id": "endpoint-rank",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank",
+    "version": "0.2.0",
+    "name": "EndpointRank"
+  },
+  {
+    "id": "endpoint-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference",
+    "version": "0.2.0",
+    "name": "EndpointReference"
+  },
+  {
+    "id": "endpoint-usecase",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase",
+    "version": "0.2.0",
+    "name": "EndpointUsecase"
+  },
+  {
+    "id": "healthcareservice-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/healthcareservice-reference",
+    "version": "0.2.0",
+    "name": "HealthcareServiceReference"
+  },
+  {
+    "id": "identifier-status",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+    "version": "0.2.0",
+    "name": "IdentifierStatus"
+  },
+  {
+    "id": "insuranceplan-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference",
+    "version": "0.2.0",
+    "name": "InsurancePlanReference"
+  },
+  {
+    "id": "location-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference",
+    "version": "0.2.0",
+    "name": "LocationReference"
+  },
+  {
+    "id": "network-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference",
+    "version": "0.2.0",
+    "name": "NetworkReference"
+  },
+  {
+    "id": "newpatientprofile",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+    "version": "0.2.0",
+    "name": "NewPatientProfile"
+  },
+  {
+    "id": "newpatients",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients",
+    "version": "0.2.0",
+    "name": "NewPatients"
+  },
+  {
+    "id": "org-alias-period",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period",
+    "version": "0.2.0",
+    "name": "OrgAliasPeriod"
+  },
+  {
+    "id": "org-alias-type",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type",
+    "version": "0.2.0",
+    "name": "OrgAliasType"
+  },
+  {
+    "id": "org-description",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description",
+    "version": "0.2.0",
+    "name": "OrgDescription"
+  },
+  {
+    "id": "practitioner-qualification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
+    "version": "0.2.0",
+    "name": "PractitionerQualification"
+  },
+  {
+    "id": "qualification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification",
+    "version": "0.2.0",
+    "name": "Qualification"
+  },
+  {
+    "id": "usage-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction",
+    "version": "0.2.0",
+    "name": "UsageRestriction"
+  },
+  {
+    "id": "vhdir-careteam",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam",
+    "version": "0.2.0",
+    "name": "VhdirCareTeam"
+  },
+  {
+    "id": "vhdir-endpoint",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint",
+    "version": "0.2.0",
+    "name": "VhdirEndpoint"
+  },
+  {
+    "id": "vhdir-healthcareservice",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice",
+    "version": "0.2.0",
+    "name": "VhdirHealthcareService"
+  },
+  {
+    "id": "vhdir-insuranceplan",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan",
+    "version": "0.2.0",
+    "name": "VhdirInsurancePlan"
+  },
+  {
+    "id": "vhdir-location",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location",
+    "version": "0.2.0",
+    "name": "VhdirLocation"
+  },
+  {
+    "id": "vhdir-network",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network",
+    "version": "0.2.0",
+    "name": "VhdirNetwork"
+  },
+  {
+    "id": "vhdir-organization",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+    "version": "0.2.0",
+    "name": "VhdirOrganization"
+  },
+  {
+    "id": "vhdir-organizationaffiliation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation",
+    "version": "0.2.0",
+    "name": "VhdirOrganizationAffiliation"
+  },
+  {
+    "id": "vhdir-practitioner",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+    "version": "0.2.0",
+    "name": "VhdirPractitioner"
+  },
+  {
+    "id": "vhdir-practitionerrole",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole",
+    "version": "0.2.0",
+    "name": "VhdirPractitionerRole"
+  },
+  {
+    "id": "vhdir-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction",
+    "version": "0.2.0",
+    "name": "VhdirRestriction"
+  },
+  {
+    "id": "vhdir-validation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation",
+    "version": "0.2.0",
+    "name": "VhdirValidation"
+  },
+  {
+    "id": "accessibility",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility",
+    "version": "0.2.0",
+    "name": "VhDirAccessibility"
+  },
+  {
+    "id": "aliastype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype",
+    "version": "0.2.0",
+    "name": "VhDirAliasType"
+  },
+  {
+    "id": "attestationmethod",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/attestationmethod",
+    "version": "0.2.0",
+    "name": "VhDirAttestationMethod"
+  },
+  {
+    "id": "benefit-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/benefit-type",
+    "version": "0.2.0",
+    "name": "VhDirBenefitType"
+  },
+  {
+    "id": "certificationedition",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/certificationedition",
+    "version": "0.2.0",
+    "name": "VhDirCertificationEdition"
+  },
+  {
+    "id": "consent",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/consent",
+    "version": "0.2.0",
+    "name": "VhDirConsent"
+  },
+  {
+    "id": "coverage-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/coverage-type",
+    "version": "0.2.0",
+    "name": "VhDirCoverageType"
+  },
+  {
+    "id": "digitalcertificatestandard",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard",
+    "version": "0.2.0",
+    "name": "VhDirDigitalCertificateStandard"
+  },
+  {
+    "id": "digitalcertificatetrustframework",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework",
+    "version": "0.2.0",
+    "name": "VhDirDigitalCertificateTrustFramework"
+  },
+  {
+    "id": "digitalcertificatetype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype",
+    "version": "0.2.0",
+    "name": "VhDirDigitalCertificateType"
+  },
+  {
+    "id": "digitalcertificateuse",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse",
+    "version": "0.2.0",
+    "name": "VhDirDigitalCertificateUse"
+  },
+  {
+    "id": "externalvalidationtype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/externalvalidationtype",
+    "version": "0.2.0",
+    "name": "VhDirExternalValidationType"
+  },
+  {
+    "id": "failureaction",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/failureaction",
+    "version": "0.2.0",
+    "name": "VhDirFailureAction"
+  },
+  {
+    "id": "healthcareservice-characteristic",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic",
+    "version": "0.2.0",
+    "name": "VhDirHealthcareServiceCharacteristic"
+  },
+  {
+    "id": "healthcareservice-eligibility",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility",
+    "version": "0.2.0",
+    "name": "VhDirHealthcareServiceEligibility"
+  },
+  {
+    "id": "identifier-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/identifier-type",
+    "version": "0.2.0",
+    "name": "VhDirIdentifierType"
+  },
+  {
+    "id": "identifierstatus",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus",
+    "version": "0.2.0",
+    "name": "VhDirIdentifierStatus"
+  },
+  {
+    "id": "insuranceplan-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplan-type",
+    "version": "0.2.0",
+    "name": "VhDirInsurancePlanType"
+  },
+  {
+    "id": "insuranceplanbenefitcosttype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefitcosttype",
+    "version": "0.2.0",
+    "name": "VhDirInsPlanBenefitCostType"
+  },
+  {
+    "id": "insuranceplanbenefittype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplanbenefittype",
+    "version": "0.2.0",
+    "name": "VhDirInsPlanBenefitType"
+  },
+  {
+    "id": "insuranceplancostcategory",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancostcategory",
+    "version": "0.2.0",
+    "name": "VhDirInsPlanCostCategory"
+  },
+  {
+    "id": "insuranceplancostqualifier",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancostqualifier",
+    "version": "0.2.0",
+    "name": "VhDirInsPlanQualifier"
+  },
+  {
+    "id": "insuranceplancosttype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplancosttype",
+    "version": "0.2.0",
+    "name": "VhDirPlanType"
+  },
+  {
+    "id": "insuranceplangroupsize",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/insuranceplangroupsize",
+    "version": "0.2.0",
+    "name": "VhDirInsPlanGroupSize"
+  },
+  {
+    "id": "languageproficiency",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency",
+    "version": "0.2.0",
+    "name": "VhDirSpokenLanguageProficiency"
+  },
+  {
+    "id": "limit-unit",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/limit-unit",
+    "version": "0.2.0",
+    "name": "VhDirLimitUnit"
+  },
+  {
+    "id": "network-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/network-type",
+    "version": "0.2.0",
+    "name": "VhDirNetworkType"
+  },
+  {
+    "id": "patientaccess",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/patientaccess",
+    "version": "0.2.0",
+    "name": "VhDirEHRPatientAccess"
+  },
+  {
+    "id": "plan-type",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/plan-type",
+    "version": "0.2.0",
+    "name": "VhDirPlanType"
+  },
+  {
+    "id": "primarysourcefailureaction",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcefailureaction",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourceFailureAction"
+  },
+  {
+    "id": "primarysourcepush",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcepush",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourcePush"
+  },
+  {
+    "id": "primarysourcepushtype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcepushtype",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourcePushType"
+  },
+  {
+    "id": "primarysourcetype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcetype",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourceType"
+  },
+  {
+    "id": "primarysourcevalidationprocess",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcevalidationprocess",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourceValidationProcess"
+  },
+  {
+    "id": "primarysourcevalidationstatus",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/primarysourcevalidationstatus",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourceValidationStatus"
+  },
+  {
+    "id": "qualificationstatus",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus",
+    "version": "0.2.0",
+    "name": "VhDirQualificationStatus"
+  },
+  {
+    "id": "usecasetype",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/usecasetype",
+    "version": "0.2.0",
+    "name": "VhDirUseCaseType"
+  },
+  {
+    "id": "validationneed",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/validationneed",
+    "version": "0.2.0",
+    "name": "VhDirPrimarySourceValidationNeed"
+  },
+  {
+    "id": "validationprocess",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess",
+    "version": "0.2.0",
+    "name": "VhDirValidationProcess"
+  }
+]

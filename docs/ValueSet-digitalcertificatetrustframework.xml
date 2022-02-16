@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="digitalcertificatetrustframework"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-digitalcertificate.html"><code>http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-direct">direct</a></td><td>DirectTrust</td><td>DirectTrust is a non-profit health care industry alliance that has established and maintains rules, standards, and policies associated with the operation of the security and trust-in-identity layer for Direct exchange.</td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-FPKI">FPKI</a></td><td>Federal Public Key Infrastructure (FPKI)/Federal Trust Framework</td><td>The Federal Public Key Infrastructure (FPKI) Program provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. FPKI consists of a network of Certification Authorities (CAs) that issue Personal Identity Verification (PIV) credentials and person identity certificates, PIV-interoperable credentials and person identity certificates, other person identity certificates, and enterprise device identity certificates.</td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-SAFEBioP">SAFEBioP</a></td><td>SAFE-BioPharma</td><td>The SAFE-BioPharma Association develops and maintains policies and practices used by identity credential issuers. SAFE-BioPharma examines and certifies that the identity proofing, credential issuance, and credential management policies and practices of electronic identity credential issuers are comparable to Federal Identity, Credential, and Access Management (FICAM) requirements.</td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-ONCTEF">ONCTEF</a></td><td>ONC Trusted Exchange Framework (TEF)</td><td>The TEF outlines a common set of principles for trusted exchange and minimum terms and conditions for trusted exchange to bridge the gap between providers’ and patients’ information systems and enable interoperability across disparate health information networks (HINs).</td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-NATE">NATE</a></td><td>National Association for Trusted Exchange (NATE)</td><td>NATE Blue Button for Consumers (NBB4C) Trust Bundle contains trust anchors of consumer-facing applications (CFAs) that utilize Direct to securely move data from one application to another. Participation in the NBB4C Trust Bundle facilitates secure exchange of health information from provider-controlled applications to consumer-controlled applications such as personal health records (PHRs) using Direct secure messaging protocols.</td></tr><tr><td><a href="CodeSystem-digitalcertificate.html#digitalcertificate-other">other</a></td><td>other</td><td>A trust framework other than DirectTrust, FPKI/Federal Trust Framework, SAFE-BioPharma, NATE Blue Button for Consumers Trust Bundle, or ONC Trusted Exchange Framework.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework"/>
+  <version value="0.2.0"/>
+  <name value="VhDirDigitalCertificateTrustFramework"/>
+  <title value="VhDir Digital Certificate Trust Framework Value Set"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="A trust framework is developed by a community whose members have similar goals and perspectives. It defines the rights and responsibilities of that community’s participants in an identity ecosystem, specifies the policies and standards specific to the community, and defines the community-specific processes and procedures that provide assurance. A trust framework may define how community members conduct identity management responsibilities; share, use, protect, and secure identity information; perform specific roles within the community; and/or manage liability and legal issues. This value set defines common trust frameworks for certificate-based public key cryptographic systems in healthcare."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate"/>
+      <concept>
+        <code value="direct"/>
+      </concept>
+      <concept>
+        <code value="FPKI"/>
+      </concept>
+      <concept>
+        <code value="SAFEBioP"/>
+      </concept>
+      <concept>
+        <code value="ONCTEF"/>
+      </concept>
+      <concept>
+        <code value="NATE"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

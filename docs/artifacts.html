@@ -1,0 +1,2464 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7-FHIR-UV-VHDIR\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Behavior: Search Parameters</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#9">Other</a>
+      </li>
+   </ul>
+</div>
+<div>
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+   <p>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-vhdir-server.html" title="CapabilityStatement/vhdir-server">Validated Healthcare Directory Server Capability Statement</a>
+               </td>
+               <td>
+<p>This Capability Statement defines the expected capabilities of a validated healthcare directory FHIR server conforming to the Validated Healthcare Directory Implementation Guide.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+   <p>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-category.html" title="SearchParameter/careteam-category">VhDir_sp_careteam_category</a>
+               </td>
+               <td>
+<p>Select CareTeams of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-endpoint.html" title="SearchParameter/careteam-endpoint">VhDir_sp_careteam_endpoint</a>
+               </td>
+               <td>
+<p>Select CareTeams with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-identifier-assigner.html" title="SearchParameter/careteam-identifier-assigner">VhDir_sp_careteam_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select CareTeams with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-identifier.html" title="SearchParameter/careteam-identifier">VhDir_sp_careteam_identifier</a>
+               </td>
+               <td>
+<p>Select CareTeams with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-location.html" title="SearchParameter/careteam-location">VhDir_sp_careteam_location</a>
+               </td>
+               <td>
+<p>Select care teams operating at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-name.html" title="SearchParameter/careteam-name">VhDir_sp_careteam_name</a>
+               </td>
+               <td>
+<p>Select care teams with the specified name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-organization.html" title="SearchParameter/careteam-organization">VhDir_sp_careteam_organization</a>
+               </td>
+               <td>
+<p>Select care teams managed by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-participant.html" title="SearchParameter/careteam-participant">VhDir_sp_careteam_member</a>
+               </td>
+               <td>
+<p>Select care teams that include the specified member</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-service.html" title="SearchParameter/careteam-service">VhDir_sp_careteam_service</a>
+               </td>
+               <td>
+<p>Select care teams providing the specified service</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-status.html" title="SearchParameter/careteam-status">VhDir_sp_careteam_status</a>
+               </td>
+               <td>
+<p>Select CareTeams with the specified status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-careteam-via-intermediary.html" title="SearchParameter/careteam-via-intermediary">VhDir_sp_careteam_via_intermediary</a>
+               </td>
+               <td>
+<p>Select CareTeams with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-connection-type.html" title="SearchParameter/endpoint-connection-type">VhDir_sp_endpoint_connection_type</a>
+               </td>
+               <td>
+<p>Select Endpoints that support the specified protocol/profile/standard</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-identifier-assigner.html" title="SearchParameter/endpoint-identifier-assigner">VhDir_sp_endpoint_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select Endpoints with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-identifier.html" title="SearchParameter/endpoint-identifier">VhDir_sp_endpoint_identifier</a>
+               </td>
+               <td>
+<p>Select Endpoints with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-mime-type.html" title="SearchParameter/endpoint-mime-type">VhDir_sp_endpoint_mime_type</a>
+               </td>
+               <td>
+<p>Select endpoints that support the specified media type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-organization.html" title="SearchParameter/endpoint-organization">VhDir_sp_endpoint_organization</a>
+               </td>
+               <td>
+<p>Select Endpoints managed by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-payload-type.html" title="SearchParameter/endpoint-payload-type">VhDir_sp_endpoint_payload_type</a>
+               </td>
+               <td>
+<p>Select Endpoints that support the specified type of content</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-status.html" title="SearchParameter/endpoint-status">VhDir_sp_endpoint_status</a>
+               </td>
+               <td>
+<p>Select Endpoints with the specified status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-usecase-standard.html" title="SearchParameter/endpoint-usecase-standard">VhDir_sp_endpoint_usecase_standard</a>
+               </td>
+               <td>
+<p>Select endpoints that support the specified standard</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-usecase-type.html" title="SearchParameter/endpoint-usecase-type">VhDir_sp_endpoint_usecase_type</a>
+               </td>
+               <td>
+<p>Select endpoints that support the type of services indicated by the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-endpoint-via-intermediary.html" title="SearchParameter/endpoint-via-intermediary">VhDir_sp_endpoint_via_intermediary</a>
+               </td>
+               <td>
+<p>Select Endpoints with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-characteristic.html" title="SearchParameter/healthcareservice-characteristic">VhDir_sp_healthcareservice_characteristic</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with the specified characteristic</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-coverage-area.html" title="SearchParameter/healthcareservice-coverage-area">VhDir_sp_healthcareservice_coverage_area</a>
+               </td>
+               <td>
+<p>Select services available in a region described by the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-eligibility.html" title="SearchParameter/healthcareservice-eligibility">VhDir_sp_healthcareservice_eligibility</a>
+               </td>
+               <td>
+<p>Select services with the specified eligibility requirements</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-endpoint.html" title="SearchParameter/healthcareservice-endpoint">VhDir_sp_healthcareservice_endpoint</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-identifier-assigner.html" title="SearchParameter/healthcareservice-identifier-assigner">VhDir_sp_healthcareservice_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-identifier.html" title="SearchParameter/healthcareservice-identifier">VhDir_sp_healthcareservice_identifier</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-location.html" title="SearchParameter/healthcareservice-location">VhDir_sp_healthcareservice_location</a>
+               </td>
+               <td>
+<p>Select HealthcareServices available at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-name.html" title="SearchParameter/healthcareservice-name">VhDir_sp_healthcareservice_name</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with the specified name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-new-patient-network.html" title="SearchParameter/healthcareservice-new-patient-network">VhDir_sp_healthcareservice_new_patient_network</a>
+               </td>
+               <td>
+<p>Select HealthcareServices that are part of the specified network and are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-new-patient.html" title="SearchParameter/healthcareservice-new-patient">VhDir_sp_healthcareservice_new_patient</a>
+               </td>
+               <td>
+<p>Select HealthcareServices that are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-organization.html" title="SearchParameter/healthcareservice-organization">VhDir_sp_healthcareservice_organization</a>
+               </td>
+               <td>
+<p>Select HealthcareServices provided by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-service-category.html" title="SearchParameter/healthcareservice-service-category">VhDir_sp_healthcareservice_category</a>
+               </td>
+               <td>
+<p>Select HealthcareServices providing the specified category of services</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-service-type.html" title="SearchParameter/healthcareservice-service-type">VhDir_sp_healthcareservice_type</a>
+               </td>
+               <td>
+<p>Select HealthcareServices of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-specialty.html" title="SearchParameter/healthcareservice-specialty">VhDir_sp_healthcareservice_specialty</a>
+               </td>
+               <td>
+<p>Select services associated with the specified specialty</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-healthcareservice-via-intermediary.html" title="SearchParameter/healthcareservice-via-intermediary">VhDir_sp_healthcareservice_via_intermediary</a>
+               </td>
+               <td>
+<p>Select HealthcareServices with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-administered-by.html" title="SearchParameter/insuranceplan-administered-by">VhDir_sp_insuranceplan_administered_by</a>
+               </td>
+               <td>
+<p>Select products that are administered by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-coverage-area.html" title="SearchParameter/insuranceplan-coverage-area">VhDir_sp_insuranceplan_coverage_area</a>
+               </td>
+               <td>
+<p>Select products that are offered in the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-coverage-benefit-type.html" title="SearchParameter/insuranceplan-coverage-benefit-type">VhDir_sp_insuranceplan_coverage_benefit_type</a>
+               </td>
+               <td>
+<p>Select health insurance products offering covered benefits of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-coverage-limit-value.html" title="SearchParameter/insuranceplan-coverage-limit-value">VhDir_sp_insuranceplan_coverage_limit_value</a>
+               </td>
+               <td>
+<p>Select health insurance products with covered benefits limited in the specified manner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-coverage-network.html" title="SearchParameter/insuranceplan-coverage-network">VhDir_sp_insuranceplan_coverage_network</a>
+               </td>
+               <td>
+<p>Select products offering covered benefits through the specified health insurance provider network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-coverage-type.html" title="SearchParameter/insuranceplan-coverage-type">VhDir_sp_insuranceplan_coverage_type</a>
+               </td>
+               <td>
+<p>Select products offering the specified type of coverage</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-endpoint.html" title="SearchParameter/insuranceplan-endpoint">VhDir_sp_insuranceplan_endpoint</a>
+               </td>
+               <td>
+<p>Select health insurance products/plans with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-general-cost-groupsize.html" title="SearchParameter/insuranceplan-general-cost-groupsize">VhDir_sp_insuranceplan_general_cost_groupsize</a>
+               </td>
+               <td>
+<p>Select plans with costs for the specified group size</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-general-cost-type.html" title="SearchParameter/insuranceplan-general-cost-type">VhDir_sp_insuranceplan_general_cost_type</a>
+               </td>
+               <td>
+<p>Select plans with the specified type of cost</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-general-cost-value.html" title="SearchParameter/insuranceplan-general-cost-value">VhDir_sp_insuranceplan_general_cost_value</a>
+               </td>
+               <td>
+<p>Select plans which include the specified cost</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-identifier.html" title="SearchParameter/insuranceplan-identifier">VhDir_sp_insuranceplan_identifier</a>
+               </td>
+               <td>
+<p>Select products with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-name.html" title="SearchParameter/insuranceplan-name">VhDir_sp_insuranceplan_name</a>
+               </td>
+               <td>
+<p>Select products with the specified name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-network.html" title="SearchParameter/insuranceplan-network">VhDir_sp_insuranceplan_network</a>
+               </td>
+               <td>
+<p>Select products associated with the specified health insurance provider network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-owned-by.html" title="SearchParameter/insuranceplan-owned-by">VhDir_sp_insuranceplan_owned_by</a>
+               </td>
+               <td>
+<p>Select products that are owned by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-plan-coverage-area.html" title="SearchParameter/insuranceplan-plan-coverage-area">VhDir_sp_insuranceplan_plan_coverage_area</a>
+               </td>
+               <td>
+<p>Select plans that are available in the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-plan-identifier.html" title="SearchParameter/insuranceplan-plan-identifier">VhDir_sp_insuranceplan_plan_identifier</a>
+               </td>
+               <td>
+<p>Select plans with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-plan-network.html" title="SearchParameter/insuranceplan-plan-network">VhDir_sp_insuranceplan_plan_network</a>
+               </td>
+               <td>
+<p>Select plans associated with the specified health insurance provider network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-plan-type.html" title="SearchParameter/insuranceplan-plan-type">VhDir_sp_insuranceplan_plan_type</a>
+               </td>
+               <td>
+<p>Select plans of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-specific-cost-benefit-type.html" title="SearchParameter/insuranceplan-specific-cost-benefit-type">VhDir_sp_insuranceplan_specific_cost_benefit_type</a>
+               </td>
+               <td>
+<p>Select plans which include costs for the specified type of benefit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-specific-cost-category.html" title="SearchParameter/insuranceplan-specific-cost-category">VhDir_sp_insuranceplan_specific_cost_category</a>
+               </td>
+               <td>
+<p>Select plans which include costs for the specified category of coverage</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-specific-cost-cost-type.html" title="SearchParameter/insuranceplan-specific-cost-cost-type">VhDir_sp_insuranceplan_specific_cost_cost_type</a>
+               </td>
+               <td>
+<p>Select plans which include the specified type of cost</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-specific-cost-value.html" title="SearchParameter/insuranceplan-specific-cost-value">VhDir_sp_insuranceplan_specific_cost_value</a>
+               </td>
+               <td>
+<p>Select plans which include the specified cost</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-status.html" title="SearchParameter/insuranceplan-status">VhDir_sp_insuranceplan_status</a>
+               </td>
+               <td>
+<p>Select health insurance products/plans with the specified status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-insuranceplan-type.html" title="SearchParameter/insuranceplan-type">VhDir_sp_insuranceplan_type</a>
+               </td>
+               <td>
+<p>Select insurance plans of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-accessibility.html" title="SearchParameter/location-accessibility">VhDir_sp_location_accessibility</a>
+               </td>
+               <td>
+<p>Select locations that offer the specified accessibility options</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-address.html" title="SearchParameter/location-address">VhDir_sp_location_address</a>
+               </td>
+               <td>
+<p>Select Locations with the specified address</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-contains.html" title="SearchParameter/location-contains">VhDir_sp_location_contains</a>
+               </td>
+               <td>
+<p>Select locations that contain the specified co-ordinates</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-endpoint.html" title="SearchParameter/location-endpoint">VhDir_sp_location_endpoint</a>
+               </td>
+               <td>
+<p>Select Locations with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-identifier-assigner.html" title="SearchParameter/location-identifier-assigner">VhDir_sp_location_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select Locations with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-identifier.html" title="SearchParameter/location-identifier">VhDir_sp_location_identifier</a>
+               </td>
+               <td>
+<p>Select Locations with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-new-patient-network.html" title="SearchParameter/location-new-patient-network">VhDir_sp_location_new_patient_network</a>
+               </td>
+               <td>
+<p>Select locations that are part of the specified network and are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-new-patient.html" title="SearchParameter/location-new-patient">VhDir_sp_location_new_patient</a>
+               </td>
+               <td>
+<p>Select locations that are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-organization.html" title="SearchParameter/location-organization">VhDir_sp_location_organization</a>
+               </td>
+               <td>
+<p>Select Locations managed by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-partof.html" title="SearchParameter/location-partof">VhDir_sp_location_partof</a>
+               </td>
+               <td>
+<p>Select Locations that are part of the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-status.html" title="SearchParameter/location-status">VhDir_sp_location_status</a>
+               </td>
+               <td>
+<p>Select Locations with the specified status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-type.html" title="SearchParameter/location-type">VhDir_sp_location_type</a>
+               </td>
+               <td>
+<p>Select Locations of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-location-via-intermediary.html" title="SearchParameter/location-via-intermediary">VhDir_sp_location_via_intermediary</a>
+               </td>
+               <td>
+<p>Select Locations with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-address-city.html" title="SearchParameter/organization-address-city">VhDir_sp_organization_address_city</a>
+               </td>
+               <td>
+<p>Select organizations with an address in the specified city</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-address-country.html" title="SearchParameter/organization-address-country">VhDir_sp_organization_address_country</a>
+               </td>
+               <td>
+<p>Select organizations with an address in the specified country</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-address-postalcode.html" title="SearchParameter/organization-address-postalcode">VhDir_sp_organization_address_postalcode</a>
+               </td>
+               <td>
+<p>Select organizations with an address with the specified postal code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-address-state.html" title="SearchParameter/organization-address-state">VhDir_sp_organization_address_state</a>
+               </td>
+               <td>
+<p>Select organizations with an address in the specified state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-address.html" title="SearchParameter/organization-address">VhDir_sp_organization_address</a>
+               </td>
+               <td>
+<p>Select organizations with the specified address (matches any of the string elements of an address)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-coverage-area.html" title="SearchParameter/organization-coverage-area">VhDir_sp_network_coverage_area</a>
+               </td>
+               <td>
+<p>Select health insurance provider networks available in a region described by the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-endpoint.html" title="SearchParameter/organization-endpoint">VhDir_sp_organization_endpoint</a>
+               </td>
+               <td>
+<p>Select Organizations with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-identifier-assigner.html" title="SearchParameter/organization-identifier-assigner">VhDir_sp_organization_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select Organizations with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-identifier.html" title="SearchParameter/organization-identifier">VhDir_sp_organization_identifier</a>
+               </td>
+               <td>
+<p>Select Organizations with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-name.html" title="SearchParameter/organization-name">VhDir_sp_organization_name</a>
+               </td>
+               <td>
+<p>Select Organizations with the specified name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-partof.html" title="SearchParameter/organization-partof">VhDir_sp_organization_partof</a>
+               </td>
+               <td>
+<p>Select Organizations that are part of the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-qualification-code.html" title="SearchParameter/organization-qualification-code">VhDir_sp_organization_qualification_code</a>
+               </td>
+               <td>
+<p>Select Organizations with a type of qualification matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-qualification-issuer.html" title="SearchParameter/organization-qualification-issuer">VhDir_sp_organization_qualification_issuer</a>
+               </td>
+               <td>
+<p>Select Organizations with a qualification issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-qualification-status.html" title="SearchParameter/organization-qualification-status">VhDir_sp_organization_qualification_status</a>
+               </td>
+               <td>
+<p>Select Organizations with a qualification status matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-qualification-wherevalid-code.html" title="SearchParameter/organization-qualification-wherevalid-code">VhDir_sp_organization_qualification_wherevalid_code</a>
+               </td>
+               <td>
+<p>Select Organizations with a qualification that is valid at the location indicated by the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-qualification-wherevalid-location.html" title="SearchParameter/organization-qualification-wherevalid-location">VhDir_sp_organization_qualification_wherevalid_location</a>
+               </td>
+               <td>
+<p>Select Organizations with a qualification that is valid at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-type.html" title="SearchParameter/organization-type">VhDir_sp_organization_type</a>
+               </td>
+               <td>
+<p>Select Organizations of the specified type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organization-via-intermediary.html" title="SearchParameter/organization-via-intermediary">VhDir_sp_organization_via_intermediary</a>
+               </td>
+               <td>
+<p>Select Organizations with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-endpoint.html" title="SearchParameter/organizationaffiliation-endpoint">VhDir_sp_organizationaffiliation_endpoint</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-identifier-assigner.html" title="SearchParameter/organizationaffiliation-identifier-assigner">VhDir_sp_organizationaffiliation_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-identifier.html" title="SearchParameter/organizationaffiliation-identifier">VhDir_sp_organizationaffiliation_identifier</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-location.html" title="SearchParameter/organizationaffiliation-location">VhDir_sp_organizationaffiliation_location</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations available at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-network.html" title="SearchParameter/organizationaffiliation-network">VhDir_sp_organizationaffiliation_network</a>
+               </td>
+               <td>
+<p>Select roles where the organization is a member of the specified health insurance provider network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-participating-organization.html" title="SearchParameter/organizationaffiliation-participating-organization">VhDir_sp_organizationaffiliation_participating_organization</a>
+               </td>
+               <td>
+<p>Select roles filled by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-primary-organization.html" title="SearchParameter/organizationaffiliation-primary-organization">VhDir_sp_organizationaffiliation_primary_organization</a>
+               </td>
+               <td>
+<p>Select roles offered by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-role.html" title="SearchParameter/organizationaffiliation-role">VhDir_sp_organizationaffiliation_role</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations with the specified role</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-service.html" title="SearchParameter/organizationaffiliation-service">VhDir_sp_organizationaffiliation_service</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations providing the specified service</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-specialty.html" title="SearchParameter/organizationaffiliation-specialty">VhDir_sp_organizationaffiliation_specialty</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations associated with the specified specialty</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-organizationaffiliation-via-intermediary.html" title="SearchParameter/organizationaffiliation-via-intermediary">VhDir_sp_organizationaffiliation_via_intermediary</a>
+               </td>
+               <td>
+<p>Select OrganizationAffiliations with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-endpoint.html" title="SearchParameter/practitioner-endpoint">VhDir_sp_practitioner_endpoint</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-family-name.html" title="SearchParameter/practitioner-family-name">VhDir_sp_practitioner_family_name</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified family name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-given-name.html" title="SearchParameter/practitioner-given-name">VhDir_sp_practitioner_given_name</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified given name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-identifier-assigner.html" title="SearchParameter/practitioner-identifier-assigner">VhDir_sp_practitioner_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select Practitioners with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-identifier.html" title="SearchParameter/practitioner-identifier">VhDir_sp_practitioner_identifier</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-name.html" title="SearchParameter/practitioner-name">VhDir_sp_practitioner_name</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-phonetic.html" title="SearchParameter/practitioner-phonetic">VhDir_sp_practitioner_phonetic</a>
+               </td>
+               <td>
+<p>Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-code.html" title="SearchParameter/practitioner-qualification-code">VhDir_sp_practitioner_qualification_code</a>
+               </td>
+               <td>
+<p>Select Practitioners with a type of qualification matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-issuer.html" title="SearchParameter/practitioner-qualification-issuer">VhDir_sp_practitioner_qualification_issuer</a>
+               </td>
+               <td>
+<p>Select Practitioners with a qualification issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-period.html" title="SearchParameter/practitioner-qualification-period">VhDir_sp_practitioner_qualification_period</a>
+               </td>
+               <td>
+<p>Select Practitioners that have a qualification relevant to the date provided</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-status.html" title="SearchParameter/practitioner-qualification-status">VhDir_sp_practitioner_qualification_status</a>
+               </td>
+               <td>
+<p>Select Practitioners with a qualification status matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-wherevalid-code.html" title="SearchParameter/practitioner-qualification-wherevalid-code">VhDir_sp_practitioner_qualification_wherevalid_code</a>
+               </td>
+               <td>
+<p>Select Practitioners with a qualification that is valid at the location indicated by the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-qualification-wherevalid-location.html" title="SearchParameter/practitioner-qualification-wherevalid-location">VhDir_sp_practitioner_qualification_wherevalid_location</a>
+               </td>
+               <td>
+<p>Select Practitioners with a qualification that is valid at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-via-intermediary.html" title="SearchParameter/practitioner-via-intermediary">VhDir_sp_practitioner_via_intermediary</a>
+               </td>
+               <td>
+<p>Select Practitioners with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-endpoint.html" title="SearchParameter/practitionerrole-endpoint">VhDir_sp_practitionerrole_endpoint</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with the specified endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-identifier-assigner.html" title="SearchParameter/practitionerrole-identifier-assigner">VhDir_sp_practitionerrole_identifier_assigner</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with an identifier issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-identifier.html" title="SearchParameter/practitionerrole-identifier">VhDir_sp_practitionerrole_identifier</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with the specified identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-location.html" title="SearchParameter/practitionerrole-location">VhDir_sp_practitionerrole_location</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles available at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-network.html" title="SearchParameter/practitionerrole-network">VhDir_sp_practitionerrole_network</a>
+               </td>
+               <td>
+<p>Select roles where the practitioner is a member of the specified health insurance provider network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-new-patient-network.html" title="SearchParameter/practitionerrole-new-patient-network">VhDir_sp_practitionerrole_new_patient_network</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles that are part of the specified network and are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-new-patient.html" title="SearchParameter/practitionerrole-new-patient">VhDir_sp_practitionerrole_new_patient</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles that are/are not accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-organization.html" title="SearchParameter/practitionerrole-organization">VhDir_sp_practitionerrole_organization</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles available at the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-practitioner.html" title="SearchParameter/practitionerrole-practitioner">VhDir_sp_practitionerrole_practitioner</a>
+               </td>
+               <td>
+<p>Select roles filled by the specified practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-qualification-code.html" title="SearchParameter/practitionerrole-qualification-code">VhDir_sp_practitionerrole_qualification_code</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with a type of qualification matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-qualification-issuer.html" title="SearchParameter/practitionerrole-qualification-issuer">VhDir_sp_practitionerrole_qualification_issuer</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with a qualification issued by the specified organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-qualification-status.html" title="SearchParameter/practitionerrole-qualification-status">VhDir_sp_practitionerrole_qualification_status</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with a qualification status matching the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-qualification-wherevalid-code.html" title="SearchParameter/practitionerrole-qualification-wherevalid-code">VhDir_sp_practitionerrole_qualification_wherevalid_code</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-qualification-wherevalid-location.html" title="SearchParameter/practitionerrole-qualification-wherevalid-location">VhDir_sp_practitionerrole_qualification_wherevalid_location</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with a qualification that is valid at the specified location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-role.html" title="SearchParameter/practitionerrole-role">VhDir_sp_practitionerrole_role</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with the specified role</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-service.html" title="SearchParameter/practitionerrole-service">VhDir_sp_practitionerrole_service</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles providing the specified service</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-specialty.html" title="SearchParameter/practitionerrole-specialty">VhDir_sp_practitionerrole_specialty</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles associated with the specified specialty</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-via-intermediary.html" title="SearchParameter/practitionerrole-via-intermediary">VhDir_sp_practitionerrole_via_intermediary</a>
+               </td>
+               <td>
+<p>Select PractitionerRoles with contact information available through the specified intermediary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-attestation-method.html" title="SearchParameter/verificationresult-attestation-method">VhDir_sp_verificationresult_attestation_method</a>
+               </td>
+               <td>
+<p>Select validation information for data that was attested to using the specified method</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-attestation-onbehalfof.html" title="SearchParameter/verificationresult-attestation-onbehalfof">VhDir_sp_verificationresult_attestation_onbehalfof</a>
+               </td>
+               <td>
+<p>Select validation information for data that was attested to on behalf of the specified source</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-attestation-who.html" title="SearchParameter/verificationresult-attestation-who">VhDir_sp_verificationresult_attestation_who</a>
+               </td>
+               <td>
+<p>Select validation information for data that was attested to by the specified source</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-primarysource-date.html" title="SearchParameter/verificationresult-primarysource-date">VhDir_sp_verificationresult_primarysource_date</a>
+               </td>
+               <td>
+<p>Select validation information for data that was validated against a primary source on the specified date</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-primarysource-type.html" title="SearchParameter/verificationresult-primarysource-type">VhDir_sp_verificationresult_primarysource_type</a>
+               </td>
+               <td>
+<p>Select validation information for data that was validated against the specified type of primary source organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-primarysource-who.html" title="SearchParameter/verificationresult-primarysource-who">VhDir_sp_verificationresult_primarysource_who</a>
+               </td>
+               <td>
+<p>Select validation information for data that was validated against the specified primary source</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-status-date.html" title="SearchParameter/verificationresult-status-date">VhDir_sp_verificationresult_status_date</a>
+               </td>
+               <td>
+<p>Select validation information with a validation status that occurred at the specified date/time</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-target.html" title="SearchParameter/verificationresult-target">VhDir_sp_verificationresult_target</a>
+               </td>
+               <td>
+<p>Select validation information for the specified resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-validation-status.html" title="SearchParameter/verificationresult-validation-status">VhDir_sp_verificationresult_validation_status</a>
+               </td>
+               <td>
+<p>Select validation information with the specified status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-verificationresult-validator-organization.html" title="SearchParameter/verificationresult-validator-organization">VhDir_sp_verificationresult_validator_organization</a>
+               </td>
+               <td>
+<p>Select validation information for data that was validated by the specified organization</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-careteam.html" title="StructureDefinition/vhdir-careteam">VhDir Care Team</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-endpoint.html" title="StructureDefinition/vhdir-endpoint">VhDir Endpoint</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the Endpoint resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-healthcareservice.html" title="StructureDefinition/vhdir-healthcareservice">VhDir Healthcare Service</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the HealthcareService resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-insuranceplan.html" title="StructureDefinition/vhdir-insuranceplan">VhDir Insurance Plan</a>
+               </td>
+               <td>
+<p>The details of a health insurance product/plan</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-location.html" title="StructureDefinition/vhdir-location">VhDir Location</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the Location resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-network.html" title="StructureDefinition/vhdir-network">VhDir Network</a>
+               </td>
+               <td>
+<p>Defines the properties of a Network (through extending an Organization resource) for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-organization.html" title="StructureDefinition/vhdir-organization">VhDir Organization</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the Organization resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-organizationaffiliation.html" title="StructureDefinition/vhdir-organizationaffiliation">VhDir Organization Affiliation</a>
+               </td>
+               <td>
+<p>Details about the role a participating organization plays in relation to a primary organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-practitioner.html" title="StructureDefinition/vhdir-practitioner">VhDir Practitioner</a>
+               </td>
+               <td>
+<p>Defines the basic constraints and extensions on the Practitioner resource for use in a Validated Healthcare Directory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-practitionerrole.html" title="StructureDefinition/vhdir-practitionerrole">VhDir Practitioner Role</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-restriction.html" title="StructureDefinition/vhdir-restriction">VhDir Restriction</a>
+               </td>
+               <td>
+<p>Restriction on use/release of exchanged information</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vhdir-validation.html" title="StructureDefinition/vhdir-validation">VhDir Validation</a>
+               </td>
+               <td>
+<p>Describes validation requirements, source(s), status and dates for one or more elements</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-accessibility.html" title="StructureDefinition/accessibility">VhDir Accessibility</a>
+               </td>
+               <td>
+<p>Accessibility options offered to the patient/consumer</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careteam-alias.html" title="StructureDefinition/careteam-alias">VhDir Careteam Alias</a>
+               </td>
+               <td>
+<p>Alternate names by which the team is known</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-proficiency.html" title="StructureDefinition/communication-proficiency">VhDir Communication Proficiency</a>
+               </td>
+               <td>
+<p>Level of proficiency</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contactpoint-availabletime.html" title="StructureDefinition/contactpoint-availabletime">VhDir Contactpoint Availabletime</a>
+               </td>
+               <td>
+<p>Time period when the contact point is to be used</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contactpoint-viaintermediary.html" title="StructureDefinition/contactpoint-viaintermediary">VhDir Contactpoint Viaintermediary</a>
+               </td>
+               <td>
+<p>Represents an external point of contact responsible for handling communications with this entity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-digitalcertificate.html" title="StructureDefinition/digitalcertificate">VhDir Digitalcertificate</a>
+               </td>
+               <td>
+<p>A digital certificate, used to identify a user or group of users, or for encrypted communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ehr.html" title="StructureDefinition/ehr">VhDir Ehr</a>
+               </td>
+               <td>
+<p>Information about the EHR system/module used at a location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-endpoint-rank.html" title="StructureDefinition/endpoint-rank">VhDir Endpoint Rank</a>
+               </td>
+               <td>
+<p>Order established by a Role, Organization… for Endpoints capable of transferring the same content</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-endpoint-reference.html" title="StructureDefinition/endpoint-reference">VhDir Practitioner Endpoint Reference</a>
+               </td>
+               <td>
+<p>The technical details of an endpoint that can be used for electronic services</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-endpoint-usecase.html" title="StructureDefinition/endpoint-usecase">VhDir Endpoint Usecase</a>
+               </td>
+               <td>
+<p>An enumeration of specific use cases (service descriptions) supported by the endpoint</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-healthcareservice-reference.html" title="StructureDefinition/healthcareservice-reference">VhDir Healthcareservice Reference</a>
+               </td>
+               <td>
+<p>Reference to healthcareservice resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-identifier-status.html" title="StructureDefinition/identifier-status">VhDir Identifier Status</a>
+               </td>
+               <td>
+<p>Describes the status of an identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-insuranceplan-reference.html" title="StructureDefinition/insuranceplan-reference">VhDir Insurance Plan Reference</a>
+               </td>
+               <td>
+<p>A reference to the insurancePlan resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-location-reference.html" title="StructureDefinition/location-reference">VhDir Location Reference</a>
+               </td>
+               <td>
+<p>A reference to the location resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-network-reference.html" title="StructureDefinition/network-reference">VhDir Network Reference</a>
+               </td>
+               <td>
+<p>A reference to the Network</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-newpatientprofile.html" title="StructureDefinition/newpatientprofile">VhDir New Patient Profile</a>
+               </td>
+               <td>
+<p>Additional information about new patients a practitioner/service/location accepts (e.g. only children)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-newpatients.html" title="StructureDefinition/newpatients">VhDir Newpatients</a>
+               </td>
+               <td>
+<p>An indication of whether a location, service, or practitioner is accepting new patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-org-alias-period.html" title="StructureDefinition/org-alias-period">VhDir Org Alias Period</a>
+               </td>
+               <td>
+<p>the period of time the alias was actively used</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-org-alias-type.html" title="StructureDefinition/org-alias-type">VhDir Org Alias Type</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Type of alias (legal alternative</td>
+      <td>historical)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-org-description.html" title="StructureDefinition/org-description">VhDir Org Description</a>
+               </td>
+               <td>
+<p>Additional descriptive content</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-qualification.html" title="StructureDefinition/practitioner-qualification">VhDir Practitioner Qualification</a>
+               </td>
+               <td>
+<p>Extension to practitioner.qualification adding the status of the qualification, where it is valid, and the history of the qualification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-qualification.html" title="StructureDefinition/qualification">VhDir Qualification</a>
+               </td>
+               <td>
+<p>Qualifications obtained by training and certification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-usage-restriction.html" title="StructureDefinition/usage-restriction">VhDir Usage Restriction</a>
+               </td>
+               <td>
+<p>The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn’t exposed that shouldn’t be.
+This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)
+This will be expected to be used as a modifier extension.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-accessibility.html" title="ValueSet/accessibility">VhDir Accessibility Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting general categories of accommodations available.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aliastype.html" title="ValueSet/aliastype">VhDir Alias Type Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting the reason behind the existence of an alias.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-attestationmethod.html" title="ValueSet/attestationmethod">VhDir Attestation Method</a>
+               </td>
+               <td>
+<p>This value set includes a codes that describe the relationship between the list of standards defining digital certificates.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-benefit-type.html" title="ValueSet/benefit-type">VhDir Benefit Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the type of benefit in a product/plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-certificationedition.html" title="ValueSet/certificationedition">VhDir Certification Edition Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting the certification edition of an electronic health record system.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-consent.html" title="ValueSet/consent">VhDir Consent Value Set</a>
+               </td>
+               <td>
+<p>Codes for use in defining access levels for sharing subsets of constrained content (as an example)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-coverage-type.html" title="ValueSet/coverage-type">VhDir Coverage Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the type of coverage of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-digitalcertificatestandard.html" title="ValueSet/digitalcertificatestandard">VhDir Digital Certificate Standard Value Set</a>
+               </td>
+               <td>
+<p>This value set includes a list of standards defining digital certificates.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-digitalcertificatetrustframework.html" title="ValueSet/digitalcertificatetrustframework">VhDir Digital Certificate Trust Framework Value Set</a>
+               </td>
+               <td>
+<p>A trust framework is developed by a community whose members have similar goals and perspectives. It defines the rights and responsibilities of that community’s participants in an identity ecosystem, specifies the policies and standards specific to the community, and defines the community-specific processes and procedures that provide assurance. A trust framework may define how community members conduct identity management responsibilities; share, use, protect, and secure identity information; perform specific roles within the community; and/or manage liability and legal issues. This value set defines common trust frameworks for certificate-based public key cryptographic systems in healthcare.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-digitalcertificatetype.html" title="ValueSet/digitalcertificatetype">VhDir Digital Certificate Type Value Set</a>
+               </td>
+               <td>
+<p>In a certificate-based public key cryptographic system, certificates are issued to subscribers, whose name appears as the subject in the certificate. This value set defines a set of terms describing the types of subscribers who may be issued digital certificates.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-digitalcertificateuse.html" title="ValueSet/digitalcertificateuse">VhDir Digital Certificate Use Value Set</a>
+               </td>
+               <td>
+<p>This value set defines the purpose of the key contained in a public key certificate.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-externalvalidationtype.html" title="ValueSet/externalvalidationtype">VhDir External Validation Type Value Set</a>
+               </td>
+               <td>
+<p>Attested information varies in the means by which it is validated. For example information some information may be validated by a single external source. Other information such as participation in a network or another relationship may require mulitple sources. Some cannot, and will be validated. This value set defines a set of codes describing the means of validation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-failureaction.html" title="ValueSet/failureaction">VhDir Failure Action</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-healthcareservice-characteristic.html" title="ValueSet/healthcareservice-characteristic">VhDir Healthcare Service Characteristic</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the characteristics of a healthcare service.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-healthcareservice-eligibility.html" title="ValueSet/healthcareservice-eligibility">VhDir Healthcare Service Eligibility</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the eligibilty requirements for a service.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-identifier-type.html" title="ValueSet/identifier-type">VhDir Identifier Type Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting practitioner identifier type.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-identifierstatus.html" title="ValueSet/identifierstatus">VhDir Identifier Status Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting the status of an identifier.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplan-type.html" title="ValueSet/insuranceplan-type">VhDir Insurance Plan Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the type of a insurance plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplanbenefitcosttype.html" title="ValueSet/insuranceplanbenefitcosttype">VhDir Insurance Plan Benefit Cost Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the cost for a particular benefit on a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplanbenefittype.html" title="ValueSet/insuranceplanbenefittype">VhDir Insurance Plan Benefit Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the benefit type of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplancostcategory.html" title="ValueSet/insuranceplancostcategory">VhDir Insurance Plan Cost Category</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the cost catagory of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplancostqualifier.html" title="ValueSet/insuranceplancostqualifier">VhDir Insurance Plan Cost Qualifier</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that further qualify the cost of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplancosttype.html" title="ValueSet/insuranceplancosttype">VhDir Insurance Plan Cost Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the cost type of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-insuranceplangroupsize.html" title="ValueSet/insuranceplangroupsize">VhDir Insurance Plan Group Size</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the size of coverage.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-languageproficiency.html" title="ValueSet/languageproficiency">VhDir Spoken Language Proficiency</a>
+               </td>
+               <td>
+<p>Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-limit-unit.html" title="ValueSet/limit-unit">VhDir Limit Unit</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicates the unit of any limit on a benefit in a product/plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-network-type.html" title="ValueSet/network-type">VhDir Network Type Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting network type.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patientaccess.html" title="ValueSet/patientaccess">VhDir Ehr Patient Access Value Set</a>
+               </td>
+               <td>
+<p>Codes for documenting patient facing access to an electronic health record system.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-plan-type.html" title="ValueSet/plan-type">VhDir Plan Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the type of a plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcefailureaction.html" title="ValueSet/primarysourcefailureaction">VhDir Primary Source Failure Action</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcepush.html" title="ValueSet/primarysourcepush">VhDir Primary Source Push</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate if a primary source of validated data has the capacity to send validation details directly to a validated healthcare directory.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcepushtype.html" title="ValueSet/primarysourcepushtype">VhDir Primary Source Push Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate the scope of data sent from a primary source of validated data to a validated healthcare directory when there is a push model (from the sender) for sending data.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcetype.html" title="ValueSet/primarysourcetype">VhDir Primary Source Validation Type</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that describes the entity that provides validatation of attested data.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcevalidationprocess.html" title="ValueSet/primarysourcevalidationprocess">VhDir Primary Source Validation Process</a>
+               </td>
+               <td>
+<p>Attested information may be validated by process that are manual or automated. For automated processes it may accomplished by the system of record reaching out through another system’s API or information may be sent to the system of record. This value set defines a set of codes to describing the process, the how, a resource or data element is validated.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-primarysourcevalidationstatus.html" title="ValueSet/primarysourcevalidationstatus">VhDir Primary Source Validation Status</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes that indicate various states in the validation process that a given that a resource or element may be in at a point in time.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-qualificationstatus.html" title="ValueSet/qualificationstatus">VhDir Qualification Status</a>
+               </td>
+               <td>
+<p>Codes for documenting the status of a qualification.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-usecasetype.html" title="ValueSet/usecasetype">VhDir Use Case Type</a>
+               </td>
+               <td>
+<p>Codes for documenting business use case by a general grouping by business area.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-validationneed.html" title="ValueSet/validationneed">VhDir Primary Source Validation Need</a>
+               </td>
+               <td>
+<p>Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all. This value set defines a set of codes that describe how often validation is needed, if at all.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-validationprocess.html" title="ValueSet/validationprocess">VhDir Validation Process</a>
+               </td>
+               <td>
+<p>Documents the external source validation requirements for this element or set of elements.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-accessibility.html" title="CodeSystem/accessibility">VhDir Accessibility Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of accessibility</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-consent.html" title="CodeSystem/consent">VhDir Consent Code System</a>
+               </td>
+               <td>
+<p>Codes for use in defining access levels for sharing subsets of constrained content (as an example)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-credentialstatus.html" title="CodeSystem/credentialstatus">VhDir Credential Status Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for indicating the status of a credential, such as an identifier or qualification.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-digitalcertificate.html" title="CodeSystem/digitalcertificate">VhDir Digital Certificate Code System</a>
+               </td>
+               <td>
+<p>Public key infrastructure (PKI) refers to the architecture, organizations, techniques, practices, and procedures that collectively support the implementation and operation of a certificate-based public key cryptographic system. A certificate is a set of data that uniquely identifies a key pair and an owner that is authorized to use the key pair. The certificate contains the owner’s public key and other information, and is digitally signed by a Certification Authority (i.e., a trusted party), thereby binding the public key to the owner. This code system includes terms describing various aspects of a certificate-based public key cryptographic system, such as applicable standards, types of certificates, uses of certificates, and associated trust frameworks.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ehrcharacteristics.html" title="CodeSystem/ehrcharacteristics">VhDir Ehr Characteristics Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for describing attributes of an electronic health record (EHR) product.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-healthcareservice-characteristic.html" title="CodeSystem/healthcareservice-characteristic">VhDir Healthcare Service Characteristic</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of a health care services.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-healthcareservice-eligibility.html" title="CodeSystem/healthcareservice-eligibility">VhDir Healthcare Service Eligibility</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of eligibility for health care services.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-insuranceplan.html" title="CodeSystem/insuranceplan">VhDir Insurance Plan Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the various attributes of an Insurance Plan</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-languageproficiency.html" title="CodeSystem/languageproficiency">VhDir Spoken Language Proficiency Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of spoken language proficiency</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-network-type.html" title="CodeSystem/network-type">VhDir Network Type Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting network.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-organizationdemographics.html" title="CodeSystem/organizationdemographics">VhDir Organization Demographics Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of an Organization.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-payercharacteristics.html" title="CodeSystem/payercharacteristics">VhDir Payer Characteristics Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting attributes of a Payor related resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-primarysource.html" title="CodeSystem/primarysource">VhDir Primary Source Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes related to the business process of primary source validation durign the maintenance of a Healthcare Directory.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-usecase.html" title="CodeSystem/usecase">VhDir Use Case Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the various attributes of a Use Case</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-validation.html" title="CodeSystem/validation">VhDir Validation Type Code System</a>
+               </td>
+               <td>
+<p>This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
+   <h3>Terminology: Concept Maps </h3>
+   <p>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-qualification-status.html" title="ConceptMap/qualification-status">VhDir Qualification Status Value Set – Status Code Mapping</a>
+               </td>
+               <td>
+<p>Canonical Mapping for “Codes for documenting the status of a qualification.”</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-cardiologycareteam1.html" title="CareTeam/cardiologycareteam1">cardiologycareteam1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Endpoint-direct321.html" title="Endpoint/direct321">direct321</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="HealthcareService-ffcardiology.html" title="HealthcareService/ffcardiology">ffcardiology</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="HealthcareService-independencerehab1.html" title="HealthcareService/independencerehab1">independencerehab1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="HealthcareService-independencerehab2.html" title="HealthcareService/independencerehab2">independencerehab2</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="HealthcareService-hcs-ws.html" title="HealthcareService/hcs-ws">hcs-ws</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="InsurancePlan-insuranceplan1.html" title="InsurancePlan/insuranceplan1">insuranceplan1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-loc-ffmh-hvi.html" title="Location/loc-ffmh-hvi">loc-ffmh-hvi</a>
+               </td>
+               <td>
+<p>Heart and Vascular Institute Specialty Wing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-loc-ffmh.html" title="Location/loc-ffmh">loc-ffmh</a>
+               </td>
+               <td>
+<p>Main campus of Founding Fathers Memorial Hospital</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-wash-dc-metro.html" title="Location/wash-dc-metro">wash-dc-metro</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-loc-ws.html" title="Location/loc-ws">loc-ws</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-patriotppo.html" title="Organization/patriotppo">patriotppo</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-foundingfathers.html" title="Organization/foundingfathers">foundingfathers</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-homeland.html" title="Organization/homeland">homeland</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-mtvernon.html" title="Organization/mtvernon">mtvernon</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-patriotdental.html" title="Organization/patriotdental">patriotdental</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-independencerehab.html" title="Organization/independencerehab">independencerehab</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-monumentHIE.html" title="Organization/monumentHIE">monumentHIE</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OrganizationAffiliation-orgrole2.html" title="OrganizationAffiliation/orgrole2">orgrole2</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OrganizationAffiliation-orgrole1.html" title="OrganizationAffiliation/orgrole1">orgrole1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-practitionerrole1.html" title="PractitionerRole/practitionerrole1">practitionerrole1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner1.html" title="Practitioner/practitioner1">practitioner1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="VerificationResult-example-license.html" title="VerificationResult/example-license">example-license</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-womens-shelter.html" title="Bundle/womens-shelter">womens-shelter</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="9"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%"><a name="l4415">​</a>
+                  <a href="ImplementationGuide-ig.html" title="ImplementationGuide/ig">Validated Healthcare Directory</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

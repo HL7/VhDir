@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="insuranceplan-specific-cost-value"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "insuranceplan-specific-cost-value" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-value</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: VhDir_sp_insuranceplan_specific_cost_value</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 International - Patient Administration Work Group</p><p><b>contact</b>: HL7 International - Patient Administration Work Group: <a href="http://www.hl7.org/Special/committees/pafm">http://www.hl7.org/Special/committees/pafm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select plans which include the specified cost</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: specific-cost-value</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: quantity</p><p><b>expression</b>: InsurancePlan.plan.specificCost.benefit.cost.value</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>comparator</b>: eq, gt, lt, ge, le, sa, eb</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-value"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_insuranceplan_specific_cost_value"/>
+  <status value="draft"/>
+  <date value="2018-05-23"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Select plans which include the specified cost"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="specific-cost-value"/>
+  <base value="InsurancePlan"/>
+  <type value="quantity"/>
+  <expression value="InsurancePlan.plan.specificCost.benefit.cost.value"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+</SearchParameter>

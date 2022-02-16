@@ -1,0 +1,162 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/VerificationResult/example-license> a fhir:VerificationResult;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-license"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-license\" </p></div><p><b>target</b>: <a href=\"Practitioner-practitioner1.html\">Practitioner/practitioner1: George Washington</a> \" WASHINGTON\"</p><p><b>targetLocation</b>: Practitioner.qualification[0]</p><p><b>need</b>: periodic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-need.html\">Need</a>#periodic \"Periodic\")</span></p><p><b>status</b>: validated</p><p><b>statusDate</b>: 2018-01-23T10:45:00-05:00</p><p><b>validationType</b>: Primary Source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-type.html\">Validation-type</a>#primary)</span></p><p><b>validationProcess</b>: primary source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-process.html\">Validation-process</a>#primary)</span></p><p><b>frequency</b>: Do Once per 1 years</p><p><b>lastPerformed</b>: 2018-01-23T10:45:00-05:00</p><p><b>nextScheduled</b>: 2019-01-23</p><p><b>failureAction</b>: Fatal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-failure-action.html\">Failure-action</a>#fatal)</span></p><h3>PrimarySources</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>Type</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td><td><b>CanPushUpdates</b></td><td><b>PushTypeAvailable</b></td></tr><tr><td>*</td><td><span>: DC Board of Medicine</span></td><td>License Board <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-primary-source-type.html\">Primary-source-type</a>#lic-board)</span></td><td>via email <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\">VerificationResult Communication Method</a>#manual \"Manual\")</span></td><td>Successful <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-validation-status.html\">Validation-status</a>#successful)</span></td><td>2018-01-23</td><td>Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-can-push-updates.html\">Can-push-updates</a>#yes)</span></td><td>Issuing source <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-push-type-available.html\">Push-type-available</a>#source \"As defined by source\")</span></td></tr></table><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td><td><b>SourceIdentityCertificate</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-practitioner1.html\">Practitioner/practitioner1: George Washington</a> \" WASHINGTON\"</td><td>Manual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\">VerificationResult Communication Method</a>#manual)</span></td><td>2018-01-09</td><td>TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==</td></tr></table><h3>Validators</h3><table class=\"grid\"><tr><td>-</td><td><b>Organization</b></td><td><b>IdentityCertificate</b></td></tr><tr><td>*</td><td><span>: DC Board of Medicine</span></td><td>VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t</td></tr></table></div>"
+  ];
+  fhir:VerificationResult.target [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/uv/vhdir/Practitioner/practitioner1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ];
+     fhir:Reference.display [ fhir:value "George Washington" ]
+  ];
+  fhir:VerificationResult.targetLocation [
+     fhir:value "Practitioner.qualification[0]";
+     fhir:index 0
+  ];
+  fhir:VerificationResult.need [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/need" ];
+       fhir:Coding.code [ fhir:value "periodic" ];
+       fhir:Coding.display [ fhir:value "Periodic" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "periodic" ]
+  ];
+  fhir:VerificationResult.status [ fhir:value "validated"];
+  fhir:VerificationResult.statusDate [ fhir:value "2018-01-23T10:45:00-05:00"^^xsd:dateTime];
+  fhir:VerificationResult.validationType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/validation-type" ];
+       fhir:Coding.code [ fhir:value "primary" ];
+       fhir:Coding.display [ fhir:value "Primary Source" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Primary Source" ]
+  ];
+  fhir:VerificationResult.validationProcess [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/validation-process" ];
+       fhir:Coding.code [ fhir:value "primary" ];
+       fhir:Coding.display [ fhir:value "primary source" ]
+     ]
+  ];
+  fhir:VerificationResult.frequency [
+     fhir:Timing.repeat [
+       fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+       fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+       fhir:Timing.repeat.periodUnit [ fhir:value "a" ]
+     ]
+  ];
+  fhir:VerificationResult.lastPerformed [ fhir:value "2018-01-23T10:45:00-05:00"^^xsd:dateTime];
+  fhir:VerificationResult.nextScheduled [ fhir:value "2019-01-23"^^xsd:date];
+  fhir:VerificationResult.failureAction [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/failure-action" ];
+       fhir:Coding.code [ fhir:value "fatal" ];
+       fhir:Coding.display [ fhir:value "Fatal" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Fatal" ]
+  ];
+  fhir:VerificationResult.primarySource [
+     fhir:index 0;
+     fhir:VerificationResult.primarySource.who [
+       fhir:Reference.display [ fhir:value "DC Board of Medicine" ]
+     ];
+     fhir:VerificationResult.primarySource.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/primary-source-type" ];
+         fhir:Coding.code [ fhir:value "lic-board" ];
+         fhir:Coding.display [ fhir:value "License Board" ];
+         fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ];
+     fhir:VerificationResult.primarySource.communicationMethod [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method" ];
+         fhir:Coding.code [ fhir:value "manual" ];
+         fhir:Coding.display [ fhir:value "Manual" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "via email" ]
+     ];
+     fhir:VerificationResult.primarySource.validationStatus [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/validation-status" ];
+         fhir:Coding.code [ fhir:value "successful" ];
+         fhir:Coding.display [ fhir:value "Successful" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Successful" ]
+     ];
+     fhir:VerificationResult.primarySource.validationDate [ fhir:value "2018-01-23"^^xsd:date ];
+     fhir:VerificationResult.primarySource.canPushUpdates [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/can-push-updates" ];
+         fhir:Coding.code [ fhir:value "yes" ];
+         fhir:Coding.display [ fhir:value "Yes" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Yes" ]
+     ];
+     fhir:VerificationResult.primarySource.pushTypeAvailable [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/push-type-available" ];
+         fhir:Coding.code [ fhir:value "source" ];
+         fhir:Coding.display [ fhir:value "As defined by source" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Issuing source" ]
+     ]
+  ];
+  fhir:VerificationResult.attestation [
+     fhir:VerificationResult.attestation.who [
+       fhir:link <http://hl7.org/fhir/uv/vhdir/Practitioner/practitioner1>;
+       fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ];
+       fhir:Reference.display [ fhir:value "George Washington" ]
+     ];
+     fhir:VerificationResult.attestation.communicationMethod [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method" ];
+         fhir:Coding.code [ fhir:value "manual" ];
+         fhir:Coding.display [ fhir:value "Manual" ];
+         fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ];
+     fhir:VerificationResult.attestation.date [ fhir:value "2018-01-09"^^xsd:date ];
+     fhir:VerificationResult.attestation.sourceIdentityCertificate [ fhir:value "TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==" ]
+  ];
+  fhir:VerificationResult.validator [
+     fhir:index 0;
+     fhir:VerificationResult.validator.organization [
+       fhir:Reference.display [ fhir:value "DC Board of Medicine" ]
+     ];
+     fhir:VerificationResult.validator.identityCertificate [ fhir:value "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t" ]
+  ] .
+
+<http://hl7.org/fhir/uv/vhdir/Practitioner/practitioner1> a fhir:uv .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/VerificationResult/example-license.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/VerificationResult/example-license.ttl> .
+
+# -------------------------------------------------------------------------------------
+

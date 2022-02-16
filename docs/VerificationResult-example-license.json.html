@@ -1,0 +1,450 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\example-license - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.258"}
+    h3,h4,h5,h6{--heading-prefix:"6.258"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>example-license</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="VerificationResult-example-license.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="VerificationResult-example-license.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: example-license - JSON Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+<p><a href="VerificationResult-example-license.json" no-download="true">Raw json</a> | <a href="VerificationResult-example-license.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult">resourceType</a>" : "VerificationResult",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.id">id</a>" : "example-license",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;example-license\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: &lt;a href=\&quot;Practitioner-practitioner1.html\&quot;&gt;Practitioner/practitioner1: George Washington&lt;/a&gt; \&quot; WASHINGTON\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;targetLocation&lt;/b&gt;: Practitioner.qualification[0]&lt;/p&gt;&lt;p&gt;&lt;b&gt;need&lt;/b&gt;: periodic &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-need.html\&quot;&gt;Need&lt;/a&gt;#periodic \&quot;Periodic\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: validated&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2018-01-23T10:45:00-05:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;validationType&lt;/b&gt;: Primary Source &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-validation-type.html\&quot;&gt;Validation-type&lt;/a&gt;#primary)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;validationProcess&lt;/b&gt;: primary source &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-validation-process.html\&quot;&gt;Validation-process&lt;/a&gt;#primary)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;frequency&lt;/b&gt;: Do Once per 1 years&lt;/p&gt;&lt;p&gt;&lt;b&gt;lastPerformed&lt;/b&gt;: 2018-01-23T10:45:00-05:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;nextScheduled&lt;/b&gt;: 2019-01-23&lt;/p&gt;&lt;p&gt;&lt;b&gt;failureAction&lt;/b&gt;: Fatal &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-failure-action.html\&quot;&gt;Failure-action&lt;/a&gt;#fatal)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;PrimarySources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;CommunicationMethod&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ValidationStatus&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ValidationDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;CanPushUpdates&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;PushTypeAvailable&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span&gt;: DC Board of Medicine&lt;/span&gt;&lt;/td&gt;&lt;td&gt;License Board &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-primary-source-type.html\&quot;&gt;Primary-source-type&lt;/a&gt;#lic-board)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;via email &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\&quot;&gt;VerificationResult Communication Method&lt;/a&gt;#manual \&quot;Manual\&quot;)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Successful &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-validation-status.html\&quot;&gt;Validation-status&lt;/a&gt;#successful)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2018-01-23&lt;/td&gt;&lt;td&gt;Yes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-can-push-updates.html\&quot;&gt;Can-push-updates&lt;/a&gt;#yes)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Issuing source &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-push-type-available.html\&quot;&gt;Push-type-available&lt;/a&gt;#source \&quot;As defined by source\&quot;)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Attestations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;CommunicationMethod&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SourceIdentityCertificate&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-practitioner1.html\&quot;&gt;Practitioner/practitioner1: George Washington&lt;/a&gt; \&quot; WASHINGTON\&quot;&lt;/td&gt;&lt;td&gt;Manual &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-verificationresult-communication-method.html\&quot;&gt;VerificationResult Communication Method&lt;/a&gt;#manual)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2018-01-09&lt;/td&gt;&lt;td&gt;TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Validators&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Organization&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;IdentityCertificate&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span&gt;: DC Board of Medicine&lt;/span&gt;&lt;/td&gt;&lt;td&gt;VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.target">target</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner1",
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "George Washington"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.targetLocation">targetLocation</a>" : [
+    "Practitioner.qualification[0]"
+  ],
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.need">need</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/need",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "periodic",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Periodic"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "periodic"
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.status">status</a>" : "validated",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.statusDate">statusDate</a>" : "2018-01-23T10:45:00-05:00",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validationType">validationType</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/validation-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "primary",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Primary Source"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Primary Source"
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validationProcess">validationProcess</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/validation-process",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "primary",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "primary source"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.frequency">frequency</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "a"
+    }
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.lastPerformed">lastPerformed</a>" : "2018-01-23T10:45:00-05:00",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.nextScheduled">nextScheduled</a>" : "2019-01-23",
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.failureAction">failureAction</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/failure-action",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "fatal",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Fatal"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Fatal"
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource">primarySource</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.who">who</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "DC Board of Medicine"
+      },
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/primary-source-type",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "lic-board",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "License Board",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a>" : true
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.communicationMethod">communicationMethod</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "manual",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Manual"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "via email"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.validationStatus">validationStatus</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/validation-status",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "successful",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Successful"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Successful"
+      },
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.validationDate">validationDate</a>" : "2018-01-23",
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.canPushUpdates">canPushUpdates</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/can-push-updates",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "yes",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Yes"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Yes"
+      },
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.primarySource.pushTypeAvailable">pushTypeAvailable</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/push-type-available",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "source",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "As defined by source"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Issuing source"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.attestation">attestation</a>" : {
+    "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.attestation.who">who</a>" : {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner1",
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "George Washington"
+    },
+    "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.attestation.communicationMethod">communicationMethod</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "manual",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Manual",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a>" : true
+        }
+      ]
+    },
+    "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.attestation.date">date</a>" : "2018-01-09",
+    "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.attestation.sourceIdentityCertificate">sourceIdentityCertificate</a>" : "TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="
+  },
+  "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validator">validator</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validator.organization">organization</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "DC Board of Medicine"
+      },
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validator.identityCertificate">identityCertificate</a>" : "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

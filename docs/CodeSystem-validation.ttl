@@ -1,0 +1,286 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/validation> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "validation"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/validation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">noneneeded<a name=\"validation-noneneeded\"> </a></td><td>None needed</td><td>No validation needed/planned for this resource or element.</td></tr><tr><td style=\"white-space:nowrap\">initial<a name=\"validation-initial\"> </a></td><td>Initial</td><td>Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'.</td></tr><tr><td style=\"white-space:nowrap\">periodic<a name=\"validation-periodic\"> </a></td><td>Periodic</td><td>Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure.</td></tr><tr><td style=\"white-space:nowrap\">attested<a name=\"validation-attested\"> </a></td><td>Attested</td><td>Indicates the element or resource has only been attested.</td></tr><tr><td style=\"white-space:nowrap\">validated<a name=\"validation-validated\"> </a></td><td>Validated</td><td>Indicates the element or resource has been successfully validated.</td></tr><tr><td style=\"white-space:nowrap\">inprocess<a name=\"validation-inprocess\"> </a></td><td>Inprocess</td><td>Indicates the element or resource is currently being validated.</td></tr><tr><td style=\"white-space:nowrap\">reqreval<a name=\"validation-reqreval\"> </a></td><td>Required revalidation</td><td>Indicates the element or resource has passed an expiration date and requires revalidation.</td></tr><tr><td style=\"white-space:nowrap\">valfailed<a name=\"validation-valfailed\"> </a></td><td>Valiation failed</td><td>Indicates validation was attepted on an element or resource and that validation failed.</td></tr><tr><td style=\"white-space:nowrap\">nothing<a name=\"validation-nothing\"> </a></td><td>Nothing</td><td>No external validation is required.</td></tr><tr><td style=\"white-space:nowrap\">single<a name=\"validation-single\"> </a></td><td>Single</td><td>Indicates the element or resource is validated against a single source.</td></tr><tr><td style=\"white-space:nowrap\">multiple<a name=\"validation-multiple\"> </a></td><td>Multiple</td><td>Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network.</td></tr><tr><td style=\"white-space:nowrap\">editcheck<a name=\"validation-editcheck\"> </a></td><td>Edit check</td><td>Indicates the element or resource is validated for format, range, presence, or other similar properties.</td></tr><tr><td style=\"white-space:nowrap\">valueset<a name=\"validation-valueset\"> </a></td><td>Valueset</td><td>Indicates the element or resource is validated against a value set.</td></tr><tr><td style=\"white-space:nowrap\">extsource<a name=\"validation-extsource\"> </a></td><td>External source</td><td>Indicates the element or resource is validated against an external source.</td></tr><tr><td style=\"white-space:nowrap\">standalone<a name=\"validation-standalone\"> </a></td><td>Stand alone</td><td>Indicates the element or resource is validated by itself and is unrelated to other elements or resources.</td></tr><tr><td style=\"white-space:nowrap\">incontext<a name=\"validation-incontext\"> </a></td><td>In context</td><td>Indicates the element or resource is validated by the existence or value of another related element or resource.</td></tr><tr><td style=\"white-space:nowrap\">fatal<a name=\"validation-fatal\"> </a></td><td>Fatal</td><td>A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken.</td></tr><tr><td style=\"white-space:nowrap\">warning<a name=\"validation-warning\"> </a></td><td>Warning</td><td>A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization.</td></tr><tr><td style=\"white-space:nowrap\">recordonly<a name=\"validation-recordonly\"> </a></td><td>Record only</td><td>A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error.</td></tr><tr><td style=\"white-space:nowrap\">noaction<a name=\"validation-noaction\"> </a></td><td>No action</td><td>A failure that is unlikely to be relevant to any local workflow environment.</td></tr><tr><td style=\"white-space:nowrap\">manual<a name=\"validation-manual\"> </a></td><td>Manual</td><td>The resource or element is validated manually.</td></tr><tr><td style=\"white-space:nowrap\">portal<a name=\"validation-portal\"> </a></td><td>Portal</td><td>The resource or element is validated via a portal into a source of valid data.</td></tr><tr><td style=\"white-space:nowrap\">push<a name=\"validation-push\"> </a></td><td>Push</td><td>Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory</td></tr><tr><td style=\"white-space:nowrap\">pull<a name=\"validation-pull\"> </a></td><td>Pull</td><td>Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory</td></tr><tr><td style=\"white-space:nowrap\">successful<a name=\"validation-successful\"> </a></td><td>Successful</td><td>The validation process is complete and a determination made that the the attested data is true and accurate.</td></tr><tr><td style=\"white-space:nowrap\">failed<a name=\"validation-failed\"> </a></td><td>Failed</td><td>The validation process is complete and a determination made that the the attested data is not true or accurate.</td></tr><tr><td style=\"white-space:nowrap\">undetermined<a name=\"validation-undetermined\"> </a></td><td>Undetermined</td><td>The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate.</td></tr><tr><td style=\"white-space:nowrap\">pushyes<a name=\"validation-pushyes\"> </a></td><td>Yes</td><td>The primary source validation can be achieved via a push of data from the source of that information.</td></tr><tr><td style=\"white-space:nowrap\">pushno<a name=\"validation-pushno\"> </a></td><td>No</td><td>The primary source validation cannot be achieved via a push of data from the source of that information.</td></tr><tr><td style=\"white-space:nowrap\">pushundetermined<a name=\"validation-pushundetermined\"> </a></td><td>Undetermined</td><td>It is if undetermined if primary source validation can be achieved via a push of data from the source of that information.</td></tr><tr><td style=\"white-space:nowrap\">specific<a name=\"validation-specific\"> </a></td><td>Specific requested changes</td><td>The sender will send specific changes to the healthcare directory as determined by agreement.</td></tr><tr><td style=\"white-space:nowrap\">any<a name=\"validation-any\"> </a></td><td>Any changes</td><td>The sender will send all changes to the healthcare directory.</td></tr><tr><td style=\"white-space:nowrap\">sourcedef<a name=\"validation-sourcedef\"> </a></td><td>As defined by the source/sender</td><td>The sender will only send changes they have determined to be significant.</td></tr><tr><td style=\"white-space:nowrap\">owner<a name=\"validation-owner\"> </a></td><td>Owner</td><td>Indicates the element or resource was attested to by the individual who owned the data.</td></tr><tr><td style=\"white-space:nowrap\">authrep<a name=\"validation-authrep\"> </a></td><td>Authorized representative</td><td>Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data.</td></tr><tr><td style=\"white-space:nowrap\">authint<a name=\"validation-authint\"> </a></td><td>Authorized intermediary</td><td>Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data.</td></tr><tr><td style=\"white-space:nowrap\">non-auth-src<a name=\"validation-non-auth-src\"> </a></td><td>Non-authorized source</td><td>Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data.</td></tr><tr><td style=\"white-space:nowrap\">licenseboard<a name=\"validation-licenseboard\"> </a></td><td>License Board</td><td>License Board</td></tr><tr><td style=\"white-space:nowrap\">primaryed<a name=\"validation-primaryed\"> </a></td><td>Primary Education</td><td>Primary Education</td></tr><tr><td style=\"white-space:nowrap\">continuinged<a name=\"validation-continuinged\"> </a></td><td>Continuing Education</td><td>Continuing Education</td></tr><tr><td style=\"white-space:nowrap\">postalservice<a name=\"validation-postalservice\"> </a></td><td>Postal Service</td><td>Postal Service</td></tr><tr><td style=\"white-space:nowrap\">relowner<a name=\"validation-relowner\"> </a></td><td>Relationship owner</td><td>Relationship owner</td></tr><tr><td style=\"white-space:nowrap\">regauth<a name=\"validation-regauth\"> </a></td><td>Registration Authority</td><td>Registration Authority</td></tr><tr><td style=\"white-space:nowrap\">legalsource<a name=\"validation-legalsource\"> </a></td><td>Legal source</td><td>Legal source</td></tr><tr><td style=\"white-space:nowrap\">issuingsource<a name=\"validation-issuingsource\"> </a></td><td>Issuing source</td><td>Issuing source</td></tr><tr><td style=\"white-space:nowrap\">attester<a name=\"validation-attester\"> </a></td><td>Attester</td><td>Attester</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/validation"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "VhDirValidationType"];
+  fhir:CodeSystem.title [ fhir:value "VhDir Validation Type Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 International - Patient Administration Work Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International - Patient Administration Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Used by permission of HL7 International all rights reserved Creative Commons License"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "noneneeded" ];
+     fhir:CodeSystem.concept.display [ fhir:value "None needed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "No validation needed/planned for this resource or element." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "initial" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Initial" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "periodic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periodic" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "attested" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Attested" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource has only been attested." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "validated" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Validated" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource has been successfully validated." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "inprocess" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inprocess" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is currently being validated." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "reqreval" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Required revalidation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource has passed an expiration date and requires revalidation." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "valfailed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valiation failed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates validation was attepted on an element or resource and that validation failed." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "nothing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nothing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "No external validation is required." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "single" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Single" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated against a single source." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "multiple" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "editcheck" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Edit check" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated for format, range, presence, or other similar properties." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "valueset" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valueset" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated against a value set." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "extsource" ];
+     fhir:CodeSystem.concept.display [ fhir:value "External source" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated against an external source." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "standalone" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stand alone" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated by itself and is unrelated to other elements or resources." ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "incontext" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In context" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource is validated by the existence or value of another related element or resource." ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "fatal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fatal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken." ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "warning" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Warning" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization." ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "recordonly" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Record only" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error." ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "noaction" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No action" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A failure that is unlikely to be relevant to any local workflow environment." ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "manual" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manual" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The resource or element is validated manually." ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "portal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The resource or element is validated via a portal into a source of valid data." ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "push" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Push" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "pull" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pull" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "successful" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Successful" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The validation process is complete and a determination made that the the attested data is true and accurate." ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "failed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Failed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The validation process is complete and a determination made that the the attested data is not true or accurate." ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "undetermined" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Undetermined" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate." ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "pushyes" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The primary source validation can be achieved via a push of data from the source of that information." ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "pushno" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The primary source validation cannot be achieved via a push of data from the source of that information." ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "pushundetermined" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Undetermined" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "It is if undetermined if primary source validation can be achieved via a push of data from the source of that information." ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "specific" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Specific requested changes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The sender will send specific changes to the healthcare directory as determined by agreement." ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "any" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Any changes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The sender will send all changes to the healthcare directory." ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "sourcedef" ];
+     fhir:CodeSystem.concept.display [ fhir:value "As defined by the source/sender" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The sender will only send changes they have determined to be significant." ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "owner" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Owner" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource was attested to by the individual who owned the data." ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "authrep" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Authorized representative" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data." ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "authint" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Authorized intermediary" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data." ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "non-auth-src" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-authorized source" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data." ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "licenseboard" ];
+     fhir:CodeSystem.concept.display [ fhir:value "License Board" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "License Board" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "primaryed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Primary Education" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary Education" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "continuinged" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Continuing Education" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Continuing Education" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "postalservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Postal Service" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Postal Service" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "relowner" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Relationship owner" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Relationship owner" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "regauth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Registration Authority" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Registration Authority" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "legalsource" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Legal source" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Legal source" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "issuingsource" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Issuing source" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Issuing source" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "attester" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Attester" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Attester" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/vhdir/CodeSystem/validation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vhdir/CodeSystem/validation.ttl> .
+
+# -------------------------------------------------------------------------------------
+

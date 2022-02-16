@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="verificationresult-primarysource-who"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "verificationresult-primarysource-who" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: VhDir_sp_verificationresult_primarysource_who</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 International - Patient Administration Work Group</p><p><b>contact</b>: HL7 International - Patient Administration Work Group: <a href="http://www.hl7.org/Special/committees/pafm">http://www.hl7.org/Special/committees/pafm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select validation information for data that was validated against the specified primary source</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: primarysource-who</p><p><b>base</b>: VerificationResult</p><p><b>type</b>: reference</p><p><b>expression</b>: VerificationResult.primarySource.who</p><p><b>target</b>: Practitioner, Organization, PractitionerRole</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: type</p><p><b>chain</b>: identifier, address, name, partof, location, organization, practitioner</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_verificationresult_primarysource_who"/>
+  <status value="draft"/>
+  <date value="2018-05-23"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Select validation information for data that was validated against the specified primary source"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="primarysource-who"/>
+  <base value="VerificationResult"/>
+  <type value="reference"/>
+  <expression value="VerificationResult.primarySource.who"/>
+  <target value="Practitioner"/>
+  <target value="Organization"/>
+  <target value="PractitionerRole"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="type"/>
+  <chain value="identifier"/>
+  <chain value="address"/>
+  <chain value="name"/>
+  <chain value="partof"/>
+  <chain value="location"/>
+  <chain value="organization"/>
+  <chain value="practitioner"/>
+</SearchParameter>

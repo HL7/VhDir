@@ -1,0 +1,3967 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "vhdir-server",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir_server</h2><div><p>This Capability Statement defines the expected capabilities of a validated healthcare directory FHIR server conforming to the Validated Healthcare Directory Implementation Guide.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>Practitioner</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>PractitionerRole</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization</a><br/>  <a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>OrganizationAffiliation</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>HealthcareService</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Location</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>CareTeam</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>VerificationResult</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td><a href=\"http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan\">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/vhdir/CapabilityStatement/vhdir-server",
+  "version": "0.2.0",
+  "name": "VhDir_server",
+  "title": "Validated Healthcare Directory Server Capability Statement",
+  "status": "draft",
+  "date": "2018",
+  "publisher": "HL7 International - Patient Administration Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Patient Administration Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm"
+        },
+        {
+          "system": "email",
+          "value": "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This Capability Statement defines the expected capabilities of a validated healthcare directory FHIR server conforming to the Validated Healthcare Directory Implementation Guide.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International all rights reserved Creative Commons License",
+  "kind": "requirements",
+  "fhirVersion": "3.5.0",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "implementationGuide": [
+    "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "Practitioner.practitioner-endpoint",
+            "Practitioner.practitioner-identifier-assigner",
+            "Practitioner.practitioner-qualification-issuer",
+            "Practitioner.practitioner-qualification-wherevalid-location",
+            "Practitioner.practitioner-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "VerificationResult.verificationresult-attestation.proxy",
+            "VerificationResult.verificationresult-attestation-who",
+            "PractitionerRole.practitionerrole-practitioner"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "family",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-family-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "given",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-given-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "qualification-issuer",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-issuer",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "qualification-status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "qualification-period",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period",
+              "type": "date"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-wherevalid-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-code",
+              "type": "token"
+            },
+            {
+              "name": "qualification-wherevalid-location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location",
+              "type": "reference",
+              "documentation": "Select Practitioners with a qualification that is valid at the specified location"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-active",
+              "type": "token"
+            },
+            {
+              "name": "phonetic",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-phonetic",
+              "type": "string",
+              "documentation": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "PractitionerRole.practitionerrole-endpoint",
+            "PractitionerRole.practitionerrole-identifier-assigner",
+            "PractitionerRole.practitionerrole-location",
+            "PractitionerRole.practitionerrole-network",
+            "PractitionerRole.practitionerrole-new-patient-network",
+            "PractitionerRole.practitionerrole-organization",
+            "PractitionerRole.practitionerrole-practitioner",
+            "PractitionerRole.practitionerrole-qualification-issuer",
+            "PractitionerRole.practitionerrole-qualification-wherevalid-location",
+            "PractitionerRole.practitionerrole-service",
+            "PractitionerRole.practitionerrole-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.participant",
+            "CareTeam.careteam-via-intermediary",
+            "Endpoint.endpoint-via-intermediary",
+            "HealthcareService.healthcareservice-via-intermediary",
+            "Location.location-via-intermediary",
+            "Organization.network-via-intermediary",
+            "Organization.organization-via-intermediary",
+            "OrganizationAffiliation.organizationaffiliation-via-intermediary",
+            "Practitioner.practitioner-via-intermediary",
+            "PractitionerRole.practitionerrole-via-intermediary"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient-network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "practitioner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-practitioner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "qualification-issuer",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-issuer",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "qualification-status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-wherevalid-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-wherevalid-location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "role",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-role",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "service",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-service",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "specialty",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-specialty",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-active",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "supportedProfile": [
+            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization",
+            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-network"
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "Organization.organization-organization-endpoint",
+            "Organization.organization-organization-identifier-assigner",
+            "Organization.organization-partof",
+            "Organization.organization-qualification-issuer",
+            "Organization.organization-qualification-wherevalid-location",
+            "Organization.organization-via-intermediary",
+            "Organization.organization-coverage-area",
+            "Organization.organization-network-via-intermediary",
+            "Organization.organization-organization-endpoint",
+            "Organization.organization-organization-identifier-assigner",
+            "Organization.organization-partof"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.careteam-identifier-assigner",
+            "CareTeam.careteam-organization",
+            "Endpoint.endpoint-identifier-assigner",
+            "Endpoint.endpoint-organization",
+            "HealthcareService.healthcareservice-identifier-assigner",
+            "HealthcareService.healthcareservice-organization",
+            "InsurancePlan.insuranceplan-administered-by",
+            "InsurancePlan.insuranceplan-owned-by",
+            "Location.location-identifier-assigner",
+            "Location.location-organization",
+            "Organization.organization-identifier-assigner",
+            "Organization.organization-partof",
+            "Organization.organization-qualification-issuer",
+            "OrganizationAffiliation-organizationaffiliation-identifier-assigner",
+            "OrganizationAffiliation-organizationaffiliation-participating-organization",
+            "OrganizationAffiliation-organizationaffiliation-primary-organization",
+            "Practitioner.practitioner-identifier-assigner",
+            "Practitioner.practitioner-qualification-issuer",
+            "PractitionerRole.practitionerrole-identifier-assigner",
+            "PractitionerRole.practitionerrole-organization",
+            "PractitionerRole.practitionerrole-qualification-issuer",
+            "VerificationResult.verificationresult-primarysource-who",
+            "VerificationResult.verificationresult-validator-organization",
+            "VerificationResult.verificationresult-attestation-who",
+            "CareTeam.participant",
+            "CareTeam.careteam-via-intermediary",
+            "Endpoint.endpoint-via-intermediary",
+            "HealthcareService.healthcareservice-via-intermediary",
+            "Location.location-via-intermediary",
+            "Organization.network-via-intermediary",
+            "Organization.organization-via-intermediary",
+            "OrganizationAffiliation.organizationaffiliation-via-intermediary",
+            "Practitioner.practitioner-via-intermediary",
+            "PractitionerRole.practitionerrole-via-intermediary",
+            "HealthcareService.healthcareservice-new-patient-network",
+            "Location.location-new-patient-network",
+            "InsurancePlan.insuranceplan-coverage-network",
+            "InsurancePlan.insuranceplan-plan-network",
+            "InsurancePlan.insuranceplan-network",
+            "OrganizationAffiliation.organizationaffiliation-network",
+            "PractitionerRole.practitionerrole-new-patient-network",
+            "PractitionerRole.practitionerrole-network"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-active",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "address-country",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-country",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "address-postalcode",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-postalcode",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "address-state",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-state",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "partof",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-partof",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "qualification-issuer",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-issuer",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "qualification-status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-wherevalid-code",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "qualification-wherevalid-location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "address-use",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-address-use",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "address-city",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "coverage-area",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-coverage-area",
+              "type": "reference"
+            }
+          ]
+        },
+        {
+          "type": "OrganizationAffiliation",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "OrganizationAffiliation.organizationaffiliation-endpoint",
+            "OrganizationAffiliation.organizationaffiliation-identifier-assigner",
+            "OrganizationAffiliation.organizationaffiliation-location",
+            "OrganizationAffiliation.organizationaffiliation-network",
+            "OrganizationAffiliation.organizationaffiliation-participating-organization",
+            "OrganizationAffiliation.organizationaffiliation-primary-organization",
+            "OrganizationAffiliation.organizationaffiliation-service",
+            "OrganizationAffiliation.organizationaffiliation-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.careteam-via-intermediary",
+            "Endpoint.endpoint-via-intermediary",
+            "HealthcareService.healthcareservice-via-intermediary",
+            "Location.location-via-intermediary",
+            "Organization.network-via-intermediary",
+            "Organization.organization-via-intermediary",
+            "OrganizationAffiliation.organizationaffiliation-via-intermediary",
+            "Practitioner.practitioner-via-intermediary",
+            "PractitionerRole.practitionerrole-via-intermediary"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "participating-organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-participating-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "primary-organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-primary-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "role",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-role",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "service",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-service",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "specialty",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-specialty",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "HealthcareService",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "HealthcareService.healthcareservice-coverage-area",
+            "HealthcareService.healthcareservice-endpoint",
+            "HealthcareService.healthcareservice-identifier-assigner",
+            "HealthcareService.healthcareservice-location",
+            "HealthcareService.healthcareservice-new-patient-network",
+            "HealthcareService.healthcareservice-organization",
+            "HealthcareService.healthcareservice-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.careteam-service",
+            "OrganizationAffiliation.organizationaffiliation-service",
+            "PractitionerRole.practitionerrole-service"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "service-category",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "characteristic",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "coverage-area",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-coverage-area",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "eligibility",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-eligibility",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient-network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-new-patient",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "specialty",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-specialty",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "service-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/HealthcareService-active",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Location",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "Location.location-endpoint",
+            "Location.location-identifier-assigner",
+            "Location.location-new-patient-network",
+            "Location.location-organization",
+            "Location.location-partof",
+            "Location.location-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.careteam-location",
+            "HealthcareService.healthcareservice-coverage-area",
+            "HealthcareService.healthcareservice-location",
+            "InsurancePlan.insuranceplan-plan-coverage-area",
+            "InsurancePlan.insuranceplan-coverage-area",
+            "Location.location-partof",
+            "Organization.coverage-area",
+            "Organization.qualification-wherevalid-location",
+            "OrganizationAffiliation.organizationaffiliation-location",
+            "Practitioner.practitioner-qualification-wherevalid-location",
+            "PractitionerRole.practitionerrole-location",
+            "PractitionerRole.practitionerrole-qualification-wherevalid",
+            "CareTeam.careteam-via-intermediary",
+            "Endpoint.endpoint-via-intermediary",
+            "HealthcareService.healthcareservice-via-intermediary",
+            "Location.location-via-intermediary",
+            "Organization.network-via-intermediary",
+            "Organization.organization-via-intermediary",
+            "OrganizationAffiliation.organizationaffiliation-via-intermediary",
+            "Practitioner.practitioner-via-intermediary",
+            "PractitionerRole.practitionerrole-via-intermediary"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "accessibility",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-accessibility",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-address",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient-network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "new-patient",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "partof",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-partof",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "contains",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains",
+              "type": "special"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "near",
+              "definition": "http://hl7.org/fhir/SearchParameter/Location-near",
+              "type": "special"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-via-intermediary",
+              "type": "reference"
+            }
+          ]
+        },
+        {
+          "type": "CareTeam",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-careteam",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "CareTeam.careteam-endpoint",
+            "CareTeam.careteam-identifier-assigner",
+            "CareTeam.careteam-location",
+            "CareTeam.careteam-organization",
+            "CareTeam.careteam-service",
+            "CareTeam.careteam-via-intermediary",
+            "CareTeam.participant"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.participant"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "category",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-category",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "location",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-location",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "service",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-service",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-via-intermediary",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "participant",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-participant",
+              "type": "reference"
+            }
+          ]
+        },
+        {
+          "type": "Endpoint",
+          "supportedProfile": [
+            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "Endpoint.endpoint-identifier-assigner",
+            "Endpoint.endpoint-organization",
+            "Endpoint.endpoint-via-intermediary"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "CareTeam.careteam-endpoint",
+            "HealthcareService.healthcareservice-endpoint",
+            "InsurancePlan.insuranceplan-endpoint",
+            "Location.location-endpoint",
+            "Organization.organization-endpoint",
+            "OrganizationAffiliation.organizationaffiliation.endpoint",
+            "Practitioner.practitioner-endpoint",
+            "PractitionerRole.practitionerrole-endpoint"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "connection-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-connection-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "identifier-assigner",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier-assigner",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "mime-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-organization",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "payload-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "usecase-standard",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-standard",
+              "type": "uri"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "usecase-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "via-intermediary",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-via-intermediary",
+              "type": "reference"
+            }
+          ]
+        },
+        {
+          "type": "VerificationResult",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-validation",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "VerificationResult.verificationresult-target",
+            "VerificationResult.verificationresult-attestation-who",
+            "VerificationResult.verificationresult-attestation-onbehalfof",
+            "VerificationResult.verificationresult-primarysource-who",
+            "VerificationResult.verificationresult-validator-organization"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "attestation-who",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "attestation-method",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-method",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "attestation-onbehalfof",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-onbehalfof",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "primarysource-date",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-date",
+              "type": "date"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "primarysource-who",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "primarysource-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "status-date",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-status-date",
+              "type": "date"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "validation-status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validation-status",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "validator-organization",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validator-organization",
+              "type": "reference"
+            },
+            {
+              "name": "target",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target",
+              "type": "reference",
+              "documentation": "Select validation information for the specified resource"
+            }
+          ]
+        },
+        {
+          "type": "Consent",
+          "supportedProfile": [
+            "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction"
+          ]
+        },
+        {
+          "type": "InsurancePlan",
+          "profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "referencePolicy": [
+            "literal",
+            "local"
+          ],
+          "searchInclude": [
+            "InsurancePlan.insuranceplan-coverage-area",
+            "InsurancePlan.insuranceplan-administered-by",
+            "InsurancePlan.insuranceplan-coverage-network",
+            "InsurancePlan.insuranceplan-endpoint",
+            "InsurancePlan.insuranceplan-owned-by",
+            "InsurancePlan.insuranceplan-plan-coverage-area",
+            "InsurancePlan.insuranceplan-plan-network",
+            "InsurancePlan.insuranceplan-network"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "administered-by",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-administered-by",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "coverage-benefit-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "coverage-limit-value",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-limit-value",
+              "type": "quantity"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "coverage-network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "coverage-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-endpoint",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "general-cost-groupsize",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-groupsize",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "general-cost-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "general-cost-value",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-value",
+              "type": "quantity"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "owned-by",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-owned-by",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "plan-coverage-area",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-coverage-area",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "plan-identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "plan-network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "plan-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "coverage-area",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-area",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "network",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-network",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "specific-cost-benefit-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-benefit-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "specific-cost-category",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-category",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "specific-cost-cost-type",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-cost-type",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "specific-cost-value",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-value",
+              "type": "quantity"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status",
+              "type": "token"
+            }
+          ]
+        }
+      ],
+      "interaction": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "code": "batch"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "code": "search-system"
+        }
+      ],
+      "searchParam": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "name": "_content",
+          "definition": "http://hl7.org/fhir/SearchParameter/Resource-content",
+          "type": "string"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "name": "_id",
+          "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
+          "type": "token"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "name": "_lastUpdated",
+          "definition": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+          "type": "date"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "name": "_security",
+          "definition": "http://hl7.org/fhir/SearchParameter/Resource-security",
+          "type": "token"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "name": "_text",
+          "definition": "http://hl7.org/fhir/SearchParameter/DomainResource-text",
+          "type": "string"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "MAY"
+            }
+          ],
+          "name": "_query",
+          "definition": "http://hl7.org/fhir/SearchParameter/Resource-query",
+          "type": "token"
+        }
+      ]
+    }
+  ]
+}

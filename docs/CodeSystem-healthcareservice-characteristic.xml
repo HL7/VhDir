@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="healthcareservice-characteristic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">limitedhrs<a name="healthcareservice-characteristic-limitedhrs"> </a></td><td>Limited Hours</td><td>The hours of this service may be limited and subject to frequent variation. Please be sure to contact this location for current information.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_cs_healthcareservice_characteristic"/>
+  <title value="VhDir Healthcare Service Characteristic"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 International - Patient Administration Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Administration Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes for documenting the attributes of a health care services."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="limitedhrs"/>
+    <display value="Limited Hours"/>
+    <definition value="The hours of this service may be limited and subject to frequent variation. Please be sure to contact this location for current information."/>
+  </concept>
+</CodeSystem>

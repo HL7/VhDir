@@ -1,0 +1,474 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7-FHIR-UV-VHDIR\foundingfathers - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.248"}
+    h3,h4,h5,h6{--heading-prefix:"6.248"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Validated Healthcare Directory</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">SearchParameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="change-notes.html">Change Notes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>foundingfathers</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Validated Healthcare Directory - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/uv/vhdir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Organization-foundingfathers.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Organization-foundingfathers.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: foundingfathers - XML Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+<p><a href="Organization-foundingfathers.xml" no-download="true">Raw xml</a> | <a href="Organization-foundingfathers.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+&lt;!--  Describes demographic information about Founding Fathers Memorial Hospital  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;foundingfathers&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;foundingfathers&quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-vhdir-organization.html&quot;&gt;VhDir Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: NPI: 1345678910 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-organization-type.html&quot;&gt;Organization type&lt;/a&gt;#prov &quot;Healthcare Provider&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Founding Fathers Memorial Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: DC Memorial Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: 202-101-0123&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 330 C Street SW, Washington, DC 20201, USA(WORK)&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Organization-mtvernon.html&quot;&gt;Organization/mtvernon: Mount Vernon Health System&lt;/a&gt; &quot;Mount Vernon Health System&quot;&lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Telecom&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Administrative &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-contactentity-type.html&quot;&gt;Contact entity type&lt;/a&gt;#ADMIN)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Abigail Adams(OFFICIAL)&lt;/td&gt;&lt;td&gt;ph: 202-444-5555(WORK)&lt;/td&gt;&lt;td&gt;330 C Street SW, Washington, DC 20201, USA(WORK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: &lt;a href=&quot;Endpoint-direct321.html&quot;&gt;Endpoint/direct321: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address&lt;/a&gt; &quot;Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address&quot;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
+  &lt;!--  Founding Fathers Memorial Hospital NPI  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PRN&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Provider number&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NPI&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/us-npi&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1345678910&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.period">period</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2004-04-21T11:57:00-05:00&quot;/&gt;
+    &lt;/period&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CMS&quot;/&gt;
+    &lt;/assigner&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+&lt;!--  This record is active  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>&gt;
+  &lt;!--  This organization is a healthcare provider/hospital  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/organization-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;prov&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Healthcare Provider&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hospital&quot;/&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Founding Fathers Memorial Hospital&quot;/&gt;
+&lt;!--  This organization is named Founding Fathers Memorial Hospital  --&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DC Memorial Hospital&quot;&gt;
+  &lt;!--  This organization was previously known as DC Memorial Hospital, from 1975-2000  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-type&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/vhdir/CodeSystem/organizationdemographics&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;historical&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Historical&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-alias-period&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;1975&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2000&quot;/&gt;
+      &lt;/valuePeriod&gt;
+    &lt;/extension&gt;
+  &lt;/alias&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">telecom</a>&gt;
+  &lt;!--  Contact information for Founding Fathers can be found in the location resource for the hospital's main campus  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/loc-ffmh&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Founding Fathers Memorial Hospital&quot;/&gt;
+      &lt;/valueReference&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;allDay&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
+  &lt;!--  Extracted/copied from FFMH  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;202-101-0123&quot;/&gt;
+  &lt;/telecom&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>&gt;
+  &lt;!--  Founding Fathers' address is 330 C Street SW, Washington, DC 20201, USA  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/geolocation&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;latitude&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;38.8859395&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;longitude&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-77.016469&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;both&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;330 C Street SW, Washington, DC 20201, USA&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;330 C Street SW&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Washington&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DC&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;20201&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;USA&quot;/&gt;
+  &lt;/address&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.partOf">partOf</a>&gt;
+  &lt;!--  Founding Fathers is a hospital that is part of the Mount Vernon Health System  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/mtvernon&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mount Vernon Health System&quot;/&gt;
+  &lt;/partOf&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact">contact</a>&gt;
+  &lt;!--  Describes contact information for administrative inquiries  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.purpose">purpose</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/contactentity-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ADMIN&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Administrative&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/purpose&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.name">name</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Abigail Adams&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adams&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Abigail&quot;/&gt;
+    &lt;/name&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;daysOfWeek&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mon&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;daysOfWeek&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;tue&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;daysOfWeek&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wed&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;daysOfWeek&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;thu&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;daysOfWeek&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fri&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;availableStartTime&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#time">value</a>=&quot;07:00:00&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;availableEndTime&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#time">value</a>=&quot;18:00:00&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;202-444-5555&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;/telecom&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.address">address</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/geolocation&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;latitude&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;38.8859395&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;longitude&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-77.016469&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;both&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;330 C Street SW, Washington, DC 20201, USA&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;330 C Street SW&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Washington&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DC&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;20201&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;USA&quot;/&gt;
+    &lt;/address&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.endpoint">endpoint</a>&gt;
+  &lt;!--  A reference to an electronic endpoint for Founding Fathers  --&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Endpoint/direct321&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address&quot;/&gt;
+  &lt;/endpoint&gt;
+&lt;/Organization&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pafm">HL7 International - Patient Administration Work Group</a>.  Package hl7-fhir-uv-vhdir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 15, 2022 20:43-0800">2022-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
