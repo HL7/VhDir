@@ -1,5 +1,4 @@
 {
-  "script": "scripts/ant.xml",
   "targets": {
     "onLoad": "onLoad",
     "onGenerate": "onGenerate"
@@ -30,7 +29,7 @@
       "isHistory": true
     }
   ],
-  "_formats-documentation": "Lists the formats in the order format-specific pages should be generated.  (Note that suppressed formats won't appear, even if listed here.)",
+  "_formats-documentation": "Lists the formats in the order format-specific pages should be generated.  (Note that suppressed formats won\u0027t appear, even if listed here.)",
   "formats": [
     "xml",
     "json",
@@ -94,7 +93,7 @@
     "ImplementationGuide": {
       "template-base": "",
       "template-format": "",
-      "template-change-history":""
+      "template-change-history": ""
     },
     "StructureDefinition:extension": {
       "template-base": "template/layouts/layout-ext.html",
@@ -135,6 +134,14 @@
       "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
       "change-history": "{{[type]}}-{{[id]}}.change.history.html"
     },
+    "ConceptMap": {
+      "template-base": "template/layouts/layout-conceptmap.html",
+      "template-format": "template/layouts/layout-instance-format.html",
+      "template-change-history": "template/layouts/layout-changehistory.html",
+      "base": "{{[type]}}-{{[id]}}.html",
+      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
+      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
+    },
     "ValueSet": {
       "template-base": "template/layouts/layout-valueset.html",
       "template-format": "template/layouts/layout-instance-format.html",
@@ -142,135 +149,7 @@
       "base": "{{[type]}}-{{[id]}}.html",
       "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
       "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "ActivityDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "CapabilityStatement": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "ConceptMap": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "EventDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "GraphDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "Library": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "Measure": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "MeasureDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "MessageDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "NamingSystem": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "OperationDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "PlanDefinition": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "Questionnaire": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "SearchParameter": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "StructureMap": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
-    },
-    "TerminologyCapabilities": {
-      "template-base": "template/layouts/layout-canonical.html",
-      "template-format": "template/layouts/layout-instance-format.html",
-      "template-change-history": "template/layouts/layout-changehistory.html",
-      "base": "{{[type]}}-{{[id]}}.html",
-      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
-      "change-history": "{{[type]}}-{{[id]}}.change.history.html"
     }
-  }
+  },
+  "script": "scripts/ant-hl7.xml"
 }
-

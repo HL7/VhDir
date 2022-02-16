@@ -3,9 +3,7 @@
 {% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
 {% assign resource_ = include.type| append: '/'| append: include.id  %}
 {% assign has_history = site.data.resources[resource_].['history'] %}
-{% if site.data.resources[resource_].source contains "#" %}
-{% assign contained_resource = 'y' %}
-{% endif %}
+
 
 <ul class="nav nav-tabs">
 {% if include.active == 'content' %}
@@ -17,7 +15,7 @@
     <a href="{{include.type}}-{{include.id}}.html">Narrative Content</a>
   </li>
 {% endif %}
-{% unless excludexml == 'y' or contained_resource == 'y' %}
+{% unless excludexml == 'y' %}
   {% if include.active == 'xml' %}
     <li class="active">
       <a href="#">XML</a>
@@ -28,7 +26,7 @@
     </li>
   {% endif %}
 {% endunless %}
-{% unless excludejson == 'y' or contained_resource == 'y' %}
+{% unless excludejson == 'y' %}
   {% if include.active == 'json' %}
     <li class="active">
       <a href="#">JSON</a>
@@ -39,7 +37,7 @@
     </li>
   {% endif %}
 {% endunless %}
-{% unless excludettl == 'y' or contained_resource == 'y' %}
+{% unless excludettl == 'y' %}
   {% if include.active == 'ttl' %}
     <li class="active">
       <a href="#">TTL</a>

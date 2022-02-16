@@ -8,7 +8,7 @@
          "version": "current",
          "fhirversion": "4.0.1",
          "desc": "Continuous Integration Build (latest in version control)",
-         "path": "http://build.fhir.org/ig/HL7/VhDir",
+         "path": "http://build.fhir.org/ig/HL7/vhdir",
          "status": "ci-build"
       },
       {

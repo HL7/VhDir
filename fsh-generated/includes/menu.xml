@@ -38,25 +38,25 @@
         <a href="artifacts.html#1">CapabilityStatements</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Operations</a>
+        <a href="artifacts.html#2">SearchParameters</a>
       </li>
       <li>
-        <a href="artifacts.html#3">SearchParameters</a>
+        <a href="artifacts.html#3">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Profiles</a>
+        <a href="artifacts.html#4">Extensions</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#5">Value Sets</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#6">Code Systems</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Concept Maps</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Examples</a>
+        <a href="artifacts.html#7">Examples</a>
       </li>
     </ul>
   </li>

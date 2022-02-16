@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="hl7-fhir-uv-vhdir"/>
+   <id value="hl7.fhir.uv.vhdir"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <h2>ValidatedHealthcareDirectory</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7-fhir-uv-vhdir</pre>
+         <pre>http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7.fhir.uv.vhdir</pre>
          <div>
             <p>This is a Healthedata1 sandbox for creation of resources and examples</p>
          </div>
       </div>
    </text>
-   <url value="http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7-fhir-uv-vhdir"/>
+   <url value="http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7.fhir.uv.vhdir"/>
    <version value="0.2.0"/>
    <name value="ValidatedHealthcareDirectory"/>
    <title value="Validated Healthcare Directory"/>
@@ -38,7 +38,7 @@
       </coding>
    </jurisdiction>
    <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
-   <packageId value="hl7-fhir-uv-vhdir"/>
+   <packageId value="hl7.fhir.uv.vhdir"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="uscore">
@@ -103,10 +103,7 @@
          <name value="Example: Example Instances"/>
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
       </grouping>
-      <grouping id="-other">
-         <name value="Other"/>
-         <description value="These are resources that are used within this implementation guide that do not fit into one of the other categories"/>
-      </grouping>
+
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="CapabilityStatement"/>
@@ -361,20 +358,6 @@
          <description value="Canonical Mapping for &#34;Codes for documenting the status of a qualification.&#34;"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ImplementationGuide"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ImplementationGuide-ig.html"/>
-         </extension>
-         <reference>
-            <reference value="ImplementationGuide/ig"/>
-         </reference>
-         <name value="Validated Healthcare Directory"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-other"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3730,7 +3713,7 @@
                <valueId value="restrict"/>
             </extension>
             <extension url="title">
-               <valueId value="Consent"/>
+               <valueString value="Consent"/>
             </extension>
             <extension url="description"/>
          </extension>
@@ -3814,7 +3797,7 @@
                <valueId value="restrict"/>
             </extension>
             <extension url="title">
-               <valueId value="Consent"/>
+               <valueString value="Consent"/>
             </extension>
             <extension url="description"/>
          </extension>
@@ -5259,10 +5242,6 @@
                <nameUrl value="HealthcareService-hcs-ws.html"/>
                <title value="hcs-ws"/>
                <generation value="generated"/>
-               <page>
-                  <nameUrl value="Consent-hcs-ws_restrict.html"/>
-                  <generation value="generated"/>
-               </page>
             </page>
             <page>
                <nameUrl value="InsurancePlan-insuranceplan1.html"/>
@@ -5288,10 +5267,6 @@
                <nameUrl value="Location-loc-ws.html"/>
                <title value="loc-ws"/>
                <generation value="generated"/>
-               <page>
-                  <nameUrl value="Consent-loc-ws_restrict.html"/>
-                  <generation value="generated"/>
-               </page>
             </page>
             <page>
                <nameUrl value="Organization-patriotppo.html"/>
@@ -5358,11 +5333,6 @@
                <title value="womens-shelter"/>
                <generation value="generated"/>
             </page>
-            <page>
-               <nameUrl value="ImplementationGuide-ig.html"/>
-               <title value="Validated Healthcare Directory"/>
-               <generation value="generated"/>
-            </page>
          </page>
       </page>
       <parameter>
@@ -5375,7 +5345,7 @@
       </parameter>
       <parameter>
          <code value="path-output"/>
-         <value value="docs"/>
+         <value value="output"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>
@@ -5395,7 +5365,7 @@
       </parameter>
       <parameter>
          <code value="path-pages"/>
-         <value value="input/includes"/>
+         <value value="input/intro-notes"/>
       </parameter>
       <parameter>
          <code value="path-pages"/>
@@ -5547,14 +5517,6 @@
       </parameter>
       <parameter>
          <code value="apply-license"/>
-         <value value="true"/>
-      </parameter>
-      <parameter>
-         <code value="fmm-definition"/>
-         <value value="http://hl7.org/fhir/versions.html#maturity"/>
-      </parameter>
-      <parameter>
-         <code value="propagate-status"/>
          <value value="true"/>
       </parameter>
    </definition>

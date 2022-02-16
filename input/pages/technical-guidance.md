@@ -8,16 +8,6 @@ F: http://build.fhir.org/
 
 --- -->
 
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-**Contents**
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
----
-
-<!-- end TOC -->
-
 ## Validated Healthcare Directory Concept Diagram
 
 
@@ -25,7 +15,7 @@ This diagram depicts the high-level conceptual design of a central source of val
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
-  <img src="assets/images/diagram5.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
+  <img src="diagram5.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
 </figure>
 
 In this diagram, RESTful FHIR APIs facilitate the movement data into and out of a validated healthcare directory (VHDir) at different points, including:

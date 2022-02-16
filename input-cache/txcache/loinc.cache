@@ -93,3 +93,13 @@ v: {
   "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57016-8"
+}, "url": "http://hl7.org/fhir/ValueSet/consent-category--2", "version": "4.0.1", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Privacy policy acknowledgement Document",
+  "code" : "57016-8",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
