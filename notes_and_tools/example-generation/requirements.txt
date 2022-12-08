@@ -1,4 +1,4 @@
-certifi==2018.10.15
+certifi==2022.12.7
 chardet==3.0.4
 et-xmlfile==1.0.1
 flake8==4.0.0
