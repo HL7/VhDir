@@ -29,7 +29,11 @@
 v: {
   "display" : "Privacy policy acknowledgement Document",
   "code" : "57016-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -69,7 +73,11 @@ v: {
 v: {
   "display" : "Privacy policy acknowledgment Document",
   "code" : "57016-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -79,7 +87,11 @@ v: {
 v: {
   "display" : "Privacy policy acknowledgment Document",
   "code" : "57016-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -90,7 +102,11 @@ v: {
 v: {
   "display" : "Condition-focused care team",
   "code" : "LA27978-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -100,6 +116,77 @@ v: {
 v: {
   "display" : "Privacy policy acknowledgement Document",
   "code" : "57016-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57016-8"
+}, "url": "http://hl7.org/fhir/ValueSet/consent-category--2", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Privacy policy acknowledgement Document",
+  "code" : "57016-8",
+  "system" : "http://loinc.org",
+  "version" : "2.74",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57016-8"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Privacy policy acknowledgment Document",
+  "code" : "57016-8",
+  "system" : "http://loinc.org",
+  "version" : "2.74",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA27978-8",
+  "display" : "Condition-focused care team"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Condition-focused care team",
+  "code" : "LA27978-8",
+  "system" : "http://loinc.org",
+  "version" : "2.74",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------

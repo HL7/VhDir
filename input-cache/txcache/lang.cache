@@ -2773,7 +2773,11 @@
 v: {
   "display" : "English (United States)",
   "code" : "en-US",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5551,7 +5555,11 @@ v: {
 v: {
   "display" : "English (Region=United States)",
   "code" : "en-US",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5561,7 +5569,11 @@ v: {
 v: {
   "display" : "English (Region=United States)",
   "code" : "en-US",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5571,7 +5583,11 @@ v: {
 v: {
   "display" : "English (United States)",
   "code" : "en-US",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5582,6 +5598,74 @@ v: {
 v: {
   "display" : "English (Region=United States)",
   "code" : "en-US",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "en-US"
+}, "url": "http://hl7.org/fhir/ValueSet/languages--0", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "English (United States)",
+  "code" : "en-US",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "en-US",
+  "display" : "English (United States)"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "English (Region=United States)",
+  "code" : "en-US",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "en-US"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "English (Region=United States)",
+  "code" : "en-US",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------

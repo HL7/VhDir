@@ -8,7 +8,7 @@
   - If dealing with a multi-version IG, it will be run against both IG versions.
   -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" exclude-result-prefixes="html f">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()"/>
@@ -88,10 +88,21 @@
   <xsl:template name="artifactPages">
     <xsl:for-each select="/f:ImplementationGuide/f:definition/f:grouping">
       <xsl:for-each select="parent::f:definition/f:resource[f:extension[@url='http://hl7.org/fhir/StructureDefinition/implementationguide-page']][f:groupingId/@value=current()/@id]">
+        <xsl:variable name="id" select="substring-after(f:reference/f:reference/@value, '/')"/>
         <page xmlns="http://hl7.org/fhir">
           <nameUrl value="{f:extension[@url='http://hl7.org/fhir/StructureDefinition/implementationguide-page']/f:valueUri/@value}"/>
           <title value="{f:name/@value}"/>
           <generation value="generated"/>
+          <xsl:for-each select="f:extension[@url='http://hl7.org/fhir/tools/StructureDefinition/contained-resource-information']">
+            <page xmlns="http://hl7.org/fhir">
+              <xsl:variable name="url" select="concat(f:extension[@url='type']/f:valueCode/@value, '-', $id, '_', f:extension[@url='id']/f:valueId/@value, '.html')"/>
+              <nameUrl value="{$url}"/>
+              <xsl:for-each select="f:extension[@url='title']/f:valueString">
+                <title value="{@value}"/>
+              </xsl:for-each>
+              <generation value="generated"/>
+            </page>
+          </xsl:for-each>
         </page>      
       </xsl:for-each>
     </xsl:for-each>

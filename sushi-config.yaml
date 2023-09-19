@@ -20,8 +20,8 @@ publisher:
   name: HL7 International - Patient Administration Work Group
   url: 'http://www.hl7.org/Special/committees/pafm'
   email: pafm@lists.HL7.org
-
-jurisdiction: 'urn:iso:std:iso:3166#US'
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+# jurisdiction: 'urn:iso:std:iso:3166#US'
 copyright: >-
   Used by permission of HL7 International all rights reserved Creative Commons License
 
@@ -67,11 +67,10 @@ parameters:
   apply-version: 'true'
   show-inherited-invariants: false
   usage-stats-opt-out: 'true'
-  excludexml: 'false'
-  excludejsn: 'false'
-  excludettl: 'true'
-  excludemap: 'true'
-  excludeexample: 'true'
+  # excludexml: 'false'
+  # excludejson: 'false'
+  # excludettl: 'true'
+  # excludemap: 'true'
   generate:
     - xml
     - json

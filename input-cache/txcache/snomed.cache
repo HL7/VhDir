@@ -481,7 +481,11 @@
 v: {
   "display" : "Rehabilitation",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -967,7 +971,11 @@ v: {
 v: {
   "display" : "Rehabilitation - specialty (qualifier value)",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -977,7 +985,11 @@ v: {
 v: {
   "display" : "Rehabilitation - specialty (qualifier value)",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1463,7 +1475,11 @@ v: {
 v: {
   "display" : "Rehabilitation - specialty (qualifier value)",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1474,7 +1490,11 @@ v: {
 v: {
   "display" : "Cardiologist",
   "code" : "17561000",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1959,7 +1979,11 @@ v: {
 v: {
   "display" : "Cardiology",
   "code" : "394579002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2445,7 +2469,11 @@ v: {
 v: {
   "display" : "Cardiology (qualifier value)",
   "code" : "394579002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2455,7 +2483,11 @@ v: {
 v: {
   "display" : "Cardiology (qualifier value)",
   "code" : "394579002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2465,7 +2497,11 @@ v: {
 v: {
   "display" : "Rehabilitation",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2476,7 +2512,11 @@ v: {
 v: {
   "display" : "Rehabilitation - specialty (qualifier value)",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2487,7 +2527,11 @@ v: {
 v: {
   "display" : "Rehabilitation - specialty (qualifier value)",
   "code" : "394602003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2497,7 +2541,11 @@ v: {
 v: {
   "display" : "Cardiology",
   "code" : "394579002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2508,6 +2556,190 @@ v: {
 v: {
   "display" : "Cardiology (qualifier value)",
   "code" : "394579002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394602003"
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes--0", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation",
+  "code" : "394602003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394602003",
+  "display" : "Rehabilitation - specialty"
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation - specialty (qualifier value)",
+  "code" : "394602003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394602003"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation - specialty (qualifier value)",
+  "code" : "394602003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394602003",
+  "display" : "Rehabilitation"
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation - specialty (qualifier value)",
+  "code" : "394602003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "17561000",
+  "display" : "Cardiologist"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Cardiologist",
+  "code" : "17561000",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394579002"
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes--0", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Cardiology",
+  "code" : "394579002",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394579002",
+  "display" : "Cardiology"
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Cardiology (qualifier value)",
+  "code" : "394579002",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394579002"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Cardiology (qualifier value)",
+  "code" : "394579002",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230901",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------

@@ -12,7 +12,11 @@
 v: {
   "display" : "xml",
   "code" : "xml",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -28,7 +32,11 @@ v: {
 v: {
   "display" : "json",
   "code" : "json",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -44,7 +52,11 @@ v: {
 v: {
   "display" : "application/hl7-v3+xml",
   "code" : "application/hl7-v3+xml",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -60,7 +72,11 @@ v: {
 v: {
   "display" : "United States dollar",
   "code" : "USD",
-  "system" : "urn:iso:std:iso:4217"
+  "system" : "urn:iso:std:iso:4217",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -160,7 +176,11 @@ v: {
 v: {
   "display" : "年",
   "code" : "a",
-  "system" : "http://unitsofmeasure.org"
+  "system" : "http://unitsofmeasure.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -176,7 +196,11 @@ v: {
 v: {
   "display" : "application/geo+json",
   "code" : "application/geo+json",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -186,7 +210,11 @@ v: {
 v: {
   "display" : "United States of America",
   "code" : "US",
-  "system" : "urn:iso:std:iso:3166"
+  "system" : "urn:iso:std:iso:3166",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -195,7 +223,11 @@ v: {
 v: {
   "display" : "xml",
   "code" : "xml",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -204,7 +236,11 @@ v: {
 v: {
   "display" : "json",
   "code" : "json",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -213,7 +249,11 @@ v: {
 v: {
   "display" : "application/hl7-v3+xml",
   "code" : "application/hl7-v3+xml",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -222,7 +262,11 @@ v: {
 v: {
   "display" : "United States dollar",
   "code" : "USD",
-  "system" : "urn:iso:std:iso:4217"
+  "system" : "urn:iso:std:iso:4217",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -231,7 +275,11 @@ v: {
 v: {
   "display" : "年",
   "code" : "a",
-  "system" : "http://unitsofmeasure.org"
+  "system" : "http://unitsofmeasure.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -242,7 +290,11 @@ v: {
 v: {
   "display" : "Privacy policy acknowledgment Document",
   "code" : "57016-8",
-  "system" : "http://loinc.org"
+  "system" : "http://loinc.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -251,6 +303,208 @@ v: {
 v: {
   "display" : "application/geo+json",
   "code" : "application/geo+json",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "Error from server: Unable to find code to validate (looked for coding | codeableConcept | code in parameters =coding:nil,default-to-latest-version:boolean,displayLanguage:string,profile:nil)",
+  "class" : "SERVER_ERROR",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:iso:std:iso:3166",
+  "code" : "US"
+}, "url": "http://hl7.org/fhir/ValueSet/jurisdiction", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "United States of America",
+  "code" : "US",
+  "system" : "urn:iso:std:iso:3166",
+  "version" : "2018",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "xml"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "xml",
+  "code" : "xml",
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "json"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "json",
+  "code" : "json",
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/hl7-v3+xml"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "application/hl7-v3+xml",
+  "code" : "application/hl7-v3+xml",
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "USD"
+}, "url": "http://hl7.org/fhir/ValueSet/currencies", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "United States dollar",
+  "code" : "USD",
+  "system" : "urn:iso:std:iso:4217",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "a"
+}, "url": "http://hl7.org/fhir/ValueSet/units-of-time", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "year",
+  "code" : "a",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.0.1",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57016-8",
+  "display" : "Privacy policy acknowledgment Document"
+}, "url": "http://hl7.org/fhir/ValueSet/consent-category", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "57016-8",
+  "system" : "http://loinc.org",
+  "version" : "2.74",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/geo+json"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "application/geo+json",
+  "code" : "application/geo+json",
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "code" : "001",
+  "display" : "World"
+}, "url": "http://hl7.org/fhir/ValueSet/jurisdiction", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "World",
+  "code" : "001",
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------

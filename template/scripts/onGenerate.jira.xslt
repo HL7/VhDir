@@ -2,7 +2,7 @@
 <!--
   - Generate a default Jira-Spec-Artifacts XML file for this IG that can be used by Jira to provide the appropriate drop-downs for this IG
   -->
-<xsl:stylesheet version="1.0" xmlns:f="http://hl7.org/fhir" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="f">
+<xsl:stylesheet version="1.0" xmlns:f="http://hl7.org/fhir" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:exsl="http://exslt.org/common" exclude-result-prefixes="f exsl">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="committeePageBase" select="'hl7.org/Special/committees/'"/>
 	<xsl:template match="/">
@@ -12,7 +12,7 @@
     <xsl:variable name="url" select="substring-before(f:url/@value, '/ImplementationGuide')"/>
     <xsl:variable name="id" select="substring-after(substring-after(f:id/@value, 'hl7.fhir.'), '.')"/>
     <xsl:variable name="ciUrl" select="/root/package-list/package[@status='ci-build']/@path"/>
-    <xsl:if test="$ciUrl=''">
+    <xsl:if test="$ciUrl='' and root/package-list">
       <xsl:message terminate="yes">Unable to find 'ci-build' release listed in package-list</xsl:message>
     </xsl:if>
     <xsl:variable name="wgUrl" select="f:contact/f:telecom[f:system/@value='url'][1]/f:value/@value"/>
@@ -21,22 +21,38 @@
         <xsl:value-of select="concat('First &quot;url&quot; contact telecom must start with &quot;http://', $committeePageBase, '&quot;')"/>
       </xsl:message>
     </xsl:if>
-    <xsl:variable name="wgWebCode" select="substring-after($wgUrl, $committeePageBase)"/>
+    <xsl:variable name="wgTail" select="substring-after($wgUrl, $committeePageBase)"/>
+    <xsl:variable name="wgWebCode">
+      <xsl:choose>
+        <xsl:when test="contains($wgTail, '/index.cfm')">
+          <xsl:value-of select="normalize-space(substring-before($wgTail, '/index.cfm'))"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="normalize-space($wgTail)"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     <xsl:variable name="wg" select="/root/workgroups/workgroup[@webcode=$wgWebCode]/@key"/>
     <xsl:if test="$wg=''">
       <xsl:message terminate="yes">
         <xsl:value-of select="concat('Unable to find Jira work group defined that corresponds with HL7 website http://', $committeePageBase, $wgWebCode, '.  If that URL resolves, please contact the HL7 webmaster.')"/>
       </xsl:message>
     </xsl:if>
-    <xsl:for-each select="/root/package-list/package[not(@status='ci-build' or @status='preview' or @status='draft' or @status='ballot' or @status='trial-use' or @status='update' or @status='normative' or status='trial-use+normative')]">
+    <xsl:for-each select="/root/package-list/package[@status='release']">
+      <xsl:message terminate="yes">
+        <xsl:value-of select="concat('Package-list status &quot;release&quot; for release ', @version, 
+          ' is not allowed for IGs using the HL7 template.  Use a more specific status (draft, informative, trial-use, normative, trial-use+normative, etc.)')"/>
+      </xsl:message>
+    </xsl:for-each>
+    <xsl:for-each select="/root/package-list/package[not(@status='ci-build' or @status='preview' or @status='draft' or @status='ballot' or @status='informative' or @status='trial-use' or @status='update' or @status='normative' or status='trial-use+normative')]">
       <xsl:message terminate="yes">
         <xsl:value-of select="concat('Unrecognized package-list status: ', @status, ' for release ', @version)"/>
       </xsl:message>
     </xsl:for-each>
     <xsl:variable name="version">
       <xsl:choose>
-        <xsl:when test="/root/package-list/package[@status='trial-use' or @status='update' or @status='normative' or @status='trial-use+normative']">
-          <xsl:value-of select="/root/package-list/package[@status='trial-use' or @status='update' or @status='normative' or @status='trial-use+normative'][1]/@version"/>
+        <xsl:when test="/root/package-list/package[@status='trial-use' or @status='update' or @status='informative' or @status='normative' or @status='trial-use+normative']">
+          <xsl:value-of select="/root/package-list/package[@status='trial-use' or @status='update' or @status='informative' or @status='normative' or @status='trial-use+normative'][1]/@version"/>
         </xsl:when>
         <xsl:when test="/root/package-list/package[@status='ballot']">
           <xsl:value-of select="/root/package-list/package[@status='ballot'][1]/@version"/>
@@ -91,27 +107,37 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <xsl:for-each select="/root/f:ImplementationGuide/f:definition/f:resource">
-        <xsl:variable name="baseId" select="substring-after(f:reference/f:reference/@value, '/')"/>
-        <xsl:variable name="artifactId" select="concat(substring-before(f:reference/f:reference/@value, '/'), '-', $baseId)"/>
-        <xsl:variable name="name" select="f:name/@value"/>
-        <xsl:variable name="ref" select="f:reference/f:reference/@value"/>
-        <artifact name="{$name}" key="{$artifactId}" id="{$ref}">
-          <xsl:for-each select="/root/specification/artifact[@id=$artifactId or @id=$baseId or @name=$name or normalize-space(substring-before(@name, '('))=$name]">
-            <xsl:copy-of select="@*[not(local-name(.)='id')]"/>
-          </xsl:for-each>
-        </artifact>
-      </xsl:for-each>
+      <xsl:variable name="artifacts">
+        <xsl:for-each select="/root/f:ImplementationGuide/f:definition/f:resource">
+          <xsl:variable name="baseId" select="substring-after(f:reference/f:reference/@value, '/')"/>
+          <xsl:variable name="artifactId" select="concat(substring-before(f:reference/f:reference/@value, '/'), '-', $baseId)"/>
+          <xsl:variable name="name" select="normalize-space(f:name/@value)"/>
+          <xsl:variable name="ref" select="normalize-space(f:reference/f:reference/@value)"/>
+          <artifact name="{$name}" key="{$artifactId}" id="{$ref}">
+            <xsl:variable name="candidates" select="/root/specification/artifact[@id=$ref or @id=$baseId or @name=$name or normalize-space(substring-before(@name, '('))=$name]"/>
+            <xsl:choose>
+              <xsl:when test="count(exsl:node-set($candidates))=1">
+                <xsl:copy-of select="exsl:node-set($candidates)/@*[not(local-name(.)='id' or local-name(.)='name')]"/>
+              </xsl:when>
+              <xsl:when test="exsl:node-set($candidates)[@key=$artifactId]">
+                <xsl:copy-of select="exsl:node-set($candidates)[@key=$artifactId]/@*[not(local-name(.)='id' or local-name(.)='name')]"/>
+              </xsl:when>
+              <xsl:when test="count(exsl:node-set($candidates))!=0">
+                <xsl:message terminate="yes">
+                  <xsl:value-of select="concat('Found multiple candidates for artifact ', $artifactId, ' in previous jira-spec-info')"/>
+                  <xsl:copy-of select="exsl:node-set($candidates)"/>
+                </xsl:message>
+              </xsl:when>
+            </xsl:choose>
+          </artifact>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:copy-of select="exsl:node-set($artifacts)"/>
       <xsl:for-each select="/root/specification/artifact">
         <xsl:variable name="key" select="@key"/>
         <xsl:variable name="keyName" select="@name"/>
         <xsl:variable name="found">
-          <xsl:for-each select="/root/f:ImplementationGuide/f:definition/f:resource">
-            <xsl:variable name="baseId" select="substring-after(f:reference/f:reference/@value, '/')"/>
-            <xsl:variable name="artifactId" select="concat(substring-before(f:reference/f:reference/@value, '/'), '-', $baseId)"/>
-            <xsl:variable name="name" select="f:name/@value"/>
-            <xsl:if test="$key=$baseId or $key=$artifactId or $keyName=$name or normalize-space(substring-before($keyName, '('))=$name">yes</xsl:if>
-          </xsl:for-each>
+          <xsl:if test="exsl:node-set($artifacts)/*[@key=$key]">yes</xsl:if>
         </xsl:variable>
         <xsl:if test="$found=''">
           <xsl:copy>
