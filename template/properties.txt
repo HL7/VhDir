@@ -1,2 +1,0 @@
-jiraSpecFile:FHIR-vhdir
-packagelisturl:http://hl7.org/fhir/uv/vhdir/package-list.json
