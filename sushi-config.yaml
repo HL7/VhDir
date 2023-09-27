@@ -17,11 +17,13 @@ name: ValidatedHealthcareDirectory
 title: Validated Healthcare Directory
 status: active
 publisher:
-  name: HL7 International - Patient Administration Work Group
+  name: HL7 International / Patient Administration
   url: 'http://www.hl7.org/Special/committees/pafm'
   email: pafm@lists.HL7.org
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
-# jurisdiction: 'urn:iso:std:iso:3166#US'
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: pa
 copyright: >-
   Used by permission of HL7 International all rights reserved Creative Commons License
 
