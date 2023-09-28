@@ -5,6 +5,7 @@
 	<name value="VhDirHealthcareServiceEligibility"/>
 	<title value="VhDir Healthcare Service Eligibility"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
 	<contact>

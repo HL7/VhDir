@@ -5,6 +5,7 @@
 	<name value="VhDirQualificationStatus"/>
 	<title value="VhDir Qualification Status"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
 	<contact>
