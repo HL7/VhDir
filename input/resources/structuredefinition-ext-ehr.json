@@ -54,7 +54,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Developer",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -83,7 +82,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Product",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -112,7 +110,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Version",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -145,7 +142,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Certification edition",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -177,7 +173,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Patient access",
-                "sliceName": "valueCodeableConcept",
                 "type": [
                     {
                         "code": "CodeableConcept"
@@ -206,7 +201,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Certification ID",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"

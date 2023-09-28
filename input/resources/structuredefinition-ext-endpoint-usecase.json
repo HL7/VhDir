@@ -59,7 +59,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Type",
-                "sliceName": "valueCodeableConcept",
                 "type": [
                     {
                         "code": "CodeableConcept"
@@ -88,7 +87,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Standard",
-                "sliceName": "valueUri",
                 "type": [
                     {
                         "code": "uri"

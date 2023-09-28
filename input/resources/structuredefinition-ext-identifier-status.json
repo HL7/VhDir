@@ -36,7 +36,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "active|inactive|issued-in-error|revoked|pending",
-                "sliceName": "valueCode",
                 "type": [
                     {
                         "code": "code"

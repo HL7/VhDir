@@ -34,7 +34,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Endpoint reference",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",

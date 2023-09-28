@@ -31,7 +31,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Alias",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"

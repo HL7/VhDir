@@ -57,7 +57,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Identifier",
-                "sliceName": "valueIdentifier",
                 "type": [
                     {
                         "code": "Identifier"
@@ -87,7 +86,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Code",
-                "sliceName": "valueCodeableConcept",
                 "binding": {
                     "strength": "example",
                     "valueSet": "http://terminology.hl7.org/ValueSet/v2-2.7-0360"
@@ -121,7 +119,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Issuer",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -153,7 +150,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Status",
-                "sliceName": "valueCoding",
                 "binding": {
                     "strength": "example",
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
@@ -186,7 +182,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Period",
-                "sliceName": "valuePeriod",
                 "type": [
                     {
                         "code": "Period"
@@ -274,7 +269,6 @@
                 "min": 1,
                 "path": "Extension.extension.extension.value[x]",
                 "short": "Previous status",
-                "sliceName": "valueCoding",
                 "binding": {
                     "strength": "example",
                     "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/qualificationstatus"
@@ -307,7 +301,6 @@
                 "min": 1,
                 "path": "Extension.extension.extension.value[x]",
                 "short": "Period",
-                "sliceName": "valuePeriod",
                 "type": [
                     {
                         "code": "Period"

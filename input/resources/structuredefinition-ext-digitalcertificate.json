@@ -71,7 +71,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "type",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -103,7 +102,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "use",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -136,7 +134,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Certificate standard",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -198,7 +195,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Expiration date",
-                "sliceName": "valueDate",
                 "type": [
                     {
                         "code": "date"
@@ -230,7 +226,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Trust framework",
-                "sliceName": "valueCodeableConcept",
                 "type": [
                     {
                         "code": "CodeableConcept"

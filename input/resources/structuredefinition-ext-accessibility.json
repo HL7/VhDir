@@ -39,7 +39,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Accessibility",
-                "sliceName": "Accessibility",
                 "type": [
                     {
                         "code": "CodeableConcept"

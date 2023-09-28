@@ -35,7 +35,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Network",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",

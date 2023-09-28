@@ -31,7 +31,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Location",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",

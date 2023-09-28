@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Period",
-                "sliceName": "valuePeriod",
                 "type": [
                     {
                         "code": "Period"

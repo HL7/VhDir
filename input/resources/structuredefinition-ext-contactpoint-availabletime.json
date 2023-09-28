@@ -57,7 +57,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Days of the week - mon|tue|wed|thu|fri|sat|sun",
-                "sliceName": "valueCode",
                 "type": [
                     {
                         "code": "code"
@@ -86,7 +85,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "All day",
-                "sliceName": "valueBoolean",
                 "type": [
                     {
                         "code": "boolean"
@@ -115,7 +113,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Available start time",
-                "sliceName": "valueTime",
                 "type": [
                     {
                         "code": "time"
@@ -144,7 +141,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Available end time",
-                "sliceName": "valueTime",
                 "type": [
                     {
                         "code": "time"

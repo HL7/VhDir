@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Healthcare service",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",

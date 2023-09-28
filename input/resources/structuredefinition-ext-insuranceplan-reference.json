@@ -30,7 +30,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "A reference to the insurance plan",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
