@@ -88,7 +88,7 @@
             },
             {
                 "id": "Organization.identifier.extension",
-                "min": 0,
+                "min": 1,
                 "mustSupport": false,
                 "path": "Organization.identifier.extension",
                 "slicing": {
