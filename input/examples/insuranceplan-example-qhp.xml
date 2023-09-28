@@ -145,7 +145,6 @@
 					<value value="2"/>
 					<unit value="visit/yr"/>
 					<system value="http://unitsofmeasure.org"/>
-					<code value="{visit}/a"/>
 				</value>
 				<code>
 					<text value="biannual oral checkup"/>
