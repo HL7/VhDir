@@ -41,7 +41,7 @@
 		</element>
 		<element>
 			<code value="issued-in-error"/>
-			<display value="issued-in-error"/>
+			<display value="issued in error"/>
 			<target>
 				<code value="error"/>
 				<display value="error"/>
