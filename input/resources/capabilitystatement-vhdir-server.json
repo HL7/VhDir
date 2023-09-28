@@ -46,7 +46,7 @@
     "json"
   ],
   "implementationGuide": [
-    "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/ig"
+    "http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7.fhir.uv.vhdir"
   ],
   "rest": [
     {
