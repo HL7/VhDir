@@ -11,10 +11,10 @@
   "title": "Validated Healthcare Directory Server Capability Statement",
   "status": "draft",
   "date": "2018",
-  "publisher": "HL7 International - Patient Administration Work Group",
+  "publisher": "HL7 International / Patient Administration",
   "contact": [
     {
-      "name": "HL7 International - Patient Administration Work Group",
+      "name": "HL7 International / Patient Administration",
       "telecom": [
         {
           "system": "url",
