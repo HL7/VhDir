@@ -20,7 +20,7 @@
 	<targetCanonical value="http://hl7.org/fhir/ValueSet/resource-status"/>
 	<group>
 		<source value="http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus"/>
-		<target value="http://hl7.org/fhir/ValueSet/resource-status"/>
+		<target value="http://hl7.org/fhir/resource-status"/>
 		<element>
 			<code value="active"/>
 			<display value="active"/>
