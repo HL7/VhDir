@@ -49,6 +49,7 @@
             },
             {
                 "id": "InsurancePlan.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "InsurancePlan.identifier.extension",
                 "slicing": {

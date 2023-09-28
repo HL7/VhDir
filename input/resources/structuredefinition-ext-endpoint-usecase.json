@@ -20,6 +20,7 @@
             },
             {
                 "id": "Extension.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "Extension.extension",
                 "slicing": {

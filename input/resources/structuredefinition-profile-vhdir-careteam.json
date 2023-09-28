@@ -114,6 +114,7 @@
             },
             {
                 "id": "CareTeam.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "CareTeam.identifier.extension",
                 "slicing": {

@@ -49,6 +49,7 @@
             },
             {
                 "id": "OrganizationAffiliation.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "OrganizationAffiliation.identifier.extension",
                 "slicing": {

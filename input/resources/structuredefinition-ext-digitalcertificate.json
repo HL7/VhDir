@@ -28,10 +28,11 @@
                 "definition": "A digital certificate, used to identify a user or group of users, or for encrypted communications",
                 "id": "Extension",
                 "path": "Extension",
-                "short": "digitalcertificate"
+                "short": "digital certificate"
             },
             {
                 "id": "Extension.extension",
+                "min": 3,
                 "mustSupport": false,
                 "path": "Extension.extension",
                 "slicing": {

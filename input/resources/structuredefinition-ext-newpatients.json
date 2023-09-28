@@ -29,6 +29,7 @@
             {
                 "id": "Extension.extension",
                 "mustSupport": false,
+                "min": 1,
                 "path": "Extension.extension",
                 "slicing": {
                     "discriminator": [

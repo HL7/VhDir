@@ -115,6 +115,7 @@
             {
                 "id": "Extension.extension:history.extension",
                 "path": "Extension.extension.extension",
+                "min": 2,
                 "slicing": {
                     "discriminator": [
                         {
