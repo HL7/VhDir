@@ -132,6 +132,7 @@ resources:
 
   InsurancePlan/insuranceplan1:
     name: InsurancePlan/insuranceplan1
+    description: Patriot PPO Standard (Patriot Plus) Bronze Plan provided by Homeland Health Insurance in the Washington DC Metro area
     exampleBoolean: true
 
   Location/loc-ws:
@@ -141,6 +142,7 @@ resources:
 
   Organization/monumentHIE:
     name: Organization/monumentHIE
+    description: Monument Health Information Exchange (HIE)
     exampleBoolean: true
 
   Organization/mtvernon:
@@ -150,18 +152,22 @@ resources:
 
   OrganizationAffiliation/orgrole1:
     name: OrganizationAffiliation/orgrole1
+    description: Founding Fathers Memorial Hospital receiving rehabilitation services from Independence Rehabilitation Services, Inc. as part of the Patriot Preferred Provider Network
     exampleBoolean: true
 
   OrganizationAffiliation/orgrole2:
     name: OrganizationAffiliation/orgrole2
+    description: Founding Fathers Memorial Hospital is a member of the Monument Health Information Exchange (as a hospital) - also has an endpoint reference
     exampleBoolean: true
 
   Organization/patriotdental:
     name: Organization/patriotdental
+    description: Patriot Dental Provider Network - part of the Homeland Health Insurance organization
     exampleBoolean: true
 
   Organization/patriotppo:
     name: Organization/patriotppo
+    description: Patriot Preferred Provider Network
     exampleBoolean: true
 
   Practitioner/practitioner1:
@@ -181,7 +187,7 @@ resources:
 
   Bundle/womens-shelter:
     name: Bundle/womens-shelter
-    description: An example Patient
+    description: A collection with a Location and HealthcareService with contained restrictions (Consent) indicating which properties require additional access control when used.
     exampleBoolean: true
 
 
