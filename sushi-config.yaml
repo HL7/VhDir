@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.vhdir
 canonical: "http://hl7.org/fhir/uv/vhdir"
-version: 0.2.0
+version: 1.0.0
 name: ValidatedHealthcareDirectory
 title: Validated Healthcare Directory
 status: active
