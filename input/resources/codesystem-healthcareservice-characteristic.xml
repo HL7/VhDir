@@ -2,7 +2,7 @@
 	<id value="healthcareservice-characteristic"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-characteristic"/>
 	<name value="VhDir_cs_healthcareservice_characteristic"/>
-	<title value="VhDir Healthcare Service Characteristic"/>
+	<title value="VhDir Healthcare Service Characteristic CodeSystem"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<date value="2018-02-21"/>
