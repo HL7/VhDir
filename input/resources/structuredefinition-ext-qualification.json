@@ -212,7 +212,7 @@
                 "short": "Where the qualification is valid",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-notAllCodes-0347"
                 },
                 "type": [
                     {

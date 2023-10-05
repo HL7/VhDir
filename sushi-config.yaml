@@ -33,10 +33,6 @@ date: '2022-02-15'
 fhirVersion: 4.0.1
 
 dependencies:
-  hl7.fhir.us.core:
-    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
-    version: 3.1.1
-    id: uscore
   hl7.fhir.uv.bulkdata: 2.0.0
   hl7.fhir.uv.smart-app-launch: 2.0.0
 
