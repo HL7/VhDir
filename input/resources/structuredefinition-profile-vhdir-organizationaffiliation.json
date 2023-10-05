@@ -293,7 +293,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-organizationaffiliation",
     "kind": "resource",
     "name": "VhdirOrganizationAffiliation",

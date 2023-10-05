@@ -46,7 +46,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "contactpoint-viaintermediary",
     "kind": "complex-type",
     "name": "ContactPointViaIntermediary",

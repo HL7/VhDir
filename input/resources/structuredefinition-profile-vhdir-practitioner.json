@@ -2577,7 +2577,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-practitioner",
     "kind": "resource",
     "name": "VhdirPractitioner",

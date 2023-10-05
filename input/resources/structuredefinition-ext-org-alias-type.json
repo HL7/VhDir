@@ -44,7 +44,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "org-alias-type",
     "kind": "complex-type",
     "name": "OrgAliasType",

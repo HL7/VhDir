@@ -389,7 +389,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-careteam",
     "kind": "resource",
     "name": "VhdirCareTeam",

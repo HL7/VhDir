@@ -410,7 +410,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-location",
     "kind": "resource",
     "name": "VhdirLocation",

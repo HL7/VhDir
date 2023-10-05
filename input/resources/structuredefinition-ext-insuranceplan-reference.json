@@ -41,7 +41,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "insuranceplan-reference",
     "kind": "complex-type",
     "name": "InsurancePlanReference",

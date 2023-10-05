@@ -51,7 +51,6 @@
       }
     ]
   },
-  "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "status": "active",
   "title": "VhDir Usage Restriction",

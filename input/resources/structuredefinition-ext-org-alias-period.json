@@ -40,7 +40,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "org-alias-period",
     "kind": "complex-type",
     "name": "OrgAliasPeriod",

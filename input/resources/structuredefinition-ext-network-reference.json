@@ -46,7 +46,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "network-reference",
     "kind": "complex-type",
     "name": "NetworkReference",

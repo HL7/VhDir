@@ -40,7 +40,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "org-description",
     "kind": "complex-type",
     "name": "OrgDescription",

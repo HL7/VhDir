@@ -618,7 +618,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-insuranceplan",
     "kind": "resource",
     "name": "VhdirInsurancePlan",

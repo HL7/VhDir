@@ -39,7 +39,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "careteam-alias",
     "kind": "complex-type",
     "name": "CareteamAlias",

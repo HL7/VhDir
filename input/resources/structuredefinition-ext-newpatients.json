@@ -114,7 +114,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "newpatients",
     "kind": "complex-type",
     "name": "NewPatients",

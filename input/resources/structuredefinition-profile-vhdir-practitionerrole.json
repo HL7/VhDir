@@ -407,7 +407,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-practitionerrole",
     "kind": "resource",
     "name": "VhdirPractitionerRole",

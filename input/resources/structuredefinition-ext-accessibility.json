@@ -47,7 +47,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "accessibility",
     "kind": "complex-type",
     "name": "Accessibility",
