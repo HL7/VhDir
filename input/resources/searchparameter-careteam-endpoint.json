@@ -22,7 +22,7 @@
     "CareTeam"
   ],
   "type": "reference",
-  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference')",
+  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-reference').value",
   "target": [
     "Endpoint"
   ],

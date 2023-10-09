@@ -22,7 +22,7 @@
     "Location"
   ],
   "type": "reference",
-  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
+  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network').value",
   "target": [
     "Organization"
   ],

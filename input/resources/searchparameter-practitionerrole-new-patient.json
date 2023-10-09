@@ -22,6 +22,6 @@
     "PractitionerRole"
   ],
   "type": "token",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients').value",
   "multipleAnd": true
 }

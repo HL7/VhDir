@@ -22,7 +22,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference').value",
   "target": [
     "Organization"
   ],

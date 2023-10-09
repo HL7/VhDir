@@ -22,7 +22,7 @@
     "HealthcareService"
   ],
   "type": "reference",
-  "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
+  "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network').value",
   "target": [
     "Organization"
   ],
