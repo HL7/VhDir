@@ -22,7 +22,7 @@
     "Organization"
   ],
   "type": "token",
-  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
+  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').value.ofType(CodeableConcept)",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

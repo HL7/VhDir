@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Rank",
-                "sliceName": "valuePositiveInt",
                 "type": [
                     {
                         "code": "positiveInt"
@@ -41,7 +40,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "endpoint-rank",
     "kind": "complex-type",
     "name": "EndpointRank",

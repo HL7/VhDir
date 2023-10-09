@@ -36,7 +36,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "New patient profile",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -45,7 +44,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "newpatientprofile",
     "kind": "complex-type",
     "name": "NewPatientProfile",

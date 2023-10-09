@@ -1,0 +1,12 @@
+{
+  "package-id" : "hl7.fhir.uv.vhdir",
+  "version" : "1.0.0",
+  "path" : "http://hl7.org/fhir/uv/vhdir/stu1",
+  "mode": "milestone",
+  "milestone" : true,
+  "status" : "trial-use",
+  "sequence" : "STU1",
+  "desc" : "STU1 (v1.0.0)",
+  "first": false,
+  "changes": "change-notes.html"
+}

@@ -21,7 +21,7 @@
   "base": [
     "InsurancePlan"
   ],
-  "type": "token",
+  "type": "number",
   "expression": "InsurancePlan.plan.generalCost.groupSize",
   "multipleOr": true,
   "multipleAnd": true,

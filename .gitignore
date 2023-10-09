@@ -83,3 +83,22 @@ source/resources/ig-expansion-parameters.json
 # Editor Environments #
 #######################
 .vs/
+
+# FHIR IG Publisher local build directories #
+#############################################
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/template
+/temp
+/.idea
+*.sh
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_updatePublisher.bat
+/_updatePublisher.sh
+SUSHI-GENERATED-FILES.md

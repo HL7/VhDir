@@ -11,6 +11,7 @@
 	<name value="QualificationStatusToResourceStatusCodeMapping"/>
 	<title value="VhDir Qualification Status Value Set – Status Code Mapping"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<publisher value="VhDir"/><!-->
 	<date value="2018-04-20"/>
 	--><description value="Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;"/><!-->
@@ -19,7 +20,7 @@
 	<targetCanonical value="http://hl7.org/fhir/ValueSet/resource-status"/>
 	<group>
 		<source value="http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus"/>
-		<target value="http://hl7.org/fhir/ValueSet/resource-status"/>
+		<target value="http://hl7.org/fhir/resource-status"/>
 		<element>
 			<code value="active"/>
 			<display value="active"/>
@@ -40,7 +41,7 @@
 		</element>
 		<element>
 			<code value="issued-in-error"/>
-			<display value="issued-in-error"/>
+			<display value="issued in error"/>
 			<target>
 				<code value="error"/>
 				<display value="error"/>

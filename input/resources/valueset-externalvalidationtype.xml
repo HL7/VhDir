@@ -5,6 +5,7 @@
 	<name value="VhDirExternalValidationType"/>
 	<title value="VhDir External Validation Type Value Set"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
 	<contact>

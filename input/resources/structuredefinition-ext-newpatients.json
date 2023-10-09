@@ -29,6 +29,7 @@
             {
                 "id": "Extension.extension",
                 "mustSupport": false,
+                "min": 1,
                 "path": "Extension.extension",
                 "slicing": {
                     "discriminator": [
@@ -63,7 +64,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Accepting patients",
-                "sliceName": "valueBoolean",
                 "type": [
                     {
                         "code": "boolean"
@@ -92,7 +92,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "network",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -115,7 +114,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "newpatients",
     "kind": "complex-type",
     "name": "NewPatients",

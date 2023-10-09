@@ -88,6 +88,7 @@
             },
             {
                 "id": "Organization.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "Organization.identifier.extension",
                 "slicing": {
@@ -390,7 +391,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-network",
     "kind": "resource",
     "name": "VhdirNetwork",

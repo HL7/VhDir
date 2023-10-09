@@ -31,7 +31,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Location",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -43,7 +42,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "location-reference",
     "kind": "complex-type",
     "name": "LocationReference",

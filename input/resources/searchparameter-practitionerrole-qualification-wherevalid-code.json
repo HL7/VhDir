@@ -22,7 +22,7 @@
     "PractitionerRole"
   ],
   "type": "token",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(CodeableConcept)",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').value.ofType(CodeableConcept)",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -5,6 +5,7 @@
 	<name value="VhDirDigitalCertificateStandard"/>
 	<title value="VhDir Digital Certificate Standard Value Set"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
 	<contact>

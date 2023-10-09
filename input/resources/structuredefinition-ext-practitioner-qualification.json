@@ -59,7 +59,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Status",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -90,7 +89,7 @@
                 "short": "Where the qualification is valid",
                 "binding": {
                     "strength": "example",
-                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-notAllCodes-0347"
                 },
                 "type": [
                     {
@@ -116,6 +115,7 @@
             {
                 "id": "Extension.extension:history.extension",
                 "path": "Extension.extension.extension",
+                "min": 2,
                 "slicing": {
                     "discriminator": [
                         {
@@ -152,7 +152,6 @@
                 "min": 1,
                 "path": "Extension.extension.extension.value[x]",
                 "short": "Previous status",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -181,7 +180,6 @@
                 "min": 1,
                 "path": "Extension.extension.extension.value[x]",
                 "short": "Period",
-                "sliceName": "valuePeriod",
                 "type": [
                     {
                         "code": "Period"
@@ -211,7 +209,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "practitioner-qualification",
     "kind": "complex-type",
     "name": "PractitionerQualification",

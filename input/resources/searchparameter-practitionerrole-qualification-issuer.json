@@ -22,7 +22,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer').value",
   "target": [
     "Organization"
   ],

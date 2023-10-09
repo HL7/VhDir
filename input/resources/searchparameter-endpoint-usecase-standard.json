@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "uri",
-  "expression": "Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('standard')",
+  "expression": "Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('standard').value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -22,7 +22,7 @@
     "CareTeam"
   ],
   "type": "reference",
-  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference')",
+  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference').value",
   "target": [
     "Location"
   ],

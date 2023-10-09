@@ -39,7 +39,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Accessibility",
-                "sliceName": "Accessibility",
                 "type": [
                     {
                         "code": "CodeableConcept"
@@ -48,7 +47,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "accessibility",
     "kind": "complex-type",
     "name": "Accessibility",

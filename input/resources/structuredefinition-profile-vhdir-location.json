@@ -128,6 +128,7 @@
             },
             {
                 "id": "Location.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "Location.identifier.extension",
                 "slicing": {
@@ -409,7 +410,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-location",
     "kind": "resource",
     "name": "VhdirLocation",

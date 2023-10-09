@@ -2,8 +2,9 @@
 	<id value="healthcareservice-eligibility"/>
 	<url value="http://hl7.org/fhir/uv/vhdir/CodeSystem/healthcareservice-eligibility"/>
 	<name value="VhDir_cs_healthcareservice_eligibility"/>
-	<title value="VhDir Healthcare Service Eligibility"/>
+	<title value="VhDir Healthcare Service Eligibility CodeSystem"/>
 	<status value="active"/>
+	<experimental value="false"/>
 	<date value="2018-02-21"/>
 	<publisher value="HL7 International"/>
 	<contact>

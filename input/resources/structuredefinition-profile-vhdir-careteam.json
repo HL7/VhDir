@@ -114,6 +114,7 @@
             },
             {
                 "id": "CareTeam.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "CareTeam.identifier.extension",
                 "slicing": {
@@ -388,7 +389,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-careteam",
     "kind": "resource",
     "name": "VhdirCareTeam",

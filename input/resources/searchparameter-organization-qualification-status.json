@@ -22,7 +22,7 @@
     "Organization"
   ],
   "type": "token",
-  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('status')",
+  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('status').value",
   "multipleOr": true,
   "multipleAnd": true
 }

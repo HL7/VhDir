@@ -543,7 +543,6 @@
                     }
                 ],
                 "max": "1",
-                "meaningWhenMissing": "This resource is generally assumed to be active if no value is provided for the active element",
                 "min": 1,
                 "mustSupport": true,
                 "path": "Practitioner.active",
@@ -2578,7 +2577,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-practitioner",
     "kind": "resource",
     "name": "VhdirPractitioner",

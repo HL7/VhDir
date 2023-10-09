@@ -1,6 +1,9 @@
 <OrganizationAffiliation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd-current/fhir-all.xsd">
 	<!-- Describes the relationship between Founding Fathers Memorial Hospital and Independence Rehabilitation Services, Inc. Independence is contracted to provide rehab services to patients at Founding Fathers -->
 	<id value="orgrole1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+	</meta>
 	<identifier>
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
 			<valueCode value="active"/>

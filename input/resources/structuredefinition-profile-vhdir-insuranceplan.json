@@ -49,6 +49,7 @@
             },
             {
                 "id": "InsurancePlan.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "InsurancePlan.identifier.extension",
                 "slicing": {
@@ -617,7 +618,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-insuranceplan",
     "kind": "resource",
     "name": "VhdirInsurancePlan",

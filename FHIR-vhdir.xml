@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/vhdir/2018Sep/" ciUrl="http://build.fhir.org/ig/HL7/vhdir" defaultVersion="0.2.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/VhDir" url="http://hl7.org/fhir/uv/vhdir">
-<version code="current" url="http://build.fhir.org/ig/HL7/vhdir"/>
-<version code="0.2.0" url="http://hl7.org/fhir/uv/vhdir/2018Sep/"/>
-<version code="0.1.0" url="http://hl7.org/fhir/uv/vhdir/2018Jan/"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/vhdir/2018Sep" ciUrl="http://build.fhir.org/ig/HL7/VhDir" defaultVersion="1.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/VhDir" url="http://hl7.org/fhir/uv/vhdir">
+<version code="current" url="http://build.fhir.org/ig/HL7/VhDir"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/vhdir/stu1"/>
+<version code="0.2.0" url="http://hl7.org/fhir/uv/vhdir/2018Sep"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/vhdir/2018Jan"/>
+<version code="1.0" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/womens-shelter" key="Bundle-womens-shelter" name="Bundle/womens-shelter"/>
 <artifact deprecated="true" key="CareTeam" name="CareTeam"/>
+<artifact id="CareTeam/cardiologycareteam1" key="CareTeam-cardiologycareteam1" name="CareTeam/cardiologycareteam1"/>
 <artifact deprecated="true" key="EndPoint" name="EndPoint"/>
+<artifact id="Endpoint/direct321" key="Endpoint-direct321" name="Endpoint/direct321"/>
 <artifact deprecated="true" key="HealthcareService" name="HealthcareService"/>
+<artifact id="HealthcareService/ffcardiology" key="HealthcareService-ffcardiology" name="HealthcareService/ffcardiology"/>
+<artifact id="HealthcareService/hcs-ws" key="HealthcareService-hcs-ws" name="HealthcareService/hcs-ws"/>
+<artifact id="HealthcareService/independencerehab1" key="HealthcareService-independencerehab1" name="HealthcareService/independencerehab1"/>
+<artifact id="HealthcareService/independencerehab2" key="HealthcareService-independencerehab2" name="HealthcareService/independencerehab2"/>
 <artifact deprecated="true" key="ProductPlan" name="InsurancePlan"/>
+<artifact id="InsurancePlan/insuranceplan1" key="InsurancePlan-insuranceplan1" name="InsurancePlan/insuranceplan1"/>
 <artifact deprecated="true" key="Location" name="Location"/>
+<artifact id="Location/loc-ws" key="Location-loc-ws" name="Location/loc-ws"/>
+<artifact id="Location/wash-dc-metro" key="Location-wash-dc-metro" name="Location/wash-dc-metro"/>
 <artifact deprecated="true" key="Organization" name="Organization"/>
+<artifact id="Organization/foundingfathers" key="Organization-foundingfathers" name="Organization/foundingfathers"/>
+<artifact id="Organization/homeland" key="Organization-homeland" name="Organization/homeland"/>
+<artifact id="Organization/independencerehab" key="Organization-independencerehab" name="Organization/independencerehab"/>
+<artifact id="Organization/monumentHIE" key="Organization-monumentHIE" name="Organization/monumentHIE"/>
+<artifact id="Organization/mtvernon" key="Organization-mtvernon" name="Organization/mtvernon"/>
+<artifact id="Organization/patriotdental" key="Organization-patriotdental" name="Organization/patriotdental"/>
+<artifact id="Organization/patriotppo" key="Organization-patriotppo" name="Organization/patriotppo"/>
 <artifact deprecated="true" key="OrganizationRole" name="OrganizationAffiliation"/>
+<artifact id="OrganizationAffiliation/orgrole1" key="OrganizationAffiliation-orgrole1" name="OrganizationAffiliation/orgrole1"/>
+<artifact id="OrganizationAffiliation/orgrole2" key="OrganizationAffiliation-orgrole2" name="OrganizationAffiliation/orgrole2"/>
 <artifact deprecated="true" key="Parameters" name="Parameters"/>
 <artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact id="Practitioner/practitioner1" key="Practitioner-practitioner1" name="Practitioner/practitioner1"/>
 <artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
+<artifact id="PractitionerRole/practitionerrole1" key="PractitionerRole-practitionerrole1" name="PractitionerRole/practitionerrole1"/>
 <artifact id="CapabilityStatement/vhdir-server" key="CapabilityStatement-vhdir-server" name="Validated Healthcare Directory Server Capability Statement"/>
+<artifact id="VerificationResult/example-license" key="VerificationResult-example-license" name="VerificationResult/example-license"/>
 <artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="VhDir Accessibility"/>
 <artifact id="CodeSystem/accessibility" key="CodeSystem-accessibility" name="VhDir Accessibility Code System"/>
 <artifact id="ValueSet/accessibility" key="ValueSet-accessibility" name="VhDir Accessibility Value Set"/>
@@ -48,10 +72,10 @@
 <artifact id="ValueSet/externalvalidationtype" key="ValueSet-externalvalidationtype" name="VhDir External Validation Type Value Set"/>
 <artifact id="ValueSet/failureaction" key="ValueSet-failureaction" name="VhDir Failure Action"/>
 <artifact id="StructureDefinition/vhdir-healthcareservice" key="StructureDefinition-vhdir-healthcareservice" name="VhDir Healthcare Service"/>
-<artifact id="CodeSystem/healthcareservice-characteristic" key="CodeSystem-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic"/>
-<artifact id="ValueSet/healthcareservice-characteristic" key="ValueSet-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic"/>
-<artifact id="CodeSystem/healthcareservice-eligibility" key="CodeSystem-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility"/>
-<artifact id="ValueSet/healthcareservice-eligibility" key="ValueSet-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility"/>
+<artifact id="CodeSystem/healthcareservice-characteristic" key="CodeSystem-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic CodeSystem"/>
+<artifact id="ValueSet/healthcareservice-characteristic" key="ValueSet-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic ValueSet"/>
+<artifact id="CodeSystem/healthcareservice-eligibility" key="CodeSystem-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility CodeSystem"/>
+<artifact id="ValueSet/healthcareservice-eligibility" key="ValueSet-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility ValueSet"/>
 <artifact id="StructureDefinition/healthcareservice-reference" key="StructureDefinition-healthcareservice-reference" name="VhDir Healthcareservice Reference"/>
 <artifact id="StructureDefinition/identifier-status" key="StructureDefinition-identifier-status" name="VhDir Identifier Status"/>
 <artifact id="ValueSet/identifierstatus" key="ValueSet-identifierstatus" name="VhDir Identifier Status Value Set"/>
@@ -251,30 +275,8 @@
 <artifact id="SearchParameter/verificationresult-target" key="SearchParameter-verificationresult-target" name="VhDir_sp_verificationresult_target"/>
 <artifact id="SearchParameter/verificationresult-validation-status" key="SearchParameter-verificationresult-validation-status" name="VhDir_sp_verificationresult_validation_status"/>
 <artifact id="SearchParameter/verificationresult-validator-organization" key="SearchParameter-verificationresult-validator-organization" name="VhDir_sp_verificationresult_validator_organization"/>
-<artifact id="CareTeam/cardiologycareteam1" key="CareTeam-cardiologycareteam1" name="cardiologycareteam1"/>
-<artifact id="Endpoint/direct321" key="Endpoint-direct321" name="direct321"/>
-<artifact id="VerificationResult/example-license" key="VerificationResult-example-license" name="example-license"/>
-<artifact id="HealthcareService/ffcardiology" key="HealthcareService-ffcardiology" name="ffcardiology"/>
-<artifact id="Organization/foundingfathers" key="Organization-foundingfathers" name="foundingfathers"/>
-<artifact id="HealthcareService/hcs-ws" key="HealthcareService-hcs-ws" name="hcs-ws"/>
-<artifact id="Organization/homeland" key="Organization-homeland" name="homeland"/>
-<artifact id="Organization/independencerehab" key="Organization-independencerehab" name="independencerehab"/>
-<artifact id="HealthcareService/independencerehab1" key="HealthcareService-independencerehab1" name="independencerehab1"/>
-<artifact id="HealthcareService/independencerehab2" key="HealthcareService-independencerehab2" name="independencerehab2"/>
-<artifact id="InsurancePlan/insuranceplan1" key="InsurancePlan-insuranceplan1" name="insuranceplan1"/>
 <artifact id="Location/loc-ffmh" key="Location-loc-ffmh" name="loc-ffmh"/>
 <artifact id="Location/loc-ffmh-hvi" key="Location-loc-ffmh-hvi" name="loc-ffmh-hvi"/>
-<artifact id="Location/loc-ws" key="Location-loc-ws" name="loc-ws"/>
-<artifact id="Organization/monumentHIE" key="Organization-monumentHIE" name="monumentHIE"/>
-<artifact id="Organization/mtvernon" key="Organization-mtvernon" name="mtvernon"/>
-<artifact id="OrganizationAffiliation/orgrole1" key="OrganizationAffiliation-orgrole1" name="orgrole1"/>
-<artifact id="OrganizationAffiliation/orgrole2" key="OrganizationAffiliation-orgrole2" name="orgrole2"/>
-<artifact id="Organization/patriotdental" key="Organization-patriotdental" name="patriotdental"/>
-<artifact id="Organization/patriotppo" key="Organization-patriotppo" name="patriotppo"/>
-<artifact id="Practitioner/practitioner1" key="Practitioner-practitioner1" name="practitioner1"/>
-<artifact id="PractitionerRole/practitionerrole1" key="PractitionerRole-practitionerrole1" name="practitionerrole1"/>
-<artifact id="Location/wash-dc-metro" key="Location-wash-dc-metro" name="wash-dc-metro"/>
-<artifact id="Bundle/womens-shelter" key="Bundle-womens-shelter" name="womens-shelter"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>

@@ -35,7 +35,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Network",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -47,7 +46,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "network-reference",
     "kind": "complex-type",
     "name": "NetworkReference",

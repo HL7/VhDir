@@ -22,7 +22,7 @@
     "VerificationResult"
   ],
   "type": "token",
-  "expression": "VerificationResult.attestation.method",
+  "expression": "VerificationResult.attestation.communicationMethod",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

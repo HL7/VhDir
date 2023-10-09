@@ -22,7 +22,7 @@
     "CareTeam"
   ],
   "type": "reference",
-  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/healthcareservice-reference')",
+  "expression": "CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/healthcareservice-reference').value",
   "target": [
     "HealthcareService"
   ],

@@ -28,10 +28,11 @@
                 "definition": "A digital certificate, used to identify a user or group of users, or for encrypted communications",
                 "id": "Extension",
                 "path": "Extension",
-                "short": "digitalcertificate"
+                "short": "digital certificate"
             },
             {
                 "id": "Extension.extension",
+                "min": 3,
                 "mustSupport": false,
                 "path": "Extension.extension",
                 "slicing": {
@@ -71,7 +72,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "type",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -103,7 +103,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "use",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -136,7 +135,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Certificate standard",
-                "sliceName": "valueCoding",
                 "type": [
                     {
                         "code": "Coding"
@@ -198,7 +196,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Expiration date",
-                "sliceName": "valueDate",
                 "type": [
                     {
                         "code": "date"
@@ -230,7 +227,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Trust framework",
-                "sliceName": "valueCodeableConcept",
                 "type": [
                     {
                         "code": "CodeableConcept"
@@ -250,7 +246,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "digitalcertificate",
     "kind": "complex-type",
     "name": "DigitalCertificate",

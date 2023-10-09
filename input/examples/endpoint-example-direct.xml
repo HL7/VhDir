@@ -97,10 +97,11 @@
 
     <payloadType> <!-- This endpoint can receive HL7 CCD documents -->
         <coding>
-            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
+            <system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
             <code value="urn:ihe:pcc:xphr:2007"/>
-            <display value="HL7 CCD Document"/>
+            <display value="PCC XPHR"/>
         </coding>
+        <text value="HL7 CCD Document"/>
     </payloadType>
 
     <payloadMimeType value="application/hl7-v3+xml"/> <!-- Payload mimetype is application/hl7-v3+xml -->

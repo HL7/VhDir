@@ -49,6 +49,7 @@
             },
             {
                 "id": "OrganizationAffiliation.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "OrganizationAffiliation.identifier.extension",
                 "slicing": {
@@ -292,7 +293,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-organizationaffiliation",
     "kind": "resource",
     "name": "VhdirOrganizationAffiliation",

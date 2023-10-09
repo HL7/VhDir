@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Via intermediary",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -47,7 +46,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "contactpoint-viaintermediary",
     "kind": "complex-type",
     "name": "ContactPointViaIntermediary",
