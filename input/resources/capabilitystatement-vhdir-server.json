@@ -3682,7 +3682,7 @@
               ],
               "name": "general-cost-groupsize",
               "definition": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-groupsize",
-              "type": "token"
+              "type": "number"
             },
             {
               "extension": [
