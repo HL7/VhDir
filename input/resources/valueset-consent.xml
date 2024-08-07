@@ -20,7 +20,8 @@
 			<system value="http://hl7.org/fhir/uv/vhdir/CodeSystem/consent"/>
 		</include>
 		<include> 
-      		<system value="http://terminology.hl7.org/CodeSystem/consentscope"/> 
+      		<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<version value="4.0.1"/>
 	    </include> 
 	</compose>
 </ValueSet>

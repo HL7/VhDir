@@ -24,6 +24,10 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: pa
+definition:
+  extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency
+      valueCode: ihe.formatcode.fhir#1.1.0
 copyright: >-
   Used by permission of HL7 International all rights reserved Creative Commons License
 
@@ -34,7 +38,7 @@ fhirVersion: 4.0.1
 
 dependencies:
   hl7.fhir.uv.bulkdata: 2.0.0
-  hl7.fhir.uv.smart-app-launch: 2.0.0
+  hl7.fhir.uv.smart-app-launch: 2.1.0
 
 pages:
   index.md:
