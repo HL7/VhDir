@@ -1,4 +1,4 @@
-# Hl7 Validated Healthcare Directory (HcDir) Implementation Guide Repository
+# Hl7 Validated Healthcare Directory (VhDir) Implementation Guide Repository
 
 A FHIR implementation guide enabling the exchange of validated healthcare directory information between a reference source (e.g. national directory) and 'local' workflow environments (e.g. local directories).
 
