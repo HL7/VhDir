@@ -22,7 +22,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('network').value",
   "target": [
     "Organization"
   ],

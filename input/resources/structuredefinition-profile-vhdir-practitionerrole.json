@@ -3,6 +3,7 @@
     "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
     "date": "2017-10-03T23:59:49.231+11:00",
     "derivation": "constraint",
+    "description": "Defines the basic constraints and extensions on the PractitionerRole resource for use in a Validated Healthcare Directory",
     "differential": {
         "element": [
             {
@@ -406,7 +407,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "vhdir-practitionerrole",
     "kind": "resource",
     "name": "VhdirPractitionerRole",

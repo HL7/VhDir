@@ -22,6 +22,6 @@
     "HealthcareService"
   ],
   "type": "token",
-  "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "expression": "HealthcareService.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients').value",
   "multipleAnd": true
 }

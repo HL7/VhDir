@@ -1,8 +1,14 @@
 <InsurancePlan xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/insuranceplan.xsd">
 	<!-- describes a fictional Qualified Health Plan (QHP) in the Washington, DC metro area -->
 	<id value="insuranceplan1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan"/>
+	</meta>
 	<identifier>
 		<!-- Official HIOS product ID assigned by CMS -->
+		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+			<valueCode value="active" />
+		</extension>
 		<use value="official"/>
 		<type>
 			<coding>
@@ -145,7 +151,6 @@
 					<value value="2"/>
 					<unit value="visit/yr"/>
 					<system value="http://unitsofmeasure.org"/>
-					<code value="{visit}/a"/>
 				</value>
 				<code>
 					<text value="biannual oral checkup"/>

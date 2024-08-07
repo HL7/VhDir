@@ -22,7 +22,7 @@
     "Location"
   ],
   "type": "token",
-  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility')",
+  "expression": "Location.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility').value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

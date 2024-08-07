@@ -1,6 +1,9 @@
 <OrganizationAffiliation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd-current/fhir-all.xsd">
 	<!-- describes the relationship between Monument HIE and Founding Fathers Memorial Hospital. Founding Fathers is a member of the HIE -->
 	<id value="orgrole2"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation"/>
+	</meta>
 	<identifier>
 		<extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
 			<valueCode value="active"/>

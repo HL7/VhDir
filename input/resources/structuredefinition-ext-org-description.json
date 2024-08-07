@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Description",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -41,7 +40,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "org-description",
     "kind": "complex-type",
     "name": "OrgDescription",

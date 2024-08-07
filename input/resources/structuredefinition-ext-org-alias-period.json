@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Period",
-                "sliceName": "valuePeriod",
                 "type": [
                     {
                         "code": "Period"
@@ -41,7 +40,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "org-alias-period",
     "kind": "complex-type",
     "name": "OrgAliasPeriod",

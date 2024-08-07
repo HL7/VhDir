@@ -12,16 +12,22 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.vhdir
 canonical: "http://hl7.org/fhir/uv/vhdir"
-version: 0.2.0
+version: 1.0.0
 name: ValidatedHealthcareDirectory
 title: Validated Healthcare Directory
 status: active
 publisher:
-  name: HL7 International - Patient Administration Work Group
+  name: HL7 International / Patient Administration
   url: 'http://www.hl7.org/Special/committees/pafm'
   email: pafm@lists.HL7.org
-
-jurisdiction: 'urn:iso:std:iso:3166#US'
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: pa
+definition:
+  extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency
+      valueCode: ihe.formatcode.fhir#1.1.0
 copyright: >-
   Used by permission of HL7 International all rights reserved Creative Commons License
 
@@ -31,12 +37,8 @@ date: '2022-02-15'
 fhirVersion: 4.0.1
 
 dependencies:
-  hl7.fhir.us.core:
-    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
-    version: 3.1.1
-    id: uscore
   hl7.fhir.uv.bulkdata: 2.0.0
-  hl7.fhir.uv.smart-app-launch: 2.0.0
+  hl7.fhir.uv.smart-app-launch: 2.1.0
 
 pages:
   index.md:
@@ -67,16 +69,126 @@ parameters:
   apply-version: 'true'
   show-inherited-invariants: false
   usage-stats-opt-out: 'true'
-  excludexml: 'false'
-  excludejsn: 'false'
-  excludettl: 'true'
-  excludemap: 'true'
-  excludeexample: 'true'
+  # excludexml: 'false'
+  # excludejson: 'false'
+  # excludettl: 'true'
+  # excludemap: 'true'
   generate:
     - xml
     - json
 copyrightyear: '2022+'
 releaseLabel: CI Build
+
+resources:
+  CareTeam/cardiologycareteam1:
+    name: CareTeam/cardiologycareteam1
+    description: Founding Fathers Heart and Vascular Institute Cardiology Care Team
+    exampleBoolean: true
+
+  Endpoint/direct321:
+    name: Endpoint/direct321
+    description: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address
+    exampleBoolean: true
+
+  VerificationResult/example-license:
+    name: VerificationResult/example-license
+    description: Demonstrate the details of a practitioner's license having been validated and failing
+    exampleBoolean: true
+
+  HealthcareService/ffcardiology:
+    name: HealthcareService/ffcardiology
+    description: Founding Fathers Memorial Hospital Heart and Vascular Services
+    exampleBoolean: true
+
+  Organization/foundingfathers:
+    name: Organization/foundingfathers
+    description: Founding Fathers Memorial Hospital
+    exampleBoolean: true
+
+  HealthcareService/hcs-ws:
+    name: HealthcareService/hcs-ws
+    description: This is an example of a Women's shelter to demonstrate how to restrict multiple contents
+    exampleBoolean: true
+
+  Organization/homeland:
+    name: Organization/homeland
+    description: Homeland Health Insurance
+    exampleBoolean: true
+
+  Organization/independencerehab:
+    name: Organization/independencerehab
+    description: Independence Rehabilitation Services, Inc.
+    exampleBoolean: true
+
+  HealthcareService/independencerehab1:
+    name: HealthcareService/independencerehab1
+    description: Independence Rehab - Inpatient rehabilitation services
+    exampleBoolean: true
+
+  HealthcareService/independencerehab2:
+    name: HealthcareService/independencerehab2
+    description: Independence Rehab - Outpatient rehabilitation services
+    exampleBoolean: true
+
+  InsurancePlan/insuranceplan1:
+    name: InsurancePlan/insuranceplan1
+    description: Patriot PPO Standard (Patriot Plus) Bronze Plan provided by Homeland Health Insurance in the Washington DC Metro area
+    exampleBoolean: true
+
+  Location/loc-ws:
+    name: Location/loc-ws
+    description: The W Womens Shelter - an example of a resource with a restricted address
+    exampleBoolean: true
+
+  Organization/monumentHIE:
+    name: Organization/monumentHIE
+    description: Monument Health Information Exchange (HIE)
+    exampleBoolean: true
+
+  Organization/mtvernon:
+    name: Organization/mtvernon
+    description: Mount Vernon Health System
+    exampleBoolean: true
+
+  OrganizationAffiliation/orgrole1:
+    name: OrganizationAffiliation/orgrole1
+    description: Founding Fathers Memorial Hospital receiving rehabilitation services from Independence Rehabilitation Services, Inc. as part of the Patriot Preferred Provider Network
+    exampleBoolean: true
+
+  OrganizationAffiliation/orgrole2:
+    name: OrganizationAffiliation/orgrole2
+    description: Founding Fathers Memorial Hospital is a member of the Monument Health Information Exchange (as a hospital) - also has an endpoint reference
+    exampleBoolean: true
+
+  Organization/patriotdental:
+    name: Organization/patriotdental
+    description: Patriot Dental Provider Network - part of the Homeland Health Insurance organization
+    exampleBoolean: true
+
+  Organization/patriotppo:
+    name: Organization/patriotppo
+    description: Patriot Preferred Provider Network
+    exampleBoolean: true
+
+  Practitioner/practitioner1:
+    name: Practitioner/practitioner1
+    description: George Washington - a practitioner with several qualifications
+    exampleBoolean: true
+
+  PractitionerRole/practitionerrole1:
+    name: PractitionerRole/practitionerrole1
+    description: Geroge Washington as a practitioner working for Founding Fathers Memorial Hospital as a cardiologist in the Heart and Vascular Institute
+    exampleBoolean: true
+
+  Location/wash-dc-metro:
+    name: Location/wash-dc-metro
+    description: Washington, DC metro area - example of a region
+    exampleBoolean: true
+
+  Bundle/womens-shelter:
+    name: Bundle/womens-shelter
+    description: A collection with a Location and HealthcareService with contained restrictions (Consent) indicating which properties require additional access control when used.
+    exampleBoolean: true
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

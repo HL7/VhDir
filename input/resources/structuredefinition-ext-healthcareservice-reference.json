@@ -32,7 +32,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Healthcare service",
-                "sliceName": "valueReference",
                 "type": [
                     {
                         "code": "Reference",
@@ -44,7 +43,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "healthcareservice-reference",
     "kind": "complex-type",
     "name": "HealthcareServiceReference",

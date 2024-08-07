@@ -22,7 +22,7 @@
     "Practitioner"
   ],
   "type": "reference",
-  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').as(Reference)",
+  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').value.ofType(Reference)",
   "target": [
     "Location"
   ],

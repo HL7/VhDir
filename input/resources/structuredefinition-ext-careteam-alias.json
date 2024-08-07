@@ -31,7 +31,6 @@
                 "mustSupport": true,
                 "path": "Extension.value[x]",
                 "short": "Alias",
-                "sliceName": "valueString",
                 "type": [
                     {
                         "code": "string"
@@ -40,7 +39,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "careteam-alias",
     "kind": "complex-type",
     "name": "CareteamAlias",

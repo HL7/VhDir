@@ -7,8 +7,8 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "context": [
     {
-      "type": "fhirpath",
-      "expression": "descendants()"
+      "type": "element",
+      "expression": "Element"
     }
   ],
   "date": "2017-10-20T10:59:36.931+11:00",
@@ -35,7 +35,6 @@
         "mustSupport": true,
         "path": "Extension.value[x]",
         "short": "Reference",
-        "sliceName": "valueReference",
         "type": [
           {
             "code": "Reference",
@@ -52,7 +51,6 @@
       }
     ]
   },
-  "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "status": "active",
   "title": "VhDir Usage Restriction",

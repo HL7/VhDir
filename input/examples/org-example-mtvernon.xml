@@ -5,6 +5,9 @@
 	<meta>
         <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
     </meta>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description">
+        <valueString value="The Mount Vernon Health System has been providing quality care to all in the DC area through the Founding Fathers Memorial Hospital"/>
+    </extension>
    
 	<active value="true"/> <!-- This record is active -->
 

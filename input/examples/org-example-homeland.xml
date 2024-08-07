@@ -5,7 +5,12 @@
 	<meta>
         <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organization"/>
     </meta>
-   
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/insuranceplan-reference">
+        <valueReference>
+            <reference value="InsurancePlan/insuranceplan1"/>
+        </valueReference>
+    </extension>
+
 	<active value="true"/> <!-- This record is active -->
 
 	<type>

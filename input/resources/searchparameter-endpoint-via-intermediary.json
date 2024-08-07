@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "reference",
-  "expression": "Endpoint.contact.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "expression": "Endpoint.contact.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary').value",
   "target": [
     "PractitionerRole",
     "Organization",

@@ -22,7 +22,7 @@
     "Organization"
   ],
   "type": "reference",
-  "expression": "Organization.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')|Organization.contact.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "expression": "Organization.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')|Organization.contact.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary').value",
   "target": [
     "PractitionerRole",
     "Organization",

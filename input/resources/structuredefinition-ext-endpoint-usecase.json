@@ -20,6 +20,7 @@
             },
             {
                 "id": "Extension.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "Extension.extension",
                 "slicing": {
@@ -59,7 +60,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Type",
-                "sliceName": "valueCodeableConcept",
                 "type": [
                     {
                         "code": "CodeableConcept"
@@ -88,7 +88,6 @@
                 "min": 1,
                 "path": "Extension.extension.value[x]",
                 "short": "Standard",
-                "sliceName": "valueUri",
                 "type": [
                     {
                         "code": "uri"
@@ -108,7 +107,6 @@
             }
         ]
     },
-    "fhirVersion": "4.0.0",
     "id": "endpoint-usecase",
     "kind": "complex-type",
     "name": "EndpointUsecase",
