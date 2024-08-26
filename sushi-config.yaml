@@ -77,7 +77,7 @@ parameters:
     - xml
     - json
 copyrightyear: '2022+'
-releaseLabel: CI Build
+releaseLabel: STU1
 
 resources:
   CareTeam/cardiologycareteam1:
