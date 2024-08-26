@@ -140,6 +140,16 @@ resources:
     description: The W Womens Shelter - an example of a resource with a restricted address
     exampleBoolean: true
 
+  Location/loc-ffmh:
+    name: Location/loc-ffmh
+    description: Founding Fathers Memorial Hospital
+    exampleBoolean: true
+
+  Location/loc-ffmh-hvi:
+    name: Location/loc-ffmh-hvi
+    description: Founding Fathers Memorial Hospital Heart and Vascular Institute
+    exampleBoolean: true
+
   Organization/monumentHIE:
     name: Organization/monumentHIE
     description: Monument Health Information Exchange (HIE)
