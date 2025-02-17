@@ -3,7 +3,7 @@
   "id": "location-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-via-intermediary",
   "name": "VhDir_sp_location_via_intermediary",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

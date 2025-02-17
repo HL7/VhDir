@@ -3,7 +3,7 @@
   "id": "location-accessibility",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-accessibility",
   "name": "VhDir_sp_location_accessibility",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

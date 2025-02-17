@@ -3,7 +3,7 @@
   "id": "endpoint-usecase-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type",
   "name": "VhDir_sp_endpoint_usecase_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

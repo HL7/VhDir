@@ -3,7 +3,7 @@
   "id": "verificationresult-attestation-method",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-method",
   "name": "VhDir_sp_verificationresult_attestation_method",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

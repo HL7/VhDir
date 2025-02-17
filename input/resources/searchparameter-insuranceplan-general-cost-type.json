@@ -3,7 +3,7 @@
   "id": "insuranceplan-general-cost-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-type",
   "name": "VhDir_sp_insuranceplan_general_cost_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -3,7 +3,7 @@
   "id": "endpoint-identifier-assigner",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier-assigner",
   "name": "VhDir_sp_endpoint_identifier_assigner",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

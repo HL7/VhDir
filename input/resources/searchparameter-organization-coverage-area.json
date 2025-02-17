@@ -3,7 +3,7 @@
   "id": "organization-coverage-area",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-coverage-area",
   "name": "VhDir_sp_network_coverage_area",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

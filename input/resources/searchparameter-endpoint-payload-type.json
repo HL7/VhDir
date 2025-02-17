@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type",
   "name": "VhDir_sp_endpoint_payload_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-payload-type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

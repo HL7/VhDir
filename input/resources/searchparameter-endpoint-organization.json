@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-organization",
   "name": "VhDir_sp_endpoint_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-administered-by",
   "name": "VhDir_sp_insuranceplan_administered_by",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-administered-by",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -3,7 +3,7 @@
   "id": "verificationresult-primarysource-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-type",
   "name": "VhDir_sp_verificationresult_primarysource_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

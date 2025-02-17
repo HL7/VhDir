@@ -3,7 +3,7 @@
   "id": "insuranceplan-coverage-network",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-network",
   "name": "VhDir_sp_insuranceplan_coverage_network",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

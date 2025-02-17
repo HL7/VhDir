@@ -3,7 +3,7 @@
   "id": "insuranceplan-specific-cost-category",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-category",
   "name": "VhDir_sp_insuranceplan_specific_cost_category",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

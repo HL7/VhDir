@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-type",
   "name": "VhDir_sp_organization_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

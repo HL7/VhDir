@@ -3,7 +3,7 @@
   "id": "practitionerrole-identifier-assigner",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-identifier-assigner",
   "name": "VhDir_sp_practitionerrole_identifier_assigner",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

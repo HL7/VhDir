@@ -3,7 +3,7 @@
   "id": "insuranceplan-coverage-benefit-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type",
   "name": "VhDir_sp_insuranceplan_coverage_benefit_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

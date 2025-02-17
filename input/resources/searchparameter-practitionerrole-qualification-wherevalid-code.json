@@ -3,7 +3,7 @@
   "id": "practitionerrole-qualification-wherevalid-code",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-wherevalid-code",
   "name": "VhDir_sp_practitionerrole_qualification_wherevalid_code",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-type",
   "name": "VhDir_sp_healthcareservice_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-endpoint",
   "name": "VhDir_sp_organizationaffiliation_endpoint",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-endpoint",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

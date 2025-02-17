@@ -3,7 +3,7 @@
   "id": "location-new-patient-network",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient-network",
   "name": "VhDir_sp_location_new_patient_network",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

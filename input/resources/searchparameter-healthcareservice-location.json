@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-location",
   "name": "VhDir_sp_healthcareservice_location",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-location",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

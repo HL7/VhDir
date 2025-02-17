@@ -3,7 +3,7 @@
   "id": "insuranceplan-general-cost-groupsize",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-groupsize",
   "name": "VhDir_sp_insuranceplan_general_cost_groupsize",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

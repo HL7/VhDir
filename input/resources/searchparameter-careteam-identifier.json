@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-identifier",
   "name": "VhDir_sp_careteam_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

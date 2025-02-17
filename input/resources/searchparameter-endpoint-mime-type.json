@@ -3,7 +3,7 @@
   "id": "endpoint-mime-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type",
   "name": "VhDir_sp_endpoint_mime_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

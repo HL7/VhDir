@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-phonetic",
   "name": "VhDir_sp_practitioner_phonetic",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

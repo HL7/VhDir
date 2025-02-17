@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-participant",
   "name": "VhDir_sp_careteam_member",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-participant",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
