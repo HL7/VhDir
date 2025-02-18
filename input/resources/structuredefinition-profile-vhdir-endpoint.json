@@ -99,6 +99,7 @@
             },
             {
                 "id": "Endpoint.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "Endpoint.identifier.extension",
                 "slicing": {

@@ -66,6 +66,7 @@
             },
             {
                 "id": "HealthcareService.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "HealthcareService.identifier.extension",
                 "slicing": {

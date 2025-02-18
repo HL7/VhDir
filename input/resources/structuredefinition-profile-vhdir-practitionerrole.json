@@ -131,6 +131,7 @@
             },
             {
                 "id": "PractitionerRole.identifier.extension",
+                "min": 1,
                 "mustSupport": false,
                 "path": "PractitionerRole.identifier.extension",
                 "slicing": {
