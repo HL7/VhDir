@@ -24,10 +24,12 @@ A definition for CodeSystem 'http://example.org/costing' could not be found, so 
 
 # There are several core code systems that are defined as draft in THO/FHIR R4
 Reference to draft CodeSystem http://hl7.org/fhir/resource-status|4.0.1
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360
 Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1
 
 # The restriction extension is an element level profile that isn't specifically sliced anywhere.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
+# This is an older IG that was using these extensions long before they were deprecated (and the functionality is still supported)
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
