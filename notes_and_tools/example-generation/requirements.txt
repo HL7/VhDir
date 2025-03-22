@@ -5,7 +5,7 @@ flake8==4.0.0
 idna==2.7
 isodate==0.6.0
 jdcal==1.4
-Jinja2==2.10
+Jinja2==2.11.3
 lxml==4.2.5
 MarkupSafe==1.0
 mccabe==0.6.1
